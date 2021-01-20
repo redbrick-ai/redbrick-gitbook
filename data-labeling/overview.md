@@ -14,6 +14,8 @@ The RedBrick AI platform offers several manual and automated tools for image and
 |  | Polygon |
 |  | Classification |
 
+## Labeling Interface Layout
+
 The labeling interface is simple and easy to get started with. The figure below will help you get acquainted with the labeling tool interface. 
 
 ![Labeling interface layout](../.gitbook/assets/label-page.svg)
@@ -50,4 +52,19 @@ The tool bar also lets you choose what labeling tool you want to use if you have
 **Labeling Canvas**
 
 The labeling canvas is where you will interact with the data and labels and actually add, edit, remove labels to data. Depending on the type of labels you are generating, the actions required to create/edit the labels will change. 
+
+## Keyboard and Mouse Shortcuts 
+
+| Mac | Windows | Description |
+| :--- | :--- | :--- |
+| ⌘C | Ctrl + C | Copy a label |
+| ⌘V | Ctrl + V | Paste a label |
+| ⌘Z | Ctrl + Z | Undo an action |
+| ⌘⇧Z | Ctrl + Shift + Z | Redo an action |
+| Mouse scroll | Mouse Scroll | Zoom in/out |
+| esc | esc | De-select a selected label |
+| w | w | Increase segmentation brush size |
+| s | s | Decrease segmentation brush size |
+| a | a | Previous frame in video |
+| d | d | Next frame in video |
 
