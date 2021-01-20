@@ -16,3 +16,9 @@
 * [Taxonomies](data-warehouse-1/taxonomies.md)
 * [Preparing Your Data](data-warehouse-1/preparing-your-data.md)
 
+## Data Labeling
+
+* [Overview](data-labeling/overview.md)
+* [Image Labeling](data-labeling/image-labeling.md)
+* [Video Labeling](data-labeling/video-labeling.md)
+
