@@ -10,5 +10,8 @@
 ## Data Warehouse <a id="data-warehouse-1"></a>
 
 * [Overview](data-warehouse-1/overview.md)
-* [Creating](data-warehouse-1/creating.md)
+* [Datasets](data-warehouse-1/creating.md)
+* [Labelsets](data-warehouse-1/labelsets.md)
+* [Storage Methods](data-warehouse-1/storage-methods.md)
+* [Preparing Your Data](data-warehouse-1/preparing-your-data.md)
 

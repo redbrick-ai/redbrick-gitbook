@@ -2,8 +2,6 @@
 
 The Data Warehouse is a central location to manage all your data and label assets. Your team can upload data from on-premise servers, third-party cloud providers, or store data with RedBrick AI. 
 
-![](../.gitbook/assets/group-2-2x.png)
-
 There are three main components to the Data Warehouse:
 
 * **Sets:** Containers for your data and label assets.
@@ -25,8 +23,6 @@ Datasets are containers for your raw data, you and your team can manage and inte
 Labelsets are containers for your labels. Usually, a project will begin at a single dataset, and the finished labels will be stored in a single labelset. Your team can visualize and interact with the labels within the labelset.  
   
 Inside the labelset page, the viewer has three components - the table on the left that contains the list of all the datapoints with labels in this labelset, the center label viewer, and the label selection panel on the right.
-
-![Data warehouse labelset viewer](../.gitbook/assets/app.redbrickai.com_f5924ece-e355-48d2-8f9d-064c3440cef3_warehouse_search-2-2x.png)
 
 ## Storage Methods
 
