@@ -20,13 +20,13 @@ The labeling interface is simple and easy to get started with. The figure below 
 
 ![Labeling interface layout](../.gitbook/assets/label-page.svg)
 
-#### Side Bar
+### Side Bar
 
 ![Example Side Bar \(image labeling\)](../.gitbook/assets/app.redbrickai.com_f5924ece-e355-48d2-8f9d-064c3440cef3_projects_287c2e7b-2c57-4489-8e0e-e332826ea940_tool_label_taskid-e575a0a1-7a18-4162-91d5-1a44b370fe3c-2x.png)
 
 The sidebar contains all the relevant information for adding, and modifying labels. The **current label** sections displays a list of all the classes in your taxonomy for you to label. When a created label is selected, its class will be highlighted in this list. The **all labels** sections contains a list of all the created labels. The **label actions** section contains buttons for actions like removing labels, tracking labels in videos etc.
 
-**Top Bar**
+### **Top Bar**
 
 ![Sample Topbar \(manual-labeling\)](../.gitbook/assets/app.redbrickai.com_f5924ece-e355-48d2-8f9d-064c3440cef3_projects_287c2e7b-2c57-4489-8e0e-e332826ea940_tool_label_taskid-e575a0a1-7a18-4162-91d5-1a44b370fe3c-1-2x.png)
 
@@ -37,7 +37,7 @@ The top bar contains high level actions like submitting/saving tasks and accepti
 
 
 
-**Tool Bar**
+### **Tool Bar**
 
 ![Sample Tool Bar for multi label type image labeling](../.gitbook/assets/app.redbrickai.com_f5924ece-e355-48d2-8f9d-064c3440cef3_projects_287c2e7b-2c57-4489-8e0e-e332826ea940_tool_label_taskid-e575a0a1-7a18-4162-91d5-1a44b370fe3c-2-2x.png)
 
@@ -49,7 +49,7 @@ The tool bar contains useful tools labeling actions, and tools specific to the l
 
 The tool bar also lets you choose what labeling tool you want to use if you have created your project with the _multi label type option_. 
 
-**Labeling Canvas**
+### **Labeling Canvas**
 
 The labeling canvas is where you will interact with the data and labels and actually add, edit, remove labels to data. Depending on the type of labels you are generating, the actions required to create/edit the labels will change. 
 

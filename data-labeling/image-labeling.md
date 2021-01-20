@@ -1,4 +1,4 @@
 # Image Labeling
 
-Im
+### Image bounding box labeling
 

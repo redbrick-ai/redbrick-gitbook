@@ -27,3 +27,14 @@ To describe the functionality of the video labeling interface, let's define a fe
 
 ![Video labeling interface - end frame](../.gitbook/assets/app.redbrickai.com_f5924ece-e355-48d2-8f9d-064c3440cef3_projects_66173de8-8b1a-460f-bd56-2d6899ce6a90_tool_label-1-2x.png)
 
+### Video interpolation
+
+As described in the section above, the labeling interface will linearly interpolate between all frames that have been labeled \(shown in the animation below\). 
+
+![Video bounding box interpolation](../.gitbook/assets/ezgif.com-gif-maker-1-.gif)
+
+The interpolation feature is present for both bounding box labels, as well as polygon labels: 
+
+* **Bounding box:** Bounding box vertices are linearly interpolated between frames, you can adjust the position, and dimensions of the bounding box between frames. 
+* **Polygon:** Polygon vertices are linearly interpolated between frames, you can adjust the position of each node between frames. 
+
