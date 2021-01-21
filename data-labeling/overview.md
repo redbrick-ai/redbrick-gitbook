@@ -66,11 +66,23 @@ The labeling canvas is where you will interact with the data and labels and actu
 | w | w | Increase segmentation brush size |
 | s | s | Decrease segmentation brush size |
 | a | a | Previous frame in video |
-| d | d | Next frame in video |
+| d | d | Next frame in videoC\# |
 
-## Creating Labels
+## Creating and Editing Labels
 
-The details of each label type are covered in the subsequent sections of the documentation. This section covers the general process involved with creating a label i.e. creating an object, specifying its label class, selecting and editing the label. 
+At a high level there are four actions you can perform to a label - **creating**, **selecting, and editing**.  The process for doing so is largely similar for each label type, and is briefly covered in this section. 
+
+#### Creating labels
+
+When you open up the labeling interface, the sidebar loads with the first label class in the taxonomy pre-selected. Interacting with the label canvas to draw a new label will create this label with the label class selected in the left panel. If you wish to change the label class, simply select another label class from the sidebar either before, or after you have created the label. 
+
+![Creating labels and changing the label class](../.gitbook/assets/ezgif.com-gif-maker-2-.gif)
+
+#### Selecting and un-selecting labels
+
+When there are already labels on the label canvas, you can select/un-select them to perform various actions on them. You can select any label from the sidebar label list; furthermore, many label types \(like bounding boxes, and polygons\) can be selected by interacting with the label canvas. A selected label will be highlighted. To un select a label, simply press the `esc` key, or select a different label. 
+
+
 
 
 
