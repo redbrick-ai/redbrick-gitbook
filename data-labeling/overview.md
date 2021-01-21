@@ -68,3 +68,9 @@ The labeling canvas is where you will interact with the data and labels and actu
 | a | a | Previous frame in video |
 | d | d | Next frame in video |
 
+## Creating Labels
+
+The details of each label type are covered in the subsequent sections of the documentation. This section covers the general process involved with creating a label i.e. creating an object, specifying its label class, selecting and editing the label. 
+
+
+

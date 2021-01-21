@@ -16,9 +16,17 @@
 * [Taxonomies](data-warehouse-1/taxonomies.md)
 * [Preparing Your Data](data-warehouse-1/preparing-your-data.md)
 
+## Data Pipelines
+
+* [Overview](data-pipelines/overview.md)
+
 ## Data Labeling
 
 * [Overview](data-labeling/overview.md)
 * [Image Labeling](data-labeling/image-labeling.md)
 * [Video Labeling](data-labeling/video-labeling.md)
+
+## Python SDK
+
+* [SDK Overview](python-sdk/sdk-overview.md)
 
