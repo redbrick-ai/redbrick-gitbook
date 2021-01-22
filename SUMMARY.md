@@ -30,4 +30,11 @@
 ## Python SDK
 
 * [SDK Overview](python-sdk/sdk-overview.md)
+* [Labelset](python-sdk/labelset/README.md)
+  * [Export Formats](python-sdk/labelset/export-formats/README.md)
+    * [Image Bounding Box](python-sdk/labelset/export-formats/image-bounding-box.md)
+    * [Video Bounding Box](python-sdk/labelset/export-formats/video-bounding-box.md)
+    * [Video Classify](python-sdk/labelset/export-formats/video-classify.md)
+    * [Image Segmentation](python-sdk/labelset/export-formats/image-segmentation.md)
+* [Untitled](python-sdk/untitled.md)
 
