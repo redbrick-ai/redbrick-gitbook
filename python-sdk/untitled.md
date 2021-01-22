@@ -1,62 +1,67 @@
-# Untitled
+# Remote Labeling
 
-{% api-method method="get" host="https://api.cakes.com" path="/v1/cakes/:id" %}
-{% api-method-summary %}
-Get Cakes
-{% endapi-method-summary %}
+The remote labeling module of the SDK provides an interface to interact with your remote labeling stage in your project pipeline. The remote labeling stage is used to import predictions from a model, algorithm, or any other method. The remote labeling module has been designed with flexibility in mind, giving users control over how they are generating, and importing predictions.
 
-{% api-method-description %}
-This endpoint allows you to get free cakes.
-{% endapi-method-description %}
+## Overview
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" %}
-ID of the cake to get, for free of course.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
-Authentication token to track down who is emptying our stocks.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-
-{% api-method-query-parameters %}
-{% api-method-parameter name="recipe" type="string" %}
-The API will do its best to find a cake matching the provided recipe.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="gluten" type="boolean" %}
-Whether the cake should be gluten-free or not.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Cake successfully retrieved.
-{% endapi-method-response-example-description %}
-
+```python
+redbrick.remote_label.RemoteLabel(org_id: str, project_id: str, stage_name: str)
 ```
-{    "name": "Cake's name",    "recipe": "Cake's recipe name",    "cake": "Binary cake"}
+
+{% tabs %}
+{% tab title="Parameters" %}
+| Parameter | Description |
+| :--- | :--- |
+| `org_id` | Your organization id, can be found in the url `https://app.redbrickai.com/<org_id>/` |
+| `project_id` | The id of the project with the remote-labeling stage. Can be found in the url of the project dashboard `https://app.redbrickai.com/<org_id>/projects/<project_id>` |
+| `stage_name` | The name of the `remote-labeling` stage |
+{% endtab %}
+
+{% tab title="Methods" %}
+| Method | Description |
+| :--- | :--- |
+| `get_task(num_tasks: int)` | Get's the next task\(s\) from the pipeline. Returns list of [`Task`](https://docs.redbrickai.com/sdk/entities/task/) objects. |
+| `submit_task(task: Task, label: label)` | Submits the task with the labels for that task. Requires the [`Task`](https://docs.redbrickai.com/sdk/entities/task/) object from `get_task` and label is one of the label object types - [ImageBoundingBox](https://docs.redbrickai.com/sdk/entity/labels/boundingbox/), [VideoBoundingBox](https://docs.redbrickai.com/sdk/entity/labels/boundingbox/), [VideoClassification](https://docs.redbrickai.com/sdk/entity/labels/classify/) etc. |
+| `get_num_tasks()` | Returns the number of tasks queued in this stage |
+{% endtab %}
+{% endtabs %}
+
+## Usage
+
+**Initializing the module**
+
+You first have to initialize the module by providing all the relevant organization and project details
+
+```python
+import redbrick
+
+# Initialize sdk and remote-labeling module
+redbrick.init(api_key="<key>")
+remote_labeling = redbrick.remote_labeling.RemoteLabel(
+    org_id="<org_id>", project_id="<project_id>", stage_name="<stage_name>"
+)
 ```
-{% endapi-method-response-example %}
 
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-Could not find a cake matching this query.
-{% endapi-method-response-example-description %}
+**Retrieving tasks**
 
+Each datapoint is converted into a task inside a pipeline. The first step in adding model/algorithm generated pre-labels to your tasks, is to retrieve the tasks from the backend.
+
+```python
+# Get task from remote
+tasks = remote_labeling.get_task(num_tasks=1)
 ```
-{    "message": "Ain't no cake like that."}
+
+The `tasks` variable here is a list of [`Task`](https://docs.redbrickai.com/sdk/entity/task) objects.
+
+**Submitting tasks**
+
+Now that you have the task, you can generate your labels using a model, algorithm or rule based system. You have to submit these labels to the backend in the following manner.
+
+```python
+from redbrick.entity.label.bbox import ImageBoundingBox
+
+# Submit task to remote
+image_bbox = ImageBoundingBox(labels) # labels is a variable of the correct format
+remote_labeling.submit_task(task=tasks[0], labels=image_bbox)
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-
 

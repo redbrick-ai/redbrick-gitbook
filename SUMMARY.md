@@ -36,5 +36,10 @@
     * [Video Bounding Box](python-sdk/labelset/export-formats/video-bounding-box.md)
     * [Video Classify](python-sdk/labelset/export-formats/video-classify.md)
     * [Image Segmentation](python-sdk/labelset/export-formats/image-segmentation.md)
-* [Untitled](python-sdk/untitled.md)
+* [Remote Labeling](python-sdk/untitled.md)
+* [Entities](python-sdk/entities/README.md)
+  * [Task](python-sdk/entities/task.md)
+  * [Labels](python-sdk/entities/labels/README.md)
+    * [Bounding Box](python-sdk/entities/labels/bounding-box.md)
+    * [Classification](python-sdk/entities/labels/classification.md)
 
