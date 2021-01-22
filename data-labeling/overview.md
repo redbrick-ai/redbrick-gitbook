@@ -63,10 +63,11 @@ The labeling canvas is where you will interact with the data and labels and actu
 | ⌘⇧Z | Ctrl + Shift + Z | Redo an action |
 | Mouse scroll | Mouse Scroll | Zoom in/out |
 | esc | esc | De-select a selected label |
+| delete | delete | Delete a selected label |
 | w | w | Increase segmentation brush size |
 | s | s | Decrease segmentation brush size |
 | a | a | Previous frame in video |
-| d | d | Next frame in videoC\# |
+| d | d | Next frame in video |
 
 ## Creating and Editing Labels
 
@@ -81,6 +82,12 @@ When you open up the labeling interface, the sidebar loads with the first label 
 #### Selecting and un-selecting labels
 
 When there are already labels on the label canvas, you can select/un-select them to perform various actions on them. You can select any label from the sidebar label list; furthermore, many label types \(like bounding boxes, and polygons\) can be selected by interacting with the label canvas. A selected label will be highlighted. To un select a label, simply press the `esc` key, or select a different label. 
+
+![Selecting, and unselecting labels](../.gitbook/assets/ezgif.com-gif-maker-7-.gif)
+
+**Editing labels**
+
+Once you have selected the label you want to edit, you can edit all its properties - the shape of the label, the label class, delete the label etc. When you select a label, the side bar class selector will automatically select the current label class - if you wish to change the label class, simply change the selection.
 
 
 
