@@ -7,6 +7,11 @@
 * [Quick Start](get-started/quick-start.md)
 * [Core Concepts](get-started/core-concepts.md)
 
+## Tutorials
+
+* [Image SDK model labeling](tutorials/image-sdk-model-labeling.md)
+* [Video SDK model labeling](tutorials/video-sdk-model-labeling.md)
+
 ## Data Warehouse <a id="data-warehouse-1"></a>
 
 * [Overview](data-warehouse-1/overview.md)
