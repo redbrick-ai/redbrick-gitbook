@@ -1,4 +1,4 @@
-# SDK model labeling
+# SDK Model Labeling
 
 ## Image SDK model labeling
 

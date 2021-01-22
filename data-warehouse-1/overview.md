@@ -1,6 +1,6 @@
 # Overview
 
-The Data Warehouse is a central location to manage all your data and label assets. Your team can upload data from on-premise servers, third-party cloud providers, or store data with RedBrick AI. 
+The Data Warehouse is a central location to manage all your data and label assets. Enable **seamless collaboration** on your training data assets, and never deal with messy file structures or adhoc structure again. Your team can upload data from on-premise servers, third-party cloud providers, or store data with RedBrick AI. 
 
 There are three main components to the Data Warehouse:
 

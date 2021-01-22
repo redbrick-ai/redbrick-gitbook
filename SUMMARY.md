@@ -9,7 +9,7 @@
 
 ## Tutorials
 
-* [SDK model labeling](tutorials/image-sdk-model-labeling.md)
+* [SDK Model Labeling](tutorials/image-sdk-model-labeling.md)
 
 ## Data Warehouse <a id="data-warehouse-1"></a>
 
@@ -33,13 +33,13 @@
 ## Python SDK
 
 * [SDK Overview](python-sdk/sdk-overview.md)
+* [Remote Labeling](python-sdk/untitled.md)
 * [Labelset](python-sdk/labelset/README.md)
   * [Export Formats](python-sdk/labelset/export-formats/README.md)
     * [Image Bounding Box](python-sdk/labelset/export-formats/image-bounding-box.md)
     * [Video Bounding Box](python-sdk/labelset/export-formats/video-bounding-box.md)
     * [Video Classify](python-sdk/labelset/export-formats/video-classify.md)
     * [Image Segmentation](python-sdk/labelset/export-formats/image-segmentation.md)
-* [Remote Labeling](python-sdk/untitled.md)
 * [Entities](python-sdk/entities/README.md)
   * [Task](python-sdk/entities/task.md)
   * [Labels](python-sdk/entities/labels/README.md)
