@@ -8,8 +8,6 @@ This section includes guides on how to use the labeling interfaces for various d
 
 {% page-ref page="video-labeling-1.md" %}
 
-{% page-ref page="image-segmentation.md" %}
-
 {% page-ref page="image-polygons.md" %}
 
 

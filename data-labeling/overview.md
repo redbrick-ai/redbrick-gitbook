@@ -89,7 +89,5 @@ When there are already labels on the label canvas, you can select/un-select them
 
 Once you have selected the label you want to edit, you can edit all its properties - the shape of the label, the label class, delete the label etc. When you select a label, the side bar class selector will automatically select the current label class - if you wish to change the label class, simply change the selection.
 
-
-
-
+![Editing labels](../.gitbook/assets/ezgif.com-gif-maker-8-.gif)
 
