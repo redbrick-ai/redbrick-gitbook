@@ -1,4 +1,4 @@
-# Label Class Taxonomies
+# Taxonomies
 
 Taxonomies provides a structured way of defining what label classes exist in a labelset. Taxonomies are tree structures to allow complete flexibility on how you decide to label your data. You can create a simple taxonomy, which is a tree of depth 1.
 
