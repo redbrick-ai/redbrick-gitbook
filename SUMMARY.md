@@ -9,8 +9,7 @@
 
 ## Tutorials
 
-* [Image SDK model labeling](tutorials/image-sdk-model-labeling.md)
-* [Video SDK model labeling](tutorials/video-sdk-model-labeling.md)
+* [SDK model labeling](tutorials/image-sdk-model-labeling.md)
 
 ## Data Warehouse <a id="data-warehouse-1"></a>
 
