@@ -14,10 +14,9 @@
 ## Data Warehouse <a id="data-warehouse-1"></a>
 
 * [Overview](data-warehouse-1/overview.md)
-* [Datasets](data-warehouse-1/creating.md)
-* [Labelsets](data-warehouse-1/labelsets.md)
-* [Storage Methods](data-warehouse-1/storage-methods.md)
-* [Taxonomies](data-warehouse-1/taxonomies.md)
+* [Managing Your Sets](data-warehouse-1/creating.md)
+* [Data Storage Methods](data-warehouse-1/storage-methods.md)
+* [Label Class Taxonomies](data-warehouse-1/taxonomies.md)
 * [Preparing Your Data](data-warehouse-1/preparing-your-data.md)
 
 ## Data Pipelines
