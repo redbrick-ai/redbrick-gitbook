@@ -52,5 +52,7 @@ The second important component of pipelines are the routing between bricks. Each
 | `feedback` | Flow | `feedback` allows you to send data to a brick upstream in your pipeline. | Feedback |
 | `task-random-filter` | Flow | `task-random-filter` allows you to route your data to several downstream stages based on some percentage i.e. send 50% of data to one downstream stage, and 50% to another.  | Multi |
 
+## Input/Output Types
 
+## 
 

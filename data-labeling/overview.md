@@ -2,17 +2,17 @@
 
 The RedBrick AI platform offers several manual and automated tools for image and video labeling. The table below covers the current offerings of the platform:
 
-| Data Type | Label Type |
-| :--- | :--- |
-| `Image` | Bounding Box |
-|  | Segmentation |
-|  | Polygon |
-|  | Keypoint |
-|  | Ellipse |
-|  | Classification |
-| `Video` | Bounding Box |
-|  | Polygon |
-|  | Classification |
+| Data Type | Label Type | Label Type Code |
+| :--- | :--- | :--- |
+| `Image` | Bounding Box | `bbox` |
+|  | Segmentation | `segmentation` |
+|  | Polygon | `polygon` |
+|  | Keypoint | `keypoint` |
+|  | Ellipse | `ellipse` |
+|  | Classification | `classify` |
+| `Video` | Bounding Box | `bbox` |
+|  | Polygon | `polygon` |
+|  | Classification | `classify` |
 
 ## Labeling Interface Layout
 
