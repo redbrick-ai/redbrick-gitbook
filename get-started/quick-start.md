@@ -45,7 +45,7 @@ You can read more about creating a pipeline in [this section](../data-pipelines/
 
 Enter a name and project description and click submit to create the project. 
 
-![](../.gitbook/assets/ezgif.com-gif-maker-13-.gif)
+![Project creation using the Label and review template](../.gitbook/assets/ezgif.com-gif-maker-13-.gif)
 
 ## Label Data
 
@@ -62,6 +62,10 @@ Click on the _Open_ button on the _LABEL_ stage card to open the labeling interf
 If you have a look at the pipeline we created for this project, all the data labeled in the first stage will automatically be routed to the second step of the pipeline - REVIEW. After review, the data will conditionally be routed to be corrected or be stored in the data warehouse.   
   
 Throughout this process, tasks will automatically move through the pipeline and automatically be assigned to users to work on. All the meta-data and history of each data point through the pipeline will be tracked. 
+
+![Review and correct data](../.gitbook/assets/7.gif)
+
+Of course in this example it makes little sense to have one person label, review, and correct the data. But this example demonstrates how you can set up your project to accomplish this - then you can always invite collaborators to help you with this process. 
 
 ## Evaluate Progress
 
