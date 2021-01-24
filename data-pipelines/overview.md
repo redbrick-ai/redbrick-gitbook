@@ -54,5 +54,13 @@ The second important component of pipelines are the routing between bricks. Each
 
 ## Input/Output Types
 
+Each brick has two attributes associated with it - input type and output type. These attributes define the type of task entering and exiting the brick. The list below covers all the different types:
+
+* **`NONE`:** None type means the brick doesn't output anything or doesn't take anything as input. It's equivalent to saying either no brick can connect to it upstream or downstream.  
+* **`image_items`:** Raw images. 
+* **`video_items`:** Raw videos. 
+* **`image_<label_type_code>`:** Image labels, where `<label_type_code>` is the [code of the label type](../data-labeling/overview.md). 
+* **`video_<label_type_code>`:** Video labels, where `<label_type_code>` is the [code of the label type](../data-labeling/overview.md).
+
 ## 
 
