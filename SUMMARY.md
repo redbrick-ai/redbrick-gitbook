@@ -13,7 +13,7 @@
 
 ## Organizations
 
-* [What Is an Organization](organizations/what-is-an-organization.md)
+* [What Is an Organization?](organizations/what-is-an-organization.md)
 * [Permissions](organizations/permissions.md)
 * [Projects](organizations/projects.md)
 

@@ -1,4 +1,4 @@
-# What Is an Organization
+# What Is an Organization?
 
 Organizations are containers within which projects, datasets, pipelines etc live. Permissions and collaboration on projects are handled within projects. When you log in to the RedBrick platform for the first time, you will be prompted to create an organization:
 
