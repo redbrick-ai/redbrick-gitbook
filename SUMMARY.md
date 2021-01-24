@@ -9,7 +9,6 @@
 
 ## Tutorials
 
-* [Simple Quality Assurance Project](tutorials/simple-quality-assurance-project.md)
 * [SDK Model Labeling](tutorials/image-sdk-model-labeling.md)
 
 ## Organizations

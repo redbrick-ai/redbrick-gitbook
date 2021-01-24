@@ -1,2 +1,0 @@
-# Simple Quality Assurance Project
-
