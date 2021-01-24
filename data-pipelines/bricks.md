@@ -91,6 +91,65 @@ The configuration for the `remote-labeling` brick is the same as the configurati
 
 ## expert-review
 
+`expert-review`allows you to review data and or labels and conditionally route the data using a pass/fail option. You can optionally edit your labels within this brick.
+
+**Configuration**
+
+* **Allow Edit:** Allow edit enables or disables the ability to edit labels in this brick. If disabled, then you will only be able to pass/fail the data, and not edit the labels. 
+
+#### Allowed Inputs
+
+* **`image_items`**
+* **`video_items`**
+* **`image_<label_type_code>`**
+* **`video_<label_type_code>`**
+
+**Allowed Outputs**
+
+The allowed outputs are the same as the allowed inputs, and the actual output type must match the input type. 
+
+## feedback
+
+`feedback` allows you to send data to a brick upstream in your pipeline.
+
+#### Allowed Inputs
+
+* **`image_items`**
+* **`video_items`**
+* **`image_<label_type_code>`**
+* **`video_<label_type_code>`**
+
+**Allowed Outputs**
+
+The allowed outputs are the same as the allowed inputs, and the actual output type must match the input type. 
+
+## task-random-filter
+
+`task-random-filter` allows you to route your data to several downstream stages based on some percentage i.e. send 50% of data to one downstream stage, and 50% to another. 
+
+#### Configuration
+
+* **Random Routing:** A probability between 0-1, for each downstream stage. All incoming data will be assigned this probability of moving to each downstream stage. For example, if you assign routing probabilities of 0.7 for stage1, and 0.3 for stage2, each incoming task will be assigned a 0.3 chance of going to stage2, and 0.7 chance of going to stage1. 
+
+{% hint style="warning" %}
+The routing probabilities for all downstream stages must sum to 1
+{% endhint %}
+
+**Allowed Inputs**
+
+* **`image_items`**
+* **`video_items`**
+* **`image_<label_type_code>`**
+* **`video_<label_type_code>`**
+
+**Allowed Outputs**
+
+The allowed outputs are the same as the allowed inputs, and the actual output type must match the input type. 
+
+
+
+
+
 
 
 
