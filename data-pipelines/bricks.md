@@ -6,6 +6,10 @@ description: >-
 
 # Bricks
 
+{% hint style="success" %}
+For a summary of all the bricks have a look at the following [section](overview.md#bricks-overview). For a summary of the input and output types, have a look at this [section.](overview.md#input-output-types) For a list of all the label type codes look at this [section](../data-labeling/overview.md).
+{% endhint %}
+
 ## dataset-input
 
 `dataset-input` acts as a 'source' of data for your pipeline. Get data from your dataset into a pipeline using the `dataset-input` brick.
