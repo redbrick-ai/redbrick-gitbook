@@ -1,6 +1,10 @@
-# Bricks
+---
+description: >-
+  This sections covers the details of each of the bricks you can use in RedBrick
+  pipelines, and the possible configuration.
+---
 
-This sections covers the details of each of the bricks you can use in RedBrick pipelines, and the possible configuration. 
+# Bricks
 
 ## dataset-input
 
