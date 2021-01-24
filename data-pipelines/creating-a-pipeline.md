@@ -26,7 +26,11 @@ The **black circle** on a brick denotes an **output node,** and the **black squa
 
 ![Pipeline stage builder](../.gitbook/assets/ezgif.com-gif-maker-11-.gif)
 
+## Error Checking
 
+If there is an error in the pipeline set-up or configuration, a little error icon will appear near the **Pipeline view** header. Hovering over the icon will give a summary of the errors in the pipeline configuration. 
+
+![Hover over icon to see pipeline set-up errors](../.gitbook/assets/group-6-2x.png)
 
 
 
