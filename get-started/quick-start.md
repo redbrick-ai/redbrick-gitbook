@@ -26,7 +26,13 @@ Your actual data can be stored on your own servers, or your own cloud servers li
 
 ![Create a dataset and import data](../.gitbook/assets/ezgif.com-gif-maker-9-.gif)
 
+With your data now securely imported into the RedBrick Data Warehouse, you can  now interact with your data inside the dataset viewer. 
+
+![](../.gitbook/assets/ezgif.com-gif-maker-10-.gif)
+
 ## Create a Project Using a Template
+
+With your dataset created, we can set up a project. 
 
 ## Label Data
 
