@@ -69,5 +69,11 @@ Of course in this example it makes little sense to have one person label, review
 
 ## Evaluate Progress
 
+Head over to the **Insights** tab of the project to view the progress and productivity of your workforce. Over here, you will be able to view granular level information about the activity of each person on your team at each stage - how much work they have done, and how much time it is taking. 
+
+![Workforce progress and productivity insights](../.gitbook/assets/repeat-grid-1-2x.png)
+
 ## Export Data and Labels
+
+Once you have created labels, you can easily export them using the [RedBrick Python SDK](../python-sdk/sdk-overview.md). Simply `pip install -U redbrick-sdk` to install the SDK. Then you can follow the guide in [this section](../python-sdk/labelset/#usage) to export your data and labels. 
 
