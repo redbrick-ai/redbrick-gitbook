@@ -34,6 +34,7 @@
 ## Data Labeling
 
 * [Overview](data-labeling/overview.md)
+* [Quality Assurance](data-labeling/quality-assurance.md)
 * [Labeling](data-labeling/labeling/README.md)
   * [Image Labeling](data-labeling/labeling/image-polygons.md)
   * [Video Labeling](data-labeling/labeling/video-labeling-1.md)
