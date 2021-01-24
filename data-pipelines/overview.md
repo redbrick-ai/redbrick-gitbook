@@ -32,5 +32,25 @@ As discussed above, bricks have single responsibilities and process data and lab
 
 ## Routing Types
 
-As disc
+The second important component of pipelines are the routing between bricks. Each brick has a particular kind of routing that defines how it can connect with other bricks. Listed below are the different kinds of routing types:
+
+* **Next:** Next routing simple routes all the data to a single brick downstream.  
+* **Boolean**: Boolean routing has two paths, a _failed_ path and a _passed_ path. Depending on what happens in a particular brick, boolean routing will conditionally route data to two downstream bricks.  
+* **Multi**: Multi routing sends a percentage of data to multiple bricks downstream.  
+* **Feedback:** Feedback routing sends data to an upstream brick. 
+
+## Bricks Overview
+
+| Brick Name | Brick Type | Description | Routing Type |
+| :--- | :--- | :--- | :--- |
+| `dataset-input` | Input | `dataset-input` acts as a 'source' of data for your pipeline. Get data from your dataset into a pipeline using the `dataset-input` brick. | Next |
+| `labelset-input` | Input | `labelset-input` acts as a 'source' of data and labels for your pipeline. If you have data and labels in a labelset, you can bring them into your pipeline using the `labelset-input`. | Next |
+| `labelset-output` | Output | `labelset-output` stores your data and labels in the data warehouse. Use the `labelset-output` brick to store your generated annotations in a specified labelset. | Next |
+| `manual-labeling` | Labeling | `manual-labeling` allows you to create and/or edit labels on your image and video datasets.  | Next |
+| `remote-labeling` | Labeling | `remote-labeling` allows you to use your own model running your own system to label data using the RedBrick Python SDK. | Next |
+| `expert-review` | Quality Assurance | `expert-review` allows you to review data and or labels and conditionally route the data using a pass/fail option. You can optionally edit your labels within this brick. | Boolean |
+| `feedback` | Flow | `feedback` allows you to send data to a brick upstream in your pipeline. | Feedback |
+| `task-random-filter` | Flow | `task-random-filter` allows you to route your data to several downstream stages based on some percentage i.e. send 50% of data to one downstream stage, and 50% to another.  | Multi |
+
+
 

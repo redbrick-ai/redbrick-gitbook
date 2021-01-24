@@ -22,6 +22,7 @@
 ## Data Pipelines
 
 * [Overview](data-pipelines/overview.md)
+* [Bricks](data-pipelines/bricks.md)
 
 ## Data Labeling
 
