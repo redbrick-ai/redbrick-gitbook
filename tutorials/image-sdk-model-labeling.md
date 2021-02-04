@@ -114,7 +114,7 @@ def main(api_key, org_id, project_id):
     for idx, box in enumerate(boxes):
         x, y, w, h = box
         x /= image_width
-        y /= image_width
+        y /= image_height
         w /= image_width
         h /= image_height
         classname = str(classes[class_ids[idx]])
@@ -253,7 +253,7 @@ def main(api_key, org_id, project_id):
         for idx, box in enumerate(boxes):
             x, y, w, h = box
             x /= frame_width
-            y /= frame_width
+            y /= image_height
             w /= frame_width
             h /= frame_height
             x = np.max(x, 0)
