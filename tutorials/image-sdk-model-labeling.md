@@ -32,7 +32,7 @@ import cv2
 import numpy as np
 import json
 import redbrick
-from redbrick.entity.label.bbox import ImageBoundingBox
+from redbrick.entity.label.bbox import ImageBoundingBox, ImageBoundingBoxRemoteLabel
 
 def load_yolo():
     """
@@ -93,7 +93,7 @@ def main(api_key, org_id, project_id):
     # Init redbrick-sdk
     redbrick.init(api_key=api_key)
     remote_labeling = redbrick.remote_label.RemoteLabel(
-        org_id=org_id, project_id=project_id, stage_name="<stage_name>"
+        org_id=org_id, project_id=project_id, stage_name="REMOTE"
     )
 
     # Get task from RedBrick AI
@@ -105,7 +105,7 @@ def main(api_key, org_id, project_id):
     cv2.resize(image, None, fx=0.4, fy=0.4)
 
     # Generate predictions from YOLO
-    model, classes, colors, output_layers = load_yolo()
+    model, classes, output_layers = load_yolo()
     blob, outputs = detect_objects(image, model, output_layers)
     boxes, confs, class_ids = get_box_dimensions(outputs, image_height, image_width)
 
@@ -122,10 +122,12 @@ def main(api_key, org_id, project_id):
         entry = {
             "category": category,
             "bbox2d": {"xnorm": x, "ynorm": y, "wnorm": w, "hnorm": h},
+            "attributes": [],
         }
         labels.append(entry)
 
-    image_bbox = ImageBoundingBox(labels=labels)
+    _labels = [ImageBoundingBoxRemoteLabel.from_dict(obj=l) for l in labels]
+    image_bbox = ImageBoundingBox(labels=_labels)
     remote_labeling.submit_task(task=tasks[0], labels=image_bbox)
 
 if __name__ == "__main__":
@@ -228,7 +230,7 @@ def main(api_key, org_id, project_id):
     # Init redbrick-sdk
     redbrick.init(api_key=api_key)
     remote_labeling = redbrick.remote_label.RemoteLabel(
-        org_id=org_id, project_id=project_id, stage_name="LABEL"
+        org_id=org_id, project_id=project_id, stage_name="REMOTE"
     )
 
     # Get task from RedBrick AI
@@ -237,7 +239,7 @@ def main(api_key, org_id, project_id):
 
     # Iterate through frames of video and generate YOLO preds
     labels = []
-    model, classes, colors, output_layers = load_yolo()
+    model, classes, output_layers = load_yolo()
     for frameindex, item in enumerate(task.items_list_presigned):
         frame = task.get_data(item)  # get frame data
         frame_height, frame_width, _ = frame.shape
@@ -263,6 +265,7 @@ def main(api_key, org_id, project_id):
             entry = {
                 "category": category,
                 "bbox2d": {"xnorm": x, "ynorm": y, "wnorm": w, "hnorm": h},
+                "attributes": [],
             }
             entry["frameindex"] = frameindex
             labels.append(entry)
@@ -278,5 +281,6 @@ if __name__ == "__main__":
     PROJECT_ID = "<project_id>"
 
     main(API_KEY, ORG_ID, PROJECT_ID)
+
 ```
 
