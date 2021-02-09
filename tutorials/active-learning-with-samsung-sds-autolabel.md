@@ -66,7 +66,7 @@ Once tasks are flushed, the `[labelset-output]` stage stores all the data and la
 
 ##  Set up your account
 
-Visit [https://brightics.redbrickai.com/signup](https://brightics.redbrickai.com/signup) to create an account. Once you have added all your relevant details and signed up for an account, you will be directed to the [organizations page](../organizations/what-is-an-organization.md) to create an organization. 
+Visit [https://brightics.redbrickai.com/login](https://brightics.redbrickai.com/login) to log into your RedBrick account. If you don't have an account, contact us at [contact@redbrickai.com](mailto:contact@redbrickai.com). Once you have added all your relevant details and signed up for an account, you will be directed to the [organizations page](../organizations/what-is-an-organization.md) to create an organization. 
 
 {% page-ref page="../organizations/what-is-an-organization.md" %}
 
