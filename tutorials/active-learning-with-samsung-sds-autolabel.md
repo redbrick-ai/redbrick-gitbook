@@ -90,5 +90,19 @@ Within the project creation page, select the **AutoLabel** template pipeline. Yo
 
 Once you have filled out the required template parameters, and added a name and description to the project, you can submit it to create it. 
 
-## 
+## Active Learning Dashboard
+
+Inside the project you just created, within the _Stages_ tab, you can select ACTIVE\_LEARNING from the drop down to visit the dashboard for the `[brightics-aia-autolabel]` stage. As you can see in the image below, this dashboard contains all relevant active learning actions and statistics.
+
+![Active learning dashboard with stats and actions.](../.gitbook/assets/send_batch-2x.png)
+
+## Label, Train, Correct
+
+Now that you have created a project and are acquainted with the dashboard, you can begin the active learning process by _sending a batch_ to be manually labeled. Once you send a batch, you will notice the pipeline status on the main dashboard would have updated with tasks queued in the LABEL step. Your team can go ahead and collaboratively label these data-points in the LABEL stage. 
+
+![Tasks queued in LABEL after send batch](../.gitbook/assets/dash_after_send-2x.png)
+
+Once you have labeled an adequate number of data-points, you can trigger a training cycle, inside the active learning dashboard, to train AutoLabel and generate predictions on the tasks queue in `[brightics-aia-autolabel]`. 
+
+
 
