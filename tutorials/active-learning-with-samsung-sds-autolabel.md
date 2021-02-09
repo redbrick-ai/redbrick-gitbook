@@ -108,7 +108,9 @@ After a number of training cycles, and batches of manual labeling your project w
 
 ![Progression of the AutoLabel confidence over multiple training cycles. ](../.gitbook/assets/after_flush-2x.png)
 
-From the plot above you can see that you can expect the AutoLabel confidence to approach 100% after a number of training cycles and only a small percentage of data manually labeled. Once you are satisfied with AutoLabel's performance, you can _Flush Tasks ****_to store all the data and labels in the Data Warehouse. Finally, your labels can be exported using the [Python SDK](../python-sdk/labelset/) straight to the machine you wish you store your labels on.
+From the plot above you can see that you can expect the AutoLabel confidence to approach 100% confidence after a number of training cycles and only a small percentage of data manually labeled.   
+  
+Once you are satisfied with AutoLabel's performance, you can _Flush Tasks ****_to store all the data and labels in the Data Warehouse. Finally, your labels can be exported using the [Python SDK](../python-sdk/labelset/) straight to the machine you wish you store your labels on.
 
 
 
