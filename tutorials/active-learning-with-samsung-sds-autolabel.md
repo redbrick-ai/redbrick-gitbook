@@ -31,7 +31,7 @@ Before diving into the step-by-step process of setting up your Active Learning p
 
 #### INPUT `[dataset-input]`
 
-The first stage brings in data from the [Data Warehouse](../data-warehouse-1/overview.md) into your pipeline. 
+The first stage brings in data from the [Data Warehouse](../data-warehouse-1/overview.md) into your pipeline.
 
 #### TYPECAST `[type-cast]`
 
@@ -100,9 +100,15 @@ Inside the project you just created, within the _Stages_ tab, you can select ACT
 
 Now that you have created a project and are acquainted with the dashboard, you can begin the active learning process by _sending a batch_ to be manually labeled. Once you send a batch, you will notice the pipeline status on the main dashboard would have updated with tasks queued in the LABEL step. Your team can go ahead and collaboratively label these data-points in the LABEL stage. 
 
-![Tasks queued in LABEL after send batch](../.gitbook/assets/dash_after_send-2x.png)
+![Tasks queued in LABEL after send batch.](../.gitbook/assets/dash_after_send-2x.png)
 
-Once you have labeled an adequate number of data-points, you can trigger a training cycle, inside the active learning dashboard, to train AutoLabel and generate predictions on the tasks queue in `[brightics-aia-autolabel]`. 
+Once you have labeled an adequate number of data-points, you can trigger a training cycle, inside the active learning dashboard to train AutoLabel and generate predictions on the tasks queue in `[brightics-aia-autolabel]`.   
+  
+After a number of training cycles, and batches of manual labeling your project will progress in a similar way to the graph shown below. 
+
+![Progression of the AutoLabel confidence over multiple training cycles. ](../.gitbook/assets/after_flush-2x.png)
+
+From the plot above you can see that you can expect the AutoLabel confidence to approach 100% after a number of training cycles and only a small percentage of data manually labeled. Once you are satisfied with AutoLabel's performance, you can _Flush Tasks ****_to store all the data and labels in the Data Warehouse. Finally, your labels can be exported using the [Python SDK](../python-sdk/labelset/) straight to the machine you wish you store your labels on.
 
 
 
