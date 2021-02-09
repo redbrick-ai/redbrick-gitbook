@@ -112,5 +112,3 @@ From the plot above you can see that you can expect the AutoLabel confidence to 
   
 Once you are satisfied with AutoLabel's performance, you can _Flush Tasks ****_to store all the data and labels in the Data Warehouse. Finally, your labels can be exported using the [Python SDK](../python-sdk/labelset/) straight to the machine you wish you store your labels on.
 
-
-
