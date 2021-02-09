@@ -1,6 +1,6 @@
 # Active Learning with Samsung SDS AutoLabel
 
-This tutorial will walk you through how to use Samsung SDS AutoLabel to run an active learning workflow which can automate upto 80-90% of all manual labeling work required.  
+This tutorial will walk you through how to use Samsung SDS AutoLabel to run an active learning workflow which can automate upto 80-90% of all manual labeling work.  
 
 {% hint style="info" %}
 This Active Learning solution is currently in **Beta phase**, and will be available at [https://brightics.redbrickai.com](https://brightics.redbrickai.com). Currently the offering only supports **image bounding boxes,** but will be expanded to other label types soon. 
@@ -60,7 +60,7 @@ The manual labeling stage allows your team to manually label the data, or correc
 
 The feedback step simply sends labeled tasks back to the `[brightics-aia-autolabel]` step to be added to the training set. 
 
-**OUTPUT** 
+**OUTPUT `[labelset-output]`**
 
 Once tasks are flushed, the `[labelset-output]` stage stores all the data and labels in the Data Warehouse.
 
