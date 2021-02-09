@@ -27,7 +27,7 @@ folder
 The example below includes a few helper functions for loading the YOLO model and generating predictions. It then gets a single task from the remote-labeling stage, and generates predictions on that single task. The task along with the model generated labels are submitted to the backend.
 
 {% hint style="info" %}
-In the code snippet below, make sure to fill in the following placeholders with the actual values: 
+**Fill in the following placeholders:** 
 
 * `<remote_labeling_stage_name>:` The name of the remote labeling stage in your pipeline.
 * `<api_key>:` Organization api key, can be generated in [settings](https://app.gitbook.com/@redbrick-ai/s/redbrick/~/drafts/-MT5G28dalgcINSV0qvv/python-sdk/sdk-overview#getting-started). 
