@@ -10,6 +10,7 @@
 ## Tutorials
 
 * [SDK Model Labeling](tutorials/image-sdk-model-labeling.md)
+* [Active Learning with Samsung SDS AutoLabel](tutorials/active-learning-with-samsung-sds-autolabel.md)
 
 ## Organizations
 
