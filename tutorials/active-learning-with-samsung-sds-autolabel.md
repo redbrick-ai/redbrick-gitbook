@@ -64,13 +64,31 @@ The feedback step simply sends labeled tasks back to the `[brightics-aia-autolab
 
 Once tasks are flushed, the `[labelset-output]` stage stores all the data and labels in the Data Warehouse.
 
-
-
 ##  Set up your account
+
+Visit [https://brightics.redbrickai.com/signup](https://brightics.redbrickai.com/signup) to create an account. Once you have added all your relevant details and signed up for an account, you will be directed to the [organizations page](../organizations/what-is-an-organization.md) to create an organization. 
+
+{% page-ref page="../organizations/what-is-an-organization.md" %}
 
 ## Prepare your dataset
 
+Inside the data warehouse, you can create a [dataset](../data-warehouse-1/creating.md#datasets) and [storage method](../data-warehouse-1/storage-methods.md) to import data from your AWS S3 bucket into the RedBrick platform. Follow the guide below for preparing your AWS S3 bucket to integrate with the Data Warehouse.
+
+{% page-ref page="../data-warehouse-1/preparing-your-data.md" %}
+
 ## Create the Active Learning Project
+
+Once you have created a dataset, and imported data into the warehouse from your AWS S3 bucket, head over to the projects page, and click on Create Project.
+
+![AutoLabel Active Learning template pipeline.](../.gitbook/assets/2_create_project-2x.png)
+
+Within the project creation page, select the **AutoLabel** template pipeline. You will need to fill out the following template parameters to successfully create your project: 
+
+1. **Dataset:** Select the name of the dataset you would like to work with for this project.  
+2. **Labeling Taxonomy:** Select your labeling class [taxonomy](../data-warehouse-1/taxonomies.md) for the data you are working with. You can [create custom taxonomies](../data-warehouse-1/taxonomies.md#creating-a-taxonomy) inside the data warehouse.  
+3. **Labelset:** Select or create a labelset container to store the final data and labels. 
+
+Once you have filled out the required template parameters, and added a name and description to the project, you can submit it to create it. 
 
 ## 
 
