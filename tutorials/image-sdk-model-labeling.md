@@ -93,7 +93,7 @@ def main(api_key, org_id, project_id):
     # Init redbrick-sdk
     redbrick.init(api_key=api_key)
     remote_labeling = redbrick.remote_label.RemoteLabel(
-        org_id=org_id, project_id=project_id, stage_name="REMOTE"
+        org_id=org_id, project_id=project_id, stage_name="<remote_labeling_stage_name>"
     )
 
     # Get task from RedBrick AI
@@ -230,7 +230,7 @@ def main(api_key, org_id, project_id):
     # Init redbrick-sdk
     redbrick.init(api_key=api_key)
     remote_labeling = redbrick.remote_label.RemoteLabel(
-        org_id=org_id, project_id=project_id, stage_name="REMOTE"
+        org_id=org_id, project_id=project_id, stage_name="<remote_labeling_stage_name>"
     )
 
     # Get task from RedBrick AI
