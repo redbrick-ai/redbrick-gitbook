@@ -1,6 +1,6 @@
 # Video Bounding Box
 
 {% hint style="success" %}
-**Coming Soon!**
+**Documentation** **Coming Soon!**
 {% endhint %}
 

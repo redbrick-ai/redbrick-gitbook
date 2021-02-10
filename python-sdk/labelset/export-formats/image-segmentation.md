@@ -1,6 +1,8 @@
 # Image Segmentation
 
 {% hint style="success" %}
-**Coming Soon!**
+**Documentation Coming Soon!**
 {% endhint %}
+
+
 
