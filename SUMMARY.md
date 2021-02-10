@@ -15,7 +15,6 @@
 ## Organizations
 
 * [What Is an Organization?](organizations/what-is-an-organization.md)
-* [Projects](organizations/projects.md)
 
 ## Data Warehouse <a id="data-warehouse-1"></a>
 
