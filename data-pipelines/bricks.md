@@ -154,13 +154,3 @@ The routing probabilities for all downstream stages must sum to 1
 
 The allowed outputs are the same as the allowed inputs, and the actual output type must match the input type. 
 
-
-
-
-
-
-
-
-
-\*\*\*\*
-
