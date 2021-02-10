@@ -1,0 +1,85 @@
+# Outbound Process and Templates
+
+## Prospecting \(Sending Connections\)
+
+1. Open LinkedIn Sales Navigator using the account you are assigned to. 
+2. Apply the relevant filters for the persona we are targeting \(go through the correct [personas](prospecting.md#what-is-the-correct-persona) for reference\). A typical search looks like this:
+   1. Enter keywords in the search for an exact string match - "computer vision".
+   2. Select the targeted geographical areas - "North America", "Asia" etc. 
+   3. Select the company headcount/size - usually all the companies between 10 to 10,000 works
+   4. Remove leads that you've already saved or reached out to. 
+3. Identify a relevant company by seeing if the employ computer vision engineers. Once you have found a[ relevant company](prospecting.md#company-persona), visit their LinkedIn sales navigator page. Within the employees list, look for the [Lead Engineers, and CXO personas](prospecting.md#employee-persona). 
+4. While sending connection request to someone you could also do the following to find more prospects easily: 
+
+   1. Look at the previous experience of the prospect. You'll probably find more companies that use computer vision.
+
+## Sending Messages \(Lead Generation\)
+
+The entire process of sending messages right now consists of cold messaging and then doing **three follow-ups** with an interval of at least **3 days.** 
+
+### Sending the first message
+
+1. Open the "Connections" page from the homepage of LinkedIn, it should be on the left under the profile photo. 
+2. Refer to the [Google Sheet](https://docs.google.com/spreadsheets/d/1HIU79tbR2qKaJlVwaPyZX6_Uja08K02o6L3jEkd27X4/edit?ts=5f22bb5f#gid=0) to check who was the last person a message was sent to. 
+3. Start sending the first message continuing from where it was left \(preferably start from the bottom and move upwards because that way you won't miss people in between\). 
+4. Update the [Google Sheet](https://docs.google.com/spreadsheets/d/1HIU79tbR2qKaJlVwaPyZX6_Uja08K02o6L3jEkd27X4/edit?ts=5f22bb5f#gid=0):
+   1. Fill in the the name and other details of the person. 
+   2. If the cell having the name turns DARK GRAY, it means we’ve already sent an email to someone with the same name:
+      1. Use the Find feature \(`ctrl+F`\) inside the sheet to look at other people with the same name
+      2. Check if the person you’re messaging right now is different and is not being re-messaged 
+   3. If the entire row turns **GRAY**, it means that either the company is already on a demo, and therefore **do not message them.** 
+   4. Now if we haven’t messaged the person before \(**Step 2**\) and if the row doesn’t turn Grey \(**Step 3**\) on entering the name of the company, that means that we're good to reach out to the person. 
+5. Copy and paste the template \(attached below\) replacing the parameters in italics according to the information on the prospect's profile and send the first message.
+
+### Sending the follow ups
+
+1. Open the profiles with the status _sent_ in the [Google Sheet](https://docs.google.com/spreadsheets/d/1HIU79tbR2qKaJlVwaPyZX6_Uja08K02o6L3jEkd27X4/edit?ts=5f22bb5f#gid=0) ****and if the person has not replied to the first message, copy paste the **follow up 1** template and send it after changing the parameters in the template. Update the status as _followup_. 
+2.  If the status is _followup_ and if the person hasn't replied yet, then do the same but use the **follow up 2 template** and update the status  as _f2._ 
+3. If the status is _f2_ and if the person hasn't replied yet, then do the same using **follow up 3 template** and update the Status at _f3._ 
+
+## Cold Message Templates
+
+{% hint style="success" %}
+**Introductory message**  
+  
+Hi _&lt;first name&gt;_,
+
+I’m reaching out to you because I'm trying to learn more about the challenges teams face in creating and managing vision training data. As a _&lt;position&gt;_ at _&lt;company name&gt;_, I thought you would be the right person to talk to about this \(if not, could you direct me to the right person?\).
+
+Have you and your team figured out a process that works well - do you manage all labeling and data management efforts in house?
+{% endhint %}
+
+{% hint style="success" %}
+**Follow up 1**  
+  
+Hi _&lt;first name&gt;_,
+
+I trust that you have had an opportunity to read my previous message, so I figured it’d be worth checking in with you again. I’m the co-founder of RedBrick AI \(https://redbrickai.com\), which is a software platform for creating and managing vision training data. 
+
+Teams use the platform to structure, automate and qualify their labeling efforts. From your profile, it looked like you might be involved in this effort at _&lt;company name&gt;_.
+
+Is this something your team manages in-house with custom-built tools? If yes, has this process worked well?
+
+Regards,
+{% endhint %}
+
+{% hint style="success" %}
+**Follow up 2**  
+  
+Hey _&lt;first name&gt;_! How’s it going?
+
+I just wanted to know if you’ve had the time to check out our website. I’d love to discuss any challenges your team faces in this space. At the very least we could have a meaningful conversation about this space, and I’d also love to show you what our team at RedBrick AI is working on. 
+
+Would you have 20 minutes either this week or next week?
+{% endhint %}
+
+{% hint style="success" %}
+**Follow up 3**  
+  
+Hi _&lt;first name&gt;_!
+
+I just wanted to touch base with you once more, and see if this is relevant/of interest to you. I’d love to discuss if/how RedBrick AI could add value to your current workflow, and would be happy to offer a free trial of our platform to demonstrate the capabilities. 
+
+Look forward to hearing from you!
+{% endhint %}
+
