@@ -4,9 +4,9 @@ The Data Warehouse is a central location to manage all your data and label asset
 
 There are three main components to the Data Warehouse:
 
-* \*\*\*\*[**Sets**](creating.md)**:** Containers for your data and label assets.
-* \*\*\*\*[**Storage Methods**](storage-methods.md)**:** Information connecting the RedBrick AI platform to the actual storage location of your data.
-* \*\*\*\*[**Taxonomies**](taxonomies.md)**:** The structure of your label classes for a particular set.
+* [Sets](creating.md)**:** Containers for your data and label assets.
+* [Storage Methods](storage-methods.md)**:** Information connecting the RedBrick AI platform to the actual storage location of your data.
+* [Taxonomies](taxonomies.md)**:** The structure of your label classes for a particular set.
 
 ## Sets
 
