@@ -20,8 +20,8 @@
 * [Overview](data-warehouse-1/overview.md)
 * [Managing Your Sets](data-warehouse-1/creating.md)
 * [Storage Methods](data-warehouse-1/storage-methods.md)
+* [Importing Data into a Dataset](data-warehouse-1/preparing-your-data.md)
 * [Taxonomies](data-warehouse-1/taxonomies.md)
-* [Preparing Your Data](data-warehouse-1/preparing-your-data.md)
 
 ## Data Pipelines
 
