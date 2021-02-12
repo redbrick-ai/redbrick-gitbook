@@ -20,8 +20,8 @@ Once you've created a dataset, you can import data into it by clicking on your n
 
 To import data into the dataset you need two things:
 
-* Specify where your data is stored through the [**storage method**](storage-methods.md) field \(read the section on Storage Methods for details\).
-* An [**Items List**](preparing-your-data.md#prepare-your-items-list) __which can be thought of as _pointers_ to your individual data-points inside your storage method. 
+* Specify where your data is stored through the [storage method](storage-methods.md) field \(read the section on Storage Methods for details\).
+* An [Items List](preparing-your-data.md#prepare-your-items-list) __which can be thought of as _pointers_ to your individual data-points inside your storage method. 
 
 Read this section for a detailed explanation of importing data into your dataset.
 
