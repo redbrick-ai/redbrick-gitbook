@@ -55,7 +55,7 @@ Say your datapoint is hosted at a public endpoint `https://path/to/data/image.pn
 
 ### Image Items List
 
-The items list for importing images into the RedBrick AI platform is simply a list of item list entries. Each entry will be a single datapoint on the RedBrick AI platform. The item list below will import three datapoints into the RedBrick AI platform.
+The items list for importing images into the RedBrick AI platform is simply a list of item list entries. Each entry will be a single datapoint on the RedBrick AI platform. The item list below will import three data points into the RedBrick AI platform.
 
 ```javascript
   [
@@ -104,7 +104,7 @@ The items list for importing images into the RedBrick AI platform is slightly di
   ]
 ```
 
-Using this items list, two video datapoints \(video1, video2\) will be imported into the platform with three frames each. The frames of each video will be ordered in the same order as their appearance in the items list.
+Using this items list, two video data points \(video1, video2\) will be imported into the platform with three frames each. The frames of each video will be ordered in the same order as their appearance in the items list.
 
 ### Programmatically Generate Items List For S3
 
