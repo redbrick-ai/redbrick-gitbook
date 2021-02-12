@@ -2,8 +2,8 @@
 
 The data that you use with the RedBrick AI platform can be stored in a number of places, including locally on your computer, on Amazon S3, or another cloud provider. To enable this flexibility, you have to define a _Storage Method_ to tell the RedBrick AI platform where your data actually lives. Currently, the two options for storage methods are:
 
-* \*\*\*\*[**AWS S3 Buckets**](storage-methods.md#configuring-aws-s3-storage-for-redbrick-ai).
-* \*\*\*\*[**Public**](storage-methods.md#configuring-local-machine-for-data-storage). This storage type includes data stored on your computer and data stored on any public server accessible by a URL.
+* [AWS S3 Buckets](storage-methods.md#configuring-aws-s3-storage-for-redbrick-ai).
+* [Public](storage-methods.md#configuring-local-machine-for-data-storage). This storage type includes data stored on your computer and data stored on any public server accessible by a URL.
 
 You can create a storage method by heading to the _Settings_ tab inside the _Data Warehouse_, and clicking on the _Create Storage_ button.
 
