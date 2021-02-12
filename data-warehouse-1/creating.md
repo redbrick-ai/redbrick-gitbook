@@ -8,15 +8,15 @@ Datasets are containers for your raw data, you and your team can manage and inte
 
 ### Creating a dataset
 
-To a create a dataset, you can head over to the Data Warehouse using the navigation sidebar. After clicking on the green 'Create Dataset' button, you need to fill out basic information and specify whether this will be a dataset for Images, or Videos. You can create a dataset _without_ importing your data, and do this at a later time. 
+To a create a dataset, you can head over to the Data Warehouse using the navigation sidebar. After clicking on the green **Create Dataset** button, you need to fill out basic information and specify whether this will be a dataset for Images, or Videos. You can create a dataset _without_ importing your data, and do this at a later time. 
 
-![](../.gitbook/assets/app.redbrickai.com_f5924ece-e355-48d2-8f9d-064c3440cef3_warehouse_search-3-2x.png)
+![](../.gitbook/assets/app.redbrickai.com_c6b249d9-63f0-4d97-99a2-e5c92f32c609_warehouse_labelset_fruits-3-2x.png)
 
 ### Importing data into a dataset
 
 Once you've created a dataset, you can import data into it by clicking on your newly created dataset and clicking on the **Import Data** button on the Dataset page.
 
-![Importing data into a dataset](../.gitbook/assets/app.redbrickai.com_f5924ece-e355-48d2-8f9d-064c3440cef3_warehouse_dataset_image-set-2x.png)
+![](../.gitbook/assets/app.redbrickai.com_c6b249d9-63f0-4d97-99a2-e5c92f32c609_warehouse_labelset_fruits-4-2x.png)
 
 To import data into the dataset you need two things:
 
