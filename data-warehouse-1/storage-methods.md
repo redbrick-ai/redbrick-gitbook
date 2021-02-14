@@ -58,7 +58,7 @@ To set the proper CORS policy, go to the Permissions tab in your S3 bucket. Unde
     <AllowedMethod>HEAD</AllowedMethod>
     <MaxAgeSeconds>3000</MaxAgeSeconds>
     <ExposeHeader>x-amz-server-side-encryption</ExposeHeader>
-    <ExposeHeader>x-amz-request-id</ExposeHeader>
+    <ExposeHeader x-amz-request-id</ExposeHeader>
     <ExposeHeader>x-amz-id-2</ExposeHeader>
     <ExposeHeader>ETag</ExposeHeader>
     <AllowedHeader>*</AllowedHeader>
