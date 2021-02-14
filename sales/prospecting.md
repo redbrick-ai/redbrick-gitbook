@@ -53,7 +53,7 @@ Typical employee titles of 'CXOs' are:
 
 These people are often the _buying decision makers -_ the people that will decide whether or not they would like to buy our solution.
 
-## Common Pitfalls
+## ⚠ Common Pitfalls
 
 Here is a list of company personas that seem relevant at first glance but actually won't be relevant for us. 
 
@@ -65,8 +65,8 @@ We need to avoid teams that work _exclusively_ on 3D computer vision. Our platfo
 
 This is very hard to tell just from looking at the company's profile, but usually comes up in the messages. If in a conversation, a person tells us that they work with _only_ unsupervised computer vision, or _only_ traditional computer vision not using deep learning/machine learning, they are incorrect persona. 
 
-### **Deep Learning, but in NLP, audio, text, Lidar etc**. 
+### **Deep Learning, but in NLP, audio, text, LIDAR etc**. 
 
-Our platform only supports image and video data types, and therefore we should filter out teams that work exclusively on NLP, audio, text, tabular data, Lidar.   
+Our platform only supports image and video data types, and therefore we should filter out teams that work exclusively on NLP, audio, text, tabular data, LIDAR.   
 
 
