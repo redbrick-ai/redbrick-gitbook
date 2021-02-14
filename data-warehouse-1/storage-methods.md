@@ -46,29 +46,30 @@ To ensure your data is private and secured, RedBrick uses pre-signed URL's to re
 
 To set the proper CORS policy, go to the Permissions tab in your S3 bucket. Under Permissions select the CORS configuration and copy paste the following block of code.
 
-```markup
-<?xml version="1.0" encoding="UTF-8"?>
-<CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
-<CORSRule>
-    <AllowedOrigin>*</AllowedOrigin>
-    <AllowedMethod>GET</AllowedMethod>
-    <AllowedMethod>PUT</AllowedMethod>
-    <AllowedMethod>POST</AllowedMethod>
-    <AllowedMethod>DELETE</AllowedMethod>
-    <AllowedMethod>HEAD</AllowedMethod>
-    <MaxAgeSeconds>3000</MaxAgeSeconds>
-    <ExposeHeader>x-amz-server-side-encryption</ExposeHeader>
-    <ExposeHeader> x-amz-request-id</ExposeHeader>
-    <ExposeHeader>x-amz-id-2</ExposeHeader>
-    <ExposeHeader>ETag</ExposeHeader>
-    <AllowedHeader>*</AllowedHeader>
-</CORSRule>
-</CORSConfiguration>
+```javascript
+[
+    {
+        "AllowedHeaders": [
+            "*"
+        ],
+        "AllowedMethods": [
+            "PUT",
+            "POST",
+            "DELETE",
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": [
+            "x-amz-server-side-encryption",
+            "x-amz-request-id",
+            "x-amz-id-2"
+        ],
+        "MaxAgeSeconds": 3000
+    }
+]
 ```
-
-This is what it looks like on the S3 console
-
-![CORS configuration on the S3 console](https://gblobscdn.gitbook.com/assets%2F-MKt1BePyOQuVTnMGssE%2F-MRUJXH5ipbyOlbH1sRl%2F-MRURR7GY8H3x8G1pZ7v%2Fcors.png?alt=media&token=36c312c5-b587-4aa6-9333-ebe72f08f14e)
 
 #### Access and Secret Keys <a id="access-and-secret-keys"></a>
 
