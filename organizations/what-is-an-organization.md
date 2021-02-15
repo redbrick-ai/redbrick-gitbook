@@ -14,6 +14,10 @@ As an owner, or admin of your organization \(see [documentation on permissions](
 
 Under the **Members** tab you will be able to see all the members in the current organization, as well as the permission level. Under the **Invite People** tab, you can invite a team member to collaborate, by entering the email they have used to sign up with a RedBrick AI account, and selecting their permission level. 
 
+{% hint style="info" %}
+The users that you have invited must first signup for a RedBrick AI account, and they will then see the organization invite on the organization page when they log in.
+{% endhint %}
+
 ## Organization Usage
 
 As an admin, or organization owner, under the **Usage tab** on the organization settings page, you will be able to monitor the platform usage for your entire organizations. The two metrics tracked over here are the number of hours spent on the labeling tools, and the number of task events. 
