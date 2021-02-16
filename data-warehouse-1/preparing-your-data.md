@@ -1,5 +1,7 @@
 # Importing Data into a Dataset
 
+{% embed url="https://youtu.be/WPEfWHO2xRM" caption="Video tutorial for creating a dataset, and integrating with AWS S3." %}
+
 The data that you use with the RedBrick AI platform can be stored in a number of places, including locally on your computer, on Amazon S3, or another cloud provider. The RedBrick AI data warehouse integrates with your existing storage method to give you full control over the data privacy and access. 
 
 To import data into your dataset, you need to: 
