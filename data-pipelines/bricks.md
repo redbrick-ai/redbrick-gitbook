@@ -154,3 +154,54 @@ The routing probabilities for all downstream stages must sum to 1
 
 The allowed outputs are the same as the allowed inputs, and the actual output type must match the input type. 
 
+## brightics-aia-autolabel
+
+`brightics-aia-autolabel` is a joint offering with Samsung SDS Brightics AI Accelerator. This brick allows users to use Samsung SDS Active Learning algorithm AutoLabel. Check out this tutorial for an end-to-end explanation of how to use this offering.   
+  
+The basic functionality of this brick is as follows - raw data is fed to the stage via the input port. Users can send this data downstream in the pipeline to be labeled via the label port \(this could be in a single `manual-labeling` stage, or a more complicated sub-pipeline including quality assurance etc\).
+
+After being labeled, this data is fed back to the `brightics-aia-autolabel` stage via the feedback port. This labeled data is used to train AutoLabel, which then automatically labels the remaining data in the stage, and re-orders the internal queue such that the next time data is sent downstream via the label port, it will included auto labels and first send the low confidence labels. 
+
+Once the AutoLabel accuracy is satisfactory \(in practice, AutoLabel will be able to automatically label your dataset once you have manually labeled 10-20% of it\), you can end this iterative cycle by flushing tasks via the Flush Port. This is usually sent to a `labelset-output` stage, but can be configured to be further labeled or reviewed. 
+
+Details of the internal workings are covered in the sections below. 
+
+![brightics-aia-autolabel configuration](../.gitbook/assets/group-27-2x.png)
+
+{% hint style="info" %}
+Currently the `brightics-aia-autolabel`brick only supports image bounding box.
+{% endhint %}
+
+### Configuration
+
+* **Input Port.** 
+* **Labeling Port.**
+* **Flush Port.**
+* **Feedback Port.**
+
+The `brightics-aia-autolabel` brick has two components and three actions associated with it, they are covered below. 
+
+### Components
+
+The `brightics-aia-autolabel` brick has two main components that enable the Active Learning process. 
+
+1. **Task Queue.** The task queue contains all the data/labels queued in this stage, with the lowest confidence tasks at the top of the queue. Before the first ****training cycle, the queue is randomly sorted. 
+
+   \*\*\*\*
+
+2. **Training Set.** Tasks that have been manually labeled get added to the training set. AutoLabel is trained on this training set.
+
+### Actions
+
+1. **Send Batch.** The send batch action sends a batch of data from the top of the task queue inside `[brightics-aia-autolabel]`,  to the downstream `[manual-labeling]` step.  The batch size is is configurable in the stages dashboard, and can be changed every time a batch is sent to manual labeling.  
+2. **Trigger Training.** The trigger training action trains AutoLabel using the labeled data inside the training set. At the end of a training cycle, AutoLabel will generate predictions with confidence values on the task queue. The task queue will be re-ordered to have the least confident predictions at the top of the queue at the end of every training cycle.  ****
+3. **Flush Tasks.** The flush task action sends all the tasks \(data and labels\) queued in `[brightics-aia-autolabel]` to the `[labelset-output]` stage to be stored in the Data Warehouse. 
+
+#### Allowed Inputs
+
+* `image_bbox`
+
+#### Allowed Outputs
+
+* `image_bbox`
+

@@ -51,6 +51,7 @@ The second important component of pipelines are the routing between bricks. Each
 | `expert-review` | Quality Assurance | `expert-review` allows you to review data and or labels and conditionally route the data using a pass/fail option. You can optionally edit your labels within this brick. | Boolean |
 | `feedback` | Flow | `feedback` allows you to send data to a brick upstream in your pipeline. | Feedback |
 | `task-random-filter` | Flow | `task-random-filter` allows you to route your data to several downstream stages based on some percentage i.e. send 50% of data to one downstream stage, and 50% to another.  | Multi |
+| `brightics-aia-autolabel` | Labeling | `brightics-aia-autolabel` is a joint offering with Samsung SDS Brightics AI Accelerator. This brick allows users to use Samsung SDS Active Learning algorithm AutoLabel.  | Multi |
 
 ## Input/Output Types
 
