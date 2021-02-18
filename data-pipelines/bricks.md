@@ -4,7 +4,7 @@ description: >-
   pipelines, and the possible configuration.
 ---
 
-# Bricks
+# Pipeline Bricks
 
 {% hint style="success" %}
 For a summary of all the bricks have a look at the following [section](overview.md#bricks-overview). For a summary of the input and output types, have a look at this [section.](overview.md#input-output-types) For a list of all the label type codes look at this [section](../data-labeling/overview.md).
