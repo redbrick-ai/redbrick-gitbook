@@ -6,6 +6,12 @@ Organizations are containers within which projects, datasets, pipelines etc live
 
 Once you create an organization, you will be able to invite members to collaborate with. Note by default, you will only be able to create one organization, but will be able to be a part of multiple organizations. If you wish to create more than one organization, please reach out to us at [contact@redbrickai.com](mailto:contact@redbrickai.com).
 
+{% hint style="success" %}
+You might need your **organization ID** for various different things on the platform. You can find your organization ID in the URL when you are logged into RedBrick AI.   
+  
+`https://app.redbrickai.com/<org_id>/`
+{% endhint %}
+
 ## Organization Invites
 
 As an owner, or admin of your organization \(see [documentation on permissions](what-is-an-organization.md#permissions)\), you will be able to invite your colleagues to join your RedBrick AI organization. To invite collaborators, go to organization settings page, accessible by clicking the top left of the sidebar. 
