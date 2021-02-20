@@ -53,3 +53,7 @@
     * [Bounding Box](python-sdk/entities/labels/bounding-box.md)
     * [Classification](python-sdk/entities/labels/classification.md)
 
+## Useful Links
+
+* [🛠Report a Bug](https://forms.gle/MdtVSGUsWtpaLDYq8)
+
