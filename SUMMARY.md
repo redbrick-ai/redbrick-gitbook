@@ -10,6 +10,7 @@
 ## Tutorials
 
 * [SDK Model Labeling](tutorials/image-sdk-model-labeling.md)
+* [Integrate Your AWS S3 Bucket](tutorials/integrate-your-aws-s3-bucket.md)
 
 ## Organizations
 
@@ -27,6 +28,7 @@
 
 * [Overview](data-pipelines/overview.md)
 * [Pipeline Bricks](data-pipelines/bricks.md)
+* [Tasks](data-pipelines/tasks.md)
 * [Creating a Pipeline](data-pipelines/creating-a-pipeline.md)
 
 ## Data Labeling
