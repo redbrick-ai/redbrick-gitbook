@@ -42,6 +42,8 @@
 ## Python SDK
 
 * [SDK Overview](python-sdk/sdk-overview.md)
+* [Datapoint Creator](python-sdk/datapoint-creator.md)
+* [Export](python-sdk/export.md)
 * [Remote Labeling](python-sdk/untitled.md)
 * [Labelset](python-sdk/labelset/README.md)
   * [Export Formats](python-sdk/labelset/export-formats/README.md)
