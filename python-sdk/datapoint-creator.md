@@ -1,7 +1,7 @@
 ---
 description: >-
   The datapoint creator is an interface to programmatically upload datapoint
-  data (just images or images with labels) to the backend.
+  data (just images or images with labels) to the RedBrick AI Data Warehouse.
 ---
 
 # Datapoint Creator
@@ -28,7 +28,7 @@ redbrick.dataset.DatapointCreator(
 {% endtab %}
 
 {% tab title="Methods" %}
-```
+```python
 create_datapoint(
     name: str, 
     items: List[str], 

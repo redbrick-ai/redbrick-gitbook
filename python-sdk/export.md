@@ -1,7 +1,7 @@
 ---
 description: >-
   The export module provides a way to export both your data and labels to your
-  local machine with no effort.
+  local machine with little effort.
 ---
 
 # Export

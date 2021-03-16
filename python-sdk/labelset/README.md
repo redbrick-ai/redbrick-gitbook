@@ -2,6 +2,10 @@
 
 The labelset module gives you programmatic access to the labelsets within your organization. Using the labelset module, you can export labels in various formats, read the data into memory, or inspect the labels.
 
+{% hint style="warning" %}
+The Labelset module is deprecated and actively supported only for versions **0.2.16** and before. To export your labels with newer version of the RedBrick SDK, please use the [Export module](../export.md).
+{% endhint %}
+
 ## Overview
 
 ```python
