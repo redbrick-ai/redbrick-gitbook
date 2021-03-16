@@ -45,7 +45,7 @@
 * [Datapoint Creator](python-sdk/datapoint-creator.md)
 * [Export](python-sdk/export.md)
 * [Remote Labeling](python-sdk/untitled.md)
-* [Labelset](python-sdk/labelset/README.md)
+* [Labelset \(deprecated\)](python-sdk/labelset/README.md)
   * [Export Formats](python-sdk/labelset/export-formats/README.md)
     * [Image Bounding Box](python-sdk/labelset/export-formats/image-bounding-box.md)
     * [Video Bounding Box](python-sdk/labelset/export-formats/video-bounding-box.md)

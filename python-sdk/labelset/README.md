@@ -1,4 +1,4 @@
-# Labelset
+# Labelset \(deprecated\)
 
 The labelset module gives you programmatic access to the labelsets within your organization. Using the labelset module, you can export labels in various formats, read the data into memory, or inspect the labels.
 

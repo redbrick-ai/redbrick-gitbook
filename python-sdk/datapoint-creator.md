@@ -38,9 +38,9 @@ create_datapoint(
 
 | Parameter | Description |
 | :--- | :--- |
-| `name` | Name of current datapoint. |
-| `items` | List of strings containing URLs to image data. Single URL if Image data; multiple URLs if Video data. |
-| `labels` | **Optional**. List of label dictionaries in redbrick format. If a **label set** **name** was passed to DatapointCreator object, then this parameter must be specified. |
+| `name` | Name of current datapoint. This needs to be a **unique** string for each datapoint in a dataset.  |
+| `items` | List of strings containing URLs to image data. Single URL if image data; multiple URLs \(corresponding to video frames\) if video data. |
+| `labels` | **Optional**. List of label dictionaries in redbrick format. If a `label_set_name` ****was passed to `DatapointCreator` object, then this parameter must be specified. |
 {% endtab %}
 {% endtabs %}
 
