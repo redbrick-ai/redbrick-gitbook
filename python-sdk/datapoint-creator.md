@@ -46,7 +46,7 @@ create_datapoint(
 
 ## Usage
 
-**Creating an DatapointCreator reference**
+**Creating a DatapointCreator reference**
 
 To create a DatapointCreator object, you need to do the following.
 

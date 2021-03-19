@@ -42,9 +42,10 @@
 ## Python SDK
 
 * [SDK Overview](python-sdk/sdk-overview.md)
+* [Dataset Loader](python-sdk/dataset-loader.md)
 * [Datapoint Creator](python-sdk/datapoint-creator.md)
 * [Export](python-sdk/export.md)
-* [Remote Labeling](python-sdk/untitled.md)
+* [Remote Labeling](python-sdk/remote-labeling.md)
 * [Labelset \(deprecated\)](python-sdk/labelset/README.md)
   * [Export Formats](python-sdk/labelset/export-formats/README.md)
     * [Image Bounding Box](python-sdk/labelset/export-formats/image-bounding-box.md)
