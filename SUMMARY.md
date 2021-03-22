@@ -62,4 +62,5 @@
 
 * [Report a Bug](https://forms.gle/MdtVSGUsWtpaLDYq8)
 * [Feedback & Feature Requests](https://forms.gle/aubwHijP98ctQLX5A)
+* [Privacy Policy](https://drive.google.com/drive/u/0/folders/1N-kAd4W8HD51TQiGP2D9cPhGAyD-mLIY)
 
