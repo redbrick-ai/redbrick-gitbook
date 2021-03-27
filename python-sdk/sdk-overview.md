@@ -3,7 +3,7 @@
 The RedBrick Python SDK is a tool to interact programmatically with the RedBrick AI platform. The SDK can is a developer friendly way to carry out key operations like data and label export.
 
 {% hint style="info" %}
-The RedBrick SDK works on Mac, windows, and linux, and is available on [pypi](https://pypi.org/project/redbrick-sdk/). The SDK is compatible with **Python 3.7.0+.** 
+The RedBrick SDK works on Mac, windows, and linux, and is available on [pypi](https://pypi.org/project/redbrick-sdk/). The SDK is compatible with **Python 3.6.0+.** 
 {% endhint %}
 
 ### Getting Started
