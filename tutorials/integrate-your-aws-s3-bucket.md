@@ -6,5 +6,5 @@ This tutorial is a step by step explanation of how you can create an AWS S3 buck
 
 **Troubleshooting:**
 
-For your first upload, in order to verify that your S3 bucket is properly configured and your items list is correctly formatted, upload only a few images. During small uploads, the existence of each image is verified. This step is skipped for large uploads for performance reasons.
+For your first upload use only a few images. This will make it easier to verify that your S3 bucket is properly configured and your items list is correctly formatted. During small uploads, the existence of each file in the S3 bucket is checked. This step is skipped for large uploads for performance reasons.
 
