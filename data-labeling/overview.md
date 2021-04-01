@@ -91,3 +91,11 @@ Once you have selected the label you want to edit, you can edit all its properti
 
 ![Editing labels](../.gitbook/assets/ezgif.com-gif-maker-8-.gif)
 
+## Labeling Comments
+
+The labeling tool allows you to leave comments about issues, questions and feedback on the labeling. The comments are accessible via the comments tab on the top left corner of the platform. 
+
+![Comments tab is accessible via the left sidebar on the labeling tool](../.gitbook/assets/screen-shot-2021-04-01-at-4.43.51-pm.png)
+
+Your team members can leave comments at any stage of the labeling workflow, and the interface will display the full history of the comments along with when it was created, which user created the comments, and at which stage in the pipeline the comment was created. 
+
