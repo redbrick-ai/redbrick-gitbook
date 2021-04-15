@@ -83,3 +83,23 @@ I just wanted to touch base with you once more, and see if this is relevant/of i
 Look forward to hearing from you!
 {% endhint %}
 
+## Generic Engineer Message 
+
+{% hint style="success" %}
+**To a LinkedIn connection**  
+  
+Hi &lt;first name&gt;!   
+  
+Thanks for the accepting the connection request! I'm shooting in the dark, but from your LinkedIn profile I figured you'd be involved with the data-labeling efforts at &lt;company name&gt;. I was curious to understand how your team labels data and manages the process?   
+  
+I'm the co-founder of RedBrick AI - our platform \([https://redbrickai.com](https://redbrickai.com/)\) is used by teams to automate and structure their computer vision data-labeling efforts - our customers have seen upto 80% automation in the manual efforts. Teams also can leverage our data-management, collaboration, and pipelining features to build robust, scalable, and qualified labeling workflows.   
+  
+If you get a chance to look through our website, i'd love to get your feedback and know if this seems interesting for your team? Would you be open to explore?
+{% endhint %}
+
+## Generic CXO Message
+
+{% hint style="success" %}
+
+{% endhint %}
+
