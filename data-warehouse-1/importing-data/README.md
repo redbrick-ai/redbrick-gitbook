@@ -3,7 +3,7 @@
 The data that you use with the RedBrick AI platform can be stored in a number of places, including locally on your computer, on Amazon S3, or another cloud provider. To enable this flexibility, you have to define a _Storage Method_ to tell the RedBrick AI platform where your data actually lives. Currently, the two options for storage methods are:
 
 * [AWS S3 Buckets](../storage-methods.md#configuring-aws-s3-storage-for-redbrick-ai).
-* Google Cloud Storage.
+* [Google Cloud Storage.](configuring-gcs-storage.md)
 * Azure Blob Storage.
 * [Public](../storage-methods.md#configuring-local-machine-for-data-storage). This storage type includes data stored on your computer and data stored on any public server accessible by a URL.
 
