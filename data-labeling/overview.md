@@ -32,7 +32,7 @@ The sidebar contains all the relevant information for adding, and modifying labe
 
 The top bar contains high level actions like submitting/saving tasks and accepting/reviewing tasks during quality assurance. Furthermore, the top bar contains high level information about each task - like: 
 
-* **The data point name**: the file path, or the url of the task \(same as the [items list entry](../data-warehouse-1/preparing-your-data.md#prepare-your-items-list)\)
+* **The data point name**: the file path, or the url of the task \(same as the [items list entry]()\)
 * **Timer**: the amount of time you have spent on this particular data point. This information is stored and provided to admins. 
 
 

@@ -19,10 +19,10 @@ An organization is the container inside which all your assets \(like projects, d
 
 All projects start with data, and on the RedBrick platform, you can manage raw datasets inside the [data warehouse.](../data-warehouse-1/overview.md#datasets) Datasets are containers for your raw data - we understand the importance of data privacy and security; therefore, we have separated the notion of datasets from data storage. 
 
-Your actual data can be stored on your own servers, or your own cloud servers like AWS S3. The RedBrick Data Warehouse will integrate with your [storage method](../data-warehouse-1/storage-methods.md), and securely import data into a dataset. Follow along with the [following guide](../data-warehouse-1/preparing-your-data.md) to prepare data for import. Once you have prepared your dataset - 
+Your actual data can be stored on your own servers, or your own cloud servers like AWS S3. The RedBrick Data Warehouse will integrate with your [storage method](), and securely import data into a dataset. Follow along with the [following guide]() to prepare data for import. Once you have prepared your dataset - 
 
-* Create your [storage method](../data-warehouse-1/storage-methods.md) to tell RedBrick AI where your data is stored. 
-* [Create a dataset](../data-warehouse-1/creating.md#creating-a-dataset), and import your data using an [items list](../data-warehouse-1/preparing-your-data.md#prepare-your-items-list).
+* Create your [storage method]() to tell RedBrick AI where your data is stored. 
+* [Create a dataset](../data-warehouse-1/creating.md#creating-a-dataset), and import your data using an [items list]().
 
 ![Create a dataset and import data](../.gitbook/assets/ezgif.com-gif-maker-9-.gif)
 

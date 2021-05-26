@@ -24,8 +24,6 @@
   * [Configuring AWS S3 Storage](data-warehouse-1/importing-data/aws-s3.md)
   * [Configuring GCS Storage](data-warehouse-1/importing-data/configuring-gcs-storage.md)
   * [Local Storage](data-warehouse-1/importing-data/local-storage.md)
-* [Storage Methods](data-warehouse-1/storage-methods.md)
-* [Importing Data into a Dataset](data-warehouse-1/preparing-your-data.md)
 * [Taxonomies](data-warehouse-1/taxonomies.md)
 
 ## Data Pipelines

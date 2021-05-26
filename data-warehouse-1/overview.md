@@ -5,7 +5,7 @@ The Data Warehouse is a central location to manage all your data and label asset
 There are three main components to the Data Warehouse:
 
 * [Sets](creating.md)**:** Containers for your data and label assets.
-* [Storage Methods](storage-methods.md)**:** Information connecting the RedBrick AI platform to the actual storage location of your data.
+* [Storage Methods]()**:** Information connecting the RedBrick AI platform to the actual storage location of your data.
 * [Taxonomies](taxonomies.md)**:** The structure of your label classes for a particular set.
 
 ## Sets
@@ -28,12 +28,10 @@ Inside the labelset page, the viewer has three components - the table on the lef
 
 ## Storage Methods
 
-The data that you use with the RedBrick AI platform can be stored in a number of places, including locally on your computer, on Amazon S3, or another cloud provider. To enable this flexibility, you have to define a [Storage Method](storage-methods.md) to tell the RedBrick AI platform where your data actually lives. Currently, the two options for storage methods are:
+The data that you use with the RedBrick AI platform can be stored in a number of places, including locally on your computer, on Amazon S3, or another cloud provider. To enable this flexibility, you have to define a [Storage Method]() to tell the RedBrick AI platform where your data actually lives. Currently, the two options for storage methods are:
 
-* [AWS S3](preparing-your-data.md#configuring-aws-s3-storage-for-redbrick-ai) Buckets
-* [Public](preparing-your-data.md#configuring-local-machine-for-data-storage). This storage type includes data stored on your computer and data stored on any public server accessible by a URL.
-
-{% page-ref page="storage-methods.md" %}
+* [AWS S3]() Buckets
+* [Public](). This storage type includes data stored on your computer and data stored on any public server accessible by a URL.
 
 ## Taxonomies
 
