@@ -151,7 +151,7 @@ Hi XYZ,
   
 I hope you had a chance to review my prevous email. I wanted to touch base with you regarding some of the use cases that we solve for our current clients.  
   
-One of those use cases is to structure, customize and manage your data labelling workflows with robust pipelines. The Redbrick AI platform enabes you to maintain deep insights and helps you to track exactly what happens to all your data throughout the lifecycle of your project and fix issues sooner rather than later.  
+One of those use cases is to structure, customize and manage your data labelling workflows with robust pipelines. The Redbrick AI platform enabes you to maintain deep insights and helps you to track exactly what happens to all your data throughout the lifecycle of your project and fix issues sooner rather than later. You can also control your data access but storing your data on Redbrick or integrate your current storage method with Redbrick AI warehouse.   
   
 The screenshot below should help you understand this feature.  
   
@@ -166,5 +166,18 @@ Regards,
 
 **Followup email\(based on 'automate' use case\)**:  
   
+  
+Hi XYZ,  
+  
+One of the most common problem our current clients used to face was the amount of time it took them to label the data manually. Through our partnership with Samsung, Redbrick enables you to save 80% of your time that you would otherwise spend labelling your data.   
+  
+You only have to label a small portion of your dataset, and train Samsung SDS AutoLabel to automatically label the rest of your data. Whether it's you'r own model, or AutoLabel, you can build iterative human-in-the-loop workflows to automate labeling and shorten the feedback loop between model training and human labeling.  
+  
+\[Attach screenshot\]  
+  
+We have several more features that will help you save time and human resources on a large scale. I would be glad to show you these features and much more over a short 30 mins call. Let me know of a convenient time slot and I will share an invite accordingly. Alternatively, feel free to book a slot on my calendar. Looking forward to our conversation.  
+  
+Regards,  
+\_\_\_\_\_\_\_\_\_\_\_\_
 {% endhint %}
 
