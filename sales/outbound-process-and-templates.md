@@ -117,14 +117,6 @@ If you get a chance to look through our website, i'd love to get your feedback a
 
 ## Email Templates
 
-
-
-
-
-## Email Templates
-
-
-
 {% hint style="success" %}
 **First Email**
 
