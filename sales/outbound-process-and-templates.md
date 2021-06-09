@@ -144,5 +144,27 @@ I would be glad to showcase our offering to you and show you how we accomplish t
   
 Regards,  
 \_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Follow up email \(based on 'structure' use case\):**  
+  
+Hi XYZ,  
+  
+I hope you had a chance to review my prevous email. I wanted to touch base with you regarding some of the use cases that we solve for our current clients.  
+  
+One of those use cases is to structure, customize and manage your data labelling workflows with robust pipelines. The Redbrick AI platform enabes you to maintain deep insights and helps you to track exactly what happens to all your data throughout the lifecycle of your project and fix issues sooner rather than later.  
+  
+The screenshot below should help you understand this feature.  
+  
+\[Attach relevant screenshot\]  
+  
+We have more features that help you not only structure your workflows, but also cover any other use cases and pain points that you might currently have in your data labelling process.  
+  
+I would be glad to give you a demo of our platform over a short  30 minuntes call some time this week or next week. Let me know a convenient time slot or book a slot on your own on my calendar. Looking forward to our conversation.  
+  
+Regards,  
+\_\_\_\_\_\_\_\_\_
+
+**Followup email\(based on 'automate' use case\)**:  
+  
 {% endhint %}
 
