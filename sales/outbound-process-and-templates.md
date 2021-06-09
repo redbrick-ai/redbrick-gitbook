@@ -110,6 +110,39 @@ I'm the co-founder of RedBrick AI - our platform \([https://redbrickai.com](http
   
 Specifically, in the healthcare space, teams are able to easily enable collaboration between clinicians/annotators/engineers, can project manage complex review workflows, while leverage automation through Active Learning strategies.   
   
-If you get a chance to look through our website, i'd love to get your feedback and know if this seems interesting for your team? Would you be open to explore?
+If you get a chance to look through our website, i'd love to get your feedback and know if this seems interesting for your team? Would you be open to ex
+{% endhint %}
+
+
+
+## Email Templates
+
+{% hint style="success" %}
+**First Email**
+
+**Skeleton**:
+
+Hi \_\_\_\_\_\_,
+
+**Email hook**- Based on our own research on the company and prospect. For example, if the prospect has spoken about something in a conference/article that is relevant to what we do.   
+  
+Alternatively, it can be a generic hook regarding a common pain-point that prospect's industry faces with regards to data labelling etc.  
+  
+**Main Body**- Brief introduction of Redbrick and how it can be useful to address the pain point \(mentioned in the hook\).  
+  
+**Call to action**- Close ended action statement- asking prospect for a time slot for product demo/ sharing calendar link. Define clear cut timelines.
+
+**Template Example\(for a healthcare CXO\)**:  
+  
+Hi XYZ,  
+  
+In a time when the healthcare sector is already under a lot of strain, medical image labelling gains even more importance. Labelling process usually involves a lot of man hours and money and the resources that we save here can be better used elsewhere.  
+  
+This is where we at Redbrick AI come in. RedBrick AI is a software platform for creating and managing computer vision training data. Our current clients use the platform to structure, automate and qualify their labeling efforts in a collaborative way. With Redbrick AI's platform you can perform your labelling process much faster and in a much more cost effective manner.  
+  
+I would be glad to showcase our offering to you and show you how we accomplish this process. Let's connect on a quick 30 mins call sometime this week or next week. Feel free to book a slot on my calendar.  
+  
+Regards,  
+\_\_\_\_\_\_\_\_\_\_\_\_\_
 {% endhint %}
 
