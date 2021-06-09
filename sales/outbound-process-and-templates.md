@@ -97,7 +97,7 @@ I'm the co-founder of RedBrick AI - our platform \([https://redbrickai.com](http
 If you get a chance to look through our website, i'd love to get your feedback and know if this seems interesting for your team? Would you be open to explore?
 {% endhint %}
 
-## Healthcare CXO Message
+## Healthcare Message
 
 {% hint style="success" %}
 **To a LinkedIn connection**
@@ -113,9 +113,15 @@ Specifically, in the healthcare space, teams are able to easily enable collabora
 If you get a chance to look through our website, i'd love to get your feedback and know if this seems interesting for your team? Would you be open to ex
 {% endhint %}
 
+## Email Templates
+
+
+
 
 
 ## Email Templates
+
+
 
 {% hint style="success" %}
 **First Email**
