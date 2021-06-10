@@ -171,7 +171,7 @@ Hi XYZ,
   
 One of the most common problem our current clients used to face was the amount of time it took them to label the data manually. Through our partnership with Samsung, Redbrick enables you to save 80% of your time that you would otherwise spend labelling your data.   
   
-You only have to label a small portion of your dataset, and train Samsung SDS AutoLabel to automatically label the rest of your data. Whether it's you'r own model, or AutoLabel, you can build iterative human-in-the-loop workflows to automate labeling and shorten the feedback loop between model training and human labeling.  
+You only have to label a small portion of your dataset, and train Samsung SDS AutoLabel to automatically label the rest of your data. Whether it's your own model, or AutoLabel, you can build iterative human-in-the-loop workflows to automate labeling and shorten the feedback loop between model training and human labeling.  
   
 \[Attach screenshot\]  
   
@@ -179,5 +179,23 @@ We have several more features that will help you save time and human resources o
   
 Regards,  
 \_\_\_\_\_\_\_\_\_\_\_\_
+
+**Follow up email\(based on 'qualify and collaborate' use case\)**  
+  
+Hi XYZ,  
+  
+Till now, we have shown how you can use Redbrick to structure and maintain workflows and automate your data labelling processes.   
+  
+With the help of our platform, you can have your entire team working with same tool and processes from a single platform. Not only this, you can assign your team members with varying permission levels to managr your labelling processes. This way, you can also monitor their performance through deep insight tools available to you.  
+  
+\[Attach screenshot\]  
+  
+I would be glad to show you these features and much more over a short 30 mins call. Let me know of a convenient time slot and I will share an invite accordingly. Alternatively, feel free to book a slot on my calendar. Looking forward to our conversation.  
+  
+Regards,  
+\_\_\_\_\_\_\_\_\_
+
+  
+****
 {% endhint %}
 
