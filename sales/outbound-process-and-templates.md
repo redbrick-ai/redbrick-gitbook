@@ -132,19 +132,40 @@ Alternatively, it can be a generic hook regarding a common pain-point that prosp
   
 **Call to action**- Close ended action statement- asking prospect for a time slot for product demo/ sharing calendar link. Define clear cut timelines.
 
-**Template Example\(for a healthcare CXO\)**:  
+**Template Example \(for a healthcare CXO\)**:  
   
-Hi XYZ,  
-  
-In a time when the healthcare sector is already under a lot of strain, medical image labelling gains even more importance. Labelling process usually involves a lot of man hours and money and the resources that we save here can be better used elsewhere.  
-  
-This is where we at Redbrick AI come in. RedBrick AI is a software platform for creating and managing computer vision training data. Our current clients use the platform to structure, automate and qualify their labeling efforts in a collaborative way. With Redbrick AI's platform you can perform your labelling process much faster and in a much more cost effective manner.  
-  
-I would be glad to showcase our offering to you and show you how we accomplish this process. Let's connect on a quick 30 mins call sometime this week or next week. Feel free to book a slot on my calendar.  
-  
-Regards,  
-\_\_\_\_\_\_\_\_\_\_\_\_\_
+Hi XYZ,
 
+\(**Not accepted**\) I came across your profile on LinkedIn and was interested to connect to understand more about the data efforts at &lt;company name&gt;.  
+  
+\(**Accepted**\) Thanks for the accepting the LinkedIn connection request!   
+  
+\(**Hook based on company/industry**\) While engaging with other professionals applying computer vision in healthcare, we've noticed that teams struggle specifically with expensive nature of expert labeling, ad-hoc QA processes  and difficulty collaborating effectively. I'm curious how your team manages these efforts?  
+  
+To address these issues, we have built RedBrick AI - a software platform to structure, automate and qualify labeling efforts. Our current small and enterprise customers have seen up to 80% automation in their manual efforts and an order of magnitude increase in label quality.    
+  
+If you had the chance to visit our website \(https://redbrickai.com\) i'm curious if it's relevant? Would you be open to a short conversation this week/next week? Feel free to book a slot on my calendar.  
+  
+Regards,
+{% endhint %}
+
+### Hooks
+
+{% hint style="info" %}
+**Generic**
+
+While engaging with other professionals applying computer vision in &lt;industry&gt;, we've noticed that teams struggle with ad-hoc and manual labeling processes. I'm curious how your team manages these efforts?
+{% endhint %}
+
+{% hint style="info" %}
+**Healthcare**
+
+While engaging with other professionals applying computer vision in healthcare, we've noticed that teams struggle specifically with expensive nature of expert labeling, ad-hoc QA processes  and difficulty collaborating effectively. I'm curious how your team manages these efforts?
+{% endhint %}
+
+### Follow ups
+
+{% hint style="success" %}
 **Follow up email \(based on 'structure' use case\):**  
   
 Hi XYZ,  
@@ -161,9 +182,10 @@ We have more features that help you not only structure your workflows, but also 
   
 I would be glad to give you a demo of our platform over a short  30 minuntes call some time this week or next week. Let me know a convenient time slot or book a slot on your own on my calendar. Looking forward to our conversation.  
   
-Regards,  
-\_\_\_\_\_\_\_\_\_
+Regards,
+{% endhint %}
 
+{% hint style="success" %}
 **Followup email\(based on 'automate' use case\)**:  
   
   
