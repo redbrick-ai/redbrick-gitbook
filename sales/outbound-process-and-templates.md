@@ -170,9 +170,9 @@ While engaging with other professionals applying computer vision in healthcare, 
   
 Hi XYZ,  
   
-I hope you had a chance to review my prevous email. I wanted to touch base with you regarding some of the use cases that we solve for our current clients.  
+I hope you had a chance to review my previous email. I wanted to touch base with you regarding some of the use cases that we solve for our current clients.  
   
-One of those use cases is to structure, customize and manage your data labelling workflows with robust pipelines. The Redbrick AI platform enabes you to maintain deep insights and helps you to track exactly what happens to all your data throughout the lifecycle of your project and fix issues sooner rather than later. You can also control your data access but storing your data on Redbrick or integrate your current storage method with Redbrick AI warehouse.   
+One of those use cases is to structure, customize and manage your data labelling workflows with robust pipelines. The Redbrick AI platform enables you to maintain deep insights and helps you to track exactly what happens to all your data throughout the lifecycle of your project and fix issues sooner rather than later. You can also control your data access but storing your data on Redbrick or integrate your current storage method with Redbrick AI warehouse.   
   
 The screenshot below should help you understand this feature.  
   
@@ -180,7 +180,7 @@ The screenshot below should help you understand this feature.
   
 We have more features that help you not only structure your workflows, but also cover any other use cases and pain points that you might currently have in your data labelling process.  
   
-I would be glad to give you a demo of our platform over a short  30 minuntes call some time this week or next week. Let me know a convenient time slot or book a slot on your own on my calendar. Looking forward to our conversation.  
+I would be glad to give you a demo of our platform over a short  30 minutes call some time this week or next week. Let me know a convenient time slot or book a slot on your own on my calendar. Looking forward to our conversation.  
   
 Regards,
 {% endhint %}
@@ -191,17 +191,23 @@ Regards,
   
 Hi XYZ,  
   
-One of the most common problem our current clients used to face was the amount of time it took them to label the data manually. Through our partnership with Samsung, Redbrick enables you to save 80% of your time that you would otherwise spend labelling your data.   
+One of the most common problems our current customers used to face was the time and effort it took to manually label a dataset, and the difficulty in automating the process. To solve this, our platform \(https://redbrickai.com\), offers state of the art tools to help teams automate up to 80% their efforts through a human-in-the-loop / Active Learning approach.   
   
-You only have to label a small portion of your dataset, and train Samsung SDS AutoLabel to automatically label the rest of your data. Whether it's your own model, or AutoLabel, you can build iterative human-in-the-loop workflows to automate labeling and shorten the feedback loop between model training and human labeling.  
+We have partnered with Samsung SDS to offer teams with a simple to use high-performance Active Learning solution - iteratively label the smallest informative portion of your dataset, and automate the rest. You can also easily integrate your own models into the RedBrick AI platform to iteratively label, and train.  
   
-\[Attach screenshot\]  
+  &lt;screenshots below&gt;  
   
-We have several more features that will help you save time and human resources on a large scale. I would be glad to show you these features and much more over a short 30 mins call. Let me know of a convenient time slot and I will share an invite accordingly. Alternatively, feel free to book a slot on my calendar. Looking forward to our conversation.  
+We have several other features that are targeted to reduce the manual effort in labeling data. If you are intrigued, I would be glad to show you these features and much more over a short 30 minute call. Would you be open to connect this week / next week? Alternatively, feel free to book a slot on my calendar. Looking forward to our conversation.  
   
 Regards,  
 \_\_\_\_\_\_\_\_\_\_\_\_
+{% endhint %}
 
+![](../.gitbook/assets/image-3-.png)
+
+Our AL solution automated the labeling with 100% accuracy after only 20% manual labeling \(real healthcare dataset\).
+
+{% hint style="success" %}
 **Follow up email\(based on 'qualify and collaborate' use case\)**  
   
 Hi XYZ,  
