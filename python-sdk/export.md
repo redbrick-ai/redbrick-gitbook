@@ -43,6 +43,12 @@ export(
 {% endtab %}
 {% endtabs %}
 
+{% hint style="info" %}
+**For new projects \(created after Jun 20 2021, or** [**without the deprecated tag**](../product-updates/june-2021.md#datasets-and-labelsets-moved-inside-projects) **on the header\).** 
+
+Labelsets automatically get created for new projects, so you can export the data by using the following key in as the `labelset_name: project_id-output.` 
+{% endhint %}
+
 ## Usage
 
 **Creating an Export reference**

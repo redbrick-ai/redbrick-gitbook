@@ -1,45 +1,36 @@
 # What Is an Organization?
 
-Organizations are containers within which projects, datasets, pipelines etc live. Permissions and collaboration on projects are handled within projects. When you log in to the RedBrick platform for the first time, you will be prompted to create an organization:
+Organizations are containers within which all your efforts are managed. Organizations allow your to create a workspace in which you create projects and invite team members to collaborate on your efforts. When you log into the RedBrick AI platform you will be able to create an organization, or accept an invite to an organization. 
 
-![](../.gitbook/assets/group-24-2x.png)
+![](../.gitbook/assets/group-466-1-.png)
 
-Once you create an organization, you will be able to invite members to collaborate with. Note by default, you will only be able to create one organization, but will be able to be a part of multiple organizations. If you wish to create more than one organization, please reach out to us at [contact@redbrickai.com](mailto:contact@redbrickai.com).
+## Accepting an Organization Invite
 
-{% hint style="success" %}
-You might need your **organization ID** for various different things on the platform. You can find your organization ID in the URL when you are logged into RedBrick AI.   
+If you have been invited to an organization, you should see the invite as soon as you log into your account. Once you accept the invite, it will be added to the list of organizations you are a part of. 
+
+![Organization selection page.](../.gitbook/assets/app.redbrickai.com_createaccount.png)
+
+{% hint style="info" %}
+**Single Organization**  
+  
+By default, each user can **only create a single organization,** however you can be a part of multiple organizations \(by accepting invites received by other organization admins\). 
+{% endhint %}
+
+{% hint style="info" %}
+**Organization ID**  
+  
+Each organization has a unique ID associated with it. You might need your **organization ID** for various different things on the platform \(like using the Python SDK\). You can find your organization ID in the URL when you are logged into RedBrick AI.   
   
 `https://app.redbrickai.com/<org_id>/`
 {% endhint %}
 
-## Organization Invites
-
-As an owner, or admin of your organization \(see [documentation on permissions](what-is-an-organization.md#permissions)\), you will be able to invite your colleagues to join your RedBrick AI organization. To invite collaborators, go to organization settings page, accessible by clicking the top left of the sidebar. 
-
-![Team organization settings](../.gitbook/assets/app.redbrickai.com_c6b249d9-63f0-4d97-99a2-e5c92f32c609_orgsettings-2x.png)
-
-Under the **Members** tab you will be able to see all the members in the current organization, as well as the permission level. Under the **Invite People** tab, you can invite a team member to collaborate, by entering the email they have used to sign up with a RedBrick AI account, and selecting their permission level. 
-
-{% hint style="info" %}
-The users that you have invited must first signup for a RedBrick AI account, and they will then see the organization invite on the organization page when they log in.
+{% hint style="warning" %}
+**Trouble Receiving Organization Invites**  
+  
+When you are invited to an organization you should receive an **email invitation** with instructions detailing how you can create your account. Once you create your account, you can accept the invite as shown above.   
+  
+**If you don't receive an email invitation**, please check your spam, and if it's still not there, reach out to [contact@redbrickai.com](mailto:contact@redbrickai.com). 
 {% endhint %}
-
-## Organization Usage
-
-As an admin, or organization owner, under the **Usage tab** on the organization settings page, you will be able to monitor the platform usage for your entire organizations. The two metrics tracked over here are the number of hours spent on the labeling tools, and the number of task events. 
-
-* **Labeling tool hours.** This a count of the number of hours spent on the labeling interface by your organization. There is a [timer](../data-labeling/overview.md#top-bar) on the labeling interface to show you the count when you are labeling.  
-* **Task Events.** A single task event is a single data-point moving through a single stage in a pipeline. For example, if you have 100 images going through three stages in your pipeline, the number of task events consumed will be $$3 \times 100 = 300. $$
-
-## Permissions 
-
-User permissions are handled within organizations, and currently the platform supports three levels of permissions.
-
-| Role | What the can access |
-| :--- | :--- |
-| Owner | Has access to all assets within an organization, and ability create, edit, and delete assets including the organization itself.  |
-| Admin | Same permissions as an Owner, except does not have the ability to delete an organization. |
-| Labeler | Only able to access manual labeling and review stages. Only has access to projects, and not the data warehouse.  |
 
 
 

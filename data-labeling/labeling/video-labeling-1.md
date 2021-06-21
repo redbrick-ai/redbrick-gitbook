@@ -1,6 +1,6 @@
 # Video Labeling
 
-Video labeling on the RedBrick AI platform is done by parsing a video into individual frames and generating labels on those frames. When you create a video dataset and import data into the platform, you will need to create an [items list]() where each entry will have a `name` key.
+Video labeling on the RedBrick AI platform is done by parsing a video into individual frames and generating labels on those frames. When you create a video dataset and import data into the platform, you will need to create an i[tems list](../../projects/importing-data/#items-list) where each entry will have a `name` key.
 
 Each unique `name` key will be created into an independent video labeling task, and the frames will be ordered in the same order of appearance of the items list.
 
