@@ -22,6 +22,8 @@ Currently, the options for external Storage Methods are:
 
 You can create a storage method by clicking on the _**Storage Method**_ on the left side bar of your account. On the storage method page, click on _Create Storage Method_. _****_
 
+![Storage Method tab on the left sidebar](../../.gitbook/assets/screen-shot-2021-06-25-at-4.14.41-pm.png)
+
 {% tabs %}
 {% tab title="AWS S3" %}
 If your data is stored on a private S3 bucket, you will need to create a storage method of type _AWS\_S3_.
