@@ -170,20 +170,20 @@ While engaging with other professionals applying computer vision in healthcare, 
   
 Hi XYZ,  
   
-I hope you had a chance to review my previous email. I wanted to touch base with you regarding some of the use cases that we solve for our current clients.  
+I hope you had a chance to review my previous email. I wanted to touch base with you quickly covering some of the problems we solve for our current customers.  
   
-One of those use cases is to structure, customize and manage your data labelling workflows with robust pipelines. The Redbrick AI platform enables you to maintain deep insights and helps you to track exactly what happens to all your data throughout the lifecycle of your project and fix issues sooner rather than later. You can also control your data access but storing your data on Redbrick or integrate your current storage method with Redbrick AI warehouse.   
+Our customers usually have multi-step labeling processes involving several stakeholders. Teams use our pipelining framework to easily structure their efforts and build robust processes that are able to leverage automation, QA processes, and our workforce of 400+ labelers.    
   
-The screenshot below should help you understand this feature.  
+The screenshot below covers a common semi-automated workflow.  
   
 \[Attach relevant screenshot\]  
   
-We have more features that help you not only structure your workflows, but also cover any other use cases and pain points that you might currently have in your data labelling process.  
-  
-I would be glad to give you a demo of our platform over a short  30 minutes call some time this week or next week. Let me know a convenient time slot or book a slot on your own on my calendar. Looking forward to our conversation.  
+I'm curious if this seems interesting? If you'd be open to it, i'd love to get on a quick call and demonstrate the functionality this week or early next week. Feel free to select a time in my calendar link below, or let me know if there's a specific time you'd be open to. Looking forward to it!  
   
 Regards,
 {% endhint %}
+
+![](../.gitbook/assets/screen-shot-2021-07-05-at-10.10.38-pm.png)
 
 {% hint style="success" %}
 **Followup email\(based on 'automate' use case\)**:  
