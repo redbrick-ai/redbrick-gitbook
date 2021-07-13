@@ -10,15 +10,15 @@ The image polygon tools allow you to annotate and edit images with polygons. Pol
 
 **Create a polygon**
 
-Click on the labeling interface to add a vertex of a polygon, alternatively, you can click hold and drag to drop several vertices on the interface. Once you have added all the vertices to the interface, and want to complete the label, simply _double click_ to close the polygon. 
+Click on the labeling interface to add a vertex of a polygon, alternatively, you can click hold and drag to drop several vertices on the interface. Once you have added all the vertices to the interface, and want to complete the label, simply **double click** __to close the polygon. 
 
 **Add a vertex**
 
-To add a vertex to a polygon label that has already been created, select the label, and double click on the edge where you wish to add a node. A new node will be added to the center of this edge. 
+To add a vertex to a polygon label that has already been created, select the label, and **double click** on the edge where you wish to add a node. A new node will be added to the center of this edge. 
 
 **Delete a vertex**
 
-To delete a vertex of a polygon that has already been created, drag the vertex that you wish to delete on to a neighboring vertex. You will see the vertex expand, at which point you can release and the vertex will be deleted. 
+To delete a vertex of a polygon that has already been created, **drag** the vertex that you wish to delete on to a neighboring vertex. You will see the vertex expand, at which point you can release and the vertex will be deleted. 
 
 ## Image Segmentation
 

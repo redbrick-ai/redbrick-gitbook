@@ -130,9 +130,9 @@ Taxonomies can also be nested objects, which gives you increased specificity ove
 
 ### Creating a taxonomy
 
-You can either create a simple non-nested taxonomy using simple creation, or build a taxonomy from scratch using the json editor. 
+You can either create a simple non-nested taxonomy using simple creation, or build a taxonomy from scratch using the JSON editor. 
 
-![Taxonomy creation](../.gitbook/assets/screen-shot-2021-01-20-at-12.55.15-pm-2x.png)
+![](../.gitbook/assets/taxonomy-create.png)
 
 The taxonomy JSON is a list of single taxonomy entries of the following format: 
 
