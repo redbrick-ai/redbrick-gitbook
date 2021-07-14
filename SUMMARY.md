@@ -5,6 +5,7 @@
 ## Product Updates
 
 * [June 2021](product-updates/june-2021.md)
+* [July 2021 Labeling Tool](product-updates/july-2021-labeling-tool.md)
 
 ## Organizations
 
