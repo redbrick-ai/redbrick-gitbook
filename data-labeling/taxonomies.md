@@ -1,136 +1,94 @@
 # Taxonomies
 
-Taxonomies provides a structured way of defining what label classes exist in a labelset. Taxonomies are tree structures to allow complete flexibility on how you decide to label your data. You can create a simple taxonomy, which is a tree of depth 1.
+Taxonomies provides a structured way of defining your object label categories. Taxonomies allow you to re-use a set of label classes and attributes over different projects. A simple taxonomy is shown below.
 
 {% tabs %}
 {% tab title="Taxonomy" %}
-![Simple taxonomy](../.gitbook/assets/normal-tax.png)
+![](../.gitbook/assets/screen-shot-2021-07-14-at-6.52.59-pm.png)
 {% endtab %}
 
-{% tab title="JSON" %}
+{% tab title="JSON Representation" %}
 ```javascript
 {
-"name": "object",
-"children": [
+  "categories": [
     {
-        "name": "car",
-        "classId": 0,
-        "children": []
-    },
-    {
-        "name": "person",
-        "classId": 1,
-        "children": []
-    },
-    {
-        "name": "truck",
-        "classId": 2,
-        "children": []
-    },
-    {
-        "name": "misc",
-        "classId": 3,
-        "children": [
-            {
-                "name": "bench", 
-                "classId": "4",
-                "children": []
-            },
-            {
-                "name": "parking meter", 
-                "classId": "5",
-                "children": []
-            },
-            {
-                "name": "street sign", 
-                "classId": "6",
-                "children": []
-            },
-            {
-                "name": "fire hydrant", 
-                "classId": "7",
-                "children": []
-            },
-            {
-                "name": "traffic light", 
-                "classId": "8",
-                "children": []
-            }
-        ]
+      "name": "object",
+      "children": [
+        {
+          "name": "bus",
+          "classId": 0,
+          "children": []
+        },
+        {
+          "name": "traffic light",
+          "classId": 1,
+          "children": []
+        },
+        {
+          "name": "traffic sign",
+          "classId": 2,
+          "children": []
+        },
+        {
+          "name": "person",
+          "classId": 3,
+          "children": []
+        },
+        {
+          "name": "bike",
+          "classId": 4,
+          "children": []
+        },
+        {
+          "name": "truck",
+          "classId": 5,
+          "children": []
+        },
+        {
+          "name": "motor",
+          "classId": 6,
+          "children": []
+        },
+        {
+          "name": "car",
+          "classId": 7,
+          "children": []
+        },
+        {
+          "name": "train",
+          "classId": 8,
+          "children": []
+        },
+        {
+          "name": "rider",
+          "classId": 9,
+          "children": []
+        }
+      ]
     }
-]
+  ],
 }
 ```
 {% endtab %}
 {% endtabs %}
 
-Taxonomies can also be nested objects, which gives you increased specificity over your label classes - each label class can have sub classes. The maximum depth of a taxonomy tree is 3.
+Each taxonomy entry has:
 
-{% tabs %}
-{% tab title="Taxonomy" %}
-![Nested Taxonomy](../.gitbook/assets/tree-tax.png)
-{% endtab %}
+* A unique category name
+* A unique category ID \[0,n\) where n is the number of classes.
+* A color that will be used when displaying the label. 
 
-{% tab title="JSON" %}
-```javascript
-{
-"name": "object",
-"children": [
-    {
-        "name": "car",
-        "classId": 0,
-        "children": []
-    },
-    {
-        "name": "person",
-        "classId": 1,
-        "children": []
-    },
-    {
-        "name": "truck",
-        "classId": 2,
-        "children": []
-    },
-    {
-        "name": "misc",
-        "classId": 3,
-        "children": [
-            {
-                "name": "bench", 
-                "classId": 4,
-                "children": []
-            },
-            {
-                "name": "parking meter", 
-                "classId": 5,
-                "children": []
-            },
-            {
-                "name": "street sign", 
-                "classId": 6,
-                "children": []
-            },
-            {
-                "name": "fire hydrant", 
-                "classId": 7,
-                "children": []
-            },
-            {
-                "name": "traffic light", 
-                "classId": 8,
-                "children": []
-            }
-        ]
-    }
-]
-}
-```
-{% endtab %}
-{% endtabs %}
+Each taxonomy entry can have child categories as well, up to a depth of 3 levels. 
+
+![Nested categories](../.gitbook/assets/screen-shot-2021-07-14-at-7.02.50-pm.png)
+
+{% hint style="info" %}
+Creating nested taxonomies through interactive UI **is coming soon.** Nested taxonomies can be created through the JSON editor. 
+{% endhint %}
 
 ### Creating a taxonomy
 
-You can either create a simple non-nested taxonomy using simple creation, or build a taxonomy from scratch using the JSON editor. 
+You can either create a simple non-nested taxonomy using simple creation, or build a taxonomy from scratch using the JSON editor. Type a category name and press **enter** to add it to the taxonomy list. 
 
 ![](../.gitbook/assets/taxonomy-create.png)
 
