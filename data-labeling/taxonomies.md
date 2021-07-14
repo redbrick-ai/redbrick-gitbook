@@ -132,3 +132,9 @@ In the complete example below, you can see that the root taxonomy entry `name: o
 ]
 ```
 
+## Attributes
+
+{% hint style="info" %}
+Label attributes are **coming soon.**
+{% endhint %}
+
