@@ -24,9 +24,8 @@
 ## Data Labeling
 
 * [Overview](data-labeling/overview.md)
-* [Labeling](data-labeling/labeling/README.md)
-  * [Image Labeling](data-labeling/labeling/image-polygons.md)
-  * [Video Labeling](data-labeling/labeling/video-labeling-1.md)
+* [Image Labeling](data-labeling/image-polygons.md)
+* [Video Labeling](data-labeling/video-labeling-1.md)
 * [Taxonomies](data-labeling/taxonomies.md)
 
 ## Python SDK

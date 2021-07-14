@@ -1,6 +1,6 @@
 # Video Labeling
 
-Video labeling on the RedBrick AI platform is done by parsing a video into individual frames and generating labels on those frames. When you create a video dataset and import data into the platform, you will need to create an i[tems list](../../projects/importing-data/#items-list) where each entry will have a `name` key.
+Video labeling on the RedBrick AI platform is done by parsing a video into individual frames and generating labels on those frames. When you create a video dataset and import data into the platform, you will need to create an i[tems list](../projects/importing-data/#items-list) where each entry will have a `name` key.
 
 Each unique `name` key will be created into an independent video labeling task, and the frames will be ordered in the same order of appearance of the items list.
 
@@ -23,15 +23,15 @@ To describe the functionality of the video labeling interface, let's define a fe
 | `track id` | Each object that you label on the interface will get a unique `track id` . In the example below, there are 50 labels \(one for each frame\) with the same `track id` which signifies a single object.  |
 | `end frame` | The last frame of an object with a particular track id is the `end frame` \(denoted by the square\). As you can see in the second image below, the `end frame` is the 13th frame of the video, at which point, this particular track is finished.  |
 
-![Video Labeling Interface - Key Frame](../../.gitbook/assets/video-labeling-interface%20%281%29.png)
+![Video Labeling Interface - Key Frame](../.gitbook/assets/video-labeling-interface%20%281%29.png)
 
-![Video Labeling Interface - End Frame](../../.gitbook/assets/video-labeling-interface-end-frame%20%281%29.png)
+![Video Labeling Interface - End Frame](../.gitbook/assets/video-labeling-interface-end-frame%20%281%29.png)
 
 ### Video interpolation
 
 As described in the section above, the labeling interface will linearly interpolate between all frames that have been labeled \(shown in the animation below\). 
 
-![Video Bounding Box interpolation](../../.gitbook/assets/video-interpolation.gif)
+![Video Bounding Box interpolation](../.gitbook/assets/video-interpolation.gif)
 
 The interpolation feature is present for both bounding box labels, as well as polygon labels: 
 
