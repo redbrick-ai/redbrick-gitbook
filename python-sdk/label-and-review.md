@@ -1,6 +1,6 @@
 # Label and Review
 
-### Custom automated Review process
+### SDK Review
 
 SDK review works similarly to how you handle review through the UI, you first fetch tasks and their labels, and then you respond with a boolean for each task to determine whether it passes or fails.
 
