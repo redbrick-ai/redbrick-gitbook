@@ -22,7 +22,7 @@ result = project.export.redbrick_format()
 
 # Write to file
 with open("redbrick_export.json", "w+") as file_:
-    json.dump(file_, result, indent=2)
+    json.dump(result, file_, indent=2)
 ```
 
 
