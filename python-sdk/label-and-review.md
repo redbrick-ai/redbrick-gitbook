@@ -12,6 +12,8 @@ SDK review works similarly to how you handle review through the UI, you first fe
 
 ### Getting Review Tasks
 
+Retrieve review tasks from your project pipeline. 
+
 ```python
 tasks = project.review.get_tasks(stage_name, num_tasks=1)
 ```
@@ -30,6 +32,8 @@ Number of review tasks to retrieve, must be an integer between 1 and 50.
 ```
 
 ### Submitting Review Tasks
+
+Submit the review tasks that you had retrieved, and provide a review resolution.
 
 ```python
 failed = project.review.put_tasks(stage_name, tasks_reviewed)
@@ -83,6 +87,8 @@ This works very similar to review except that instead of adding a boolean "revie
 
 ### Getting Labeling Tasks
 
+Retrieve labeling tasks from your project pipeline.
+
 ```python
 tasks = project.label.get_tasks(stage_name, num_tasks=1)
 ```
@@ -101,6 +107,8 @@ Number of labeling tasks to retrieve, between 1 and 50.
 ```
 
 ### Submitting Labeling Tasks
+
+Submit labeling tasks with labels that you have added. 
 
 ```python
 failed = project.label.put_tasks(stage_name, tasks_labeled)
