@@ -20,6 +20,15 @@ Useful for understanding the RedBrick label format used for exports and label im
     "point": null or Point,
     "ellipse": null or {Ellipse},
     "pixel": null or {Pixel},
+    
+    
+    "frameclassify": null or bool,
+    "taskclassify": null or bool,
+
+    "frameindex": null or int,
+    "trackid": null or str,
+    "keyframe": null or bool,
+    "end": null or bool
 }
 
 // LabelAttribute
@@ -44,12 +53,20 @@ Useful for understanding the RedBrick label format used for exports and label im
 
 // Ellipse
 {
+    "xcenternorm": float,
+    "ycenternorm": float,
     "xnorm": float,
     "ynorm": float,
-    "wnorm": float,
-    "hnorm": float,
     "rot": float, // [0, pi) radians
 }
+
+// Pixel 
+{
+    "imagesize": [int, int], // width, height in pixels,
+    "regions": [[[int, int]]],
+    "holes": null or [[[int, int]]]
+}
+
 ```
 
 {% hint style="info" %}
@@ -59,7 +76,7 @@ All **ynorm** values are y co-ordinates normalized by the height of the image.
 {% endhint %}
 
 {% hint style="info" %}
-The `LabelObject` requires at least one of the label type fields  - `bbox2d`, `polygon`, `polyline`, `point`, `ellipse`, `pixel` entries. The entries must match the label type of your Project.
+The `LabelObject` requires at least one of the label type fields  - `bbox2d`, `polygon`, `polyline`, `point`, `ellipse`, `pixel, taskclassify: true` entries. The entries must match the label type of your Project.
 {% endhint %}
 
 ## Taxonomy Objects
