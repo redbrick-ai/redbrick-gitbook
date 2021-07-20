@@ -28,19 +28,12 @@
 * [Video Labeling](data-labeling/video-labeling-1.md)
 * [Taxonomies](data-labeling/taxonomies.md)
 
-## Active Learning
-
-* [Overview](active-learning/overview.md)
-* [Untitled](active-learning/untitled.md)
-
 ## Python SDK
 
 * [SDK Overview](python-sdk/sdk-overview.md)
 * [Upload](python-sdk/upload.md)
 * [Export](python-sdk/export-1.md)
 * [Label and Review](python-sdk/label-and-review.md)
-* [Active Learning](python-sdk/active-learning.md)
-* [Reference](python-sdk/reference.md)
 
 ## Useful Links
 
