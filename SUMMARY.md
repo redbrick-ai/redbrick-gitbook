@@ -1,11 +1,9 @@
 # Table of contents
 
 * [About RedBrick AI](README.md)
-
-## Product Updates
-
-* [June 2021](product-updates/june-2021.md)
-* [July 2021 Labeling Tool](product-updates/july-2021-labeling-tool.md)
+* [Product updates](product-updates-1/README.md)
+  * [July 2021 Labeling Tool](product-updates-1/july-2021-labeling-tool.md)
+  * [June 2021](product-updates-1/june-2021-1.md)
 
 ## Organizations
 
@@ -34,6 +32,7 @@
 * [Upload](python-sdk/upload.md)
 * [Export](python-sdk/export-1.md)
 * [Label and Review](python-sdk/label-and-review.md)
+* [Reference](python-sdk/reference.md)
 
 ## Useful Links
 

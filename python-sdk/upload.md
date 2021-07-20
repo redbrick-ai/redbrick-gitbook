@@ -4,23 +4,52 @@ description: Programmatically uploading data to your RedBrick AI Project.
 
 # Upload
 
-### Full script
+## Create Datapoints
 
-If you just want to get started quickly, fill in your own values in this script.
+The `create_datapoints` function allows you to programmatically upload your data and labels to your RedBrick AI project. 
+
+```python
+failed_to_create = project.upload.create_datapoints(storage_id, datapoints)
+```
+
+**`storage_id`**   
+Your RedBrick AI [storage method's](../projects/importing-data/#storage-methods) unique ID. Public storage methods have a default ID of `"11111111-1111-1111-1111-111111111111"`.
+
+**`datapoints`**   
+The list of datapoints that you want to upload to the platform. See the `LabelObject` format in the [reference documentation](reference.md).
+
+```python
+[
+    {
+        "name": "my first upload", # unique for each datapoint
+        "items": [
+            "http://datasets.redbrickai.com/car-vids/car-1/frame20.png"
+        ], # URL of the image, or video frames
+        "labels": [LabelObject]
+    }
+]
+```
+
+## Code Example
+
+Get your storage methods storage id. If you haven't created a storage method, please look at the [documentation](../projects/importing-data/#using-external-storage-involves-two-steps). For this example we're using the default Public Storage \(storage ID: "11111111-1111-1111-1111-111111111111" \) method which allows using public data accessible by a URL.
+
+{% hint style="success" %}
+Please look at the [overview](sdk-overview.md#getting-started) to understand how to do the Standard Setup.
+{% endhint %}
 
 ```python
 import redbrick
 
+# Standard set up
 api_key = "<TODO>"
 url = "https://api.redbrickai.com"
 org_id = "<TODO>"
 project_id = "<TODO>"
-
 project = redbrick.get_project(api_key, url, org_id, project_id)
 
 # default public storage method
 storage_id = "11111111-1111-1111-1111-111111111111"
-
 datapoints = [
     {
         "name": "my first upload",
@@ -30,48 +59,13 @@ datapoints = [
     }
 ]
 failed_to_create = project.upload.create_datapoints(storage_id, datapoints)
-
-for point in failed_to_create:
-    print(point["error"])
 ```
-
-### 1. Get storage\_id
-
-You must first tell your RedBrick AI project where the data you are uploading is stored. If you have not yet configured your storage, see [Importing data](../projects/importing-data/).
-
-Otherwise, get your intended storage\_id from the storage tab of your organization.
-
-For this example, we will use the default "Public" storage method. This means that the urls we will be uploading can be accessed publicly without altercation.
-
-```python
-# default public storage method
-storage_id = "11111111-1111-1111-1111-111111111111"
-```
-
-### 2. Prepare Data
-
-The items list format for uploading via the SDK is the same as the format for file uploads shown on [Importing data](../projects/importing-data/).
 
 {% hint style="info" %}
-The fastest way to modify this script, is your get some public hosted images \(google or flickr\) and replace the url in the _items_ field.
+The easiest way to modify this script for your own use, would be to select some public URL's \(for example from Google, or Flickr\) and create your own custom `datapoint` object.
 {% endhint %}
 
-```python
-datapoints = [
-    {
-        "name": "my first upload",
-        "items": [
-            "http://datasets.redbrickai.com/car-vids/car-1/frame20.png"
-        ]
-    }
-]
-```
-
-{% hint style="danger" %}
-The name field should be unique across a single project. This is done to prevent you from uploading the same image multiple times.
-{% endhint %}
-
-### 3. Upload the data and check for errors
+Check for any upload errors.
 
 ```python
 failed_to_create = project.upload.create_datapoints(storage_id, datapoints)
