@@ -214,7 +214,7 @@ Hi XYZ,
   
 Till now, we have shown how you can use Redbrick to structure and maintain workflows and automate your data labelling processes.   
   
-With the help of our platform, you can have your entire team working with same tool and processes from a single platform. Not only this, you can assign your team members with varying permission levels to managr your labelling processes. This way, you can also monitor their performance through deep insight tools available to you.  
+With the help of our platform, you can have your entire team working with same tool and processes from a single platform. Not only this, you can assign your team members with varying permission levels to manager your labelling processes. This way, you can also monitor their performance through deep insight tools available to you.  
   
 \[Attach screenshot\]  
   
