@@ -21,7 +21,7 @@ tasks = project.review.get_tasks(stage_name, count=1)
 **`stage_name`**  
 You can find the name of your Review stage on the Project overview dashboard. The default names are something like Review\_1.
 
-**`num_tasks`**  
+**`count`**  
 Number of review tasks to retrieve, must be an integer between 1 and 50. 
 
 **`tasks`** _returned value_  
@@ -98,7 +98,7 @@ tasks = project.labeling.get_tasks(stage_name, count=1)
 **`stage_name`**  
 Name of the manual labeling stage can be found on the Project Overview dashboard. 
 
-**`num_tasks`**  
+**`count`**  
 Number of labeling tasks to retrieve, between 1 and 50. 
 
 **`tasks`** _returned value_  
