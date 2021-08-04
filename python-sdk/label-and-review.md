@@ -15,7 +15,7 @@ SDK review works similarly to how you handle review through the UI, you first fe
 Retrieve review tasks from your project pipeline. 
 
 ```python
-tasks = project.review.get_tasks(stage_name, num_tasks=1)
+tasks = project.review.get_tasks(stage_name, count=1)
 ```
 
 **`stage_name`**  
@@ -46,10 +46,12 @@ Same as `stage_name` defined above.
 To accept a review task set `reviewVal` to `True.`
 
 ```javascript
-{
-    "taskId": "<unique task id>", // same as the ID retrieved from get_tasks() method
-    "reviewVal": bool
-}
+[
+    {
+        "taskId": "<unique task id>", // same as the ID retrieved from get_tasks() method
+        "reviewVal": bool
+    }
+]
 ```
 
 ### Code Example SDK Review
@@ -65,7 +67,7 @@ stage_name = "<TODO>"
 
 project = redbrick.get_project(api_key, url, org_id, project_id)
 
-tasks = project.review.get_tasks(stage_name, num_tasks=1)
+tasks = project.review.get_tasks(stage_name, count=1)
 
 # Replace with your own logic for reviewing tasks
 tasks_reviewed = [{"taskId": task["taskId"], "reviewVal": True} for task in tasks]
@@ -90,7 +92,7 @@ This works very similar to review except that instead of adding a boolean "revie
 Retrieve labeling tasks from your project pipeline.
 
 ```python
-tasks = project.label.get_tasks(stage_name, num_tasks=1)
+tasks = project.labeling.get_tasks(stage_name, count=1)
 ```
 
 **`stage_name`**  
@@ -121,10 +123,12 @@ Same as stage\_name above.
 Please see `LabelObject` format in the [reference documentation.](reference.md)
 
 ```python
-{
-    "taskId": "<unique task id>",
-    "labels": [LabelObject]
-}
+[
+    {
+        "taskId": "<unique task id>",
+        "labels": [LabelObject]
+    }
+]
 ```
 
 ### Code Example SDK Labeling
@@ -140,12 +144,12 @@ stage_name = "<TODO>"
 
 project = redbrick.get_project(api_key, url, org_id, project_id)
 
-tasks = project.label.get_tasks(stage_name, num_tasks=1)
+tasks = project.label.get_tasks(stage_name, count=1)
 
 # Replace with your own logic for labeling tasks
 tasks_labeled = [{"taskId": task["taskId"], "labels": task["labels"]} for task in tasks]
 
-failed = project.label.put_tasks(stage_name, tasks_labeled)
+failed = project.labeling.put_tasks(stage_name, tasks_labeled)
 
 for failed_task in failed:
     print(
