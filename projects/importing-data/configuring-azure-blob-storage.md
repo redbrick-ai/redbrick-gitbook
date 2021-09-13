@@ -41,3 +41,16 @@ To create a container in the Azure portal, follow these steps:
 
 Use this `Connection String`  along with the  `Storage account name`  to create your storage in RedBrick AI.
 
+#### Accessing Data
+
+Due to the way Azure works, the path of the data will be with respect to the base storage account. Hence, all containers that lie within the storage account are accessed as folders.  
+  
+For example - In the image below, we can see an example of a container called `test-rbai`
+
+The path of access would be `<container-name>/<file-path>`
+
+Hence to access `Capture.PNG`, the path would be `test-rbai/Capture.PNG`  
+
+
+![Azure Example Container](../../.gitbook/assets/azure-capture.png)
+
