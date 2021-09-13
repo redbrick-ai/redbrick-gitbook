@@ -17,7 +17,7 @@ Currently, the options for external Storage Methods are:
 
 * [AWS S3 Buckets](configuring-aws-s3-storage.md).
 * [Google Cloud Storage.](configuring-google-cloud-storage.md)
-* Azure Blob Storage.
+* [Azure Blob Storage.](configuring-azure-blob-storage.md)
 * [Public](local-storage.md). This storage type includes data stored on your computer and data stored on any public server accessible by a URL. 
 
 You can create a storage method by clicking on the _**Storage Method**_ on the left side bar of your account. On the storage method page, click on _Create Storage Method_. _****_
@@ -45,13 +45,19 @@ Please visit the Configuring GCS Storage for RedBrick AI section for a detailed 
 
 * `Unique Name`: A unique identifier for this storage method.
 * `Bucket Name`: The name of your GCS Bucket.
-* `Service Account details`: A JSON key that provides RedBrick AI with adequate permissions to access data within the bucket. 
+* `Service Account details`: A JSON key that provides RedBrick AI with adequate permissions to access data within the bucket
 {% endtab %}
 
 {% tab title="Azure" %}
-{% hint style="info" %}
-**Coming Soon!**
-{% endhint %}
+![](../../.gitbook/assets/azure.png)
+
+
+
+Please visit the Configuring Azure Blob Storage for RedBrick AI section for a detailed walkthrough on how to generate all the required parameters. A brief overview of each parameter is provided here:
+
+* `Unique Name`: A unique identifier for this storage method.
+* `Storage Account Name`: The name of your Azure Blob Storage Account.
+* `Azure Connection String`: A string key that is linked to a particular storage account and can be used to connect to Azure storage.
 {% endtab %}
 {% endtabs %}
 
