@@ -39,7 +39,7 @@ A service account is a special kind of account used by an application or a virtu
 1. In the Cloud Console, go to the [Bucket Browser](https://console.cloud.google.com/storage/browser) page.
 2. Click on the more actions button \(three dots\) at the right of the necessary bucket.
 3. Click on `Edit Bucket Permission`.
-4. Click on `Add Member`.
+4. Click on `ADD PRINCIPAL`.
 5. Add the email address of the service account created in the above step \(step 10\).
 6. Add following two roles
 
