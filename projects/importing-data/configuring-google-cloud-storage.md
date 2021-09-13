@@ -90,3 +90,30 @@ Make sure to store the key file securely, because it can be used to authenticate
 **Use this downloaded service account JSON key to create `GCS` store in the Redbrick app.**
 {% endhint %}
 
+## Items List
+
+The items list points the RedBrick AI platform to the data points in the data storage. This way you can selectively import data points from a storage method. The items list is a JSON file which comprises of a list of entries of the following format.
+
+```javascript
+{
+    "items": ["<filepath_of_datapoint>"]
+    "name": "<name_of_datapoint>" // Needs to be unique
+                                  // Required for videos, optional for images
+}
+```
+
+{% hint style="info" %}
+For **image uploads** the `items` array will have only a single entry.   
+For **video uploads** the `items` array has to contain the frames of the video in order. 
+{% endhint %}
+
+Below is an example of a single item list entry. 
+
+The items list looks as follows for your datapoint if your datapoint is publicly hosted at `https://path/to/data/image.png`
+
+```javascript
+{
+    "items": ["root-folder/sub-folder/image.png"]
+}
+```
+

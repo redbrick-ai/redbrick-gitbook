@@ -81,7 +81,7 @@ For **video uploads** the `items` array has to contain the frames of the video i
 Below are examples of single items list entries. 
 
 {% tabs %}
-{% tab title="AWS S3 & GCS" %}
+{% tab title="AWS S3, GCS and Azure Blob Storage" %}
 Say your datapoint `image.png` is stored inside a folder named `folder` inside the `root-folder` inside a bucket, the item list entry for that datapoint will be.
 
 ```javascript
@@ -118,6 +118,8 @@ Say your datapoint is hosted at a public endpoint `https://path/to/data/image.pn
 ****When you configure your AWS S3, or GCS storage method, you will need to define the bucket name. The storage method is specific to a single bucket.   
   
 Therefore, when you are creating your items list, make sure you don't include the bucket name in the path of the data point. The file paths **start from the root folder** inside your bucket
+
+**NOTE - Azure Blob Storage** is an exception to that rule, For **Azure Blob Storage** the path **start from the container name**.
 {% endhint %}
 
 ### Image Items List
