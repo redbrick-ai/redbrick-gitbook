@@ -15,9 +15,9 @@
 * [Overview](projects/overview.md)
 * [Creating a Pipeline](projects/creating-a-pipeline.md)
 * [Importing data](projects/importing-data/README.md)
-  * [Configuring Azure Blob Storage](projects/importing-data/configuring-azure-blob-storage.md)
   * [Configuring AWS S3 Storage](projects/importing-data/configuring-aws-s3-storage.md)
   * [Configuring Google Cloud Storage](projects/importing-data/configuring-google-cloud-storage.md)
+  * [Configuring Azure Blob Storage](projects/importing-data/configuring-azure-blob-storage.md)
   * [Local Storage](projects/importing-data/local-storage.md)
 
 ## Data Labeling
