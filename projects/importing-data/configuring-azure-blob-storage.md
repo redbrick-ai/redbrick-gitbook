@@ -2,7 +2,7 @@
 
 This section covers how to prepare your Azure Blob storage to import data into the RedBrick AI platform. After following the instructions in this section, you will be able to create an Azure Blob 'storage method' on the RedBrick platform to connect your Azure Blob Storage to your RedBrick account.
 
-An Azure storage account contains all of your Azure Storage data objects: blobs, files, queues, tables, and disks. The storage account provides a unique namespace for your Azure Storage data that is accessible from anywhere in the world over HTTP or HTTPS. Data in your Azure storage account is durable and highly available, secure, and massively scalable.
+An Azure storage account contains all of your Azure Storage data objects: blobs, files, queues, tables, and disks. The storage account provides a unique namespace for your Azure Storage data that is accessible from anywhere in the world over HTTPS. Data in your Azure storage account is durable and highly available, secure, and massively scalable.
 
 **Create Blob storage**
 
@@ -54,6 +54,10 @@ Hence to access `Capture.PNG`, the path would be `test-rbai/Capture.PNG`
 
 ![Azure Example Container](../../.gitbook/assets/azure-capture.png)
 
+#### Validating Your Integration
+
+After creating your storage method you can validate the functionality and debug any errors by using the "validate" feature. Just enter the file path according to the above description. If your image appears then your integration was successful.
+
 ## Items List
 
 The items list points the RedBrick AI platform to the data points in the data storage. This way you can selectively import data points from a storage method. The items list is a JSON file which comprises of a list of entries of the following format.
@@ -72,8 +76,6 @@ For **video uploads** the `items` array has to contain the frames of the video i
 {% endhint %}
 
 Below is an example of a single item list entry. 
-
-The items list looks as follows for your datapoint if your datapoint is publicly hosted at `https://path/to/data/image.png`
 
 ```javascript
 {
