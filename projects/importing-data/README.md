@@ -2,7 +2,7 @@
 
 The data that you use with the RedBrick AI platform can be stored in a number of places, you can upload data directly to the platform or integrate an external storage method to store your data like Amazon S3, Google Cloud Platform, or Azure Blob Storage. By using your own external storage method, you can manage the storage of your raw data, including granular level access and privacy control.
 
-You can see the external storage method data model on the RedBrick AI model. When data is stored externally, your raw data will never be routed via RedBrick AI servers, nor will it be downloaded/duplicated \(unless specifically requested for certain features, please review our [Privacy Policy](https://drive.google.com/drive/u/0/folders/1N-kAd4W8HD51TQiGP2D9cPhGAyD-mLIY)\). The data is transferred directly from your storage method to your browser. 
+You can see the external storage method data model on the RedBrick AI model. When data is stored externally, your raw data will never be routed via RedBrick AI servers, nor will it be downloaded/duplicated \(unless specifically requested for certain features, please review our [Privacy Policy](https://redbrickai.com/policies/privacy.pdf)\). The data is transferred directly from your storage method to your browser. 
 
 ![RedBrick AI external storage data model.](../../.gitbook/assets/group-476.png)
 
