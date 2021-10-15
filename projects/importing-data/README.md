@@ -19,7 +19,7 @@ Currently, the options for external Storage Methods are:
 * [Google Cloud Storage.](configuring-google-cloud-storage.md)
 * [Azure Blob Storage.](configuring-azure-blob-storage.md)
 * [Public](local-storage.md). This storage type includes data stored on your computer and data stored on any public server accessible by a URL. 
-* [Direct Upload](direct-upload.md). This storage type allows you to store your data securely on RedBrick AI servers without having to configure your own storage method
+* [Direct Upload](direct-upload.md). This storage type allows you to store your data securely on RedBrick AI servers without having to configure your own storage method.
 
 You can create a storage method by clicking on the _**Storage Method **_on the left side bar of your account. On the storage method page, click on _Create Storage Method_._** **_
 
