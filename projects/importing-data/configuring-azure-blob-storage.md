@@ -15,8 +15,8 @@ An Azure storage account contains all of your Azure Storage data objects: blobs,
 5. Next, enter a name for your storage account. The name you choose must be unique across Azure. The name also must be between 3 and 24 characters in length, and may include only numbers and lowercase letters.
 6. Select a location for your storage account, or use the default location.
 7. Select a performance tier. The default tier is Standard.
-8. Set the Account kind field to Storage V2 \(general-purpose v2\).
-9. Specify how the storage account will be replicated. The default replication option is Read-access geo-redundant storage \(RA-GRS\). For more information about available replication options, see Azure Storage redundancy.
+8. Set the Account kind field to Storage V2 (general-purpose v2).
+9. Specify how the storage account will be replicated. The default replication option is Read-access geo-redundant storage (RA-GRS). For more information about available replication options, see Azure Storage redundancy.
 10. Additional options are available on the Networking, Data protection, Advanced, and Tags tabs. To use Azure Data Lake Storage, choose the Advanced tab, and then set Hierarchical namespace to Enabled. For more information, see Azure Data Lake Storage Gen2 Introduction
 11. Select Review + Create to review your storage account settings and create the account.
 12. Select Create
@@ -28,8 +28,8 @@ To create a container in the Azure portal, follow these steps:
 1. Navigate to your storage account in the Azure portal.
 2. In the left menu for the storage account, scroll to the **Blob Service** section, then select **Containers**.
 3. Select the + Container button.
-4. Type a name for your new container. The container name must be lowercase, must start with a letter or number, and can include only letters, numbers, and the dash \(-\) character. For more information about container and blob names, see [Naming and referencing containers, blobs, and metadata](https://docs.microsoft.com/en-us/rest/api/storageservices/naming-and-referencing-containers--blobs--and-metadata).
-5. Keep the default level of access to the container. The default level is Private \(no anonymous access\).
+4. Type a name for your new container. The container name must be lowercase, must start with a letter or number, and can include only letters, numbers, and the dash (-) character. For more information about container and blob names, see [Naming and referencing containers, blobs, and metadata](https://docs.microsoft.com/en-us/rest/api/storageservices/naming-and-referencing-containers--blobs--and-metadata).
+5. Keep the default level of access to the container. The default level is Private (no anonymous access).
 6. Select OK to create the container.
 
 #### Fetch the Connection String
@@ -43,13 +43,13 @@ Use this `Connection String`  along with the  `Storage account name`  to create 
 
 #### Accessing Data
 
-Due to the way Azure works, the path of the data will be with respect to the base storage account. Hence, all containers that lie within the storage account are accessed as folders.  
-  
+Due to the way Azure works, the path of the data will be with respect to the base storage account. Hence, all containers that lie within the storage account are accessed as folders.\
+\
 For example - In the image below, we can see an example of a container called `test-rbai`
 
 The path of access would be `<container-name>/<file-path>`
 
-Hence to access `Capture.PNG`, the path would be `test-rbai/Capture.PNG`  
+Hence to access `Capture.PNG`, the path would be `test-rbai/Capture.PNG`\
 
 
 ![Azure Example Container](../../.gitbook/assets/azure-capture.png)
@@ -71,7 +71,7 @@ The items list points the RedBrick AI platform to the data points in the data st
 ```
 
 {% hint style="info" %}
-For **image uploads** the `items` array will have only a single entry.   
+For **image uploads** the `items` array will have only a single entry. \
 For **video uploads** the `items` array has to contain the frames of the video in order. 
 {% endhint %}
 
@@ -84,4 +84,3 @@ Below is an example of a single item list entry.
 ```
 
 **NOTE - In this case the container name is an integral part of the file path. This is specific to Azure Blob Storage.**
-

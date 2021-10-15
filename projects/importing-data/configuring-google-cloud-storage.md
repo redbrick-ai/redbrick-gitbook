@@ -4,7 +4,7 @@ This section covers how to prepare your GCS storage to import data into the RedB
 
 #### Signing up for Google Cloud Platform
 
-The first step tp preparing data storage on GCP is to [create a account](https://cloud.google.com/) on GCP.
+The first step tp preparing data storage on GCP is to [create a account](https://cloud.google.com) on GCP.
 
 #### Create a bucket within a project
 
@@ -12,22 +12,21 @@ Once you have created your GCP account and a project within your account, a buck
 
 #### Create a Service Account
 
-A service account is a special kind of account used by an application or a virtual machine \(VM\) instance, not a person. Applications use service accounts to make authorized API calls, authorized as either the service account itself, or as Google Workspace or Cloud Identity users through domain-wide delegation.
+A service account is a special kind of account used by an application or a virtual machine (VM) instance, not a person. Applications use service accounts to make authorized API calls, authorized as either the service account itself, or as Google Workspace or Cloud Identity users through domain-wide delegation.
 
 1. In the Cloud Console, go to the [Service Accounts](https://console.cloud.google.com/iam-admin/serviceaccounts) page.
 2. Select the appropriate project.
 3. Click Create service account.
-4. Enter a service account name to display in the Cloud Console.
+4.  Enter a service account name to display in the Cloud Console.
 
-   For eg, `gcs-blob-reader`
+    For eg, `gcs-blob-reader`
 
-   The Cloud Console generates a service account ID based on this name. Edit the ID if necessary. You cannot change the ID later.
-
+    The Cloud Console generates a service account ID based on this name. Edit the ID if necessary. You cannot change the ID later.
 5. _Optional:_ Enter a description of the service account.
 6. Click Create and continue to the next step.
 7. Add the following two IAM roles to grant to the service account on the project.
-   1. **Storage Object Viewer** \(For reading the blobs from the GCS bucket\)
-   2. **Service Account Token Creator** \(For pre-signing the blobs\)
+   1. **Storage Object Viewer** (For reading the blobs from the GCS bucket)
+   2. **Service Account Token Creator** (For pre-signing the blobs)
 8. Once done adding roles, click Continue.
 9. Click Done to finish creating the service account.
 10. Note down the email id of the newly created service account.
@@ -37,19 +36,19 @@ A service account is a special kind of account used by an application or a virtu
 #### Steps to give Bucket access to Service Account
 
 1. In the Cloud Console, go to the [Bucket Browser](https://console.cloud.google.com/storage/browser) page.
-2. Click on the more actions button \(three dots\) at the right of the necessary bucket.
+2. Click on the more actions button (three dots) at the right of the necessary bucket.
 3. Click on `Edit Bucket Permission`.
 4. Click on `ADD PRINCIPAL`.
-5. Add the email address of the service account created in the above step \(step 10\).
-6. Add following two roles
+5. Add the email address of the service account created in the above step (step 10).
+6.  Add following two roles
 
-   **Storage Legacy Bucket Reader**
+    **Storage Legacy Bucket Reader**
 
-   **Storage Legacy Object Reader**
+    **Storage Legacy Object Reader**
+7. Click on save.\
 
-7. Click on save. 
 
-#### Steps to create Service Account Key \(JSON\)
+#### Steps to create Service Account Key (JSON)
 
 To use a service account from outside of Google Cloud, such as on other platforms or on-premises, you must first establish the identity of the service account. Public/private key pairs provide a secure way of accomplishing this goal. When you create a service account key, the public portion is stored on Google Cloud, while the private portion is available only to you.
 
@@ -62,7 +61,7 @@ To use a service account from outside of Google Cloud, such as on other platform
 
 The downloaded key has the following format, where private-key is the private portion of the public/private key pair:
 
-```text
+```
 {
   "type": "service_account",
   "project_id": "project-id",
@@ -79,11 +78,11 @@ The downloaded key has the following format, where private-key is the private po
 
 Make sure to store the key file securely, because it can be used to authenticate as your service account. You can move and rename this file however you would like.
 
-#### Enable the Identity and Access Management \(IAM\) API
+#### Enable the Identity and Access Management (IAM) API
 
-1. In the Cloud Console, go to the [API Library](https://console.cloud.google.com/project/_/apis/library?_ga=2.193485741.1059200516.1617769981-1501397432.1596651361) page.
+1. In the Cloud Console, go to the [API Library](https://console.cloud.google.com/project/\_/apis/library?\_ga=2.193485741.1059200516.1617769981-1501397432.1596651361) page.
 2. Select the appropriate project.
-3. Search for **Identity and Access Management \(IAM\) API** and click on it.
+3. Search for **Identity and Access Management (IAM) API** and click on it.
 4. Click on `Enable`
 
 {% hint style="info" %}
@@ -103,7 +102,7 @@ The items list points the RedBrick AI platform to the data points in the data st
 ```
 
 {% hint style="info" %}
-For **image uploads** the `items` array will have only a single entry.   
+For **image uploads** the `items` array will have only a single entry. \
 For **video uploads** the `items` array has to contain the frames of the video in order. 
 {% endhint %}
 
@@ -116,4 +115,3 @@ The items list looks as follows for your datapoint if your datapoint is publicly
     "items": ["root-folder/sub-folder/image.png"]
 }
 ```
-

@@ -75,7 +75,7 @@ Taxonomies provides a structured way of defining your object label categories. T
 Each taxonomy entry has:
 
 * A unique category name
-* A unique category ID \[0,n\) where n is the number of classes.
+* A unique category ID \[0,n) where n is the number of classes.
 * A color that will be used when displaying the label. 
 
 Each taxonomy entry can have child categories as well, up to a depth of 3 levels. 
@@ -83,7 +83,7 @@ Each taxonomy entry can have child categories as well, up to a depth of 3 levels
 ![Nested categories](../.gitbook/assets/screen-shot-2021-07-14-at-7.02.50-pm.png)
 
 {% hint style="info" %}
-Creating nested taxonomies through interactive UI **is coming soon.** Nested taxonomies can be created through the JSON editor. 
+Creating nested taxonomies through interactive UI **is coming soon. **Nested taxonomies can be created through the JSON editor. 
 {% endhint %}
 
 ### Creating a taxonomy
@@ -102,8 +102,8 @@ The taxonomy JSON is a list of single taxonomy entries of the following format:
 }
 ```
 
-The `name` field is a unique string for the object class, `classId` is a corresponding unique integer, any subclasses for this object will be inside the `children` field.   
-  
+The `name` field is a unique string for the object class, `classId` is a corresponding unique integer, any subclasses for this object will be inside the `children` field. \
+\
 In the complete example below, you can see that the root taxonomy entry `name: object` doesn't require a `classId`.
 
 ```javascript
@@ -137,4 +137,3 @@ In the complete example below, you can see that the root taxonomy entry `name: o
 {% hint style="info" %}
 Label attributes are **coming soon.**
 {% endhint %}
-

@@ -11,26 +11,24 @@ If you have been invited to an organization, you should see the invite as soon a
 ![Organization selection page.](../.gitbook/assets/app.redbrickai.com_createaccount.png)
 
 {% hint style="info" %}
-**Single Organization**  
-  
-By default, each user can **only create a single organization,** however you can be a part of multiple organizations \(by accepting invites received by other organization admins\). 
+**Single Organization**\
+\
+By default, each user can **only create a single organization, **however you can be a part of multiple organizations (by accepting invites received by other organization admins). 
 {% endhint %}
 
 {% hint style="info" %}
-**Organization ID**  
-  
-Each organization has a unique ID associated with it. You might need your **organization ID** for various different things on the platform \(like using the Python SDK\). You can find your organization ID in the URL when you are logged into RedBrick AI.   
-  
+**Organization ID**\
+****\
+****Each organization has a unique ID associated with it. You might need your **organization ID** for various different things on the platform (like using the Python SDK). You can find your organization ID in the URL when you are logged into RedBrick AI. \
+\
 `https://app.redbrickai.com/<org_id>/`
 {% endhint %}
 
 {% hint style="warning" %}
-**Trouble Receiving Organization Invites**  
-  
-When you are invited to an organization you should receive an **email invitation** with instructions detailing how you can create your account. Once you create your account, you can accept the invite as shown above.   
-  
+**Trouble Receiving Organization Invites**\
+\
+When you are invited to an organization you should receive an **email invitation** with instructions detailing how you can create your account. Once you create your account, you can accept the invite as shown above. \
+\
 **If you don't receive an email invitation**, please check your spam, and if it's still not there, reach out to [contact@redbrickai.com](mailto:contact@redbrickai.com). 
 {% endhint %}
-
-
 

@@ -18,13 +18,13 @@ Retrieve review tasks from your project pipeline.
 tasks = project.review.get_tasks(stage_name, count=1)
 ```
 
-**`stage_name`**  
-You can find the name of your Review stage on the Project overview dashboard. The default names are something like Review\_1.
+**`stage_name`**\
+****You can find the name of your Review stage on the Project overview dashboard. The default names are something like Review\_1.
 
-**`count`**  
-Number of review tasks to retrieve, must be an integer between 1 and 50. 
+**`count`**\
+****Number of review tasks to retrieve, must be an integer between 1 and 50. 
 
-**`tasks`** _returned value_  
+**`tasks` **_returned value_\
 ****Please see the `TaskObject` format in the [reference documentation.](reference.md)
 
 ```javascript
@@ -39,11 +39,11 @@ Submit the review tasks that you had retrieved, and provide a review resolution.
 failed = project.review.put_tasks(stage_name, tasks_reviewed)
 ```
 
-**`stage_name`**  
-Same as `stage_name` defined above. 
+**`stage_name`**\
+****Same as `stage_name` defined above. 
 
-**`tasks_reviewed`**  
-To accept a review task set `reviewVal` to `True.`
+**`tasks_reviewed`**\
+****To accept a review task set `reviewVal` to `True.`
 
 ```javascript
 [
@@ -95,13 +95,13 @@ Retrieve labeling tasks from your project pipeline.
 tasks = project.labeling.get_tasks(stage_name, count=1)
 ```
 
-**`stage_name`**  
-Name of the manual labeling stage can be found on the Project Overview dashboard. 
+**`stage_name`**\
+****Name of the manual labeling stage can be found on the Project Overview dashboard. 
 
-**`count`**  
-Number of labeling tasks to retrieve, between 1 and 50. 
+**`count`**\
+****Number of labeling tasks to retrieve, between 1 and 50. 
 
-**`tasks`** _returned value_  
+**`tasks` **_returned value_\
 ****Please see the `TaskObject` format in the [reference documentation.](reference.md)
 
 ```javascript
@@ -116,11 +116,11 @@ Submit labeling tasks with labels that you have added.
 failed = project.label.put_tasks(stage_name, tasks_labeled)
 ```
 
-**`stage_name`**   
-Same as stage\_name above. 
+**`stage_name` **\
+****Same as stage_name above. 
 
-**`tasks_labeled`**   
-Please see `LabelObject` format in the [reference documentation.](reference.md)
+**`tasks_labeled` **\
+****Please see `LabelObject` format in the [reference documentation.](reference.md)
 
 ```python
 [
@@ -158,4 +158,3 @@ for failed_task in failed:
         )
     )
 ```
-

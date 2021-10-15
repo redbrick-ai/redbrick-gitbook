@@ -3,7 +3,7 @@
 The RedBrick Python SDK is a tool to interact programmatically with the RedBrick AI platform. The SDK is a developer friendly way to carry out important operations like data and label export.
 
 {% hint style="info" %}
-The RedBrick SDK works on Mac, windows, and linux, and is available on [pypi](https://pypi.org/project/redbrick-sdk/). The SDK is compatible with **Python 3.6.0+.** 
+The RedBrick SDK works on Mac, windows, and linux, and is available on [pypi](https://pypi.org/project/redbrick-sdk/). The SDK is compatible with **Python 3.6.0+. **
 {% endhint %}
 
 ### **Generate an API Key**
@@ -44,4 +44,3 @@ If you see an error similar to `RuntimeError: asyncio.run() cannot be called fro
 import nest_asyncio
 nest_asyncio.apply()
 ```
-

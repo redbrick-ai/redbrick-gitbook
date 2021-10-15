@@ -19,6 +19,7 @@
   * [Configuring Google Cloud Storage](projects/importing-data/configuring-google-cloud-storage.md)
   * [Configuring Azure Blob Storage](projects/importing-data/configuring-azure-blob-storage.md)
   * [Local Storage](projects/importing-data/local-storage.md)
+  * [Direct Upload](projects/importing-data/direct-upload.md)
 
 ## Data Labeling
 
@@ -40,4 +41,3 @@
 * [Report a Bug](https://forms.gle/MdtVSGUsWtpaLDYq8)
 * [Feedback & Feature Requests](https://forms.gle/aubwHijP98ctQLX5A)
 * [Privacy Policy](https://redbrickai.com/policies/privacy.pdf)
-

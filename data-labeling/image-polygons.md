@@ -10,7 +10,7 @@ The image polygon tools allow you to annotate and edit images with polygons. Pol
 
 **Create a polygon**
 
-Click on the labeling interface to add a vertex of a polygon, alternatively, you can click hold and drag to drop several vertices on the interface. Once you have added all the vertices to the interface, and want to complete the label, simply **double click** __to close the polygon. 
+Click on the labeling interface to add a vertex of a polygon, alternatively, you can click hold and drag to drop several vertices on the interface. Once you have added all the vertices to the interface, and want to complete the label, simply **double click**_ _to close the polygon. 
 
 **Add a vertex**
 
@@ -31,4 +31,3 @@ Create a new segmentation label by selecting a label class and 'painting' on the
 **Editing an existing instance**
 
 To edit an existing segmentation instance, select the label from the sidebar and make any edits that you wish - changing the shape, label class etc. Once you are happy with your edits, press `esc` to finish the edit. 
-

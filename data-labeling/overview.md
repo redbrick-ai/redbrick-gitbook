@@ -2,17 +2,17 @@
 
 The RedBrick AI platform offers several manual and automated tools for image and video labeling. The table below covers the current offerings of the platform:
 
-| Data Type | Label Type | Label Type Code |
-| :--- | :--- | :--- |
-| `Image` | Bounding Box | `bbox` |
-|  | Segmentation | `segmentation` |
-|  | Polygon | `polygon` |
-|  | Keypoint | `keypoint` |
-|  | Ellipse | `ellipse` |
-|  | Classification | `classify` |
-| `Video` | Bounding Box | `bbox` |
-|  | Polygon | `polygon` |
-|  | Classification | `classify` |
+| Data Type | Label Type     | Label Type Code |
+| --------- | -------------- | --------------- |
+| `Image`   | Bounding Box   | `bbox`          |
+|           | Segmentation   | `segmentation`  |
+|           | Polygon        | `polygon`       |
+|           | Keypoint       | `keypoint`      |
+|           | Ellipse        | `ellipse`       |
+|           | Classification | `classify`      |
+| `Video`   | Bounding Box   | `bbox`          |
+|           | Polygon        | `polygon`       |
+|           | Classification | `classify`      |
 
 ## Labeling Interface Layout
 
@@ -22,7 +22,7 @@ The labeling interface is simple and easy to get started with. The figure below 
 
 ![Current Label Section](../.gitbook/assets/current-label-section.png)
 
-The sidebar contains all the relevant information for adding, and modifying labels. The **Current Label** section displays a list of all the classes in your taxonomy for you to label as well as the label actions ****with actions like removing labels, tracking labels in videos etc. When a created label is selected, its class will be highlighted in this list. 
+The sidebar contains all the relevant information for adding, and modifying labels. The **Current Label** section displays a list of all the classes in your taxonomy for you to label as well as the label actions** **with actions like removing labels, tracking labels in videos etc. When a created label is selected, its class will be highlighted in this list. 
 
 ![All Labels Section](../.gitbook/assets/all-labels-section.png)
 
@@ -36,7 +36,7 @@ The **All Labels** section contains a list of all the created labels allows the 
 
 The top bar contains high level actions like submitting/saving tasks and accepting/reviewing tasks during quality assurance. Furthermore, the top bar contains high level information about each task - like: 
 
-* **The data breadcrumbs**: The file path, or the url of the task \(same as the [items list entry]()\)
+* **The data breadcrumbs**: The file path, or the url of the task (same as the [items list entry](broken-reference))
 * **Timer**: The amount of time you have spent on this particular data point. This information is stored and provided to admins. 
 * **Labeling Queue**: Allows you to access tasks assigned to the user.
 * **Comments**: Allows you to access comments about a particular task.
@@ -49,7 +49,7 @@ The top bar contains high level actions like submitting/saving tasks and accepti
 
 The tool bar contains useful tools labeling actions, and tools specific to the label type you are working with. Some of the generic functions are:
 
-* **Zoom:** zoom in and zoom out.
+* **Zoom: **zoom in and zoom out.
 * **Selection tool:** disables editing on the interface. 
 * **Visualization controls:** allow you to change the brightness, and contrast of the image as well as the opacity of the labels.
 
@@ -61,27 +61,27 @@ The labeling canvas is where you will interact with the data and labels and actu
 
 ## Keyboard and Mouse Shortcuts 
 
-| Mac | Windows | Description |
-| :--- | :--- | :--- |
-| ⌘C | Ctrl + C | Copy a label |
-| ⌘V | Ctrl + V | Paste a label |
-| ⌘Z | Ctrl + Z | Undo an action |
-| ⌘⇧Z | Ctrl + Shift + Z | Redo an action |
-| Mouse scroll | Mouse Scroll | Zoom in/out |
-| esc | esc | De-select a selected label |
-| delete | delete | Delete a selected label |
-| W | W | Increase segmentation brush size \(segmentation tool selected\) |
-| S | S | Segmentation tool/Decrease segmentation brush size \(segmentation tool selected\) |
-| A | A | Previous frame in video |
-| D | D | Next frame in video |
-| T | T | Toggle crosshair tool |
-| B | B | Box tool |
-| P | P | Polygon tool |
-| K | K | Keypoint tool |
-| L | L | Polyline tool |
-| E | E | Ellipse Tool |
-| F | F | Filter category list |
-| 1-9 | 1-9 | Top categories selection |
+| Mac          | Windows          | Description                                                                     |
+| ------------ | ---------------- | ------------------------------------------------------------------------------- |
+| ⌘C           | Ctrl + C         | Copy a label                                                                    |
+| ⌘V           | Ctrl + V         | Paste a label                                                                   |
+| ⌘Z           | Ctrl + Z         | Undo an action                                                                  |
+| ⌘⇧Z          | Ctrl + Shift + Z | Redo an action                                                                  |
+| Mouse scroll | Mouse Scroll     | Zoom in/out                                                                     |
+| esc          | esc              | De-select a selected label                                                      |
+| delete       | delete           | Delete a selected label                                                         |
+| W            | W                | Increase segmentation brush size (segmentation tool selected)                   |
+| S            | S                | Segmentation tool/Decrease segmentation brush size (segmentation tool selected) |
+| A            | A                | Previous frame in video                                                         |
+| D            | D                | Next frame in video                                                             |
+| T            | T                | Toggle crosshair tool                                                           |
+| B            | B                | Box tool                                                                        |
+| P            | P                | Polygon tool                                                                    |
+| K            | K                | Keypoint tool                                                                   |
+| L            | L                | Polyline tool                                                                   |
+| E            | E                | Ellipse Tool                                                                    |
+| F            | F                | Filter category list                                                            |
+| 1-9          | 1-9              | Top categories selection                                                        |
 
 ## Creating and Editing Labels
 
@@ -95,7 +95,7 @@ When you open up the labeling interface, the sidebar loads with the first label 
 
 #### Selecting and un-selecting labels
 
-When there are already labels on the label canvas, you can select/un-select them to perform various actions on them. You can select any label from the sidebar label list; furthermore, many label types \(like bounding boxes, and polygons\) can be selected by interacting with the label canvas. A selected label will be highlighted. To un select a label, simply press the `esc` key, or select a different label. 
+When there are already labels on the label canvas, you can select/un-select them to perform various actions on them. You can select any label from the sidebar label list; furthermore, many label types (like bounding boxes, and polygons) can be selected by interacting with the label canvas. A selected label will be highlighted. To un select a label, simply press the `esc` key, or select a different label. 
 
 ![Selecting/un-selecting Labels](../.gitbook/assets/selecting-deselecting-labels.gif)
 
@@ -118,4 +118,3 @@ Your team members can leave comments at any stage of the labeling workflow, and 
 The Labeling Queue allows you to access tasks that have been assigned to you as well as previously saved task that have not been submitted. These are accessible from the tab on the top right of the tool.
 
 ![Labeling Queue](../.gitbook/assets/queue.gif)
-

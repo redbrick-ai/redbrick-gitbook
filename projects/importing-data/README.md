@@ -2,7 +2,7 @@
 
 The data that you use with the RedBrick AI platform can be stored in a number of places, you can upload data directly to the platform or integrate an external storage method to store your data like Amazon S3, Google Cloud Platform, or Azure Blob Storage. By using your own external storage method, you can manage the storage of your raw data, including granular level access and privacy control.
 
-You can see the external storage method data model on the RedBrick AI model. When data is stored externally, your raw data will never be routed via RedBrick AI servers, nor will it be downloaded/duplicated \(unless specifically requested for certain features, please review our [Privacy Policy](https://redbrickai.com/policies/privacy.pdf)\). The data is transferred directly from your storage method to your browser. 
+You can see the external storage method data model on the RedBrick AI model. When data is stored externally, your raw data will never be routed via RedBrick AI servers, nor will it be downloaded/duplicated (unless specifically requested for certain features, please review our [Privacy Policy](https://redbrickai.com/policies/privacy.pdf)). The data is transferred directly from your storage method to your browser. 
 
 ![RedBrick AI external storage data model.](../../.gitbook/assets/group-476.png)
 
@@ -19,14 +19,15 @@ Currently, the options for external Storage Methods are:
 * [Google Cloud Storage.](configuring-google-cloud-storage.md)
 * [Azure Blob Storage.](configuring-azure-blob-storage.md)
 * [Public](local-storage.md). This storage type includes data stored on your computer and data stored on any public server accessible by a URL. 
+* [Direct Upload](direct-upload.md). This storage type allows you to store your data securely on RedBrick AI servers without having to configure your own storage method
 
-You can create a storage method by clicking on the _**Storage Method**_ on the left side bar of your account. On the storage method page, click on _Create Storage Method_. _****_
+You can create a storage method by clicking on the _**Storage Method **_on the left side bar of your account. On the storage method page, click on _Create Storage Method_._** **_
 
 ![Storage Method tab on the left sidebar](../../.gitbook/assets/screen-shot-2021-06-25-at-4.14.41-pm.png)
 
 {% tabs %}
 {% tab title="AWS S3" %}
-If your data is stored on a private S3 bucket, you will need to create a storage method of type _AWS\_S3_.
+If your data is stored on a private S3 bucket, you will need to create a storage method of type _AWS_S3_.
 
 ![](../../.gitbook/assets/app.redbrickai-1.png)
 
@@ -34,7 +35,7 @@ Please visit the Configuring AWS Storage for RedBrick AI section for a detailed 
 
 * `Unique name`: A unique identifier for this storage method.
 * `Bucket Name`: The name of your AWS S3 Bucket.
-* `Region`: The region code of the S3 bucket, e.g. us-east-2 \(US East Ohio\), ap-south-1 \(Asia Pacific Mumbai\). Check out the [aws docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html) for a list of all the region code.
+* `Region`: The region code of the S3 bucket, e.g. us-east-2 (US East Ohio), ap-south-1 (Asia Pacific Mumbai). Check out the [aws docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html) for a list of all the region code.
 * `Access Key`, `Secret Key`: The two keys that enable secure data operations. Follow along Configuring AWS Storage for RedBrick AI to generate the keys for your bucket.
 {% endtab %}
 
@@ -74,7 +75,7 @@ The items list points the RedBrick AI platform to the data points in the data st
 ```
 
 {% hint style="info" %}
-For **image uploads** the `items` array will have only a single entry.   
+For **image uploads** the `items` array will have only a single entry. \
 For **video uploads** the `items` array has to contain the frames of the video in order. 
 {% endhint %}
 
@@ -113,13 +114,13 @@ Say your datapoint is hosted at a public endpoint `https://path/to/data/image.pn
 {% endtabs %}
 
 {% hint style="warning" %}
-**Common Issue:** don't include bucket name in the file path.   
-  
-****When you configure your AWS S3, or GCS storage method, you will need to define the bucket name. The storage method is specific to a single bucket.   
-  
+**Common Issue: **don't include bucket name in the file path. \
+****\
+****When you configure your AWS S3, or GCS storage method, you will need to define the bucket name. The storage method is specific to a single bucket. \
+\
 Therefore, when you are creating your items list, make sure you don't include the bucket name in the path of the data point. The file paths **start from the root folder** inside your bucket
 
-**NOTE - Azure Blob Storage** is an exception to that rule, For **Azure Blob Storage** the path **start from the container name**.
+**NOTE - Azure Blob Storage **is an exception to that rule, For **Azure Blob Storage** the path **start from the container name**.
 {% endhint %}
 
 ### Image Items List
@@ -165,5 +166,4 @@ The items list for importing images into the RedBrick AI platform is slightly di
 ]
 ```
 
-Using this items list, two video data points \(video1, video2\) will be imported into the platform with three frames each. The frames of each video will be ordered in the same order as their appearance in the items list.
-
+Using this items list, two video data points (video1, video2) will be imported into the platform with three frames each. The frames of each video will be ordered in the same order as their appearance in the items list.

@@ -16,25 +16,24 @@ To optimize loading of the webpage, only 50 frames ahead of the current frame wi
 
 To describe the functionality of the video labeling interface, let's define a few terms that completely define a single label object in a video.
 
-| Term                   | Description |
-| :--- | :--- |
-| `frame index` | The index of the particular frame in the video. Every label begins and ends at a particular `frame index` . By default, whenever you draw a label, it gets added for all the frames in that particular video, starting at the frame index you added it.  |
-| `key frame` | Any frame where the user manually adds/edits labels is considered a `key frame` . As you can see in the image below, the user has drawn the bounding box on the cat on the first frame, and therefore that frame is marked as a `key frame` \(with the diamond\). If you wish to navigate to the 5th frame and edit the bounding box on that frame, the fifth frame will also be a `keyframe` and the bounding box will be _interpolated_ in the frames between.  |
-| `track id` | Each object that you label on the interface will get a unique `track id` . In the example below, there are 50 labels \(one for each frame\) with the same `track id` which signifies a single object.  |
-| `end frame` | The last frame of an object with a particular track id is the `end frame` \(denoted by the square\). As you can see in the second image below, the `end frame` is the 13th frame of the video, at which point, this particular track is finished.  |
+| Term                   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `frame index`          | The index of the particular frame in the video. Every label begins and ends at a particular `frame index` . By default, whenever you draw a label, it gets added for all the frames in that particular video, starting at the frame index you added it.                                                                                                                                                                                                         |
+| `key frame`            | Any frame where the user manually adds/edits labels is considered a `key frame` . As you can see in the image below, the user has drawn the bounding box on the cat on the first frame, and therefore that frame is marked as a `key frame` (with the diamond). If you wish to navigate to the 5th frame and edit the bounding box on that frame, the fifth frame will also be a `keyframe` and the bounding box will be _interpolated_ in the frames between.  |
+| `track id`             | Each object that you label on the interface will get a unique `track id` . In the example below, there are 50 labels (one for each frame) with the same `track id` which signifies a single object.                                                                                                                                                                                                                                                             |
+| `end frame`            | The last frame of an object with a particular track id is the `end frame` (denoted by the square). As you can see in the second image below, the `end frame` is the 13th frame of the video, at which point, this particular track is finished.                                                                                                                                                                                                                 |
 
-![Video Labeling Interface - Key Frame](../.gitbook/assets/video-labeling-interface%20%281%29.png)
+![Video Labeling Interface - Key Frame](<../.gitbook/assets/video-labeling-interface (1).png>)
 
-![Video Labeling Interface - End Frame](../.gitbook/assets/video-labeling-interface-end-frame%20%281%29.png)
+![Video Labeling Interface - End Frame](<../.gitbook/assets/video-labeling-interface-end-frame (1).png>)
 
 ### Video interpolation
 
-As described in the section above, the labeling interface will linearly interpolate between all frames that have been labeled \(shown in the animation below\). 
+As described in the section above, the labeling interface will linearly interpolate between all frames that have been labeled (shown in the animation below). 
 
 ![Video Bounding Box interpolation](../.gitbook/assets/video-interpolation.gif)
 
 The interpolation feature is present for both bounding box labels, as well as polygon labels: 
 
-* **Bounding box:** Bounding box vertices are linearly interpolated between frames, you can adjust the position, and dimensions of the bounding box between frames. 
-* **Polygon:** Polygon vertices are linearly interpolated between frames, you can adjust the position of each node between frames. 
-
+* **Bounding box: **Bounding box vertices are linearly interpolated between frames, you can adjust the position, and dimensions of the bounding box between frames. 
+* **Polygon: **Polygon vertices are linearly interpolated between frames, you can adjust the position of each node between frames. 

@@ -12,11 +12,11 @@ The `create_datapoints` function allows you to programmatically upload your data
 failed_to_create = project.upload.create_datapoints(storage_id, datapoints)
 ```
 
-**`storage_id`**   
-Your RedBrick AI [storage method's](../projects/importing-data/#storage-methods) unique ID. Public storage methods have a default ID of `"11111111-1111-1111-1111-111111111111"`.
+**`storage_id` **\
+****Your RedBrick AI [storage method's](../projects/importing-data/#storage-methods) unique ID. Public storage methods have a default ID of `"11111111-1111-1111-1111-111111111111"`.
 
-**`datapoints`**   
-The list of datapoints that you want to upload to the platform. See the `LabelObject` format in the [reference documentation](reference.md).
+**`datapoints` **\
+****The list of datapoints that you want to upload to the platform. See the `LabelObject` format in the [reference documentation](reference.md).
 
 ```python
 [
@@ -32,7 +32,7 @@ The list of datapoints that you want to upload to the platform. See the `LabelOb
 
 ## Code Example
 
-Get your storage methods storage id. If you haven't created a storage method, please look at the [documentation](../projects/importing-data/#using-external-storage-involves-two-steps). For this example we're using the default Public Storage \(storage ID: "11111111-1111-1111-1111-111111111111" \) method which allows using public data accessible by a URL.
+Get your storage methods storage id. If you haven't created a storage method, please look at the [documentation](../projects/importing-data/#using-external-storage-involves-two-steps). For this example we're using the default Public Storage (storage ID: "11111111-1111-1111-1111-111111111111" ) method which allows using public data accessible by a URL.
 
 {% hint style="success" %}
 Please look at the [overview](sdk-overview.md#getting-started) to understand how to do the Standard Setup.
@@ -62,7 +62,7 @@ failed_to_create = project.upload.create_datapoints(storage_id, datapoints)
 ```
 
 {% hint style="info" %}
-The easiest way to modify this script for your own use, would be to select some public URL's \(for example from Google, or Flickr\) and create your own custom `datapoint` object.
+The easiest way to modify this script for your own use, would be to select some public URL's (for example from Google, or Flickr) and create your own custom `datapoint `object.
 {% endhint %}
 
 Check for any upload errors.
@@ -73,6 +73,4 @@ failed_to_create = project.upload.create_datapoints(storage_id, datapoints)
 for point in failed_to_create:
     print(point["error"])
 ```
-
-
 

@@ -70,13 +70,13 @@ Useful for understanding the RedBrick label format used for exports and label im
 ```
 
 {% hint style="info" %}
-All **xnorm** values are x co-ordinates normalized by the width of the image.
+All **xnorm **values are x co-ordinates normalized by the width of the image.
 
-All **ynorm** values are y co-ordinates normalized by the height of the image. 
+All **ynorm **values are y co-ordinates normalized by the height of the image. 
 {% endhint %}
 
 {% hint style="info" %}
-The `LabelObject` requires at least one of the label type fields  - `bbox2d`, `polygon`, `polyline`, `point`, `ellipse`, `pixel, taskclassify: true` entries. The entries must match the label type of your Project.
+The `LabelObject` requires at least one of the label type fields  - `bbox2d`, `polygon`, `polyline`, `point`, `ellipse`, `pixel, taskclassify: true `entries. The entries must match the label type of your Project.
 {% endhint %}
 
 ## Taxonomy Objects
@@ -116,4 +116,3 @@ The `LabelObject` requires at least one of the label type fields  - `bbox2d`, `p
      "name": str  // unique name given when creating a datapoint
 }
 ```
-
