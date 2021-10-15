@@ -8,7 +8,9 @@ This section will cover how to get started immediately by uploading files direct
 
 This is a simple process of just uploading the files that you want to use to create tasks. Each file will be made into a task that can be used further in your project pipeline. The task will have its name set by default to the file name.
 
-**Note: Files that are uploaded with the same file name to a single project will fail to upload due to the fact that there cannot be multiple tasks with the same name field**.
+{% hint style="warning" %}
+Files that are uploaded with the same file name to a single project will fail. Each file must have a unique name. 
+{% endhint %}
 
 ![Direct Upload for Images and Documents](../../.gitbook/assets/DirectUpload-Image.PNG)
 
@@ -35,9 +37,9 @@ After the frames have been generated, they can simply be uploaded via the direct
 As shown in the image below, `pricinglvl1.png` and `pricinglvl2.png` and `pricinglvl3.png` will be frame 1,2 and 3 respectively of the uploaded video task. Currently, the name of the task is by default set to the name of the first frame uploaded. In this case, the name of the task will be _pricinglvl1.png_. Simply click _Start Import _and you are ready to go!
 
 {% hint style="warning" %}
-**Video Upload Drawback**. \
-****\
-**Only one task may be uploaded at a time using the direct upload feature. The order of the frames in the video will be decided based on the order in which the files are added to through the direct upload step. **
+Video Upload Drawback. \
+\
+Only one task may be uploaded at a time using the direct upload feature. The order of the frames in the video will be decided based on the order in which the files are added to through the direct upload step. 
 {% endhint %}
 
 ![Video Upload Ready](<../../.gitbook/assets/DirectUpload-Video-Done (1).PNG>)
