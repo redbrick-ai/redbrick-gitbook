@@ -6,7 +6,7 @@ description: Programmatically exporting data from your RedBrick AI Project.
 
 ## RedBrick Format
 
-The `redbrick_format()` method allows you to export your labels in the custom RedBrick AI format. 
+The `redbrick_format()` method allows you to export your labels in the custom RedBrick AI format.&#x20;
 
 ```python
 result = project.export.redbrick_format(only_ground_truth=True)
@@ -48,8 +48,38 @@ result = project.export.coco_format(only_ground_truth=True)
 The default is set to `True` and will only export the labels that have been through the entire pipeline and are _completed. _
 
 {% hint style="warning" %}
-Coco export will only work for Bounding box and Polygon labeling projects. 
+Coco export will only work for Bounding box and Polygon labeling projects.&#x20;
 {% endhint %}
+
+## PNG Masks
+
+For `segmentation` project types, you have the option to export your data as PNG masks.&#x20;
+
+```python
+project.export.redbrick_png(only_ground_truth=True)
+```
+
+**`only_ground_truth`**\
+****Set this parameter to `False` if you would like to export the _latest_ version of your labels irrespective of where they are in your labeling pipeline i.e. it would export labels that have not completed review steps for example. \
+\
+The default is set to `True` and will only export the labels that have been through the entire pipeline and are _completed. _
+
+{% hint style="warning" %}
+`redbrick_png` export will only work with `segmentation` project types.&#x20;
+{% endhint %}
+
+The masks will be exported in the following folder structure:&#x20;
+
+```bash
+// Exported inside directory with project_id as the name 
+
+project_id 
+├── dpId_1.png // Individual datapoint png masks
+├── dpId_2.png
+├── dpId_3.png
+├── datapoint_map.json // Map from dpId -> image name filename
+└── class_map.json // Map from object category -> mask color
+```
 
 ## Code Example
 
