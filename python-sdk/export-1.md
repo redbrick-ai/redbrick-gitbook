@@ -68,18 +68,7 @@ The default is set to `True` and will only export the labels that have been thro
 `redbrick_png` export will only work with `segmentation` project types.&#x20;
 {% endhint %}
 
-The masks will be exported in the following folder structure:&#x20;
-
-```bash
-// Exported inside directory with project_id as the name 
-
-project_id 
-├── dpId_1.png // Individual datapoint png masks
-├── dpId_2.png
-├── dpId_3.png
-├── datapoint_map.json // Map from dpId -> image name filename
-└── class_map.json // Map from object category -> mask color
-```
+Please see [the reference documentation](reference.md#png-mask-formats) for an overview of the exported mask formats.
 
 ## Code Example
 

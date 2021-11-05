@@ -6,7 +6,7 @@ description: Programmatically uploading data to your RedBrick AI Project.
 
 ## Create Datapoints
 
-The `create_datapoints` function allows you to programmatically upload your data and labels to your RedBrick AI project. 
+The `create_datapoints` function allows you to programmatically upload your data and labels to your RedBrick AI project.&#x20;
 
 ```python
 failed_to_create = project.upload.create_datapoints(storage_id, datapoints)
@@ -29,6 +29,24 @@ failed_to_create = project.upload.create_datapoints(storage_id, datapoints)
     }
 ]
 ```
+
+## Create Datapoints from Masks
+
+The `create_datapoints_from_masks` function allows you to programmatically upload your data with mask labels.&#x20;
+
+{% hint style="info" %}
+`create_datapoints_from_masks` will only work with `SEGMENATION` type projects. To upload labels of different types, please use the `create_datapoints` function. &#x20;
+{% endhint %}
+
+```
+failed_to_create = project.upload.create_datapoints(storage_id, mask_dir)
+```
+
+**`storage_id` **\
+****Your RedBrick AI [storage method's](../projects/importing-data/#storage-methods) unique ID. Public storage methods have a default ID of `"11111111-1111-1111-1111-111111111111"`.
+
+**`mask_dir` **\
+**** Path to the directory containing your masks and category information. Please see the [reference documentation](reference.md#png-mask-formats) for details about the required format for your masks directory.&#x20;
 
 ## Code Example
 
