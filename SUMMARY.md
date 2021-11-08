@@ -5,7 +5,7 @@
   * [July 2021 Labeling Tool](product-updates-1/july-2021-labeling-tool.md)
   * [June 2021](product-updates-1/june-2021-1.md)
 
-## Organizations
+## Team <a href="organizations" id="organizations"></a>
 
 * [What Is an Organization?](organizations/what-is-an-organization.md)
 * [Teams and Permissions](organizations/teams-and-permissions.md)

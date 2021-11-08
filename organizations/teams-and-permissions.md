@@ -4,23 +4,29 @@ description: Managing your team and member permissions inside your Organization
 
 # Teams and Permissions
 
-## Permissions
+## Organization Permissions
 
-When you invite collaborators to your organization, you can select their permissions. Their is a single owner of each organization, and there can be unlimited Admins and Labelers. 
+You first have to invite collaborators to join your organization, _before you can invite them to your project. _When you invite collaborators to your organization, you can select their permissions. There is a single owner of each organization, and there can be unlimited Admins and Labelers.&#x20;
 
-| Role | What they can access |
-| :--- | :--- |
-| Owner | Has access to all assets within an organization, and ability create, edit, and delete assets including the organization itself.  |
-| Admin | Same permissions as an Owner, except does not have the ability to delete an organization. |
-| Labeler | Only able to access manual labeling and review stages. Only has access to projects, and not the data warehouse.  |
+| Role    | What they can access                                                                                                             |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| Owner   | Has access to all assets within an organization, and ability create, edit, and delete assets including the organization itself.  |
+| Admin   | Same permissions as an Owner, except does not have the ability to delete an organization.                                        |
+| Labeler | Only able to access manual labeling and review stages. Only has access to projects, and not the data warehouse.                  |
 
-## Sending Invitations
+### Sending Organization Invitations
 
-To invite collaborators to your organization, you can head to your Organization Settings and Invite people by specifying their email and desired permission level in the **Team** card. 
+To invite collaborators to your organization, you can head to the _Team Tab _on the left side bar. Within the Team Tab, you can invite users by entering their email and choosing their permission level.
 
-![Access organization settings by clicking on your account icon on the bottom left.](../.gitbook/assets/screen-shot-2021-06-21-at-6.36.14-pm.png)
+![Team tab on the left sidebar of your account](<../.gitbook/assets/Screen Shot 2021-11-08 at 3.19.48 PM.png>)
 
+## Project Permissions
 
+You can invite specific users to individual projects and manage their permissions within the project.   Project permissions and teams can be managed under the **Workforce Tab** on your project dashboard. Please see the list below for information on project permissions. &#x20;
 
-![You can invite collaborators inside Organization Settings. ](../.gitbook/assets/app.redbrickai.com_3d0caac7-b1e9-483f-8676-c0aca73af232_orgsettings.png)
+1. All Organization Admins by default are added to all projects.&#x20;
+2. Admins & Owners can invite Organization Labelers to projects. By default _no labelers have access to any projects. _Labelers have to be invited to individual projects.&#x20;
+3. Labelers can be assigned to specific project stages. By assigning a labeler to single or multiple stages, they will only be served tasks from those stages.&#x20;
+
+![Manage labeler permissions for individual stages under the Workforce Tab. ](<../.gitbook/assets/Screen Shot 2021-11-08 at 4.51.05 PM.png>)
 
