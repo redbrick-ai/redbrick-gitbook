@@ -56,7 +56,8 @@ Coco export will only work for Bounding box and Polygon labeling projects.&#x20;
 For `segmentation` project types, you have the option to export your data as PNG masks.&#x20;
 
 ```python
-project.export.redbrick_png(only_ground_truth=True)
+project.export.redbrick_png(only_ground_truth=True, 
+                            fill_holes=False, max_hole_size=30)
 ```
 
 **`only_ground_truth`**\
@@ -64,11 +65,21 @@ project.export.redbrick_png(only_ground_truth=True)
 \
 The default is set to `True` and will only export the labels that have been through the entire pipeline and are _completed. _
 
+**`fill_holes`**
+
+Setting to `True` will fill any holes in your segmentation masks. A hole is a background region that is completely surrounded by pixels with labels.&#x20;
+
+**`max_hole_size`**
+
+The maximum area, in pixels, of a contiguous hole that will be filled.
+
 {% hint style="warning" %}
 `redbrick_png` export will only work with `segmentation` project types.&#x20;
 {% endhint %}
 
+{% hint style="success" %}
 Please see [the reference documentation](reference.md#png-mask-formats) for an overview of the exported mask formats.
+{% endhint %}
 
 ## Code Example
 
