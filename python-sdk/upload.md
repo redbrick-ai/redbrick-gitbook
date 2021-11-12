@@ -9,11 +9,11 @@ description: Programmatically uploading data to your RedBrick AI Project.
 The `create_datapoints` function allows you to programmatically upload your data and labels to your RedBrick AI project.&#x20;
 
 ```python
-failed_to_create = project.upload.create_datapoints(storage_id, datapoints)
+failed_to_create = project.upload.create_datapoints(storage_id, datapoints, is_ground_truth=False)
 ```
 
 **`storage_id` **\
-****Your RedBrick AI [storage method's](../projects/importing-data/#storage-methods) unique ID. Public storage methods have a default ID of `"11111111-1111-1111-1111-111111111111"`.
+****Your RedBrick AI [storage method's](../projects/importing-data/#storage-methods) unique ID. Public storage methods have a default ID, you can use `redbrick.StorageMethod.PUBLIC`.
 
 **`datapoints` **\
 ****The list of datapoints that you want to upload to the platform. See the `LabelObject` format in the [reference documentation](reference.md).
@@ -30,6 +30,10 @@ failed_to_create = project.upload.create_datapoints(storage_id, datapoints)
 ]
 ```
 
+**`is_ground_truth`**
+
+Optional, False by default. Setting this value to True will upload the task directly into the ground truth state at the end of your pipeline. This can be useful for performing active learning with data you already have labeled.
+
 ## Create Datapoints from Masks
 
 The `create_datapoints_from_masks` function allows you to programmatically upload your data with mask labels.&#x20;
@@ -43,14 +47,14 @@ failed_to_create = project.upload.create_datapoints(storage_id, mask_dir)
 ```
 
 **`storage_id` **\
-****Your RedBrick AI [storage method's](../projects/importing-data/#storage-methods) unique ID. Public storage methods have a default ID of `"11111111-1111-1111-1111-111111111111"`.
+****Your RedBrick AI [storage method's](../projects/importing-data/#storage-methods) unique ID. For publicly hosted data (public URL's) use the default ID  `redbrick.StorageMethod.PUBLIC`.
 
 **`mask_dir` **\
 **** Path to the directory containing your masks and category information. Please see the [reference documentation](reference.md#png-mask-formats) for details about the required format for your masks directory.&#x20;
 
 ## Code Example
 
-Get your storage methods storage id. If you haven't created a storage method, please look at the [documentation](../projects/importing-data/#using-external-storage-involves-two-steps). For this example we're using the default Public Storage (storage ID: "11111111-1111-1111-1111-111111111111" ) method which allows using public data accessible by a URL.
+Get your storage methods storage id. If you haven't created a storage method, please look at the [documentation](../projects/importing-data/#using-external-storage-involves-two-steps). For this example we're using the default Public Storage (storage ID: `redbrick.StorageMethod.PUBLIC`) method which allows using public data accessible by a URL.
 
 {% hint style="success" %}
 Please look at the [overview](sdk-overview.md#getting-started) to understand how to do the Standard Setup.
@@ -67,7 +71,7 @@ project_id = "<TODO>"
 project = redbrick.get_project(api_key, url, org_id, project_id)
 
 # default public storage method
-storage_id = "11111111-1111-1111-1111-111111111111"
+storage_id = redbrick.StorageMethod.PUBLIC
 datapoints = [
     {
         "name": "my first upload",
