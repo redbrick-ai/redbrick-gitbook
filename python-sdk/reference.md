@@ -126,7 +126,7 @@ For exporting to masks, or importing masks to RedBrick AI projects, you have to 
 # On Upload, you can name the directory whatever you like. 
 
 project_id 
-├── uuid_1.png # On Export, masks will be exported a unique id for each datapoint.
+├── uuid_1.png # On Export, masks file name will be the unique task_id. 
 ├── uuid_2.png # On Upload, mask file name will be used as the datapoint name.
 ├── uuid_3.png
 ├── datapoint_map.json # Map from mask filename -> image items path
