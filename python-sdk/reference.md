@@ -133,6 +133,10 @@ project_id
 └── class_map.json # Map from object category -> mask color
 ```
 
+**PNG Masks**
+
+The masks will be RGB PNG's with 8 bit integer pixel values `[0, 255]` (the corresponding class can be found the `class_map.json`).&#x20;
+
 **Class Map**
 
 The mask PNG's are 3 channel RGB images. The mapping from RGB values to category names is provided in the `class_map.json`.&#x20;
@@ -140,8 +144,8 @@ The mask PNG's are 3 channel RGB images. The mapping from RGB values to category
 ```json
 // class_map.json
 {
-    "category_1": [0.90, 0.33, 0.05] // rgb values [0, 1]
-    "category_2": [0.12, 0.88, 0..]
+    "category_1": [1, 10, 2] // rgb values [0, 255]
+    "category_2": [29, 198, 22]
     .
     .
 }
@@ -149,13 +153,12 @@ The mask PNG's are 3 channel RGB images. The mapping from RGB values to category
 
 **Datapoint Map**
 
-_When you export_ your data as masks, the `datapoint_map.json` file will contain a mapping between the mask filename (the filename will be a unique identifier), to the [items field](../projects/importing-data/#items-list) used on upload. If you have used direct upload, the items field will be a file path with your image filename at the end of the string, e.g. `uuid/images/uuid/your_file_name.png`).
+The `datapoint_map.json` file contains a mapping between the mask filename and the corresponding image file path. The `datapoint_map.json` will be the following format:&#x20;
 
-_When you import _your masks, the name of your mask files will be used as your datapoint's name on the RedBrick AI platform. These **names must be unique across your entire project. **The `datapoint_map.json` must contain a mapping between these unique filenames and the [items path](../projects/importing-data/#items-list) that will be used for your upload.&#x20;
-
-{% hint style="info" %}
-Uploading masks with Direct Upload is not supported right now. If you want to upload your masks with your image data, [please use an external storage method](../projects/importing-data/#storage-methods).&#x20;
-{% endhint %}
+* Keys
+  * Name of your PNG masks, which will be the unique `task_id` field.
+* Values
+  * &#x20;The [items field](../projects/importing-data/#items-list) that was used on upload. If Direct Upload was used, this will be a string with your original filename at the end of the string for e.g. `uuid/images/uuid/your_file_name.png`.
 
 ```json
 // datapoint_map.json
