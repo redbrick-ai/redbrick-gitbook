@@ -112,6 +112,8 @@ The easiest way to modify this script for your own use, would be to select some 
 
 ### create\_datapoint\_from\_mask
 
+Uploads locally stored images and masks that are in the [following format](reference.md#png-mask-formats), to RedBrick AI.&#x20;
+
 ```python
 """Uploads images/masks that were exported from RedBrick."""
 import redbrick
