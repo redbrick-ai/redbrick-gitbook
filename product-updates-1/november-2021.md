@@ -1,6 +1,6 @@
 # November 2021
 
-A quick overview of the latest updates and features we've introduced to improve the overall experience while using the tool. You may want to visit the [documentation](https://docs.redbrickai.com/product-updates/july-2021-labeling-tool) if you're interested in getting a more detailed insight of these updates.
+A quick overview of the latest updates and features we've introduced to improve the overall experience while using the tool.&#x20;
 
 
 
