@@ -7,7 +7,7 @@
   * [June 2021](product-updates-1/june-2021-1.md)
   * [3D Medical Labeling Beta](product-updates-1/3d-medical-labeling-beta.md)
 
-## Team <a href="organizations" id="organizations"></a>
+## Team <a href="#organizations" id="organizations"></a>
 
 * [What Is an Organization?](organizations/what-is-an-organization.md)
 * [Teams and Permissions](organizations/teams-and-permissions.md)
@@ -37,7 +37,8 @@
 * [Importing data and labels](python-sdk/importing-data-and-labels.md)
 * [Programmatically Label and Review](python-sdk/programmatically-label-and-review.md)
 * [Create a project](python-sdk/create-a-project.md)
-* [Reference](python-sdk/reference.md)
+* [Format Reference](python-sdk/reference.md)
+* [Full SDK Reference](https://redbrick-sdk.readthedocs.io/en/latest)
 
 ## Useful Links
 

@@ -3,7 +3,11 @@
 The RedBrick Python SDK is a tool to interact programmatically with the RedBrick AI platform. The SDK is a developer friendly way to carry out important operations like data and label export.
 
 {% hint style="info" %}
-The RedBrick SDK works on Mac, windows, and linux, and is available on [pypi](https://pypi.org/project/redbrick-sdk/). The SDK is compatible with **Python 3.6.0+. **
+The RedBrick SDK works on Mac, windows, and linux, and is available on [pypi](https://pypi.org/project/redbrick-sdk/). The SDK is compatible with **3.70 <= Python < 3.10**
+{% endhint %}
+
+{% hint style="success" %}
+See the [full SDK reference here](https://redbrick-sdk.readthedocs.io/en/latest/)
 {% endhint %}
 
 ### **Generate an API Key**
@@ -38,7 +42,7 @@ The `project_id` and `org_id` is available in the URL when you are logged into y
 
 Under the hood, the Python SDK uses advanced language features to optimize for performance. Certain aspects of these do not play nicely with Jupyter notebooks or other complex python environments.
 
-If you see an error similar to `RuntimeError: asyncio.run() cannot be called from a running event loop` you may be able to fix this by utilizing the `nest_asyncio`  package at the top of your notebook. This comes standard with most Jupyter notebook installs. 
+If you see an error similar to `RuntimeError: asyncio.run() cannot be called from a running event loop` you may be able to fix this by utilizing the `nest_asyncio`  package at the top of your notebook. This comes standard with most Jupyter notebook installs.&#x20;
 
 ```python
 import nest_asyncio
