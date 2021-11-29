@@ -4,7 +4,23 @@ description: Reference types that are common across the SDK are documented on th
 
 # Reference
 
-## Label Objects
+## RedBrick AI Export Format
+
+```json
+[
+  {
+    "name": "image_name", // same unique name used on upload
+    "items": ["image/url.png"], // image url, or frame urls
+    "itemsPresigned": ["image/url_presigned.png"], // same as above, but signed urls
+    "createdBy": "email@email.com",
+    "taskId": "123", // unique id assigned to each task
+
+    "labels": [LabelObject]
+  },
+]
+```
+
+## LabelObject
 
 Useful for understanding the RedBrick label format used for exports and label imports.&#x20;
 
@@ -14,6 +30,7 @@ Useful for understanding the RedBrick label format used for exports and label im
     "category": [["object", str]], // String must belong to Project Taxonomy
     "attributes": [LabelAttribute],
     "labelid": str, // Uniqye for every label 
+    
     "bbox2d": null or {BBox2d},
     "polygon": null or [Point],
     "polyline": null or [Point],
@@ -21,14 +38,15 @@ Useful for understanding the RedBrick label format used for exports and label im
     "ellipse": null or {Ellipse},
     "pixel": null or {Pixel},
     
-    
+    // only included if you have classification labels    
     "frameclassify": null or bool,
     "taskclassify": null or bool,
 
+    // only inlcluded for video projects
     "frameindex": null or int,
-    "trackid": null or str,
-    "keyframe": null or bool,
-    "end": null or bool
+    "trackid": null or str, // unique id for an object track across frames
+    "keyframe": null or bool, // True if manually labeled, False if interpolated
+    "end": null or bool //  True if this label is the last label of a track.
 }
 
 // LabelAttribute

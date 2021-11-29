@@ -33,9 +33,10 @@
 ## Python SDK
 
 * [SDK Overview](python-sdk/sdk-overview.md)
-* [Upload](python-sdk/upload.md)
-* [Export](python-sdk/export-1.md)
-* [Label and Review](python-sdk/label-and-review.md)
+* [Exporting your data](python-sdk/exporting-your-data.md)
+* [Importing data and labels](python-sdk/importing-data-and-labels.md)
+* [Programmatically Label and Review](python-sdk/programmatically-label-and-review.md)
+* [Create a project](python-sdk/create-a-project.md)
 * [Reference](python-sdk/reference.md)
 
 ## Useful Links
