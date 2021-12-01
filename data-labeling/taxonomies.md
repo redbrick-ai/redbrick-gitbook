@@ -76,23 +76,23 @@ Each taxonomy entry has:
 
 * A unique category name
 * A unique category ID \[0,n) where n is the number of classes.
-* A color that will be used when displaying the label. 
+* A color that will be used when displaying the label.&#x20;
 
-Each taxonomy entry can have child categories as well, up to a depth of 3 levels. 
+Each taxonomy entry can have child categories as well, up to a depth of 3 levels.&#x20;
 
 ![Nested categories](../.gitbook/assets/screen-shot-2021-07-14-at-7.02.50-pm.png)
 
 {% hint style="info" %}
-Creating nested taxonomies through interactive UI **is coming soon. **Nested taxonomies can be created through the JSON editor. 
+Creating nested taxonomies through interactive UI **is coming soon.** Nested taxonomies can be created through the JSON editor.&#x20;
 {% endhint %}
 
 ### Creating a taxonomy
 
-You can either create a simple non-nested taxonomy using simple creation, or build a taxonomy from scratch using the JSON editor. Type a category name and press **enter** to add it to the taxonomy list. 
+You can either create a simple non-nested taxonomy using simple creation, or build a taxonomy from scratch using the JSON editor. Type a category name and press **enter** to add it to the taxonomy list.&#x20;
 
 ![](../.gitbook/assets/taxonomy-create.png)
 
-The taxonomy JSON is a list of single taxonomy entries of the following format: 
+The taxonomy JSON is a list of single taxonomy entries of the following format:&#x20;
 
 ```javascript
 {

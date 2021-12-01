@@ -11,7 +11,7 @@ As mentioned earlier, video labeling is done by parsing the video into frames an
 {% hint style="info" %}
 **Video frame loading**
 
-To optimize loading of the webpage, only 50 frames ahead of the current frame will be loaded. 
+To optimize loading of the webpage, only 50 frames ahead of the current frame will be loaded.&#x20;
 {% endhint %}
 
 To describe the functionality of the video labeling interface, let's define a few terms that completely define a single label object in a video.
@@ -29,11 +29,11 @@ To describe the functionality of the video labeling interface, let's define a fe
 
 ### Video interpolation
 
-As described in the section above, the labeling interface will linearly interpolate between all frames that have been labeled (shown in the animation below). 
+As described in the section above, the labeling interface will linearly interpolate between all frames that have been labeled (shown in the animation below).&#x20;
 
 ![Video Bounding Box interpolation](../.gitbook/assets/video-interpolation.gif)
 
-The interpolation feature is present for both bounding box labels, as well as polygon labels: 
+The interpolation feature is present for both bounding box labels, as well as polygon labels:&#x20;
 
-* **Bounding box: **Bounding box vertices are linearly interpolated between frames, you can adjust the position, and dimensions of the bounding box between frames. 
-* **Polygon: **Polygon vertices are linearly interpolated between frames, you can adjust the position of each node between frames. 
+* **Bounding box:** Bounding box vertices are linearly interpolated between frames, you can adjust the position, and dimensions of the bounding box between frames.&#x20;
+* **Polygon:** Polygon vertices are linearly interpolated between frames, you can adjust the position of each node between frames.&#x20;

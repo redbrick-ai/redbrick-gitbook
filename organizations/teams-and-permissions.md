@@ -6,7 +6,7 @@ description: Managing your team and member permissions inside your Organization
 
 ## Organization Permissions
 
-You first have to invite collaborators to join your organization, _before you can invite them to your project. _When you invite collaborators to your organization, you can select their permissions. There is a single owner of each organization, and there can be unlimited Admins and Labelers.&#x20;
+You first have to invite collaborators to join your organization, _before you can invite them to your project._ When you invite collaborators to your organization, you can select their permissions. There is a single owner of each organization, and there can be unlimited Admins and Labelers.&#x20;
 
 | Role    | What they can access                                                                                                             |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------- |
@@ -16,7 +16,7 @@ You first have to invite collaborators to join your organization, _before you ca
 
 ### Sending Organization Invitations
 
-To invite collaborators to your organization, you can head to the _Team Tab _on the left side bar. Within the Team Tab, you can invite users by entering their email and choosing their permission level.
+To invite collaborators to your organization, you can head to the _Team Tab_ on the left side bar. Within the Team Tab, you can invite users by entering their email and choosing their permission level.
 
 ![Team tab on the left sidebar of your account](<../.gitbook/assets/Screen Shot 2021-11-08 at 3.19.48 PM.png>)
 
@@ -25,7 +25,7 @@ To invite collaborators to your organization, you can head to the _Team Tab _on 
 You can invite specific users to individual projects and manage their permissions within the project.   Project permissions and teams can be managed under the **Workforce Tab** on your project dashboard. Please see the list below for information on project permissions. &#x20;
 
 1. All Organization Admins by default are added to all projects.&#x20;
-2. Admins & Owners can invite Organization Labelers to projects. By default _no labelers have access to any projects. _Labelers have to be invited to individual projects.&#x20;
+2. Admins & Owners can invite Organization Labelers to projects. By default _no labelers have access to any projects._ Labelers have to be invited to individual projects.&#x20;
 3. Labelers can be assigned to specific project stages. By assigning a labeler to single or multiple stages, they will only be served tasks from those stages.&#x20;
 
 ![Manage labeler permissions for individual stages under the Workforce Tab. ](<../.gitbook/assets/Screen Shot 2021-11-08 at 4.51.05 PM.png>)

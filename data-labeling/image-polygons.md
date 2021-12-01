@@ -10,19 +10,19 @@ The image polygon tools allow you to annotate and edit images with polygons. Pol
 
 **Create a polygon**
 
-Click on the labeling interface to add a vertex of a polygon, alternatively, you can click hold and drag to drop several vertices on the interface. Once you have added all the vertices to the interface, and want to complete the label, simply **double click**_ _to close the polygon. 
+Click on the labeling interface to add a vertex of a polygon, alternatively, you can click hold and drag to drop several vertices on the interface. Once you have added all the vertices to the interface, and want to complete the label, simply **double click** __ to close the polygon.&#x20;
 
 **Add a vertex**
 
-To add a vertex to a polygon label that has already been created, select the label, and **double click** on the edge where you wish to add a node. A new node will be added to the center of this edge. 
+To add a vertex to a polygon label that has already been created, select the label, and **double click** on the edge where you wish to add a node. A new node will be added to the center of this edge.&#x20;
 
 **Delete a vertex**
 
-To delete a vertex of a polygon that has already been created, **drag** the vertex that you wish to delete on to a neighboring vertex. You will see the vertex expand, at which point you can release and the vertex will be deleted. 
+To delete a vertex of a polygon that has already been created, **drag** the vertex that you wish to delete on to a neighboring vertex. You will see the vertex expand, at which point you can release and the vertex will be deleted.&#x20;
 
 ## Image Segmentation
 
-The image segmentation tools allow you to annotate images with pixel level labels. The interface offers a circular, and square brush with adjustable sizes to create pixel level segmentation labels. 
+The image segmentation tools allow you to annotate images with pixel level labels. The interface offers a circular, and square brush with adjustable sizes to create pixel level segmentation labels.&#x20;
 
 **Creating a new instance**
 
@@ -30,4 +30,4 @@ Create a new segmentation label by selecting a label class and 'painting' on the
 
 **Editing an existing instance**
 
-To edit an existing segmentation instance, select the label from the sidebar and make any edits that you wish - changing the shape, label class etc. Once you are happy with your edits, press `esc` to finish the edit. 
+To edit an existing segmentation instance, select the label from the sidebar and make any edits that you wish - changing the shape, label class etc. Once you are happy with your edits, press `esc` to finish the edit.&#x20;

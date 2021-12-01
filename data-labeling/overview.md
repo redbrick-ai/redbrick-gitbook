@@ -16,13 +16,13 @@ The RedBrick AI platform offers several manual and automated tools for image and
 
 ## Labeling Interface Layout
 
-The labeling interface is simple and easy to get started with. The figure below will help you get acquainted with the labeling tool interface. 
+The labeling interface is simple and easy to get started with. The figure below will help you get acquainted with the labeling tool interface.&#x20;
 
 ### Side Bar
 
 ![Current Label Section](../.gitbook/assets/current-label-section.png)
 
-The sidebar contains all the relevant information for adding, and modifying labels. The **Current Label** section displays a list of all the classes in your taxonomy for you to label as well as the label actions** **with actions like removing labels, tracking labels in videos etc. When a created label is selected, its class will be highlighted in this list. 
+The sidebar contains all the relevant information for adding, and modifying labels. The **Current Label** section displays a list of all the classes in your taxonomy for you to label as well as the label actions **** with actions like removing labels, tracking labels in videos etc. When a created label is selected, its class will be highlighted in this list.&#x20;
 
 ![All Labels Section](../.gitbook/assets/all-labels-section.png)
 
@@ -34,10 +34,10 @@ The **All Labels** section contains a list of all the created labels allows the 
 
 ![](../.gitbook/assets/topbar.png)
 
-The top bar contains high level actions like submitting/saving tasks and accepting/reviewing tasks during quality assurance. Furthermore, the top bar contains high level information about each task - like: 
+The top bar contains high level actions like submitting/saving tasks and accepting/reviewing tasks during quality assurance. Furthermore, the top bar contains high level information about each task - like:&#x20;
 
 * **The data breadcrumbs**: The file path, or the url of the task (same as the [items list entry](broken-reference))
-* **Timer**: The amount of time you have spent on this particular data point. This information is stored and provided to admins. 
+* **Timer**: The amount of time you have spent on this particular data point. This information is stored and provided to admins.&#x20;
 * **Labeling Queue**: Allows you to access tasks assigned to the user.
 * **Comments**: Allows you to access comments about a particular task.
 
@@ -49,17 +49,17 @@ The top bar contains high level actions like submitting/saving tasks and accepti
 
 The tool bar contains useful tools labeling actions, and tools specific to the label type you are working with. Some of the generic functions are:
 
-* **Zoom: **zoom in and zoom out.
-* **Selection tool:** disables editing on the interface. 
+* **Zoom:** zoom in and zoom out.
+* **Selection tool:** disables editing on the interface.&#x20;
 * **Visualization controls:** allow you to change the brightness, and contrast of the image as well as the opacity of the labels.
 
-The tool bar also lets you choose what labeling tool you want to use if you have created your project with the _multi label type option_. 
+The tool bar also lets you choose what labeling tool you want to use if you have created your project with the _multi label type option_.&#x20;
 
 ### **Labeling Canvas**
 
-The labeling canvas is where you will interact with the data and labels and actually add, edit, remove labels to data. Depending on the type of labels you are generating, the actions required to create/edit the labels will change. 
+The labeling canvas is where you will interact with the data and labels and actually add, edit, remove labels to data. Depending on the type of labels you are generating, the actions required to create/edit the labels will change.&#x20;
 
-## Keyboard and Mouse Shortcuts 
+## Keyboard and Mouse Shortcuts&#x20;
 
 | Mac          | Windows          | Description                                                                     |
 | ------------ | ---------------- | ------------------------------------------------------------------------------- |
@@ -85,17 +85,17 @@ The labeling canvas is where you will interact with the data and labels and actu
 
 ## Creating and Editing Labels
 
-At a high level there are four actions you can perform to a label - **creating**, **selecting, and editing**.  The process for doing so is largely similar for each label type, and is briefly covered in this section. 
+At a high level there are four actions you can perform to a label - **creating**, **selecting, and editing**.  The process for doing so is largely similar for each label type, and is briefly covered in this section.&#x20;
 
 #### Creating labels
 
-When you open up the labeling interface, the sidebar loads with the first label class in the taxonomy pre-selected. Interacting with the label canvas to draw a new label will create this label with the label class selected in the left panel. If you wish to change the label class, simply select another label class from the sidebar either before, or after you have created the label. 
+When you open up the labeling interface, the sidebar loads with the first label class in the taxonomy pre-selected. Interacting with the label canvas to draw a new label will create this label with the label class selected in the left panel. If you wish to change the label class, simply select another label class from the sidebar either before, or after you have created the label.&#x20;
 
 ![Creating Labels](../.gitbook/assets/creating-labels.gif)
 
 #### Selecting and un-selecting labels
 
-When there are already labels on the label canvas, you can select/un-select them to perform various actions on them. You can select any label from the sidebar label list; furthermore, many label types (like bounding boxes, and polygons) can be selected by interacting with the label canvas. A selected label will be highlighted. To un select a label, simply press the `esc` key, or select a different label. 
+When there are already labels on the label canvas, you can select/un-select them to perform various actions on them. You can select any label from the sidebar label list; furthermore, many label types (like bounding boxes, and polygons) can be selected by interacting with the label canvas. A selected label will be highlighted. To un select a label, simply press the `esc` key, or select a different label.&#x20;
 
 ![Selecting/un-selecting Labels](../.gitbook/assets/selecting-deselecting-labels.gif)
 
@@ -107,11 +107,11 @@ Once you have selected the label you want to edit, you can edit all its properti
 
 ## Labeling Comments
 
-The labeling tool allows you to leave comments about issues, questions and feedback on the labeling. The comments are accessible via the comments tab on the top right of the tool. 
+The labeling tool allows you to leave comments about issues, questions and feedback on the labeling. The comments are accessible via the comments tab on the top right of the tool.&#x20;
 
 ![](../.gitbook/assets/comments-gif.gif)
 
-Your team members can leave comments at any stage of the labeling workflow, and the interface will display the full history of the comments along with when it was created, which user created the comments, and at which stage in the pipeline the comment was created. 
+Your team members can leave comments at any stage of the labeling workflow, and the interface will display the full history of the comments along with when it was created, which user created the comments, and at which stage in the pipeline the comment was created.&#x20;
 
 ## Labeling Queue
 
