@@ -6,10 +6,6 @@ You can programmatically upload your data to the RedBrick AI platform and also u
 
 You can use the `create_datapoints` method to upload data to the RedBrick AI platform.&#x20;
 
-{% hint style="info" %}
-`create_datatapoints`only supports [external storage methods](../projects/importing-data/#storage-methods). Support for [direct upload](../projects/importing-data/direct-upload.md) is coming soon.
-{% endhint %}
-
 Perform standard SDK set up to create an RBProject object.
 
 ```python
@@ -28,8 +24,8 @@ Construct your data points object and upload to RedBrick.
 
 ```python
 # Your storage id can be found on the Storage Methods tab (left sidebar) on RedBrick AI
-# redbrick.StorageMethod.PUBLIC is for publically stored data.
-storage_id = redbrick.StorageMethod.PUBLIC
+# redbrick.StorageMethod.REDBRICK is for locally stored data.
+storage_id = redbrick.StorageMethod.REDBRICK
 
 datapoints = [
     {
@@ -40,7 +36,7 @@ datapoints = [
         # Must be a valid path to data stored in the storage method
         # defined above.
         "items": [
-            "http://datasets.redbrickai.com/car-vids/car-1/frame20.png"
+            "path/to/local/file.png"
         ]
     }
 ]
