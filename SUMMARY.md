@@ -38,7 +38,7 @@
 * [Programmatically Label and Review](python-sdk/programmatically-label-and-review.md)
 * [Create a project](python-sdk/create-a-project.md)
 * [Format Reference](python-sdk/reference.md)
-* [Full SDK Reference](https://redbrick-sdk.readthedocs.io/en/latest)
+* [Full SDK Reference](https://redbrick-sdk.readthedocs.io/en/stable/)
 
 ## Useful Links
 

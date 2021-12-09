@@ -29,8 +29,7 @@ storage_id = redbrick.StorageMethod.REDBRICK
 
 datapoints = [
     {
-        # Optional. Must be unique for each datapoint.
-        # If not specified, will be the items path.
+        # Must be unique for each datapoint.
         "name": "my first upload",
         
         # Must be a valid path to data stored in the storage method
@@ -55,8 +54,7 @@ storage_id = redbrick.StorageMethod.PUBLIC
 
 datapoints = [
     {
-        # Optional. Must be unique for each datapoint.
-        # If not specified, will be the items path.
+        # Must be unique for each datapoint.
         "name": "my first upload",
         
         # Must be a valid path to data stored in the storage method
