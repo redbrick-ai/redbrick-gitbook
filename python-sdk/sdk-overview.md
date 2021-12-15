@@ -7,7 +7,7 @@ The RedBrick SDK works on Mac, windows, and linux, and is available on [pypi](ht
 {% endhint %}
 
 {% hint style="success" %}
-See the [full SDK reference here](https://redbrick-sdk.readthedocs.io/en/latest/)
+See the [full SDK reference here](https://redbrick-sdk.readthedocs.io/en/stable/)
 {% endhint %}
 
 ### **Generate an API Key**
