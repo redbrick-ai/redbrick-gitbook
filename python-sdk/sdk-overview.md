@@ -24,21 +24,32 @@ $ pip3 install -U redbrick-sdk
 
 ### **Initialize the RedBrick SDK in Python**
 
+{% hint style="warning" %}
+**Starting with v0.7.0 the argument order get\_project and get\_org have changed**
+{% endhint %}
+
 To use the SDK, you need to get your project ID, and organization ID. Fill in your own values in the following script to start off any session.
 
 ```python
 import redbrick
 
-api_key = "<your api key from step 2>"
-url = "https://api.redbrickai.com"
+api_key = "<your_api_key>"
 org_id = "<>"
 project_id = "<>"
-project = redbrick.get_project(api_key, url, org_id, project_id)
+project = redbrick.get_project(
+    org_id=org_id,
+    project_id=project_id,
+    api_key=api_key,
+)
 ```
 
 The `project_id` and `org_id` is available in the URL when you are logged into your project - `https://app.redbrickai.com/<orgid>/projects/<projectid>`.
 
 ## Running inside of a Jupyter Notebook
+
+{% hint style="info" %}
+Starting with SDK v0.7.0 this should be handled automatically for you
+{% endhint %}
 
 Under the hood, the Python SDK uses advanced language features to optimize for performance. Certain aspects of these do not play nicely with Jupyter notebooks or other complex python environments.
 

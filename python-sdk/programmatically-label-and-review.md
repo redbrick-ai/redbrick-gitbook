@@ -10,12 +10,15 @@ Perform the standard SDK set up to create a RBProject object.
 import redbrick
 
 api_key = "<TODO>"
-url = "https://api.redbrickai.com"
 org_id = "<TODO>"
 project_id = "<TODO>"
 stage_name = "<TODO>"
 
-project = redbrick.get_project(api_key, url, org_id, project_id)import redbrick
+project = redbrick.get_project(
+    org_id=org_id,
+    project_id=project_id,
+    api_key=api_key
+)
 ```
 
 Get tasks from your RedBrick AI project. You can find the `stage_name` on the workflow visualization on the project dashboard.

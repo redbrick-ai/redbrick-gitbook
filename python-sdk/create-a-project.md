@@ -7,10 +7,9 @@ import redbrick
 
 # Standard Setup
 api_key = "<TODO>"
-url = "https://api.redbrickai.com"
 org_id = "<TODO>"
 
-organization = redbrick.get_org(api_key, url, org_id)
+organization = redbrick.get_org(org_id=org_id, api_key=api_key)
 ```
 
 Create a project within your organization

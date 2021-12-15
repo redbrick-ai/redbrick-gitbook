@@ -21,11 +21,14 @@ import redbrick
 
 # Standard Setup
 api_key = "<TODO>"
-url = "https://api.redbrickai.com"
 org_id = "<TODO>"
 project_id = "<TODO>"
 
-project = redbrick.get_project(api_key, url, org_id, project_id)
+project = redbrick.get_project(
+    org_id=org_id,
+    project_id=project_id,
+    api_key=api_key
+)
 ```
 
 #### Export in RedBrick AI Format
