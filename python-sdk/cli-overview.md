@@ -1,4 +1,4 @@
-# CLI
+# CLI Overview
 
 The RedBrick CLI is a tool to interact programmatically with the RedBrick AI platform. The CLI provides a developer friendly way to perform important functions like export, project creation etc.&#x20;
 
@@ -67,7 +67,7 @@ tree .
 
 The CLI provides a git like interface for exporting data from your projects. The CLI will only fetch the newly created annotations in your project and update your cloned project folder.&#x20;
 
-For e.g. if you upload 10,000 images in your project, and annotate 8,000 images then export using the CLI, the CLI will export 8,000 tasks. A day later if you annotate another 5, it will only export the 5 new tasks, and will update the existing exported files.
+For e.g. if you upload 10,000 images in your project, and annotate 8,000 images then export using the CLI, the CLI will export 8,000 tasks. A day later if you annotate another 5, the CLI will update the exported data with the 5 new tasks.
 
 To export your data, you need to first go to your project directory
 
