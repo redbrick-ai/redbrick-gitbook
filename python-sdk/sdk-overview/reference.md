@@ -176,7 +176,7 @@ The `datapoint_map.json` file contains a mapping between the mask filename and t
 * Keys
   * Name of your PNG masks, which will be the unique `task_id` field.
 * Values
-  * &#x20;The [items field](../projects/importing-data/#items-list) that was used on upload. If Direct Upload was used, this will be a string with your original filename at the end of the string for e.g. `uuid/images/uuid/your_file_name.png`.
+  * &#x20;The [items field](../../projects/importing-data/#items-list) that was used on upload. If Direct Upload was used, this will be a string with your original filename at the end of the string for e.g. `uuid/images/uuid/your_file_name.png`.
 
 ```json
 // datapoint_map.json

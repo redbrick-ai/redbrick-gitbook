@@ -30,14 +30,15 @@
 * [Video Labeling](data-labeling/video-labeling-1.md)
 * [Taxonomies](data-labeling/taxonomies.md)
 
-## Python SDK
+## Python SDK & CLI <a href="#python-sdk" id="python-sdk"></a>
 
-* [SDK Overview](python-sdk/sdk-overview.md)
-* [Exporting your data](python-sdk/exporting-your-data.md)
-* [Importing data and labels](python-sdk/importing-data-and-labels.md)
-* [Programmatically Label and Review](python-sdk/programmatically-label-and-review.md)
-* [Create a project](python-sdk/create-a-project.md)
-* [Format Reference](python-sdk/reference.md)
+* [CLI](python-sdk/cli.md)
+* [SDK Overview](python-sdk/sdk-overview/README.md)
+  * [Exporting your data](python-sdk/sdk-overview/exporting-your-data.md)
+  * [Importing data and labels](python-sdk/sdk-overview/importing-data-and-labels.md)
+  * [Programmatically Label and Review](python-sdk/sdk-overview/programmatically-label-and-review.md)
+  * [Create a project](python-sdk/sdk-overview/create-a-project.md)
+  * [Format Reference](python-sdk/sdk-overview/reference.md)
 * [Full SDK Reference](https://redbrick-sdk.readthedocs.io/en/stable/)
 
 ## Useful Links
