@@ -92,3 +92,55 @@ To clear the local redbrick cache and force download all the annotations again, 
 ```
 redbrick export --clear-cache
 ```
+
+#### Exporting segmentations in NifTI-1
+
+To export DICOM project labels in [NIfTI-1](https://nifti.nimh.nih.gov/nifti-1/) format, run the following command.
+
+```
+redbrick export --format nifti
+```
+
+Doing so will export labels in `nifti` directory inside the project directory.
+
+```
+tree .
+.
+└── nifti
+```
+
+To export tasks along with labels, run the following command.
+
+```
+redbrick export --with-files
+```
+
+Doing so will export tasks in `images` / `videos` / `dicom` directory (based on project type) inside the project directory.
+
+## Importing data into your project
+
+To import data into your project, you need to first go to your project directory.
+
+```
+cd Project-1
+```
+
+Create a directory (e.g. `data`) and dump your files/directories into it. Then run the following command.
+
+```
+redbrick upload data
+```
+
+This will upload all nested files from `data` to your project. Supported file types for upload are:
+
+* **Image:** .png, .jpg, .jpeg, .bmp
+* **Video:** .mp4
+* **DICOM:** .dcm
+
+For DICOM upload, a series of .dcm images (named in sorted order) in a sub-directory will be uploaded as a single task.
+
+For video upload using a series of image frames in sub-directory per task, run the following command.
+
+```
+redbrick upload --as-frames data
+```
