@@ -21,13 +21,13 @@ The first key thing to understand the layout of the tool. There are 4 core compo
 * Right Bar: Specific tools for drawing your annotations and viewing the images.&#x20;
 * Canvas: The main view where the volume gets rendered and where you interact to create annotations.&#x20;
 
-![DICOM Tool Layout](<../.gitbook/assets/Group 495 (1).png>)
+![DICOM Tool Layout](<../../.gitbook/assets/Group 495 (1).png>)
 
 ### Quad View
 
 The default view of the volume is the quad view, which gives you a Multi-planar reconstruction view as well as a 3D reconstruction view.&#x20;
 
-![Quad and primary view can be toggled on the right sidebar](<../.gitbook/assets/Screen Shot 2022-01-12 at 3.30.40 PM.png>)
+![Quad and primary view can be toggled on the right sidebar](<../../.gitbook/assets/Screen Shot 2022-01-12 at 3.30.40 PM.png>)
 
 You can toggle between the Quad view and Primary view from the right sidebar or using the keyboard shortcuts.
 
@@ -40,7 +40,7 @@ You can toggle between the Quad view and Primary view from the right sidebar or 
 
 The primary view is best if you want to focus on one plane. A single plane will make up the main view, and the orthogonal views and 3D reconstruction will be displayed on the right.&#x20;
 
-![Primary view ](<../.gitbook/assets/Screen Recording 2022-01-12 at 03.41.01 PM.gif>)
+![Primary view ](<../../.gitbook/assets/Screen Recording 2022-01-12 at 03.41.01 PM.gif>)
 
 | Shortcut                        | Action                            |
 | ------------------------------- | --------------------------------- |
@@ -53,7 +53,7 @@ The primary view is best if you want to focus on one plane. A single plane will 
 
 Now that you're well situated with the layout of the tool, let's describe how your view or navigate through the volume. From your right side bar, you can ensure you are in `view` mode so that all the functionality is available.&#x20;
 
-![Change between modes and select tools from the right sidebar](<../.gitbook/assets/Screen Shot 2022-01-12 at 4.08.23 PM.png>)
+![Change between modes and select tools from the right sidebar](<../../.gitbook/assets/Screen Shot 2022-01-12 at 4.08.23 PM.png>)
 
 | Action                                                   | Shortcut                                                                                                                        |
 | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
@@ -71,7 +71,7 @@ Now that you're well situated with the layout of the tool, let's describe how yo
 
 Using the cross-hair tool you can synchronize all the views to view particular parts of your volume in different planes.&#x20;
 
-![Cross-hair tool in quad view](<../.gitbook/assets/Screen Recording 2022-01-12 at 04.15.21 PM.gif>)
+![Cross-hair tool in quad view](<../../.gitbook/assets/Screen Recording 2022-01-12 at 04.15.21 PM.gif>)
 
 ### **3D viewing**
 
@@ -84,7 +84,7 @@ The 3D view of your image can be enabled on the bottom right of your screen. Onc
 | **Pan** across your volume             | `shift` + `left click` + `drag` |
 | **Rotate** the volume **in the plane** | `ctrl` + `left click` + `drag`  |
 
-![Interacting with your 3D volume](<../.gitbook/assets/Screen Recording 2022-01-12 at 04.22.01 PM.gif>)
+![Interacting with your 3D volume](<../../.gitbook/assets/Screen Recording 2022-01-12 at 04.22.01 PM.gif>)
 
 ### Windowing
 
@@ -121,7 +121,7 @@ The brush tool allows you to segment your volume with a 2D circular brush or a 3
 
 The pen and scissor tools give you finer control over creating and editing annotations. Using these tools you can draw a free-hand polygon that will be converted to a 2D or 3D segmentation.&#x20;
 
-![](<../.gitbook/assets/Screen Recording 2022-01-12 at 07.29.39 PM.gif>)
+![](<../../.gitbook/assets/Screen Recording 2022-01-12 at 07.29.39 PM.gif>)
 
 | Actions                                           | Shortcut                                                                                          |
 | ------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
@@ -134,4 +134,4 @@ The pen and scissor tools give you finer control over creating and editing annot
 
 To help automatically segment only a portion of intensity values, you can define a threshold on both the pen/scissor and brush tools.&#x20;
 
-![](<../.gitbook/assets/Screen Recording 2022-01-12 at 08.04.58 PM.gif>)
+![](<../../.gitbook/assets/Screen Recording 2022-01-12 at 08.04.58 PM.gif>)
