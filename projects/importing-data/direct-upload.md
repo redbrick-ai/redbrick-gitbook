@@ -25,3 +25,17 @@ Each file uploaded will be made into its own task. As shown in the image below, 
 ## Video Projects <a href="#video-projects-beta" id="video-projects-beta"></a>
 
 For video projects you can upload MP4 files and we will handle the parsing down to frames. Videos will be split into frames at the full frame rate of the videos. Any frames beyond the first 5000 will be removed. It is strongly recommended to keep video clips shorter to assist annotators.&#x20;
+
+## DICOM Projects <a href="#video-projects-beta" id="video-projects-beta"></a>
+
+For DICOM projects you can upload _.dcm_ series folders and we will create separate tasks for each folder uploaded. For folders that contains multiple sub-folders, each sub-folder will be counted as a separate folder and create a separate task. It is strongly recommended to not upload too many tasks at once as web browsers might not be able to handle the amount of data or threshold data transfer limits, leading to subpar performance.&#x20;
+
+{% hint style="warning" %}
+Only multiple _.dcm_ file series are currently accepted. Single ._dcm_ files are not currently supported.
+{% endhint %}
+
+![DICOM Direct Upload](../../.gitbook/assets/dicom-upload.png)
+
+As shown in the image above,  `SE000001` is the folder containing the series of DICOM files to be uploaded and will be made into a single task. Simply click _Start Import_ and you are ready to go!
+
+![Data inside SE000001](../../.gitbook/assets/test-data-dicom.png)
