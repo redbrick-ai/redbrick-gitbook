@@ -34,8 +34,8 @@ For DICOM projects you can upload _.dcm_ series folders and we will create separ
 Only multiple _.dcm_ file series are currently accepted. Single ._dcm_ files are not currently supported.
 {% endhint %}
 
-![DICOM Direct Upload](../../.gitbook/assets/dicom-upload.png)
+![5 folders containing dcm files prepared for upload.](<../../.gitbook/assets/Screen Shot 2022-01-22 at 7.03.57 PM.png>)
 
-As shown in the image above,  `SE000001` is the folder containing the series of DICOM files to be uploaded and will be made into a single task. Simply click _Start Import_ and you are ready to go!
+As shown in the image above, there are multiple series folders which have `.dcm` files in them. See the image below for the folder structure on a local file system. This upload will create 5 separate tasks.&#x20;
 
-![Data inside SE000001](../../.gitbook/assets/test-data-dicom.png)
+![Structure of folders for direct upload](<../../.gitbook/assets/Screen Shot 2022-01-22 at 7.07.19 PM.png>)
