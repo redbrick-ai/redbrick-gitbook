@@ -1,5 +1,9 @@
 # Configuring Azure Blob Storage
 
+{% embed url="https://youtu.be/8XcRjr4TtLI" %}
+Video Tutorial
+{% endembed %}
+
 ## Create a Storage Account
 
 {% hint style="info" %}
