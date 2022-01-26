@@ -12,7 +12,7 @@ An Azure storage account contains all of your Azure Storage data objects, you ca
 2. On the left portal menu, select **Storage Accounts** to list all of your storage accounts.&#x20;
 3. On the **Storage Accounts** page, click **create**.
 
-### Basics Tab.&#x20;
+### Basics Tab&#x20;
 
 You need to fill out the required fields under the basics tab, please refer the table below as a quick guide.
 
