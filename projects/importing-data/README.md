@@ -17,7 +17,7 @@ Currently, the options for external Storage Methods are:
 
 * [AWS S3 Buckets](configuring-aws-s3-storage.md).
 * [Google Cloud Storage.](configuring-google-cloud-storage.md)
-* [Azure Blob Storage.](configuring-azure-blob-storage.md)
+* [Azure Blob Storage.](broken-reference)
 * [Public](local-storage.md). This storage type includes data stored on your computer and data stored on any public server accessible by a URL.&#x20;
 * [Direct Upload](direct-upload.md). This storage type allows you to store your data securely on RedBrick AI servers without having to configure your own storage method.
 

@@ -1,62 +1,72 @@
 # Configuring Azure Blob Storage
 
-This section covers how to prepare your Azure Blob storage to import data into the RedBrick AI platform. After following the instructions in this section, you will be able to create an Azure Blob 'storage method' on the RedBrick platform to connect your Azure Blob Storage to your RedBrick account.
+## Create a Storage Account
 
-An Azure storage account contains all of your Azure Storage data objects: blobs, files, queues, tables, and disks. The storage account provides a unique namespace for your Azure Storage data that is accessible from anywhere in the world over HTTPS. Data in your Azure storage account is durable and highly available, secure, and massively scalable.
+{% hint style="info" %}
+If you already have a storage account, _skip_ this section, and head directly to the next section.
+{% endhint %}
 
-**Create Blob storage**
+An Azure storage account contains all of your Azure Storage data objects, you can find the official documentation [here](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json\&tabs=azure-portal).&#x20;
 
-**NOTE:** If you already have a Blob Storage account already, skip the following part.
+1. [Sign in](https://portal.azure.com) to your Azure portal.
+2. On the left portal menu, select **Storage Accounts** to list all of your storage accounts.&#x20;
+3. On the **Storage Accounts** page, click **create**.
 
-1. On the Azure portal menu, select All services. In the list of resources, type Storage Accounts. As you begin typing, the list filters based on your input. Select Storage Accounts.
-2. On the Storage Accounts window that appears, choose Add.
-3. On the Basics tab, select the subscription in which to create the storage account.
-4. Under the Resource group field, select your desired resource group, or create a new resource group. For more information on Azure resource groups, see Azure Resource Manager overview.
-5. Next, enter a name for your storage account. The name you choose must be unique across Azure. The name also must be between 3 and 24 characters in length, and may include only numbers and lowercase letters.
-6. Select a location for your storage account, or use the default location.
-7. Select a performance tier. The default tier is Standard.
-8. Set the Account kind field to Storage V2 (general-purpose v2).
-9. Specify how the storage account will be replicated. The default replication option is Read-access geo-redundant storage (RA-GRS). For more information about available replication options, see Azure Storage redundancy.
-10. Additional options are available on the Networking, Data protection, Advanced, and Tags tabs. To use Azure Data Lake Storage, choose the Advanced tab, and then set Hierarchical namespace to Enabled. For more information, see Azure Data Lake Storage Gen2 Introduction
-11. Select Review + Create to review your storage account settings and create the account.
-12. Select Create
+### Basics Tab.&#x20;
 
-**Create Container**
+You need to fill out the required fields under the basics tab, please refer the table below as a quick guide.
 
-To create a container in the Azure portal, follow these steps:
+| Section          | Field                | Description                                                                                                                                                                                                                      |
+| ---------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Project details  | Subscription         | Select the subscription for the new storage account.                                                                                                                                                                             |
+| Project details  | Resource group       | Create a new resource group for this storage account, or select an existing one. For more information, see [Resource groups](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview#resource-groups). |
+| Instance details | Storage account name | Choose a unique name for your storage account.                                                                                                                                                                                   |
+| Instance details | Region               | Select the appropriate region for your storage account. For more information, see [Regions and Availability Zones in Azure](https://docs.microsoft.com/en-us/azure/availability-zones/az-overview).                              |
+| Instance details | Performance          | Select your desired level of performance, or choose the default option.                                                                                                                                                          |
+| Instance details | Redundancy           | Select your desired redundancy configuration.                                                                                                                                                                                    |
 
-1. Navigate to your storage account in the Azure portal.
-2. In the left menu for the storage account, scroll to the **Blob Service** section, then select **Containers**.
-3. Select the + Container button.
-4. Type a name for your new container. The container name must be lowercase, must start with a letter or number, and can include only letters, numbers, and the dash (-) character. For more information about container and blob names, see [Naming and referencing containers, blobs, and metadata](https://docs.microsoft.com/en-us/rest/api/storageservices/naming-and-referencing-containers--blobs--and-metadata).
-5. Keep the default level of access to the container. The default level is Private (no anonymous access).
-6. Select OK to create the container.
+### Other Settings
 
-#### Fetch the Connection String
+To configure other advanced settings on your storage account, head to advanced tabs, otherwise you can continue with default settings.&#x20;
 
-1. Navigate to your storage account in the Azure portal.
-2. In the left menu for the storage account, scroll to the **Settings**, then select **Access Keys**.
-3. It will show you two keys and associated connection strings, click `Show Keys`.
-4. Copy any one of the keys.
+### Review + create
 
-Use this `Connection String`  along with the  `Storage account name`  to create your storage in RedBrick AI.
+When you navigate to the Review + create tab, Azure runs validation on the storage account settings that you have chosen. If validation passes, you can **proceed to create the storage account**.
 
-#### Accessing Data
+## Create a Container
 
-Due to the way Azure works, the path of the data will be with respect to the base storage account. Hence, all containers that lie within the storage account are accessed as folders.\
-\
-For example - In the image below, we can see an example of a container called `test-rbai`
+{% hint style="info" %}
+If you already have a container, please skip to the next section.
+{% endhint %}
 
-The path of access would be `<container-name>/<file-path>`
+Containers organizes a set of blobs, your Azure storage account can have an unlimited number of containers. To create a container, head to your Azure portal:&#x20;
 
-Hence to access `Capture.PNG`, the path would be `test-rbai/Capture.PNG`\
+1. Head to the **Storage Accounts** page from the left portal menu, and select the **Storage Account** you want to create your container in.
+2. On the left menu of the Storage Account, scroll to the **Data Storage** section, then select **Containers.**
+3. Create a container by clicking on the **+ Container** button.&#x20;
+4. Type in a **name** for the container, and set the **level of public access** to the container (we recommend **Private**)
 
+## Get your Connection String
 
-![Azure Example Container](../../.gitbook/assets/azure-capture.png)
+1. Navigate to your **Storage Account** on your Azure portal.&#x20;
+2. In the left menu of the Storage Account, scroll to **Security + Networking**, and select **Access Keys.**&#x20;
+3. On the Access Keys page, click on **Show keys** at the top, and **copy** **one of the connection strings**
 
-#### Validating Your Integration
+## **Create a RedBrick Storage Method**
 
-After creating your storage method you can validate the functionality and debug any errors by using the "validate" feature. Just enter the file path according to the above description. If your image appears then your integration was successful.
+Head over to your RedBrick AI Account:&#x20;
+
+1. Click on the **Storage Method** tab on the left sidebar, and **Create New Storage Method.**&#x20;
+2. In the creation dialog, select **Azure Blob** as the storage type and enter your **connection string,** and **storage account name.**&#x20;
+
+### Verify your Azure connection
+
+Once you've added your Azure storage method on RedBrick AI, you can verify the connection by doing the following:&#x20;
+
+1. First upload an image to your container within your azure storage account (e.g. `image.png`)
+2. Head to the Storage Method page on RedBrick AI, and click on the **verify** button of the storage method you just created.&#x20;
+3. Paste the unique path of your blob, which will be in the following format: `container_name/blob_path` . So if you uploaded `image.png` within the sub-folder `images` in your container `image-container` , your path would be `image-container/images/image.png`.
+4. If the connection was successful, you should see the image appear once you verify.
 
 ## Items List
 
@@ -72,10 +82,10 @@ The items list points the RedBrick AI platform to the data points in the data st
 
 {% hint style="info" %}
 For **image uploads** the `items` array will have only a single entry. \
-For **video uploads** the `items` array has to contain the frames of the video in order. 
+For **video uploads** the `items` array has to contain the frames of the video in order.&#x20;
 {% endhint %}
 
-Below is an example of a single item list entry. 
+Below is an example of a single item list entry.&#x20;
 
 ```javascript
 {
@@ -83,4 +93,4 @@ Below is an example of a single item list entry.
 }
 ```
 
-**NOTE - In this case the container name is an integral part of the file path. This is specific to Azure Blob Storage.**
+**NOTE - In this case the container name is an integral part of the file path. This is specific to Azure Blob Storage.**&#x20;
