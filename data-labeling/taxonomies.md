@@ -14,7 +14,7 @@ You can create a non-nested taxonomy using simple creation, or build a taxonomy 
 
 While in the create a taxonomy modal, type a category name and press enter to add it to the taxonomy list. Each taxonomy entry can have child categories as well, up to a depth of 3 levels.
 
-![](<../.gitbook/assets/image 501.png>)
+![](<../.gitbook/assets/image 501 (2).png>)
 
 The attributes list comprises of
 

@@ -34,7 +34,7 @@ Each datapoint that you upload into your project is created into a **task** insi
 4. `IN PROGRESS -` Is currently going through the stage, e.g. when a user saves a labeling task, it gets marked `IN PROGRESS`.
 {% endhint %}
 
-![Example pipeline, with a single label stage followed by two review stages.](../.gitbook/assets/screen-shot-2021-06-21-at-7.15.55-pm.png)
+![Example pipeline, with a single label stage followed by two review stages.](<../.gitbook/assets/image 501.png>)
 
 You can see an example pipeline above, which involves a single labeling stage, followed by two review stages for quality assurance. The data you upload to the project, will flow through the pipeline following the logic laid out in the diagram. At each stage, a **task** is created and completed before moving to the next stage.&#x20;
 
@@ -46,19 +46,27 @@ Your project dashboard contains all the information you need for managing your p
 
 The overview tab includes high level information regarding the status of your project.&#x20;
 
-![Project dashboard overview.](../.gitbook/assets/group-467-2-.png)
+1. Tasks Overview - The status of data in your project
+2. Project Pipeline - The basic framework of your project
+3. Insights - Data plot conveying the total label & review tasks completed per day
+4. Task Acceptance - Percentage rate of accepted against rejected tasks
+
+![The overview page gives you a quick insight of the status of your project.](../.gitbook/assets/wide.png)
 
 ### Workforce
 
-The workforce tab contains information about your team's progress and performance within a particular project. Specifically, you can view the total _tasks ****_ completed over the last 30 days.&#x20;
+The workforce tab contains information about your team's progress & performance within a project.
 
-![Manage your team progress and performance from the workforce tab](../.gitbook/assets/screen-shot-2021-06-21-at-7.47.08-pm.png)
+1. Active Labelers - Gives you a project level overview and control over the team members
+2. Labelling Productivity - View the total time and tasks _****_ completed over the last 30 days&#x20;
+
+![](../.gitbook/assets/workforce.png)
 
 ### Data
 
-You can interact with your data inside the data tab.&#x20;
+The data page consists of all the tasks in a particular project. The filter system within the page further helps you to navigate across the different tasks based on type.
 
-![Interact with your data in the project dataset tab.](../.gitbook/assets/app.redbrickai.com\_3d0caac7-b1e9-483f-8676-c0aca73af232\_orgsettings-4-.png)
+![](../.gitbook/assets/data.png)
 
 View the section on importing data to understand how to import data into your project.&#x20;
 

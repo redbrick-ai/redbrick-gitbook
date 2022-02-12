@@ -45,7 +45,7 @@ The top bar contains high level actions like submitting/saving tasks and accepti
 
 ### **Tool Bar**
 
-![Toolbar](../.gitbook/assets/toolbar.png)
+![](<../.gitbook/assets/toolbar (2).png>)
 
 The tool bar contains useful tools labeling actions, and tools specific to the label type you are working with. Some of the generic functions are:
 
