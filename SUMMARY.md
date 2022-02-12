@@ -32,6 +32,7 @@
 * [DICOM Labeling](data-labeling/dicom-labeling/README.md)
   * [Optimizing Performance](data-labeling/dicom-labeling/optimizing-performance.md)
 * [Taxonomies](data-labeling/taxonomies.md)
+* [Benchmarks](data-labeling/benchmarks.md)
 
 ## Python SDK & CLI <a href="#python-sdk" id="python-sdk"></a>
 
