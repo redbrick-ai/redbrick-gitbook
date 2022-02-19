@@ -10,8 +10,6 @@ Currently, this guide only covers use of our 3D DICOM annotation tool (CT scans,
 
 There are three main functions you can perform with the RedBrick AI DICOM tool - viewing, labeling, erasing. In this document we will cover all the functionality so that you will be an expert with the RedBrick AI tools.&#x20;
 
-{% embed url="https://youtu.be/YpaiHrw8SLk" %}
-
 ## Layout
 
 The first key thing to understand the layout of the tool. There are 4 core components to the layout (described in the image below).
@@ -21,11 +19,15 @@ The first key thing to understand the layout of the tool. There are 4 core compo
 * Right Bar: Specific tools for drawing your annotations and viewing the images.&#x20;
 * Canvas: The main view where the volume gets rendered and where you interact to create annotations.&#x20;
 
-![DICOM Tool Layout](<../../.gitbook/assets/Group 495 (1).png>)
+![DICOM tool layout](<../../.gitbook/assets/Screen Shot 2022-02-19 at 3.04.16 PM.png>)
+
+{% hint style="info" %}
+On first load, only one of your views will be **enabled.** You can enable and disabled different plane views using the **power icon** on the bottom left of each view.
+{% endhint %}
 
 ### Quad View
 
-The default view of the volume is the quad view, which gives you a Multi-planar reconstruction view as well as a 3D reconstruction view.&#x20;
+One of the views is the quad view, which gives you a multi-planar reconstruction view as well as a 3D reconstruction view.&#x20;
 
 ![Quad and primary view can be toggled on the right sidebar](<../../.gitbook/assets/Screen Shot 2022-01-12 at 3.30.40 PM.png>)
 
@@ -38,9 +40,11 @@ You can toggle between the Quad view and Primary view from the right sidebar or 
 
 ### Primary View
 
-The primary view is best if you want to focus on one plane. A single plane will make up the main view, and the orthogonal views and 3D reconstruction will be displayed on the right.&#x20;
+The primary view is best if you want to focus on one plane. A single plane will make up the main view, and the orthogonal views and 3D reconstruction will be displayed on the right.
 
-![Primary view ](<../../.gitbook/assets/Screen Recording 2022-01-12 at 03.41.01 PM.gif>)
+{% embed url="https://share.getcloudapp.com/o0uZwjje" %}
+DICOM primary view
+{% endembed %}
 
 | Shortcut                        | Action                            |
 | ------------------------------- | --------------------------------- |
@@ -71,7 +75,7 @@ Now that you're well situated with the layout of the tool, let's describe how yo
 
 Using the cross-hair tool you can synchronize all the views to view particular parts of your volume in different planes.&#x20;
 
-![Cross-hair tool in quad view](<../../.gitbook/assets/Screen Recording 2022-01-12 at 04.15.21 PM.gif>)
+{% embed url="https://share.getcloudapp.com/4guZBzzp" %}
 
 ### **3D viewing**
 
@@ -83,8 +87,6 @@ The 3D view of your image can be enabled on the bottom right of your screen. Onc
 | **Zoom** into your volume              | `scroll`                        |
 | **Pan** across your volume             | `shift` + `left click` + `drag` |
 | **Rotate** the volume **in the plane** | `ctrl` + `left click` + `drag`  |
-
-![Interacting with your 3D volume](<../../.gitbook/assets/Screen Recording 2022-01-12 at 04.22.01 PM.gif>)
 
 ### Windowing
 
@@ -99,9 +101,7 @@ To better view your volume in 2D and 3D, you can set the window width and center
 
 With our segmentation tool you can perform semantic segmentation or instance segmentation. Please view the video below for a quick explanation of how you can create, edit, and delete your segmentations.&#x20;
 
-{% embed url="https://youtu.be/IuErW7g1X4M" %}
-
-Now, let's cover some details of the specific tools.&#x20;
+{% embed url="https://youtu.be/tU7ikOJgPUM" %}
 
 ### Paint brush
 
