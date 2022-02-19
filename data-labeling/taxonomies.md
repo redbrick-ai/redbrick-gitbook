@@ -2,7 +2,7 @@
 
 Taxonomies provides a structured way of defining your object label categories. Taxonomies allow you to re-use a set of label classes and attributes over different projects. A simple taxonomy is shown below
 
-![](<../.gitbook/assets/image 440 (1).png>)
+![](<../.gitbook/assets/image 440 (1) (1).png>)
 
 ### **Creating A Taxonomy**
 

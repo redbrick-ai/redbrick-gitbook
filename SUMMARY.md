@@ -2,6 +2,7 @@
 
 * [About RedBrick AI](README.md)
 * [Product updates](product-updates-1/README.md)
+  * [January 2021](product-updates-1/january-2021.md)
   * [December 2021](product-updates-1/december-2021.md)
   * [November 2021](product-updates-1/november-2021.md)
   * [July 2021](product-updates-1/july-2021-labeling-tool.md)

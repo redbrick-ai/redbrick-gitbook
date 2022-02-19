@@ -4,9 +4,7 @@ description: Training Data, Made Easy.
 
 # About RedBrick AI
 
-RedBrick AI is a software platform for creating and managing computer vision training data. Teams use the platform to **structure**, **automate** and **qualify** their labeling efforts in a collaborative way. Accelerate and manage your computer vision labeling while enforcing high quality standards at reasonable cost.
-
-![](.gitbook/assets/group-465-2-.png)
+RedBrick AI is a software platform for annotating medical datasets. Teams use the platform to **structure**, **automate** and **qualify** their labeling efforts in a collaborative way. Accelerate and manage your annotation while enforcing high quality standards at reasonable cost.
 
 ## How to Navigate the Docs
 
