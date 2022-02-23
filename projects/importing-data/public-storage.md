@@ -1,6 +1,25 @@
-# Local Storage
+# Public Storage
 
-## Configuring Local Machine for Data Storage
+Public storage method allows you to upload URLs that are accessible by your/your teams browsers. The data doesn't actually have to be **publicly accessible on the internet,** it just has to be accessible to your browser.&#x20;
+
+There are two main use-cases of Public Storage methods:&#x20;
+
+1. Data that is publicly available on the internet.&#x20;
+2. Data that is stored on an on-premise server that is accessible in a private network.
+
+## Items Path
+
+For public storage data, you have to upload an [items list](./#items-list) to your projects to import specific datapoints. Please have a look at the [items list](./#items-list) documentation for a overview of the format for the JSON file.&#x20;
+
+The `items` path needs to be formatted as follows:&#x20;
+
+```json
+"https://path-to-your-data.png"
+```
+
+A good test to see if this will work with Public Storage method, is to paste the link in your browser and see if your browser is able to load the data. If it is, then this URL will work.&#x20;
+
+## Configuring Local Server for Data Storage
 
 {% hint style="warning" %}
 **Local Storage Drawbacks**\

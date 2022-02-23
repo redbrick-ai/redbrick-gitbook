@@ -2,15 +2,15 @@
 
 This section covers how to prepare your GCS storage to import data into the RedBrick AI platform. After following the instructions in this section, you will be able to create an GCS  'storage method' on the RedBrick platform to connect your GCS bucket to your RedBrick account.
 
-#### Signing up for Google Cloud Platform
+## Signing up for Google Cloud Platform
 
 The first step tp preparing data storage on GCP is to [create a account](https://cloud.google.com) on GCP.
 
-#### Create a bucket within a project
+## Create a bucket within a project
 
-Once you have created your GCP account and a project within your account, a bucket and upload your data within the bucket either through the UI or CLI. You can leave all the settings during creation as the default. After creating your bucket, upload your data into the bucket. 
+Once you have created your GCP account and a project within your account, a bucket and upload your data within the bucket either through the UI or CLI. You can leave all the settings during creation as the default. After creating your bucket, upload your data into the bucket.&#x20;
 
-#### Create a Service Account
+## Create a Service Account
 
 A service account is a special kind of account used by an application or a virtual machine (VM) instance, not a person. Applications use service accounts to make authorized API calls, authorized as either the service account itself, or as Google Workspace or Cloud Identity users through domain-wide delegation.
 
@@ -33,7 +33,7 @@ A service account is a special kind of account used by an application or a virtu
 
 ![](../../.gitbook/assets/screen-shot-2021-05-26-at-10.31-1-1-.png)
 
-#### Steps to give Bucket access to Service Account
+## Steps to give Bucket access to Service Account
 
 1. In the Cloud Console, go to the [Bucket Browser](https://console.cloud.google.com/storage/browser) page.
 2. Click on the more actions button (three dots) at the right of the necessary bucket.
@@ -48,7 +48,7 @@ A service account is a special kind of account used by an application or a virtu
 7. Click on save.\
 
 
-#### Steps to create Service Account Key (JSON)
+## Steps to create Service Account Key (JSON)
 
 To use a service account from outside of Google Cloud, such as on other platforms or on-premises, you must first establish the identity of the service account. Public/private key pairs provide a secure way of accomplishing this goal. When you create a service account key, the public portion is stored on Google Cloud, while the private portion is available only to you.
 
@@ -89,29 +89,14 @@ Make sure to store the key file securely, because it can be used to authenticate
 **Use this downloaded service account JSON key to create `GCS` store in the Redbrick app.**
 {% endhint %}
 
-## Items List
+## Items Path
 
-The items list points the RedBrick AI platform to the data points in the data storage. This way you can selectively import data points from a storage method. The items list is a JSON file which comprises of a list of entries of the following format.
+Once you've created your Google Storage method on RedBrick AI, you have to upload an [items list](./#items-list) to your projects to import specific datapoints. Please have a look at the [items list](./#items-list) documentation for an overview of the format for the JSON file.&#x20;
 
-```javascript
-{
-    "items": ["<filepath_of_datapoint>"]
-    "name": "<name_of_datapoint>" // Needs to be unique
-                                  // Required for videos, optional for images
-}
+For data stored in an GCS bucket, the `items` path needs to be formatted as follows:&#x20;
+
+```json
+"root-folder/sub-folder/datapoint.dcm"
 ```
 
-{% hint style="info" %}
-For **image uploads** the `items` array will have only a single entry. \
-For **video uploads** the `items` array has to contain the frames of the video in order. 
-{% endhint %}
-
-Below is an example of a single item list entry. 
-
-The items list looks as follows for your datapoint if your datapoint is publicly hosted at `https://path/to/data/image.png`
-
-```javascript
-{
-    "items": ["root-folder/sub-folder/image.png"]
-}
-```
+Where `root-folder` is inside the GCS bucket storage method.

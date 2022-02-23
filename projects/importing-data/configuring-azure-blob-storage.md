@@ -72,29 +72,14 @@ Once you've added your Azure storage method on RedBrick AI, you can verify the c
 3. Paste the unique path of your blob, which will be in the following format: `container_name/blob_path` . So if you uploaded `image.png` within the sub-folder `images` in your container `image-container` , your path would be `image-container/images/image.png`.
 4. If the connection was successful, you should see the image appear once you verify.
 
-## Items List
+## Items Path
 
-The items list points the RedBrick AI platform to the data points in the data storage. This way you can selectively import data points from a storage method. The items list is a JSON file which comprises of a list of entries of the following format.
+Once you've created your Azure Storage method on RedBrick AI, you have to upload an [items list](./#items-list) to your projects to import specific datapoints. Please have a look at the [items list](./#items-list) documentation for a overview of the format for the JSON file.&#x20;
 
-```javascript
-{
-    "items": ["<filepath_of_datapoint>"]
-    "name": "<name_of_datapoint>" // Needs to be unique
-                                  // Required for videos, optional for images
-}
+For data stored in an Azure container, the `items` path needs to be formatted as follows:&#x20;
+
+```json
+"container-name/root-folder/sub-folder/image.png"
 ```
 
-{% hint style="info" %}
-For **image uploads** the `items` array will have only a single entry. \
-For **video uploads** the `items` array has to contain the frames of the video in order.&#x20;
-{% endhint %}
-
-Below is an example of a single item list entry.&#x20;
-
-```javascript
-{
-    "items": ["container-name/root-folder/sub-folder/image.png"]
-}
-```
-
-**NOTE - In this case the container name is an integral part of the file path. This is specific to Azure Blob Storage.**&#x20;
+Where `container-name` is inside the Storage Account.

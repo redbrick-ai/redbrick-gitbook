@@ -6,121 +6,55 @@ You can see the external storage method data model on the RedBrick AI model. Whe
 
 ![RedBrick AI external storage data model.](../../.gitbook/assets/group-476.png)
 
-### Using external storage involves two steps
+## Using external storage involves two steps
 
 1. Configuring your [Storage Method](./#storage-methods) to specify data storage locations, and authentication information.&#x20;
 2. Uploading an [Items List](./#uploading-an-items-list) containing specific URL's of the data from your storage method you wish to import.&#x20;
 
-## Storage Methods
+## Configure a Storage Method
 
 Currently, the options for external Storage Methods are:
 
 * [AWS S3 Buckets](configuring-aws-s3-storage.md).
 * [Google Cloud Storage.](configuring-google-cloud-storage.md)
 * [Azure Blob Storage.](broken-reference)
-* [Public](local-storage.md). This storage type includes data stored on your computer and data stored on any public server accessible by a URL.&#x20;
+* [Public](public-storage.md). This storage type includes data stored on your computer and data stored on any public server accessible by a URL.&#x20;
 * [Direct Upload](direct-upload.md). This storage type allows you to store your data securely on RedBrick AI servers without having to configure your own storage method.
 
-You can create a storage method by clicking on the _**Storage Method**_ on the left side bar of your account. On the storage method page, click on _Create Storage Method_. _****_&#x20;
+You can create a storage method by clicking on the **Storage Method **_****_ on the left side bar of your account. On the storage method page, click on **Create Storage Method**. _****_&#x20;
 
-![Storage Method tab on the left sidebar](../../.gitbook/assets/screen-shot-2021-06-25-at-4.14.41-pm.png)
+## Upload an Items List to Your Project
 
-{% tabs %}
-{% tab title="AWS S3" %}
-If your data is stored on a private S3 bucket, you will need to create a storage method of type _AWS\_S3_.
+{% hint style="info" %}
+For [Direct Upload](direct-upload.md) i.e. uploading your image files directly to RedBrick AI servers, you don't have to create an items list.&#x20;
+{% endhint %}
 
-![](../../.gitbook/assets/app.redbrickai-1.png)
+The items list points the RedBrick AI platform to the data points in the data storage. This way you can selectively import data points from a storage method. Once you create your JSON items list, you can upload it through the UI, or [SDK](../../python-sdk/sdk-overview/importing-data-and-labels.md#creating-data-points-without-labels).
 
-Please visit the Configuring AWS Storage for RedBrick AI section for a detailed walkthrough on how to generate all the required parameters. A brief overview of each parameter is provided here:
+![Upload your items list from the project dashboard](<../../.gitbook/assets/Screen Shot 2022-02-23 at 3.19.08 PM.png>)
 
-* `Unique name`: A unique identifier for this storage method.
-* `Bucket Name`: The name of your AWS S3 Bucket.
-* `Region`: The region code of the S3 bucket, e.g. us-east-2 (US East Ohio), ap-south-1 (Asia Pacific Mumbai). Check out the [aws docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html) for a list of all the region code.
-* `Access Key`, `Secret Key`: The two keys that enable secure data operations. Follow along Configuring AWS Storage for RedBrick AI to generate the keys for your bucket.
-{% endtab %}
+![Select your Storage Method type, and upload your items file](<../../.gitbook/assets/Screen Shot 2022-02-23 at 3.20.56 PM.png>)
 
-{% tab title="GCS" %}
-![](../../.gitbook/assets/app.redbrickai-2.png)
+## Items List Format&#x20;
 
-Please visit the Configuring GCS Storage for RedBrick AI section for a detailed walkthrough on how to generate all the required parameters. A brief overview of each parameter is provided here:
-
-* `Unique Name`: A unique identifier for this storage method.
-* `Bucket Name`: The name of your GCS Bucket.
-* `Service Account details`: A JSON key that provides RedBrick AI with adequate permissions to access data within the bucket
-{% endtab %}
-
-{% tab title="Azure" %}
-![](../../.gitbook/assets/azure.png)
-
-
-
-Please visit the Configuring Azure Blob Storage for RedBrick AI section for a detailed walkthrough on how to generate all the required parameters. A brief overview of each parameter is provided here:
-
-* `Unique Name`: A unique identifier for this storage method.
-* `Storage Account Name`: The name of your Azure Blob Storage Account.
-* `Azure Connection String`: A string key that is linked to a particular storage account and can be used to connect to Azure storage.
-{% endtab %}
-{% endtabs %}
-
-## Items List
-
-The items list points the RedBrick AI platform to the data points in the data storage. This way you can selectively import data points from a storage method. The items list is a JSON file which comprises of a list of entries of the following format.
+The items list is a JSON file which comprises of a list of entries of the following format.
 
 ```javascript
 {
     "items": ["<filepath_of_datapoint>"]
     "name": "<name_of_datapoint>" // Needs to be unique
-                                  // Required for videos, optional for images
+                                  // Required for videos & DICOM, 
+                                  // optional for images
 }
 ```
 
 {% hint style="info" %}
-For **image uploads** the `items` array will have only a single entry. \
-For **video uploads** the `items` array has to contain the frames of the video in order.&#x20;
-{% endhint %}
+Please visit the relevant documentation to see the format of the `items` path for each of the storage methods:&#x20;
 
-Below are examples of single items list entries.&#x20;
-
-{% tabs %}
-{% tab title="AWS S3, GCS and Azure Blob Storage" %}
-Say your datapoint `image.png` is stored inside a folder named `folder` inside the `root-folder` inside a bucket, the item list entry for that datapoint will be.
-
-```javascript
-{ 
-  "items": ["root-folder/sub-folder/image.png"] 
-}
-```
-{% endtab %}
-
-{% tab title="Local Storage" %}
-Say your data point `image.png` is stored inside a folder named `folder` which is being hosted using an http server on `http://127.0.0.1:8000/`, the item list entry for that datapoint will be.
-
-```javascript
-{
-  "url": "http://127.0.0.1:8000/folder/image.png"
-}
-```
-{% endtab %}
-
-{% tab title="Public Cloud Storage" %}
-Say your datapoint is hosted at a public endpoint `https://path/to/data/image.png`, the item list entry for that datapoint will be.
-
-```javascript
-{
-  "url": "https://path/to/data/image.png"
-}
-```
-{% endtab %}
-{% endtabs %}
-
-{% hint style="warning" %}
-**Common Issue:** don't include bucket name in the file path. \
-****\
-****When you configure your AWS S3, or GCS storage method, you will need to define the bucket name. The storage method is specific to a single bucket. \
-\
-Therefore, when you are creating your items list, make sure you don't include the bucket name in the path of the data point. The file paths **start from the root folder** inside your bucket
-
-**NOTE - Azure Blob Storage** is an exception to that rule, For **Azure Blob Storage** the path **start from the container name**.
+* [AWS s3 items path](configuring-aws-s3-storage.md#items-path)
+* [Azure Blob items path](configuring-azure-blob-storage.md#items-path)
+* [Google Cloud Storage items path](configuring-google-cloud-storage.md#items-path)
+* [Public Storage items path](public-storage.md#items-path)
 {% endhint %}
 
 ### Image Items List
@@ -150,7 +84,7 @@ The items list for importing images into the RedBrick AI platform is slightly di
   {
     "name": "video-1",
     "items": [
-      "root-folder/video-1/frame1.png",
+      "root-folder/video-1/frame1.png", // Your frames must be in correct order
       "root-folder/video-1/frame2.png",
       "root-folder/video-1/frame3.png",
     ]
@@ -167,3 +101,30 @@ The items list for importing images into the RedBrick AI platform is slightly di
 ```
 
 Using this items list, two video data points (video1, video2) will be imported into the platform with three frames each. The frames of each video will be ordered in the same order as their appearance in the items list.
+
+### DICOM Series Import
+
+To import multiple DICOM series, you need to create an items list of the following format:&#x20;
+
+```json
+[
+  {
+    "name": "series-001", // this is user defined
+    "items": [
+      "root-folder/series-1/instance1.dcm",
+      "root-folder/series-1/instance2.dcm",
+      "root-folder/series-1/instance3.dcm",
+    ]
+  },
+  {
+    "name": "series-2",
+    "items": [
+      "root-folder/series-2/instance1.png", // The instances don't need to be
+      "root-folder/series-2/instance3.png", // in correct order.
+      "root-folder/series-2/instance2.png",
+    ]
+  }
+]
+```
+
+This Items list would import two series, with 3 instances each.&#x20;
