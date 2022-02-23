@@ -1,4 +1,4 @@
-# January 2021
+# January 2022
 
 A quick overview of the latest updates and features we've introduced in January 2022 to improve the overall experience while using the tool. You may want to visit the documentation for a detailed overview of the updates.
 
@@ -33,8 +33,6 @@ Even after passing the acceptance test, the labelers will be subjected to period
 ### **DICOM Instances**
 
 The DICOM tool have a couple of new updates associated with the instances. The users now have the ability to lock a specific label to prevent it from getting overwrited while labelling on top of it. The visibility of a label can also be adjusted by toggling the 'eye' button placed next to the lock.
-
-![](<../.gitbook/assets/image 454.png>)
 
 ### **3D Rendering**
 
