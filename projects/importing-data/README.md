@@ -119,9 +119,9 @@ To import multiple DICOM series, you need to create an items list of the followi
   {
     "name": "series-2",
     "items": [
-      "root-folder/series-2/instance1.png", // The instances don't need to be
-      "root-folder/series-2/instance3.png", // in correct order.
-      "root-folder/series-2/instance2.png",
+      "root-folder/series-2/instance1.dcm", // The instances don't need to be
+      "root-folder/series-2/instance3.dcm", // in correct order.
+      "root-folder/series-2/instance2.dcm",
     ]
   }
 ]
