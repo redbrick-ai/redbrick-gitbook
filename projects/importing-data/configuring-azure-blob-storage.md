@@ -83,3 +83,28 @@ For data stored in an Azure container, the `items` path needs to be formatted as
 ```
 
 Where `container-name` is inside the Storage Account.
+
+## Shared Access Signature
+
+You can also used a "Shared Access Signature" URL for enabling access to your bucket through RedBrick AI.
+
+
+
+![Example access configuration](<../../.gitbook/assets/image (3).png>)
+
+* Expiry should be until the time you want to have access to your data through RedBrick AI, with this time expires you will lose access to your data through RedBrick AI and will have to update the configuration. We recommend giving this at least a few years, you can always cancel the access later.
+* IP address (optional) could be the user's permanent network address range
+* Only Read permissions are necessary
+
+#### Upload items
+
+When you want to upload data that is in a connected storage method to the RedBrick AI platform you will do this as an "Items list". You can read more about that [here](configuring-azure-blob-storage.md#items-list). Depending on which level of permissions you want to restrict access to with your SAS URL, you will need to create your "items" differently. These items tell RedBrick AI where to find your data.
+
+| Permissions                               | Sample item                 |
+| ----------------------------------------- | --------------------------- |
+| Connection string and Service level SAS:  | "container/folder/item.jpg" |
+| Container level SAS:                      | "folder/item.jpg"           |
+| Blob level SAS: (not recommended)         | "."                         |
+
+\
+After creating your storage method integration, we recommend you test the way you generate items using the "verify" feature. This will perform pre-signing and check if your browser is able to fetch the image from your bucket.
