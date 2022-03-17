@@ -128,3 +128,32 @@ To import multiple DICOM series, you need to create an items list of the followi
 ```
 
 This Items list would import two series, with 3 instances each.&#x20;
+
+
+
+### NIfTI Import
+
+To import NIfTI files stored on your private storage method, you need to create an items list of the following format:
+
+```json
+[
+  {
+    "name": "series-001", // this is user defined
+    "items": [
+      "root-folder/series-1.nii"
+    ]
+  },
+  {
+    "name": "series-2",
+    "items": [
+      "root-folder/series-2.nii.gz"
+    ]
+  }
+]
+```
+
+The above items list will create 2 separate tasks, 1 for each scan.
+
+The RedBrick AI interface supports both compressed (gzipped) and uncompressed NIfTI files.&#x20;
+
+You can also upload NIfTI files directly through the UI.&#x20;
