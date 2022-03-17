@@ -36,8 +36,8 @@ INFO - Refreshed 122 tasks
 INFO - Exported successfully to: ./export_redbrick_latest_2021-12-13_15-27-11.json
 ```
 
-{% content-ref url="../python-sdk/cli-overview.md" %}
-[cli-overview.md](../python-sdk/cli-overview.md)
+{% content-ref url="../python-sdk/cli-overview/" %}
+[cli-overview](../python-sdk/cli-overview/)
 {% endcontent-ref %}
 
 ## Label Auto-Saving

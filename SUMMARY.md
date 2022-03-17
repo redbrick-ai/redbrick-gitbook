@@ -37,7 +37,9 @@
 
 ## Python SDK & CLI <a href="#python-sdk" id="python-sdk"></a>
 
-* [CLI Overview](python-sdk/cli-overview.md)
+* [CLI Overview](python-sdk/cli-overview/README.md)
+  * [Exporting Data](python-sdk/cli-overview/exporting-data.md)
+  * [Importing Data](python-sdk/cli-overview/importing-data.md)
 * [SDK Overview](python-sdk/sdk-overview/README.md)
   * [Exporting your data](python-sdk/sdk-overview/exporting-your-data.md)
   * [Importing data and labels](python-sdk/sdk-overview/importing-data-and-labels.md)
