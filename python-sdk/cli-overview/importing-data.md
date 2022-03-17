@@ -60,7 +60,7 @@ RedBrick AI supports both .nii, and zipped .nii.gz files.
 To upload your `data/` directory to your project, run the following command within your `project-directory` &#x20;
 
 ```
-redbrick upload data
+redbrick upload data --as-nifti 
 ```
 
 ## Image Upload
@@ -117,5 +117,5 @@ data
 To upload your `data/` directory to your project, run the following command within your `project-directory` &#x20;
 
 ```
-redbrick upload data
+redbrick upload data --as-frames
 ```
