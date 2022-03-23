@@ -26,11 +26,11 @@
 
 ## Data Labeling
 
-* [Image Labeling](data-labeling/image-polygons.md)
-* [Video Labeling](data-labeling/video-labeling-1.md)
 * [DICOM Labeling](data-labeling/dicom-labeling/README.md)
   * [Video Tutorials](data-labeling/dicom-labeling/video-tutorials.md)
   * [Optimizing Performance](data-labeling/dicom-labeling/optimizing-performance.md)
+* [Image Labeling](data-labeling/image-polygons.md)
+* [Video Labeling](data-labeling/video-labeling-1.md)
 * [Taxonomies](data-labeling/taxonomies.md)
 * [Benchmarks](data-labeling/benchmarks.md)
 

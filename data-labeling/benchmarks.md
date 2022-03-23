@@ -6,6 +6,10 @@ description: >-
 
 # Benchmarks
 
+{% hint style="warning" %}
+Beta
+{% endhint %}
+
 {% hint style="info" %}
 Highlights
 
