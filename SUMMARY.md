@@ -26,7 +26,6 @@
 
 ## Data Labeling
 
-* [Overview](data-labeling/overview.md)
 * [Image Labeling](data-labeling/image-polygons.md)
 * [Video Labeling](data-labeling/video-labeling-1.md)
 * [DICOM Labeling](data-labeling/dicom-labeling/README.md)
