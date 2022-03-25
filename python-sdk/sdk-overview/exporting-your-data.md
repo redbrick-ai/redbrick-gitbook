@@ -56,7 +56,7 @@ result = project.export.coco_format(only_ground_truth=False)
 {% hint style="info" %}
 COCO format is only supported for the following task types:&#x20;
 
-image bounding box, image polygon, image segmentation.
+image bounding box and image polygon
 {% endhint %}
 
 #### Export segmentation labels in PNG format
