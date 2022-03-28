@@ -6,12 +6,19 @@ description: >-
 
 # Overview
 
-Projects are mainly defined by the following:&#x20;
+## Creating a Project
 
-1. The type of data you're working with `image` or `video`
-2. The type of labels you're working with `bounding box` , `segmentation` etc. (see [this](../data-labeling/overview.md) for a complete list of supported label types.)&#x20;
-3. The [project pipeline](overview.md#what-is-a-pipeline).
-4. The project raw data.&#x20;
+To create a project you can click on the Create Project button on the top left of the home screen, or the + button next to the Projects link on the left side bar.&#x20;
+
+Creating a project requires the following:&#x20;
+
+1. Selecting a data type:
+   1. DICOM 3D: Allows you to upload and annotate 3D DICOM data for example, MRI, CT etc. This type supports NIfTI and DICOM.
+   2. Image: Allows you to upload and annotate 2D RGB images of types png, jpeg, bmp etc.
+   3. Video: Allows you to upload an annotate 2D RGB videos of type mp4, parsed image frames etc.
+2. Annotation type
+3. Taxonomy: The taxonomy configures your labeling interface and defines what categories you want to work with. See the [taxonomies](../data-labeling/taxonomies.md) documentation for more information.
+4. Number of review stages: This defines your project pipeline and if/how many review stages you want.&#x20;
 
 ## What is a Pipeline?
 
@@ -21,17 +28,6 @@ Similarly, pipelines are a production line for your data, where you can stitch t
 
 {% hint style="info" %}
 Each project has **a single pipeline** associated with it, that defines the process of that project.&#x20;
-{% endhint %}
-
-{% hint style="info" %}
-**What is a task?**
-
-Each datapoint that you upload into your project is created into a **task** inside a stage. Each task can have the following states:&#x20;
-
-1. `ASSIGNED -` Assigned to a user, for example a labeling or review task. ``&#x20;
-2. `UNASSIGNED -` Queued in the stage, but currently not assigned to any user.
-3. `COMPLETED -` Has finished processing through the stage.
-4. `IN PROGRESS -` Is currently going through the stage, e.g. when a user saves a labeling task, it gets marked `IN PROGRESS`.
 {% endhint %}
 
 ![Example pipeline, with a single label stage followed by two review stages.](<../.gitbook/assets/image 501.png>)
