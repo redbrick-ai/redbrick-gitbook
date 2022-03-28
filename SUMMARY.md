@@ -1,6 +1,11 @@
 # Table of contents
 
 * [About RedBrick AI](README.md)
+* [Video Tutorials](video-tutorials/README.md)
+  * [Annotation workflow](video-tutorials/annotation-workflow.md)
+  * [DICOM Annotation](video-tutorials/dicom-annotation.md)
+  * [CLI and SDK](video-tutorials/cli-and-sdk.md)
+  * [Projects](video-tutorials/projects.md)
 * [Product updates](product-updates-1/README.md)
   * [January 2022](product-updates-1/january-2022.md)
   * [December 2021](product-updates-1/december-2021.md)
