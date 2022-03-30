@@ -1,5 +1,7 @@
 # Importing NIfTI annotations
 
+{% embed url="https://www.loom.com/share/35707219702e44c383760839fd74d9cc?t=0" %}
+
 This section of the documentation covers how you can upload NIfTI annotations along with DICOM/NIfTI images. Before following this guide, make sure to [set up the credentials for the CLI](./#create-a-credentials-config).
 
 First, you need to either [clone an existing project](./#clone-an-existing-project), or [create a new project](./#create-a-project) with the CLI. Once you do this, make sure you enter your project's directory.
