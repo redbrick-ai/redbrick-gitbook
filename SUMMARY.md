@@ -5,7 +5,9 @@
   * [Annotation workflow](video-tutorials/annotation-workflow.md)
   * [DICOM Annotation](video-tutorials/dicom-annotation.md)
   * [CLI and SDK](video-tutorials/cli-and-sdk.md)
+  * [NIfTI Pre-Annotations](video-tutorials/nifti-pre-annotations.md)
   * [Projects](video-tutorials/projects.md)
+* [Page 1](page-1.md)
 * [Product updates](product-updates-1/README.md)
   * [January 2022](product-updates-1/january-2022.md)
   * [December 2021](product-updates-1/december-2021.md)
@@ -40,9 +42,6 @@
 
 ## Python SDK & CLI <a href="#python-sdk" id="python-sdk"></a>
 
-* [CLI Overview](python-sdk/cli-overview/README.md)
-  * [Exporting Data](python-sdk/cli-overview/exporting-data.md)
-  * [Importing Data](python-sdk/cli-overview/importing-data.md)
 * [SDK Overview](python-sdk/sdk-overview/README.md)
   * [Exporting your data](python-sdk/sdk-overview/exporting-your-data.md)
   * [Importing data and labels](python-sdk/sdk-overview/importing-data-and-labels.md)
@@ -50,6 +49,10 @@
   * [Create a project](python-sdk/sdk-overview/create-a-project.md)
   * [Format Reference](python-sdk/sdk-overview/reference.md)
 * [Full SDK Reference](https://redbrick-sdk.readthedocs.io/en/stable/)
+* [CLI Overview](python-sdk/cli-overview/README.md)
+  * [Exporting Data](python-sdk/cli-overview/exporting-data.md)
+  * [Importing Data](python-sdk/cli-overview/importing-data.md)
+  * [Importing NIfTI annotations](python-sdk/cli-overview/importing-nifti-annotations.md)
 
 ## Useful Links
 
