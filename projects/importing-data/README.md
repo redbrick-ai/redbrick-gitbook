@@ -109,19 +109,19 @@ To import multiple DICOM series, you need to create an items list of the followi
 ```json
 [
   {
-    "name": "series-001", // this is user defined
+    "name": "series-001", // this is user defined (delete this comment)
     "items": [
       "root-folder/series-1/instance1.dcm",
       "root-folder/series-1/instance2.dcm",
-      "root-folder/series-1/instance3.dcm",
+      "root-folder/series-1/instance3.dcm"
     ]
   },
   {
     "name": "series-2",
     "items": [
       "root-folder/series-2/instance1.dcm", // The instances don't need to be
-      "root-folder/series-2/instance3.dcm", // in correct order.
-      "root-folder/series-2/instance2.dcm",
+      "root-folder/series-2/instance3.dcm", // in correct order. (delete this comment)
+      "root-folder/series-2/instance2.dcm"
     ]
   }
 ]
