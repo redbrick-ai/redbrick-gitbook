@@ -43,7 +43,7 @@ Useful for understanding the RedBrick label format used for exports and label im
     "taskclassify": null or bool,
 
     // only inlcluded for video projects
-    "frameindex": null or int,
+    "frameindex": null or int, // 0 -> len(frames) - 1 
     "trackid": null or str, // unique id for an object track across frames
     "keyframe": null or bool, // True if manually labeled, False if interpolated
     "end": null or bool //  True if this label is the last label of a track.
