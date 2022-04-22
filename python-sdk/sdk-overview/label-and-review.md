@@ -1,4 +1,4 @@
-# Programmatically Label and Review
+# Label and Review
 
 You can use the RedBrick AI SDK to programmatically label and review your data. If you have an automated method of generating labels / reviews, or want to update tasks in bulk, this is a good option.&#x20;
 
@@ -24,7 +24,7 @@ project = redbrick.get_project(
 Get tasks from your RedBrick AI project. You can find the `stage_name` on the workflow visualization on the project dashboard.
 
 {% hint style="info" %}
-Please see the format of [TaskObject in the reference documentation.](reference.md#task-objects)
+Please see the format of [TaskObject in the reference documentation.](../reference/#task-objects)
 {% endhint %}
 
 ```python
@@ -68,7 +68,7 @@ tasks = project.review.get_tasks(stage_name, count=1)
 ```
 
 {% hint style="info" %}
-Please see the format of [TaskObject in the reference documentation.](reference.md#task-objects)
+Please see the format of [TaskObject in the reference documentation.](../reference/#task-objects)
 {% endhint %}
 
 Review the tasks programmatically and upload

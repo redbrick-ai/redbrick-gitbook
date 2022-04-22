@@ -29,7 +29,7 @@ You can create a storage method by clicking on the **Storage Method **_****_ on 
 For [Direct Upload](direct-upload.md) i.e. uploading your image files directly to RedBrick AI servers, you don't have to create an items list.&#x20;
 {% endhint %}
 
-The items list points the RedBrick AI platform to the data points in the data storage. This way you can selectively import data points from a storage method. Once you create your JSON items list, you can upload it through the UI, or [SDK](../../python-sdk/sdk-overview/importing-data-and-labels.md#creating-data-points-without-labels).
+The items list points the RedBrick AI platform to the data points in the data storage. This way you can selectively import data points from a storage method. Once you create your JSON items list, you can upload it through the UI, or [SDK](../../python-sdk/sdk-overview/importing-data-and-annotations.md#creating-data-points-without-labels).
 
 ![Upload your items list from the project dashboard](<../../.gitbook/assets/Screen Shot 2022-02-23 at 3.19.08 PM.png>)
 

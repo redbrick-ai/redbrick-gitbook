@@ -1,4 +1,4 @@
-# Importing data and labels
+# Importing Data and Annotations
 
 You can programmatically upload your data to the RedBrick AI platform and also upload pre-labels with the data so that your team can correct the annotations on the platform.&#x20;
 
@@ -88,12 +88,12 @@ project.upload.create_datapoints(storage_id, datapoints)
 ```
 
 {% hint style="info" %}
-Please see the [reference documentation for the LabelObject format](reference.md#labelobject).
+Please see the [reference documentation for the LabelObject format](../reference/#labelobject).
 {% endhint %}
 
 ## Creating data points with segmentation labels
 
-To upload data with masks labels, you can use the `create_datapoint_from_masks` method. You have to first prepare a directory containing your masks in the format defined in the [reference documentation](reference.md#png-mask-formats).
+To upload data with masks labels, you can use the `create_datapoint_from_masks` method. You have to first prepare a directory containing your masks in the format defined in the [reference documentation](../reference/#png-mask-formats).
 
 ```python
 # Directory containing the mask data, in the correct format.

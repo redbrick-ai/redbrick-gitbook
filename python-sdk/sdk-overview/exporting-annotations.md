@@ -1,16 +1,6 @@
-# Exporting your data
+# Exporting Annotations
 
-Programmatically export your data with the RedBrick AI SDK in one of the following formats:&#x20;
-
-1.  RedBrick AI Format.&#x20;
-
-    See [reference](reference.md#redbrick-ai-export-format) documentation for overview of format.
-2.  COCO Format.&#x20;
-
-    Please see [COCO documentation](https://cocodataset.org/#format-data) for overview of format.
-3.  Segmentation PNG masks.&#x20;
-
-    See [reference](reference.md#png-mask-formats) documentation for overview of format.
+Please have a look at the [Reference Format](../reference/) for an overview of the export formats.&#x20;
 
 ### Code Example
 
@@ -68,4 +58,15 @@ project.export.redbrick_png(only_ground_truth=False)
 
 {% hint style="info" %}
 PNG format is only supported for image segmentation projects.
+{% endhint %}
+
+#### Export segmentation labels in NIfTI format
+
+```python
+# Exports PNG masks to local directory named project_id
+project.export.redbrick_nifti(only_ground_truth=False)
+```
+
+{% hint style="info" %}
+PNG format is only supported for DICOM segmentation projects.
 {% endhint %}

@@ -1,4 +1,4 @@
-# Exporting Data
+# Exporting Annotations
 
 The CLI is a developer friendly way of exporting your annotations and data. Before getting started with this guide, make sure you have set up the [credentials for the CLI.](./#create-a-credentials-config)
 
@@ -8,7 +8,7 @@ Overview of RedBrick AI CLI Export
 
 ## Clone a Project
 
-Much like Git, the first operation you need to do before exporting data is clone an existing project you have. Follow this guide to see [how to clone a project](exporting-data.md#clone-a-project).&#x20;
+Much like Git, the first operation you need to do before exporting data is clone an existing project you have. Follow this guide to see [how to clone a project](exporting-annotations.md#clone-a-project).&#x20;
 
 ## Export Data from your Project
 
@@ -59,6 +59,8 @@ tree .
 .
 └── nifti
 ```
+
+Please view the [format reference](exporting-annotations.md#exporting-segmentations-in-nifti-1) for a detailed description of the export format.&#x20;
 
 ### Export annotations with image files
 

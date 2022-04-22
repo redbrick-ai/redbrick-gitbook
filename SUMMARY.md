@@ -41,16 +41,24 @@
 ## Python SDK & CLI <a href="#python-sdk" id="python-sdk"></a>
 
 * [SDK Overview](python-sdk/sdk-overview/README.md)
-  * [Exporting your data](python-sdk/sdk-overview/exporting-your-data.md)
-  * [Importing data and labels](python-sdk/sdk-overview/importing-data-and-labels.md)
-  * [Programmatically Label and Review](python-sdk/sdk-overview/programmatically-label-and-review.md)
-  * [Create a project](python-sdk/sdk-overview/create-a-project.md)
-  * [Format Reference](python-sdk/sdk-overview/reference.md)
-* [Full SDK Reference](https://redbrick-sdk.readthedocs.io/en/stable/)
+  * [Exporting Annotations](python-sdk/sdk-overview/exporting-annotations.md)
+  * [Importing Data and Annotations](python-sdk/sdk-overview/importing-data-and-annotations.md)
+  * [Label and Review](python-sdk/sdk-overview/label-and-review.md)
+  * [Create a Project](python-sdk/sdk-overview/create-a-project.md)
+  * [Configure external annotation storage](python-sdk/sdk-overview/configure-external-annotation-storage.md)
 * [CLI Overview](python-sdk/cli-overview/README.md)
-  * [Exporting Data](python-sdk/cli-overview/exporting-data.md)
+  * [Exporting Annotations](python-sdk/cli-overview/exporting-annotations.md)
   * [Importing Data](python-sdk/cli-overview/importing-data.md)
   * [Importing NIfTI annotations](python-sdk/cli-overview/importing-nifti-annotations.md)
+  * [Configure External Annotation Storage](python-sdk/cli-overview/configure-external-annotation-storage.md)
+* [Full SDK Reference](https://redbrick-sdk.readthedocs.io/en/stable/)
+* [Format Reference](python-sdk/reference/README.md)
+  * [Annotation Format RedBrick AI](python-sdk/reference/annotation-format-redbrick-ai.md)
+  * [Annotation Format PNG Masks](python-sdk/reference/annotation-format-png-masks.md)
+  * [Annotation Format COCO](python-sdk/reference/annotation-format-coco.md)
+  * [Annotation Format NIfTI](python-sdk/reference/annotation-format-nifti.md)
+  * [TaxonomyObject](python-sdk/reference/taxonomyobject.md)
+  * [TaskObject](python-sdk/reference/taskobject.md)
 
 ## Useful Links
 
