@@ -9,10 +9,10 @@ import redbrick
 
 org_id = "TODO"
 project_id = "TODO"
-apoi_key = "TODO"
+api_key = "TODO"
 
 # Get the project object
-project = redbrick.get_project(org_id, project_id, api_key, url)
+project = redbrick.get_project(org_id, project_id, api_key)
 
 storage_id = "TODO" # This is your storage method with read/write permissions
 project.set_label_storage(storage_id, "todo/path/to/storage/location")
