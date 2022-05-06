@@ -84,3 +84,43 @@ for task in tasks:
 
 project.review.put_tasks(stage_name, tasks_reviewed)
 ```
+
+
+
+## Assign tasks to labelers or reviewers
+
+{% hint style="info" %}
+You can only assign tasks that are in a given label or review stage. This means you cannot determine the reviewer before a task has been labeled.&#x20;
+{% endhint %}
+
+A common thing you might want to do is assign unassigned tasks evenly amongst labelers.
+
+```python
+stage_name = "Label" # change to "Review_1"
+# After loading sdk project object:
+tasks = project.labeling.get_task_queue(stage_name)
+
+assigned = [task for task in tasks if task["assignedTo"]]
+unassigned = [task for task in tasks if task["assignedTo"] is None]
+
+labelers = [
+    "user1@company.com",
+    "user2@company.com",
+    "user3@company.com",
+    "user4@company.com"
+]
+
+# split unassigned tasks evenly amongst labelers
+while unassigned:
+    for email in labelers:
+        
+        task = unassigned.pop()
+        project.labeling.assign_task(stage_name, task["taskId"], email)
+        print(f"Assigned {email} to {task['taskId']}")
+
+        if not unassigned:
+            break
+```
+
+This same code example can be used to assign reviewers by changing the `stage_name` value to `"Review_2"` or whatever name the stages in your project has.\
+``
