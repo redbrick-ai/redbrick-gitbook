@@ -1,28 +1,16 @@
-# What Is an Organization?
+# Invite your team to your organization
 
-Organizations are containers within which all your efforts are managed. Organizations allow your to create a workspace in which you create projects and invite team members to collaborate on your efforts. When you log into the RedBrick AI platform you will be able to create an organization, or accept an invite to an organization.&#x20;
+Everything you do on RedBrick AI will be within your Organization. All your team members, projects, annotations etc. live inside your organization.&#x20;
 
-![](../.gitbook/assets/group-466-1-.png)
+After you join RedBrick AI, you can invite your team to your Organization to collaborate on your annotation projects. You can invite your team from the Team page found on the left side bar.
+
+{% embed url="https://www.loom.com/share/34289b061b264cf89a18ac38a9d4320e" %}
 
 ## Accepting an Organization Invite
 
 If you have been invited to an organization, you should see the invite as soon as you log into your account. Once you accept the invite, it will be added to the list of organizations you are a part of.&#x20;
 
 ![Organization selection page.](../.gitbook/assets/app.redbrickai.com\_createaccount.png)
-
-{% hint style="info" %}
-**Single Organization**\
-\
-By default, each user can **only create a single organization,** however you can be a part of multiple organizations (by accepting invites received by other organization admins).&#x20;
-{% endhint %}
-
-{% hint style="info" %}
-**Organization ID**\
-****\
-****Each organization has a unique ID associated with it. You might need your **organization ID** for various different things on the platform (like using the Python SDK). You can find your organization ID in the URL when you are logged into RedBrick AI. \
-\
-`https://app.redbrickai.com/<org_id>/`
-{% endhint %}
 
 {% hint style="warning" %}
 **Trouble Receiving Organization Invites**\

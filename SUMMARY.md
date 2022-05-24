@@ -7,6 +7,7 @@
   * [CLI and SDK](video-tutorials/cli-and-sdk.md)
   * [Projects](video-tutorials/projects.md)
 * [Product updates](product-updates-1/README.md)
+  * [May 2022](product-updates-1/may-2022.md)
   * [January 2022](product-updates-1/january-2022.md)
   * [December 2021](product-updates-1/december-2021.md)
   * [November 2021](product-updates-1/november-2021.md)
@@ -14,29 +15,38 @@
   * [June 2021](product-updates-1/june-2021-1.md)
   * [3D Medical Labeling Beta](product-updates-1/3d-medical-labeling-beta.md)
 
-## Team <a href="#organizations" id="organizations"></a>
+## Team & Organization <a href="#organizations" id="organizations"></a>
 
-* [What Is an Organization?](organizations/what-is-an-organization.md)
-* [Teams and Permissions](organizations/teams-and-permissions.md)
+* [Invite your team to your organization](organizations/what-is-an-organization.md)
+* [Roles and Permissions](organizations/teams-and-permissions.md)
+* [Invite labelers to your Project](organizations/invite-labelers-to-your-project.md)
+
+## Importing Data
+
+* [Direct data upload](importing-data/direct-data-upload.md)
+* [Connecting external storage](importing-data/connecting-external-storage/README.md)
+  * [Configuring AWS s3](importing-data/connecting-external-storage/configuring-aws-s3.md)
+  * [Configuring GCS](importing-data/connecting-external-storage/configuring-gcs.md)
+  * [Configuring Azure Blob](importing-data/connecting-external-storage/configuring-azure-blob.md)
 
 ## Projects
 
-* [Overview](projects/overview.md)
-* [Importing data](projects/importing-data/README.md)
-  * [Configuring AWS S3 Storage](projects/importing-data/configuring-aws-s3-storage.md)
-  * [Configuring Google Cloud Storage](projects/importing-data/configuring-google-cloud-storage.md)
-  * [Configuring Azure Blob Storage](projects/importing-data/configuring-azure-blob-storage.md)
-  * [Public Storage](projects/importing-data/public-storage.md)
-  * [Direct Upload](projects/importing-data/direct-upload.md)
+* [How project pipelines work](projects/how-project-pipelines-work.md)
+* [How task assignment works](projects/how-task-assignment-works.md)
+* [Taxonomies](projects/taxonomies.md)
 
-## Data Labeling
+## DICOM Annotation
 
-* [DICOM Labeling](data-labeling/dicom-labeling/README.md)
-  * [Optimizing Performance](data-labeling/dicom-labeling/optimizing-performance.md)
+* [Overview](dicom-annotation/overview.md)
+* [Creating, editing and deleting annotations](dicom-annotation/creating-editing-and-deleting-annotations.md)
+* [Filters - windowing, thresholding etc.](dicom-annotation/filters-windowing-thresholding-etc..md)
+* [Layout - series/study](dicom-annotation/layout-series-study.md)
+* [Segmentation Tools](dicom-annotation/segmentation-tools.md)
+
+## Image & Video Annotation <a href="#data-labeling" id="data-labeling"></a>
+
 * [Image Labeling](data-labeling/image-polygons.md)
 * [Video Labeling](data-labeling/video-labeling-1.md)
-* [Taxonomies](data-labeling/taxonomies.md)
-* [Benchmarks](data-labeling/benchmarks.md)
 
 ## Python SDK & CLI <a href="#python-sdk" id="python-sdk"></a>
 
@@ -51,7 +61,6 @@
   * [Importing Data](python-sdk/cli-overview/importing-data.md)
   * [Importing NIfTI annotations](python-sdk/cli-overview/importing-nifti-annotations.md)
   * [Configure External Annotation Storage](python-sdk/cli-overview/configure-external-annotation-storage.md)
-* [Full SDK Reference](https://redbrick-sdk.readthedocs.io/en/stable/)
 * [Format Reference](python-sdk/reference/README.md)
   * [Annotation Format RedBrick AI](python-sdk/reference/annotation-format-redbrick-ai.md)
   * [Annotation Format PNG Masks](python-sdk/reference/annotation-format-png-masks.md)
@@ -59,6 +68,7 @@
   * [Annotation Format NIfTI](python-sdk/reference/annotation-format-nifti.md)
   * [TaxonomyObject](python-sdk/reference/taxonomyobject.md)
   * [TaskObject](python-sdk/reference/taskobject.md)
+* [Full SDK Reference](https://redbrick-sdk.readthedocs.io/en/stable/)
 
 ## Useful Links
 

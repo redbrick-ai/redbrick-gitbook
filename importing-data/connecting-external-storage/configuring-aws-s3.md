@@ -1,10 +1,10 @@
-# Configuring AWS S3 Storage
+# Configuring AWS s3
 
 This section covers how to prepare your Amazon S3 storage to import data into the RedBrick AI platform. After following the instructions in this section, you will be able to create an Amazon S3 'storage method' on the RedBrick platform to connect your S3 bucket to your RedBrick account.
 
 ## Signing Up for AWS <a href="#signing-up-for-aws" id="signing-up-for-aws"></a>
 
-The first step to preparing data storage on Amazon S3, is to sign up for an AWS account on [https://aws.amazon.com.](https://aws.amazon.com)
+The first step to preparing data storage on Amazon S3, is to sign up for an AWS account on [https://aws.amazon.com.](https://aws.amazon.com/)
 
 ## Create an S3 Bucket <a href="#create-an-s3-bucket" id="create-an-s3-bucket"></a>
 
@@ -104,7 +104,7 @@ To create an IAM user from the AWS console, follow these steps:
 
 ## Items Path
 
-Once you've created your AWS Storage method on RedBrick AI, you have to upload an [items list](./#items-list) to your projects to import specific datapoints. Please have a look at the [items list](./#items-list) documentation for a overview of the format for the JSON file.&#x20;
+Once you've created your AWS Storage method on RedBrick AI, you have to upload an [items list](broken-reference) to your projects to import specific datapoints. Please have a look at the [items list](broken-reference) documentation for a overview of the format for the JSON file.&#x20;
 
 For data stored in an AWS s3 bucket, the `items` path needs to be formatted as follows:&#x20;
 

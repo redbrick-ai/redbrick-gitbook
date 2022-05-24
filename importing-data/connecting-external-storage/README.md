@@ -1,4 +1,4 @@
-# Importing data
+# Connecting external storage
 
 The data that you use with the RedBrick AI platform can be stored in a number of places, you can upload data directly to the platform or integrate an external storage method to store your data like Amazon S3, Google Cloud Platform, or Azure Blob Storage. By using your own external storage method, you can manage the storage of your raw data, including granular level access and privacy control.
 
@@ -8,25 +8,25 @@ You can see the external storage method data model on the RedBrick AI model. Whe
 
 ## Using external storage involves two steps
 
-1. Configuring your [Storage Method](./#storage-methods) to specify data storage locations, and authentication information.&#x20;
-2. Uploading an [Items List](./#uploading-an-items-list) containing specific URL's of the data from your storage method you wish to import.&#x20;
+1. Configuring your [Storage Method](broken-reference) to specify data storage locations, and authentication information.&#x20;
+2. Uploading an [Items List](broken-reference) containing specific URL's of the data from your storage method you wish to import.&#x20;
 
 ## Configure a Storage Method
 
 Currently, the options for external Storage Methods are:
 
-* [AWS S3 Buckets](configuring-aws-s3-storage.md).
-* [Google Cloud Storage.](configuring-google-cloud-storage.md)
+* [AWS S3 Buckets](broken-reference).
+* [Google Cloud Storage.](broken-reference)
 * [Azure Blob Storage.](broken-reference)
-* [Public](public-storage.md). This storage type includes data stored on your computer and data stored on any public server accessible by a URL.&#x20;
-* [Direct Upload](direct-upload.md). This storage type allows you to store your data securely on RedBrick AI servers without having to configure your own storage method.
+* [Public](broken-reference). This storage type includes data stored on your computer and data stored on any public server accessible by a URL.&#x20;
+* [Direct Upload](broken-reference). This storage type allows you to store your data securely on RedBrick AI servers without having to configure your own storage method.
 
 You can create a storage method by clicking on the **Storage Method **_****_ on the left side bar of your account. On the storage method page, click on **Create Storage Method**. _****_&#x20;
 
 ## Upload an Items List to Your Project
 
 {% hint style="info" %}
-For [Direct Upload](direct-upload.md) i.e. uploading your image files directly to RedBrick AI servers, you don't have to create an items list.&#x20;
+For [Direct Upload](broken-reference) i.e. uploading your image files directly to RedBrick AI servers, you don't have to create an items list.&#x20;
 {% endhint %}
 
 The items list points the RedBrick AI platform to the data points in the data storage. This way you can selectively import data points from a storage method. Once you create your JSON items list, you can upload it through the UI, or [SDK](../../python-sdk/sdk-overview/importing-data-and-annotations.md#creating-data-points-without-labels).
@@ -51,10 +51,10 @@ The items list is a JSON file which comprises of a list of entries of the follow
 {% hint style="info" %}
 Please visit the relevant documentation to see the format of the `items` path for each of the storage methods:&#x20;
 
-* [AWS s3 items path](configuring-aws-s3-storage.md#items-path)
-* [Azure Blob items path](configuring-azure-blob-storage.md#items-path)
-* [Google Cloud Storage items path](configuring-google-cloud-storage.md#items-path)
-* [Public Storage items path](public-storage.md#items-path)
+* [AWS s3 items path](broken-reference)
+* [Azure Blob items path](configuring-azure-blob.md#items-path)
+* [Google Cloud Storage items path](broken-reference)
+* [Public Storage items path](broken-reference)
 {% endhint %}
 
 ### Image Items List

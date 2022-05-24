@@ -4,7 +4,7 @@ Taxonomies provides a structured way of defining your object label categories. T
 
 ![](<../.gitbook/assets/image 440 (1) (1).png>)
 
-### **Creating A Taxonomy**
+## **Creating A Taxonomy**
 
 You can create a non-nested taxonomy using simple creation, or build a taxonomy from scratch using the JSON editor. Each taxonomy includes a category and an attribute section. The category has:
 
@@ -26,4 +26,6 @@ An attribute can be created by clicking on 'add an attribute' button. By default
 
 ![](<../.gitbook/assets/Group 28362.png>)
 
-The users can also create task specific categories under the 'task classify' tab which can be used mainly to classify a task based on types. The flow and functionality of the process is identical to the categories section.
+## Task classification
+
+To create task level classifications e.g. video level or series/study level annotations, you can define task classification categories under the 'task classify' tab. The flow and functionality of the process is identical to the categories section.

@@ -1,10 +1,10 @@
-# Configuring Google Cloud Storage
+# Configuring GCS
 
 This section covers how to prepare your GCS storage to import data into the RedBrick AI platform. After following the instructions in this section, you will be able to create an GCS  'storage method' on the RedBrick platform to connect your GCS bucket to your RedBrick account.
 
 ## Signing up for Google Cloud Platform
 
-The first step tp preparing data storage on GCP is to [create a account](https://cloud.google.com) on GCP.
+The first step to preparing data storage on GCP is to [create a account](https://cloud.google.com/) on GCP.
 
 ## Create a bucket within a project
 
@@ -91,7 +91,7 @@ Make sure to store the key file securely, because it can be used to authenticate
 
 ## Items Path
 
-Once you've created your Google Storage method on RedBrick AI, you have to upload an [items list](./#items-list) to your projects to import specific datapoints. Please have a look at the [items list](./#items-list) documentation for an overview of the format for the JSON file.&#x20;
+Once you've created your Google Storage method on RedBrick AI, you have to upload an [items list](broken-reference) to your projects to import specific datapoints. Please have a look at the [items list](broken-reference) documentation for an overview of the format for the JSON file.&#x20;
 
 For data stored in an GCS bucket, the `items` path needs to be formatted as follows:&#x20;
 

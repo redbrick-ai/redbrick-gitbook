@@ -1,4 +1,4 @@
-# Configuring Azure Blob Storage
+# Configuring Azure Blob
 
 {% embed url="https://youtu.be/8XcRjr4TtLI" %}
 Video Tutorial
@@ -74,7 +74,7 @@ Once you've added your Azure storage method on RedBrick AI, you can verify the c
 
 ## Items Path
 
-Once you've created your Azure Storage method on RedBrick AI, you have to upload an [items list](./#items-list) to your projects to import specific datapoints. Please have a look at the [items list](./#items-list) documentation for a overview of the format for the JSON file.&#x20;
+Once you've created your Azure Storage method on RedBrick AI, you have to upload an [items list](broken-reference) to your projects to import specific datapoints. Please have a look at the [items list](broken-reference) documentation for a overview of the format for the JSON file.&#x20;
 
 For data stored in an Azure container, the `items` path needs to be formatted as follows:&#x20;
 
@@ -98,7 +98,7 @@ You can also used a "Shared Access Signature" URL for enabling access to your bu
 
 #### Upload items
 
-When you want to upload data that is in a connected storage method to the RedBrick AI platform you will do this as an "Items list". You can read more about that [here](configuring-azure-blob-storage.md#items-list). Depending on which level of permissions you want to restrict access to with your SAS URL, you will need to create your "items" differently. These items tell RedBrick AI where to find your data.
+When you want to upload data that is in a connected storage method to the RedBrick AI platform you will do this as an "Items list". You can read more about that [here](configuring-azure-blob.md#items-list). Depending on which level of permissions you want to restrict access to with your SAS URL, you will need to create your "items" differently. These items tell RedBrick AI where to find your data.
 
 | Permissions                               | Sample item                 |
 | ----------------------------------------- | --------------------------- |

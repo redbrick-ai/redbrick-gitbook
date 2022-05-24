@@ -2,7 +2,7 @@
 description: Managing your team and member permissions inside your Organization
 ---
 
-# Teams and Permissions
+# Roles and Permissions
 
 ## Organization Permissions
 
@@ -14,12 +14,6 @@ You first have to invite collaborators to join your organization, _before you ca
 | Admin   | Same permissions as an Owner, except does not have the ability to delete an organization.                                        |
 | Labeler | Only able to access manual labeling and review stages. Only has access to projects, and not the data warehouse.                  |
 
-### Sending Organization Invitations
-
-To invite collaborators to your organization, you can head to the _Team Tab_ on the left side bar. Within the Team Tab, you can invite users by entering their email and choosing their permission level.
-
-![Team tab on the left sidebar of your account](<../.gitbook/assets/Screen Shot 2021-11-08 at 3.19.48 PM.png>)
-
 ## Project Permissions
 
 You can invite specific users to individual projects and manage their permissions within the project.   Project permissions and teams can be managed under the **Workforce Tab** on your project dashboard. Please see the list below for information on project permissions. &#x20;
@@ -27,6 +21,4 @@ You can invite specific users to individual projects and manage their permission
 1. All Organization Admins by default are added to all projects.&#x20;
 2. Admins & Owners can invite Organization Labelers to projects. By default _no labelers have access to any projects._ Labelers have to be invited to individual projects.&#x20;
 3. Labelers can be assigned to specific project stages. By assigning a labeler to single or multiple stages, they will only be served tasks from those stages.&#x20;
-
-![Manage labeler permissions for individual stages under the Workforce Tab. ](<../.gitbook/assets/Screen Shot 2021-11-08 at 4.51.05 PM.png>)
 

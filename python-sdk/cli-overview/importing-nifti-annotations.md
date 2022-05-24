@@ -48,7 +48,7 @@ You don't have to store your data in the structure above. We're just using this 
 Once you have your data prepared, our platform needs two key pieces of information (which is provided in the items.json file) to correctly upload the data:&#x20;
 
 1. The mapping between image file(s) and annotation file.&#x20;
-2. The mapping between class Id's in the NIfTI annotation matrix and your [Taxonomy](../../data-labeling/taxonomies.md) category names.&#x20;
+2. The mapping between class Id's in the NIfTI annotation matrix and your [Taxonomy](broken-reference) category names.&#x20;
 
 ### Creating your Items file
 
@@ -100,7 +100,7 @@ redbrick upload path/to/data --json
 Running this command will prompt the CLI to recursively search the `data` folder for a `.json` file. Once it finds the `.json` file, it will use the mapping information within the file to upload the data.&#x20;
 
 {% hint style="info" %}
-If you want to upload data from your [external storage](../../projects/importing-data/), the path to your data in your `items.json` file will need to be relative paths within your storage method. \
+If you want to upload data from your [external storage](broken-reference), the path to your data in your `items.json` file will need to be relative paths within your storage method. \
 \
 You will also need to specify the storage method you wish to use. In this case, your `data/` folder can contain only your `items.json` file.&#x20;
 

@@ -37,7 +37,7 @@ The JSON file contains important mapping information between the data you upload
 ```
 
 {% hint style="info" %}
-See [items list](../../projects/importing-data/#items-list-format) for details on `name and items.`
+See [items list](broken-reference) for details on `name and items.`
 {% endhint %}
 
 ### NIfTILabelsObject
