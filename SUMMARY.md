@@ -41,7 +41,9 @@
 * [Creating, editing and deleting annotations](dicom-annotation/creating-editing-and-deleting-annotations.md)
 * [Filters - windowing, thresholding etc.](dicom-annotation/filters-windowing-thresholding-etc..md)
 * [Layout - series/study](dicom-annotation/layout-series-study.md)
-* [Segmentation Tools](dicom-annotation/segmentation-tools.md)
+* [Segmentation](dicom-annotation/segmentation/README.md)
+  * [Instance vs. Semantic](dicom-annotation/segmentation/instance-vs.-semantic.md)
+  * [Overlapping Segmentations](dicom-annotation/segmentation/overlapping-segmentations.md)
 
 ## Image & Video Annotation <a href="#data-labeling" id="data-labeling"></a>
 
