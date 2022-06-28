@@ -38,7 +38,7 @@ type Task =  {
 
 ```
 
-#### `items: String`
+#### `items: String[]`
 
 The items entry is a list of file paths that point to your data. Please have a look at the[#items-list-format](../../importing-data/configuring-external-storage/#items-list-format "mention")to understand how to format this array for various modalities and series/study uploads.
 
