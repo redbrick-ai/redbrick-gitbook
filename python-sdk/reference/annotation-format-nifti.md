@@ -27,7 +27,7 @@ There will be a **single entry for each task** in the items file. Please see the
 ```typescript
 type Items = Task[]
 type Task =  {
-  items: String;
+  items: String[];
   name?: String;
   segmentations: String[] | String[][];
   segmentMap?: { [key: number]: String };

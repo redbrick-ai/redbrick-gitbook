@@ -1,5 +1,9 @@
 # NIfTI Segmentations
 
+{% embed url="https://github.com/redbrick-ai/redbrick-examples/blob/main/DataIO/study-data-segmentation/main.ipynb" %}
+Example Jupyter Notebook for importing annotations using the CLI
+{% endembed %}
+
 {% embed url="https://www.loom.com/share/35707219702e44c383760839fd74d9cc?t=0" %}
 
 This section of the documentation covers how you can upload NIfTI annotations along with DICOM/NIfTI images. Before following this guide, make sure to [set up the credentials for the CLI](../#create-a-credentials-config).
@@ -26,20 +30,11 @@ First, you need to [configure your cloud storage bucket](../../../importing-data
 
 Next, you need to set your project's annotation storage method to your cloud storage. This is a project wide setting, and doing so will prompt RedBrick AI to read and write all annotations from your bucket.&#x20;
 
-{% hint style="warning" %}
-Once you set your projects annotation storage method, changing/deleting files in your cloud console can cause issues with your RedBrick AI projects. RedBrick AI will expect to find the annotation files in your bucket.
-{% endhint %}
+Please visit the following documentation to set up external annotation storage with the CLI.
 
-```
-// Inside your project-directory
-redbrick info set labelstorage
-> Storage ID: <storage_id>
-> Path prefix: path/to/label/directory
-```
-
-`<storage_id>` is a unique ID for your cloud storage method that can be found within the Storage Methods tab.&#x20;
-
-`Path prefix` is the directory in your cloud bucket, within which your annotation files are. **Note - the file paths in the `segmentation` entry of your items list will be relative to this path.** You can leave it as the root of your bucket by defining it as `.`.
+{% content-ref url="../configure-external-annotation-storage.md" %}
+[configure-external-annotation-storage.md](../configure-external-annotation-storage.md)
+{% endcontent-ref %}
 
 ### Upload items list
 

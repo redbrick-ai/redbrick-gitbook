@@ -59,6 +59,7 @@
   * [Importing Annotations](python-sdk/cli-overview/importing-annotations/README.md)
     * [NIfTI Segmentations](python-sdk/cli-overview/importing-annotations/nifti-segmentations.md)
     * [Vector Annotations](python-sdk/cli-overview/importing-annotations/vector-annotations.md)
+  * [Configure external annotation storage](python-sdk/cli-overview/configure-external-annotation-storage.md)
 * [Format Reference](python-sdk/reference/README.md)
   * [Annotation Format NIfTI](python-sdk/reference/annotation-format-nifti.md)
   * [Annotation Format RedBrick AI](python-sdk/reference/annotation-format-redbrick-ai.md)
