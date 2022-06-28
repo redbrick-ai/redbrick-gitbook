@@ -37,7 +37,7 @@ You can choose to create a multi-series task i.e. have a 1-1 mapping between a *
 
 ### Single Series Task
 
-When uploading your [items list](../importing-data/connecting-external-storage/#items-list-format), this is the structure to follow for creating a single-series annotation task (only one series per items entry). The following structure will create **two tasks on RedBrick AI**, with each task having a **single series only**.&#x20;
+When uploading your [items list](../importing-data/configuring-external-storage/#items-list-format), this is the structure to follow for creating a single-series annotation task (only one series per items entry). The following structure will create **two tasks on RedBrick AI**, with each task having a **single series only**.&#x20;
 
 ```json
 [
@@ -60,7 +60,7 @@ Example of a single series task on RedBrick AI
 
 ### Multi-Series Task
 
-To perform Study level annotations, you can create a single task with multiple series. The following [items list](../importing-data/connecting-external-storage/#items-list-format) structure will create **two tasks on RedBrick AI**, each with **2 series**.&#x20;
+To perform Study level annotations, you can create a single task with multiple series. The following [items list](../importing-data/configuring-external-storage/#items-list-format) structure will create **two tasks on RedBrick AI**, each with **2 series**.&#x20;
 
 ```json
 [

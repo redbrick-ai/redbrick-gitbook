@@ -6,14 +6,6 @@
   * [DICOM Annotation](video-tutorials/dicom-annotation.md)
   * [CLI and SDK](video-tutorials/cli-and-sdk.md)
   * [Projects](video-tutorials/projects.md)
-* [Product updates](product-updates-1/README.md)
-  * [May 2022](product-updates-1/may-2022.md)
-  * [January 2022](product-updates-1/january-2022.md)
-  * [December 2021](product-updates-1/december-2021.md)
-  * [November 2021](product-updates-1/november-2021.md)
-  * [July 2021](product-updates-1/july-2021-labeling-tool.md)
-  * [June 2021](product-updates-1/june-2021-1.md)
-  * [3D Medical Labeling Beta](product-updates-1/3d-medical-labeling-beta.md)
 
 ## Team & Organization <a href="#organizations" id="organizations"></a>
 
@@ -24,10 +16,11 @@
 ## Importing Data
 
 * [Direct data upload](importing-data/direct-data-upload.md)
-* [Connecting external storage](importing-data/connecting-external-storage/README.md)
-  * [Configuring AWS s3](importing-data/connecting-external-storage/configuring-aws-s3.md)
-  * [Configuring GCS](importing-data/connecting-external-storage/configuring-gcs.md)
-  * [Configuring Azure Blob](importing-data/connecting-external-storage/configuring-azure-blob.md)
+* [Import Cloud Data](importing-data/import-cloud-data.md)
+* [Configuring external storage](importing-data/configuring-external-storage/README.md)
+  * [Configuring AWS s3](importing-data/configuring-external-storage/configuring-aws-s3.md)
+  * [Configuring GCS](importing-data/configuring-external-storage/configuring-gcs.md)
+  * [Configuring Azure Blob](importing-data/configuring-external-storage/configuring-azure-blob.md)
 
 ## Projects
 
@@ -60,14 +53,17 @@
   * [Configure external annotation storage](python-sdk/sdk-overview/configure-external-annotation-storage.md)
 * [CLI Overview](python-sdk/cli-overview/README.md)
   * [Exporting Annotations](python-sdk/cli-overview/exporting-annotations.md)
-  * [Importing Data](python-sdk/cli-overview/importing-data.md)
-  * [Importing NIfTI annotations](python-sdk/cli-overview/importing-nifti-annotations.md)
-  * [Configure External Annotation Storage](python-sdk/cli-overview/configure-external-annotation-storage.md)
+  * [Importing Data](python-sdk/cli-overview/importing-data/README.md)
+    * [Direct Upload to RedBrick](python-sdk/cli-overview/importing-data/direct-upload-to-redbrick.md)
+    * [Items List for Cloud Data](python-sdk/cli-overview/importing-data/items-list-for-cloud-data.md)
+  * [Importing Annotations](python-sdk/cli-overview/importing-annotations/README.md)
+    * [NIfTI Segmentations](python-sdk/cli-overview/importing-annotations/nifti-segmentations.md)
+    * [Vector Annotations](python-sdk/cli-overview/importing-annotations/vector-annotations.md)
 * [Format Reference](python-sdk/reference/README.md)
+  * [Annotation Format NIfTI](python-sdk/reference/annotation-format-nifti.md)
   * [Annotation Format RedBrick AI](python-sdk/reference/annotation-format-redbrick-ai.md)
   * [Annotation Format PNG Masks](python-sdk/reference/annotation-format-png-masks.md)
   * [Annotation Format COCO](python-sdk/reference/annotation-format-coco.md)
-  * [Annotation Format NIfTI](python-sdk/reference/annotation-format-nifti.md)
   * [TaxonomyObject](python-sdk/reference/taxonomyobject.md)
   * [TaskObject](python-sdk/reference/taskobject.md)
 * [Full SDK Reference](https://redbrick-sdk.readthedocs.io/en/stable/)

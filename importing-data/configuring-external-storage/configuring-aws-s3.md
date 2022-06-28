@@ -88,6 +88,10 @@ To create an IAM user from the AWS console, follow these steps:
 }
 ```
 
+{% hint style="info" %}
+If your bucket will be used as an annotation storage bucket, you need to add PUT object access as well.&#x20;
+{% endhint %}
+
 * Review your policy and create it.
 * Head back to your IAM user creation and attach the policy you just created.
 

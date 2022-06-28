@@ -27,6 +27,7 @@ A service account is a special kind of account used by an application or a virtu
 7. Add the following two IAM roles to grant to the service account on the project.
    1. **Storage Object Viewer** (For reading the blobs from the GCS bucket)
    2. **Service Account Token Creator** (For pre-signing the blobs)
+   3. If your bucket will be used as an annotation storage bucket, you need to give RedBrick AI access to PUT files as well.&#x20;
 8. Once done adding roles, click Continue.
 9. Click Done to finish creating the service account.
 10. Note down the email id of the newly created service account.

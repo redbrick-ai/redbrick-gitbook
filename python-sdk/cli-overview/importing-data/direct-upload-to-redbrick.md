@@ -1,12 +1,12 @@
-# Importing Data
+# Direct Upload to RedBrick
 
-You can use the command line interface to easily import large amounts of data. Before following this guide, make sure to [set up the credentials for the CLI](./#create-a-credentials-config).
+You can use the command line interface to easily import large amounts of data. Before following this guide, make sure to [set up the credentials for the CLI](../#create-a-credentials-config).
 
 {% embed url="https://www.loom.com/share/f6dbbe412bc042aaa67e5fec7449152f?sharedAppSource=personal_library" %}
 Upload your DICOM series using the RedBrick CLI
 {% endembed %}
 
-First, you need to either [clone an existing project](./#clone-an-existing-project), or [create a new project](./#create-a-project) with the CLI. Once you do this, make sure you enter your project's directory
+First, you need to either [clone an existing project](../#clone-an-existing-project), or [create a new project](../#create-a-project) with the CLI. Once you do this, make sure you enter your project's directory
 
 ```
 cd project-directory
