@@ -34,6 +34,7 @@
 * [Creating, editing and deleting annotations](dicom-annotation/creating-editing-and-deleting-annotations.md)
 * [Filters - windowing, thresholding etc.](dicom-annotation/filters-windowing-thresholding-etc..md)
 * [Layout - series/study](dicom-annotation/layout-series-study.md)
+* [Multiple Modalities](dicom-annotation/multiple-modalities.md)
 * [Segmentation](dicom-annotation/segmentation/README.md)
   * [Instance vs. Semantic](dicom-annotation/segmentation/instance-vs.-semantic.md)
   * [Overlapping Segmentations](dicom-annotation/segmentation/overlapping-segmentations.md)
