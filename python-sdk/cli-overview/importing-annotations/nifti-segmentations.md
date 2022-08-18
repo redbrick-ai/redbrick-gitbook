@@ -48,7 +48,7 @@ To upload cloud-stored annotations, you need to create an items file that provid
         "segmentations": "series2_seg.nii"
       }
     ],
-    "mapping": {
+    "segmentMap": {
       "1": {
         "category": "necrosis"
       },
@@ -77,7 +77,7 @@ To upload cloud-stored annotations, you need to create an items file that provid
         "segmentations": "series2_seg.nii"
       }
     ],
-    "mapping": {
+    "segmentMap": {
       "1": {
         "category": "necrosis"
       },
