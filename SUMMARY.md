@@ -1,11 +1,6 @@
 # Table of contents
 
 * [About RedBrick AI](README.md)
-* [Video Tutorials](video-tutorials/README.md)
-  * [Annotation workflow](video-tutorials/annotation-workflow.md)
-  * [DICOM Annotation](video-tutorials/dicom-annotation.md)
-  * [CLI and SDK](video-tutorials/cli-and-sdk.md)
-  * [Projects](video-tutorials/projects.md)
 
 ## Team & Organization <a href="#organizations" id="organizations"></a>
 
@@ -27,6 +22,8 @@
 * [How project pipelines work](projects/how-project-pipelines-work.md)
 * [How task assignment works](projects/how-task-assignment-works.md)
 * [Taxonomies](projects/taxonomies.md)
+* [Consensus (Inter-annotator Agreement)](projects/consensus-inter-annotator-agreement/README.md)
+  * [Agreement calculation](projects/consensus-inter-annotator-agreement/agreement-calculation.md)
 
 ## DICOM Annotation
 
@@ -38,11 +35,6 @@
 * [Segmentation](dicom-annotation/segmentation/README.md)
   * [Instance vs. Semantic](dicom-annotation/segmentation/instance-vs.-semantic.md)
   * [Overlapping Segmentations](dicom-annotation/segmentation/overlapping-segmentations.md)
-
-## Image & Video Annotation <a href="#data-labeling" id="data-labeling"></a>
-
-* [Image Labeling](data-labeling/image-polygons.md)
-* [Video Labeling](data-labeling/video-labeling-1.md)
 
 ## Python SDK & CLI <a href="#python-sdk" id="python-sdk"></a>
 
@@ -62,10 +54,7 @@
     * [Vector Annotations](python-sdk/cli-overview/importing-annotations/vector-annotations.md)
   * [Configure external annotation storage](python-sdk/cli-overview/configure-external-annotation-storage.md)
 * [Format Reference](python-sdk/reference/README.md)
-  * [Annotation Format NIfTI](python-sdk/reference/annotation-format-nifti.md)
-  * [Annotation Format RedBrick AI](python-sdk/reference/annotation-format-redbrick-ai.md)
-  * [Annotation Format PNG Masks](python-sdk/reference/annotation-format-png-masks.md)
-  * [Annotation Format COCO](python-sdk/reference/annotation-format-coco.md)
+  * [Annotation Format](python-sdk/reference/annotation-format.md)
   * [TaxonomyObject](python-sdk/reference/taxonomyobject.md)
   * [TaskObject](python-sdk/reference/taskobject.md)
 * [Full SDK Reference](https://redbrick-sdk.readthedocs.io/en/stable/)

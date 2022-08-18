@@ -3,29 +3,38 @@
 RedBrick AI can integrate with various cloud providers so that you don't have to upload data directly to RedBrick AI servers. To upload data from a cloud server, you need to do the following:&#x20;
 
 1. [Configure your cloud storage](configuring-external-storage/) - AWS s3, Google Cloud Storage, Azure Blob Storage
-2. [Create and upload an items list](import-cloud-data.md#create-and-upload-an-items-list) - Your items list tells RedBrick where in your cloud storage data is. Once you create an items list, you can upload it via the [CLI](../python-sdk/cli-overview/importing-data/) or the UI
+2. [Create and upload an items list](import-cloud-data.md#create-and-upload-an-items-list) - Your items list tells RedBrick the location of your data in your cloud storage. Once you create an items list, you can upload it via the [CLI](../python-sdk/cli-overview/importing-data/) or the UI.
 
-{% hint style="info" %}
-If you want to upload annotations with your data, please see [the following documentation](../python-sdk/cli-overview/importing-annotations/nifti-segmentations.md)
+{% hint style="success" %}
+Please see [the following documentation](../python-sdk/cli-overview/importing-annotations/nifti-segmentations.md) if you want to upload annotations with your data.
 {% endhint %}
 
 ## Items list
 
-The items list has a single entry for a single task on RedBrick AI. Please see the definition below:
+The items list defines the storage location and structure of your data. Each entry in your Items list will be _**created as a separate task**_ on RedBrick AI (to be annotated as a single unit). Please see detailed explanations of each key in our [format reference](../python-sdk/reference/annotation-format.md#tasks-json) (note, the format reference has many extra fields, these are the ones relevant to image-only uploads).
 
 ```typescript
-type Items = Task[]
-type Task = {
-    items: String[],
-    name: String
+type Items = Task[];
+
+interface Task {
+  // A unique, user-defined ID
+  // After import, you can search tasks using this field.
+  name: string;
+
+  // You can upload a single series, or an entire study (array of series)
+  series: Series[];
+}
+
+interface Series {
+  // Filepath/URL's of all the instances in a single series.
+  items: string[] | string;
+  name: string;
 }
 ```
 
-#### `items: String[]`
-
-A list of file paths referencing your data in your cloud storage. Depending on the storage method, this file path may be relative to your bucket name, or the root folder in your bucket.&#x20;
-
 {% hint style="info" %}
+The **`items`** entry enumerates file paths referencing your data in your cloud storage. Depending on the storage method, this file path may be relative to your bucket name or the root folder in your bucket. \
+\
 Please visit the relevant documentation to see the format of the `items` path for each of the storage methods:&#x20;
 
 * [AWS s3 items path](configuring-external-storage/configuring-aws-s3.md#items-path)
@@ -34,147 +43,291 @@ Please visit the relevant documentation to see the format of the `items` path fo
 * [Public Storage items path](broken-reference)
 {% endhint %}
 
-**`name: String`**
+### Examples
 
-A user defined unique string to identify your task. We recommend making this a human readable string that makes it easy to search for your task e.g. `study01/series01`
+#### 3D DICOM
 
-## 3D DICOM Items List
-
-For 3D DICOM datasets (`.dcm`) you can upload your data series-wise, where 1 task corresponds to a single series, or study-wise, where 1 task corresponds to multiple series.
-
-### 3D DICOM Series
-
-The following items list will create 2 tasks containing 1 series each.&#x20;
-
-```json
-[
-  {
-    "name": "series-001",
-    "items": [
-      "root-folder/series-1/instance1.dcm",
-      "root-folder/series-1/instance2.dcm",
-      "root-folder/series-1/instance3.dcm"
-    ]
-  },
-  {
-    "name": "series-2",
-    "items": [
-      "root-folder/series-2/instance1.dcm", 
-      "root-folder/series-2/instance3.dcm", 
-      "root-folder/series-2/instance2.dcm"
-    ]
-  }
-]
-```
-
-### 3D DICOM Study
-
-The following items list will create 1 task containing 2 series.
-
-```json
-[
-  {
-    "name": "study01",
-    "items": [
-      "study01/series01/instance01.dcm",
-      "study01/series01/instance02.dcm",
-      "study01/series01/instance03.dcm",
-      "study01/series02/instance01.dcm",
-      "study01/series02/instance02.dcm",
-      "study01/series02/instance03.dcm",         
-    ]
-  },
-]
-```
-
-## NIfTI Items List
-
-### NIfTI Series
-
-The following items list create two tasks, each with 1 series.
-
-```json
-[
-  {
-    "name": "series-001", // this is user defined
-    "items": [
-      "root-folder/series-1.nii"
-    ]
-  },
-  {
-    "name": "series-2",
-    "items": [
-      "root-folder/series-2.nii.gz"
-    ]
-  }
-]
-```
-
-### NIfTI Study
-
-The following items list will create two tasks, each with two series.&#x20;
-
-```json
-[
-  {
-    "name": "study01", 
-    "items": [
-      "study01/series01.nii",
-      "study01/series02.nii"
-    ]
-  },
-  {
-    "name": "study02", 
-    "items": [
-      "study02/series01.nii",
-      "study02/series02.nii"
-    ]
-  },
-]
-```
-
-## Video Items List
-
-The items list for importing images into the RedBrick AI platform is slightly different than images. Videos have to be parsed into frames and be imported into the RedBrick AI platform. Say you have two videos - `video1`, `video2`, that you want to import into the platform, and each video has three frames - `frame1.png`, `frame2.png`, `frame3.png`. The items list for this would be.
+{% tabs %}
+{% tab title="3D DICOM Study" %}
+This items list will upload a single task containing two series.&#x20;
 
 ```javascript
 [
   {
-    "name": "video-1",
-    "items": [
-      "root-folder/video-1/frame1.png", // Your frames must be in correct order
-      "root-folder/video-1/frame2.png",
-      "root-folder/video-1/frame3.png",
-    ]
+    name: 'study001',
+    series: [
+      {
+        items: [
+          'study001/series001/001.dcm',
+          'study001/series001/002.dcm',
+          'study001/series001/003.dcm',
+        ],
+      },
+      {
+        items: [
+          'study001/series002/001.dcm',
+          'study001/series002/002.dcm',
+          'study001/series002/003.dcm',
+        ],
+      },
+    ],
   },
-  {
-    "name": "video-2",
-    "items": [
-      "root-folder/video-2/frame1.png",
-      "root-folder/video-2/frame2.png",
-      "root-folder/video-2/frame3.png",
-    ]
-  }
-]
+];
 ```
+{% endtab %}
 
-Using this items list, two video data points (video1, video2) will be imported into the platform with three frames each. The frames of each video will be ordered in the same order as their appearance in the items list.
-
-## 2D Image Items List
-
-The items list for importing images into the RedBrick AI platform is simply a list of item list entries. Each entry will be a single datapoint on the RedBrick AI platform. The item list below will import three data points into the RedBrick AI platform.
+{% tab title="3D DICOM Series" %}
+This items list will upload two tasks each containing a single series.
 
 ```javascript
-  [
-    {
-      "items": ["root-folder/sub-folder/image1.png"] 
-    },
-    {
-      "items": ["root-folder/sub-folder/image2.png"] 
-    },
-    {
-      "items": ["root-folder/sub-folder/image3.png"] 
-    }
-  ]
+[
+  {
+    name: 'series001',
+    series: [
+      {
+        items: ['series001/001.dcm', 'series001/002.dcm', 'series001/003.dcm'],
+      },
+    ],
+  },
+  {
+    name: 'series002',
+    series: [
+      {
+        items: ['series002/001.dcm', 'series002/002.dcm', 'series002/003.dcm'],
+      },
+    ],
+  },
+];
+```
+{% endtab %}
+{% endtabs %}
+
+#### NIfTI
+
+{% tabs %}
+{% tab title="NIfTI Study" %}
+This items list will upload a single task containing two series. `items` must be a single string for NIfTI uploads.&#x20;
+
+```javascript
+[
+  {
+    name: 'study001',
+    series: [
+      {
+        items: 'series001.nii',
+      },
+      {
+        items: 'series002.nii',
+      },
+    ],
+  },
+];
+```
+{% endtab %}
+
+{% tab title="NIfTI Series" %}
+This items list will upload two tasks each containing 1 series.
+
+```javascript
+[
+  {
+    name: 'series1',
+    series: [
+      {
+        items: 'series001.nii',
+      },
+    ],
+  },
+  {
+    name: 'series2',
+    series: [
+      {
+        items: 'series002.nii',
+      },
+    ],
+  },
+];
+
+```
+{% endtab %}
+{% endtabs %}
+
+#### 2D Image
+
+{% tabs %}
+{% tab title="Image Study" %}
+This items list will upload a single task containing two images.&#x20;
+
+```javascript
+[
+  {
+    name: 'patient1',
+    series: [
+      {
+        items: 'scan1.dcm',
+      },
+      {
+        items: 'scan2.dcm',
+      },
+    ],
+  },
+];
+```
+{% endtab %}
+
+{% tab title="Image Series" %}
+This items list will upload two tasks, each containing a single image.
+
+```javascript
+[
+  {
+    name: 'patient1',
+    series: [
+      {
+        items: 'scan.dcm',
+      },
+    ],
+  },
+  {
+    name: 'patient2',
+    series: [
+      {
+        items: 'scan.dcm',
+      },
+    ],
+  },
+];
+```
+{% endtab %}
+{% endtabs %}
+
+#### Video Frames
+
+{% tabs %}
+{% tab title="Video Frames Study" %}
+This items list will upload a single task containing two videos, each with three frames.&#x20;
+
+```javascript
+[
+  {
+    name: 'study001',
+    series: [
+      {
+        items: [
+          'study001/series001/001.png',
+          'study001/series001/002.png',
+          'study001/series001/003.png',
+        ],
+      },
+      {
+        items: [
+          'study001/series002/001.png',
+          'study001/series002/002.png',
+          'study001/series002/003.png',
+        ],
+      },
+    ],
+  },
+];
 ```
 
+{% hint style="warning" %}
+The frames must be in the correct order in the `items` array.
+{% endhint %}
+{% endtab %}
+
+{% tab title="Video Frames Series" %}
+This items list will upload two tasks, each containing 1 video with 3 frames.&#x20;
+
+```javascript
+[
+  {
+    name: 'video1',
+    series: [
+      {
+        items: ['001.png', '002.png', '003.png'],
+      },
+    ],
+  },
+  {
+    name: 'video2',
+    series: [
+      {
+        items: ['001.png', '002.png', '003.png'],
+      },
+    ],
+  },
+];
+```
+
+{% hint style="info" %}
+The frames must be in the correct order in the `items` array.
+{% endhint %}
+{% endtab %}
+{% endtabs %}
+
+## Automatically Split Study
+
+In some use cases, you can rely on RedBrick AI for splitting your study into a list of Series. This can be especially useful if you do not follow a robust naming convention for your studies.
+
+You can upload single or multiple series per task using the simplified Study level format.&#x20;
+
+```javascript
+type Items = Task[];
+
+interface Task {
+  // A unique, user-defined ID
+  // After import, you can search tasks using this field.
+  name: String;
+
+  // You can upload a single series, or an entire study (array of .dcm files)
+  // The items array will automatically be split into individual series. 
+  items: String[]
+}
+```
+
+{% hint style="info" %}
+This format is the same as the Legacy items list format (pre-July 2022)
+{% endhint %}
+
+{% tabs %}
+{% tab title="DICOM" %}
+The items list below will create 1 task containing one or more series. RedBrick AI will parse the DICOM files on the client side and automatically split this list of `.dcm` into one or more series (depending on the DICOM headers).&#x20;
+
+This upload method can be helpful if you have a dump of `.dcm` files without a robust file naming convention.
+
+```javascript
+[
+  {
+    name: 'study001',
+    items: [
+      'bbfa85feb36f.dcm',
+      'd4a49634cd4c.dcm',
+      'eed2e7462ba5.dcm',
+      '45455dd0e45b.dcm',
+    ],
+  },
+]
+```
+{% endtab %}
+
+{% tab title="NIfTI" %}
+The items list below will create 1 task containing exactly two series. RedBrick AI will assume each of the NIfTI files in the `items` array is an individual series.
+
+```javascript
+[
+  {
+    name: 'study001',
+    items: [
+      'bbfa85feb36f.nii.gz',
+      'd4a49634cd4c.nii'
+    ],
+  },
+]
+```
+{% endtab %}
+{% endtabs %}
+
+{% hint style="warning" %}
+Please note that any tasks uploaded using this format will only be automatically split _**after**_ any user opens it in the labeling interface.&#x20;
+{% endhint %}

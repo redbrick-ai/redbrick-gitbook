@@ -2,7 +2,7 @@
 
 ## DICOM Projects
 
-We support `.dcm`, `.dnii` and `.nii.gz` file uploads within DICOM projects.&#x20;
+We support `.dcm`, `.nii` and `.nii.gz` file uploads within DICOM projects.&#x20;
 
 ### DCM upload
 
