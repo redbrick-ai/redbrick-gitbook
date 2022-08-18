@@ -290,7 +290,25 @@ The value of the angle in degrees.
 
 ## Consensus Export
 
-When exporting consensus annotations, the Tasks JSON file will have a slightly modified structure:&#x20;
+When exporting consensus annotations, the Tasks JSON file and the `segmentations/` directory will have a slightly modified structure.&#x20;
+
+### Segmentations
+
+Each task folder will contain all the users' segmentation files. The segmentation files can be uniquely identified by the index "\_1" at the end of the file. You will be able to map between the users email and the index in [tasks.json](annotation-format.md#undefined).&#x20;
+
+```
+project_id/
+├── segmentations
+│   ├── study01
+│   │   ├── series1_1.nii
+│   │   └── series1_2.nii
+│   └── study02
+│       ├── series1_1.nii
+│       └── series1_2.nii
+└── tasks.json
+```
+
+### Tasks JSON
 
 ```typescript
 // Single task on RedBrick can be single/multi-series
