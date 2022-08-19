@@ -72,3 +72,23 @@ redbrick export --with-files
 
 Doing so will export tasks in `images` / `videos` / `dicom` directory (based on project type) inside the project directory.
 
+## Converting 2D segmentations to binary masks
+
+If you want to convert segmentations performed on 2D data, that have been exported as NIfTI masks, to 2D binary masks represented as numpy arrays, you can do the following:&#x20;
+
+```python
+import nibabel
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Load nifti file, and convert to numpy array
+mask_nifti = nibabel.load("path/to/nifti.nii")
+mask_arr = np.array(mask_nifti.dataobj)
+
+# In NIfTI, ijk are columns, rows, slice.
+# To change your mask array to rows, columns, slice perform transpose
+mask_arr = np.transpose(mask_arr, (1,0,2))
+
+# Display your mask
+plt.imshow(mask_arr)
+```
