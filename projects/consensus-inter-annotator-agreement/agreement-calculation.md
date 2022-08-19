@@ -14,13 +14,15 @@ $$
 
 ​**Landmarks**
 
-For landmarks/keypoints, RedBrick AI uses a normalized Mean Squared Error (MSE) to compute similarity, where similarity is $$Similarity = 1 - MSE$$.&#x20;
+For landmarks/keypoints, RedBrick AI uses a normalized Root Mean Squared Error (RMSE) to compute similarity, where similarity is $$Similarity = 1 - RMSE$$.&#x20;
 
 $$
 MSE = \frac{1}{n}\sum_{i}^{n}(P_{i} - \hat P_{i})^2
+\\
+RMSE = \sqrt{MSE}
 $$
 
-​Where $$n$$ is the number of axes (2 for 2D, 3 for 3D), and $$P, \hat{P}$$​ are normalized components of the 2D/3D points.
+Where $$n$$​ is the number of components of the point (2 for 2D, 3 for 3D), and $$P_i, \hat{P_i}$$​ are normalized components of the two points.&#x20;
 
 #### Length Measurements
 
@@ -31,7 +33,7 @@ Comparisons of length measurements are done by comparing the two sets of points 
 For angle measurements, the vectors between each arm of the angle measurement are compared. The two angles comparing both sets of measurement arms are computed. The similarity score is then defined by:
 
 $$
-Similarity = \frac{\theta_1 + \theta_2}{2\pi}
+Similarity = 1 - \frac{\theta_1 + \theta_2}{2\pi}
 $$
 
 ​Where $$\theta_1, \theta_2$$​ are the angles between the two sets of measurement arms.
