@@ -22,7 +22,7 @@ MSE = \frac{1}{n}\sum_{i}^{n}(P_{i} - \hat P_{i})^2
 RMSE = \sqrt{MSE}
 $$
 
-Where $$n$$​ is the number of components of the point (2 for 2D, 3 for 3D), and $$P_i, \hat{P_i}$$​ are normalized components of the two points.&#x20;
+Where $$n$$​ is the number of components of the point (2 for 2D, 3 for 3D), and $$P_i, \hat{P_i}$$​ are normalized components (by width, height, depth of the image) of the two points.&#x20;
 
 #### Length Measurements
 
