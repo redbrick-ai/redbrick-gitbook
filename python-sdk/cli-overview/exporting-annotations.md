@@ -74,7 +74,7 @@ Doing so will export tasks in `images` / `videos` / `dicom` directory (based on 
 
 ## Converting 2D segmentations to binary masks
 
-If you want to convert segmentations performed on 2D data, that have been exported as NIfTI masks, to 2D binary masks represented as numpy arrays, you can do the following:&#x20;
+If you want to convert NIfTI segmentations performed on 2D data to 2D binary masks represented as numpy arrays, you can do the following:&#x20;
 
 ```python
 import nibabel
