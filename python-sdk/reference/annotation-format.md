@@ -27,14 +27,16 @@ There will be a **single entry for each task** in the items file. Please see the
 
 ```typescript
 type Tasks = Task[];
-
+​
 // Single task on RedBrick can be single/multi-series
 type Task = {
   // Required on upload and export
   name: string;
   series: Series[];
-  segmentMap?: { [instanceId: number]: { category: string | string[] } };
-
+​
+  // Task level annotation information
+  classification?: Classification;
+​
   // Only required on export
   taskId?: string;
   currentStageName?: string;
@@ -43,12 +45,12 @@ type Task = {
   updatedBy?: string;
   updatedAt?: string;
 };
-
+​
 // A single series can be 2D, 3D, video etc.
 type Series = {
   items: string | string[];
   name?: string;
-
+​
   segmentations?: string | string[];
   segmentMap?: { [instanceId: number]: { category: string | string[] } };
   landmarks3d?: Landmarks3D[];
@@ -58,93 +60,103 @@ type Series = {
   polylines?: Polyline[];
   classifications?: Classification[];
 };
-
+​
 // Label Types
 type Landmarks3D = {
-  x: number;
-  y: number;
-  z: number;
+  point: VoxelPoint;
   category: string | string[];
-  attributes: Attributes;
+  attributes?: Attributes;
 };
-
+​
 type MeasureLength = {
   type: 'length';
-  point1: [number, number, number];
-  point2: [number, number, number];
-  absolutePoint1: [number, number, number];
-  absolutePoint2: [number, number, number];
+  point1: VoxelPoint;
+  point2: VoxelPoint;
+  absolutePoint1: WorldPoint;
+  absolutePoint2: WorldPoint;
   normal: [number, number, number];
   length: number;
   category: string | string[];
-  attributes: Attributes;
+  attributes?: Attributes;
 };
-
+​
 type MeasureAngle = {
   type: 'angle';
-  point1: [number, number, number];
-  point2: [number, number, number];
-  vertex: [number, number, number];
-  absolutePoint1: [number, number, number];
-  absolutePoint2: [number, number, number];
-  absoluteVertex: [number, number, number];
+  point1: VoxelPoint;
+  point2: VoxelPoint;
+  vertex: VoxelPoint;
+  absolutePoint1: WorldPoint;
+  absolutePoint2: WorldPoint;
+  absoluteVertex: WorldPoint;
   normal: [number, number, number];
   angle: number;
   category: string | string[];
-  attributes: Attributes;
+  attributes?: Attributes;
 };
-
+​
 type BoundingBox = {
-  x: number;
-  y: number;
-  width: number;
-  height: number;
+  pointTopLeft: Point2D;
+  wNorm: number;
+  hNorm: number;
   category: string | string[];
-  attributes: Attributes;
-
+  attributes?: Attributes;
+​
   // video meta-data
-  frameIndex: number;
-  trackId: string;
-  keyFrame: number;
-  endTrack: Boolean;
+  video?: VideoMetaData;
 };
-
+​
 type Polygon = {
-  points: { x: number; y: number }[];
+  points: Point2D[];
+​
   category: string | string[];
-  attributes: Attributes;
-
+  attributes?: Attributes;
+​
   // video meta-data
-  frameIndex: number;
-  trackId: string;
-  keyFrame: number;
-  endTrack: Boolean;
+  video?: VideoMetaData;
 };
-
+​
 type Polyline = {
-  points: { x: number; y: number }[];
+  points: Point2D[];
   category: string | string[];
-  attributes: Attributes;
-
+  attributes?: Attributes;
+​
   // video meta-data
-  frameIndex: number;
-  trackId: string;
-  keyFrame: number;
-  endTrack: Boolean;
+  video?: VideoMetaData;
 };
-
+​
 type Classification = {
   category: string | string[];
-
+​
   // video meta-data
+  video?: VideoMetaData;
+};
+​
+type Attributes = {
+  [attributeName: string]: string | boolean;
+};
+​
+type VideoMetaData = {
   frameIndex: number;
   trackId: string;
   keyFrame: number;
   endTrack: Boolean;
 };
-
-type Attributes = {
-  [attributeName: string]: string | boolean;
+​
+// i is rows, j is columns, k is slice
+type VoxelPoint = {
+  i: number;
+  j: number;
+  k: number;
+};
+// The position of VoxelPoint in physical space (world coordinate) computed using the Image Plane Module
+type WorldPoint = {
+  x: number;
+  y: number;
+  z: number;
+};
+type Point2D = {
+  xnorm: number;
+  ynorm: number;
 };
 ```
 
@@ -180,13 +192,9 @@ The e-mail of the last user to make edits to this task.
 
 The datetime this task was last edited.
 
-#### `segmentMap?: {[instanceId: number]: { category: string | string[] }}`
-
-A mapping between segmentation instance id, and your taxonomy category name.`segmentMap` can be defined either at the task level or [at the series level](annotation-format.md#segmentmap-instanceid-number-category-string-or-string-1). When defined at the task-level, the mapping will apply annotations in all the series - this is useful for semantic segmentation applications.
-
 ### Series
 
-The `Series` object has meta-data and annotations for a single series within a task. A series can represent a single MRI/CT series, a video or a single 2D image. If a series has annotations, you can expect one or more of the label entries to be present i.e. `segmentations`, `polygons` etc.
+The `Series` object has meta-data and annotations for a single series within a task. A series can represent a single MRI/CT series, a video, or a single 2D image. If a series has annotations, you can expect one or more of the label entries to be present i.e. `segmentations`, `polygons` etc.
 
 #### `items: string | string[]`
 
@@ -207,6 +215,20 @@ The class of your annotations. This value is part of your [project taxonomy](../
 #### `attributes: {[attributeName: string]: string | boolean}`
 
 Each annotation can have accompanying attributes, that are also defined in your [project taxonomy](../../projects/taxonomies.md). `attributeName` is defined when creating your taxonomy.&#x20;
+
+#### `VoxelPoint: {i: number, j: number, k: number}`
+
+`VoxelPoint` represents a three-dimensional point in image space, where i and j are rows and columns, and k is the slice number.&#x20;
+
+#### `WorldPoint: {x: number, y: number, j: number}`
+
+`WorldPoint` represents a three-dimensional point in physical space/world coordinates. The world coordinates are calculated using `VoxelPoint` and the [Image Plane Module](https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect\_C.7.6.2.html).
+
+#### `Point2D: {xnorm: number, ynorm: number}`
+
+`Point2D` represents a two dimensional point. This is used to define annotation types on 2D data. `xnorm` has been normalized by image width, `hnorm` has been normalized by image height.
+
+### Video Meta Data
 
 #### `frameIndex: number` (video)
 
@@ -232,35 +254,35 @@ A list of file paths of segmentation files for this series. Either a single `.ni
 
 #### `segmentMap?: {[instanceId: number]: { category: string | string[] }}`
 
-A mapping between segmentation instance id, and your taxonomy category name.`segmentMap` can be defined either at the [task level](annotation-format.md#segmentmap-instanceid-number-category-string-or-string) or at the series level. When defined at the series-level, the mapping will apply only to the current series, and instance ids must be unique across all series in a task - this is useful for instance segmentation.&#x20;
+A mapping between segmentation instance id, and your taxonomy category name. The mapping will apply only to the current series, and instance ids must be unique across all series in a task - this is useful for instance segmentation.&#x20;
 
-### Landmarks3D
+### BoundingBox
 
-#### `x:number, y:number, z:number`
+Represents a two-dimensional bounding box
 
-Coordinates of the point in three-dimensional space. These values are in the IJK coordinate space i.e. with respect to the 3D image, z is the slice number and x, y are equivalent to indexing the 3D image by row, column. &#x20;
+#### `pointTopLeft:` [`Point2D`](annotation-format.md#point2d-xnorm-number-ynorm-number)``
+
+The location of the top-left point of the bounding box.
+
+#### `wNorm, hNorm: number`
+
+The width and height of the bounding box, normalized by the width and height of the image.
 
 ### Polygon
 
-#### `points: { x: number; y: number }[]`
+#### `points:` [`Point2D`](annotation-format.md#point2d-xnorm-number-ynorm-number)`[]`
 
-A list of x,y points in IJK image coordinate space. The array is ordered such that each point is connected to the next point in the array. The first and last points are also connected.&#x20;
-
-### Polyline
-
-#### `points: { x: number; y: number }[]`
-
-A list of x,y points in IJK image coordinate space. The array is ordered such that each point is connected to the next point in the array.
+A list of 2D points that are connected to form a polygon. This list is ordered such that, $$point_i$$ is connected to $$point_{i+1}$$. The last point is also connected to the first point to close the polygon.&#x20;
 
 ### MeasureLength
 
-#### `point1, point2 : [number, number, number]`&#x20;
+#### `point1, point2 :` [`VoxelPoint`](annotation-format.md#voxelpoint-i-number-j-number-k-number)``
 
-A length measurement is defined by two points. Each point is defined by 3 numbers representing x,y,z coordinates in IJK image coordinate space.
+A length measurement is defined by two points, and the length measurement is the distance between the two points.
 
-#### `absolutePoint1, absolutePoint2 : [number, number, number]`&#x20;
+#### `absolutePoint1, absolutePoint2 :` [`WorldPoint`](annotation-format.md#worldpoint-x-number-y-number-j-number)``
 
-Corresponding to `point1`, `point2` these values are coordinates in the DICOM world coordinate system i.e. physical space.&#x20;
+Corresponding to `point1`, `point2` these are points in physical space.
 
 #### `normal: [number, number, number]`
 
@@ -272,11 +294,11 @@ The value of the measurement in mm.
 
 ### MeasureAngle
 
-#### `point1, point2, vertex : [number, number, number]`&#x20;
+#### `point1, point2, vertex :` [`VoxelPoint`](annotation-format.md#voxelpoint-i-number-j-number-k-number)&#x20;
 
 Angle measurement is defined by three points, where the vertex is the middle point. The angle between the two vectors (vertex -> point1 and vertex -> point2) defines the angle measurement. These points are all represented in IJK image coordinate space.&#x20;
 
-#### `absolutePoint1, absolutePoint2 : [number, number, number]`&#x20;
+#### `absolutePoint1, absolutePoint2 :` [`WorldPoint`](annotation-format.md#worldpoint-x-number-y-number-j-number)&#x20;
 
 Corresponding to `point1`, `point2`, `vertex`, these values are coordinates in the DICOM world coordinate system i.e. physical space.&#x20;
 
