@@ -60,7 +60,11 @@ tree .
 └── nifti
 ```
 
-Please view the [format reference](exporting-annotations.md#exporting-segmentations-in-nifti-1) for a detailed description of the export format.&#x20;
+Please view the format reference for a detailed description of the export format:&#x20;
+
+{% content-ref url="../reference/annotation-format.md" %}
+[annotation-format.md](../reference/annotation-format.md)
+{% endcontent-ref %}
 
 ### Export annotations with image files
 
