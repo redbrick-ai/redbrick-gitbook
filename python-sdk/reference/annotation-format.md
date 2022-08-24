@@ -257,9 +257,9 @@ If true, the annotation is the last annotation for a particular video track segm
 
 A list of file paths of segmentation files for this series. Either a single `.nii` file, or multiple `.nii` files containing different instances.
 
-#### `segmentMap?: {[instanceId: number]: { category: string | string[] }}`
+#### **`segmentMap?: { [instanceId: number]: { category: string | string[]; attributes?: Attributes }};`**
 
-A mapping between segmentation instance id, and your taxonomy category name. The mapping will apply only to the current series, and instance ids must be unique across all series in a task - this is useful for instance segmentation.&#x20;
+A mapping between segmentation instance id, your taxonomy category name, and any accompanying attributes. The mapping will apply only to the current series, and instance ids must be unique across all series in a task - this is useful for instance segmentation.&#x20;
 
 ### BoundingBox
 
