@@ -52,7 +52,12 @@ type Series = {
   name?: string;
 ​
   segmentations?: string | string[];
-  segmentMap?: { [instanceId: number]: { category: string | string[] } };
+  segmentMap?: {
+    [instanceId: number]: {
+      category: string | string[];
+      attributes?: Attributes;
+    };
+  };
   landmarks3d?: Landmarks3D[];
   measurements?: (MeasureLength | MeasureAngle)[];
   boundingBoxes?: BoundingBox[];
