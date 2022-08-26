@@ -38,6 +38,10 @@ $$
 
 ​Where $$\theta_1, \theta_2$$​ are the angles between the two sets of measurement arms.
 
+#### Classification
+
+For classification labels, agreement is binary. If the chosed category and attributes match, the consensus score will 100%, otherwise it will be 0%.
+
 ## Generating a single score
 
 To generate a single score between two sets of labels, a series of averages are computed.&#x20;
