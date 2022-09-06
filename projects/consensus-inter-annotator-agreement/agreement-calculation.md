@@ -40,7 +40,7 @@ $$
 
 #### Classification
 
-For classification labels, agreement is binary. If the chosen category and attributes match, the consensus score will be 100%, otherwise it will be 0%.
+For classification labels, the agreement is binary. If the chosen category and attributes match, the consensus score will be 100%, otherwise, it will be 0%.
 
 ## Generating a single score
 

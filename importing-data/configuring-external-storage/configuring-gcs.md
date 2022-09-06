@@ -90,6 +90,25 @@ Make sure to store the key file securely, because it can be used to authenticate
 **Use this downloaded service account JSON key to create `GCS` store in the Redbrick app.**
 {% endhint %}
 
+## Configuring CORS
+
+The final step in preparing your GCS bucket for use with RedBrick AI is enabling CORS on the bucket. Cross-Origin Resource Sharing allows the RedBrick AI application (with the domain https://app.redbrickai.com/) to make requests to your bucket.
+
+Please visit the following Google Cloud documentation for enabling CORS on a bucket - [https://cloud.google.com/storage/docs/configuring-cors](https://cloud.google.com/storage/docs/configuring-cors).&#x20;
+
+You will want to use the following CORS JSON configuration file:&#x20;
+
+```javascript
+[
+    {
+      "origin": ["https://app.redbrickai.com"],
+      "method": ["GET"],
+      "responseHeader": ["Content-Type"],
+      "maxAgeSeconds": 3600
+    }
+]
+```
+
 ## Items Path
 
 Once you've created your Google Storage method on RedBrick AI, you have to upload an [items list](broken-reference) to your projects to import specific datapoints. Please have a look at the [items list](broken-reference) documentation for an overview of the format for the JSON file.&#x20;
