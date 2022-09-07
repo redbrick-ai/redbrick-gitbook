@@ -24,7 +24,7 @@
 * [Taxonomies](projects/taxonomies.md)
 * [Consensus (Inter-annotator Agreement)](projects/consensus-inter-annotator-agreement/README.md)
   * [Agreement calculation](projects/consensus-inter-annotator-agreement/agreement-calculation.md)
-* [Custom Label Validation](projects/custom-label-validation.md)
+* [Custom Label Validation (beta)](projects/custom-label-validation-beta.md)
 
 ## DICOM Annotation
 
