@@ -1,8 +1,4 @@
----
-description: Let us know if you'd like early access to Custom Label Validation
----
-
-# Custom Label Validation (beta)
+# Custom Label Validation
 
 You can define a custom Javascript script that can continuously compare annotations to a schema/set of rules and inform annotators (in real-time) of any mistakes in their annotations. You can also prevent annotators from submitting tasks when your validation script finds errors.
 
