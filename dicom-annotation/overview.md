@@ -17,16 +17,19 @@ There are 4 main components to the annotation interface:
 
 If you've used other DICOM viewers, you may already be familiar with navigating through volumes on RedBrick AI
 
-* **Changing slices:** Change slices by scrolling on any of the viewports. You can also use the slider on the left side of each view port to move through the volume quickly.&#x20;
+* **Changing slices:** Change slices by scrolling on any of the viewports. You can also use the slider on the left side of each view port to move through the volume quickly. Using the `up arrow`  and `down arrow`  keys will change one slice at a time on the selected viewport.
 * **Zoom:** Zoom into your volume by holding `control + scroll`
 * **Pan:** Pan around your volume by doing `shift + left click drag`
-* **Crosshairs:** Synchronize re-constructions of the same series by enabling the cross hair tool on the top bar.&#x20;
+* **Crosshairs:** Synchronize re-constructions of the same series by enabling the cross hair tool on the top bar. This is only available when you have 3 orthogonal reconstructed views (Sagittal, Coronal, and Axial)
+* **Reset:** To reset all views to the default state (center slice and neutral zoom) press `spacebar`
 * **3D view:** The 3D view of your image can be enabled on the bottom right of the 3D view port. Once enabled, you can interact with your 3D volume using the following actions.
   * **Rotate** the volume`left click` + `drag`
   * **Zoom** into your volume`scroll`
   * **Pan** across your volume`shift` + `left click` + `drag`
   * **Rotate** the volume **in the plane** `ctrl` + `left click` + `drag`
 * **Windowing:** Modify the window width and level by holding `control + left click drag`
+* **Min / Max viewport:** **** With a 2x2, 2x3, or 3x2 layout configuration toggle min/max by pressing `enter` or `return`
+* **Change selected viewport:** The selected viewport is the viewport that you last clicked in, or you can navigate through by using `shift + arrow keys`. This can be combined with min/max to quickly explore your views.
 
 ## How tasks work with DICOM annotation
 
