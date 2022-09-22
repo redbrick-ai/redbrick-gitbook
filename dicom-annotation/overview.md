@@ -18,7 +18,7 @@ There are 4 main components to the annotation interface:
 If you've used other DICOM viewers, you may already be familiar with navigating through volumes on RedBrick AI
 
 * **Changing slices:** Change slices by scrolling on any of the viewports. You can also use the slider on the left side of each view port to move through the volume quickly.&#x20;
-* **Zoom:** Zoom into your volume by holding `shift + scroll`
+* **Zoom:** Zoom into your volume by holding `control + scroll`
 * **Pan:** Pan around your volume by doing `shift + left click drag`
 * **Crosshairs:** Synchronize re-constructions of the same series by enabling the cross hair tool on the top bar.&#x20;
 * **3D view:** The 3D view of your image can be enabled on the bottom right of the 3D view port. Once enabled, you can interact with your 3D volume using the following actions.
@@ -26,6 +26,7 @@ If you've used other DICOM viewers, you may already be familiar with navigating 
   * **Zoom** into your volume`scroll`
   * **Pan** across your volume`shift` + `left click` + `drag`
   * **Rotate** the volume **in the plane** `ctrl` + `left click` + `drag`
+* **Windowing:** Modify the window width and level by holding `control + left click drag`
 
 ## How tasks work with DICOM annotation
 
