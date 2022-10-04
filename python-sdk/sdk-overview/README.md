@@ -12,7 +12,7 @@ See the [full SDK reference here](https://redbrick-sdk.readthedocs.io/en/stable/
 
 ### **Generate an API Key**
 
-You can create an API key for your organization under _Organization Settings_, which is accessible by clicking on the bottom left corner of the screen.
+You can create an API key under _API Keys_ on the main navigation sidebar.
 
 ### Install the RedBrick SDK
 
