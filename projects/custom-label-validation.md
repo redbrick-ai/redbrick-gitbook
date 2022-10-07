@@ -39,8 +39,9 @@ You will write the custom validation as a Javascript function. This Javascript f
 The Javascript function has the following definition:&#x20;
 
 ```typescript
-function(labels: Label[]): string[] {
+function(task: Task, labels: Label[]): string[]  {
   // Your custom validation logic
+  assert(false, "This assertion was false");
 }
 ```
 
@@ -60,6 +61,14 @@ interface Label {
 interface LabelAttribute {
   name: string;
   value: boolean | number | string;
+}
+
+interface Task {
+    orgId: string;
+    projectId: string;
+    stageName: string; // i.e. "Label" or "Review_1"
+    taskId: string;
+    name: string; // Name given for the task at upload
 }
 
 // Task Type
