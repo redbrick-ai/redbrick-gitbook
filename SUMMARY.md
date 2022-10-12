@@ -37,6 +37,7 @@
   * [Instance vs. Semantic](dicom-annotation/segmentation/instance-vs.-semantic.md)
   * [Overlapping Segmentations](dicom-annotation/segmentation/overlapping-segmentations.md)
   * [Segmentation mirroring](dicom-annotation/segmentation/segmentation-mirroring.md)
+  * [Intellisync](dicom-annotation/segmentation/intellisync.md)
 
 ## Python SDK & CLI <a href="#python-sdk" id="python-sdk"></a>
 
