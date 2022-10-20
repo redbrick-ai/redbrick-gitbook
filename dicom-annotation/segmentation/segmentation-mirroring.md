@@ -14,7 +14,7 @@ Segmentation mirroring demonstration
 
 To activate, load up a task with more than one 3D series, and select "Mirror labels to all volumes." This option will not be available if your task only has a single series.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Activating label mirroring</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Activating label mirroring</p></figcaption></figure>
 
 Once activated, you can now edit any segmentation labels from the series that you are mirroring in the same way as any other segmentation label.
 

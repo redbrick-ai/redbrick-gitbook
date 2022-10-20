@@ -21,7 +21,8 @@
 
 * [How project pipelines work](projects/how-project-pipelines-work.md)
 * [How task assignment works](projects/how-task-assignment-works.md)
-* [Taxonomies](projects/taxonomies.md)
+* [Taxonomies (V1)](projects/taxonomies-v1.md)
+* [Taxonomies (V2)](projects/taxonomies-v2.md)
 * [Consensus (Inter-annotator Agreement)](projects/consensus-inter-annotator-agreement/README.md)
   * [Agreement calculation](projects/consensus-inter-annotator-agreement/agreement-calculation.md)
 * [Custom Label Validation](projects/custom-label-validation.md)
