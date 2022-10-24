@@ -1,6 +1,6 @@
 # Table of contents
 
-* [About RedBrick AI](README.md)
+* [Getting Started](README.md)
 
 ## Team & Organization <a href="#organizations" id="organizations"></a>
 
@@ -18,7 +18,7 @@
 
 ## Projects
 
-* [Get Started with a project](projects/get-started-with-a-project.md)
+* [Get started with a project](projects/get-started-with-a-project.md)
 * [How task assignment works](projects/how-task-assignment-works.md)
 * [Taxonomies](projects/taxonomies/README.md)
   * [Taxonomies V1](projects/taxonomies/taxonomies-v1.md)

@@ -2,50 +2,73 @@
 description: Training Data, Made Easy.
 ---
 
-# About RedBrick AI
+# Getting Started
 
-RedBrick AI is a software platform for annotating medical datasets. Teams use the platform to **structure**, **automate** and **qualify** their labeling efforts in a collaborative way. Accelerate and manage your annotation while enforcing high quality standards at reasonable cost.
+RedBrick AI is a purpose-built SaaS application to help healthcare AI teams in annotating medical data. RedBrick AI offers web-based annotation tools for CT, MRI, X-ray, etc., and comprehensive project management and quality control tools.&#x20;
 
-## How to Navigate the Docs
+{% hint style="success" %}
+Request a free trial, or product demonstration by reaching out to us here - [https://redbrickai.com/contact](https://redbrickai.com/contact).
+{% endhint %}
 
-You can use this section as a quick navigation for the documentation.
+## Sample Brain Brats Project
 
-### Projects
+To get started with using RedBrick AI, follow along with this guide in creating a project from scratch. For the purposes of this example, we will use the Brain Brats MRI dataset linked below (NIfTI files).&#x20;
 
-A good place to start with the documentation is the Projects section - Projects are where all annotation and data processes happen. In the docs you can learn about creating and managing projects.&#x20;
+{% embed url="https://drive.google.com/drive/folders/1_U_CRwS47tRwZCboUb8cdygeNaLmxw7P" %}
+Sample MRI dataset
+{% endembed %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+### Invite your team
 
-### Organizations
-
-Next, you can visit the Organizations section that covers how all collaboration and permissions are handled in your team. A core benefit of using the RedBrick platform is the collaborative nature of the offering. You can go through the organizations section to understand how to invite and manage your team.&#x20;
+RedBrick AI is a collaborative application used by engineers, clinicians, and project managers. You can start involving your entire team in your annotation projects by first adding them to your organization.
 
 {% content-ref url="organizations/what-is-an-organization.md" %}
 [what-is-an-organization.md](organizations/what-is-an-organization.md)
 {% endcontent-ref %}
 
-### Data Labeling
+{% embed url="https://www.loom.com/share/9cf245a1d06b4978b6822c7f3c31649f" %}
 
-Learn how to set up and use the web based RedBrick AI data-labeling tools. The platform supports a variety of labeling types for both image and video data types, as well as tools for performing review to ensure a high quality output.&#x20;
+### Create a taxonomy
 
-{% content-ref url="./" %}
-[.](./)
+Before creating a project, you have to create a labeling taxonomy that defines **what you will annotate** in your project. For this dataset, we are going to annotate the following items:&#x20;
+
+1. Segment the following structures:&#x20;
+   1. Edema
+   2. Necrosis
+   3. Enhancing Tumor
+   4. Non-enhancing Tumor
+2. Classify any series that is a bad-quality image
+
+{% content-ref url="projects/taxonomies/" %}
+[taxonomies](projects/taxonomies/)
 {% endcontent-ref %}
 
-### RedBrick SDK
+{% embed url="https://www.loom.com/share/3e41b8479a584a53ba953c963110e2ea" %}
 
-The RedBrick python SDK provides a developer friendly way of interacting with the platform. The SDK can be used for data i/o, model pre-labeling etc. Checkout the guide for using the SDK.
+### Create a project
 
-{% content-ref url="python-sdk/sdk-overview/" %}
-[sdk-overview](python-sdk/sdk-overview/)
+Now that you have invited your team and created a taxonomy, you can create your project by selecting the Brain Brats taxonomy, and configuring your annotation workflow. For this exercise, we recommend a workflow with 1 Review stage.&#x20;
+
+{% content-ref url="projects/get-started-with-a-project.md" %}
+[get-started-with-a-project.md](projects/get-started-with-a-project.md)
 {% endcontent-ref %}
 
-## Getting Access
+{% embed url="https://www.loom.com/share/fac68e2510f8440b9d35b1e9a93d66e5" %}
 
-{% hint style="success" %}
-**Request a product demo or trial**\
-****\
-****If you're interested to try out the RedBrick AI platform, request for a product demonstration or a trial by writing to us at [contact@redbrickai.com](mailto:contact@redbrickai.com).
-{% endhint %}
+### Upload the Brain Brats dataset
+
+First, download the Brain Brats dataset linked above. After downloading, head over to the project you have just created and click on the **Upload Data button.** Within the upload data dialog, select **NIfTI 3D Volume** as the data type, and select **Yes for Group by Study.** Then, drag and drop the Brain Brats folder and click on Upload.
+
+{% embed url="https://www.loom.com/share/18f4fc466853459b9cfa43ce29b62f02" %}
+
+For your information, you can integrate your cloud storage to host your own data with RedBrick AI.&#x20;
+
+{% content-ref url="importing-data/import-cloud-data.md" %}
+[import-cloud-data.md](importing-data/import-cloud-data.md)
+{% endcontent-ref %}
+
+### Begin Annotating
+
+Your project is completely set up and ready for annotation! Open the annotation tool by clicking on the Label button on the top right of the project dashboard.&#x20;
+
+{% embed url="https://www.loom.com/share/9e97d5f48ba64a6a84cfe7e484130bfb" %}
