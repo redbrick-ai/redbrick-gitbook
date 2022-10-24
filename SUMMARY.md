@@ -25,20 +25,20 @@
 * [Consensus (inter-annotator agreement)](projects/consensus-inter-annotator-agreement/README.md)
   * [Agreement calculation](projects/consensus-inter-annotator-agreement/agreement-calculation.md)
 * [Custom label validation](projects/custom-label-validation.md)
-* [Custom hanging protocol](projects/custom-hanging-protocol.md)
 
-## DICOM Annotation
+## Annotation
 
-* [Overview](dicom-annotation/overview.md)
-* [Creating, editing and deleting annotations](dicom-annotation/creating-editing-and-deleting-annotations.md)
-* [Filters - windowing, thresholding etc.](dicom-annotation/filters-windowing-thresholding-etc..md)
-* [Layout - series/study](dicom-annotation/layout-series-study.md)
-* [Multiple Modalities](dicom-annotation/multiple-modalities.md)
-* [Segmentation](dicom-annotation/segmentation/README.md)
-  * [Instance vs. Semantic](dicom-annotation/segmentation/instance-vs.-semantic.md)
-  * [Overlapping Segmentations](dicom-annotation/segmentation/overlapping-segmentations.md)
-  * [Segmentation mirroring](dicom-annotation/segmentation/segmentation-mirroring.md)
-  * [Intellisync](dicom-annotation/segmentation/intellisync.md)
+* [Overview](annotation/overview.md)
+* [Creating, editing and deleting annotations](annotation/creating-editing-and-deleting-annotations.md)
+* [Windowing, Thresholding, and more](annotation/windowing-thresholding-and-more.md)
+* [Layout & Multiple Volumes](annotation/layout-and-multiple-volumes/README.md)
+  * [Custom hanging protocol](annotation/layout-and-multiple-volumes/custom-hanging-protocol.md)
+  * [Multiple Modalities](annotation/layout-and-multiple-volumes/multiple-modalities.md)
+  * [Intellisync](annotation/layout-and-multiple-volumes/intellisync.md)
+  * [Annotation mirroring](annotation/layout-and-multiple-volumes/annotation-mirroring.md)
+* [Segmentation](annotation/segmentation/README.md)
+  * [Instance vs. Semantic](annotation/segmentation/instance-vs.-semantic.md)
+  * [Overlapping Segmentations](annotation/segmentation/overlapping-segmentations.md)
 
 ## Python SDK & CLI <a href="#python-sdk" id="python-sdk"></a>
 

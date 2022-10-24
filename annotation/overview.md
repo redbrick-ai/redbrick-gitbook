@@ -1,6 +1,6 @@
 # Overview
 
-The RedBrick AI DICOM annotation tool is a web based annotation tool with native support for DICOM medical images. The solution supports 2D and 3D data and allows for segmentation, classification and vector annotations.&#x20;
+The RedBrick AI DICOM annotation tool is a web-based annotation tool with native support for DICOM medical images. The solution supports 2D and 3D data and allows for segmentation, classification, and vector annotations.&#x20;
 
 ## Interface overview
 

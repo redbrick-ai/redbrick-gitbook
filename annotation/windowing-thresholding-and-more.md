@@ -1,4 +1,4 @@
-# Filters - windowing, thresholding etc.
+# Windowing, Thresholding, and more
 
 To help with visualizing your volumes and performing annotations, you can apply several _Filters_ to your volumes. The filters are available on the left side of the top bar - they are the first set of tools displayed.&#x20;
 
@@ -30,7 +30,7 @@ Toggle the preview in the threshold context panel to visualize your thresholded 
 
 ## Smoothing
 
-You can smooth your volumes to remove noise from the data and simplify segmentation tasks. Smoothing works well when used along side thresholding or other segmentation tools like region growing.&#x20;
+You can smooth your volumes to remove noise from the data and simplify segmentation tasks. Smoothing works well when used alongside thresholding or other segmentation tools like region growing.&#x20;
 
 Select the Smoothing filter from the top bar and enable/disable it from the context panel.&#x20;
 

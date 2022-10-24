@@ -135,7 +135,7 @@ function setMPR(seriesIndex=0) {
 
 ### Synchronize views
 
-Hanging protocols can be used along side [intellisync.md](../dicom-annotation/segmentation/intellisync.md "mention")for ease of use when annotating scans in a study. This example is useful for a project where each task has 4 series from an MRI study: T1, T1CE, T2, and Flair weighted MR scans.
+Hanging protocols can be used along side [intellisync.md](intellisync.md "mention")for ease of use when annotating scans in a study. This example is useful for a project where each task has 4 series from an MRI study: T1, T1CE, T2, and Flair weighted MR scans.
 
 Sample input data:
 

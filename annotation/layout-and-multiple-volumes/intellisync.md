@@ -6,9 +6,7 @@ description: Smart synchronization between multiple volumes in a single study.
 
 It is common to have multiple scans that are taken with different parameters in the same axis (i.e. T1 vs T2 MRI). Intellisync is a feature that synchronizes multiple series in different viewports to make annotation and diagnosis faster. For viewports that are aligned, scroll position will be synchronized. For viewports that are out of alignment, the intersection between the current instance and the other viewport is shown as a reference line.
 
-
-
-### Activating Intellisync:
+## Activating Intellisync
 
 When activated, intellisync applies to all 2D viewports of the chosen series. It can also be activated for all series at once.
 
@@ -25,7 +23,7 @@ Intellisync with orthogonal imaging axis
 Intellisync with label mirroring and weighted MRIs
 {% endembed %}
 
-#### Troubleshooting and limitations
+## Troubleshooting and limitations
 
 * Reference lines are computed based on image position patient and image orientation patient headers in each DICOM instance. Therefore, reference lines are only available for data sourced from DICOM files.
 * For scroll syncing, the absolute world position is used. This means that data must be registered correctly. This feature will work best on data with identical headers (position, direction, dimensions, and orientation).

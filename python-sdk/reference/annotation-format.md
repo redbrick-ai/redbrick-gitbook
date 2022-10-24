@@ -174,7 +174,7 @@ type Point2D = {
 
 ### Task
 
-The `Task` object represents a single task on RedBrick AI. It contains task-level meta-data information about all the series within the task. A task can contain a [single series or multiple series](../../dicom-annotation/layout-series-study.md) (ex. a full MRI study).&#x20;
+The `Task` object represents a single task on RedBrick AI. It contains task-level meta-data information about all the series within the task. A task can contain a [single series or multiple series](../../annotation/layout-and-multiple-volumes/) (ex. a full MRI study).&#x20;
 
 #### `name: string`
 
