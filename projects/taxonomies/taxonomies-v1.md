@@ -1,12 +1,12 @@
-# Taxonomies (V1)
+# Taxonomies V1
 
-{% hint style="info" %}
-It is recommended that you switch to the new and improved Taxonomy V2.
+{% hint style="warning" %}
+It is **strongly recommended** that you switch to the new and improved Taxonomy V2.
 {% endhint %}
 
 Taxonomies provides a structured way of defining your object label categories. Taxonomies allow you to re-use a set of label classes and attributes over different projects. A simple taxonomy is shown below
 
-![](<../.gitbook/assets/image 440.png>)
+![](<../../.gitbook/assets/image 440.png>)
 
 ## **Creating A Taxonomy**
 
@@ -18,7 +18,7 @@ You can create a non-nested taxonomy using simple creation, or build a taxonomy 
 
 While in the create a taxonomy modal, type a category name and press enter to add it to the taxonomy list. Each taxonomy entry can have child categories as well, up to a depth of 3 levels.
 
-![](<../.gitbook/assets/image 501.png>)
+![](<../../.gitbook/assets/image 501.png>)
 
 The attributes list comprises of
 
@@ -28,7 +28,7 @@ The attributes list comprises of
 
 An attribute can be created by clicking on 'add an attribute' button. By default, a created attribute will be assigned to all categories unless the toggle is disabled. When disabled, a link to assign categories will appear. You can select the categories that you want the attribute to applied to by selecting them from the category list.
 
-![](<../.gitbook/assets/Group 28362 (1).png>)
+![](<../../.gitbook/assets/Group 28362 (1).png>)
 
 ## Task classification
 

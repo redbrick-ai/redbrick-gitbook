@@ -4,9 +4,9 @@ description: Write a script to dynamically arrange the viewports for your projec
 
 # Custom hanging protocol
 
-Instead of having to spend the beginning of each task rearranging the layout and setting things up in the desired way, you can write a script that returns the desired layout. This will be executed when loading every task in the project.
+The Custom Hanging Protocol feature allows you to write a script that will programmatically define the annotation tool layout. This can save an annotator's time by pre-configuring the interface and layout in the desired way.
 
-The script takes as input the available series and returns the layout dimensions and list of views.
+The script takes as input the available series for a particular task and returns the layout dimensions and list of views to display.
 
 {% embed url="https://www.loom.com/share/a5b5255cd1954bd590849a8e939c9b5f" %}
 
@@ -41,7 +41,6 @@ interface Series {
   name: string; // User defined name if available, else "A", "B", ...
   imagingAxis: 'AXIAL' | 'SAGITTAL' | 'CORONAL';
 }
-
 
 interface View {
   plane: 'AXIAL' | 'SAGITTAL' | 'CORONAL' | '3D' | 'MIP';
@@ -138,8 +137,6 @@ function setMPR(seriesIndex=0) {
 
 Hanging protocols can be used along side [intellisync.md](../dicom-annotation/segmentation/intellisync.md "mention")for ease of use when annotating scans in a study. This example is useful for a project where each task has 4 series from an MRI study: T1, T1CE, T2, and Flair weighted MR scans.
 
-
-
 Sample input data:
 
 ```javascript
@@ -200,4 +197,3 @@ setViews(eligibileSeries.map((series) => {
   };
 }));
 ```
-

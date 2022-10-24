@@ -4,8 +4,7 @@
 
 ## Team & Organization <a href="#organizations" id="organizations"></a>
 
-* [Invite your team to your organization](organizations/what-is-an-organization.md)
-* [Roles and Permissions](organizations/teams-and-permissions.md)
+* [Inviting your team](organizations/what-is-an-organization.md)
 * [Invite labelers to your Project](organizations/invite-labelers-to-your-project.md)
 
 ## Importing Data
@@ -19,13 +18,13 @@
 
 ## Projects
 
-* [How project pipelines work](projects/how-project-pipelines-work.md)
+* [Get Started with a project](projects/get-started-with-a-project.md)
 * [How task assignment works](projects/how-task-assignment-works.md)
-* [Taxonomies (V1)](projects/taxonomies-v1.md)
-* [Taxonomies (V2)](projects/taxonomies-v2.md)
-* [Consensus (Inter-annotator Agreement)](projects/consensus-inter-annotator-agreement/README.md)
+* [Taxonomies](projects/taxonomies/README.md)
+  * [Taxonomies V1](projects/taxonomies/taxonomies-v1.md)
+* [Consensus (inter-annotator agreement)](projects/consensus-inter-annotator-agreement/README.md)
   * [Agreement calculation](projects/consensus-inter-annotator-agreement/agreement-calculation.md)
-* [Custom Label Validation](projects/custom-label-validation.md)
+* [Custom label validation](projects/custom-label-validation.md)
 * [Custom hanging protocol](projects/custom-hanging-protocol.md)
 
 ## DICOM Annotation
