@@ -178,7 +178,7 @@ The `Task` object represents a single task on RedBrick AI. It contains task-leve
 
 #### `name: string`
 
-A user-defined string is defined on upload. Exported data will include this value. `name` is meant to be a human-readable string that can help identify tasks ex. you can set `name` of a task to `patient/study01`.
+A user-defined string is defined on upload, it is _required to be unique_ across all tasks in your project. The `name` is meant to be a human-readable string that can help identify tasks ex. you can set `name` of a task to `patient/study01`.
 
 #### `taskId?: string`
 
@@ -214,7 +214,7 @@ The items entry is a list of file paths that point to your data. Please have a l
 
 #### `name?: string`
 
-An optional user-defined string. Individual [series will be named after this value on the labeling tool](https://www.loom.com/i/ea12e486bd8845d7b3b8a83fc115ad58). Exported segmentation files will also be named using this value. Using the Series Instance UID here is good practice. &#x20;
+An optional user-defined string, _needs to be unique_ across all series. Individual [series will be named after this value on the labeling tool](https://www.loom.com/i/ea12e486bd8845d7b3b8a83fc115ad58). Exported segmentation files will also be named using this value. Using the Series Instance UID here is good practice. &#x20;
 
 ### Common Label Keys
 
