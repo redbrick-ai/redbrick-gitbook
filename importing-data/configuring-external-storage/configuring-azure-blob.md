@@ -63,6 +63,12 @@ Head over to your RedBrick AI Account:&#x20;
 1. Click on the **Storage Method** tab on the left sidebar, and **Create New Storage Method.**&#x20;
 2. In the creation dialog, select **Azure Blob** as the storage type and enter your **connection string,** and **storage account name.**&#x20;
 
+## Enable CORS on your Storage Account
+
+To ensure your data is private and secured, RedBrick uses signed URL's to render data in browsers. To allow RedBrick to use signed URL's to serve data, you need to enable CORS on the Storage Account. This can be done from your **Storage Account -> Settings -> Resource Sharing (CORS).** We recommend the following CORS policy:&#x20;
+
+<figure><img src="../../.gitbook/assets/Screen Shot 2022-11-01 at 8.06.13 PM.png" alt=""><figcaption></figcaption></figure>
+
 ### Verify your Azure connection
 
 Once you've added your Azure storage method on RedBrick AI, you can verify the connection by doing the following:&#x20;
