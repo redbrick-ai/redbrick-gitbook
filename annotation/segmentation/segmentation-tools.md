@@ -41,7 +41,7 @@ Hole filling is designed to fill _small holes_. For larger holes, you may need t
 {% endhint %}
 
 {% hint style="warning" %}
-For large volumes, 3D hole filling can be very computationally expensive. If your data has more than 100 slices, we recommend only using 2D hole filling.
+For large volumes, 3D hole filling can be very computationally expensive. If your data has more than 300 slices, we recommend only using 2D hole filling.
 {% endhint %}
 
 ## Paint Bucket
