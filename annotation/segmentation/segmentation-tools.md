@@ -1,5 +1,9 @@
 # Segmentation Tools
 
+{% embed url="https://www.loom.com/share/c0986dc6a4274bffaa52031c98b24930" %}
+Overview of all the segmentation tools
+{% endembed %}
+
 ## Brush
 
 The brush tool has two modes - 2D and 3D (toggled on the right side panel). The 2D brush is a circle, and 3D brush is a sphere that segments across slices. You can adjust the size of the brush using the slider on the right side panel, or the `w` & `s` hotkeys.&#x20;
