@@ -1,66 +1,79 @@
 # Creating, editing and deleting annotations
 
-On RedBrick AI you can perform the following types of annotations:
+The left side bar of the annotation tool will display the Taxonomy you created. There are three sections to the side bar (that will be present depending on your taxonomy) - **Study Classification**, **Series Classification** and **Object Labels.**
 
-1. **Segmentation** - Instance, semantic and overlapping.
-2. **Classification** - Task level classifications (equivalent to series/study level annotations). To perform task level classifications, you have to add task classification categories to your [taxonomy](broken-reference).&#x20;
-3. **Vector annotations** - Landmarks, and more coming soon.
+<figure><img src="../.gitbook/assets/app.redbrickai.com_a717f7d8-8a19-4346-b9b4-a90c8d6875ba_projects_7532ec0d-c308-4274-a68e-a88da9eaa887_tool_Label_taskid=f7cf207e-989e-4d52-9bb0-34e2549a306e (1).png" alt=""><figcaption></figcaption></figure>
 
-## Creating annotations
+## Study and Series Classification
 
-When the annotation tool first loads, it will have the 'cross-hairs' tool selected. To create an annotation:
-
-1. **Select the type of annotation** from the drop down on the **Create Label button** on the left side bar.
-2. Click on **Create Label** to add an annotation. This will open the **category selection panel**, where you can choose the category and attributes for your annotation. To create **multiple instances** of the same category, simply create multiple labels with the same category selection.
-3. Once the annotation is created, you will see a new entry to the annotation list on the left side bar. You will also see a list of **annotation tools appear on the top bar** e.g. brush, pen etc. The settings for your selected annotation tool will be in the **context panel** on the right.&#x20;
-
-{% embed url="https://www.loom.com/share/8b4682acc3f4421ab4b10f2a92f7552c" %}
-Creating a segmentation annotation
-{% endembed %}
-
-## Selecting and editing annotations
-
-To modify, delete, hide, lock etc. existing annotations, you have to first **select** the annotation:
-
-1. You can select existing annotations in two ways:&#x20;
-   1. Select the annotation from the left side bar by clicking on the annotation item in the list.&#x20;
-   2. Choose the **Select tool** from the top bar (or press ESC), and hover and click on any annotation on the main canvas.&#x20;
-2. After selecting the annotation, the relevant annotation tools will re-appear on the top bar. You can now directly interact with the main canvas to modify the segmentation.&#x20;
-3. To **change a selected annotations category** or **attributes**, you can click on the annotation item _again_ (first click selects, second click opens edit panel) to re-select the annotation/attributes. You can also **open the edit panel** by clicking on the **three dot menu** on the annotation.
-4. To de-select all annotations, use the ESC keyboard shortcut, or choose the Select tool on the top bar.
-
-{% hint style="warning" %}
-You can only edit currently selected annotations. When one annotation is selected, you will not be able to make modifications to any other annotation.
-{% endhint %}
+If present, the study and series classifications will be present under their own expansion panels. You will be able to directly fill out the checkbox, select, or textfield in the grid.&#x20;
 
 {% hint style="info" %}
-Tips
-
-1. While an annotation is selected, use the `E` keyboard shortcut to open the edit panel
-2. To bring a selected annotation into view, use the SHIFT + J keyboard shortcut
-3. If an annotation has attributes associated with it, you can get a summary view by hovering over the attribute number indicator.
+Adjust the size of the grid for easy interaction
 {% endhint %}
 
-{% embed url="https://www.loom.com/share/7e49c1375a0444db9382ca04d44656a9" %}
-Modifying an existing annotation
-{% endembed %}
+<figure><img src="../.gitbook/assets/ezgif.com-gif-maker (14).gif" alt=""><figcaption></figcaption></figure>
 
-## Lock, hide, and delete
+## Object Labels
 
-### Lock/un-lock
+An object label has three components - **a category name, a label type, and attributes (optional)**. **** The left side bar will show all the object labels on the left side bar with an option to create _instances of that object label_. All instances are organized within each object labels expansion panel.&#x20;
 
-While making annotations you may want to lock a specific annotation to make sure you don't accidentally edit / overwrite it while making other segmentations. You can lock/un-lock any annotation from the **three dot drop down menu**.
+### Creating Object Labels
 
-Alternatively, you can hover over an annotation/select an annotation and use the `U` keyboard shortcut.&#x20;
+Simply click the (+) button of the object label you want to create. Doing so will create an instance of that object label, and automatically select the default tool for that label type ex. for segmentations, the brush tool will be selected by default.&#x20;
 
-### Hide/show
+{% hint style="info" %}
+Use the number shortcuts i.e. 1, 2, 3, etc., to quickly create object labels
+{% endhint %}
 
-You can temporarily hide or show annotations from the three dot drop down menu. You can also hover over any annotation and use the `H` keyboard shortcut.
+<figure><img src="../.gitbook/assets/ezgif.com-gif-maker (15).gif" alt=""><figcaption></figcaption></figure>
 
-### Delete
+### Selecting and Editing Object Labels
 
-To delete an annotation, you can select/hover over it and use the delete/backspace keyboard shortcut. Alternatively, you can delete an annotation from the three dot drop down menu.&#x20;
+To edit an object label, you must first select it from the left sidebar. Once you select the instance from the left side bar, the default tool for that label type will be selected and you can interact with the canvas to make edits to that instance.&#x20;
 
-{% embed url="https://www.loom.com/share/ed696f060f2042be82608cf43f19c455" %}
-Lock, hide, delete
-{% endembed %}
+{% hint style="info" %}
+When a object label instance is selected, interacting with the canvas will only edit that particular instance.
+{% endhint %}
+
+### Other Object Labels Actions
+
+There are several actions available that can help you with selecting, viewing, and editing object labels. All actions can be accessed by clicking the three dot menu button on a label instnance.&#x20;
+
+<figure><img src="../.gitbook/assets/Screen Shot 2022-11-02 at 8.41.18 AM.png" alt=""><figcaption></figcaption></figure>
+
+#### Editing the category and attributes
+
+You can edit the _selected labels_ attribute and category on the right side context panel. Either select the label, or click on the "Edit" label action to display the right side context panel.&#x20;
+
+<figure><img src="../.gitbook/assets/ezgif.com-gif-maker (16).gif" alt=""><figcaption></figcaption></figure>
+
+#### Deleting Object Labels
+
+You can delete the _selected object label_ by using the `delete` / `backspace` shortcut. Alternatively, you can use the delete action in the actions dropdown.&#x20;
+
+To delete all labels use the shortcut `shift + delete`/`shift + backspace`. Alternatively, you can use the delete all action in the _Object Labels_ three dot menu dropdown.&#x20;
+
+#### Hide and Show Labels
+
+You can hide the _label you are currently hovering over_ by using the `h` hotkey. If you are not hovering over any label (either on the canvas, or on the left side bar), the `h` hotkey will hide/show the currently selected label.&#x20;
+
+To hide/show all labels use the shortcut `shift + h` or the hide all action in the _Object Labels_ three dot menu dropdown.&#x20;
+
+#### Lock and Unlock Labels
+
+You can lock/unlock _label you are currently hovering over_ by using the `u` hotkey. If you are not hovering over any label (either on the canvas, or on the left side bar), the `u` hotkey will lock/unlock the currently selected label.
+
+To lock/unlock all labels use the shortcut `shift + u` or the lock all action in the _Object Labels_ three dot menu dropdown.&#x20;
+
+Watch the video below to understand how to prevent/allow overwriting of annotations.
+
+{% embed url="https://www.loom.com/share/7daf374f6967429dad43b2962c6ccd8f" %}
+
+#### Toggle Vibrant Mode
+
+Vibrant mode allows you to temporarily highlight a particular instance. For example, if you have several small instances of nodules in a chest CT, you can hover over any particular instance on the left side bar or on the canvas, and use the `v` shortcut to activate vibrant mode to highlight that instance. This can be useful in quickly identifying instances.&#x20;
+
+#### Jump to Label
+
+The Jump to label action will change the current slice position to the closest slice position that contains a particular annotation. This is useful for revealing annotations on the canvas.&#x20;
