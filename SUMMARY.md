@@ -37,6 +37,7 @@
   * [Intellisync](annotation/layout-and-multiple-volumes/intellisync.md)
   * [Annotation mirroring](annotation/layout-and-multiple-volumes/annotation-mirroring.md)
 * [Segmentation](annotation/segmentation/README.md)
+  * [Segmentation Tools](annotation/segmentation/segmentation-tools.md)
   * [Instance vs. Semantic](annotation/segmentation/instance-vs.-semantic.md)
   * [Overlapping Segmentations](annotation/segmentation/overlapping-segmentations.md)
 
