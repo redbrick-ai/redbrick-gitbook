@@ -25,6 +25,7 @@
 * [Consensus (inter-annotator agreement)](projects/consensus-inter-annotator-agreement/README.md)
   * [Agreement calculation](projects/consensus-inter-annotator-agreement/agreement-calculation.md)
 * [Custom label validation](projects/custom-label-validation.md)
+* [Labeler Evaluation](projects/labeler-evaluation.md)
 
 ## Annotation
 
