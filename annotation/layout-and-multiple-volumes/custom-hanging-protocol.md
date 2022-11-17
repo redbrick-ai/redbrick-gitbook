@@ -22,6 +22,8 @@ At present, you can control the following things:&#x20;
   * Flip the view vertically (`flipperVertically`)
   * Activate intellisync (`synchronized`)
   * If the view is maximimized (`expanded`)
+* The default windowing setting for each series (`setWindowing`)
+* The default threshold setting for each series (`setThresholding`)
 
 ### Types
 
@@ -30,6 +32,12 @@ function setViews(views: View[]) {
  //...
 }
 function setDimensions(numColumns: number, numRows: number) {
+ // ...
+}
+function setWindowing(seriesIndex: number, level: number, width: number){
+ // ...
+}
+function setThresholding(seriesIndex: number, level: number, width: number) {
  // ...
 }
 

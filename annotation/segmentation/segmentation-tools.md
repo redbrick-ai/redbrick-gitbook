@@ -28,6 +28,28 @@ Region growing is a semi-automated segmentation tool that uses image intensity i
 `Right click + hold` to segment, `left click + hold` to erase.
 {% endhint %}
 
+## Contour Tool
+
+The manual contour tool allows you to quickly draw outlines of your regions, then interpolate between slices.
+
+To activate it:
+
+* Select the tool from the top bar, or
+* Press the "k" hotkey, or
+* Search for the Contour tool in the command bar
+
+The contour tool works very similarly to the pen tool. To get started click on a 2D viewport. You can click and drag or add points one click at a time. To close click the end node. You can then change the slice and repeat the process. If you skip slices, the in between slices will be interpolated.
+
+To edit, simply hover near the edge of your region and click and drag to draw a new segment. Editing an interpolated contour will make that contour a key point that will be used for interpolation of the nearby slices.
+
+{% hint style="warning" %}
+When you are done with your contour, you will need to convert it to a pixel mask. This process is called "rasterization." There is a button on the right panel to do this, or you can use the Shift+Enter hotkey.
+{% endhint %}
+
+{% embed url="https://www.loom.com/share/0a64ca5bc7e2414c9e78088631b1569b" %}
+Demonstration of contour tool for segmenting part of the liver
+{% endembed %}
+
 ## Island Removal
 
 Island removal removes islands of segmentations. Click on any "island" segmentation to remove it. On the right side context panel, you can active "keep currently selected" to remove all islands except the one you clicked on.

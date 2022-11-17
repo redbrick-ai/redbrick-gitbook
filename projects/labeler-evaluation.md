@@ -7,7 +7,7 @@ description: >-
 # Labeler Evaluation
 
 {% hint style="warning" %}
-This feature is beta and we would love your feedback!
+This feature is in beta and we would love your feedback!
 {% endhint %}
 
 {% hint style="info" %}
