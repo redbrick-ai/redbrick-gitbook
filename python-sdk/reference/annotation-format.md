@@ -37,13 +37,18 @@ type Task = {
   // Task level annotation information
   classification?: Classification;
 ​
-  // Only required on export
+  // Not required on upload
   taskId?: string;
   currentStageName?: string;
   createdBy?: string;
   createdAt?: string;
   updatedBy?: string;
   updatedAt?: string;
+  
+  // Prescribe task assignent
+  preAssign?: {
+    [stageName: string]: string
+  }
 };
 ​
 // A single series can be 2D, 3D, video etc.
@@ -203,6 +208,10 @@ The e-mail of the last user to make edits to this task.
 #### `updatedAt?: string`
 
 The datetime this task was last edited.
+
+#### **`preAssign?: {[stageName: string]: string}`**
+
+Prescribe during upload who will get a task assigned to them. You can define the assignment for each stage of the workflow, for example, Label and Review, `{"Label": "name1@redbrickai.com", "Review": "name2@redbrickai.com"}`.
 
 ### Series
 
