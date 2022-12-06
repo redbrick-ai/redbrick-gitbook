@@ -50,9 +50,9 @@ To edit, hover near the edge of your region and click and drag to draw a new seg
 When you finish your contour, you must convert it to a pixel mask. This process is called "rasterization." There is a button on the right panel to do this, or you can use the `Shift+Enter` hotkey.
 {% endhint %}
 
-#### Automatic contouring using level-tracing
+#### Smart contouring
 
-Our level tracing tool automatically draws a contour around a region of interest. To use it, while the contour tool is selected, press `command/ctrl` and hover near the boundary of an object. Click to confirm the automatic contour.&#x20;
+Our smart contour tool automatically draws a contour around a region of interest. To use it, while the contour tool is selected, press `command/ctrl` and hover near the boundary of an object. Click to confirm the automatic contour.&#x20;
 
 {% embed url="https://www.loom.com/share/63a8f0e45b934b2ab4d9cb3127e4c6b1" %}
 
