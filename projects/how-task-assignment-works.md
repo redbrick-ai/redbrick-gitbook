@@ -91,4 +91,4 @@ While in your Queue, the task can be in a few different states, depending on the
 
 The diagram below is a guide to completing tasks in your labeling queue, including the actions and states of tasks.
 
-<figure><img src="../.gitbook/assets/localhost_3000_943c97cd-58b1-4794-84d0-8b00d26f0c84_projects_427f346f-79bf-448f-bb4c-4ef92bfd0c83_tool_Label_taskid=b218c47a-431c-4584-80d3-bde6c06446f8 (2).png" alt=""><figcaption><p>Guide to submitting tasks in your labeling queue</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Group 30489 (3).png" alt=""><figcaption><p>Guide to submitting tasks in your labeling queue</p></figcaption></figure>
