@@ -1,4 +1,4 @@
-# Get Started with a project
+# Get started with a project
 
 To create a new project, press the "Create Project" button on the Projects page. There are a few simple steps to creating and setting up a project.&#x20;
 
@@ -40,8 +40,8 @@ Once you have successfully created a project, you will most likely want to perfo
 
 All admins have access to all projects by default. You can manually add Labelers to individual projects and **assign them as Labelers or Reviewers**. Please read the following section for more details:
 
-{% content-ref url="../organizations/invite-labelers-to-your-project.md" %}
-[invite-labelers-to-your-project.md](../organizations/invite-labelers-to-your-project.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ### Uploading data

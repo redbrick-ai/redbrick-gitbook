@@ -4,8 +4,7 @@
 
 ## Team & Organization <a href="#organizations" id="organizations"></a>
 
-* [Inviting your team](organizations/what-is-an-organization.md)
-* [Invite labelers to your Project](organizations/invite-labelers-to-your-project.md)
+* [Organization and Project Roles](organizations/what-is-an-organization.md)
 
 ## Importing Data
 
