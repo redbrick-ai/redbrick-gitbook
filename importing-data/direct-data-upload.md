@@ -25,7 +25,7 @@ Navigate to the project you want to upload data within to upload your scans. Cli
 
 Put all instances of a DICOM series in a folder. If you are uploading only 1 series, you can upload all the instances, not in a folder.&#x20;
 
-<figure><img src="../.gitbook/assets/Label evaluation.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Label evaluation (8).png" alt=""><figcaption></figcaption></figure>
 
 ### NIfTI 3D Volume
 
