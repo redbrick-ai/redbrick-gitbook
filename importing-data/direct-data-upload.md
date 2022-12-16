@@ -31,7 +31,7 @@ Put all instances of a DICOM series in a folder. If you are uploading only 1 ser
 
 Individual NIfTI files are uploaded as separate tasks. If you want to group tasks by study, put the NIfTI files of a single task/study in a folder.&#x20;
 
-<figure><img src="../.gitbook/assets/Label evaluation (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Label evaluation (6).png" alt=""><figcaption></figcaption></figure>
 
 ### Image 2D
 
