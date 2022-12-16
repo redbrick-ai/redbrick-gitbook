@@ -1,23 +1,48 @@
 # Direct data upload
 
-## DICOM Projects
+The Direct Upload functionality allows users to upload their image data directly to RedBrick AI servers. Direct Upload is commonly used for light experimentation with a small dataset.&#x20;
 
-We support `.dcm`, `.nii` and `.nii.gz` file uploads within DICOM projects.&#x20;
+{% hint style="warning" %}
+All image data directly uploaded will be stored on RedBrick AI servers. If you don't want RedBrick AI to host your image data, [please integrate your storage](import-cloud-data.md).
+{% endhint %}
 
-### DCM upload
+RedBrick AI supports a variety of different image formats:&#x20;
 
-When upload `.dcm` files, we require folder uploads with each folder containing the `.dcm` files for a single study. RedBrick will assume all the `.dcm` files within a _single_ root folder are part of a single study, and will form 1 task.&#x20;
+1. DICOM - .dcm, .ima, .dicom, .dicm
+2. NIfTI - .nii, .nii.gz
+3. Videos - .mp4, .mov, .avi
+4. RGB Images - .png, .jpeg, .jpg, .bmp
 
-{% embed url="https://www.loom.com/share/0d165117cd924c91b8fd9ed0f5112fd9" %}
+Navigate to the project you want to upload data within to upload your scans. Click on "Upload Data" on the top-right of the dashboard.&#x20;
 
-### NIfTI Upload
+1. Select the type of data you want to upload. \
+   Note - you **can only upload one type of image data** (DICOM, NIfTI, etc.) at one time, and each data type **has its folder structure format**.
+2. For DICOM & NIfTI volume data, select yes/no for _group by study_. Grouping by study allows you to upload multiple scans as a single task. This is useful when you want to [view/annotate multiple images (a full study) at once](https://docs.redbrickai.com/annotation/overview#how-tasks-work-with-dicom-annotation).&#x20;
 
-You can upload `.nii` and `.nii.gz` files directly to RedBrick AI.
+## Folder Structure
 
-## Video Projects
+### DICOM 3D Volume
 
-For video projects you can upload MP4 files and we will handle the parsing down to frames. Videos will be split into frames at the full frame rate of the videos. Any frames beyond the first 5000 will be removed. It is strongly recommended to keep video clips shorter to assist annotators. Each video uploaded will be made into an individual task.
+Put all instances of a DICOM series in a folder. If you are uploading only 1 series, you can upload all the instances, not in a folder.&#x20;
 
-## Image
+<figure><img src="../.gitbook/assets/Label evaluation.png" alt=""><figcaption></figcaption></figure>
 
-This is a simple process of just uploading the files that you want to use to create tasks. Each file will be made into a task that can be used further in your project pipeline. The task will have its name set by default to the file name. RedBrick AI supports `.png` `.jpeg` `.jpg` `.bmp`
+### NIfTI 3D Volume
+
+Individual NIfTI files are uploaded as separate tasks. If you want to group tasks by study, put the NIfTI files of a single task/study in a folder.&#x20;
+
+<figure><img src="../.gitbook/assets/Label evaluation (3).png" alt=""><figcaption></figcaption></figure>
+
+### Image 2D
+
+Individual 2D images are all uploaded as individual tasks. If you want to create a _study task_ with 2D images, please [use your external storage](import-cloud-data.md), or [upload data using the CLI](../python-sdk/cli-overview/importing-data/).
+
+### Video Files
+
+Individual 2D videos are all uploaded as individual tasks. If you want to create a _study task_ with 2D videos, please [use your external storage](import-cloud-data.md), or [upload data using the CLI](../python-sdk/cli-overview/importing-data/).
+
+### Video Frames
+
+Group all frames for a video in a single folder. The video frames will be naturally sorted using the frame filenames.&#x20;
+
+<figure><img src="../.gitbook/assets/Label evaluation (5).png" alt=""><figcaption></figcaption></figure>
