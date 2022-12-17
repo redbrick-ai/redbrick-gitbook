@@ -1,5 +1,5 @@
 ---
-description: Training Data, Made Easy.
+description: Rapid & Collaborative Medical Data Annotation
 ---
 
 # Getting Started
