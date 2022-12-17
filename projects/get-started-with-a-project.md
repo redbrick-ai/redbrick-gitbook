@@ -40,8 +40,8 @@ Once you have successfully created a project, you will most likely want to perfo
 
 All admins have access to all projects by default. You can manually add Labelers to individual projects and **assign them as Labelers or Reviewers**. Please read the following section for more details:
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="../organizations/what-is-an-organization.md" %}
+[what-is-an-organization.md](../organizations/what-is-an-organization.md)
 {% endcontent-ref %}
 
 ### Uploading data
