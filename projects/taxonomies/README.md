@@ -16,7 +16,8 @@ Objects are features you annotate in your images. Objects are defined as a Label
 | Landmarks          | ✅         | ✅         | ✅        |
 | Angle Measurement  | ✅         | ✅         |          |
 | Length Measurement | ✅         | ✅         |          |
-| Bounding box       | ✅         |           | ✅        |
+| Bounding box       | ✅         | ✅         | ✅        |
+| Ellipse            | ✅         | ✅         |          |
 | Polygon            | ✅         |           | ✅        |
 | Polyline           | ✅         |           | ✅        |
 

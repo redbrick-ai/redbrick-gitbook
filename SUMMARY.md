@@ -58,7 +58,7 @@
   * [Annotation Format](python-sdk/reference/annotation-format.md)
   * [TaxonomyObject](python-sdk/reference/taxonomyobject.md)
   * [TaskObject](python-sdk/reference/taskobject.md)
-* [Full SDK Reference](https://redbrick-sdk.readthedocs.io/en/stable/)
+* [Full SDK & CLI Reference](https://redbrick-sdk.readthedocs.io/en/stable/)
 
 ## Useful Links
 
