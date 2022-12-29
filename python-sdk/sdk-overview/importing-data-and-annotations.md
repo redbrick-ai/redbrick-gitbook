@@ -1,120 +1,58 @@
-# Importing Data and Annotations
+# Importing data & annotations
 
-You can programmatically upload your data to the RedBrick AI platform and also upload pre-labels with the data so that your team can correct the annotations on the platform.&#x20;
+You can programmatically import data and/or annotations using the SDK with a Python Script. For simple import operations, we recommend using the CLI, which has a simple & optimized interface.&#x20;
 
-## Creating data points without labels
+You can import either locally stored data or externally stored data using the SDK using `create_datapoints`.
 
-You can use the `create_datapoints` method to upload data to the RedBrick AI platform.&#x20;
+{% hint style="success" %}
+Please see the full reference documentation for [`create_datapoints` here](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.upload.Upload.create\_datapoints).
+{% endhint %}
 
-Perform standard SDK set up to create an RBProject object.
+Perform the [standard RedBrick AI SDK set-up](./#initializing-the-redbrick-sdk-in-python) to create a project object.
 
 ```python
-import redbrick
-
-# Standard Setup
-api_key = "<TODO>"
-org_id = "<TODO>"
-project_id = "<TODO>"
-
-project = redbrick.get_project(
-    org_id=org_id,
-    project_id=project_id,
-    api_key=api_key
-)
+project = redbrick.get_project(org_id, project_id, api_key)
 ```
 
-Construct your data points object and upload to RedBrick.
+#### Import locally stored data
+
+To import locally stored data, create a list of `points` with relative file paths to your locally stored data, and use the [`redbrick.StorageMethod.REDBRICK`](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.StorageMethod) storage ID.&#x20;
 
 ```python
-# Your storage id can be found on the Storage Methods tab (left sidebar) on RedBrick AI
-# redbrick.StorageMethod.REDBRICK is for locally stored data.
+points = [{"items": ["path/to/data.nii"], "name": "..."}]
 storage_id = redbrick.StorageMethod.REDBRICK
 
-datapoints = [
-    {
-        # Must be unique for each datapoint.
-        "name": "my first upload",
-        
-        # Must be a valid path to data stored in the storage method
-        # defined above.
-        "items": [
-            "path/to/local/file.png"
-        ]
-    }
-]
-
-project.upload.create_datapoints(storage_id, datapoints)
-```
-
-## Creating data points with vector labels
-
-You can also upload data with pre-labels using the `create_datapoints` method.
-
-```python
-# Your storage id can be found on the Storage Methods tab (left sidebar) on RedBrick AI
-# redbrick.StorageMethod.PUBLIC is for publically stored data.
-storage_id = redbrick.StorageMethod.PUBLIC
-
-datapoints = [
-    {
-        # Must be unique for each datapoint.
-        "name": "my first upload",
-        
-        # Must be a valid path to data stored in the storage method
-        # defined above.
-        "items": [
-            "http://datasets.redbrickai.com/car-vids/car-1/frame20.png"
-        ]
-        
-        # The labels field needs to be of type LabelObject
-        "labels": [
-            {
-                # category-name must be a valid name part of your
-                # project taxonomy.
-                "category": [["object", "category-name"]],
-                
-                "bbox2d": {
-                    "xnorm": 0.1,
-                    "ynorm": 0.1,
-                    "wnorm": 0.2,
-                    "hnorm": 0.2
-                }
-            }
-        ]
-    }
-]
-
-project.upload.create_datapoints(storage_id, datapoints)
+project.upload.create_datapoints(storage_id=storage_id, points=points)
 ```
 
 {% hint style="info" %}
-Please see the [reference documentation for the LabelObject format](../reference/#labelobject).
+Please visit the [Items List](../../importing-data/import-cloud-data.md#items-list) documentation to understand the format of the `points` array.
 {% endhint %}
 
-## Creating data points with segmentation labels
+#### Import externally stored data
 
-To upload data with masks labels, you can use the `create_datapoint_from_masks` method. You have to first prepare a directory containing your masks in the format defined in the [reference documentation](../reference/#png-mask-formats).
+To import data stored in an external storage method, like AWS s3, make sure to use the storage methods Storage ID found on the _Storage_ tab of your RedBrick AI account.
+
+#### Import annotations
+
+If you want to upload annotations with your data, include the annotation information in the `points` object.
 
 ```python
-# Directory containing the mask data, in the correct format.
-dir = "<TODO>" 
-
-# Load map information
-with open(os.path.join(dir, "class_map.json"), "r") as file:
-    class_map = json.load(file)
-with open(os.path.join(dir, "datapoint_map.json"), "r") as file:
-    datapoint_map = json.load(file)
-
-# Iterate over files, and upload data with masks. 
-for file in datapoint_map:
-    mask_im = Image.open(os.path.join(dir, file))
-    mask = np.array(mask_im)[:, :, 0:3] # Ignore Alpha channel
-    mask = mask.astype(np.uint8)
-    
-    # Because we are using redbrick.StorageMethod.REDBRICK, 
-    # the image_path will need to be path to a locally stored image. 
-    image_path = datapoint_map[file]
-    project.upload.create_datapoint_from_masks(
-        redbrick.StorageMethod.REDBRICK, mask, class_map, image_path
-    )
+points = [
+    {
+        "name": "...",
+        "series": [
+            {
+                "items": "path/to/data.nii",
+                "segmentation": "path/to/segmentation.nii",
+                "segmentMap": {1: "category-1", 2: "category-2"},
+            }
+        ],
+    }
+]
+project.upload.create_datapoints(storage_id="...", points=points)
 ```
+
+{% hint style="info" %}
+Please visit our [annotation format reference](../reference/annotation-format.md) to understand the format of the annotations.
+{% endhint %}

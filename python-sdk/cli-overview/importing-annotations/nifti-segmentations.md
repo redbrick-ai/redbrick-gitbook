@@ -17,7 +17,7 @@ cd project-directory
 ```
 
 {% hint style="warning" %}
-You have to upload your Images and Annotation files together. To add annotation files to data you have already uploaded, please see [this](../../sdk-overview/label-and-review.md#programmatically-label).
+You have to upload your Images and Annotation files together. To add annotation files to data you have already uploaded, please see [this](broken-reference).
 {% endhint %}
 
 ## Upload cloud-stored annotations

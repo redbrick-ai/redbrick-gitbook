@@ -6,7 +6,7 @@ The RedBrick CLI is a tool to interact programmatically with the RedBrick AI pla
 The RedBrick SDK works on Mac, windows, and linux, and is available on [pypi](https://pypi.org/project/redbrick-sdk/). The SDK is compatible with **3.70 <= Python < 3.10**
 {% endhint %}
 
-{% hint style="info" %}
+{% hint style="success" %}
 The CLI is included along with the Python SDK _after version 0.7.0._
 {% endhint %}
 
@@ -24,7 +24,7 @@ pip install redbrick-sdk
 
 ## Create a credentials config
 
-To easily manage authentication so that you can interact with your RedBrick AI account, you will have to create a credentials config which will be stored on your system.&#x20;
+To easily manage authentication to interact with your RedBrick AI account, you will have to create a credentials config that will be stored on your system.&#x20;
 
 ```bash
 redbrick config
@@ -35,11 +35,11 @@ redbrick config
 ✔ RedBrick AI Organization
 ```
 
-Retrieve your organization ID from project settings, or the application URL - https://app.redbrickai.com/\<org\_id>/. Your credentials will be saved at `~/.redbrick/credentials` using the profile name specified.&#x20;
+Retrieve your organization ID from project settings or the application URL - https://app.redbrickai.com/\<org\_id>/. Your credentials will be saved at `~/.redbrick/credentials` using the profile name specified.&#x20;
 
 ## Clone an existing project
 
-To perform any actions on your project, you have to first clone your project locally. You can do this by selecting from the list of projects.
+To perform any actions on your project, you have to clone your project locally. You can do this by selecting from the list of projects.
 
 ```
 redbrick clone

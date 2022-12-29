@@ -65,7 +65,7 @@ Ensure to correctly input the stage names, i.e., Label, Review\_1, etc. Also, ma
 
 #### Assign tasks using the SDK
 
-[Please visit our SDK documentation](../python-sdk/sdk-overview/label-and-review.md#assign-tasks-to-labelers-or-reviewers) for an overview of programmatically assigning tasks.&#x20;
+[Please visit our SDK documentation](broken-reference) for an overview of programmatically assigning tasks.&#x20;
 
 {% embed url="https://www.loom.com/share/2c71c7fd4f0c49ef8d34f2b9847b30c0" %}
 

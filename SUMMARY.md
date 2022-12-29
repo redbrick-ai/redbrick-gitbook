@@ -44,12 +44,12 @@
 
 ## Python SDK & CLI <a href="#python-sdk" id="python-sdk"></a>
 
+* [Installation & API Keys](python-sdk/installation-and-api-keys.md)
 * [SDK Overview](python-sdk/sdk-overview/README.md)
-  * [Exporting Annotations](python-sdk/sdk-overview/exporting-annotations.md)
-  * [Importing Data and Annotations](python-sdk/sdk-overview/importing-data-and-annotations.md)
-  * [Label and Review](python-sdk/sdk-overview/label-and-review.md)
-  * [Create a Project](python-sdk/sdk-overview/create-a-project.md)
-  * [Configure external annotation storage](python-sdk/sdk-overview/configure-external-annotation-storage.md)
+  * [Exporting tasks](python-sdk/sdk-overview/exporting-tasks.md)
+  * [Importing data & annotations](python-sdk/sdk-overview/importing-data-and-annotations.md)
+  * [Programmatic Label & Review](python-sdk/sdk-overview/programmatic-label-and-review.md)
+  * [Assigning & querying tasks](python-sdk/sdk-overview/assigning-and-querying-tasks.md)
 * [CLI Overview](python-sdk/cli-overview/README.md)
   * [Exporting Annotations](python-sdk/cli-overview/exporting-annotations.md)
   * [Importing Data](python-sdk/cli-overview/importing-data/README.md)

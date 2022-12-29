@@ -1,61 +1,46 @@
 # SDK Overview
 
-The RedBrick Python SDK is a tool to interact programmatically with the RedBrick AI platform. The SDK is a developer friendly way to carry out important operations like data and label export.
+## When to use the Python SDK
 
-{% hint style="info" %}
-The RedBrick SDK works on Mac, windows, and linux, and is available on [pypi](https://pypi.org/project/redbrick-sdk/). The SDK is compatible with **3.70 <= Python < 3.10**
-{% endhint %}
+The RedBrick AI Python SDK is a Python package that allows developers to interact with the RedBrick AI application programmatically.&#x20;
 
-{% hint style="success" %}
-See the [full SDK reference here](https://redbrick-sdk.readthedocs.io/en/stable/)
-{% endhint %}
+We recommend you use the Python SDK if you:
 
-### **Generate an API Key**
+* Build data pipelines with Python and want to integrate your RedBrick AI annotation.
+* Want to write _advanced_ scripts beyond simple import & export.&#x20;
 
-You can create an API key under _API Keys_ on the main navigation sidebar.
+For simple data import and annotation export, we [recommend you use the CLI](../cli-overview/), which has a simple interface with optimizations for the basic use cases.&#x20;
 
-### Install the RedBrick SDK
+{% content-ref url="../cli-overview/" %}
+[cli-overview](../cli-overview/)
+{% endcontent-ref %}
 
-The `redbrick-sdk` is available on pypy and can be installed using pip.
+This documentation covers high-level guides and use cases. If you are interested in more detailed documentation of the SDK interface, [please visit the full SDK reference documentation](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html).
 
-```bash
-$ pip3 install -U redbrick-sdk
-```
+## **Initializing the RedBrick SDK in Python**
 
-### **Initialize the RedBrick SDK in Python**
-
-{% hint style="warning" %}
-**Starting with v0.7.0 the argument order get\_project and get\_org have changed**
-{% endhint %}
-
-To use the SDK, you need to get your project ID, and organization ID. Fill in your own values in the following script to start off any session.
+Almost all operations with the SDK are performed on either the [Project](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.project.RBProject) or [Organization](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.organization.RBOrganization) objects. You can instantiate these objects using your [API Key, Org ID, and Project ID](../installation-and-api-keys.md).&#x20;
 
 ```python
 import redbrick
 
-api_key = "<your_api_key>"
-org_id = "<>"
-project_id = "<>"
+api_key = "..."
+org_id = "..."
+project_id = "..."
+
 project = redbrick.get_project(
     org_id=org_id,
     project_id=project_id,
     api_key=api_key,
 )
+organization = redbrick.get_org(
+    org_id=org_id, 
+    api_key=api_key,
+)
 ```
-
-The `project_id` and `org_id` is available in the URL when you are logged into your project - `https://app.redbrickai.com/<orgid>/projects/<projectid>`.
-
-## Running inside of a Jupyter Notebook
 
 {% hint style="info" %}
-Starting with SDK v0.7.0 this should be handled automatically for you
+Both [redbrick.get\_project](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.get\_project) and [redbrick.get\_org](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.get\_org) take an optional `url` argument that defaults to [https://api.redbrickai.com](https://api.redbrickai.com). \
+\
+If you are using a private/single-tenant deployment of RedBrick AI, this will need to be changed for your deployment - reach out to us for confirmation on the URL needs to be.
 {% endhint %}
-
-Under the hood, the Python SDK uses advanced language features to optimize for performance. Certain aspects of these do not play nicely with Jupyter notebooks or other complex python environments.
-
-If you see an error similar to `RuntimeError: asyncio.run() cannot be called from a running event loop` you may be able to fix this by utilizing the `nest_asyncio`  package at the top of your notebook. This comes standard with most Jupyter notebook installs.&#x20;
-
-```python
-import nest_asyncio
-nest_asyncio.apply()
-```
