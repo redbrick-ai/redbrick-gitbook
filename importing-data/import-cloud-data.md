@@ -3,10 +3,10 @@
 RedBrick AI can integrate with various cloud providers so that you don't have to upload data directly to RedBrick AI servers. To upload data from a cloud server, you need to do the following:&#x20;
 
 1. [Configure your cloud storage](configuring-external-storage/) - AWS s3, Google Cloud Storage, Azure Blob Storage
-2. [Create and upload an items list](import-cloud-data.md#create-and-upload-an-items-list) - Your items list tells RedBrick the location of your data in your cloud storage. Once you create an items list, you can upload it via the [CLI](../python-sdk/cli-overview/importing-data/) or the UI.
+2. [Create and upload an items list](import-cloud-data.md#create-and-upload-an-items-list) - Your items list tells RedBrick the location of your data in your cloud storage. Once you create an items list, you can upload it via the [CLI](broken-reference) or the UI.
 
 {% hint style="success" %}
-Please see [the following documentation](../python-sdk/cli-overview/importing-annotations/nifti-segmentations.md) if you want to upload annotations with your data.
+Please see [the following documentation](broken-reference) if you want to upload annotations with your data.
 {% endhint %}
 
 ## Items list

@@ -88,7 +88,9 @@ Please see a detailed description of [get\_tasks here](https://redbrick-sdk.read
 {% endhint %}
 
 {% hint style="info" %}
-Calling this function will **automatically assign** available tasks to your API key as per our [automatic task assignment](../../projects/how-task-assignment-works.md#automatic-task-assignment).
+Calling this function will **automatically assign** available tasks to your API key as per our [automatic task assignment](../../projects/how-task-assignment-works.md#automatic-task-assignment).\
+\
+If you want to retreive tasks assigned to you _without automatically assigning new tasks,_ run `get_task_queue(stage_name="...").`
 {% endhint %}
 
 ```python

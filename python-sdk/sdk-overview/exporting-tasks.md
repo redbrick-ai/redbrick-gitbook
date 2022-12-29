@@ -40,7 +40,7 @@ annotations = project.export.export_tasks(only_ground_truth=True)
 Export select tasks by specifying Task IDs.&#x20;
 
 ```python
-annotations = project.export.export_tasks(task_id=["...", "..."])
+annotations = project.export.export_tasks(task_id="...")
 ```
 
 ## Generate an audit trail

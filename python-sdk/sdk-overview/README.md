@@ -1,7 +1,5 @@
 # SDK Overview
 
-## When to use the Python SDK
-
 The RedBrick AI Python SDK is a Python package that allows developers to interact with the RedBrick AI application programmatically.&#x20;
 
 We recommend you use the Python SDK if you:

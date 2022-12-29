@@ -50,8 +50,8 @@ You can upload data within a project either through the UI or CLI/SDK. Most team
 
 If you have pre-annotated data, or model-generated annotations, you can import them using our CLI/SDK.
 
-{% content-ref url="../python-sdk/cli-overview/importing-annotations/" %}
-[importing-annotations](../python-sdk/cli-overview/importing-annotations/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ### Assigning tasks
