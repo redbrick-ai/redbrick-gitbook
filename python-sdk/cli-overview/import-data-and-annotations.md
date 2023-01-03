@@ -44,6 +44,10 @@ $ redbrick upload items.json --storage STORAGEID # replace STORAGEID with your S
 
 To import annotations with your data, you must create an [Items List](broken-reference) that contains annotation information in the [annotation format](../reference/annotation-format.md).
 
+{% hint style="warning" %}
+Please note that you can only import an Items File containing annotations using the SDK & CLI. We do not support importing JSON Items Files through the UI.
+{% endhint %}
+
 {% hint style="info" %}
 The file paths within the Items List can point to locally stored data or data in your [external storage](../../importing-data/configuring-external-storage/). \
 \
