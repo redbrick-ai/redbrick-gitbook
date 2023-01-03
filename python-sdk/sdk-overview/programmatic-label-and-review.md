@@ -26,43 +26,36 @@ Next, you need to get a list of tasks you want to label/review. You can do this 
 
 #### Programmatically label tasks
 
-Add your annotations within the `labels` field, along with the `task_id`. The corresponding task must be queued in the Label stage and assigned to your API key.&#x20;
+Add your annotations within the `series` field, along with the `task_id`. The corresponding task must be queued in the Label stage and assigned to your API key.&#x20;
 
 ```python
 tasks = [
     {
-        "task_id": "...",
-        "labels": [{...}]
+        "taskId": "...",
+        "series": [{...}]
     },
 ]
 
-# Unless you renamed your label stage, it would be called "Label". 
-# You can find the name on the Overview dashboard workflow chart. 
-project.labeling.put_tasks(stage_name="Label", tasks=tasks)
+# Submit tasks with new labels
+project.labeling.put_tasks("Label", tasks)
+
+# Save tasks as draft with new labels
+project.labeling.put_tasks("Label", tasks, finalize=False)
 ```
 
 #### Programmatically review tasks
 
-Add your review decision in the `reviewVal` field, along with the `task_id`. The corresponding task must be queued in the Review stage that you specify in `stage_name` and must be assigned to your API key.
+Add your review decision in the `review_result` argument, along with the `task_id`. The corresponding task must be queued in the Review stage that you specify in `stage_name` and must be assigned to your API key.
 
 ```python
-tasks = [
-    {
-        "task_id": "...",
+# Set review_result to True if you want to accept the tasks
+project.review.put_tasks("Review_1", [{taskId: "..."}], review_result=True)
 
-        # Set reviewVal to True if you want to accept the task
-        "reviewVal": True
-    },
-    {
-        "task_id": "...",
+# Set review_result to False if you want to reject the tasks
+project.review.put_tasks("Review_1", [{taskId: "..."}], review_result=False)
 
-        # Set reviewVal to False if you want to reject the task
-        "reviewVal": False
-    }
-]
-
-# Unless you re-named your Review stages, they will be Review_1, Review_2...
-project.review.put_tasks(stage_name="Review_1", tasks=tasks)
+# Add labels if you want to accept the tasks with correction
+project.review.put_tasks("Review_1", [{taskId: "...", series: [{...}]}])
 ```
 
 ## Re-annotate Ground Truth Tasks
