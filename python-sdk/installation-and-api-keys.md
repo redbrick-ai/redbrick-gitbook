@@ -2,14 +2,14 @@
 
 ## Installation
 
-The RedBrick AI SDK and CLI are available on _pypy_ and can be installed using `pip`. The SDK and CLI are packaged together.&#x20;
+The RedBrick AI SDK and CLI are available on [_PyPI_](https://pypi.org/project/redbrick-sdk/) and can be installed using `pip`. The SDK and CLI are packaged together.&#x20;
 
 ```bash
 $ pip install -U redbrick-sdk
 ```
 
 {% hint style="info" %}
-The SDK and CLI work on Mac, Windows, and Linux. They are compatible with **3.70 <= Python < 3.10**
+The SDK and CLI work on Mac, Windows, and Linux. They are compatible with **Python versions: 3.7, 3.8, 3.9, 3.10 & 3.11**
 {% endhint %}
 
 ## API Keys
