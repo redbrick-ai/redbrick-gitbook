@@ -1,6 +1,6 @@
 # Import data & annotations
 
-You can use the command line interface to easily import large amounts of data. Before following this guide, make sure to [set up credentials for the CLI](./).
+You can easily import large amounts of data from the command line interface. Before following this guide, make sure to [set up credentials for the CLI](./).
 
 ### Importing locally stored data
 
@@ -32,9 +32,9 @@ $ redbrick upload path/to/videoframes/ --as-frames --type VIDEOFRAMES
 
 ### Importing externally stored data
 
-To import data stored externally, for example in AWS s3, you must specify the storage ID (you can get your storage systems storage ID from the _Storage tab_ on the RedBrick AI platform).&#x20;
+To import data stored externally, for example, in AWS s3, you must specify the storage ID (you can get your storage systems storage ID from the _Storage tab_ on the RedBrick AI platform).&#x20;
 
-Make sure to prepare an [Items List](../../importing-data/import-cloud-data.md#items-list) containing references to your externally stored files.
+Prepare an [Items List](../../importing-data/import-cloud-data.md#items-list) containing references to your externally stored files.
 
 ```bash
 $ redbrick upload items.json --storage STORAGEID # replace STORAGEID with your Storage ID
@@ -45,7 +45,7 @@ $ redbrick upload items.json --storage STORAGEID # replace STORAGEID with your S
 To import annotations with your data, you must create an [Items List](broken-reference) that contains annotation information in the [annotation format](../reference/annotation-format.md).
 
 {% hint style="warning" %}
-Please note that you can only import an Items File containing annotations using the SDK & CLI. We do not support importing JSON Items Files through the UI.
+Please note that you can only import an Items File containing annotations using the SDK & CLI. We do not support importing JSON Items Files containing segmentations, through the UI.
 {% endhint %}
 
 {% hint style="info" %}
