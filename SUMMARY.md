@@ -14,6 +14,7 @@
   * [Configuring AWS s3](importing-data/configuring-external-storage/configuring-aws-s3.md)
   * [Configuring GCS](importing-data/configuring-external-storage/configuring-gcs.md)
   * [Configuring Azure Blob](importing-data/configuring-external-storage/configuring-azure-blob.md)
+* [Troubleshooting](importing-data/troubleshooting.md)
 
 ## Projects
 
