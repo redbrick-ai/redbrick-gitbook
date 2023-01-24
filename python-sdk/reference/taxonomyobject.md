@@ -18,26 +18,26 @@ type Taxonomy = {
 
 type ObjectType = {
     category: string;
-    classId: number;
+    classId: number; // [0, n)
     labelType: BBOX | POINT | POLYLINE | POLYGON | ELLIPSE | SEGMENTATION | LENGTH | ANGLE;
-    attributes: Attribute[];
-    color: string;
-    archived: boolean;
+    attributes?: Attribute[];
+    color?: string;
+    archived?: boolean;
 }
 
 type Attribute = {
     name: string;
     attrType: BOOL | TEXT | SELECT | MULTISELECT;
-    attrId: int;
-    options: AttributeOption[] | null;
-    archived: boolean;
+    attrId: number;
+    options?: AttributeOption[];
+    archived?: boolean;
 }
 
 type AttributeOption = {
     name: string;
-    optionId: string;
-    color: string;
-    archived: boolean;
+    optionId: number;
+    color?: string;
+    archived?: boolean;
 }
 ```
 
