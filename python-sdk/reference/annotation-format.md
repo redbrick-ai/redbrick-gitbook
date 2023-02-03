@@ -141,6 +141,12 @@ type Classification = {
   video?: VideoMetaData;
 };
 ​
+type InstanceClassification = {
+  fileIndex: number;
+  fileName?: string;
+  values: {[attributeName: string]: boolean};
+}
+
 type Attributes =
   | { // Taxonomy V2 attributes
       attrId?: number;
@@ -248,6 +254,14 @@ Each annotation can have accompanying attributes, that are also defined in your 
 #### `Point2D: {xnorm: number, ynorm: number}`
 
 `Point2D` represents a two dimensional point. This is used to define annotation types on 2D data. `xnorm` has been normalized by image width, `hnorm` has been normalized by image height.
+
+#### `fileIndex: number`
+
+`fileIndex` is an integer that corresponds to a specific frame in a video series.
+
+#### `fileName: string`
+
+`fileName` represents the name given to an image or specific frame in a video series.
 
 ### Video Meta Data
 
