@@ -8,7 +8,7 @@
 
 ## Importing Data
 
-* [Direct data upload](importing-data/direct-data-upload.md)
+* [Direct Data Upload](importing-data/direct-data-upload.md)
 * [Import Cloud Data](importing-data/import-cloud-data.md)
 * [Configuring external storage](importing-data/configuring-external-storage/README.md)
   * [Configuring AWS s3](importing-data/configuring-external-storage/configuring-aws-s3.md)
