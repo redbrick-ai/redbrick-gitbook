@@ -9,11 +9,11 @@
 ## Importing Data
 
 * [Direct Data Upload](importing-data/direct-data-upload.md)
-* [Import Cloud Data](importing-data/import-cloud-data.md)
-* [Configuring external storage](importing-data/configuring-external-storage/README.md)
-  * [Configuring AWS s3](importing-data/configuring-external-storage/configuring-aws-s3.md)
-  * [Configuring GCS](importing-data/configuring-external-storage/configuring-gcs.md)
-  * [Configuring Azure Blob](importing-data/configuring-external-storage/configuring-azure-blob.md)
+* [Import Cloud Data](importing-data/import-cloud-data/README.md)
+  * [Configuring AWS s3](importing-data/import-cloud-data/configuring-aws-s3.md)
+  * [Configuring Azure Blob](importing-data/import-cloud-data/configuring-azure-blob.md)
+  * [Configuring GCS](importing-data/import-cloud-data/configuring-gcs.md)
+  * [Creating an Items List](importing-data/import-cloud-data/creating-an-items-list.md)
 * [Troubleshooting](importing-data/troubleshooting.md)
 
 ## Projects

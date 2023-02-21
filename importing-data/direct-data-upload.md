@@ -3,7 +3,7 @@
 The Direct Upload functionality allows users to upload their image data directly to RedBrick AI’s servers. We recommend using Direct Upload if you’re working with a small dataset or want to do some light experimentation with RedBrick’s toolset.
 
 {% hint style="warning" %}
-All image data that is directly uploaded to RedBrick AI’s servers will also be stored there. If you’d rather not have your image data hosted on our servers, we recommend [integrating your storage](import-cloud-data.md).
+All image data that is directly uploaded to RedBrick AI’s servers will also be stored there. If you’d rather not have your image data hosted on our servers, we recommend [integrating your storage](import-cloud-data/).
 {% endhint %}
 
 RedBrick AI supports a variety of different image formats:&#x20;
@@ -36,11 +36,11 @@ Individual NIfTI files are uploaded as separate tasks. If you’d like to group 
 
 ### Image 2D
 
-Individual 2D images are uploaded as individual tasks. If you’d like to create a study task with 2D images, please [use your external storage](import-cloud-data.md) or [upload data using the CLI](broken-reference).
+Individual 2D images are uploaded as individual tasks. If you’d like to create a study task with 2D images, please [use your external storage](import-cloud-data/) or [upload data using the CLI](broken-reference).
 
 ### Video Files
 
-Individual 2D videos are uploaded as individual tasks. If you’d like to create a study task with 2D videos, please [use your external storage](import-cloud-data.md) or [upload data using the CLI](broken-reference).
+Individual 2D videos are uploaded as individual tasks. If you’d like to create a study task with 2D videos, please [use your external storage](import-cloud-data/) or [upload data using the CLI](broken-reference).
 
 ### Video Frames
 

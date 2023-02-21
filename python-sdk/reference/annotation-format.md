@@ -225,7 +225,7 @@ The `Series` object has meta-data and annotations for a single series within a t
 
 #### `items: string | string[]`
 
-The items entry is a list of file paths that point to your data. Please have a look at the [#items-list](../../importing-data/import-cloud-data.md#items-list "mention")documentation to understand how to format for various modalities and series/study uploads.
+The items entry is a list of file paths that point to your data. Please have a look at the [#items-list](../../importing-data/import-cloud-data/#items-list "mention")documentation to understand how to format for various modalities and series/study uploads.
 
 #### `name?: string`
 

@@ -46,7 +46,7 @@ All admins have access to all projects by default. You can manually add Labelers
 
 ### Uploading data
 
-You can upload data within a project either through the UI or CLI/SDK. Most teams will [integrate external storage](../importing-data/configuring-external-storage/) and host their own data, however, you can also [directly upload data to RedBrick AI servers](../importing-data/direct-data-upload.md).
+You can upload data within a project either through the UI or CLI/SDK. Most teams will [integrate external storage](../importing-data/import-cloud-data/creating-an-items-list.md) and host their own data, however, you can also [directly upload data to RedBrick AI servers](../importing-data/direct-data-upload.md).
 
 If you have pre-annotated data, or model-generated annotations, you can import them using our CLI/SDK.
 
