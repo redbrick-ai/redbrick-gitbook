@@ -34,7 +34,7 @@ $ redbrick upload path/to/videoframes/ --as-frames --type VIDEOFRAMES
 
 To import data stored externally, for example, in AWS s3, you must specify the storage ID (you can get your storage systems storage ID from the _Storage tab_ on the RedBrick AI platform).&#x20;
 
-Prepare an [Items List](../../importing-data/import-cloud-data/#items-list) containing references to your externally stored files.
+Prepare an [Items List](../../importing-data/import-cloud-data.md#items-list) containing references to your externally stored files.
 
 ```bash
 $ redbrick upload items.json --storage STORAGEID # replace STORAGEID with your Storage ID

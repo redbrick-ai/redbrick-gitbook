@@ -2,7 +2,7 @@
 
 An Items List is a JSON file that points the RedBrick AI platform to the data in your external storage and allows you to selectively import data points. The format of your Items List depends on both the type of cloud storage you have integrated with RedBrick AI and the type of data you are uploading.
 
-For solution-specific instructions regarding how to format your Items List with [AWS S3](configuring-aws-s3.md#items-path), [GCS](configuring-gcs.md#items-path), or [Azure Blob Storage](configuring-azure-blob.md#items-path), please refer to the corresponding configuration guide.
+For solution-specific instructions regarding how to format your Items List with [AWS S3](../configuring-external-storage/configuring-aws-s3.md#items-path), [GCS](../configuring-external-storage/configuring-gcs.md#items-path), or [Azure Blob Storage](configuring-azure-blob.md#items-path), please refer to the corresponding configuration guide.
 
 It's important to note that each entry in your Items List **will be created as a separate task**, which can then be annotated as a single unit. You can find detailed explanations of each key in our [format reference](https://docs.redbrickai.com/python-sdk/reference/annotation-format#tasks-json).
 
@@ -44,9 +44,9 @@ interface Series {
 {% hint style="info" %}
 The `items` entry enumerates the file paths referencing your data in your cloud storage. Depending on the storage method, this file path may be relative to your bucket name or the root folder in your bucket. Please reference the relevant documentation to verify the format of the Items path for each of RedBrick AI’s supported storage methods:
 
-* [AWS S3 Items Path](configuring-aws-s3.md#items-path)
+* [AWS S3 Items Path](../configuring-external-storage/configuring-aws-s3.md#items-path)
 * [Azure Blob Items Path](configuring-azure-blob.md#items-path)
-* [GCS Items Path](configuring-gcs.md#items-path)
+* [GCS Items Path](../configuring-external-storage/configuring-gcs.md#items-path)
 * Public Storage Items Path
 {% endhint %}
 

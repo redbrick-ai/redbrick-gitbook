@@ -69,8 +69,8 @@ Then, drag and drop the Brain Brats folder to the field and click on **Upload**.
 
 If you'd like, you can also integrate your cloud storage to host your own data with RedBrick AI.
 
-{% content-ref url="importing-data/import-cloud-data/" %}
-[import-cloud-data](importing-data/import-cloud-data/)
+{% content-ref url="importing-data/import-cloud-data.md" %}
+[import-cloud-data.md](importing-data/import-cloud-data.md)
 {% endcontent-ref %}
 
 ### Begin Annotating

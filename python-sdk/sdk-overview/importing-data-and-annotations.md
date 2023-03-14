@@ -26,7 +26,7 @@ project.upload.create_datapoints(storage_id=storage_id, points=points)
 ```
 
 {% hint style="info" %}
-Please visit the [Items List](../../importing-data/import-cloud-data/#items-list) documentation to understand the format of the `points` array.
+Please visit the [Items List](../../importing-data/import-cloud-data.md#items-list) documentation to understand the format of the `points` array.
 {% endhint %}
 
 #### Import externally stored data

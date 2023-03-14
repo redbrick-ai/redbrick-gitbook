@@ -4,7 +4,7 @@
 
 A task is either a single image, series, or entire study that moves through the annotation workflow in a single unit. The intention is for a labeler to view and annotate a single task together; therefore, if you'd like your annotators to view & annotate an entire MRI study comprised of 4 series together, you should upload the entire study as a single task.
 
-Please read the [data import documentation](../importing-data/import-cloud-data/#items-list) to understand how to import data as a single image/series/entire study task.
+Please read the [data import documentation](../importing-data/import-cloud-data.md#items-list) to understand how to import data as a single image/series/entire study task.
 
 ## Task Assignment&#x20;
 
