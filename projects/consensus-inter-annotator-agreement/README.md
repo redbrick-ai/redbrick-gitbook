@@ -82,12 +82,6 @@ All other annotations in the Review Stage are View Only.
 
 Once a reviewer is satisfied with the current Best Annotations, they can accept the Task. This saves the Best Annotations and ascribes only that set to the Task. All other annotations are also saved and are available on export. If the reviewer rejects the Task, **all labelers will be required to re-annotate the task**.
 
-The video below contains a walkthrough of how to review a Task for Consensus.
-
-{% embed url="https://www.loom.com/share/3024eebe360a4715ac86af55e361d64e" %}
-Consensus review
-{% endembed %}
-
 ## Exporting Consensus Annotations
 
 If a task has gone through Consensus, you will get access to all versions of the annotations done by all users. You will also have access to additional metadata like the annotation similarity scores. You can export the data using the following CLI command inside your project directory:
