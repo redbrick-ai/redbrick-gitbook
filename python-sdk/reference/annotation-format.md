@@ -69,6 +69,7 @@ type Series = {
   polygons?: Polygon[];
   polylines?: Polyline[];
   classifications?: Classification[];
+  instanceClassifications?: InstanceClassification[];
 };
 ​
 // Label Types
@@ -144,7 +145,7 @@ type Classification = {
 type InstanceClassification = {
   fileIndex: number;
   fileName?: string;
-  values: {[attributeName: string]: boolean};
+  values: { [attributeName: string] : boolean};
 }
 
 type Attributes =
@@ -215,9 +216,13 @@ The e-mail of the last user to make edits to this task.
 
 The datetime this task was last edited.
 
-#### **`preAssign?: {[stageName: string]: string}`**
+#### **`preAssign?: { [stageName : string] : string}`**
 
 Prescribe during upload who will get a task assigned to them. You can define the assignment for each stage of the workflow, for example, Label and Review, `{"Label": "name1@redbrickai.com", "Review": "name2@redbrickai.com"}`.
+
+#### `classification: { attributes : [string : boolean] }`
+
+A list of attributes assigned to an entire task (or study, if the task encapsulates an entire study).
 
 ### Series
 
@@ -227,9 +232,17 @@ The `Series` object has meta-data and annotations for a single series within a t
 
 The items entry is a list of file paths that point to your data. Please have a look at the [#items-list](../../importing-data/import-cloud-data.md#items-list "mention")documentation to understand how to format for various modalities and series/study uploads.
 
-#### `name?: string`
+#### `nae: string`
 
 An optional user-defined string, _needs to be unique_ across all series. Individual [series will be named after this value on the labeling tool](https://www.loom.com/i/ea12e486bd8845d7b3b8a83fc115ad58). Exported segmentation files will also be named using this value. Using the Series Instance UID here is good practice. &#x20;
+
+#### `classifications: { attributes: [string : boolean] }`
+
+A list of attributes assigned to a specific Series.
+
+#### `instanceClassifications: fileIndex | fileName | [ values: {string : boolean} ]`
+
+The `instanceClassifications` object defines a series of boolean values that can be assigned to individual instances (e.g. frames in a video).
 
 ### Common Label Keys
 
