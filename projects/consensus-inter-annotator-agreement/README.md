@@ -48,11 +48,11 @@ The type of comparison function used to calculate the `Score`depends on the type
 
 ![Inter-Annotator Agreement for Tasks queued in Review](<../../.gitbook/assets/Screen Shot 2022-08-16 at 12.27.55 PM.png>)
 
-## Review Stage - Absent
+## Review Stage Absent
 
 If there is no Review Stage after the Label Stage, the set of annotations with the highest Agreement Score (with respect to other annotations) will be selected and stored in Ground Truth. This is the set of annotations that will be exported by default, but you can also export all versions of the annotations.&#x20;
 
-## Review Stage - Present
+## Review Stage Present
 
 When a Review Stage is present, all annotations will be displayed in the Editor. The list of all users that have annotated the Task is located on the right hand Consensus Panel. By default, annotations are color-coded **by user**, but they can be grouped **by category**_._
 
@@ -81,6 +81,10 @@ All other annotations in the Review Stage are View Only.
 {% endhint %}
 
 Once a reviewer is satisfied with the current Best Annotations, they can accept the Task. This saves the Best Annotations and ascribes only that set to the Task. All other annotations are also saved and are available on export. If the reviewer rejects the Task, **all labelers will be required to re-annotate the task**.
+
+The video below contains a brief walkthrough of how you can use Consensus in both your Project and the Editor.&#x20;
+
+{% embed url="https://www.loom.com/share/62f152ff8b924d61abe6d8ea31672c22" %}
 
 ## Exporting Consensus Annotations
 
