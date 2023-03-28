@@ -37,7 +37,7 @@ function setDimensions(numColumns: number, numRows: number) {
 function setWindowing(seriesIndex: number, level: number, width: number){
  // ...
 }
-function setThresholding(seriesIndex: number, level: number, width: number) {
+function setThresholding(seriesIndex: number, min: number, max: number) {
  // ...
 }
 
@@ -69,12 +69,12 @@ This default script uses some defined macros to make setting the view easier.&#x
 ```typescript
 function hangingProtocol(allSeries: Series[]) {
   // This is the default layout script
-  if(allSeries.length > 1) {
+  if (allSeries.length > 1) {
     setMultiSeries();
   } else if (allSeries[0].is2DImage) {
-    setSingleView(0);
+    setSingleView();
   } else {
-    setMPR(0);
+    setMPR();
   }
 }
 ```
