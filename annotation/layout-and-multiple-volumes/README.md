@@ -38,7 +38,9 @@ You can toggle multi-planar reconstruction for any volume using the actions drop
 
 #### Crosshairs
 
-Once in MPR mode, activate **crosshairs** from the topbar, or with the `c` shortcut to synchronize the reconstructed views.&#x20;
+Once in MPR mode, activate **crosshairs** from the topbar, or with the `c` shortcut to synchronize the reconstructed views. You can also use the selection tool to select the visible crosshairs. Double click anywhere to move the crosshairs to the cursor location, or click and drag the crosshairs to adjust.&#x20;
+
+The MPR crosshairs will be visible but inactive in all modes by default. You can hide crosshairs outside of the **crosshairs** tool through the command bar (Toggle Permanent Crosshairs) or with `Shift+Cmd/Ctrl+c`.
 
 <figure><img src="../../.gitbook/assets/ezgif.com-gif-maker (6).gif" alt=""><figcaption></figcaption></figure>
 
