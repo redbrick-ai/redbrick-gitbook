@@ -62,10 +62,6 @@ For bumpy boundaries, you can attempt to smooth out the contour by holding and d
 In the video above, the hotkey is referenced as "Command or Control" but the correct key is "Alt or Option"
 {% endhint %}
 
-## Island Removal
-
-Island removal removes islands of segmentations. Click on any "island" segmentation to remove it. On the right side context panel, you can activate "keep currently selected" to remove all islands except the one you clicked on.
-
 ## Hole Filling&#x20;
 
 Holde filling iteratively fills small holes in your segmentation. Click anywhere on the canvas to start filling the small holes.
@@ -81,6 +77,14 @@ For large volumes, 3D hole filling can be very computationally expensive. If you
 ## Paint Bucket
 
 Paint bucket is helpful for closing single large holes. With the paint bucket tool selected, click in any large hole to fill it automatically.&#x20;
+
+## Island Removal
+
+Island removal removes islands of segmentations. Click on any "island" segmentation to remove it. On the right side context panel, you can enable "keep currently selected" to remove all islands except the one you clicked on.
+
+## Merge Tool
+
+The Merge Tool allows you to transform one type of segmentation island into another through a "merging" process. With Segmentation X selected, enable the Merge Tool and click on an island of Segmentation Y to merge the island to Segmentation X.&#x20;
 
 ## Thresholding
 

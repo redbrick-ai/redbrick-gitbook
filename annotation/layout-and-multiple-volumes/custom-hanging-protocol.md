@@ -268,7 +268,13 @@ The Annotation Tool can be configured using Hanging Protocols to set a default T
  enabled: true,
  modes: ['2d', '3d'],
  defaultMode: '2d',
-}
+},
+{
+ toolName: 'merge',
+ enabled: true,
+ modes: ['2d', '3d'],
+ defaultMode: '2d',
+},
 ```
 
 Example Script:
