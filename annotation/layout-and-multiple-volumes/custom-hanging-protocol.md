@@ -24,6 +24,7 @@ At present, you can control the following things:&#x20;
   * If the view is maximimized (`expanded`)
 * The default windowing setting for each series (`setWindowing`)
 * The default threshold setting for each series (`setThresholding`)
+* The default configuration settings for the Annotation Tool (`setSegmentationSettings`)
 
 ### Types
 
@@ -40,6 +41,18 @@ function setWindowing(seriesIndex: number, level: number, width: number){
 function setThresholding(seriesIndex: number, min: number, max: number) {
  // ...
 }
+
+function setSegmentationSettings(
+  [  
+    { 
+      toolName: ToolOptions; 
+      enabled: boolean;
+      modes?: ToolModes[];
+      defaultMode?: ToolModes;
+      defaultTool?: boolean;
+    }
+  ]
+);
 
 interface Series {
   seriesIndex: number;
@@ -204,4 +217,88 @@ setViews(eligibileSeries.map((series) => {
     synchronized: true,
   };
 }));
+```
+
+## Tool Configuration
+
+The Annotation Tool can be configured using Hanging Protocols to set a default Tool, enable/disable tools, and enable/disable 2D and 3D modes.
+
+### Default Configuration
+
+```javascript
+{
+ toolName: 'brush',
+ enabled: true,
+ modes: ['2d', '3d'],
+ defaultMode: '2d',
+ defaultTool: true,
+},
+{
+ toolName: 'pen',
+ enabled: true,
+ modes: ['2d', '3d'],
+ defaultMode: '2d',
+},
+{
+ toolName: 'fillHoles',
+ enabled: true,
+ modes: ['2d', '3d'],
+ defaultMode: '2d',
+},
+{
+ toolName: 'connectedThreshold',
+ enabled: true,
+ modes: ['2d', '3d'],
+ defaultMode: '2d',
+},
+{
+ toolName: 'contour',
+ enabled: true,
+ modes: ['3d'],
+ defaultMode: '3d',
+},
+{
+ toolName: 'islandRemoval',
+ enabled: true,
+ modes: ['2d', '3d'],
+ defaultMode: '2d',
+},
+{
+ toolName: 'paintBucket',
+ enabled: true,
+ modes: ['2d', '3d'],
+ defaultMode: '2d',
+}
+```
+
+Example Script:
+
+```javascript
+setSegmentationSettings(
+ [
+  // disable the Brush Tool entirely within the Editor
+  {
+   toolName: 'brush',
+   enabled: false,
+   modes: ['2d', '3d'],
+   defaultMode: '2d',
+  },
+  // set the 2D Pen Tool as the default Annotation Tool
+  {
+   toolName: 'pen',
+   enabled: true,
+   modes: ['2d', '3d'],
+   defaultMode: '2d',
+   defaultTool: true,
+  },
+  // disable 2D Hole Filling
+  {
+   toolName: 'fillHoles',
+   enabled: true,
+   modes: ['3d'],
+   defaultMode: '3d',
+  },
+ ]
+);
+  
 ```
