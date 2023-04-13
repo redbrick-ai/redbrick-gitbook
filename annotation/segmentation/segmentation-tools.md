@@ -97,3 +97,19 @@ As long as the threshold filter is active, i.e. highlighted on the top bar and p
 
 You can disable the flashing preview if it is distracting from the right sidebar.&#x20;
 {% endhint %}
+
+### Fast Automated Segmentation Tool (F.A.S.T. ⚡️)
+
+{% embed url="https://www.loom.com/share/285e0936b10e4f3eb26e6917b94e7d93" %}
+
+The Fast Automated Segmentation Tool (F.A.S.T.) is an automatic segmentation tool powered by Meta AI's Segment Anything Model. F.A.S.T. is powerful because of the way you can prompt the system to generate an accurate segmentation in real time. Under the hood, there are two components to the system:
+
+1. Image encoding, which takes place on the server side. The result of image encoding is _embeddings_ which are special vector representations of the images that are useful for machine learning.
+2. Segmentation decoding, which takes place in the browser in real time.
+
+To start, create a segmentation instance, select the F.A.S.T. tool from the top bar or using `cmd/ctrl + b`. Once the tool is selected, hover over a viewport to start embedding computation for a single slice (you will see a loader spinner on the top right of the viewport). You can prompt F.A.S.T. in a few different ways after embedding computation:&#x20;
+
+1. **Bounding box prompts.** `Click + move mouse + click` to draw a bounding box. You will see the segmentation prediction compute in real time while you draw the bounding box.&#x20;
+   1. **Key point refinement.** After you draw the bounding box, you can optionally refine the segmentation by prompting the system with key points. `Left click` to add regions you want to _add to the segmentation._ `Right click` to remove regions from the segmentation prediction.
+   2. Once you are happy with the segmentation preview, confirm it by using the button on the right panel or `shift + enter`.
+2. **Instant click.** `alt/option + hover` over objects to view a prediction preview. If you are satisfied with any preview, click while pressing `alt/option` to confirm the segmentation.&#x20;
