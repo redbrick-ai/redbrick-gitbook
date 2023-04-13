@@ -98,7 +98,7 @@ As long as the threshold filter is active, i.e. highlighted on the top bar and p
 You can disable the flashing preview if it is distracting from the right sidebar.&#x20;
 {% endhint %}
 
-### Fast Automated Segmentation Tool (F.A.S.T. ⚡️)
+## Fast Automated Segmentation Tool (F.A.S.T. ⚡️)
 
 {% embed url="https://www.loom.com/share/285e0936b10e4f3eb26e6917b94e7d93" %}
 
