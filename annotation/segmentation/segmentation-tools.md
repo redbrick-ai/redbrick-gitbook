@@ -107,7 +107,23 @@ The Fast Automated Segmentation Tool (F.A.S.T.) is an automatic segmentation too
 1. Image encoding, which takes place on the server side. The result of image encoding is _embeddings_ which are special vector representations of the images that are useful for machine learning.
 2. Segmentation decoding, which takes place in the browser in real time.
 
-To start, create a segmentation instance, select the F.A.S.T. tool from the top bar or using `cmd/ctrl + b`. Once the tool is selected, hover over a viewport to start embedding computation for a single slice (you will see a loader spinner on the top right of the viewport). You can prompt F.A.S.T. in a few different ways after embedding computation:&#x20;
+{% hint style="info" %}
+To enable F.A.S.T. in your account, please do the following:&#x20;
+
+1. Request for access at https://redbrickai.com/fast.
+2. Use the following snippet in the _Hanging Protocols_ script in the project settings
+{% endhint %}
+
+{% code lineNumbers="true" %}
+```javascript
+setSegmentationSettings({
+    toolName: 'FAST',
+    enabled: true,
+}])
+```
+{% endcode %}
+
+To start segmentig, create a segmentation instance, select the F.A.S.T. tool from the top bar or using `cmd/ctrl + b`. Once the tool is selected, hover over a viewport to start embedding computation for a single slice (you will see a loader spinner on the top right of the viewport). You can prompt F.A.S.T. in a few different ways after embedding computation:&#x20;
 
 1. **Bounding box prompts.** `Click + move mouse + click` to draw a bounding box. You will see the segmentation prediction compute in real time while you draw the bounding box.&#x20;
    1. **Key point refinement.** After you draw the bounding box, you can optionally refine the segmentation by prompting the system with key points. `Left click` to add regions you want to _add to the segmentation._ `Right click` to remove regions from the segmentation prediction.
