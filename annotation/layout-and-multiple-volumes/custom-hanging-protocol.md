@@ -2,7 +2,7 @@
 description: Write a script to dynamically arrange the viewports for your project
 ---
 
-# Custom hanging protocol
+# Custom Hanging Protocol
 
 The Custom Hanging Protocol feature allows you to write a script that will programmatically define the annotation tool layout. This can save an annotator's time by pre-configuring the interface and layout in the desired way.
 
@@ -10,7 +10,7 @@ The script takes as input the available series for a particular task and returns
 
 {% embed url="https://www.loom.com/share/a5b5255cd1954bd590849a8e939c9b5f" %}
 
-## Writing your own script
+## Writing Your Own Script
 
 At present, you can control the following things:&#x20;
 
@@ -75,7 +75,7 @@ interface View {
 
 ## Examples
 
-#### Default script
+#### Default Script
 
 This default script uses some defined macros to make setting the view easier.&#x20;
 
@@ -106,7 +106,7 @@ function setSingleView(seriesIndex=0) {
 }
 ```
 
-#### Set Multi Series layout
+#### Set Multi Series Layout
 
 This layout is for setting each series in a study as a single viewport where it is being viewed in the imaging axis.
 
@@ -154,7 +154,7 @@ function setMPR(seriesIndex=0) {
 }
 ```
 
-### Synchronize views
+### Synchronize Views
 
 Hanging protocols can be used along side [intellisync.md](intellisync.md "mention")for ease of use when annotating scans in a study. This example is useful for a project where each task has 4 series from an MRI study: T1, T1CE, T2, and Flair weighted MR scans.
 
@@ -197,7 +197,7 @@ Sample input data:
 ]
 ```
 
-Sample script to sort the views, then display the imaging axis and activate Intellisync
+Sample script to sort the views, then display the imaging axis and activate Intellisync.
 
 ```javascript
 // sort series by Name
@@ -207,10 +207,10 @@ allSeries.sort((a, b)=>priorities.indexOf(a.name.toLowerCase()) - priorities.ind
 let imagingAxis = allSeries[0].imagingAxis;
 
 // Filter out views that were imaged in a different axis
-let eligibileSeries = allSeries.filter((series) => series.imagingAxis === imagingAxis);
+let eligibleSeries = allSeries.filter((series) => series.imagingAxis === imagingAxis);
 
 // Describe viewports
-setViews(eligibileSeries.map((series) => {
+setViews(eligibleSeries.map((series) => {
   return {
     seriesIndex: series.seriesIndex,
     plane: series.imagingAxis,

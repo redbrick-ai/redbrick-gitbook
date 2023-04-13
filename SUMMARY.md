@@ -34,7 +34,7 @@
 * [Creating, editing and deleting annotations](annotation/creating-editing-and-deleting-annotations.md)
 * [Windowing, Thresholding, and more](annotation/windowing-thresholding-and-more.md)
 * [Layout & Multiple Volumes](annotation/layout-and-multiple-volumes/README.md)
-  * [Custom hanging protocol](annotation/layout-and-multiple-volumes/custom-hanging-protocol.md)
+  * [Custom Hanging Protocol](annotation/layout-and-multiple-volumes/custom-hanging-protocol.md)
   * [Multiple Modalities](annotation/layout-and-multiple-volumes/multiple-modalities.md)
   * [Intellisync](annotation/layout-and-multiple-volumes/intellisync.md)
   * [Annotation mirroring](annotation/layout-and-multiple-volumes/annotation-mirroring.md)
