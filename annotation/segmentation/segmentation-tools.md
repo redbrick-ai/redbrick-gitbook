@@ -116,7 +116,7 @@ To enable F.A.S.T. in your account, please do the following:&#x20;
 
 {% code lineNumbers="true" %}
 ```javascript
-setSegmentationSettings({
+setSegmentationSettings([{
     toolName: 'FAST',
     enabled: true,
 }])
