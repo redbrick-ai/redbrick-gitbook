@@ -108,10 +108,10 @@ The Fast Automated Segmentation Tool (F.A.S.T.) is an automatic segmentation too
 2. Segmentation decoding, which takes place in the browser in real time.
 
 {% hint style="info" %}
-To enable F.A.S.T. in your account, please do the following:&#x20;
+**To enable F.A.S.T. in your account**, please do the following:&#x20;
 
 1. Request for access at https://redbrickai.com/fast.
-2. Use the following snippet in the _Hanging Protocols_ script in the project settings
+2. Use the following snippet in the _Hanging Protocols_ script in the project settings. [See this video here](https://www.loom.com/share/60f5bf88d9b44a98a2183df748ac8e22)**.**
 {% endhint %}
 
 {% code lineNumbers="true" %}
