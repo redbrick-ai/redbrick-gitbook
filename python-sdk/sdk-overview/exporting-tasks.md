@@ -1,4 +1,4 @@
-# Exporting tasks
+# Exporting Tasks
 
 ## Exporting Annotations
 
@@ -57,13 +57,13 @@ Perform the [standard RedBrick AI SDK set-up](./#initializing-the-redbrick-sdk-i
 
 ```python
 project = redbrick.get_project(org_id, project_id, api_key)
-audit_trail = project.get_task_events()
+audit_trail = project.export.get_task_events()
 ```
 
 Generate the audit trail for all tasks (not only the ones in ground truth).
 
 ```python
-audit_trail = project.get_task_events(only_ground_truth=False)
+audit_trail = project.export.get_task_events(only_ground_truth=False)
 ```
 
 The returned object will contain data similar to what is shown below. Each entry will represent a single task (uniquely identified by `taskId`). The `events` array contains all key events/actions performed on the task, with `events[0]` being the first event.

@@ -47,7 +47,7 @@
 
 * [Installation & API Keys](python-sdk/installation-and-api-keys.md)
 * [SDK Overview](python-sdk/sdk-overview/README.md)
-  * [Exporting tasks](python-sdk/sdk-overview/exporting-tasks.md)
+  * [Exporting Tasks](python-sdk/sdk-overview/exporting-tasks.md)
   * [Importing data & annotations](python-sdk/sdk-overview/importing-data-and-annotations.md)
   * [Programmatic Label & Review](python-sdk/sdk-overview/programmatic-label-and-review.md)
   * [Assigning & querying tasks](python-sdk/sdk-overview/assigning-and-querying-tasks.md)
