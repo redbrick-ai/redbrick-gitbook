@@ -6,4 +6,4 @@ On RedBrick AI, you can **perform both semantic and instance segmentation** by c
 
 Watch this video for an overview:
 
-{% embed url="https://www.loom.com/share/d7c5490c1bbe4d1abc5f2e41a8014570" %}
+{% embed url="https://www.loom.com/share/a157d1c350a34192bb53a33c51488d09" %}
