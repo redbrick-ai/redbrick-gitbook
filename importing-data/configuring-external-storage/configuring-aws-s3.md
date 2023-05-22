@@ -97,8 +97,8 @@ If your bucket will be used as an annotation storage bucket, you need to add PUT
 
 {% hint style="info" %}
 **Granular Permissions**\
-****\
-****You can configure your S3 bucket to give RedBrick AI access to particular data points inside your s3 bucket by modifying the "Resource" section in the file above.&#x20;
+\
+You can configure your S3 bucket to give RedBrick AI access to particular data points inside your s3 bucket by modifying the "Resource" section in the file above.&#x20;
 {% endhint %}
 
 #### Create the user

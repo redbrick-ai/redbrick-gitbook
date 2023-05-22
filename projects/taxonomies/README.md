@@ -52,7 +52,7 @@ _Instance-Level Classifications_ are applied to a single frame of a video and ar
 
 To create a new Taxonomy, navigate to the Taxonomy page in the left hand side bar of the RedBrick web app and click on **Create Taxonomy V2**. All taxonomies must contain at least one Object Label or Classification in order to be successfully created.&#x20;
 
-Taxonomies are created and stored at the Organization **** level_. ****  _ When creating a new project, you have to select a taxonomy that you will use for the project.&#x20;
+Taxonomies are created and stored at the Organization level_._  When creating a new project, you have to select a taxonomy that you will use for the project.&#x20;
 
 ## Modifying Taxonomies
 

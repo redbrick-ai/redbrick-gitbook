@@ -13,7 +13,7 @@ While the steps and configurations required for uploading data from cloud storag
 
 ### Configuring Cloud Storage
 
-The Items List defines your data’s storage location and structure. Each entry in your Items List will be created as a separate task, which can then be annotated as a single unit. You can find detailed explanations of each key in our [format reference](../python-sdk/reference/annotation-format.md#tasks-json).&#x20;
+The Items List defines your data’s storage location and structure. Each entry in your Items List will be created as a separate task, which can then be annotated as a single unit. You can find detailed explanations of each key in our [format reference](../python-sdk/reference/export-annotation-format.md#tasks-json).&#x20;
 
 Please note that the example below contains fields relevant to image-only uploads.
 

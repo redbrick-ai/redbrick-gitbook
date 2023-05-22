@@ -11,7 +11,7 @@ It is common to have multiple scans that are taken with different parameters in 
 When activated, intellisync applies to all 2D viewports of the chosen series. It can also be activated for all series at once.
 
 1. Command bar: search for `Intellisync`
-2. Keyboard (selected viewport): `Command + a` (Mac) or `Control + a` **** (Windows)
+2. Keyboard (selected viewport): `Command + a` (Mac) or `Control + a` (Windows)
 3. Keyboard (All series): `Shift + Command + a` (Mac) or `Shift + Control + a` (Windows)
 4. Mouse: Through the action dropdown in the top right of the given viewport
 

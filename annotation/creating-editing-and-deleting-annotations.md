@@ -16,7 +16,7 @@ Adjust the size of the grid for easy interaction
 
 ## Object Labels
 
-An object label has three components - **a category name, a label type, and attributes (optional)**. **** The left side bar will show all the object labels on the left side bar with an option to create _instances of that object label_. All instances are organized within each object labels expansion panel.&#x20;
+An object label has three components - **a category name, a label type, and attributes (optional)**. The left side bar will show all the object labels on the left side bar with an option to create _instances of that object label_. All instances are organized within each object labels expansion panel.&#x20;
 
 ### Creating Object Labels
 

@@ -1,6 +1,6 @@
 # Organization and Project Roles
 
-Everything you do on RedBrick AI will be within your Organization. All your team members, projects, annotations, etc., live inside your organization. You can view all the members in your organization inside the **Team Tab **_****_ on the left sidebar.&#x20;
+Everything you do on RedBrick AI will be within your Organization. All your team members, projects, annotations, etc., live inside your organization. You can view all the members in your organization inside the **Team Tab** on the left sidebar.&#x20;
 
 <figure><img src="../.gitbook/assets/app.redbrickai.com_a717f7d8-8a19-4346-b9b4-a90c8d6875ba_team (1).png" alt=""><figcaption></figcaption></figure>
 

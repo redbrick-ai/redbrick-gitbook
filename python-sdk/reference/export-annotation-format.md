@@ -1,4 +1,4 @@
-# Annotation Format
+# Export Annotation Format
 
 ## Export Folder Structure
 
@@ -17,9 +17,9 @@ project_id/
 
 ## Segmentations
 
-The segmentation directory will contain a single sub-directory for each task in your export. The sub-directories will be named after the task [`name`](annotation-format.md#name-string). A single task (depending on whether it was single series or multi-series) can have one or more segmentations.
+The segmentation directory will contain a single sub-directory for each task in your export. The sub-directories will be named after the task [`name`](export-annotation-format.md#name-string). A single task (depending on whether it was single series or multi-series) can have one or more segmentations.
 
-The individual segmentation files will be in NIfTI-1 format and be [named after the user-defined series name](annotation-format.md#name-string-1). If no series name is provided on upload, RedBrick will assign a unique name. Corresponding meta-data ex. category names will be provided in [tasks.json](annotation-format.md#tasks-json).
+The individual segmentation files will be in NIfTI-1 format and be [named after the user-defined series name](export-annotation-format.md#name-string-1). If no series name is provided on upload, RedBrick will assign a unique name. Corresponding meta-data ex. category names will be provided in [tasks.json](export-annotation-format.md#tasks-json).
 
 ## Tasks JSON
 
@@ -232,7 +232,7 @@ The `Series` object has meta-data and annotations for a single series within a t
 
 The items entry is a list of file paths that point to your data. Please have a look at the [#items-list](../../importing-data/import-cloud-data.md#items-list "mention")documentation to understand how to format for various modalities and series/study uploads.
 
-#### `nae: string`
+#### `name: string`
 
 An optional user-defined string, _needs to be unique_ across all series. Individual [series will be named after this value on the labeling tool](https://www.loom.com/i/ea12e486bd8845d7b3b8a83fc115ad58). Exported segmentation files will also be named using this value. Using the Series Instance UID here is good practice. &#x20;
 
@@ -308,7 +308,7 @@ A mapping between segmentation instance id, your taxonomy category name, and any
 
 Represents a two-dimensional bounding box
 
-#### `pointTopLeft:` [`Point2D`](annotation-format.md#point2d-xnorm-number-ynorm-number)``
+#### `pointTopLeft:` [`Point2D`](export-annotation-format.md#point2d-xnorm-number-ynorm-number)
 
 The location of the top-left point of the bounding box.
 
@@ -318,17 +318,17 @@ The width and height of the bounding box, normalized by the width and height of 
 
 ### Polygon
 
-#### `points:` [`Point2D`](annotation-format.md#point2d-xnorm-number-ynorm-number)`[]`
+#### `points:` [`Point2D`](export-annotation-format.md#point2d-xnorm-number-ynorm-number)`[]`
 
 A list of 2D points that are connected to form a polygon. This list is ordered such that, $$point_i$$ is connected to $$point_{i+1}$$. The last point is also connected to the first point to close the polygon.&#x20;
 
 ### MeasureLength
 
-#### `point1, point2 :` [`VoxelPoint`](annotation-format.md#voxelpoint-i-number-j-number-k-number)``
+#### `point1, point2 :` [`VoxelPoint`](export-annotation-format.md#voxelpoint-i-number-j-number-k-number)
 
 A length measurement is defined by two points, and the length measurement is the distance between the two points.
 
-#### `absolutePoint1, absolutePoint2 :` [`WorldPoint`](annotation-format.md#worldpoint-x-number-y-number-j-number)``
+#### `absolutePoint1, absolutePoint2 :` [`WorldPoint`](export-annotation-format.md#worldpoint-x-number-y-number-j-number)
 
 Corresponding to `point1`, `point2` these are points in physical space.
 
@@ -342,11 +342,11 @@ The value of the measurement in mm.
 
 ### MeasureAngle
 
-#### `point1, point2, vertex :` [`VoxelPoint`](annotation-format.md#voxelpoint-i-number-j-number-k-number)&#x20;
+#### `point1, point2, vertex :` [`VoxelPoint`](export-annotation-format.md#voxelpoint-i-number-j-number-k-number)&#x20;
 
 Angle measurement is defined by three points, where the vertex is the middle point. The angle between the two vectors (vertex -> point1 and vertex -> point2) defines the angle measurement. These points are all represented in IJK image coordinate space.&#x20;
 
-#### `absolutePoint1, absolutePoint2 :` [`WorldPoint`](annotation-format.md#worldpoint-x-number-y-number-j-number)&#x20;
+#### `absolutePoint1, absolutePoint2 :` [`WorldPoint`](export-annotation-format.md#worldpoint-x-number-y-number-j-number)&#x20;
 
 Corresponding to `point1`, `point2`, `vertex`, these values are coordinates in the DICOM world coordinate system i.e. physical space.&#x20;
 
@@ -364,7 +364,7 @@ When exporting consensus annotations, the Tasks JSON file and the `segmentations
 
 ### Segmentations
 
-Each task folder will contain all the users' segmentation files. The segmentation files can be uniquely identified by the index "\_1" at the end of the file. You will be able to map between the users email and the index in [tasks.json](annotation-format.md#undefined).&#x20;
+Each task folder will contain all the users' segmentation files. The segmentation files can be uniquely identified by the index "\_1" at the end of the file. You will be able to map between the users email and the index in [tasks.json](export-annotation-format.md#undefined).&#x20;
 
 ```
 project_id/
@@ -408,7 +408,7 @@ type ConsensusTask = {
 
 ### ConsensusTask
 
-The consensus task object contains information about the consensus annotations for this task. `` There will be a single entry for every annotator who annotated this task. For example, if 3 users annotated each task in your project, the length of the `consensusTasks` array will be 3.
+The consensus task object contains information about the consensus annotations for this task. There will be a single entry for every annotator who annotated this task. For example, if 3 users annotated each task in your project, the length of the `consensusTasks` array will be 3.
 
 #### `updatedBy: string`
 
@@ -424,4 +424,4 @@ The `scores` entry compares the current users' annotations with every other user
 
 #### `series: Series[]`
 
-The [series entry](annotation-format.md#series) for the current user only.
+The [series entry](export-annotation-format.md#series) for the current user only.

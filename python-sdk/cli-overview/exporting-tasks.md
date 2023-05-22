@@ -11,7 +11,7 @@ Running this command with no changes to your project will export 0 tasks.&#x20;
 {% endhint %}
 
 {% hint style="success" %}
-Please visit our [format reference](../reference/annotation-format.md) to see the format of the exported annotations.
+Please visit our [format reference](../reference/export-annotation-format.md) to see the format of the exported annotations.
 {% endhint %}
 
 To export your data, you need to first go to your [local project directory](creating-and-cloning-projects.md).

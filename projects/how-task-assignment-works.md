@@ -40,7 +40,7 @@ You can programmatically assign tasks using our SDK or prescribe the assignment 
 
 #### Prescribe assignment on upload
 
-You can use [`preAssign`](../python-sdk/reference/annotation-format.md#preassign-stagename-string-string) the field in the items file to define which user will be assigned the task at each stage. For example, the snippet below will assign `study01` to `annotator@email.com` in the `Label` stage. Once the annotation is complete, and the task is queued in `Review_1`, `reviewer@email.com` will be assigned as the Reviewer.
+You can use [`preAssign`](../python-sdk/reference/export-annotation-format.md#preassign-stagename-string-string) the field in the items file to define which user will be assigned the task at each stage. For example, the snippet below will assign `study01` to `annotator@email.com` in the `Label` stage. Once the annotation is complete, and the task is queued in `Review_1`, `reviewer@email.com` will be assigned as the Reviewer.
 
 {% hint style="info" %}
 Ensure to correctly input the stage names, i.e., Label, Review\_1, etc. Also, make sure to input the users' emails correctly. They must be a member of the project.
@@ -74,20 +74,20 @@ Ensure to correctly input the stage names, i.e., Label, Review\_1, etc. Also, ma
 Once a task is assigned to a user, it is added to their Labeling Queue. You can view your labeling queue in two ways.
 
 1. **From the data page:** \
-   ****[On the data page](https://app.tango.us/app/workflow/Labeling-Queue-on-Data-Dashboard-b79b4d8562d34bc6a33d6cce0aa4476e), you can filter by queued for labeling/review and then filter by tasks assigned to you.
+   [On the data page](https://app.tango.us/app/workflow/Labeling-Queue-on-Data-Dashboard-b79b4d8562d34bc6a33d6cce0aa4476e), you can filter by queued for labeling/review and then filter by tasks assigned to you.
 2. **On the Labeling Tool:**\
-   ****[The labeling queue](https://app.tango.us/app/workflow/View-Labeling-Queue-in-Tool-17a013c7a161415c85cba3369344cae2) is available on the top bar of the labeling tool.&#x20;
+   [The labeling queue](https://app.tango.us/app/workflow/View-Labeling-Queue-in-Tool-17a013c7a161415c85cba3369344cae2) is available on the top bar of the labeling tool.&#x20;
 
 While in your Queue, the task can be in a few different states, depending on the status of the annotation:&#x20;
 
 1. **Assigned**\
-   ****Tasks that you have not worked on yet will be displayed as Assigned.
+   Tasks that you have not worked on yet will be displayed as Assigned.
 2. **Saved**\
-   ****Once you save your in-progress annotation (either manually or through auto-save), the task will show as saved. ****&#x20;
+   Once you save your in-progress annotation (either manually or through auto-save), the task will show as saved.&#x20;
 3. **Pending Finalization**\
-   ****Once you are done with the annotation, you can _Submit the draft_. All drafts that have been submitted will **still be in your labeling queue** __ pending finalization. You must finalize the draft to complete it and send it to the next stage of the workflow.
+   Once you are done with the annotation, you can _Submit the draft_. All drafts that have been submitted will **still be in your labeling queue** pending finalization. You must finalize the draft to complete it and send it to the next stage of the workflow.
 4. **Skipped**\
-   ****Skipped tasks are intended to come back to in the future. If you encounter a task you don't want to complete, you can skip it, and it will be sent to the end of your labeling queue.&#x20;
+   Skipped tasks are intended to come back to in the future. If you encounter a task you don't want to complete, you can skip it, and it will be sent to the end of your labeling queue.&#x20;
 
 The diagram below is a guide to completing tasks in your labeling queue, including the actions and states of tasks.
 

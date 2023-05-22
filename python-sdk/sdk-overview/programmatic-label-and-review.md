@@ -26,7 +26,7 @@ Next, you need to get a list of tasks you want to label/review. You can do this 
 
 #### Programmatically label tasks
 
-Add your annotations within the `series` field, along with the `task_id`. Please refer to the reference documentation for the [format of the annotations in series](../reference/annotation-format.md).
+Add your annotations within the `series` field, along with the `task_id`. Please refer to the reference documentation for the [format of the annotations in series](../reference/export-annotation-format.md).
 
 &#x20;The corresponding task must be queued in the Label stage and assigned to your API key.&#x20;
 

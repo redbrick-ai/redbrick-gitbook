@@ -56,7 +56,7 @@
   * [Exporting tasks](python-sdk/cli-overview/exporting-tasks.md)
   * [Import data & annotations](python-sdk/cli-overview/import-data-and-annotations.md)
 * [Format Reference](python-sdk/reference/README.md)
-  * [Annotation Format](python-sdk/reference/annotation-format.md)
+  * [Export Annotation Format](python-sdk/reference/export-annotation-format.md)
   * [TaxonomyObject](python-sdk/reference/taxonomyobject.md)
   * [TaskObject](python-sdk/reference/taskobject.md)
 * [Full SDK & CLI Reference](https://redbrick-sdk.readthedocs.io/en/stable/)

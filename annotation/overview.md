@@ -28,7 +28,7 @@ If you've used other DICOM viewers, you may already be familiar with navigating 
   * **Pan** across your volume`shift` + `left click` + `drag`
   * **Rotate** the volume **in the plane** `ctrl` + `left click` + `drag`
 * **Windowing:** Modify the window width and level by holding `control + left click drag`
-* **Min / Max viewport:** **** With a 2x2, 2x3, or 3x2 layout configuration toggle min/max by pressing `enter` or `return`
+* **Min / Max viewport:**  With a 2x2, 2x3, or 3x2 layout configuration toggle min/max by pressing `enter` or `return`
 * **Change selected viewport:** The selected viewport is the viewport that you last clicked in, or you can navigate through by using `shift + arrow keys`. This can be combined with min/max to quickly explore your views.
 
 ## How tasks work with DICOM annotation
