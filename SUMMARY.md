@@ -42,6 +42,7 @@
   * [Segmentation Tools](annotation/segmentation/segmentation-tools.md)
   * [Instance vs. Semantic](annotation/segmentation/instance-vs.-semantic.md)
   * [Overlapping Segmentations](annotation/segmentation/overlapping-segmentations.md)
+  * [3D Slicer Integration](annotation/segmentation/3d-slicer-integration.md)
 
 ## Python SDK & CLI <a href="#python-sdk" id="python-sdk"></a>
 

@@ -58,8 +58,8 @@ type Series = {
 ​
   segmentations?: string | string[];
   segmentMap?: {
-    [instanceId: number]: {
-      category: string | string[];
+    [instanceId: string]: number | string | string[] | {
+      category: number | string | string[];
       attributes?: Attributes;
     };
   };
