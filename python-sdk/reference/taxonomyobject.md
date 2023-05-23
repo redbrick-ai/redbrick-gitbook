@@ -23,6 +23,8 @@ type ObjectType = {
     attributes?: Attribute[];
     color?: string;
     archived?: boolean;
+    parents?: string[];
+    hint?: string;
 }
 
 type Attribute = {
@@ -31,6 +33,8 @@ type Attribute = {
     attrId: number;
     options?: AttributeOption[];
     archived?: boolean;
+    parents?: string[];
+    hint?: string;
 }
 
 type AttributeOption = {
@@ -43,40 +47,4 @@ type AttributeOption = {
 
 ## Taxonomy V1
 
-```typescript
-type Taxonomy = {
-    orgId: string;
-    name: string;
-    createdAt: datetime;
-    archived: boolean | null;
-    isNew: false;
-    version: int;
-    categories: Category[];
-    attributes: Attribute[];
-    taskCategories: Category[] | null;
-    taskAttributes: Attribute[] | null;
-    colorMap: Color[] | null;
-}
-
-type Category = {
-    name: string;
-    classId?: int; // present for all except root ("object")
-    disabled?: boolean | null;
-    children?: Category[]
-}
-
-type Attribute = {
-    name: string;
-    attrType: BOOL | TEXT | SELECT | MULTISELECT;
-    whitelist: str[][] | null;
-    disabled: boolean | null;
-}
-
-type Color = {
-    name: string;
-    color: string;
-    classid: int;
-    trail: string[];
-    taskCategory: boolean;
-}
-```
+RedBrick AI no longer supports the creation of Taxonomies V1.
