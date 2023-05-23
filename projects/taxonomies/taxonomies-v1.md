@@ -1,10 +1,10 @@
 # Taxonomies V1
 
 {% hint style="warning" %}
-It is **strongly recommended** that you switch to the new and improved Taxonomy V2.
+We no longer support the creation of Taxonomies V1. It is **strongly recommended** that you switch to the new and improved Taxonomy V2.
 {% endhint %}
 
-Taxonomies provides a structured way of defining your object label categories. Taxonomies allow you to re-use a set of label classes and attributes over different projects. A simple taxonomy is shown below
+Taxonomies provides a structured way of defining your Object Label Categories. Taxonomies allow you to re-use a set of label classes and attributes over different Projects. A simple Taxonomy is shown below
 
 ![](<../../.gitbook/assets/image 440.png>)
 
@@ -30,6 +30,6 @@ An attribute can be created by clicking on 'add an attribute' button. By default
 
 ![](<../../.gitbook/assets/Group 28362 (1).png>)
 
-## Task classification
+## Task Classification
 
-To create task level classifications e.g. video level or series/study level annotations, you can define task classification categories under the 'task classify' tab. The flow and functionality of the process is identical to the categories section.
+To create Task Level Classifications (e.g. video level or series/study level annotations), you can define task classification categories under the 'task classify' tab. The flow and functionality of the process is identical to the categories section.
