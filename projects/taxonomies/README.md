@@ -89,7 +89,7 @@ The upgrades that came along with Taxonomy V2 are not compatible with Taxonomy V
 
 Taxonomies now support the nesting of Object Labels, Study-Level and Series-Level Classifications **via the RedBrick AI Python SDK**. By adding the parents attribute to your Taxonomy, you can create and/or designate Parent Tiers for a given Object Label.
 
-You can create Parent Tiers by adding the `parents:[]` attribute to any Object Label, Study-Level, or Series-Level Classification within your Taxonomy. Parent Tiers are created and assigned from **left to right and in descending order**, which means the first string in `parents:[]` will always be a Tier 1 Parent, the second string will be a Tier 2 Parent, and so on.
+You can create Parent Tiers by adding the `parents:[]` attribute to any Object Label, Study-Level, Series-Level, or Instance-Level Classification within your Taxonomy. Parent Tiers are created and assigned from **left to right and in descending order**, which means the first string in `parents:[]` will always be a Tier 1 Parent, the second string will be a Tier 2 Parent, and so on.
 
 For full documentation, please see our [Taxonomy Object reference](../../python-sdk/reference/taxonomyobject.md).
 
@@ -144,7 +144,7 @@ The above Taxonomy will be nested in the Annotation Tool as well. Tiers can also
 
 ### HTML Tooltips
 
-RedBrick AI allows users to upload custom HTML tooltips to any Object Label, Study-Level Classification or Series-Level Classification. For larger, more complex Taxonomies, these tooltips can be a great form of input for annotators or serve as a record for any internal standards that may be associated with the annotation itself.
+RedBrick AI allows users to upload custom HTML tooltips to any Object Label, Study-Level Classification, Series-Level, or Instance-Level Classification. For larger, more complex Taxonomies, these tooltips can be a great form of input for annotators or serve as a record for any internal standards that may be associated with the annotation itself.
 
 {% hint style="info" %}
 All HTML elements can be included within the `hints:[]` attribute, but images must be inserted using \<img src> and a relevant link.
