@@ -18,7 +18,7 @@ Labelers can only view tasks that are assigned to them. Admins can view all task
 
 All projects use automatic task assignment by default. The automatic task assignment protocol is a first-come-first-serve system that assigns the _oldest_ data to the annotators that request new tasks first.
 
-Annotators request for new tasks by keeping the labeling tool open or clicking on Label/Review on the project dashboard. If a user becomes inactive for extended periods of time, their automatically assigned tasks will be assigned to other users who are active.&#x20;
+Annotators request for new tasks by keeping the labeling tool open or clicking on Label/Review on the project dashboard.
 
 {% hint style="info" %}
 You can disable automatic task assignment from **Project Settings -> Overview.**
