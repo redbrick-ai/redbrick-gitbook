@@ -32,11 +32,7 @@ You can _manually_ assign more than the required number of labelers. The automat
 
 Once all assigned annotators have completed a Task, RedBrick AI will generate an Inter-Annotator Agreement Score, which is calculated by comparing each labeler's annotations with those of every other labeler and averaging the pairs of scores.
 
-|        | User 1                                            | User 2                                            | User 3                                            |
-| ------ | ------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- |
-| User 1 |                                                   | <mark style="color:blue;">`Score(U1,U2)`</mark>   | <mark style="color:purple;">`Score(U1,U3)`</mark> |
-| User 2 | <mark style="color:blue;">`Score(U2,U1)`</mark>   |                                                   | <mark style="color:orange;">`Score(U2,U3)`</mark> |
-| User 3 | <mark style="color:purple;">`Score(U3,U1)`</mark> | <mark style="color:orange;">`Score(U3,U2)`</mark> |                                                   |
+<table><thead><tr><th> </th><th width="157">User 1</th><th>User 2</th><th width="250">User 3</th></tr></thead><tbody><tr><td>User 1</td><td></td><td><mark style="color:blue;"><code>Score(U1,U2)</code></mark></td><td><mark style="color:purple;"><code>Score(U1,U3)</code></mark></td></tr><tr><td>User 2</td><td><mark style="color:blue;"><code>Score(U2,U1)</code></mark></td><td></td><td><mark style="color:orange;"><code>Score(U2,U3)</code></mark></td></tr><tr><td>User 3</td><td><mark style="color:purple;"><code>Score(U3,U1)</code></mark></td><td><mark style="color:orange;"><code>Score(U3,U2)</code></mark></td><td></td></tr></tbody></table>
 
 `Agreement = Average(`<mark style="color:blue;">`Score(U1,U2)`</mark>`,`<mark style="color:purple;">`Score(U1,U3)`</mark>`,`<mark style="color:orange;">`Score(U2,U3)`</mark>`).`
 

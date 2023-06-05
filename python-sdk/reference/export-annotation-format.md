@@ -45,6 +45,9 @@ type Task = {
   updatedBy?: string;
   updatedAt?: string;
   
+  // assign metadata to a Task
+  metaData?: { [key: string]: string }
+  
   // Prescribe task assignent
   preAssign?: {
     [stageName: string]: string
@@ -70,6 +73,7 @@ type Series = {
   polylines?: Polyline[];
   classifications?: Classification[];
   instanceClassifications?: InstanceClassification[];
+   metaData?: { [key: string]: string };
 };
 ​
 // Label Types
@@ -224,6 +228,10 @@ Prescribe during upload who will get a task assigned to them. You can define the
 
 A list of attributes assigned to an entire task (or study, if the task encapsulates an entire study).
 
+**`metaData?: { [key: string]: string }`**
+
+A list of key value pairs that can be affixed to a Task.
+
 ### Series
 
 The `Series` object has meta-data and annotations for a single series within a task. A series can represent a single MRI/CT series, a video, or a single 2D image. If a series has annotations, you can expect one or more of the label entries to be present i.e. `segmentations`, `polygons` etc.
@@ -243,6 +251,10 @@ A list of attributes assigned to a specific Series.
 #### `instanceClassifications: fileIndex | fileName | [ values: {string : boolean} ]`
 
 The `instanceClassifications` object defines a series of boolean values that can be assigned to individual instances (e.g. frames in a video).
+
+**`metaData?: { [key: string]: string }`**
+
+A list of key value pairs that can be affixed to a Series.
 
 ### Common Label Keys
 

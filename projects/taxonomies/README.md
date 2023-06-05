@@ -10,27 +10,13 @@ Taxonomies allow you to define the features you'd like to annotate in your proje
 
 The features that you will annotate in your images are known as Objects. Objects are defined with a Label Type and Category (e.g., "Edema" & `Segmentation)`, and RedBrick AI supports the following Object Label Types:&#x20;
 
-| Object Label Type  | 2D Image  | 3D Image  | 2D Video |
-| ------------------ | --------- | --------- | -------- |
-| Segmentation       | ✅         | ✅         |          |
-| Landmarks          | ✅         | ✅         | ✅        |
-| Angle Measurement  | ✅         | ✅         |          |
-| Length Measurement | ✅         | ✅         |          |
-| Bounding Box       | ✅         | ✅         | ✅        |
-| Ellipse            | ✅         | ✅         |          |
-| Polygon            | ✅         |           | ✅        |
-| Polyline           | ✅         |           | ✅        |
+<table><thead><tr><th width="220">Object Label Type</th><th>2D Image </th><th>3D Image </th><th>2D Video</th></tr></thead><tbody><tr><td>Segmentation</td><td>✅</td><td>✅</td><td></td></tr><tr><td>Landmarks</td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>Angle Measurement</td><td>✅</td><td>✅</td><td></td></tr><tr><td>Length Measurement</td><td>✅</td><td>✅</td><td></td></tr><tr><td>Bounding Box</td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>Ellipse</td><td>✅</td><td>✅</td><td></td></tr><tr><td>Polygon</td><td>✅</td><td></td><td>✅</td></tr><tr><td>Polyline</td><td>✅</td><td></td><td>✅</td></tr></tbody></table>
 
 ### Attributes
 
 Attributes allow you to add a deeper level of classification to your Object Labels. Attributes are commonly used to collect more information about a particular object (e.g. "True/False" for an Object titled "tumor malignancy"). RedBrick AI offers the following Attribute Types:&#x20;
 
-| Attribute Type | Description                                                               |
-| -------------- | ------------------------------------------------------------------------- |
-| Boolean        | A checkbox that can be either True or False                               |
-| Select         | A dropdown that can be a single value from a list of predefined values    |
-| Multi-select   | A dropdown that can have multiple values from a list of predefined values |
-| Textfield      | A text input that can record free form text                               |
+<table><thead><tr><th width="213">Attribute Type</th><th>Description</th></tr></thead><tbody><tr><td>Boolean</td><td>A checkbox that can be either True or False</td></tr><tr><td>Select</td><td>A dropdown that can be a single value from a list of predefined values</td></tr><tr><td>Multi-select</td><td>A dropdown that can have multiple values from a list of predefined values</td></tr><tr><td>Textfield</td><td>A text input that can record free form text</td></tr></tbody></table>
 
 ### Classification
 
@@ -42,11 +28,7 @@ _Series-Level Classifications_ are applied to a single series (e.g. the T1 seque
 
 _Instance-Level Classifications_ are applied to a single frame of a video and are only available for 2D video formats.
 
-| Classification Type | 2D Image | 3D Image | 2D Video |
-| ------------------- | -------- | -------- | -------- |
-| Study               | ✅        | ✅        | ✅        |
-| Series              | ✅        | ✅        | ✅        |
-| Instance            |          |          | ✅        |
+<table><thead><tr><th width="238">Classification Type</th><th width="168">2D Image</th><th width="169">3D Image</th><th>2D Video</th></tr></thead><tbody><tr><td>Study</td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>Series</td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>Instance</td><td></td><td></td><td>✅</td></tr></tbody></table>
 
 ## Creating and Using Taxonomies
 

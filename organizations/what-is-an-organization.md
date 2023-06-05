@@ -22,10 +22,7 @@ RedBrick AI offers role-based access control at two levels - the Organization le
 
 Each organization has a single owner, and there can be unlimited Admins and Labelers.&#x20;
 
-| Org Owner  | <p>Has access to all assets within an organization and the ability to create, edit, and delete assets, including the organization itself. <br><br>Org owners are added to all projects <strong>as project admins</strong>.</p> |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Org Admin  | <p>Can create &#x26; edit resources at the organization level, including, projects, taxonomies, storage methods, etc.<br><br>Org admins are added to all projects <strong>as project admins.</strong></p>                      |
-| Org Member | <p>Can't create or edit resources at the organizational level. <br><br>Can be invited to a project as a <strong>Project Admin or a Project Member.</strong></p>                                                                |
+<table data-header-hidden><thead><tr><th width="297">Role</th><th>What they can access</th></tr></thead><tbody><tr><td>Org Owner</td><td>Has access to all assets within an organization and the ability to create, edit, and delete assets, including the organization itself. <br><br>Org owners are added to all projects <strong>as project admins</strong>.</td></tr><tr><td>Org Admin</td><td>Can create &#x26; edit resources at the organization level, including, projects, taxonomies, storage methods, etc.<br><br>Org admins are added to all projects <strong>as project admins.</strong></td></tr><tr><td>Org Member</td><td>Can't create or edit resources at the organizational level. <br><br>Can be invited to a project as a <strong>Project Admin or a Project Member.</strong></td></tr></tbody></table>
 
 ### Project Permissions
 
