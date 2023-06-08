@@ -8,9 +8,9 @@ It's important to note that each entry in your Items List **will be created as a
 
 After creating your JSON Items List, you can upload it from RedBrick AI's Project Dashboard or by using the [SDK](../../python-sdk/sdk-overview/importing-data-and-annotations.md).
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Click on Upload Data</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-06-08 at 12.48.54 PM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/items_list_popout.png" alt=""><figcaption><p>Select a Storage Method and upload your Items List</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-06-08 at 12.53.17 PM.png" alt=""><figcaption><p>Select a Storage Method and upload your Items List</p></figcaption></figure>
 
 {% hint style="info" %}
 Please note that there is no need to create an Items List when using [Direct Upload](../direct-data-upload.md).

@@ -15,35 +15,35 @@ Please view the detailed [`export_tasks` reference here](https://redbrick-sdk.re
 
 ### Code Examples
 
-Perform the [standard RedBrick AI SDK set-up](./#initializing-the-redbrick-sdk-in-python) to create a project object.
+Perform the [standard RedBrick AI SDK set-up](./#initializing-the-redbrick-sdk-in-python) to create a Project object.
 
 ```python
 project = redbrick.get_project(org_id, project_id, api_key)
 ```
 
-#### Export all tasks
+#### Export All Tasks
 
 ```python
 annotations = project.export.export_tasks()
 ```
 
-#### Export only ground truth
+#### Export Only Ground Truth
 
-You can export only the tasks in Ground Truth, i.e., tasks that have successfully made it through all Labeling and Review stages.&#x20;
+You can export only the Tasks in Ground Truth, i.e., Tasks that have successfully made it through all Labeling and Review Stages.&#x20;
 
 ```python
 annotations = project.export.export_tasks(only_ground_truth=True)
 ```
 
-#### **Export specific tasks only**
+#### **Export Specific Tasks**
 
-Export select tasks by specifying Task IDs.&#x20;
+Export selected Tasks by specifying Task IDs.&#x20;
 
 ```python
 annotations = project.export.export_tasks(task_id="...")
 ```
 
-## Generate an audit trail
+## Generate an Audit Trail
 
 Generating an audit trail can be useful material for regulators interested in your quality control processes and for managing your internal QA processes.&#x20;
 
@@ -53,20 +53,20 @@ You can generate a detailed audit trail of all actions/events associated with ev
 Please see a detailed reference for [`get_task_events` here](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.get\_task\_events).
 {% endhint %}
 
-Perform the [standard RedBrick AI SDK set-up](./#initializing-the-redbrick-sdk-in-python) to create a project object and retrieve the audit trail for all tasks.
+Perform the [standard RedBrick AI SDK set-up](./#initializing-the-redbrick-sdk-in-python) to create a Project object and retrieve the audit trail for all tasks.
 
 ```python
 project = redbrick.get_project(org_id, project_id, api_key)
 audit_trail = project.export.get_task_events()
 ```
 
-Generate the audit trail for all tasks (not only the ones in ground truth).
+Generate the audit trail for all Tasks (not only the ones in Ground Truth).
 
 ```python
 audit_trail = project.export.get_task_events(only_ground_truth=False)
 ```
 
-The returned object will contain data similar to what is shown below. Each entry will represent a single task (uniquely identified by `taskId`). The `events` array contains all key events/actions performed on the task, with `events[0]` being the first event.
+The returned object will contain data similar to the code snippet below, where each entry will represent a single Task (uniquely identified by `taskId`). The `events` array contains all key events/actions performed on the Task, with `events[0]` being the first event.
 
 ```json
 [

@@ -1,4 +1,4 @@
-# Importing data & annotations
+# Importing Data & Annotations
 
 You can programmatically import data and/or annotations using the SDK with a Python Script. For simple import operations, we recommend using the CLI, which has a simple & optimized interface.&#x20;
 
@@ -14,7 +14,7 @@ Perform the [standard RedBrick AI SDK set-up](./#initializing-the-redbrick-sdk-i
 project = redbrick.get_project(org_id, project_id, api_key)
 ```
 
-#### Import locally stored data
+#### Import Locally Stored Data
 
 To import locally stored data, create a list of `points` with relative file paths to your locally stored data, and use the [`redbrick.StorageMethod.REDBRICK`](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.StorageMethod) storage ID.&#x20;
 
@@ -29,11 +29,11 @@ project.upload.create_datapoints(storage_id=storage_id, points=points)
 Please visit the [Items List](../../importing-data/import-cloud-data.md#items-list) documentation to understand the format of the `points` array.
 {% endhint %}
 
-#### Import externally stored data
+#### Import Externally Stored Data
 
 To import data stored in an external storage method, like AWS s3, make sure to use the storage methods Storage ID found on the _Storage_ tab of your RedBrick AI account.
 
-#### Import annotations
+#### Import Annotations
 
 If you want to upload annotations with your data, include the annotation information in the `points` object.
 
