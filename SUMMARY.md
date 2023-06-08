@@ -18,8 +18,8 @@
 
 ## Projects
 
-* [Get started with a project](projects/get-started-with-a-project.md)
-* [How task assignment works](projects/how-task-assignment-works.md)
+* [Get Started with a Project](projects/get-started-with-a-project.md)
+* [Task Assignment](projects/task-assignment.md)
 * [Taxonomies](projects/taxonomies/README.md)
   * [Taxonomies V1](projects/taxonomies/taxonomies-v1.md)
 * [Consensus (Inter-Annotator Agreement)](projects/consensus-inter-annotator-agreement/README.md)
@@ -31,13 +31,13 @@
 ## Annotation
 
 * [Overview](annotation/overview.md)
-* [Creating, editing and deleting annotations](annotation/creating-editing-and-deleting-annotations.md)
+* [Creating, Editing and Deleting Annotations](annotation/creating-editing-and-deleting-annotations.md)
 * [Windowing, Thresholding, and more](annotation/windowing-thresholding-and-more.md)
 * [Layout & Multiple Volumes](annotation/layout-and-multiple-volumes/README.md)
   * [Custom Hanging Protocol](annotation/layout-and-multiple-volumes/custom-hanging-protocol.md)
   * [Multiple Modalities](annotation/layout-and-multiple-volumes/multiple-modalities.md)
   * [Intellisync](annotation/layout-and-multiple-volumes/intellisync.md)
-  * [Annotation mirroring](annotation/layout-and-multiple-volumes/annotation-mirroring.md)
+  * [Annotation Mirroring](annotation/layout-and-multiple-volumes/annotation-mirroring.md)
 * [Segmentation](annotation/segmentation/README.md)
   * [Segmentation Tools](annotation/segmentation/segmentation-tools.md)
   * [Instance vs. Semantic](annotation/segmentation/instance-vs.-semantic.md)
@@ -53,9 +53,9 @@
   * [Programmatic Label & Review](python-sdk/sdk-overview/programmatic-label-and-review.md)
   * [Assigning & Querying Tasks](python-sdk/sdk-overview/assigning-and-querying-tasks.md)
 * [CLI Overview](python-sdk/cli-overview/README.md)
-  * [Creating & cloning projects](python-sdk/cli-overview/creating-and-cloning-projects.md)
-  * [Exporting tasks](python-sdk/cli-overview/exporting-tasks.md)
-  * [Import data & annotations](python-sdk/cli-overview/import-data-and-annotations.md)
+  * [Creating & Cloning Projects](python-sdk/cli-overview/creating-and-cloning-projects.md)
+  * [Exporting Tasks](python-sdk/cli-overview/exporting-tasks.md)
+  * [Import Data & Annotations](python-sdk/cli-overview/import-data-and-annotations.md)
 * [Format Reference](python-sdk/reference/README.md)
   * [Export Annotation Format](python-sdk/reference/export-annotation-format.md)
   * [TaxonomyObject](python-sdk/reference/taxonomyobject.md)
