@@ -69,7 +69,7 @@ Also, when preassigning Tasks, all emails must be associated with an existing Pr
 
 #### Assign Tasks using the SDK
 
-[Please visit our SDK documentation](broken-reference) for an overview of how to assign Tasks programmatically.&#x20;
+Please visit our [SDK documentation](https://docs.redbrickai.com/python-sdk/sdk-overview/assigning-and-querying-tasks) for an overview of how to assign Tasks programmatically.&#x20;
 
 {% embed url="https://www.loom.com/share/2c71c7fd4f0c49ef8d34f2b9847b30c0" %}
 
@@ -137,5 +137,5 @@ project.labeling.update_tasks_priority(
 ```
 
 {% hint style="info" %}
-Fun Fact: for the truly brave, our Prioritization API supports up to the billionth place for floats.
+For the truly brave, our Prioritization API supports up to the billionth place for floats.
 {% endhint %}

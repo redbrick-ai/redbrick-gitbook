@@ -47,7 +47,6 @@ The `items` entry enumerates the file paths referencing your data in your cloud 
 * [AWS S3 Items Path](../configuring-external-storage/configuring-aws-s3.md#items-path)
 * [Azure Blob Items Path](configuring-azure-blob.md#items-path)
 * [GCS Items Path](../configuring-external-storage/configuring-gcs.md#items-path)
-* Public Storage Items Path
 {% endhint %}
 
 

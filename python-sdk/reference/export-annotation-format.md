@@ -262,11 +262,11 @@ Here are the definition for some common entries present in some/all label entrie
 
 #### `category: string | string[]`
 
-The class of your annotations. This value is part of your [project taxonomy](broken-reference). If the class is nested, `category` will be `string[]`.
+The class of your annotations. This value is part of your Project [Taxonomy](../../projects/taxonomies/). If the class is nested, `category` will be `string[]`.
 
 #### `attributes: {[attributeName: string]: string | boolean}`
 
-Each annotation can have accompanying attributes, that are also defined in your [project taxonomy](broken-reference). `attributeName` is defined when creating your taxonomy.&#x20;
+Each annotation can have accompanying attributes, that are also defined in your Project [Taxonomy](../../projects/taxonomies/). `attributeName` is defined when creating your Taxonomy.&#x20;
 
 #### `VoxelPoint: {i: number, j: number, k: number}`
 
@@ -376,7 +376,7 @@ When exporting consensus annotations, the Tasks JSON file and the `segmentations
 
 ### Segmentations
 
-Each task folder will contain all the users' segmentation files. The segmentation files can be uniquely identified by the index "\_1" at the end of the file. You will be able to map between the users email and the index in [tasks.json](export-annotation-format.md#undefined).&#x20;
+Each task folder will contain all the users' segmentation files. The segmentation files can be uniquely identified by the index "\_1" at the end of the file. You will be able to map between the users email and the index in `tasks.json` file.&#x20;
 
 ```
 project_id/
@@ -418,7 +418,7 @@ type ConsensusTask = {
 }
 ```
 
-### ConsensusTask
+### The `ConsensusTask` Object
 
 The consensus task object contains information about the consensus annotations for this task. There will be a single entry for every annotator who annotated this task. For example, if 3 users annotated each task in your project, the length of the `consensusTasks` array will be 3.
 

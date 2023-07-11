@@ -108,7 +108,7 @@ You can configure your S3 bucket to give RedBrick AI access to particular data p
 
 ## Items Path
 
-Once you've created your AWS Storage method on RedBrick AI, you have to upload an [items list](broken-reference) to your projects to import specific datapoints. Please have a look at the [items list](broken-reference) documentation for a overview of the format for the JSON file.&#x20;
+Once you've created your AWS Storage method on RedBrick AI, you have to upload an items list to your projects to import specific datapoints. Please have a look at the [items list documentation](../import-cloud-data/creating-an-items-list.md) for a overview of the format for the JSON file.&#x20;
 
 For data stored in an AWS s3 bucket, the `items` path needs to be formatted as follows:&#x20;
 

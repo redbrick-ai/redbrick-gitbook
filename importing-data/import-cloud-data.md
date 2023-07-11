@@ -7,7 +7,7 @@ RedBrick AI supports integration with a range of cloud providers, allowing you t
 While the steps and configurations required for uploading data from cloud storage vary depending on your provider, the overall procedure remains the same:&#x20;
 
 1. [Configure your cloud storage](import-cloud-data/creating-an-items-list.md) - AWS s3, Google Cloud Storage, Azure Blob Storage
-2. [Create and upload an Items List ](import-cloud-data.md#create-and-upload-an-items-list) - your Items List communicates the location of your data in your cloud storage to RedBrick. After creating create an Items List, you can upload it via the [CLI](broken-reference) or the RedBrick web application.
+2. Create and upload an Items List (see below) - your Items List communicates the location of your data in your cloud storage to RedBrick. After creating create an Items List, you can upload it via the [CLI](../python-sdk/cli-overview/) or the RedBrick web application.
 
 ## Items List
 
@@ -26,8 +26,8 @@ Please reference the relevant documentation to verify the format of the `items` 
 
 * [AWS s3 items path](configuring-external-storage/configuring-aws-s3.md#items-path)
 * [Azure Blob items path](import-cloud-data/configuring-azure-blob.md#items-path)
-* [Google Cloud Storage items path](broken-reference)
-* [Public Storage items path](broken-reference)
+* [Google Cloud Storage items path](https://docs.redbrickai.com/importing-data/import-cloud-data/configuring-gcs#items-path)
+* [Public Storage items path](https://docs.redbrickai.com/importing-data/import-cloud-data/creating-an-items-list#example-items-path)
 {% endhint %}
 
 * [AWS S3 Buckets](configuring-external-storage/configuring-aws-s3.md)

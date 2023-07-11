@@ -36,11 +36,11 @@ Individual NIfTI files are uploaded as separate tasks. If you’d like to group 
 
 ### Image 2D
 
-Individual 2D images are uploaded as individual tasks. If you’d like to create a study task with 2D images, please [use your external storage](import-cloud-data.md) or [upload data using the CLI](broken-reference).
+Individual 2D images are uploaded as individual tasks. If you’d like to create a study task with 2D images, please [use your external storage](import-cloud-data.md) or [upload data using the CLI](../python-sdk/cli-overview/).
 
 ### Video Files
 
-Individual 2D videos are uploaded as individual tasks. If you’d like to create a study task with 2D videos, please [use your external storage](import-cloud-data.md) or [upload data using the CLI](broken-reference).
+Individual 2D videos are uploaded as individual tasks. If you’d like to create a study task with 2D videos, please [use your external storage](import-cloud-data.md) or [upload data using the CLI](../python-sdk/cli-overview/).
 
 ### Video Frames
 

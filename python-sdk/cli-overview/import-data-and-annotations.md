@@ -1,8 +1,8 @@
-# Import data & annotations
+# Import Data & Annotations
 
 You can easily import large amounts of data from the command line interface. Before following this guide, make sure to [set up credentials for the CLI](./).
 
-### Importing locally stored data
+### Importing Locally Stored Data
 
 Make sure your data is stored within the correct folder structure as [defined in our documentation](../../importing-data/direct-data-upload.md). You can only upload a single data type in one upload operation - see the [supported file types here](../../importing-data/direct-data-upload.md).
 
@@ -40,9 +40,9 @@ Prepare an [Items List](../../importing-data/import-cloud-data.md#items-list) co
 $ redbrick upload items.json --storage STORAGEID # replace STORAGEID with your Storage ID
 ```
 
-## Import annotations
+## Import Annotations
 
-To import annotations with your data, you must create an [Items List](broken-reference) that contains annotation information in the [annotation format](../reference/export-annotation-format.md).
+To import annotations with your data, you must create an [Items List](../../importing-data/import-cloud-data/creating-an-items-list.md) that contains annotation information in the [annotation format](../reference/export-annotation-format.md).
 
 {% hint style="warning" %}
 Please note that you can only import an Items File containing annotations using the SDK & CLI. We do not support importing JSON Items Files containing segmentations, through the UI.
