@@ -52,14 +52,14 @@ When you finish your contour, you must convert it to a pixel mask. This process 
 
 #### Smart Contouring
 
-Our Smart Contour Tool automatically draws a contour around a region of interest. To use it, while the Contour Tool is selected, press `alt/option` and hover near the boundary of an object. Click to confirm the automatic contour.&#x20;
+Our Smart Contour Tool automatically draws a contour around a region of interest. To use it, while the Contour Tool is selected, press `ctrl+alt/option` and hover near the boundary of an object. Click to confirm the automatic contour.&#x20;
 
 For bumpy boundaries, you can attempt to smooth out the contour by holding and dragging, adjust the distance you drag to make the contour less or more smooth.
 
 {% embed url="https://www.loom.com/share/63a8f0e45b934b2ab4d9cb3127e4c6b1" %}
 
 {% hint style="warning" %}
-In the video above, the hotkey is referenced as "Command or Control" but the correct key is "Alt or Option"
+In the video above, the hotkey is referenced as "Command or Control" but the correct key is `ctrl+alt/option`
 {% endhint %}
 
 ## Hole Filling&#x20;
