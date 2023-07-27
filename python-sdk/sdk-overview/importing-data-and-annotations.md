@@ -44,7 +44,7 @@ points = [
         "series": [
             {
                 "items": "path/to/data.nii",
-                "segmentation": "path/to/segmentation.nii",
+                "segmentations": "path/to/segmentation.nii",
                 "segmentMap": {1: "category-1", 2: "category-2"},
             }
         ],
