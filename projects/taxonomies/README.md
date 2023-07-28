@@ -129,14 +129,14 @@ The above Taxonomy will be nested in the Annotation Tool as well. Tiers can also
 RedBrick AI allows users to upload custom HTML tooltips to any Object Label, Study-Level Classification, Series-Level, or Instance-Level Classification. For larger, more complex Taxonomies, these tooltips can be a great form of input for annotators or serve as a record for any internal standards that may be associated with the annotation itself.
 
 {% hint style="info" %}
-All HTML elements can be included within the `hints:[]` attribute, but images must be inserted using \<img src> and a relevant link.
+All HTML elements can be included within the `hints: string` attribute, but images must be inserted using `<img src>` and a relevant link.
 {% endhint %}
 
 {% hint style="warning" %}
 For security reasons, we do not allow scripts to be executed within HTML Tooltips.
 {% endhint %}
 
-You can use the `hints:[]` attribute to insert a string of HTML that will display in a tooltip next to an annotation upon hover. Please see the following code for an example of an Object Label with an HTML tooltip.
+You can use the `hints: string` attribute to insert a string of HTML that will display in a tooltip next to an annotation upon hover. Please see the following code for an example of an Object Label with an HTML tooltip.
 
 ```python
 object_types=
