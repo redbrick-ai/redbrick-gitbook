@@ -7,11 +7,7 @@ You can use the SDK to export your annotations using a Python script. The CLI al
 Annotations are exported in two ways:&#x20;
 
 1. The `export_tasks` function **returns a Python object** containing important meta-data information and any vector annotations (measurements, landmarks, etc.). Please see the [format of the object here](../reference/).&#x20;
-2. Segmentation data is written to your disk in the NIfTI format. Segmentation data can also be exported in PNG format. Please see the [folder structure here](../reference/).&#x20;
-
-{% hint style="success" %}
-Please view the detailed [`export_tasks` reference here](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.export\_tasks).&#x20;
-{% endhint %}
+2. Segmentation data is written to your disk **in NIfTI format**. Segmentation data can also be exported in PNG by manipulating the parameters of the `export_tasks` function. Please view the detailed [`export_tasks` reference here](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.export\_tasks).&#x20;
 
 ### Code Examples
 
