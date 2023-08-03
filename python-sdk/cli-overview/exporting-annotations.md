@@ -18,6 +18,10 @@ All segmentation files are exported in **NIfTI-1 format**. Please see our [forma
 
 ### How to Export Annotations to a Local Directory using the CLI
 
+{% hint style="info" %}
+You can also find all of these steps, as well as pre-configured CLI commands, inside the "Export Labels" section of your Project Settings
+{% endhint %}
+
 To export your data, first ensure that your [credentials file has been properly configured](https://docs.redbrickai.com/python-sdk/cli-overview) and you have created a [local project directory](creating-and-cloning-projects.md).&#x20;
 
 Next, navigate to the newly created Project directory.

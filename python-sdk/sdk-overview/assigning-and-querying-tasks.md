@@ -19,7 +19,7 @@ specific_task = project.list_tasks(task_name="...") # fetches specific task by n
 
 ## Assign Tasks to a User
 
-Use `assign_task` when you already have the `task_id` you want to assign to a particular user. If you don’t have the `task_id`, you can query all the Tasks using [`list_tasks`](exporting-tasks.md#export-all-tasks) or query tasks assigned to a particular user/unassigned tasks using [`list_tasks(user_id="...")`](assigning-and-querying-tasks.md#retrieve-queued-tasks).
+Use `assign_task` when you already have the `task_id` you want to assign to a particular user. If you don’t have the `task_id`, you can query all the Tasks using [`list_tasks`](exporting-annotations.md#export-all-tasks) or query tasks assigned to a particular user/unassigned tasks using [`list_tasks(user_id="...")`](assigning-and-querying-tasks.md#retrieve-queued-tasks).
 
 #### Assign to a Specific User
 
