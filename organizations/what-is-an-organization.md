@@ -1,6 +1,31 @@
 # Organization and Project Roles
 
-Everything you do on RedBrick AI will be contained within your **Organization**, including all of your  team members, projects, annotations, etc.&#x20;
+### Overview
+
+Your **Organization** is a unique structure built for use by you and your team.
+
+All of the work you do on RedBrick AI and any resources you use will be housed within your Organization, including:
+
+* your team members;
+* your Taxonomies;
+* your Storage Methods;
+* your Projects;
+* and more!
+
+In RedBrick AI, a **Project** is a workspace to which you can upload data and inside of which you perform annotation work within a pipeline defined by you.&#x20;
+
+Within a Project, you can:
+
+* upload images, volumes, and segmentation files;
+* [assign work to your labelers and reviewers](https://docs.redbrickai.com/projects/task-assignment) on a Task level;
+* perform and review annotation work;
+* define [Project-level permissions](what-is-an-organization.md#project-level-roles) for labelers, reviewers, administrators, etc.;
+* [invite specific members of your team](what-is-an-organization.md#inviting-members) and regulate their access to various Stages;
+* view a range of statistics on the quality of your labelers' work, time spent;
+* configure [custom toolkits](https://docs.redbrickai.com/annotation/layout-and-multiple-volumes/custom-hanging-protocol) and [Project-level settings](https://docs.redbrickai.com/projects/consensus-inter-annotator-agreement) specific to your use case;
+* and much, much more!
+
+While all of your team members have to be invited to your Organization in order for them to access RedBrick AI, you can easily [configure their permissions](what-is-an-organization.md#organization-level-roles) based on their Roles.
 
 ### Roles
 
@@ -10,7 +35,7 @@ RedBrick AI offers role-based access control at two levels - the **Organization 
 
 #### Organization-level Roles
 
-Each Organization has a single **Org Owner**, and there is no limit to the number of **Org Admins** and **Org Members** available.
+While each Organization can only have a single **Org Owner**, there is no limit to the number of **Org Admins** and **Org Members** an Organization can have.
 
 <table data-header-hidden><thead><tr><th width="297">Role</th><th>Permissions</th></tr></thead><tbody><tr><td>Org Owner</td><td><strong>Organization Level:</strong> Has access to all assets within an Organization; has the ability to create, edit, and delete assets, including the Organization itself. <br><br><strong>Project Level:</strong> Org Owners are automatically added to all Projects as Project Admins (see below).</td></tr><tr><td>Org Admin</td><td><strong>Organization Level:</strong> Has access to all assets within an Organization; has the ability to create, edit, and delete assets, but not the Organization itself. <br><br><strong>Project Level:</strong> Org Admins are automatically added to all Projects as Project Admins (see below).</td></tr><tr><td>Org Member</td><td><strong>Organization Level:</strong> cannot create or edit resources at the organizational level. <br><br><strong>Project Level:</strong> Org Members are <strong>not</strong> automatically added to any Projects, and <strong>must be invited</strong> to a Project by a Project Admin (see below).</td></tr></tbody></table>
 
@@ -24,7 +49,15 @@ Each Organization has a single **Org Owner**, and there is no limit to the numbe
 * **Internal Reviewers** are often first added to an Organization as Org Members and then added to relevant Projects as Project Admins, which gives them Project-wide Admin access.
 * **External Reviewers** are often first added to an Organization as Org Members, added to relevant Projects as Project Members, and given access to any relevant Review Stages by a Project Admin.
 
+{% hint style="info" %}
+If you would like to change your Organization's Org Owner, please reach out to our support team at support@redbrickai.com.&#x20;
+{% endhint %}
+
 ### Inviting Members
+
+{% hint style="info" %}
+The following instructions do not apply to Organizations who have implemented [SAML SSO](broken-reference).&#x20;
+{% endhint %}
 
 You can view all the current members of your Organization inside the **Team Tab** on the left sidebar.&#x20;
 
