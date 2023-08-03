@@ -15,7 +15,7 @@ project_id/
 └── tasks.json
 ```
 
-## Segmentations
+## Segmentations Directory
 
 The segmentation directory will contain a single sub-directory for each task in your export. The sub-directories will be named after the task [`name`](export-annotation-format.md#name-string). A single task (depending on whether it was single series or multi-series) can have one or more segmentations.
 
@@ -312,9 +312,39 @@ If true, the annotation is the last annotation for a particular video track segm
 
 A list of file paths of segmentation files for this series. Either a single `.nii` file, or multiple `.nii` files containing different instances.
 
-#### **`segmentMap?: { [instanceId: number]: { category: string | string[]; attributes?: Attributes }};`**
+**`segmentMap?: { [instanceId: number]: { category: string | string[]; attributes?: Attributes }};`**
 
-A mapping between segmentation instance id, your taxonomy category name, and any accompanying attributes. The mapping will apply only to the current series, and instance ids must be unique across all series in a task - this is useful for instance segmentation.&#x20;
+A mapping between a segmentation's instance ID, your Taxonomy category name, and any accompanying attributes. The mapping will apply only to the current series, and instance IDs must be unique across all series in a task (this is useful for instance segmentation).
+
+Please note that the `segmentMap`'s instanceId is generated **incrementally based on the order in which annotations were created by the labeler**. You can find an example JSON output below.&#x20;
+
+```json
+"items": ["image-file.ima",],
+"segmentations": "./path/to/segmentation/file.nii.gz",
+"segmentMap": {
+  "1": {
+    // This is the first annotation the labeler created
+    "category": "Vertebral Body"
+  },
+  "2": {
+    // This is the second annotation the labeler created
+    "category": "Vertebral Body"
+  },
+  "3": {
+    // This is the third annotation the labeler created
+    "category": "Vertebral Body"
+  },
+  "4": {
+    // This is the fourth annotation the labeler created
+    "category": "Spinal Canal Mass"
+  },
+  "5": {
+    // This is the fifth annotation the labeler created
+    "category": "Disc Pathology"
+  }
+},
+
+```
 
 ### BoundingBox
 
