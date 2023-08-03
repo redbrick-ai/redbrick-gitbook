@@ -54,7 +54,7 @@
   * [Assigning & Querying Tasks](python-sdk/sdk-overview/assigning-and-querying-tasks.md)
 * [CLI Overview](python-sdk/cli-overview/README.md)
   * [Creating & Cloning Projects](python-sdk/cli-overview/creating-and-cloning-projects.md)
-  * [Exporting Tasks](python-sdk/cli-overview/exporting-tasks.md)
+  * [Exporting Annotations](python-sdk/cli-overview/exporting-annotations.md)
   * [Import Data & Annotations](python-sdk/cli-overview/import-data-and-annotations.md)
 * [Format Reference](python-sdk/reference/README.md)
   * [Export Annotation Format](python-sdk/reference/export-annotation-format.md)
