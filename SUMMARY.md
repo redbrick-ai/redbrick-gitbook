@@ -6,7 +6,7 @@
 
 * [Organization and Project Roles](organizations/what-is-an-organization.md)
 * [Inviting Your Team](organizations/inviting-your-team/README.md)
-  * [SAML SSO](organizations/inviting-your-team/saml-sso.md)
+  * [Single Sign-on](organizations/inviting-your-team/single-sign-on.md)
 
 ## Importing Data
 

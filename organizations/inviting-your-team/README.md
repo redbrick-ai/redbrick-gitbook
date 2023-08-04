@@ -1,7 +1,7 @@
 # Inviting Your Team
 
 {% hint style="info" %}
-The following instructions do not apply to Organizations who have implemented [SAML SSO](saml-sso.md).
+The following instructions do not apply to Organizations who have implemented [SSO](single-sign-on.md).
 {% endhint %}
 
 You can view all the current members of your Organization inside the **Team Tab** on the left sidebar.&#x20;
