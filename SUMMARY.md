@@ -5,6 +5,8 @@
 ## Team & Organization <a href="#organizations" id="organizations"></a>
 
 * [Organization and Project Roles](organizations/what-is-an-organization.md)
+* [Inviting Your Team](organizations/inviting-your-team/README.md)
+  * [SAML SSO](organizations/inviting-your-team/saml-sso.md)
 
 ## Importing Data
 
