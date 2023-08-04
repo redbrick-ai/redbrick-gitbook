@@ -32,4 +32,4 @@ Assigning a Project Member to a particular Stage restricts their access to **onl
 
 Please see the video below for a visual demonstration of how to invite a Project Member to a Project and limit their access to a specific Stage. &#x20;
 
-<figure><img src="../../.gitbook/assets/inviting-project-member.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/invite-project-member-v2.gif" alt=""><figcaption></figcaption></figure>
