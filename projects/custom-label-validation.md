@@ -18,7 +18,7 @@ By default, all projects have a custom check to warn annotators when they submit
 
 <figure><img src="../.gitbook/assets/qa.redbrickdevteam.com_943c97cd-58b1-4794-84d0-8b00d26f0c84_projects_b4b15a0e-f26d-4f8b-80a5-4c39c6a38aac_settings (1).png" alt=""><figcaption><p>Custom label validation in settings</p></figcaption></figure>
 
-### Prevent submissions with errors
+### Prevent Submissions with Errors
 
 By default, annotators will just receive the error messages as a warning, and they will still be able to submit the task anyway. To prevent the annotators from submitting with any errors present, toggle the _Prevent submission with errors_ switch.
 
@@ -55,6 +55,8 @@ interface Label {
   attributes: LabelAttribute[];
   labelType: TaskType;
   numFramesLabeled?: number;
+  instanceTracks?: { [name: string]: FrameState[] };
+  seriesIndex?: number;
 }
 
 // Label attribute
@@ -69,6 +71,13 @@ interface Task {
     stageName: string; // i.e. "Label" or "Review_1"
     taskId: string;
     name: string; // Name given for the task at upload
+    metaData: Record <string, string>;
+    series: Series[];
+}
+
+interface Series {
+  name: string;
+  metaData: Record <string, string>;
 }
 
 // Task Type
@@ -103,7 +112,8 @@ To help you write a validation function with several checks, RedBrick AI has a c
 <pre class="language-typescript"><code class="lang-typescript"><strong>function(labels: Label[]): string[] {
 </strong>    assert(labels.length > 1, "You have not created any labels!")
     assert(labels.length &#x3C; 5, "You have created too many labels!")
-}</code></pre>
+}
+</code></pre>
 {% endtab %}
 
 {% tab title="Without assert()" %}
@@ -124,15 +134,15 @@ function(labels: Label[]): string[] {
 {% endtab %}
 {% endtabs %}
 
-## Validate your code
+## Validate Your Code
 
 Before saving your script, you should validate that your code executes as expected. Click on the validate button on the bottom right of the Settings page, and paste the JSON object copied from the labeling tool to see if your code executes as expected:
 
 <figure><img src="../.gitbook/assets/Screen Shot 2022-09-04 at 3.22.20 PM.png" alt=""><figcaption></figcaption></figure>
 
-## Displaying the validation on the labeling tool
+## Displaying the Validation on the Labeling Tool
 
-Your custom validation script will be regularly run. If any warnings are found, an indicator will appear on the right side of the bottom bar. If you have enabled _Prevent submissions with errors_ the indicator will be red.&#x20;
+Your custom validation script will be regularly run. If any warnings are found, an indicator will appear on the right side of the bottom bar. If you have enabled **Prevent submissions with errors**, the indicator will be red.&#x20;
 
 <figure><img src="../.gitbook/assets/qa.redbrickdevteam.com_943c97cd-58b1-4794-84d0-8b00d26f0c84_projects_64e8b5d9-81d3-4401-a49a-924d72916b0f_tool_Label_taskid=bd8aa035-e0fa-4388-ae66-6f12c7fe2a4c.png" alt=""><figcaption><p>Submission with errors is allowed</p></figcaption></figure>
 
@@ -140,7 +150,7 @@ Your custom validation script will be regularly run. If any warnings are found, 
 
 ## Example Scripts
 
-### Check if exact categories are present
+### Check if Exact Categories are Present
 
 For this example, let's say we are expecting each task to contain the following segmentations - _necrosis, enhancing tumor, non-enhacing tumor and edema._&#x20;
 
@@ -167,7 +177,7 @@ function(labels: Label[]): string[] {
 }
 ```
 
-### Validate only single instance of a category has been created
+### Validate Only Single Instance of a Category has been Created
 
 This script validates only a single instance of a particular category has been created. If you're expecting semantic segmentation labels, this check can ensure annotators don't accidentally create multiple instance segmentations.
 
@@ -181,5 +191,25 @@ function(labels: Label[]): string[] {
     labelsFiltered.length === 1,
     `Expected exactly 1 ${semanticCategory} annotation`
   );
+}
+```
+
+### Verify that Specific Segmentation Type is Visible on Specific Series
+
+The following script examines the Series Identifier and verifies whether a specific Segmentation type is present on it. In this example, you could use this script to be sure that labelers cannot finalize a Series that ends in "DWI" (a common naming convention for DWI images) without including an "Infarct" segmentation on the Series.
+
+More broadly speaking, this script is an example of the extensive functionality available when combining the `label`, `task`, and `series` objects.
+
+```javascript
+function (task: Task, labels: Label[]): string[]  {
+  assert(labels.length > 0, "You haven't created any labels! Are you sure you want to submit?");
+  for (let label of labels) {
+    if (label.category[0] === "Infarct") {
+      assert(
+        task.series[label.seriesIndex].name.startsWith("DWI_"),
+        "Segmentation 'Infarct' is allowed only on 'DWI' images"
+      );
+    }
+  }
 }
 ```

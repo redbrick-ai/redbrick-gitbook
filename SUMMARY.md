@@ -26,7 +26,7 @@
   * [Taxonomies V1](projects/taxonomies/taxonomies-v1.md)
 * [Consensus (Inter-Annotator Agreement)](projects/consensus-inter-annotator-agreement/README.md)
   * [Agreement calculation](projects/consensus-inter-annotator-agreement/agreement-calculation.md)
-* [Custom label validation](projects/custom-label-validation.md)
+* [Custom Label Validation](projects/custom-label-validation.md)
 * [Labeler Evaluation](projects/labeler-evaluation.md)
 * [Raise Issue](projects/raise-issue.md)
 
