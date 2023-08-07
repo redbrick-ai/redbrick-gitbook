@@ -162,4 +162,9 @@ Processing times may increase when interpolating across large ranges. However, p
 Firewalls, ad blockers, privacy extensions, and any other browser extensions that block HTTP traffic are known to interfere with FAST.
 {% endhint %}
 
-\
+### Linear Pixel Interpolation
+
+In order to toggle linear pixel interpolation while annotating, click on the Command Bar (or use `CMD/CTRL+K`) and select "Toggle linear pixel interpolation".
+
+<figure><img src="../../.gitbook/assets/linear-pixel-interpolation.gif" alt=""><figcaption></figcaption></figure>
+

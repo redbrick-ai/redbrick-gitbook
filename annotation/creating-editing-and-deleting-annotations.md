@@ -104,3 +104,22 @@ Vibrant Mode allows you to temporarily highlight a particular instance. For exam
 #### Jump to Label
 
 The Jump to Label Action will change the current slice position to the closest slice position that contains a particular annotation. This is useful for revealing annotations on the canvas.&#x20;
+
+***
+
+## Annotation Version History
+
+RedBrick AI's Version History allows users to reference (and, if necessary, restore) previous versions of their annotations within the Annotation Tool.&#x20;
+
+To reference a previously saved set of annotations, expand the "Save" button by clicking on the chevron. The previous set of annotations will then display in the Editor, and two buttons will appear in the top right corner, allowing you to either return to the latest version of annotations or restore an older version.&#x20;
+
+Restoring an older set of annotations will both:
+
+1. Force a save of the most current set of annotations;
+2. Duplicate the older version of annotations and create a new version based on that duplicate.
+
+For example, let's say you (a reviewer) open a Task and see that the latest version of a labeler's annotations is **Version 5**, but you'd like to restore **Version 3**. Choosing to restore **Version 3** will immediately create a duplicate of that version, designate it as the most current version (in this case, **Version 6**), and display the labels in the Editor.
+
+&#x20;
+
+<figure><img src="../.gitbook/assets/version-history-restore-previous.gif" alt=""><figcaption></figcaption></figure>
