@@ -1,8 +1,8 @@
 # Exporting Annotations
 
-### Overview
+## Overview
 
-The RedBrick CLI allows you to do easy exports of your Project's annotations within [a local project directory](creating-and-cloning-projects.md).&#x20;
+The RedBrick CLI allows you to easily export your Project's annotations within [a local project directory](creating-and-cloning-projects.md).&#x20;
 
 Please note that the `export` function only fetches **newly created annotations** when run. It will not generate an annotation file for a Task if no annotation work has been completed and saved on said Task.&#x20;
 
@@ -11,12 +11,31 @@ For example, if you upload 100 images to your Project, annotate 80 of them and i
 If your team annotates 5 additional Tasks the next day and initiates an export, the CLI will only export annotations for the **5 newly annotated Tasks**, bringing the total number of annotation files in your local directory to **85**.
 
 {% hint style="success" %}
-All segmentation files are exported in **NIfTI-1 format**. Please see our [format reference](../reference/export-annotation-format.md) for more information on the format of the exported annotations.
+All segmentation files are exported in **NIfTI-1 format**. Please see our [format reference](../format-reference.md) for more information on the format of the exported annotations.
 {% endhint %}
 
+## Export Folder Structure
 
+RedBrick AI exports annotations in a JSON structure, accompanied by [NIfTI-1 masks](https://nifti.nimh.nih.gov/nifti-1/) for segmentations. All data will be exported within a folder named after your `project_id`, with the following structure:
 
-### How to Export Annotations to a Local Directory using the CLI
+```
+project_id/
+├── segmentations
+│   ├── study01
+│   │   └── series1.nii
+│   └── study02
+│       ├── series1.nii
+│       └── series2.nii
+└── tasks.json
+```
+
+### Segmentations Subdirectory
+
+The segmentation directory will contain a single sub-directory for each task in your export. The sub-directories will be named after the task [`name`](exporting-annotations.md#name-string). A single task (depending on whether it was single series or multi-series) can have one or more segmentations.
+
+The individual segmentation files will be in NIfTI-1 format and be [named after the user-defined series name](exporting-annotations.md#name-string-1). If no series name is provided on upload, RedBrick will assign a unique name. Corresponding meta-data ex. category names will be provided in [tasks.json](exporting-annotations.md#tasks-json).
+
+## How to Export Annotations to a Local Directory using the CLI
 
 {% hint style="info" %}
 You can also find all of these steps, as well as pre-configured CLI commands, inside the "Export Labels" section of your Project Settings
@@ -32,7 +51,7 @@ $ cd my-project
 
 Once inside your local project directory, you can initiate several types of exports. Please see some common examples below or use `redbrick export -h` to see a full list of export-related commands inside of the Terminal.
 
-#### Export Annotations for All Tasks
+### Export Annotations for All Tasks
 
 To export the latest state of all annotations for all Tasks (including those in Label and Review stages) run the following command.&#x20;
 
@@ -40,14 +59,14 @@ To export the latest state of all annotations for all Tasks (including those in 
 $ redbrick export
 ```
 
-#### Export Ground Truth Tasks Only
+### Export Ground Truth Tasks Only
 
 For exporting only those annotations associated with Tasks in the Ground Truth Stage.
 
 <pre class="language-bash"><code class="lang-bash"><strong>$ redbrick export groundtruth
 </strong></code></pre>
 
-#### Export Tasks and Clear Cache
+### Export Tasks and Clear Cache
 
 For clearing your local Redbrick cache and forcing a fresh download of all annotation files within a Project.
 
@@ -55,7 +74,7 @@ For clearing your local Redbrick cache and forcing a fresh download of all annot
 $ redbrick export --clear-cache
 ```
 
-#### Export Tasks with Images
+### Export Tasks with Images
 
 For downloading your Project's image and/or volume files along with any created annotations.&#x20;
 
@@ -63,7 +82,7 @@ For downloading your Project's image and/or volume files along with any created 
 $ redbrick export --with-images
 ```
 
-#### DICOM to NIfTI Conversion
+### DICOM to NIfTI Conversion
 
 If you initially uploaded DICOM images/volumes to RedBrick and would like to convert them to NIfTI upon export (ensuring that both your annotation files and images/volumes are in the same format), use the following command.
 
@@ -71,7 +90,7 @@ If you initially uploaded DICOM images/volumes to RedBrick and would like to con
 $ redbrick export --with-images --dicom-to-nifti
 ```
 
-#### Export Tasks from a Specific Stage
+### Export Tasks from a Specific Stage
 
 If you want to export tasks that are queued in a specific stage, for example, exporting all tasks queued in Review\_2, you can do so in the following way:
 

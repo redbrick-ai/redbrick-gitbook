@@ -42,7 +42,7 @@ $ redbrick upload items.json --storage STORAGEID # replace STORAGEID with your S
 
 ## Import Annotations
 
-To import annotations with your data, you must create an [Items List](../../importing-data/import-cloud-data/creating-an-items-list.md) that contains annotation information in the [annotation format](../reference/export-annotation-format.md).
+To import annotations with your data, you must create an [Items List](../../importing-data/import-cloud-data/creating-an-items-list.md) that contains annotation information in the [annotation format](../format-reference.md).
 
 {% hint style="warning" %}
 Please note that you can only import an Items File containing annotations using the SDK & CLI. We do not support importing JSON Items Files containing segmentations, through the UI.

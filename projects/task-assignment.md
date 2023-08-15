@@ -40,7 +40,7 @@ You can programmatically assign tasks using our SDK or prescribe the assignment 
 
 #### Prescribe Assignment on Upload
 
-You can use the [`preAssign`](../python-sdk/reference/export-annotation-format.md#preassign-stagename-string-string) field in the items file to assign a Task to a specific user(s) at each Stage.
+You can use the [`preAssign`](../python-sdk/format-reference.md#preassign-stagename-string-string) field in the items file to assign a Task to a specific user(s) at each Stage.
 
 For example, the snippet below will assign `study01` to `annotator@email.com` in the Label Stage. Once the annotation is complete, the Task will be queued in `Review_1` and `reviewer@email.com` will be assigned as the Reviewer.
 

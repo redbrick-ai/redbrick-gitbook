@@ -1,10 +1,12 @@
 # Creating an Items List
 
+## Overview
+
 An Items List is a JSON file that points the RedBrick AI platform to the data in your external storage and allows you to selectively import data points. The format of your Items List depends on both the type of cloud storage you have integrated with RedBrick AI and the type of data you are uploading.
 
 For solution-specific instructions regarding how to format your Items List with [AWS S3](../configuring-external-storage/configuring-aws-s3.md#items-path), [GCS](../configuring-external-storage/configuring-gcs.md#items-path), or [Azure Blob Storage](configuring-azure-blob.md#items-path), please refer to the corresponding configuration guide.
 
-It's important to note that each entry in your Items List **will be created as a separate task**, which can then be annotated as a single unit. You can find detailed explanations of each key in our [format reference](https://docs.redbrickai.com/python-sdk/reference/annotation-format#tasks-json).
+It's important to note that each entry in your Items List **will be created as a separate Task**, which can then be annotated as a single unit. You can find detailed explanations of each key in our [Format Reference](https://docs.redbrickai.com/python-sdk/reference/annotation-format#tasks-json).
 
 After creating your JSON Items List, you can upload it from RedBrick AI's Project Dashboard or by using the [SDK](../../python-sdk/sdk-overview/importing-data-and-annotations.md).
 
@@ -12,13 +14,13 @@ After creating your JSON Items List, you can upload it from RedBrick AI's Projec
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-06-08 at 12.53.17 PM.png" alt=""><figcaption><p>Select a Storage Method and upload your Items List</p></figcaption></figure>
 
-{% hint style="info" %}
+{% hint style="success" %}
 Please note that there is no need to create an Items List when using [Direct Upload](../direct-data-upload.md).
 {% endhint %}
 
 ###
 
-### Example Items Path
+### Example Items Paths
 
 The example below contains fields relevant to image-only uploads.
 
@@ -57,7 +59,7 @@ The `items` entry enumerates the file paths referencing your data in your cloud 
 
 {% tabs %}
 {% tab title="3D DICOM Study" %}
-This Items List will upload a single task containing two series.
+This Items List will upload a single Task containing two Series.
 
 ```javascript
 [
@@ -85,7 +87,7 @@ This Items List will upload a single task containing two series.
 {% endtab %}
 
 {% tab title="3D DICOM Series" %}
-This Items List will upload two tasks, each containing a single series.
+This Items List will upload two Tasks, each containing a single Series.
 
 ```javascript
 [
@@ -120,7 +122,7 @@ Please note that`items` must be a single string for NIfTI uploads.&#x20;
 
 {% tabs %}
 {% tab title="NIfTI Series" %}
-This Items List will upload a single task containing two series.
+This Items List will upload a single Task containing two Series.
 
 <pre class="language-javascript"><code class="lang-javascript">[
 <strong>  {
@@ -139,7 +141,7 @@ This Items List will upload a single task containing two series.
 {% endtab %}
 
 {% tab title="NIfTI Study" %}
-This Items List will upload two tasks, each containing one series.
+This Items List will upload two Tasks, each containing one Series.
 
 ```javascript
 [
@@ -171,7 +173,7 @@ s
 
 {% tabs %}
 {% tab title="2D Image Study" %}
-This Items List will upload a single task containing two images.
+This Items List will upload a single Task containing two images.
 
 ```javascript
 [
@@ -191,7 +193,7 @@ This Items List will upload a single task containing two images.
 {% endtab %}
 
 {% tab title="2D Image Series" %}
-This Items List will upload two tasks, each containing a single image.
+This Items List will upload two Tasks, each containing a single image.
 
 ```javascript
 [
@@ -226,7 +228,7 @@ The frames must be in the correct order in the `items` array.
 
 {% tabs %}
 {% tab title="Video Frames Study" %}
-This Items List will upload a single task with two videos, where each video contains three frames.
+This Items List will upload a single Task with two videos, where each video contains three frames.
 
 ```javascript
 [
@@ -254,7 +256,7 @@ This Items List will upload a single task with two videos, where each video cont
 {% endtab %}
 
 {% tab title="Video Frames Series" %}
-This Items List will upload two tasks, each containing a single video with three frames.
+This Items List will upload two Tasks, each containing a single video with three frames.
 
 ```javascript
 [
@@ -285,6 +287,8 @@ In some use cases, you can rely on RedBrick AI to split your Study into a list o
 
 You can upload a single Series or multiple Series per task using the simplified Study-Level format.
 
+Please note that any Tasks uploaded using this format will only be automatically split **after** a user opens the Task in the Annotation Tool.&#x20;
+
 ```javascript
 type Items = Task[];
 
@@ -298,10 +302,6 @@ interface Task {
   items: String[]
 }
 ```
-
-{% hint style="info" %}
-This format is the same as the Legacy Items List format (pre-July 2022)
-{% endhint %}
 
 {% tabs %}
 {% tab title="DICOM" %}
@@ -339,7 +339,7 @@ The Items List below will create a single task containing exactly two series. Re
 {% endtab %}
 {% endtabs %}
 
-{% hint style="warning" %}
-Please note that any tasks uploaded using this format will only be automatically split _**after**_ a user opens it in the labeling interface.&#x20;
+{% hint style="info" %}
+This format is the same as the Legacy Items List format (pre-July 2022)
 {% endhint %}
 
