@@ -32,6 +32,8 @@ The segmentation directory will contain a single sub-directory for each task in 
 
 The individual segmentation files will be in NIfTI-1 format and be [named after the user-defined series name](exporting-annotations.md#name-string-1). If no series name is provided on upload, RedBrick will assign a unique name. Corresponding meta-data ex. category names will be provided in [tasks.json](exporting-annotations.md#tasks-json).
 
+***
+
 ## Code Examples
 
 As always, you should first perform the [standard RedBrick AI SDK setup](./#initializing-the-redbrick-sdk-in-python) to create a Project object.
@@ -65,6 +67,8 @@ Export selected Tasks by specifying Task IDs.&#x20;
 ```python
 specific_annotations = project.export.export_tasks(task_id="...")
 ```
+
+***
 
 ## Generate an Audit Trail
 

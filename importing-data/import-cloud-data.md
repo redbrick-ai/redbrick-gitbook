@@ -7,6 +7,8 @@ While the steps and configurations required for uploading data from cloud storag
 1. [Configure your cloud storage](import-cloud-data/creating-an-items-list.md) - AWS s3, Google Cloud Storage, Azure Blob Storage
 2. Create and upload an [Items List](import-cloud-data.md#items-list) - your Items List communicates the location of your data in your cloud storage to RedBrick AI's platform.&#x20;
 
+***
+
 ## Configuring Cloud Storage
 
 RedBrick AI currently supports the following external storage methods:
@@ -27,6 +29,8 @@ If your Storage Method has been configured correctly, pasting a sample file path
 <figure><img src="../.gitbook/assets/Screenshot 2023-08-15 at 11.29.03 AM.png" alt=""><figcaption></figcaption></figure>
 
 Once your Storage Method has been integrated, you can move on to creating an Items List.
+
+***
 
 ## Items List
 

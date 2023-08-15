@@ -14,6 +14,8 @@ If your team annotates 5 additional Tasks the next day and initiates an export, 
 All segmentation files are exported in **NIfTI-1 format**. Please see our [format reference](../format-reference.md) for more information on the format of the exported annotations.
 {% endhint %}
 
+***
+
 ## Export Folder Structure
 
 RedBrick AI exports annotations in a JSON structure, accompanied by [NIfTI-1 masks](https://nifti.nimh.nih.gov/nifti-1/) for segmentations. All data will be exported within a folder named after your `project_id`, with the following structure:
@@ -35,7 +37,9 @@ The segmentation directory will contain a single sub-directory for each task in 
 
 The individual segmentation files will be in NIfTI-1 format and be [named after the user-defined series name](exporting-annotations.md#name-string-1). If no series name is provided on upload, RedBrick will assign a unique name. Corresponding meta-data ex. category names will be provided in [tasks.json](exporting-annotations.md#tasks-json).
 
-## How to Export Annotations to a Local Directory using the CLI
+***
+
+## Export Annotations to a Local Directory using the CLI
 
 {% hint style="info" %}
 You can also find all of these steps, as well as pre-configured CLI commands, inside the "Export Labels" section of your Project Settings
@@ -97,6 +101,8 @@ If you want to export tasks that are queued in a specific stage, for example, ex
 ```bash
 $ redbrick export --stage Review_2
 ```
+
+***
 
 ## Export an Audit Trail
 

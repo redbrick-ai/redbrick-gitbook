@@ -18,9 +18,9 @@ After creating your JSON Items List, you can upload it from RedBrick AI's Projec
 Please note that there is no need to create an Items List when using [Direct Upload](../direct-data-upload.md).
 {% endhint %}
 
-###
+***
 
-### Example Items Paths
+## Example Items Lists
 
 The example below contains fields relevant to image-only uploads.
 
@@ -44,14 +44,12 @@ interface Series {
 ```
 
 {% hint style="info" %}
-The `items` entry enumerates the file paths referencing your data in your cloud storage. Depending on the storage method, this file path may be relative to your bucket name or the root folder in your bucket. Please reference the relevant documentation to verify the format of the Items path for each of RedBrick AI’s supported storage methods:
+The `items` entry enumerates the file paths referencing your data in your cloud storage. Depending on the storage method, this file path may be relative to your bucket name or the root folder in your bucket. Please reference the relevant documentation to verify the format of the Items List for each of RedBrick AI’s supported storage methods:
 
-* [AWS S3 Items Path](../configuring-external-storage/configuring-aws-s3.md#items-path)
-* [Azure Blob Items Path](configuring-azure-blob.md#items-path)
-* [GCS Items Path](../configuring-external-storage/configuring-gcs.md#items-path)
+* [AWS S3 Items List](../configuring-external-storage/configuring-aws-s3.md#items-path)
+* [Azure Blob Items List](configuring-azure-blob.md#items-path)
+* [GCS Items List](../configuring-external-storage/configuring-gcs.md#items-path)
 {% endhint %}
-
-
 
 ### Example Item Lists by Format
 
@@ -280,6 +278,8 @@ This Items List will upload two Tasks, each containing a single video with three
 ```
 {% endtab %}
 {% endtabs %}
+
+***
 
 ## Automatically Split Study
 
