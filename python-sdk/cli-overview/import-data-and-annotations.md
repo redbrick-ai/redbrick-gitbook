@@ -11,28 +11,34 @@ $ redbrick upload path/to/data/ --type DICOM3D
 ```
 
 {% hint style="info" %}
-See all the [types in the CLI upload reference documentation](https://redbrick-sdk.readthedocs.io/en/stable/cli.html#Positional%20Arguments\_repeat8).
+You can see all of the available [types in the CLI upload reference documentation](https://redbrick-sdk.readthedocs.io/en/stable/cli.html#Positional%20Arguments\_repeat8).
 {% endhint %}
 
-#### Group images by study
+#### Group Images by Study
 
-To group your images by study (look [here for examples](../../importing-data/direct-data-upload.md)), do the following:&#x20;
+To group your images by study (see [here for examples](../../importing-data/direct-data-upload.md)), input the following:&#x20;
 
 ```bash
 $ redbrick upload path/to/data/ --as-study
 ```
 
-#### Upload video frames
+#### Upload Video Frames
 
-To upload a [video by uploading individual frames](../../importing-data/direct-data-upload.md#video-frames), do the following:
+To upload a [video by uploading individual frames](../../importing-data/direct-data-upload.md#video-frames), input the following:
 
 ```
 $ redbrick upload path/to/videoframes/ --as-frames --type VIDEOFRAMES
 ```
 
-### Importing externally stored data
+### Importing Externally Stored Data
 
-To import data stored externally, for example, in AWS s3, you must specify the storage ID (you can get your storage systems storage ID from the _Storage tab_ on the RedBrick AI platform).&#x20;
+To import data that is stored externally, (e.g. in an AWS s3 bucket), you must specify the storage ID. You can find your storage solution's unique Storage ID in the _Storage tab_ of the RedBrick AI platform.
+
+<div data-full-width="true">
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-08-18 at 2.59.17 PM.png" alt=""><figcaption><p>Click on the field in order to copy the value to your clipboard.</p></figcaption></figure>
+
+</div>
 
 Prepare an [Items List](../../importing-data/import-cloud-data.md#items-list) containing references to your externally stored files.
 
@@ -42,16 +48,16 @@ $ redbrick upload items.json --storage STORAGEID # replace STORAGEID with your S
 
 ## Import Annotations
 
-To import annotations with your data, you must create an [Items List](../../importing-data/import-cloud-data/creating-an-items-list.md) that contains annotation information in the [annotation format](../format-reference.md).
+To import annotations with your data, you must create an [Items List](../../importing-data/import-cloud-data/creating-an-items-list.md) that contains annotation information in the proper [annotation format](../format-reference.md).
 
 {% hint style="warning" %}
-Please note that you can only import an Items File containing annotations using the SDK & CLI. We do not support importing JSON Items Files containing segmentations, through the UI.
+Please note that you can only import an Items File that contains annotations **using the SDK & CLI**. The RedBrick AI UI **does not support** importing JSON Items Files that contain annotations.
 {% endhint %}
 
 {% hint style="info" %}
 The file paths within the Items List can point to locally stored data or data in your [external storage](../../importing-data/import-cloud-data/creating-an-items-list.md). \
 \
-If your image data is stored externally, make sure to provide the Storage ID with `--storage.`If your annotation files are stored externally, make sure to provide the Storage ID with `--label-storage.`
+If your image data is stored externally, be sure to provide the Storage ID with `--storage.`If your annotation files are stored externally, be sure to provide the Storage ID with `--label-storage.`
 {% endhint %}
 
 Here is a sample Items List that contains annotation information:&#x20;
@@ -121,30 +127,30 @@ Here is a sample Items List that contains annotation information:&#x20;
 ```
 {% endcode %}
 
-#### Import locally stored annotations with locally stored images
+#### Import Locally Stored Annotations with Locally Stored Images
 
 ```bash
 $ redbrick upload path/to/items.json # items.json must have local file paths.
 ```
 
-#### Import locally stored annotations with externally stored images
+#### Import Locally Stored Annotations with Externally Stored Images
 
-The following command will upload your annotation files (stored locally), and your image files (stored in `STORAGEID`):
+The following command will upload your (locally stored) annotation files and your image files (stored in `STORAGEID`):
 
 ```bash
 $ redbrick upload path/to/items.json --storage STORAGEID
 ```
 
-#### Import externally stored annotations and externally stored images
+#### Import Externally Stored Annotations and Externally Stored Images
 
-If you annotation files are also stored externally, you can run the following:&#x20;
+If your annotation files are also stored externally, you can run the following command:&#x20;
 
 ```
 $ redbrick upload path/to/items.json --storage STORAGEID --label-storage LABELSTORAGEID
 ```
 
-### GitHub example
+### GitHub Example
 
-You can follow along with this Jupyter notebook to upload the Brain Brats data along with the annotations.&#x20;
+You can follow along with this Jupyter notebook to upload the Brain Brats data along with its annotations.&#x20;
 
 {% embed url="https://github.com/redbrick-ai/redbrick-examples/blob/main/DataIO/study-data-segmentation/main.ipynb" %}
