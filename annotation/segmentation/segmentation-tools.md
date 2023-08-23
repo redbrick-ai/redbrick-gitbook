@@ -162,9 +162,21 @@ Processing times may increase when interpolating across large ranges. However, p
 Firewalls, ad blockers, privacy extensions, and any other browser extensions that block HTTP traffic are known to interfere with FAST.
 {% endhint %}
 
-### Linear Pixel Interpolation
+## Linear Pixel Interpolation
 
 In order to toggle linear pixel interpolation while annotating, click on the Command Bar (or use `CMD/CTRL+K`) and select "Toggle linear pixel interpolation".
 
 <figure><img src="../../.gitbook/assets/linear-pixel-interpolation.gif" alt=""><figcaption></figcaption></figure>
 
+## Tool Configuration
+
+Your labeler toolkit can be customized at the Project level by navigating to the **Tool Settings** page within your Project Settings.
+
+Simply utilize the checkboxes for each tool to:
+
+* set a custom default tool;
+* restrict/enable 2D and/or 3D annotation;
+* set a default mode (i.e. 2D or 3D);
+* enable/disable a Tool entirely;
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-08-23 at 3.44.13 PM.png" alt=""><figcaption></figcaption></figure>
