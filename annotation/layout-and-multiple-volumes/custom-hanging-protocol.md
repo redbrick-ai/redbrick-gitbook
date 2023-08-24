@@ -4,29 +4,57 @@ description: Write a script to dynamically arrange the viewports for your projec
 
 # Custom Hanging Protocol
 
-The Custom Hanging Protocol feature allows you to write a script that will programmatically define the annotation tool layout. This can save an annotator's time by pre-configuring the interface and layout in the desired way.
+The Custom Hanging Protocol feature allows you to write a script that will programmatically define the visual layout of your Annotation Tool **at the Project level**.&#x20;
 
-The script takes as input the available series for a particular task and returns the layout dimensions and list of views to display.
+Pre-configuring parameters such as Windowing settings, Thresholding settings, the number of viewports in a Layout Tab, which views display by default, etc., is both an easy way to save time for your annotators and makes for a much smoother overall annotation experience.
 
 {% embed url="https://www.loom.com/share/a5b5255cd1954bd590849a8e939c9b5f" %}
 
-## Writing Your Own Script
+## Script Usage Guide
 
-At present, you can control the following things:&#x20;
+This guide provides an overview of the available functions and types to help you effectively manage these settings. At present, you can control the following:&#x20;
 
-* The dimensions of the layout (`setDimensions`)
-* The contents of each viewport in the layout (`setViews`):
-  * REQUIRED: Which series to show (`seriesIndex`)
-  * REQUIRED: Which way to view the series (`plane`)
-  * Flip the view horizontally (`flippedHorizontally`)
-  * Flip the view vertically (`flipperVertically`)
-  * Activate intellisync (`synchronized`)
-  * If the view is maximimized (`expanded`)
-* The default windowing setting for each series (`setWindowing`)
-* The default threshold setting for each series (`setThresholding`)
-* The default configuration settings for the Annotation Tool (`setSegmentationSettings`)
+*   The dimensions of a Layout Tab (`setDimensions`):
 
-### Types
+    * **REQUIRED:** the number of columns in a Layout Tab (`numColumns`)
+    * **REQUIRED:** the number of rows in a Layout Tab (`numRows`)
+
+
+*   The contents of each viewport in a Layout Tab (`setViews`):
+
+    * **REQUIRED:** an array describing each viewport's content (`views`)
+    * **REQUIRED:** Which series to show (`seriesIndex`)
+    * **REQUIRED:** Which way to view the series (`plane`)
+    * Flip the view horizontally (`flippedHorizontally`)
+    * Flip the view vertically (`flippedVertically`)
+    * Activate Intellisync (`synchronized`)
+    * Maximize a single viewport in a Layout Tab (`expanded`)
+
+
+*   The default Windowing setting for each Series (`setWindowing`):
+
+    * **REQUIRED:** the number of the Series (`seriesIndex`)
+    * **REQUIRED:** the desired Windowing Level (`level`)
+    * **REQUIRED:** the desired Windowing Width (`width`)
+
+
+*   The default Thresholding setting for each Series (`setThresholding`):
+
+    * **REQUIRED:** the number of the Series (`seriesIndex`)
+    * **REQUIRED:** the lower limit of the Thresholding range (`min`)
+    * **REQUIRED:** the upper limit of the Thresholding range (`max`)
+
+
+* Create and configure a new Layout Tab in your Task (`nextTab`)\
+
+* Configuration settings for the Annotation Tool (`setSegmentationSettings`)\*&#x20;
+  * **(Note: this function has been replaced by the** [**Tool Settings**](../segmentation/segmentation-tools.md#tool-configuration) **page)**
+
+{% hint style="info" %}
+The Custom Hanging Protocol script takes the available Series for a particular Task as input and returns the layout dimensions and list of views to display.
+{% endhint %}
+
+### Custom Hanging Protocol Format Reference
 
 ```typescript
 function setViews(views: View[]) {
@@ -42,6 +70,10 @@ function setThresholding(seriesIndex: number, min: number, max: number) {
  // ...
 }
 
+function nextTab()
+
+
+// this function has been replaced by the Tool Settings page of Project Settings
 function setSegmentationSettings(
   [  
     { 
@@ -54,6 +86,8 @@ function setSegmentationSettings(
   ]
 );
 
+// When a user uploads a Task and enables Hanging Protocols, 
+// the hangingProtocol() function takes Series[] and the following parameters as input
 interface Series {
   seriesIndex: number;
   is2DImage: boolean;
@@ -69,7 +103,7 @@ interface View {
   flippedHorizontally?: boolean;
   flippedVertically?: boolean;
   synchronized?: boolean;
-  expanded?: boolean; // Only applicable to 1 view
+  expanded?: boolean; // Only applicable to a single view in a given Layout Tab
 }
 ```
 
@@ -106,9 +140,9 @@ function setSingleView(seriesIndex=0) {
 }
 ```
 
-#### Set Multi Series Layout
+#### Set Multi-Series Layout
 
-This layout is for setting each series in a study as a single viewport where it is being viewed in the imaging axis.
+This script sets each Series as a single viewport that is viewed on the imaging axis.
 
 ```javascript
 function setMultiSeries() {
@@ -124,7 +158,7 @@ function setMultiSeries() {
 }
 ```
 
-#### Set Multi Planar Reconstruction
+#### Set Multi-Planar Reconstruction
 
 ```javascript
 function setMPR(seriesIndex=0) {
@@ -154,11 +188,48 @@ function setMPR(seriesIndex=0) {
 }
 ```
 
+#### Set and Configure Multiple Layout Tabs
+
+The following script creates 2 Layout Tabs, each containing 2 Series.
+
+```javascript
+if (allSeries.length === 4) { // executes when there are 4 total Series in a Task
+   setDimensions(2, 1); // set 2x1 layout for Layout Tab 1
+   setViews( // adding the first and second image/volume to Layout Tab 1
+   [ 
+      {
+         seriesIndex: 0,
+         plane: 'SAGITTAL'
+      }, 
+      {
+         seriesIndex: 1,
+         plane: 'SAGITTAL'
+      }
+   ]
+);
+   nextTab(); // create and configure Layout Tab 2
+   setDimensions(2, 1); // set 2x1 layout for Layout Tab 2
+   setViews( // add third and fourth image/volume to Layout Tab 2
+   [ 
+      {
+         seriesIndex: 2,
+         plane: 'SAGITTAL'
+      }, 
+      {
+         seriesIndex: 3,
+         plane: 'SAGITTAL'
+      }
+   ]
+ )
+```
+
 ### Synchronize Views
 
-Hanging protocols can be used along side [intellisync.md](intellisync.md "mention")for ease of use when annotating scans in a study. This example is useful for a project where each task has 4 series from an MRI study: T1, T1CE, T2, and Flair weighted MR scans.
+Hanging protocols can be used along side [intellisync.md](intellisync.md "mention")for ease of use when annotating scans in a study.&#x20;
 
-Sample input data:
+For example, let's assume that we have uploaded a single Task containing 4 Series from an MRI study: T1, T1CE, T2, and Flair weighted MR scans.
+
+After we enable Hanging Protocols, the `hangingProtocol()` function will take the 4 Series as an input and parse them in the following way:
 
 ```javascript
 [
@@ -197,19 +268,20 @@ Sample input data:
 ]
 ```
 
-Sample script to sort the views, then display the imaging axis and activate Intellisync.
+We can then use the information that has been parsed by the `hangingProtocol()` function to generate a script that sorts our views, displays the imaging axis and activates Intellisync.
 
 ```javascript
 // sort series by Name
 let priorities = ['t1', 't1ce', 't2', 'flair'];
 allSeries.sort((a, b)=>priorities.indexOf(a.name.toLowerCase()) - priorities.indexOf(b.name.toLowerCase()));
 
+// display Series along the imaging axis
 let imagingAxis = allSeries[0].imagingAxis;
 
-// Filter out views that were imaged in a different axis
+// filter out views that were imaged in a different axis
 let eligibleSeries = allSeries.filter((series) => series.imagingAxis === imagingAxis);
 
-// Describe viewports
+// Configure viewports
 setViews(eligibleSeries.map((series) => {
   return {
     seriesIndex: series.seriesIndex,

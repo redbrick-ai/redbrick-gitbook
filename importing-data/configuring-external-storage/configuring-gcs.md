@@ -109,6 +109,10 @@ You will want to use the following CORS JSON configuration file:&#x20;
 ]
 ```
 
+{% hint style="success" %}
+If you're also storing your annotations in your GCS bucket, be sure to add "PUT" to your method configuration array (e.g. "`["GET", "PUT"]`").
+{% endhint %}
+
 ## Items Path
 
 Once you've created your Google Storage method on RedBrick AI, you have to upload an [items list](broken-reference) to your projects to import specific datapoints. Please have a look at the [items list](broken-reference) documentation for an overview of the format for the JSON file.&#x20;

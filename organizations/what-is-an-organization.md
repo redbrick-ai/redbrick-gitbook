@@ -25,7 +25,7 @@ Within a Project, you can:
 * configure [custom toolkits](https://docs.redbrickai.com/annotation/layout-and-multiple-volumes/custom-hanging-protocol) and [Project-level settings](https://docs.redbrickai.com/projects/consensus-inter-annotator-agreement) specific to your use case;
 * and much, much more!
 
-While all of your team members have to be invited to your Organization in order for them to access RedBrick AI, you can easily [configure their permissions](what-is-an-organization.md#organization-level-roles) based on their Roles.
+While all of your team members have to be invited to your Organization in order for them to access RedBrick AI, you can easily [configure their permissions](what-is-an-organization.md#common-role-configurations) based on their Roles.
 
 ## Roles
 
