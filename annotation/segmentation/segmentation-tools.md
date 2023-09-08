@@ -110,20 +110,11 @@ F.A.S.T. is powerful because of the way users can prompt the tool to generate an
 2. **Segmentation decoding**, which takes place in the browser in real time.
 
 {% hint style="info" %}
-**To enable F.A.S.T. for your Organization**, please do the following:&#x20;
+**To enable F.A.S.T. for your team**, please do the following:&#x20;
 
 1. Request access at https://redbrickai.com/fast.
-2. Add the following code snippet to the _Hanging Protocols_ script in your Project Settings. [See this video here](https://www.loom.com/share/60f5bf88d9b44a98a2183df748ac8e22)**.**
+2. Within a Project, navigate to the [Tool Settings page](segmentation-tools.md#tool-configuration) and enable F.A.S.T.
 {% endhint %}
-
-{% code lineNumbers="true" %}
-```javascript
-setSegmentationSettings([{
-    toolName: 'FAST',
-    enabled: true,
-}])
-```
-{% endcode %}
 
 ### Generating 2D Segmentations with F.A.S.T.
 
@@ -166,7 +157,7 @@ Firewalls, ad blockers, privacy extensions, and any other browser extensions tha
 
 In order to toggle linear pixel interpolation while annotating, click on the Command Bar (or use `CMD/CTRL+K`) and select "Toggle linear pixel interpolation".
 
-<figure><img src="../../.gitbook/assets/linear-pixel-interpolation.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/linear-pixel-interpolation.gif" alt=""><figcaption><p>Toggling linear pixel interpolation with an MRI scan of the spine</p></figcaption></figure>
 
 ## Tool Configuration
 
