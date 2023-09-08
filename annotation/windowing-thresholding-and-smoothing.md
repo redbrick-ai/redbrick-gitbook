@@ -1,10 +1,14 @@
-# Windowing, Thresholding, and more
+# Windowing, Thresholding, and Smoothing
 
-To help with visualizing your volumes and performing annotations, you can apply several _Filters_ to your volumes. The filters are available on the left side of the top bar - they are the first set of tools displayed.&#x20;
+To help with visualizing your volumes and performing annotations, you can apply several filters to your volumes. The filters are available on the left side of the top bar - they are the first set of tools displayed.&#x20;
 
 {% embed url="https://www.loom.com/share/da10d5c39a3c4a46bc9e3e510f5a8200" %}
 Filters
 {% endembed %}
+
+{% hint style="info" %}
+The Smoothing function can now be found within the Command Bar or by using the `SHIFT+S` hotkey.
+{% endhint %}
 
 ## Windowing
 
@@ -30,11 +34,14 @@ Toggle the preview in the threshold context panel to visualize your thresholded 
 
 ## Smoothing
 
-You can smooth your volumes to remove noise from the data and simplify segmentation tasks. Smoothing works well when used alongside thresholding or other segmentation tools like region growing.&#x20;
+You can smooth your volumes to remove noise from the data and simplify segmentation tasks. Smoothing works well when used alongside thresholding or other [Segmentation Tools](segmentation/segmentation-tools.md) such as [Region Growing](segmentation/segmentation-tools.md#region-growing).&#x20;
 
-Select the Smoothing filter from the top bar and enable/disable it from the context panel.&#x20;
+You can activate smoothing with the following steps or using the `SHIFT+S` hotkey:
+
+1. Open the Command Bar by clicking the icon in the bottom right hand corner or using `CMD/CTRL+K`;
+2. Enter "toggle image smoothing" into the search field;
+3. Click on "Toggle image smoothing" when it appears;
 
 {% hint style="warning" %}
-1. For large volumes, smoothing can take up to several minutes to compute and apply
-2. Smoothing will only be applied as long as the filter is selected on the top bar and the settings are visible in the context panel.
+For large volumes, smoothing can take up to several minutes to compute and apply!
 {% endhint %}
