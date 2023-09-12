@@ -11,3 +11,7 @@
 {% content-ref url="overlapping-segmentations.md" %}
 [overlapping-segmentations.md](overlapping-segmentations.md)
 {% endcontent-ref %}
+
+{% content-ref url="3d-slicer-integration.md" %}
+[3d-slicer-integration.md](3d-slicer-integration.md)
+{% endcontent-ref %}
