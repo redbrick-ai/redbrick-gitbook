@@ -15,3 +15,7 @@
 {% content-ref url="3d-slicer-integration.md" %}
 [3d-slicer-integration.md](3d-slicer-integration.md)
 {% endcontent-ref %}
+
+{% content-ref url="reference-standards.md" %}
+[reference-standards.md](reference-standards.md)
+{% endcontent-ref %}
