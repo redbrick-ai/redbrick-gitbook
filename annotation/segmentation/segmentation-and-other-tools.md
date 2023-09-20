@@ -70,7 +70,7 @@ For bumpy boundaries, you can attempt to smooth out the contour by holding and d
 Contour Tool Overview
 {% endembed %}
 
-## Hole Filling&#x20;
+### Hole Filling&#x20;
 
 The Hole Filling Tool iteratively fills small holes in your segmentation. Click anywhere on the canvas to start filling in small holes.
 
@@ -86,11 +86,11 @@ Hole Filling Overview
 For large volumes, 3D hole filling can be very computationally expensive. If your data has more than 800 slices, we recommend only using 2D hole filling.
 {% endhint %}
 
-## Paint Bucket
+### Paint Bucket
 
 The Paint Bucket is helpful for closing single large holes. With the paint bucket tool selected, click in any large hole to fill it automatically.&#x20;
 
-## Island Removal
+### Island Removal
 
 Island Removal deletes islands of segmentations. Simply click on any "island" segmentation to remove it. Conversely, you can enable **Keep Currently Selected** in the right hand Context Panel to remove all of the islands **except** the one you clicked on.
 
@@ -98,11 +98,11 @@ Island Removal deletes islands of segmentations. Simply click on any "island" se
 Island Tool Overview
 {% endembed %}
 
-## Merge Tool
+### Merge Tool
 
 The Merge Tool allows you to transform one type of segmentation island into another through a "merging" process. With Segmentation X selected, enable the Merge Tool and click on an island of Segmentation Y to merge the island to Segmentation X.&#x20;
 
-## Fast Automated Segmentation Tool (F.A.S.T. ⚡️)
+### Fast Automated Segmentation Tool (F.A.S.T. ⚡️)
 
 The Fast Automated Segmentation Tool (F.A.S.T.) is an automatic segmentation tool powered by Meta AI's Segment Anything Model that allows users to rapidly generate 2D and 3D segmentations.&#x20;
 
@@ -122,7 +122,7 @@ F.A.S.T. is powerful because of the way users can prompt the tool to generate an
 2. Within a Project, navigate to the [Tool Settings page](segmentation-and-other-tools.md#tool-configuration) and enable F.A.S.T.
 {% endhint %}
 
-### Generating 2D Segmentations with F.A.S.T.
+#### Generating 2D Segmentations with F.A.S.T.
 
 To start segmenting, create a segmentation instance, select the F.A.S.T. tool from the top bar or using `cmd/ctrl + b`. Once the tool is selected, hover over a viewport to start embedding computation for a single slice (you will see a loader spinner on the top right of the viewport). You can prompt F.A.S.T. in a few different ways after the embedding computation is complete:&#x20;
 
@@ -131,7 +131,7 @@ To start segmenting, create a segmentation instance, select the F.A.S.T. tool fr
    2. Once you are happy with the segmentation preview, confirm it by using the button on the right panel or `shift + enter`.
 2. **Instant click.** `alt/option + hover` over objects to view a prediction preview. If you are satisfied with any preview, click while pressing `alt/option` to confirm the segmentation.&#x20;
 
-### Generating 3D Segmentations with F.A.S.T.
+#### Generating 3D Segmentations with F.A.S.T.
 
 3D F.A.S.T. allows users to draw Bounding Boxes to define an interpolation range for a 3D structure that is to be annotated.
 
