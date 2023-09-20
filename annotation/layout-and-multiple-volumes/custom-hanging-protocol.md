@@ -48,7 +48,7 @@ This guide provides an overview of the available functions and types to help you
 * Create and configure a new Layout Tab in your Task (`nextTab`)\
 
 * Configuration settings for the Annotation Tool (`setSegmentationSettings`)\*&#x20;
-  * **(Note: this function has been replaced by the** [**Tool Settings**](../segmentation/segmentation-tools.md#tool-configuration) **page)**
+  * **(Note: this function has been replaced by the** [**Tool Settings**](../segmentation/segmentation-and-other-tools.md#tool-configuration) **page)**
 
 {% hint style="info" %}
 The Custom Hanging Protocol script takes the available Series for a particular Task as input and returns the layout dimensions and list of views to display.
@@ -294,5 +294,5 @@ setViews(eligibleSeries.map((series) => {
 ## Tool Configuration with Hanging Protocols
 
 {% hint style="warning" %}
-Configuring your Project's toolkit is now done on the [Tool Settings](../segmentation/segmentation-tools.md#tool-configuration) page of your Project Settings.
+Configuring your Project's toolkit is now done on the [Tool Settings](../segmentation/segmentation-and-other-tools.md#tool-configuration) page of your Project Settings.
 {% endhint %}

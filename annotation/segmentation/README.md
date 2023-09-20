@@ -1,7 +1,7 @@
 # Segmentation
 
-{% content-ref url="segmentation-tools.md" %}
-[segmentation-tools.md](segmentation-tools.md)
+{% content-ref url="segmentation-and-other-tools.md" %}
+[segmentation-and-other-tools.md](segmentation-and-other-tools.md)
 {% endcontent-ref %}
 
 {% content-ref url="instance-vs.-semantic.md" %}

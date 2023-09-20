@@ -1,10 +1,8 @@
-# Segmentation Tools
+# Segmentation and Other Tools
 
-{% embed url="https://www.loom.com/share/c0986dc6a4274bffaa52031c98b24930" %}
-Overview of all the segmentation tools
-{% endembed %}
+## Segmentation Tools
 
-## Brush Tool
+### Brush Tool
 
 The Brush Tool has two modes - 2D and 3D (toggled on the right-side panel). The 2D brush is a circle, and the 3D brush is a sphere that segments across slices. You can adjust the size of the brush using the slider on the right-side panel, or the `w` & `s` hotkeys.&#x20;
 
@@ -12,15 +10,23 @@ The Brush Tool has two modes - 2D and 3D (toggled on the right-side panel). The 
 `Left click + drag` to segment and `right click + drag` to erase.
 {% endhint %}
 
-## Pen Tool
+{% embed url="https://www.loom.com/share/e64fe93018644cd4ad056103dff18c21?sid=9d6248b8-c3c6-4350-8da0-885508d4dbff" %}
+Brush Tool Overview
+{% endembed %}
+
+### Pen Tool
 
 The Pen Tool has two modes - 2D and 3D (toggled on the right-side panel). The Pen Tool allows you to annotate using a free-form contour. In 3D mode, the free-form contour is extruded above and below the current slice.&#x20;
 
 {% hint style="info" %}
-`Left click + drag` to add a segment region and `Left click + drag` to remove a region.
+`Left click + drag` to add a segment region and `Right click + drag` to remove a region.
 {% endhint %}
 
-## Region Growing
+{% embed url="https://www.loom.com/share/691c0c14e3514bea85af205f5db0261b?sid=ead7575b-aa5d-4120-9c19-0d2d12df6dcd" %}
+Pen Tool Overview
+{% endembed %}
+
+### Region Growing
 
 Region growing is a semi-automated segmentation tool that uses image intensity information to segment regions. By clicking and holding in a region, the segmentation will grow outward from the seed point (where you clicked). The longer you hold, the longer the region will grow.&#x20;
 
@@ -28,47 +34,53 @@ Region growing is a semi-automated segmentation tool that uses image intensity i
 `Right click + hold` to segment, `left click + hold` to erase.
 {% endhint %}
 
-## Contour Tool
+{% embed url="https://www.loom.com/share/2d7887fc288244688bde713845e52d7b?sid=478c8215-8096-4c7a-ad90-23153aea36c3" %}
+Region Grow Tool Overview
+{% endembed %}
+
+### Contour Tool
 
 The Contour Tool allows you to draw outlines of your regions quickly and then interpolate between slices.
 
-To activate it - (a) select the tool from the top bar, (b) press the "k" hotkey, or (c) search for the Contour Tool in the command bar.
+To activate it - (a) select the Contour Tool from the top bar, (b) press the `"k"` hotkey, or (c) search for the Contour Tool in the Command Bar.
 
-#### Creating a contour & interpolating
+#### Creating a Contour & Interpolating
 
-1. To get started, click on a 2D viewport. You can click and drag or add points one click at a time.
+1. To get started, click on a viewport. You can click and drag or add points one click at a time.
 2. To close/complete the contour, click the end node.&#x20;
 3. You can then change the slice and repeat the process. If you skip slices, **the in-between slices will be interpolated.**
 
-#### **Editing a contour**
+#### **Editing a Contour**
 
 To edit, hover near the edge of your region and click and drag to draw a new segment. Editing an interpolated contour will automatically adjust the neighboring interpolated contours.
 
-#### Rasterize to complete the contour
+#### Rasterize to Complete the Contour
 
 {% hint style="warning" %}
-When you finish your contour, you must convert it to a pixel mask. This process is called "rasterization." There is a button on the right panel to do this, or you can use the `Shift+Enter` hotkey.
+When you finish your contour, you must convert it to a pixel mask with a process called "rasterization". To rasterize your contour, you can use the `Shift+Enter` hotkey or the **Rasterize** button in the right hand Context Panel.
 {% endhint %}
 
 #### Smart Contouring
 
-Our Smart Contour Tool automatically draws a contour around a region of interest. To use it, while the Contour Tool is selected, press `ctrl+alt/option` and hover near the boundary of an object. Click to confirm the automatic contour.&#x20;
+Our Smart Contour Tool automatically draws a contour around a region of interest. To use Smart Contouring, make sure the Contour Tool is selected, press `ctrl+alt/option`, and hover near the boundary of an object. Click to confirm the automatic contour.&#x20;
 
-For bumpy boundaries, you can attempt to smooth out the contour by holding and dragging, adjust the distance you drag to make the contour less or more smooth.
+For bumpy boundaries, you can attempt to smooth out the contour by holding and dragging. Adjust the distance you drag to make the contour less or more smooth.
 
-{% embed url="https://www.loom.com/share/63a8f0e45b934b2ab4d9cb3127e4c6b1" %}
-
-{% hint style="warning" %}
-In the video above, the hotkey is referenced as "Command or Control" but the correct key is `ctrl+alt/option`
-{% endhint %}
+{% embed url="https://www.loom.com/share/3a37d281cde34352ae354fc7bb8d4d07?sid=e7bbf21f-4346-46ec-ba90-3a7aab65bf3d" %}
+Contour Tool Overview
+{% endembed %}
 
 ## Hole Filling&#x20;
 
-The Hole Filling Tool iteratively fills small holes in your Segmentation. Click anywhere on the canvas to start filling the small holes.
+The Hole Filling Tool iteratively fills small holes in your segmentation. Click anywhere on the canvas to start filling in small holes.
 
 {% hint style="info" %}
-Hole filling is designed to fill _small holes_. For larger holes, you may need to run it more than once to close the hole completely.&#x20;
+Hole filling is designed to fill _small holes_. For larger holes, you may need to run the Hole Filling Tool more than once.&#x20;
 {% endhint %}
+
+{% embed url="https://www.loom.com/share/2c7c4b7a0b5a40b696806dd5513b0d81?sid=668ea3d4-9fa2-4651-99f7-bfdb8ea1277b" %}
+Hole Filling Overview
+{% endembed %}
 
 {% hint style="warning" %}
 For large volumes, 3D hole filling can be very computationally expensive. If your data has more than 800 slices, we recommend only using 2D hole filling.
@@ -80,29 +92,23 @@ The Paint Bucket is helpful for closing single large holes. With the paint bucke
 
 ## Island Removal
 
-Island Removal deletes islands of segmentations. Simply click on any "island" segmentation to remove it. On the right side context panel, you can enable "keep currently selected" to remove all islands except the one you clicked on.
+Island Removal deletes islands of segmentations. Simply click on any "island" segmentation to remove it. Conversely, you can enable **Keep Currently Selected** in the right hand Context Panel to remove all of the islands **except** the one you clicked on.
+
+{% embed url="https://www.loom.com/share/5db273c1770d47a5b48af7481d934e4b?sid=986bd7ce-604b-4b01-8ed2-a5585ca187cd" %}
+Island Tool Overview
+{% endembed %}
 
 ## Merge Tool
 
 The Merge Tool allows you to transform one type of segmentation island into another through a "merging" process. With Segmentation X selected, enable the Merge Tool and click on an island of Segmentation Y to merge the island to Segmentation X.&#x20;
 
-## Thresholding
-
-Thresholding allows you to _bound_ the intensity values in your image that will get segmented. Thresholding can be combined with any of the tools above to allow for faster segmentation.&#x20;
-
-To activate thresholding, select the threshold filter from the top bar and select the threshold region from the right sidebar slider. You can also interactively select the threshold region by toggling the **Threshold Range Selector**, then left-click on the canvas to add a region and right-click on the canvas to remove it.&#x20;
-
-{% hint style="info" %}
-As long as the threshold filter is active, i.e. highlighted on the top bar and present on the right panel, the volume will remain thresholded.&#x20;
-
-If you find the preview to be distracting, you can disable it in the right hand sidebar.&#x20;
-{% endhint %}
-
 ## Fast Automated Segmentation Tool (F.A.S.T. ⚡️)
 
-{% embed url="https://www.loom.com/share/285e0936b10e4f3eb26e6917b94e7d93" %}
-
 The Fast Automated Segmentation Tool (F.A.S.T.) is an automatic segmentation tool powered by Meta AI's Segment Anything Model that allows users to rapidly generate 2D and 3D segmentations.&#x20;
+
+{% embed url="https://www.loom.com/share/2d347785be3945b3bbb278c29f6da84a?sid=cdfd8209-fa79-494d-9e7a-215eeb85880c" %}
+F.A.S.T. Overview
+{% endembed %}
 
 F.A.S.T. is powerful because of the way users can prompt the tool to generate an accurate segmentation in real time. Under the hood, there are two components to the system:
 
@@ -113,7 +119,7 @@ F.A.S.T. is powerful because of the way users can prompt the tool to generate an
 **To enable F.A.S.T. for your team**, please do the following:&#x20;
 
 1. Request access at https://redbrickai.com/fast.
-2. Within a Project, navigate to the [Tool Settings page](segmentation-tools.md#tool-configuration) and enable F.A.S.T.
+2. Within a Project, navigate to the [Tool Settings page](segmentation-and-other-tools.md#tool-configuration) and enable F.A.S.T.
 {% endhint %}
 
 ### Generating 2D Segmentations with F.A.S.T.
@@ -129,7 +135,7 @@ To start segmenting, create a segmentation instance, select the F.A.S.T. tool fr
 
 3D F.A.S.T. allows users to draw Bounding Boxes to define an interpolation range for a 3D structure that is to be annotated.
 
-The process for creating annotations with 3D F.A.S.T. is extremely similar to that of [2D F.A.S.T.](segmentation-tools.md#generating-2d-segmentations-with-f.a.s.t.) You can find a full step-by-step breakdown of how to use 3D F.A.S.T. below.
+The process for creating annotations with 3D F.A.S.T. is extremely similar to that of [2D F.A.S.T.](segmentation-and-other-tools.md#generating-2d-segmentations-with-f.a.s.t.) You can find a full step-by-step breakdown of how to use 3D F.A.S.T. below.
 
 1\. Create a new Instance of your desired Object Label by clicking on the “+” in the left hand toolbar;
 
@@ -137,7 +143,7 @@ The process for creating annotations with 3D F.A.S.T. is extremely similar to th
 
 3\. Create a Bounding Box around the structure you wish to annotate;
 
-4\. (Optional) Provide F.A.S.T. with additional input by using LMB/RMB;
+4\. (Optional) Provide F.A.S.T. with additional input by using `LMB/RMB`;
 
 5\. Navigate to the end of the range that you want to interpolate across (i.e., Slice Y);
 
@@ -153,7 +159,15 @@ Processing times may increase when interpolating across large ranges. However, p
 Firewalls, ad blockers, privacy extensions, and any other browser extensions that block HTTP traffic are known to interfere with FAST.
 {% endhint %}
 
-## Linear Pixel Interpolation
+## Other Tools
+
+### Thresholding
+
+Thresholding allows you to _bound_ the intensity values in your image that will get segmented. Thresholding can be combined with any of the tools above to allow for faster segmentation.&#x20;
+
+For a more detailed overview of how to incorporate thresholding into your annotation work, please see the [relevant documentation](../windowing-thresholding-and-smoothing.md#thresholding).
+
+### Linear Pixel Interpolation
 
 In order to toggle linear pixel interpolation while annotating, click on the Command Bar (or use `CMD/CTRL+K`) and select "Toggle linear pixel interpolation".
 
