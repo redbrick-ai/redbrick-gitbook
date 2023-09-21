@@ -34,8 +34,8 @@ Region growing is a semi-automated segmentation tool that uses image intensity i
 `Right click + hold` to segment, `left click + hold` to erase.
 {% endhint %}
 
-{% embed url="https://www.loom.com/share/2d7887fc288244688bde713845e52d7b?sid=478c8215-8096-4c7a-ad90-23153aea36c3" %}
-Region Grow Tool Overview
+{% embed url="https://www.loom.com/share/8cc5cc78ef174ec08091b3de5c633574?sid=7a043c44-9907-4729-87a9-4e276ff1306e" %}
+Grow Tool Overview
 {% endembed %}
 
 ### Contour Tool
