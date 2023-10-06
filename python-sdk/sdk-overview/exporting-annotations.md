@@ -5,7 +5,7 @@ You can make use of RedBrick AI's Python SDK to export your annotations using a 
 Within the Python SDK, annotations are exported in two ways:&#x20;
 
 1. The `export_tasks` function **returns a Python object** containing meta-data information and any vector annotations (measurements, landmarks, etc.). Please see the [format of the object here](https://docs.redbrickai.com/python-sdk/reference/export-annotation-format).&#x20;
-2. Segmentation data is written to your disk **in NIfTI format**. Segmentation data can also be exported in PNG by manipulating the parameters of the `export_tasks` function. Please view the detailed [`export_tasks` reference here](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.export\_tasks).&#x20;
+2. By default, segmentation data is written to your disk **in NIfTI format**. Segmentation data can also be exported in PNG or RT Struct by manipulating the parameters of the `export_tasks` function. Please view the detailed [`export_tasks` reference here](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.export\_tasks).&#x20;
 
 {% hint style="info" %}
 If you're attempting a one-time export or don't have intensive requirements for your export, the [**CLI** ](https://docs.redbrickai.com/python-sdk/cli-overview/exporting-annotations)also provides a simple and optimized workflow for exporting a Project's annotations.&#x20;

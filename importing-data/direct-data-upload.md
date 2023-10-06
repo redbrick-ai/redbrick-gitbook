@@ -12,6 +12,11 @@ RedBrick AI supports a variety of different image formats:&#x20;
 2. NIfTI - .nii, .nii.gz
 3. Videos - .mp4, .mov, .avi
 4. RGB Images - .png, .jpeg, .jpg, .bmp
+5. NRRD - .nrrd
+
+{% hint style="success" %}
+If you require additional support for a file format that is not present in this list, please reach out to us at support@redbrickai.com.&#x20;
+{% endhint %}
 
 First, open a project that will serve as the destination for your upload. Then, click on **Upload Data** on the top-right of the dashboard.&#x20;
 

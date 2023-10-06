@@ -69,3 +69,17 @@ When using an external storage method with RedBrick AI, all of your data is tran
 <figure><img src="../.gitbook/assets/Group 476.png" alt=""><figcaption></figcaption></figure>
 
 Your raw data will never be routed through RedBrick AI's servers, downloaded, or duplicated (unless specifically requested for certain features - please review our [Privacy Policy](https://redbrickai.com/policies/privacy.pdf)).&#x20;
+
+## Supported Data Formats
+
+RedBrick AI supports a variety of different image and volume formats:&#x20;
+
+1. DICOM - .dcm, .ima, .dicom, .dicm
+2. NIfTI - .nii, .nii.gz
+3. Videos - .mp4, .mov, .avi
+4. RGB Images - .png, .jpeg, .jpg, .bmp
+5. NRRD - .nrrd
+
+{% hint style="success" %}
+If you require additional support for a file format that is not present in this list, please reach out to us at support@redbrickai.com.&#x20;
+{% endhint %}
