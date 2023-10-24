@@ -12,7 +12,7 @@ description: Let admins know there is a problem or you need help
 
 Often while annotating you may not be sure how to proceed. In these cases you can ask a question from a member of your team and the task will be removed from your queue until an Admin responds.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Raising an issue from the comments panel</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption><p>Raising an issue from the comments panel</p></figcaption></figure>
 
 As an admin, you will be able to filter out a list of tasks that are in the issue state from the project dashboard. From this list you are able to open the task details and then view the task or respond and send the task back to be labeled.&#x20;
 
