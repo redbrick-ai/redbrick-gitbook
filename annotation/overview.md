@@ -18,10 +18,10 @@ There are 4 main components to the annotation interface:
 If you've used other DICOM viewers, you may already be familiar with the commands necessary for navigating volumes on RedBrick AI.
 
 * **Changing slices:** change slices by scrolling on any of the viewports. You can also use the slider on the left side of each view port to move through the volume quickly. Using the `up arrow`  and `down arrow`  keys will change one slice at a time on the selected viewport. You can also hold `alt/option` and drag to quickly scroll across slices
-* **Zoom:** zoom into your volume by holding `ctrl + scroll`
+* **Zoom:** zoom into your volume by holding `ctrl + scroll` on Mac, or `shift + scroll` on Windows
 * **Pan:** pan around your volume with `shift + left click drag`
 * **Crosshairs:** synchronize re-constructions of the same Series by enabling the Crosshair Tool in the Top Bar. This feature is only available when you have 3 orthogonal reconstructed views (Sagittal, Coronal, and Axial)
-* **Reset:** reset all views to their default state (i.e. center slice and neutral zoom) with `spacebar`
+* **Reset:** reset all views to their default state (i.e. center slice and neutral zoom) with `space`
 * **3D view:** a 3D view of your image can be enabled on the bottom right of the 3D viewport. Once enabled, you can interact with your 3D volume using the following actions:
   * **Rotate** the volume with`left click` + `drag`
   * **Zoom** into your volume with`scroll`
