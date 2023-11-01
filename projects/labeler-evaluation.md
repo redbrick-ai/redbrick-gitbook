@@ -1,37 +1,29 @@
----
-description: >-
-  Continuously check that your labelers are maintaining high quality by having
-  them relabel known ground truth.
----
-
 # Labeler Evaluation
 
-{% hint style="warning" %}
-This feature is in beta and we would love your feedback!
-{% endhint %}
+### Calculating Labeler Quality Scores
 
-{% hint style="info" %}
-Highlights
+RedBrick AI allows you to upload a Ground Truth annotation file alongside any image or volume file for the purposes of evaluating labeler quality.
 
-* Use benchmarks to train new labelers and make sure experienced labelers are staying focused.
-* We recommend having a diverse set of more than 20 tasks to use to test your annotators.
-* Mark ground truth tasks as benchmarks in the data tab, turn benchmarks on to test your annotators under project settings.
-{% endhint %}
+This can be useful when you'd like to have RedBrick AI calculate a score that you can use to compare a specific labeler's performance against a known Ground Truth label set.&#x20;
 
-### Onboarding and training new labelers
+### Blinded vs. Non-blinded Annotations
 
-Benchmarks can be used to onboard and train new annotators for a specific task without risking their early annotations becoming part of your ground truth or slowing down your review process.&#x20;
+When evaluating labeler quality using these Evaluation Tasks, you have the option of allowing your labelers to visually reference the Ground Truth annotations that you are using as a baseline or keeping them invisible to the labeler.&#x20;
 
-If you have benchmarks turned on, when a new annotator starts working on your project they will only be served known ground truth tasks to annotate. The annotations will get compared to the known ground truth to determine if they have successfully completed the task. Once they have successfully annotated enough tasks, only then will annotators be served unlabeled data to annotate.
+This feature is referred to as either **Non-blinded Annotations** or **Blinded Annotations,** respectively.
 
-### Keeping experienced annotators honest and focused
+To create an Evaluation Task in RedBrick AI, you can take the following steps:
 
-Even the most experienced annotators sometimes lose focus or forget the fundamentals of a labeling task. When you use benchmarks, annotators will randomly be assigned known ground truth tasks that will test that they are annotating correctly.&#x20;
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption><p>Sample Flow</p></figcaption></figure>
 
-If an annotator fails too many benchmark tests in a row (according to your settings) then they will be put back into training mode where they will need to successfully label benchmarks tests, just as if they were a new annotator. &#x20;
+1. Upload your image/volume alongside your Ground Truth annotation file ("Baseline Annotations"). A walkthrough of how to do so can be found in our [documentation for importing annotations](../python-sdk/sdk-overview/importing-data-and-annotations.md#import-annotations).
+2. After your Task has been created, determine whether you would like your labelers to see the Baseline while working. Navigate to your **Project Settings** and enable or disable the **Show reference annotations** toggle.&#x20;
+   1. With the toggle enabled, labelers will be able to see the Baseline Annotations while working. With the toggle disabled, the Baseline Annotations will be invisible to the labeler.
+   2. Please note that we also generally recommend disabling **Automatic Task Assignment** when testing labeler quality.
 
-## Activating Benchmarks
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption><p>Relevant toggles in Project Settings</p></figcaption></figure>
 
-1. Select which ground truth tasks you want to use to test your annotators. Go to the data tab in your project and filter for ground truth tasks. You can then select the star icon to select a given task. We recommend you select at least 20 tasks to get started, but a minimum of 3 are needed.
-2. Go into your project settings and turn on the benchmarks feature.&#x20;
-3. Adjust the settings for your requirements.&#x20;
+3. Assign the Task to your labeler for completion.
+4. After your labeler finalizes the Task, an agreement score will be displayed on the Data Page.
+
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption><p>A completed Evaluation Task and score</p></figcaption></figure>
