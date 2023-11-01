@@ -52,7 +52,7 @@ If there is no Review Stage after the Label Stage, the set of annotations with t
 
 When a Review Stage is present, all annotations will be displayed in the Editor. The list of all users that have annotated the Task is located on the right hand Consensus Panel. By default, annotations are color-coded **by user**, but they can be grouped **by category**_._
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>A Task in Review with Consensus Enabled</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>A Task in Review with Consensus Enabled</p></figcaption></figure>
 
 ## Best Annotations and Super Truth
 

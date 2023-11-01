@@ -2,17 +2,15 @@
 
 ## Overview
 
-Your **Organization** is a unique structure built for use by you and your team.
+Your **Organization** is a unique structure that RedBrick AI creates for you and your team.
 
-All of the work you do on RedBrick AI and any resources you use will be housed within your Organization, including:
+All of the work you do on RedBrick AI and any resources you use will be housed within your Organization. This includes your team members, your Taxonomies, your Projects, and more.
 
-* your team members;
-* your Taxonomies;
-* your Storage Methods;
-* your Projects;
-* and more!
+<figure><img src="../.gitbook/assets/image.png" alt="" width="563"><figcaption></figcaption></figure>
 
 In RedBrick AI, a **Project** is a workspace to which you can upload data and inside of which you perform annotation work within a pipeline defined by you.&#x20;
+
+<figure><img src="../.gitbook/assets/image (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Within a Project, you can:
 
@@ -37,7 +35,7 @@ RedBrick AI offers role-based access control at two levels - the **Organization 
 
 While each Organization can only have a single **Org Owner**, there is no limit to the number of **Org Admins** and **Org Members** an Organization can have.
 
-<table data-header-hidden><thead><tr><th width="297">Role</th><th>Permissions</th></tr></thead><tbody><tr><td>Org Owner</td><td><strong>Organization Level:</strong> Has access to all assets within an Organization; has the ability to create, edit, and delete assets, including the Organization itself. <br><br><strong>Project Level:</strong> Org Owners are automatically added to all Projects as Project Admins (see below).</td></tr><tr><td>Org Admin</td><td><strong>Organization Level:</strong> Has access to all assets within an Organization; has the ability to create, edit, and delete assets, but not the Organization itself. <br><br><strong>Project Level:</strong> Org Admins are automatically added to all Projects as Project Admins (see below).</td></tr><tr><td>Org Member</td><td><strong>Organization Level:</strong> cannot create or edit resources at the organizational level. <br><br><strong>Project Level:</strong> Org Members are <strong>not</strong> automatically added to any Projects, and <strong>must be invited</strong> to a Project by a Project Admin (see below).</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="297">Role</th><th>Permissions</th></tr></thead><tbody><tr><td>Org Owner</td><td><strong>Organization Level:</strong> Has access to all assets within an Organization; has the ability to create, edit, and delete assets, including the Organization itself. <br><br><strong>Project Level:</strong> Org Owners are automatically added to all Projects as Project Admins (see below).</td></tr><tr><td>Org Admin</td><td><strong>Organization Level:</strong> Has access to all assets within an Organization; has the ability to create, edit, and delete assets, but not the Organization itself. <br><br><strong>Project Level:</strong> Org Admins are automatically added to all Projects as Project Admins (see below).</td></tr><tr><td>Org Member</td><td><strong>Organization Level:</strong> cannot create or edit resources at the Organization level. <br><br><strong>Project Level:</strong> Org Members are <strong>not</strong> automatically added to any Projects, and <strong>must be invited</strong> to a Project by a Project Admin (see below).</td></tr></tbody></table>
 
 ### Project-level Roles
 
