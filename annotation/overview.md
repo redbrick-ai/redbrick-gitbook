@@ -2,16 +2,16 @@
 
 The RedBrick AI DICOM Annotation Tool is a web-based annotation tool with native support for DICOM medical images. The solution supports 2D and 3D data and allows for segmentation, classification, and vector annotations.&#x20;
 
-## Interface Overview
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption><p>The RedBrick AI Annotation Tool</p></figcaption></figure>
 
-![](<../.gitbook/assets/Group 28384.png>)
+## Interface Overview
 
 There are 4 main components to the annotation interface:
 
-1. Left Sidebar: this is where you create, edit and interact with annotations and attributes
-2. Top Bar: the top bar contains Task-level actions such as task submission and saving, as well as the Thresholding, Windowing, and Segmentation Tools
-3. Context Panel: shows additional information and settings for any **currently** **selected** tool(s)
-4. Main Canvas: where you interact with your images and apply your annotations to your images/volumes
+1. **Left Sidebar:** this is where you create, edit and interact with annotations and attributes
+2. **Top Bar:** the top bar contains Task-level actions such as task submission and saving, as well as the environment settings (Windowing, Layout), [Version Explorer](creating-editing-and-deleting-annotations.md#annotation-version-explorer), [Segmentation Tools](segmentation/#segmentation-and-other-tools), and Quick Measurement Tools.
+3. **Context Panel:** shows additional information and settings for any **currently** **selected tool(s)**
+4. **Main Canvas:** where you interact with your images and apply your annotations to your images/volumes
 
 ## Navigating your Volume
 
@@ -95,7 +95,7 @@ Example of a multi-series task with 4 series per Task
 RedBrick supports the creation of Task-Level and Series-Level metadata when uploading Tasks via the Python SDK.
 
 {% hint style="info" %}
-With the [current version of the Python SDK](https://pypi.org/project/redbrick-sdk/#history) (2.12), metadata can only be created upon Task upload via SDK.&#x20;
+With the [current version of the Python SDK](https://pypi.org/project/redbrick-sdk/#history), metadata can only be created upon Task upload via SDK.&#x20;
 {% endhint %}
 
 **Metadata cannot be modified or deleted in any way after Task upload,** although these features are in our Product Roadmap for the future. If you'd like to alter or delete metadata from a Task that has already been uploaded, you should delete the original Task and upload it again.
