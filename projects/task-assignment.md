@@ -2,47 +2,66 @@
 
 ## What is a Task?
 
-A Task is either a single image, series, or entire study that moves through the annotation workflow in a single unit. The intention is for a Labeler to view and annotate a single Task together; therefore, if you'd like your Labelers to view & annotate an entire MRI study comprised of 4 series together, you should upload the entire study as a single Task.
+A Task is a unit of work that moves through your project pipeline in RedBrick AI. Tasks can consist of anything - a single image, series, or entire study, and your Labeler works with one Task at a time while annotating.
 
-Please read the [data import documentation](../importing-data/import-cloud-data.md#items-list) to understand how to import data as a single image/series/entire study.
+For example, if you'd like your Labelers to view & annotate an **entire MRI study** comprised of **4 series** together, you should upload the 4 series together as a single Task (see "Multi-series Task" below):
 
-## Overview&#x20;
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption><p>Several examples of valid Tasks</p></figcaption></figure>
 
-Task assignment helps manage the delegation of work amongst your entire team. RedBrick AI has automatic task assignment protocols, but you can override these with manual/programmatic task assignment as well.
+Please see our [data import documentation](../importing-data/import-cloud-data.md#items-list) for a more comprehensive overview of how to structure your data imports.
 
-{% hint style="warning" %}
-Labelers (i.e. Project Members) can only view Tasks that have been assigned to them. Admins can view all Tasks but only modify tasks assigned to them.&#x20;
-{% endhint %}
+## Task Assignment in RedBrick AI
+
+RedBrick AI allows you to delegate work among your team using either automatic or manual task assignment.&#x20;
+
+Any [Project Admin or Member](../organizations/what-is-an-organization.md#project-level-roles) with relevant permissions can view a Task on RedBrick AI.
 
 ### **Automatic Task Assignment**
 
-All projects use automatic task assignment by default. The automatic task assignment protocol is a first-come-first-serve system that assigns the _oldest_ data to the annotators that request new tasks first.
+Automatic Task Assignment is enabled by default upon Project creation. The automatic assignment protocol is a first-come-first-serve system, i.e. it assigns the oldest Tasks to the first annotators that request new Tasks.
 
-Labelers can request new tasks by keeping the Annotation Tool open or clicking on the "Label/Review" buttons on the Project Dashboard.
+Labelers can request new Tasks by clicking on the "Label/Review" buttons on the Project Dashboard.
 
 {% hint style="info" %}
-You can disable automatic task assignment in **Project Settings -> Overview.**
+You can disable Automatic Task Assignment in **Project Settings -> General Settings.**
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/app.redbrickai.com_a717f7d8-8a19-4346-b9b4-a90c8d6875ba_team (5).png" alt=""><figcaption></figcaption></figure>
 
 ### **Manual Assignment**
 
-You can override the automatic assignment protocol by manually assigning tasks to users from the Data Page.&#x20;
+Admins can also override the automatic assignment protocol and manually assign Tasks to users from the **Data Page**.&#x20;
 
 {% hint style="info" %}
-RedBrick AI will not automatically re-assign tasks that you have manually assigned.&#x20;
+RedBrick AI will not automatically re-assign Tasks that have been manually assigned.&#x20;
 {% endhint %}
 
 ### **Programmatically Assigning Tasks**
 
-You can programmatically assign tasks using our SDK or prescribe the assignment during data upload as part of your [items file](../importing-data/import-cloud-data/creating-an-items-list.md#upload-an-items-list-to-your-project).
+You can programmatically assign tasks by prescribing the assignment during data upload as part of your [Items List](../importing-data/import-cloud-data/creating-an-items-list.md#upload-an-items-list-to-your-project) or using the [`assign_tasks()` method](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.labeling.Labeling.assign\_tasks) of our SDK.
 
-#### Prescribe Assignment on Upload
+#### Assigning Tasks on Upload
 
-You can use the [`preAssign`](../python-sdk/format-reference.md#preassign-stagename-string-string) field in the items file to assign a Task to a specific user(s) at each Stage.
+You can use the [`preAssign`](../python-sdk/format-reference.md#preassign-stagename-string-string) field in the to assign a Task you are uploading to a specific user(s) at each Stage.
 
-For example, the snippet below will assign `study01` to `annotator@email.com` in the Label Stage. Once the annotation is complete, the Task will be queued in `Review_1` and `reviewer@email.com` will be assigned as the Reviewer.
+For example, the snippet below will assign `study_001` to `annotator@email.com` in the Label Stage. Once the annotation is complete, the Task will be queued in `Review_1` and `reviewer@email.com` will be assigned as the Reviewer.
+
+```json
+[
+    {
+        "name": "study_001", 
+        "preAssign": {
+            "Label": "annotator@email.com",
+            "Review_1": "reviewer@email.com"
+        },
+        "series": [
+            {
+                "items": "AnnotationFile.nii.gz", 
+            }
+        ]
+    }
+]
+```
 
 {% hint style="info" %}
 Always double check that your Stage Names (i.e., Label, Review\_1, etc.) and user emails have been input correctly.&#x20;
@@ -50,32 +69,13 @@ Always double check that your Stage Names (i.e., Label, Review\_1, etc.) and use
 Also, when preassigning Tasks, all emails must be associated with an existing Project Member.
 {% endhint %}
 
-```json
-[
-    {
-        "name": "study01", 
-        "preAssign": {
-            "Label": "annotator@email.com",
-            "Review_1": "reviewer@email.com"
-        },
-        "series": [
-            {
-                "items": "file.nii.gz", 
-            }
-        ]
-    }
-]
-```
+#### Assigning Tasks after Upload
 
-#### Assign Tasks using the SDK
-
-Please visit our [SDK documentation](https://docs.redbrickai.com/python-sdk/sdk-overview/assigning-and-querying-tasks) for an overview of how to assign Tasks programmatically.&#x20;
-
-{% embed url="https://www.loom.com/share/2c71c7fd4f0c49ef8d34f2b9847b30c0" %}
+You can use the assign\_tasks() method to designate task assignment using the SDK. Please see our [SDK Documentation](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.labeling.Labeling.assign\_tasks) for further details.
 
 ## Labeling Queue
 
-Once a task is assigned to a user, it is added to their Labeling Queue. You can view your labeling queue in two ways.
+Once a Task is assigned to a user, it is added to their Labeling Queue. You can view your labeling queue in two ways.
 
 1. **From the Data Page:** \
    [On the Data Page](https://app.tango.us/app/workflow/Labeling-Queue-on-Data-Dashboard-b79b4d8562d34bc6a33d6cce0aa4476e), you can filter existing Tasks by **Queued for Labeling/Review** and then by Tasks assigned to you.
@@ -97,9 +97,11 @@ The diagram below is a visual guide to the flows associated with completing Task
 
 <figure><img src="../.gitbook/assets/Group 30489 (3).png" alt=""><figcaption><p>Guide to submitting Tasks in your Labeling Queue</p></figcaption></figure>
 
-### Task Prioritization
+## Task Prioritization
 
 RedBrick AI allows you to designate specific Tasks as **prioritized**, which elevates them to the top of your Labeling Queue.
+
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption><p>Two Tasks with priority scores</p></figcaption></figure>
 
 Task Priority is reflected in the Web Application in the following ways:
 
