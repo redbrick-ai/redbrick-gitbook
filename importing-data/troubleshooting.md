@@ -32,7 +32,7 @@ If you don't have a specific error message to work with or would simply like Red
 
 You can either email us at support@redbrickai.com or click on the Help Button, and then on **Email support**.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Common Information to Include in an Email to RBAI Support
 

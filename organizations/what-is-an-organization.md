@@ -6,11 +6,11 @@ Your **Organization** is a unique structure that RedBrick AI creates for you and
 
 All of the work you do on RedBrick AI and any resources you use will be housed within your Organization. This includes your team members, your Taxonomies, your Projects, and more.
 
-<figure><img src="../.gitbook/assets/image.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt="" width="563"><figcaption></figcaption></figure>
 
 In RedBrick AI, a **Project** is a workspace to which you can upload data and inside of which you perform annotation work within a pipeline defined by you.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Within a Project, you can:
 

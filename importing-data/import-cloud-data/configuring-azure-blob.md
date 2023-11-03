@@ -92,7 +92,7 @@ You can also used a "Shared Access Signature" URL for enabling access to your bu
 
 
 
-![Example access configuration](<../../.gitbook/assets/image (2) (1) (1).png>)
+![Example access configuration](<../../.gitbook/assets/image (2) (1) (1) (1).png>)
 
 * Expiry should be until the time you want to have access to your data through RedBrick AI, with this time expires you will lose access to your data through RedBrick AI and will have to update the configuration. We recommend giving this at least a few years, you can always cancel the access later.
 * IP address (optional) could be the user's permanent network address range
