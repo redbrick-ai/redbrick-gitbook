@@ -2,7 +2,7 @@
 
 Taxonomies allow you to define the structures that you'd like to annotate in your project and apply them to your data quickly and accurately. They ensure all annotations follow a structured schema which is automatically imported to the left hand sidebar of RedBrick AI's Annotation Tool.
 
-<figure><img src="../.gitbook/assets/app.redbrickai.com_a717f7d8-8a19-4346-b9b4-a90c8d6875ba_projects_7532ec0d-c308-4274-a68e-a88da9eaa887_tool_Label_taskid=f7cf207e-989e-4d52-9bb0-34e2549a306e (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/app.redbrickai.com_a717f7d8-8a19-4346-b9b4-a90c8d6875ba_projects_7532ec0d-c308-4274-a68e-a88da9eaa887_tool_Label_taskid=f7cf207e-989e-4d52-9bb0-34e2549a306e (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Object Label Types
 
@@ -10,7 +10,7 @@ Object Labels are the structures that your team will annotate on RedBrick AI.&#x
 
 When creating your Taxonomy, you must define a Label **Type** (e.g. "Segmentation") and a **Name** (e.g. "Edema") for each Object Label.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure>
 
 RedBrick AI supports the following Object Label Types:&#x20;
 
@@ -74,7 +74,7 @@ In the Taxonomies page, simply click on **Add Folder** and give your folder a na
 
 You can then easily drag and drop your Objects Labels or Classifications into your folder.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### Nesting Object Labels via SDK
 
@@ -137,7 +137,7 @@ RedBrick AI allows users to attach custom HTML tooltips to any Object Label, Stu
 
 First, open a Taxonomy and click on any Object Label or Classification. The Hint field will then appear, allowing you to copy/paste your HTML into RedBrick or write your own using our intelligent autocomplete feature.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt="" width="563"><figcaption><p>Creating an HTML tooltip in the UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="563"><figcaption><p>Creating an HTML tooltip in the UI</p></figcaption></figure>
 
 ### Creating HTML Tooltips via SDK
 
@@ -164,7 +164,7 @@ All HTML elements can be included within the `hint: string` attribute, but image
 
 The above code displays as follows in the Annotation Tool:
 
-<figure><img src="../.gitbook/assets/Screenshot 2023-05-23 at 12.32.17.png" alt=""><figcaption><p>The HTML Tooltip that appears while hovering your cursor over the "?" icon</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-23 at 12.32.17.png" alt=""><figcaption><p>The HTML Tooltip that appears while hovering your cursor over the "?" icon</p></figcaption></figure>
 
 {% hint style="warning" %}
 For security reasons, we do not allow scripts to be executed within HTML Tooltips.

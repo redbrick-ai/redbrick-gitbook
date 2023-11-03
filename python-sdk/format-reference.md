@@ -254,11 +254,11 @@ Here are the definition for some common entries present in some/all label entrie
 
 #### `category: string | string[]`
 
-The class of your annotations. This value is part of your Project [Taxonomy](../projects/taxonomies.md). If the class is nested, `category` will be `string[]`.
+The class of your annotations. This value is part of your Project [Taxonomy](../projects/taxonomies/). If the class is nested, `category` will be `string[]`.
 
 #### `attributes: {[attributeName: string]: string | boolean}`
 
-Each annotation can have accompanying attributes, that are also defined in your Project [Taxonomy](../projects/taxonomies.md). `attributeName` is defined when creating your Taxonomy.&#x20;
+Each annotation can have accompanying attributes, that are also defined in your Project [Taxonomy](../projects/taxonomies/). `attributeName` is defined when creating your Taxonomy.&#x20;
 
 #### `VoxelPoint: {i: number, j: number, k: number}`
 

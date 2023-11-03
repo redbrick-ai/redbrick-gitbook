@@ -23,7 +23,7 @@
 
 * [Get Started with a Project](projects/get-started-with-a-project.md)
 * [Task Assignment](projects/task-assignment.md)
-* [Taxonomies](projects/taxonomies.md)
+* [Taxonomies](projects/taxonomies/README.md)
 * [Consensus (Inter-Annotator Agreement)](projects/consensus-inter-annotator-agreement/README.md)
   * [Agreement calculation](projects/consensus-inter-annotator-agreement/agreement-calculation.md)
 * [Custom Label Validation](projects/custom-label-validation.md)

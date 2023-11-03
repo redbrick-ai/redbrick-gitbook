@@ -41,8 +41,8 @@ Before creating a project, you have to create a labeling taxonomy that defines *
     d. Non-enhancing Tumor
 2. Designate any Series that happens to be a low-quality image
 
-{% content-ref url="projects/taxonomies.md" %}
-[taxonomies.md](projects/taxonomies.md)
+{% content-ref url="projects/taxonomies/" %}
+[taxonomies](projects/taxonomies/)
 {% endcontent-ref %}
 
 {% embed url="https://www.loom.com/share/3e41b8479a584a53ba953c963110e2ea" %}
