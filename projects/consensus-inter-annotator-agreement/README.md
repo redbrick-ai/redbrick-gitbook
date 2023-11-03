@@ -6,6 +6,8 @@ Consensus provides you with both a quantitative measure of annotation quality (b
 
 With Consensus enabled, **multiple annotators can be required to label each Task** in the Label Stage. Each individual annotator will only see an empty Task and will not be able to view the annotations done by the other annotators.
 
+<figure><img src="../../.gitbook/assets/image (24).png" alt="" width="563"><figcaption><p>Comparison between standard flow and Consensus flow with 3 labelers</p></figcaption></figure>
+
 Once all the annotators have completed the Task, RedBrick AI will calculate an **Inter-Annotator Agreement Score** between the annotations. Please reference the [following documentation](./#inter-annotator-agreement) for more information on how we calculate these scores.
 
 The Inter-Annotator Agreement Score is a quantitative measure of quality that can help you select the best set of annotations created by your annotators. It also gives reviewers the ability to arbitrate between the opinions of multiple annotators before generating a single, high-quality Ground Truth.&#x20;
