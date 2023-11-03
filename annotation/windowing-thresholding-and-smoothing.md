@@ -1,7 +1,7 @@
 # Visualization and Masking
 
 {% hint style="warning" %}
-As of v.2023.10.31.1:\
+As of v2023.10.31.1:\
 \- **Thresholding** is now referred to as **Masking;**\
 \- the **Windowing Panel** is now referred to as the **Visualization Panel;**
 {% endhint %}

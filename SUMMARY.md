@@ -34,7 +34,7 @@
 
 * [Overview](annotation/overview.md)
 * [Creating, Editing and Deleting Annotations](annotation/creating-editing-and-deleting-annotations.md)
-* [Visualization and Masking](annotation/visualization-and-masking.md)
+* [Visualization and Masking](annotation/windowing-thresholding-and-smoothing.md)
 * [Layout & Multiple Volumes](annotation/layout-and-multiple-volumes/README.md)
   * [Custom Hanging Protocol](annotation/layout-and-multiple-volumes/custom-hanging-protocol.md)
   * [Multiple Modalities](annotation/layout-and-multiple-volumes/multiple-modalities.md)
