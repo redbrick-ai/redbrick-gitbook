@@ -74,7 +74,7 @@ In the Taxonomies page, simply click on **Add Folder** and give your folder a na
 
 You can then easily drag and drop your Objects Labels or Classifications into your folder.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Nesting Object Labels via SDK
 
@@ -137,7 +137,7 @@ RedBrick AI allows users to attach custom HTML tooltips to any Object Label, Stu
 
 First, open a Taxonomy and click on any Object Label or Classification. The Hint field will then appear, allowing you to copy/paste your HTML into RedBrick or write your own using our intelligent autocomplete feature.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="563"><figcaption><p>Creating an HTML tooltip in the UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="563"><figcaption><p>Creating an HTML tooltip in the UI</p></figcaption></figure>
 
 ### Creating HTML Tooltips via SDK
 

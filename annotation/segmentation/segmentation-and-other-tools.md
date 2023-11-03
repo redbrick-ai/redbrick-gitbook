@@ -165,7 +165,7 @@ Firewalls, ad blockers, privacy extensions, and any other browser extensions tha
 
 Thresholding allows you to _bound_ the intensity values in your image that will get segmented. Thresholding can be combined with any of the tools above to allow for faster segmentation.&#x20;
 
-For a more detailed overview of how to incorporate thresholding into your annotation work, please see the [relevant documentation](../windowing-thresholding-and-smoothing.md#thresholding).
+For a more detailed overview of how to incorporate thresholding into your annotation work, please see the [relevant documentation](../visualization-and-masking.md#thresholding).
 
 ### Linear Pixel Interpolation
 

@@ -10,7 +10,7 @@ All of the work you do on RedBrick AI and any resources you use will be housed w
 
 In RedBrick AI, a **Project** is a workspace to which you can upload data and inside of which you perform annotation work within a pipeline defined by you.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Within a Project, you can:
 
