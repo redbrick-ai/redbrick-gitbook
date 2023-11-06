@@ -56,7 +56,7 @@ For example, the snippet below will assign `study_001` to `annotator@email.com` 
         },
         "series": [
             {
-                "items": "AnnotationFile.nii.gz", 
+                "items": "ImageFile.extension", 
             }
         ]
     }
