@@ -4,7 +4,7 @@
 
 ### Brush Tool
 
-The Brush Tool has two modes - 2D and 3D (toggled on the right-side panel). The 2D brush is a circle, and the 3D brush is a sphere that segments across slices. You can adjust the size of the brush using the slider on the right-side panel, or the `w` & `s` hotkeys.&#x20;
+The Brush Tool has two modes - 2D and 3D (toggled on the right-side panel). The 2D brush is a circle, and the 3D brush is a sphere that segments across slices. You can adjust the size of the brush using the slider in the right hand Context Panel or the `W` & `S` hotkeys.&#x20;
 
 {% hint style="info" %}
 `Left click + drag` to segment and `right click + drag` to erase.
@@ -13,6 +13,8 @@ The Brush Tool has two modes - 2D and 3D (toggled on the right-side panel). The 
 {% embed url="https://www.loom.com/share/e64fe93018644cd4ad056103dff18c21?sid=9d6248b8-c3c6-4350-8da0-885508d4dbff" %}
 Brush Tool Overview
 {% endembed %}
+
+***
 
 ### Pen Tool
 
@@ -26,28 +28,32 @@ The Pen Tool has two modes - 2D and 3D (toggled on the right-side panel). The Pe
 Pen Tool Overview
 {% endembed %}
 
-### Region Growing
+***
 
-Region growing is a semi-automated segmentation tool that uses image intensity information to segment regions. By clicking and holding in a region, the segmentation will grow outward from the seed point (where you clicked). The longer you hold, the longer the region will grow.&#x20;
+### Region Growing (Grow Tool)
+
+The Grow Tool is a semi-automated tool that uses image intensity information to segment regions. By clicking and holding in a region, the segmentation will grow outward from the point that you clicked on. The longer you hold, the longer the region will grow.&#x20;
 
 {% hint style="info" %}
-`Right click + hold` to segment, `left click + hold` to erase.
+`Left click + hold (+ drag)` to segment, `right click + hold (+ drag)` to erase.
 {% endhint %}
 
 {% embed url="https://www.loom.com/share/8cc5cc78ef174ec08091b3de5c633574?sid=7a043c44-9907-4729-87a9-4e276ff1306e" %}
 Grow Tool Overview
 {% endembed %}
 
+***
+
 ### Contour Tool
 
 The Contour Tool allows you to draw outlines of your regions quickly and then interpolate between slices.
 
-To activate it - (a) select the Contour Tool from the top bar, (b) press the `"k"` hotkey, or (c) search for the Contour Tool in the Command Bar.
+First, select the Contour Tool from the top bar or press the `K` hotkey.
 
 #### Creating a Contour & Interpolating
 
-1. To get started, click on a viewport. You can click and drag or add points one click at a time.
-2. To close/complete the contour, click the end node.&#x20;
+1. To get started, click on a viewport. You can either click and drag to segment or add points one click at a time.
+2. To close the contour, click or drag your segmentation to the starting node.&#x20;
 3. You can then change the slice and repeat the process. If you skip slices, **the in-between slices will be interpolated.**
 
 #### **Editing a Contour**
@@ -70,12 +76,14 @@ For bumpy boundaries, you can attempt to smooth out the contour by holding and d
 Contour Tool Overview
 {% endembed %}
 
-### Hole Filling&#x20;
+***
+
+### Hole Filling Tool
 
 The Hole Filling Tool iteratively fills small holes in your segmentation. Click anywhere on the canvas to start filling in small holes.
 
 {% hint style="info" %}
-Hole filling is designed to fill _small holes_. For larger holes, you may need to run the Hole Filling Tool more than once.&#x20;
+The Hole Filling Tool is designed to fill small holes. For larger holes, you may need to run the Hole Filling Tool more than once (i.e. click several times).&#x20;
 {% endhint %}
 
 {% embed url="https://www.loom.com/share/2c7c4b7a0b5a40b696806dd5513b0d81?sid=668ea3d4-9fa2-4651-99f7-bfdb8ea1277b" %}
@@ -86,21 +94,59 @@ Hole Filling Overview
 For large volumes, 3D hole filling can be very computationally expensive. If your data has more than 800 slices, we recommend only using 2D hole filling.
 {% endhint %}
 
-### Paint Bucket
+### Paint Bucket Tool
 
 The Paint Bucket is helpful for closing single large holes. With the paint bucket tool selected, click in any large hole to fill it automatically.&#x20;
 
-### Island Removal
+***
 
-Island Removal deletes islands of segmentations. Simply click on any "island" segmentation to remove it. Conversely, you can enable **Keep Currently Selected** in the right hand Context Panel to remove all of the islands **except** the one you clicked on.
+### Island Removal Tool
+
+Island Removal deletes "islands" of segmentations. Simply click on any island segmentation to remove it.&#x20;
+
+Conversely, you can enable **Keep Currently Selected** in the right hand Context Panel to remove all of the islands **except** the one you clicked on.
 
 {% embed url="https://www.loom.com/share/5db273c1770d47a5b48af7481d934e4b?sid=986bd7ce-604b-4b01-8ed2-a5585ca187cd" %}
 Island Tool Overview
 {% endembed %}
 
-### Merge Tool
+***
 
-The Merge Tool allows you to transform one type of segmentation island into another through a "merging" process. With Segmentation X selected, enable the Merge Tool and click on an island of Segmentation Y to merge the island to Segmentation X.&#x20;
+### Boolean Operator Tool
+
+The Boolean Operator Tool allows you to perform four operations on segmentations: Copy, Add, Subtract, and Merge.
+
+#### Copy Tool
+
+The Copy Tool allows you to transform a segmentation into a perfect copy of another.&#x20;
+
+With Segmentation X selected, enable the Copy Tool and click on Segmentation Y to create a perfect copy of Segmentation X that occupies the same space.
+
+<figure><img src="../../.gitbook/assets/copy-tool.gif" alt=""><figcaption><p>The Copy Tool in action</p></figcaption></figure>
+
+#### Add Tool
+
+The Add Tool allows you to add the pixel values of a segmentation to another.&#x20;
+
+With Segmentation X selected, enable the Add Tool and click on Segmentation Y to add the pixel values of Segmentation Y to Segmentation X.
+
+#### Subtract Tool
+
+The Subtract Tool allows you to remove the pixel values of a segmentation from another segmentation.
+
+With Segmentation X selected, enable the Subtract Tool and click on Segmentation Y to remove the pixel values of Segmentation Y from Segmentation X.
+
+#### Merge Tool
+
+The Merge Tool allows you to transform one type of segmentation island into another.&#x20;
+
+With Segmentation X selected, enable the Merge Tool and click on an island of Segmentation Y to merge the island to Segmentation X.&#x20;
+
+{% embed url="https://www.loom.com/share/d72af53241874f64b7de1228b3f7868f?sid=879977db-121f-4c81-9cfe-b216103fd92b" %}
+Add, Subtract, and Merge Tool Tutorial
+{% endembed %}
+
+***
 
 ### Fast Automated Segmentation Tool (F.A.S.T. ⚡️)
 
@@ -159,19 +205,27 @@ Processing times may increase when interpolating across large ranges. However, p
 Firewalls, ad blockers, privacy extensions, and any other browser extensions that block HTTP traffic are known to interfere with FAST.
 {% endhint %}
 
-## Other Tools
+### Dilate & Erode Tool
 
-### Thresholding
+The Dilate & Erode Tool allows you to expand or shrink the area of a segmentation.
 
-Thresholding allows you to _bound_ the intensity values in your image that will get segmented. Thresholding can be combined with any of the tools above to allow for faster segmentation.&#x20;
+With a segmentation selected, use `left click` to Dilate (grow) the area of the segmentation and `right click` to Erode (shrink).
 
-For a more detailed overview of how to incorporate thresholding into your annotation work, please see the [relevant documentation](../windowing-thresholding-and-smoothing.md#thresholding).
+Use the **Pixels to Change** slider in the right hand Context Panel to control the severity of the dilation or erosion.
 
-### Linear Pixel Interpolation
+{% embed url="https://www.loom.com/share/70582d4c25ff4dc99f553d8342b1b6eb?sid=607db874-4a49-4be4-9e77-9fedd1b2cca7" %}
+The Dilate and Erode Tool in action
+{% endembed %}
 
-In order to toggle linear pixel interpolation while annotating, click on the Command Bar (or use `CMD/CTRL+K`) and select "Toggle linear pixel interpolation".
+***
 
-<figure><img src="../../.gitbook/assets/linear-pixel-interpolation.gif" alt=""><figcaption><p>Toggling linear pixel interpolation with an MRI scan of the spine</p></figcaption></figure>
+### Smoothing Tool
+
+The Smoothing Tool helps you remove peaks and valleys in noisy annotations.&#x20;
+
+With the Smoothing Tool selected, use `left click` to remove valleys and `right click` to remove peaks.&#x20;
+
+{% embed url="https://www.loom.com/share/54c074b2300e464e906e4cff0f216f4d?sid=7f109621-959c-4329-b367-7886b43d652e" %}
 
 ## Tool Configuration
 
