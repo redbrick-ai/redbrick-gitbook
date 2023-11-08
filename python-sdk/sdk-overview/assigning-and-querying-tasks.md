@@ -77,11 +77,3 @@ project.export.list_tasks(
     user_id=project.context.key_id
     )
 ```
-
-{% hint style="warning" %}
-Several of our old methods were deprecated with the release of v.2.1.12.
-
-We highly recommend reading carefully through our [SDK Format Reference](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html) or reaching out to our [Support Team](mailto:support@redbrickai.com) with any questions or concerns.&#x20;
-
-We're always happy to give pointers! :thumbsup:
-{% endhint %}
