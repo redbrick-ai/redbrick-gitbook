@@ -1,10 +1,28 @@
 # Overlapping Segmentations
 
-Typically in a single annotation task each voxel/pixel of an image gets only 1 classification e.g. background, tumor etc. However, sometimes you may want to annotate multiple overlapping structures and assign multiple classifications to the same group of pixels. On RedBrick AI you can accomplish this by creating an _**o**_**verlapping segmentation.**
+If you are annotating multiple structures in the same pixel/voxel space, you can utilize overlapping segmentations in RedBrick AI.
 
-Each segmentation tool e.g brush, pen, region growing etc. will have an **overlapping segmentation toggle in its context panel**. If you check the toggle, you will be able to create overlapping segmentation without overwriting existing annotations. When you export data with overlapping segmentations, all annotations will be exported as individual segmentation masks.&#x20;
+Any time you are using a [Segmentation Tool](segmentation-and-other-tools.md) (e.g. Brush Tool, Pen Tool, Contour Tool, etc.), you can use the options in the [Masking Panel](../windowing-thresholding-and-smoothing.md#masking) to configure your overlapping (or overwriting) behavior.
 
-Watch this video for an overview:
+Specifically, you can utilize various combinations of the **Editable Area** and **Modify Other Segments** menus to determine how your annotations will be overlapped or overwritten. For a more comprehensive description of these menus and their functions, please reference [the relevant documentation](../windowing-thresholding-and-smoothing.md#editable-area).
 
-{% embed url="https://www.loom.com/share/5d22671b26674c8f9627bd6bc600db13" %}
+Alternatively, please see the following short tutorial for a visual walkthrough of the differences:&#x20;
 
+{% embed url="https://www.loom.com/share/536fa33679814e2f909e4944b1c0f8ba?sid=4b1f2781-e2c3-4904-9e02-66b3b8a0895e" %}
+An overview of how to overlap segmentations
+{% endembed %}
+
+### Exporting Overlapping Segmentations
+
+When exporting a Task with overlapping segmentations, RedBrick AI generates a unique annotation file for each segmentation.&#x20;
+
+The following JSON block is an example of how a single Task with two overlapping annotations will be exported.
+
+```json
+projectId/
+|-- TaskName
+      |-- SeriesName.nii.gz // NIfTI file containing all annotations
+      |-- SeriesName 
+        |-- instance-1.nii.gz // NIfTI file for first overlapping segmentation
+        |-- instance-2.nii.gz // NIfTI file for second overlapping segmentation
+```
