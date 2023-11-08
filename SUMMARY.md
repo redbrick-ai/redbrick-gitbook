@@ -28,7 +28,7 @@
   * [Agreement calculation](projects/consensus-inter-annotator-agreement/agreement-calculation.md)
 * [Custom Label Validation](projects/custom-label-validation.md)
 * [Labeler Evaluation](projects/labeler-evaluation.md)
-* [Raise Issue](projects/raise-issue.md)
+* [Comments and Raised Issues](projects/comments-and-raised-issues.md)
 
 ## Annotation
 
