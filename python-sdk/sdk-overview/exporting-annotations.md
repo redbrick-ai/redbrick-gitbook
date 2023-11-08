@@ -26,6 +26,10 @@ project_id/
 └── tasks.json
 ```
 
+{% hint style="success" %}
+The above structure is for a standard export (i.e. not semantic, not binary mask, etc.) and assumes no [overlapping segmentations](../../annotation/segmentation/overlapping-segmentations.md#exporting-overlapping-segmentations).&#x20;
+{% endhint %}
+
 ### Segmentations Subdirectory
 
 The segmentation directory will contain a single sub-directory for each task in your export. The sub-directories will be named after the task [`name`](exporting-annotations.md#name-string). A single task (depending on whether it was single series or multi-series) can have one or more segmentations.
@@ -132,3 +136,6 @@ The following is a non-exhaustive list of other available functionalities when u
 * Track labeler or reviewer time spent on a Task with [`get_active_time()`](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.get\_active\_time);
 * Fetch Task events from a specific timestamp to the present day using [`get_task_events()`](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.get\_task\_events) and the `from_timestamp` parameter;
 * Easily search for Tasks based on a wide variety of criteria using [`list_tasks()`](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.list\_tasks);
+* Perform a semantic export (that exports a single file per category name) using [`export_tasks()`](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.export\_tasks);
+* Configure [Hanging Protocol](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.settings.Settings.hanging\_protocol)s;
+* Upload a [script](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.settings.Settings.label\_validation) for [Custom Label Validation](../../projects/custom-label-validation.md);
