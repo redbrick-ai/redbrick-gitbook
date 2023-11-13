@@ -392,25 +392,7 @@ Measurements can be made on oblique planes. `normal` defines the normal unit vec
 
 The value of the angle in degrees.
 
-## Consensus Export
-
-When exporting consensus annotations, the Tasks JSON file and the `segmentations/` directory will have a slightly modified structure.&#x20;
-
-### Consensus Segmentations
-
-Each task folder will contain all the users' segmentation files. The segmentation files can be uniquely identified by the index "\_1" at the end of the file. You will be able to map between the users email and the index in `tasks.json` file.&#x20;
-
-```
-project_id/
-├── segmentations
-│   ├── study01
-│   │   ├── series1_1.nii
-│   │   └── series1_2.nii
-│   └── study02
-│       ├── series1_1.nii
-│       └── series1_2.nii
-└── tasks.json
-```
+## Consensus Formats&#x20;
 
 ### Consensus `tasks.json`
 
@@ -464,8 +446,6 @@ The [series entry](format-reference.md#series) for the current user only.
 
 ## Taxonomy Object
 
-### Taxonomy V2
-
 ```typescript
 type Taxonomy = {
     orgId: string;
@@ -508,7 +488,3 @@ type AttributeOption = {
     archived?: boolean;
 }
 ```
-
-### Taxonomy V1
-
-RedBrick AI no longer supports the creation of Taxonomies V1.

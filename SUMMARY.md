@@ -60,6 +60,7 @@
   * [Import Data & Annotations](python-sdk/cli-overview/import-data-and-annotations.md)
   * [Exporting Annotations](python-sdk/cli-overview/exporting-annotations.md)
 * [Format Reference](python-sdk/format-reference.md)
+* [Export Structure Reference](python-sdk/export-structure-reference.md)
 * [Full SDK & CLI Reference](https://redbrick-sdk.readthedocs.io/en/stable/)
 
 ## Useful Links
