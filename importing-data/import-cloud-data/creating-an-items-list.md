@@ -59,53 +59,61 @@ The `items` entry enumerates the file paths referencing your data in your cloud 
 {% tab title="3D DICOM Study" %}
 This Items List will upload a single Task containing two Series.
 
-```javascript
+```json
 [
   {
-    name: 'study001',
-    series: [
+    "name": "study001",
+    "series": [
       {
-        items: [
-          'study001/series001/001.dcm',
-          'study001/series001/002.dcm',
-          'study001/series001/003.dcm',
-        ],
+        "items": [
+          "study001/series001/001.dcm",
+          "study001/series001/002.dcm",
+          "study001/series001/003.dcm"
+        ]
       },
       {
-        items: [
-          'study001/series002/001.dcm',
-          'study001/series002/002.dcm',
-          'study001/series002/003.dcm',
-        ],
-      },
-    ],
-  },
-];
+        "items": [
+          "study001/series002/001.dcm",
+          "study001/series002/002.dcm",
+          "study001/series002/003.dcm"
+        ]
+      }
+    ]
+  }
+]
 ```
 {% endtab %}
 
 {% tab title="3D DICOM Series" %}
 This Items List will upload two Tasks, each containing a single Series.
 
-```javascript
+```json
 [
   {
-    name: 'series001',
-    series: [
+    "name": "series001",
+    "series": [
       {
-        items: ['series001/001.dcm', 'series001/002.dcm', 'series001/003.dcm'],
-      },
-    ],
+        "items": [
+          "series001/001.dcm",
+          "series001/002.dcm",
+          "series001/003.dcm"
+        ]
+      }
+    ]
   },
   {
-    name: 'series002',
-    series: [
+    "name": "series002",
+    "series": [
       {
-        items: ['series002/001.dcm', 'series002/002.dcm', 'series002/003.dcm'],
-      },
-    ],
-  },
-];
+        "items": [
+          "series002/001.dcm",
+          "series002/002.dcm",
+          "series002/003.dcm"
+        ]
+      }
+    ]
+  }
+]
 ```
 {% endtab %}
 {% endtabs %}
@@ -122,45 +130,45 @@ Please note that`items` must be a single string for NIfTI uploads.&#x20;
 {% tab title="NIfTI Series" %}
 This Items List will upload a single Task containing two Series.
 
-<pre class="language-javascript"><code class="lang-javascript">[
-<strong>  {
-</strong>    name: 'study001',
-    series: [
+```json
+[
+  {
+    "name": "study001",
+    "series": [
       {
-        items: 'series001.nii',
+        "items": "series001.nii"
       },
       {
-        items: 'series002.nii',
-      },
-    ],
-  },
-];
-</code></pre>
+        "items": "series002.nii"
+      }
+    ]
+  }
+]
+```
 {% endtab %}
 
 {% tab title="NIfTI Study" %}
 This Items List will upload two Tasks, each containing one Series.
 
-```javascript
+```json
 [
   {
-    name: 'series1',
-    series: [
+    "name": "series1",
+    "series": [
       {
-        items: 'series001.nii',
-      },
-    ],
+        "items": "series001.nii"
+      }
+    ]
   },
   {
-    name: 'series2',
-    series: [
+    "name": "series2",
+    "series": [
       {
-        items: 'series002.nii',
-      },
-    ],
-  },
-];
-s
+        "items": "series002.nii"
+      }
+    ]
+  }
+]
 ```
 {% endtab %}
 {% endtabs %}
@@ -173,45 +181,45 @@ s
 {% tab title="2D Image Study" %}
 This Items List will upload a single Task containing two images.
 
-```javascript
+```json
 [
   {
-    name: 'patient1',
-    series: [
+    "name": "patient1",
+    "series": [
       {
-        items: 'scan1.dcm',
+        "items": "scan1.dcm"
       },
       {
-        items: 'scan2.dcm',
-      },
-    ],
-  },
-];
+        "items": "scan2.dcm"
+      }
+    ]
+  }
+]
 ```
 {% endtab %}
 
 {% tab title="2D Image Series" %}
 This Items List will upload two Tasks, each containing a single image.
 
-```javascript
+```json
 [
   {
-    name: 'patient1',
-    series: [
+    "name": "patient1",
+    "series": [
       {
-        items: 'scan.dcm',
-      },
-    ],
+        "items": "scan.dcm"
+      }
+    ]
   },
   {
-    name: 'patient2',
-    series: [
+    "name": "patient2",
+    "series": [
       {
-        items: 'scan.dcm',
-      },
-    ],
-  },
-];
+        "items": "scan.dcm"
+      }
+    ]
+  }
+]
 ```
 {% endtab %}
 {% endtabs %}
@@ -228,53 +236,61 @@ The frames must be in the correct order in the `items` array.
 {% tab title="Video Frames Study" %}
 This Items List will upload a single Task with two videos, where each video contains three frames.
 
-```javascript
+```json
 [
   {
-    name: 'study001',
-    series: [
+    "name": "study001",
+    "series": [
       {
-        items: [
-          'study001/series001/001.png',
-          'study001/series001/002.png',
-          'study001/series001/003.png',
-        ],
+        "items": [
+          "study001/series001/001.png",
+          "study001/series001/002.png",
+          "study001/series001/003.png"
+        ]
       },
       {
-        items: [
-          'study001/series002/001.png',
-          'study001/series002/002.png',
-          'study001/series002/003.png',
-        ],
-      },
-    ],
-  },
-];
+        "items": [
+          "study001/series002/001.png",
+          "study001/series002/002.png",
+          "study001/series002/003.png"
+        ]
+      }
+    ]
+  }
+]
 ```
 {% endtab %}
 
 {% tab title="Video Frames Series" %}
 This Items List will upload two Tasks, each containing a single video with three frames.
 
-```javascript
+```json
 [
   {
-    name: 'video1',
-    series: [
+    "name": "video1",
+    "series": [
       {
-        items: ['001.png', '002.png', '003.png'],
-      },
-    ],
+        "items": [
+          "001.png",
+          "002.png",
+          "003.png"
+        ]
+      }
+    ]
   },
   {
-    name: 'video2',
-    series: [
+    "name": "video2",
+    "series": [
       {
-        items: ['001.png', '002.png', '003.png'],
-      },
-    ],
-  },
-];h
+        "items": [
+          "001.png",
+          "002.png",
+          "003.png"
+        ]
+      }
+    ]
+  }
+]
 ```
 {% endtab %}
 {% endtabs %}
@@ -307,17 +323,17 @@ interface Task {
 {% tab title="DICOM" %}
 The Items List below will create a single task containing one or more series. RedBrick AI will parse the DICOM files on the client side and automatically split this list of `.dcm` into one or more series (depending on the DICOM headers).&#x20;
 
-```javascript
+```json
 [
   {
-    name: 'study001',
-    items: [
-      'bbfa85feb36f.dcm',
-      'd4a49634cd4c.dcm',
-      'eed2e7462ba5.dcm',
-      '45455dd0e45b.dcm',
-    ],
-  },
+    "name": "study001",
+    "items": [
+      "bbfa85feb36f.dcm",
+      "d4a49634cd4c.dcm",
+      "eed2e7462ba5.dcm",
+      "45455dd0e45b.dcm"
+    ]
+  }
 ]
 ```
 {% endtab %}
@@ -325,15 +341,15 @@ The Items List below will create a single task containing one or more series. Re
 {% tab title="NIfTI" %}
 The Items List below will create a single task containing exactly two series. RedBrick AI will assume each of the NIfTI files in the `items` array is an individual series.
 
-```javascript
+```json
 [
   {
-    name: 'study001',
-    items: [
-      'bbfa85feb36f.nii.gz',
-      'd4a49634cd4c.nii'
-    ],
-  },
+    "name": "study001",
+    "items": [
+      "bbfa85feb36f.nii.gz",
+      "d4a49634cd4c.nii"
+    ]
+  }
 ]
 ```
 {% endtab %}
