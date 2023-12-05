@@ -479,6 +479,7 @@ type Attribute = {
     archived?: boolean;
     parents?: string[];
     hint?: string;
+    defaultValue?: number | number[]; // pre-populated optionId(s) for SELECT/MULTISELECT
 }
 
 type AttributeOption = {
