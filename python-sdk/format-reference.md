@@ -9,7 +9,7 @@ Most RedBrick flows incorporate two key JSON files:
 
 If you'd like to upload annotations along with your data using either the [CLI](cli-overview/import-data-and-annotations.md) or the [SDK](sdk-overview/importing-data-and-annotations.md), please see the corresponding documentation.
 
-## Objects Reference
+## Object Reference
 
 Please see the definition (in TypeScript) of RedBrick's various objects below:
 
@@ -64,8 +64,8 @@ type Series = {
   semanticMask?: boolean;
   pngMask?: boolean;
   
-  landmarks?: Landmarks[];
-  landmarks3d?: Landmarks3D[];
+  landmarks?: Landmark[];
+  landmarks3d?: Landmark3D[];
   measurements?: (MeasureLength | MeasureAngle)[];
   boundingBoxes?: BoundingBox[];
   cuboids?: Cuboid[];
@@ -75,12 +75,12 @@ type Series = {
   
   classifications?: Classification[];
   instanceClassifications?: InstanceClassification[];
-   metaData?: { [key: string]: string };
+   metaData?: { [ key: string ]: string };
 };
 ​
 // Label Types
 
-type Landmarks = {
+type Landmark = {
   point: Point2D;
   category: number | string | string[];
   attributes?: Attributes;
@@ -89,7 +89,7 @@ type Landmarks = {
   video?: VideoMetaData;
 };
 
-type Landmarks3D = {
+type Landmark3D = {
   point: VoxelPoint;
   category: number | string | string[];
   attributes?: Attributes;
@@ -233,7 +233,7 @@ type MeasurementStats = {
 };
 ```
 
-## Objects Glossary
+## Object Glossary
 
 ### Task
 
@@ -245,63 +245,87 @@ A user-defined string is defined on upload, it is _required to be unique_ across
 
 #### `taskId?: string`
 
-A RedBrick AI generated a unique identifier for each task. This value will be provided on export.
+A unique identifier generated for each Task by RedBrick AI. This value is provided on export.
 
 #### `currentStageName?: string`
 
-The current stage this task is in is when it was exported.&#x20;
+The Stage a Task is in is when it is exported.&#x20;
 
 #### `createdBy?: string`
 
-The e-mail of the user who uploaded this task.
+The email address of the user who uploaded the Task.
 
 #### `createdAt?: string`
 
-The datetime this task was created (uploaded).
+The datetime this Task was created (i.e. uploaded).
 
 #### `updatedBy?: string`
 
-The e-mail of the last user to make edits to this task.
+The email of the last user to make edits to this Task.
 
 #### `updatedAt?: string`
 
-The datetime this task was last edited.
+The datetime that this Task was last edited.
 
-#### **`preAssign?: { [stageName : string] : string}`**
+#### **`preAssign?: { [ stageName : string ] : string }`**
 
-Prescribe during upload who will get a task assigned to them. You can define the assignment for each stage of the workflow, for example, Label and Review, `{"Label": "name1@redbrickai.com", "Review": "name2@redbrickai.com"}`.
+When uploading a Task, prescribe which users will have the Task assigned to them by Stage.&#x20;
 
-#### `classification: { attributes : [string : boolean] }`
+You can define the assignment for each Stage of the workflow, for example, Label and Review, `{"Label": "name1@redbrickai.com", "Review": "name2@redbrickai.com"}`.
 
-A list of attributes assigned to an entire task (or study, if the task encapsulates an entire study).
+#### `classification: { attributes : [ string : boolean ] }`
 
-**`metaData?: { [key: string]: string }`**
+A list of attributes assigned to an entire Task (or study, if the Task encapsulates an entire study).
 
-A list of key value pairs that can be affixed to a Task.
+**`metaData?: { [ key: string ]: string }`**
+
+A list of key value pairs that can be affixed to a Task. This information is visible in the Annotation Tool.
+
+**`priority?: number`**
+
+Assign a priority value to a specific Task, which will influence the order in which the Task displays on the Data Page. The Automatic Assignment protocol will also auto-assign Tasks with a priority value to a user’s Labeling / Review Queue before moving on to Tasks without priority values.
+
+***
 
 ### Series
 
-The `Series` object has meta-data and annotations for a single series within a task. A series can represent a single MRI/CT series, a video, or a single 2D image. If a series has annotations, you can expect one or more of the label entries to be present i.e. `segmentations`, `polygons` etc.
+The `Series` object has metadata and annotations for a single Series within a Task. A Series can represent anything from a single MRI/CT series, a video, or a single 2D image.&#x20;
+
+If a Series contains annotations, you can expect one or more of the label entries to be present (e.g. `segmentations`, `polygons` etc.).
 
 #### `items: string | string[]`
 
-The items entry is a list of file paths that point to your data. Please have a look at the [#items-list](../importing-data/import-cloud-data.md#items-list "mention")documentation to understand how to format for various modalities and series/study uploads.
+The items entry is a list of file paths that point to your data. Please have a look at the [#items-list](../importing-data/import-cloud-data.md#items-list "mention")documentation for a fuller explanation of how to format for various modalities and series/study uploads.
 
 #### `name: string`
 
 An optional user-defined string, _needs to be unique_ across all series. Individual [series will be named after this value on the labeling tool](https://www.loom.com/i/ea12e486bd8845d7b3b8a83fc115ad58). Exported segmentation files will also be named using this value. Using the Series Instance UID here is good practice. &#x20;
 
-#### `classifications: { attributes: [string : boolean] }`
+#### `classifications: { attributes: [ string : boolean ] }`
 
 A list of attributes assigned to a specific Series.
 
-#### `instanceClassifications: fileIndex | fileName | [ values: {string : boolean} ]`
+#### `instanceClassifications: fileIndex | fileName | [ values: { string : boolean } ]`
 
 The `instanceClassifications` object defines a series of boolean values that can be assigned to individual instances (e.g. frames in a video).
 
-**`metaData?: { [key: string]: string }`**
+**`metaData?: { [ key: string ]: string }`**
 
-A list of key value pairs that can be affixed to a Series.
+A list of key value pairs that can be affixed to a Series. This information is visible in the Annotation Tool.
+
+**`binaryMask?: boolean`**
+
+Reflects the user’s choice of optionally exporting annotations as a binary mask.
+
+**`semanticMask?: boolean`**
+
+Reflects the user’s choice of optionally using semantic export.
+
+**`pngMask?: boolean`**
+
+Reflects the user’s choice of optionally exporting annotations as a PNG mask.
+
+***
 
 ### Common Label Keys
 
@@ -311,19 +335,19 @@ Here are the definition for some common entries present in some/all label entrie
 
 The class of your annotations. This value is part of your Project [Taxonomy](../projects/taxonomies/). If the class is nested, `category` will be `string[]`.
 
-#### `attributes: {[attributeName: string]: string | boolean}`
+#### `attributes: { [ attributeName: string ]: string | boolean }`
 
 Each annotation can have accompanying attributes, that are also defined in your Project [Taxonomy](../projects/taxonomies/). `attributeName` is defined when creating your Taxonomy.&#x20;
 
-#### `VoxelPoint: {i: number, j: number, k: number}`
+#### `voxelPoint: { i: number, j: number, k: number }`
 
 `VoxelPoint` represents a three-dimensional point in image space, where i and j are columns and rows, and k is the slice number.&#x20;
 
-#### `WorldPoint: {x: number, y: number, j: number}`
+#### `worldPoint: { x: number, y: number, j: number }`
 
 `WorldPoint` represents a three-dimensional point in physical space/world coordinates. The world coordinates are calculated using `VoxelPoint` and the [Image Plane Module](https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect\_C.7.6.2.html).
 
-#### `Point2D: {xnorm: number, ynorm: number}`
+#### `point2D: { xnorm: number, ynorm: number }`
 
 `Point2D` represents a two dimensional point. This is used to define annotation types on 2D data. `xnorm` has been normalized by image width, `hnorm` has been normalized by image height.
 
@@ -335,7 +359,43 @@ Each annotation can have accompanying attributes, that are also defined in your 
 
 `fileName` represents the name given to an image or specific frame in a video series.
 
+#### `measurementStats: Dict`
+
+A dictionary containing a variety of geometric information about certain Object Labels.
+
+***
+
+### Measurement Stats
+
+A dictionary (`measurementStats`) containing geometric information about certain Object Labels.
+
+**`average: number`**
+
+The average pixel intensity value inside of a structure.
+
+**`area?: number`**
+
+The area of a 2D Object Label (e.g. Bounding Box, Ellipse), measured in square millimeters.
+
+**`volume?: number`**
+
+The volume of a 3D structure (e.g. Cuboid), measured in cubic millimeters.
+
+**`minimum: number`**
+
+The lowest pixel intensity value present in the structure.
+
+**`maximum: number`**
+
+The highest pixel intensity value present in the structure.
+
+***
+
 ### Video Meta Data
+
+#### `videoMetaData: Dict`
+
+A dictionary containing `frameIndex`, `trackId`, `keyFrame`, and `endFrame`.
 
 #### `frameIndex: number` (video)
 
@@ -353,13 +413,15 @@ If true, this annotation was manually added on a particular video sequence. If f
 
 If true, the annotation is the last annotation for a particular video track segment.&#x20;
 
+***
+
 ### Segmentations and `segmentMap`
 
 #### `segmentations?: string | string[]`
 
 A list of file paths of segmentation files for this series. Either a single `.nii` file, or multiple `.nii` files containing different instances.
 
-**`segmentMap?: { [instanceId: number]: { category: string | string[]; attributes?: Attributes }};`**
+**`segmentMap?: { [ instanceId: number ]: { category: string | string[]; attributes?: Attributes } };`**
 
 A mapping between a segmentation's instance ID, your Taxonomy category name, and any accompanying attributes. The mapping will apply only to the current series, and instance IDs must be unique across all series in a task (this is useful for instance segmentation).
 
@@ -393,9 +455,15 @@ Please note that the `segmentMap`'s instanceId is generated **incrementally base
 
 ```
 
+#### `mask?: string`
+
+The path for the annotation file associated with a specific instanceId.
+
+***
+
 ### BoundingBox
 
-Represents a two-dimensional bounding box
+Contains information about the Bounding Box Object Label.
 
 #### `pointTopLeft:` [`Point2D`](format-reference.md#point2d-xnorm-number-ynorm-number)
 
@@ -405,13 +473,21 @@ The location of the top-left point of the bounding box.
 
 The width and height of the bounding box, normalized by the width and height of the image.
 
+***
+
 ### Polygon
+
+Contains information about the Polygon Object Label.
 
 #### `points:` [`Point2D`](format-reference.md#point2d-xnorm-number-ynorm-number)`[]`
 
 A list of 2D points that are connected to form a polygon. This list is ordered such that, $$point_i$$ is connected to $$point_{i+1}$$. The last point is also connected to the first point to close the polygon.&#x20;
 
+***
+
 ### MeasureLength
+
+Contains information about the Length Measurement Object Label.
 
 #### `point1, point2 :` [`VoxelPoint`](format-reference.md#voxelpoint-i-number-j-number-k-number)
 
@@ -429,7 +505,11 @@ Measurements can be made on oblique planes. `normal` defines the normal unit vec
 
 The value of the measurement in mm.
 
+***
+
 ### MeasureAngle
+
+Contains information about the Angle Object Label.
 
 #### `point1, point2, vertex :` [`VoxelPoint`](format-reference.md#voxelpoint-i-number-j-number-k-number)&#x20;
 
@@ -446,6 +526,64 @@ Measurements can be made on oblique planes. `normal` defines the normal unit vec
 #### `angle: number`
 
 The value of the angle in degrees.
+
+***
+
+### Ellipse
+
+Contains information about the Ellipse Object Label.
+
+**`pointCenter: point2D`**
+
+Information regarding the exact center of the Ellipse Object Label.
+
+**`xRadiusNorm: number`**
+
+A numeric value equivalent to half the length of the Ellipse Object Label’s major axis.
+
+**`yRadiusNorm: number`**
+
+A numeric value equivalent to half the length of the Ellipse Object Label’s minor axis.
+
+**`rotationRad: number`**
+
+The rotation angle of the Ellipse Object Label, expressed in radians.
+
+***
+
+### Landmark
+
+Contains information about the Landmark Object Label on 2D images.
+
+**`point: point2D`**
+
+The point in physical space on a 2D image where the Landmark is located.
+
+***
+
+### Landmark 3D
+
+Contains information about the Landmark Object Label on 3D volumes.
+
+**`point: voxelPoint`**
+
+The point in physical space on a 3D volume where the Landmark is located.
+
+***
+
+### Cuboid
+
+Contains information about the Cuboid Object Label.
+
+**`point1, point2: voxelPoint`**
+
+Information about the initial point of the Cuboid (`point1`) and the final point (`point2`, opposite diagonal corner).
+
+**`absolutePoint1, absolutePoint2: worldPoint`**
+
+The position of `VoxelPoints` `point1` and `point2` in physical space (world coordinate) computed using the Image Plane Module.
+
+***
 
 ## Consensus Formats&#x20;
 
@@ -518,7 +656,7 @@ type Taxonomy = {
 type ObjectType = {
     category: string;
     classId: number; // [0, n)
-    labelType: BBOX | POINT | POLYLINE | POLYGON | ELLIPSE | SEGMENTATION | LENGTH | ANGLE;
+    labelType: BBOX | POINT | POLYLINE | POLYGON | ELLIPSE | SEGMENTATION | LENGTH | ANGLE | CUBOID;
     attributes?: Attribute[];
     color?: string;
     archived?: boolean;
