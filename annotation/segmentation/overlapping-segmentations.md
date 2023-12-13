@@ -2,7 +2,7 @@
 
 If you are annotating multiple structures in the same pixel/voxel space, you can utilize overlapping segmentations in RedBrick AI.
 
-Any time you are using a [Segmentation Tool](segmentation-and-other-tools.md) (e.g. Brush Tool, Pen Tool, Contour Tool, etc.), you can use the options in the [Masking Panel](../windowing-thresholding-and-smoothing.md#masking) to configure your overlapping (or overwriting) behavior.
+Any time you are using a [Segmentation Tool](segmentation-tools.md) (e.g. Brush Tool, Pen Tool, Contour Tool, etc.), you can use the options in the [Masking Panel](../windowing-thresholding-and-smoothing.md#masking) to configure your overlapping (or overwriting) behavior.
 
 Specifically, you can utilize various combinations of the **Editable Area** and **Modify Other Segments** menus to determine how your annotations will be overlapped or overwritten. For a more comprehensive description of these menus and their functions, please reference [the relevant documentation](../windowing-thresholding-and-smoothing.md#editable-area).
 

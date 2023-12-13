@@ -1,6 +1,4 @@
-# Segmentation and Other Tools
-
-## Segmentation Tools
+# Segmentation Tools
 
 ### Brush Tool
 
@@ -13,6 +11,20 @@ The Brush Tool has two modes - 2D and 3D (toggled on the right-side panel). The 
 {% embed url="https://www.loom.com/share/e64fe93018644cd4ad056103dff18c21?sid=9d6248b8-c3c6-4350-8da0-885508d4dbff" %}
 Brush Tool Overview
 {% endembed %}
+
+***
+
+### Adaptive Brush
+
+The Adaptive Brush automatically defines the edges of the structure you are annotating, resulting in a smarter and more accurate workflow.
+
+The Adhesion parameter allows you to determine how "strict" the Adaptive Brush is with similar intensity values. A lower Adhesion value, for example, would be recommended for annotating regions or structures with smooth gradients, whereas a higher Adhesion value would be best for annotating with sharper gradients.
+
+<figure><img src="../../.gitbook/assets/adaptive-brush.gif" alt=""><figcaption><p>The Adaptive Brush in action</p></figcaption></figure>
+
+{% hint style="info" %}
+**Adaptive Brush Mastery:** we recommend adjusting your Windowing (and other Visualization) settings along with your Adhesion levels to ensure optimal brush behavior.
+{% endhint %}
 
 ***
 
@@ -165,7 +177,7 @@ F.A.S.T. is powerful because of the way users can prompt the tool to generate an
 **To enable F.A.S.T. for your team**, please do the following:&#x20;
 
 1. Request access at https://redbrickai.com/fast.
-2. Within a Project, navigate to the [Tool Settings page](segmentation-and-other-tools.md#tool-configuration) and enable F.A.S.T.
+2. Within a Project, navigate to the [Tool Settings page](segmentation-tools.md#tool-configuration) and enable F.A.S.T.
 {% endhint %}
 
 #### Generating 2D Segmentations with F.A.S.T.
@@ -181,7 +193,7 @@ To start segmenting, create a segmentation instance, select the F.A.S.T. tool fr
 
 3D F.A.S.T. allows users to draw Bounding Boxes to define an interpolation range for a 3D structure that is to be annotated.
 
-The process for creating annotations with 3D F.A.S.T. is extremely similar to that of [2D F.A.S.T.](segmentation-and-other-tools.md#generating-2d-segmentations-with-f.a.s.t.) You can find a full step-by-step breakdown of how to use 3D F.A.S.T. below.
+The process for creating annotations with 3D F.A.S.T. is extremely similar to that of [2D F.A.S.T.](segmentation-tools.md#generating-2d-segmentations-with-f.a.s.t.) You can find a full step-by-step breakdown of how to use 3D F.A.S.T. below.
 
 1\. Create a new Instance of your desired Object Label by clicking on the “+” in the left hand toolbar;
 

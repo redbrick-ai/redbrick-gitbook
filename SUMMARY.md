@@ -41,7 +41,7 @@
   * [Intellisync](annotation/layout-and-multiple-volumes/intellisync.md)
   * [Annotation Mirroring](annotation/layout-and-multiple-volumes/annotation-mirroring.md)
 * [Segmentation](annotation/segmentation/README.md)
-  * [Segmentation and Other Tools](annotation/segmentation/segmentation-and-other-tools.md)
+  * [Segmentation Tools](annotation/segmentation/segmentation-tools.md)
   * [Instance vs. Semantic](annotation/segmentation/instance-vs.-semantic.md)
   * [Overlapping Segmentations](annotation/segmentation/overlapping-segmentations.md)
   * [3D Slicer Integration](annotation/segmentation/3d-slicer-integration.md)

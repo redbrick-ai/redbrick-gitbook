@@ -34,7 +34,7 @@ The left side bar will show all the Object Labels with an option to create _Enti
 When you create an Entity, the default tool for that Label type will be automatically selected (e.g. the **Brush Tool** will be selected by default when creating an Entity of a **Segmentation**).&#x20;
 
 {% hint style="success" %}
-Your default Segmentation Tool can be configured on the [Tool Settings page](segmentation/segmentation-and-other-tools.md#tool-configuration) within your Project Settings.
+Your default Segmentation Tool can be configured on the [Tool Settings page](segmentation/segmentation-tools.md#tool-configuration) within your Project Settings.
 {% endhint %}
 
 All Entities are organized within each Object Label's expansion panel.

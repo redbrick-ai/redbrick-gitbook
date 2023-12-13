@@ -1,11 +1,11 @@
 # Segmentation
 
-### Segmentation and Other Tools
+### Segmentation Tools
 
 An overview of our Segmentation Toolkit, features that are often used alongside it, and how to configure your toolkit for a Project.
 
-{% content-ref url="segmentation-and-other-tools.md" %}
-[segmentation-and-other-tools.md](segmentation-and-other-tools.md)
+{% content-ref url="segmentation-tools.md" %}
+[segmentation-tools.md](segmentation-tools.md)
 {% endcontent-ref %}
 
 ### Instance vs. Semantic Segmentation
