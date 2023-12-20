@@ -39,13 +39,14 @@ While each Organization can only have a single **Org Owner**, there is no limit 
 
 ### Project-level Roles
 
-<table><thead><tr><th width="299">Role</th><th>Permissions</th></tr></thead><tbody><tr><td>Project Admin</td><td>Can perform administrative actions at the Project level, i.e. uploading data, assigning Tasks, editing Project Settings, and viewing Project Overview statistics &#x26; other user statistics.</td></tr><tr><td>Project Member</td><td>Can only annotate/review data (i.e. Tasks) that are assigned to them. Cannot view the activity of any other users. </td></tr></tbody></table>
+<table><thead><tr><th width="299">Role</th><th>Permissions</th></tr></thead><tbody><tr><td>Project Admin</td><td>Can perform administrative actions at the Project level, i.e. uploading data, assigning Tasks, editing Project Settings, and viewing Project Overview statistics &#x26; other user statistics.</td></tr><tr><td>Project Member</td><td>Can only annotate/review data (i.e. Tasks) that are assigned to them. Cannot view the activity of any other users. </td></tr><tr><td>Project Manager</td><td>Can manage Tasks and user permissions. Cannot access Project settings. </td></tr></tbody></table>
 
 ### Common Role Configurations
 
 * **Labelers** are often first added to an Organization as Org Members, added to relevant Projects as Project Members, and given access to the Label Stage by a Project Admin.
 * **Internal Reviewers** are often first added to an Organization as Org Members and then added to relevant Projects as Project Admins, which gives them Project-wide Admin access.
 * **External Reviewers** are often first added to an Organization as Org Members, added to relevant Projects as Project Members, and given access to any relevant Review Stages by a Project Admin.
+* **External Project Managers** should be added to an Organization as Org Members and added to relevant Projects as Project Managers.
 
 {% hint style="info" %}
 If you would like to change your Organization's Org Owner, please reach out to our support team at support@redbrickai.com.&#x20;
