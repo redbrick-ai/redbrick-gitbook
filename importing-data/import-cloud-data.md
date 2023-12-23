@@ -42,7 +42,7 @@ Your Items List is a JSON file that points the RedBrick AI platform to the data 
 Jargon Alert! Single units of work (i.e. a single row on the Data Page) are referred to as **Tasks** within RedBrick AI.
 {% endhint %}
 
-Your Items List can be uploaded to RedBrick from the Project Dashboard or by using the [SDK](../python-sdk/sdk-overview/importing-data-and-annotations.md). Each entry in your Items List will be created as a separate Task, and you can find detailed explanations of each key in our [Format Reference](../python-sdk/format-reference.md#tasks-json).&#x20;
+Your Items List can be uploaded to RedBrick from the Project Dashboard or by using the [SDK](../python-sdk/sdk-overview/importing-data-and-annotations.md). Each entry in your Items List will be created as a separate Task, and you can find detailed explanations of each key in our [Format Reference](../python-sdk/formats/full-format-reference.md#tasks-json).&#x20;
 
 ### Creating & Configuring an Items List
 

@@ -1,4 +1,4 @@
-# Export Structure Reference
+# Export Structure
 
 RedBrick AI offers several ways to structure exports based on the needs of your annotation workflow.&#x20;
 
@@ -10,7 +10,7 @@ Please see the following walkthrough for example structures, explanations, and o
 
 ## Standard Export
 
-For the purposes of this documentation, a standard export is any RedBrick AI export that **does not include** [**overlapping segmentations**](../annotation/segmentation/overlapping-segmentations.md) **or** [**variant export parameters**](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.export\_tasks) such as `semantic_mask` or `binary_mask`.&#x20;
+For the purposes of this documentation, a standard export is any RedBrick AI export that **does not include** [**overlapping segmentations**](../../annotation/segmentation/overlapping-segmentations.md) **or** [**variant export parameters**](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.export\_tasks) such as `semantic_mask` or `binary_mask`.&#x20;
 
 ### Single Series
 
@@ -72,7 +72,7 @@ You can read more about the binary\_mask parameter and how it affects exports [h
 
 ## Semantic Export
 
-If you would prefer to map your annotations directly to the corresponding Object Label of your [Taxonomy](../projects/taxonomies/#object-label-types), you can use the `semantic_mask` parameter of the Python SDK's [`export_tasks()`](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.export\_tasks) function.&#x20;
+If you would prefer to map your annotations directly to the corresponding Object Label of your [Taxonomy](../../projects/taxonomies/#object-label-types), you can use the `semantic_mask` parameter of the Python SDK's [`export_tasks()`](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.export\_tasks) function.&#x20;
 
 The Semantic Export enforces a direct mapping between an Object Label and the `segmentMap` value. While this does not change the structure of the export subdirectory itself, Semantic Export does bring significant changes to the `tasks.json` file generated upon export.
 
@@ -139,7 +139,7 @@ In other words (and using the example above), any **Glioma** annotation will alw
 
 #### What if a labeler creates 2 Entities for a single Object Label and then I try to use Semantic Export?
 
-Semantic Export will strictly enforce the principles of [semantic annotation](../annotation/segmentation/#instance-vs.-semantic-segmentation) even in the presence of human error.&#x20;
+Semantic Export will strictly enforce the principles of [semantic annotation](../../annotation/segmentation/#instance-vs.-semantic-segmentation) even in the presence of human error.&#x20;
 
 If you attempt to use Semantic Export on a Task that has multiple [Entities](https://docs.redbrickai.com/annotation/creating-editing-and-deleting-annotations#creating-object-labels) associated with a single Object Label, RedBrick AI will aggregate all of the Entities into a single annotation file.&#x20;
 
@@ -167,7 +167,7 @@ No. The Category Number is immutable for all Object Labels, regardless of how yo
 
 ## Consensus Export
 
-When exporting annotations from a [Consensus Project](../projects/consensus-inter-annotator-agreement/), the `tasks.json` file and the `segmentations/` directory will have a unique structure.&#x20;
+When exporting annotations from a [Consensus Project](../../projects/consensus-inter-annotator-agreement/), the `tasks.json` file and the `segmentations/` directory will have a unique structure.&#x20;
 
 Your export subdirectory will contain the annotation files for all users who generated and saved annotations on RedBrick AI. Each individual annotation file is marked with a numeric index (e.g. "\_1" at the end of the file name, and you can map this file to the corresponding user by referencing your `tasks.json` file.
 

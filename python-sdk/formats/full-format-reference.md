@@ -1,4 +1,4 @@
-# Format Reference
+# Full Format Reference
 
 ## Items List and `tasks.json`
 
@@ -7,7 +7,7 @@ Most RedBrick flows incorporate two key JSON files:
 1. [Items List](https://docs.redbrickai.com/importing-data/import-cloud-data/creating-an-items-list) - a file which points RedBrick AI to visual assets within a third-party storage solution;
 2. `tasks.json` - a file generated upon export that contains a record of the annotation work completed within a Project. Upon export, the `tasks.json` file will contain a **single entry for each Task**;
 
-If you'd like to upload annotations along with your data using either the [CLI](cli-overview/import-data-and-annotations.md) or the [SDK](sdk-overview/importing-data-and-annotations.md), please see the corresponding documentation.
+If you'd like to upload annotations along with your data using either the [CLI](../cli-overview/import-data-and-annotations.md) or the [SDK](../sdk-overview/importing-data-and-annotations.md), please see the corresponding documentation.
 
 ## Object Reference
 
@@ -237,7 +237,7 @@ type MeasurementStats = {
 
 ### Task
 
-The `Task` object represents a single task on RedBrick AI. It contains task-level meta-data information about all the series within the task. A task can contain a [single series or multiple series](../annotation/layout-and-multiple-volumes/) (ex. a full MRI study).&#x20;
+The `Task` object represents a single task on RedBrick AI. It contains task-level meta-data information about all the series within the task. A task can contain a [single series or multiple series](../../annotation/layout-and-multiple-volumes/) (ex. a full MRI study).&#x20;
 
 #### `name: string`
 
@@ -295,7 +295,7 @@ If a Series contains annotations, you can expect one or more of the label entrie
 
 #### `items: string | string[]`
 
-The items entry is a list of file paths that point to your data. Please have a look at the [#items-list](../importing-data/import-cloud-data.md#items-list "mention")documentation for a fuller explanation of how to format for various modalities and series/study uploads.
+The items entry is a list of file paths that point to your data. Please have a look at the [#items-list](../../importing-data/import-cloud-data.md#items-list "mention")documentation for a fuller explanation of how to format for various modalities and series/study uploads.
 
 #### `name: string`
 
@@ -333,11 +333,11 @@ Here are the definition for some common entries present in some/all label entrie
 
 #### `category: string | string[]`
 
-The class of your annotations. This value is part of your Project [Taxonomy](../projects/taxonomies/). If the class is nested, `category` will be `string[]`.
+The class of your annotations. This value is part of your Project [Taxonomy](../../projects/taxonomies/). If the class is nested, `category` will be `string[]`.
 
 #### `attributes: { [ attributeName: string ]: string | boolean }`
 
-Each annotation can have accompanying attributes, that are also defined in your Project [Taxonomy](../projects/taxonomies/). `attributeName` is defined when creating your Taxonomy.&#x20;
+Each annotation can have accompanying attributes, that are also defined in your Project [Taxonomy](../../projects/taxonomies/). `attributeName` is defined when creating your Taxonomy.&#x20;
 
 #### `voxelPoint: { i: number, j: number, k: number }`
 
@@ -465,7 +465,7 @@ The path for the annotation file associated with a specific instanceId.
 
 Contains information about the Bounding Box Object Label.
 
-#### `pointTopLeft:` [`Point2D`](format-reference.md#point2d-xnorm-number-ynorm-number)
+#### `pointTopLeft:` [`Point2D`](full-format-reference.md#point2d-xnorm-number-ynorm-number)
 
 The location of the top-left point of the bounding box.
 
@@ -479,7 +479,7 @@ The width and height of the bounding box, normalized by the width and height of 
 
 Contains information about the Polygon Object Label.
 
-#### `points:` [`Point2D`](format-reference.md#point2d-xnorm-number-ynorm-number)`[]`
+#### `points:` [`Point2D`](full-format-reference.md#point2d-xnorm-number-ynorm-number)`[]`
 
 A list of 2D points that are connected to form a polygon. This list is ordered such that, $$point_i$$ is connected to $$point_{i+1}$$. The last point is also connected to the first point to close the polygon.&#x20;
 
@@ -489,11 +489,11 @@ A list of 2D points that are connected to form a polygon. This list is ordered s
 
 Contains information about the Length Measurement Object Label.
 
-#### `point1, point2 :` [`VoxelPoint`](format-reference.md#voxelpoint-i-number-j-number-k-number)
+#### `point1, point2 :` [`VoxelPoint`](full-format-reference.md#voxelpoint-i-number-j-number-k-number)
 
 A length measurement is defined by two points, and the length measurement is the distance between the two points.
 
-#### `absolutePoint1, absolutePoint2 :` [`WorldPoint`](format-reference.md#worldpoint-x-number-y-number-j-number)
+#### `absolutePoint1, absolutePoint2 :` [`WorldPoint`](full-format-reference.md#worldpoint-x-number-y-number-j-number)
 
 Corresponding to `point1`, `point2` these are points in physical space.
 
@@ -511,11 +511,11 @@ The value of the measurement in mm.
 
 Contains information about the Angle Object Label.
 
-#### `point1, point2, vertex :` [`VoxelPoint`](format-reference.md#voxelpoint-i-number-j-number-k-number)&#x20;
+#### `point1, point2, vertex :` [`VoxelPoint`](full-format-reference.md#voxelpoint-i-number-j-number-k-number)&#x20;
 
 Angle measurement is defined by three points, where the vertex is the middle point. The angle between the two vectors (vertex -> point1 and vertex -> point2) defines the angle measurement. These points are all represented in IJK image coordinate space.&#x20;
 
-#### `absolutePoint1, absolutePoint2 :` [`WorldPoint`](format-reference.md#worldpoint-x-number-y-number-j-number)&#x20;
+#### `absolutePoint1, absolutePoint2 :` [`WorldPoint`](full-format-reference.md#worldpoint-x-number-y-number-j-number)&#x20;
 
 Corresponding to `point1`, `point2`, `vertex`, these values are coordinates in the DICOM world coordinate system i.e. physical space.&#x20;
 
@@ -633,7 +633,7 @@ The `scores` entry compares the current users' annotations with every other user
 
 #### `series: Series[]`
 
-The [series entry](format-reference.md#series) for the current user only.
+The [series entry](full-format-reference.md#series) for the current user only.
 
 ***
 

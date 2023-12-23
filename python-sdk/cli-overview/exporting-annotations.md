@@ -11,7 +11,7 @@ For example, if you upload 100 images to your Project, annotate 80 of them and i
 If your team annotates 5 additional Tasks the next day and initiates an export, the CLI will only export annotations for the **5 newly annotated Tasks**, bringing the total number of annotation files in your local directory to **85**.
 
 {% hint style="success" %}
-By default, all segmentation files are exported in **NIfTI-1 format**. Please see our [Format Reference](../format-reference.md) for more information on exported annotations and alternative formats (such as PNG or RT Struct).
+By default, all segmentation files are exported in **NIfTI-1 format**. Please see our [Format Reference](../formats/full-format-reference.md) for more information on exported annotations and alternative formats (such as PNG or RT Struct).
 {% endhint %}
 
 ***

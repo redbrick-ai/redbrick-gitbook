@@ -72,5 +72,5 @@ project.upload.create_datapoints(storage_id="...", points=points)
 ```
 
 {% hint style="info" %}
-Please see our [annotation format reference](../format-reference.md) for a more detailed overview.
+Please see our [annotation format reference](../formats/full-format-reference.md) for a more detailed overview.
 {% endhint %}

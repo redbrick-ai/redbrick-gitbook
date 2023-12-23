@@ -59,9 +59,10 @@
   * [Creating & Cloning Projects](python-sdk/cli-overview/creating-and-cloning-projects.md)
   * [Import Data & Annotations](python-sdk/cli-overview/import-data-and-annotations.md)
   * [Exporting Annotations](python-sdk/cli-overview/exporting-annotations.md)
-* [Format Reference](python-sdk/format-reference.md)
-* [Export Structure Reference](python-sdk/export-structure-reference.md)
-* [Full SDK & CLI Reference](https://redbrick-sdk.readthedocs.io/en/stable/)
+* [Formats](python-sdk/formats/README.md)
+  * [Full Format Reference](python-sdk/formats/full-format-reference.md)
+  * [Export Structure](python-sdk/formats/export-structure.md)
+  * [Full SDK & CLI Reference](https://redbrick-sdk.readthedocs.io/en/stable/)
 
 ## Useful Links
 

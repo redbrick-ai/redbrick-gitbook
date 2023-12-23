@@ -17,6 +17,8 @@ tasks = project.export.list_tasks() # fetches all tasks
 specific_task = project.list_tasks(task_name="...") # fetches specific task by name
 ```
 
+***
+
 ## Assign Tasks to a User
 
 Use `assign_task` when you already have the `task_id` you want to assign to a particular user. If you don’t have the `task_id`, you can query all the Tasks using [`list_tasks`](exporting-annotations.md#export-all-tasks) or query tasks assigned to a particular user/unassigned tasks using [`list_tasks(user_id="...")`](assigning-and-querying-tasks.md#retrieve-queued-tasks).
@@ -33,11 +35,13 @@ project.labeling.assign_tasks(task_ids=["..."], email="...")
 project.review.assign_tasks(task_ids=["..."], email="...")
 ```
 
+***
+
 ## Retrieve Queued Tasks
 
 Use `list_tasks` in conjunction with a specific `user_id` when you want to retrieve the Tasks assigned to a particular user. This can be useful in preparation for using [`assign_tasks`](assigning-and-querying-tasks.md#assign-tasks-to-a-user) to programmatically assigning unassigned tasks, or [`put_tasks`](programmatic-label-and-review.md) to programmatically label/review tasks assigned to you.
 
-#### Retrieve Tasks Assigned to Specific User
+### Retrieve Tasks Assigned to Specific User
 
 ```python
 project = redbrick.get_project(org_id, project_id, api_key)
@@ -49,7 +53,7 @@ project.export.list_tasks(labeling.(stage_name="Label", user_id="email@email.com
 project.export.list_tasks(stage_name="Review_1", user_id="email@email.com")
 ```
 
-#### Retrieve Unassigned Tasks
+### Retrieve Unassigned Tasks
 
 You can also fetch all unassigned Tasks in a particular stage. This information may be useful when choosing which Tasks to assign to users.&#x20;
 
@@ -62,6 +66,8 @@ project.export.list_tasks(redbrick.TaskFilters.UNASSIGNED, stage_name="Label")
 # Get unassigned tasks in Review_1 review stage
 project.export.list_tasks(redbrick.TaskFilters.UNASSIGNED, stage_name="Review_1")
 ```
+
+***
 
 ## Retrieve Tasks Assigned to You
 

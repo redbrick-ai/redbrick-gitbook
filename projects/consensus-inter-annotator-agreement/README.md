@@ -92,7 +92,7 @@ If a task has gone through Consensus, you will get access to all versions of the
 redbrick export 
 ```
 
-Please [view the format reference](../../python-sdk/format-reference.md#consensus-export) for an overview of the exported format.
+Please [view the format reference](../../python-sdk/formats/full-format-reference.md#consensus-export) for an overview of the exported format.
 
 If you want to export only a single version of the annotations (i.e. the labeler with the best annotations or the base annotations qualified in Review), you can run the following command:
 
