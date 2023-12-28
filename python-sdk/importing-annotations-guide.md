@@ -3,11 +3,15 @@
 You can import all annotation types that are supported in RedBrick AI, including segmentations, classifications, bounding boxes, and more. Imported annotations will appear automatically on your annotator's interface.
 
 {% hint style="warning" %}
-1. Annotations and images must be imported together at the start. \
-   If you want to add annotations programmatically to images that have already been uploaded, [please use the programmatic label & review](sdk-overview/programmatic-label-and-review.md).
-2.  Annotation import is only supported through the SDK and CLI.&#x20;
+Annotations and images must be imported together at the start.&#x20;
 
-    That is, you cannot use the [direct upload UI](../importing-data/direct-data-upload.md) to import annotations, and you must use the items list with the SDK/CLI to provide the required metadata along with annotations.
+If you want to add annotations programmatically to images that have already been uploaded, [please use the programmatic label & review](sdk-overview/programmatic-label-and-review.md).
+{% endhint %}
+
+{% hint style="warning" %}
+Annotation import is only supported through the SDK and CLI.&#x20;
+
+That is, you cannot use the [direct upload UI](../importing-data/direct-data-upload.md) to import annotations, and you must use the items list with the SDK/CLI to provide the required metadata along with annotations.
 {% endhint %}
 
 To import images along with segmentations, you must provide us with:
