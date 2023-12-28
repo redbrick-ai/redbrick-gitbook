@@ -5,7 +5,7 @@ The RedBrick AI Python SDK is a Python package that allows developers to interac
 We recommend you use the Python SDK if you want to:
 
 * Build data pipelines with Python and want to integrate your RedBrick AI annotation;
-* Write _advanced_ scripts beyond simple import & export;
+* Write advanced scripts beyond simple import & export;
 * Take advantage of certain features such as [HTML Tooltips](https://docs.redbrickai.com/projects/taxonomies#html-tooltips), [Series and/or Task Level Metadata](https://docs.redbrickai.com/annotation/overview#task-level-and-series-level-metadata), or [Taxonomy Nesting](https://docs.redbrickai.com/projects/taxonomies#nested-taxonomies);
 
 For simple data import and annotation export, we [recommend you use the CLI](../cli-overview/), which has a simple interface with optimizations for basic use cases.&#x20;
@@ -23,18 +23,14 @@ Nearly all operations with the SDK are performed on either the [Project](https:/
 ```python
 import redbrick
 
-api_key = "..."
-org_id = "..."
-project_id = "..."
-
 project = redbrick.get_project(
-    org_id=org_id,
-    project_id=project_id,
-    api_key=api_key,
+    org_id="...",
+    project_id="...",
+    api_key="...",
 )
 organization = redbrick.get_org(
-    org_id=org_id, 
-    api_key=api_key,
+    org_id="...", 
+    api_key="...",
 )
 ```
 
