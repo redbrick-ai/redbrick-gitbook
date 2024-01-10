@@ -28,6 +28,14 @@ If your Storage Method has been configured correctly, pasting a sample file path
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-08-15 at 11.29.03 AM.png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+The **Sample File Path** field expects a file path starting at your bucket, not a full URL.
+
+:heavy\_multiplication\_x: **Don't Do:** https://s3.region-1.amazonaws.com/redbrick-bucket/project-2/brain-mri.dcm
+
+:heavy\_check\_mark: **Do:** redbrick-bucket/project-2/brain-mri.dcm
+{% endhint %}
+
 Once your Storage Method has been integrated, you can move on to creating an Items List.
 
 ***
