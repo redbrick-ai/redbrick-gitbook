@@ -30,22 +30,21 @@
 * [Labeler Evaluation](projects/labeler-evaluation.md)
 * [Comments and Raised Issues](projects/comments-and-raised-issues.md)
 
-## Annotation
+## Annotation & viewer
 
-* [Overview](annotation/overview.md)
-* [Creating, Editing and Deleting Annotations](annotation/creating-editing-and-deleting-annotations.md)
-* [Visualization and Masking](annotation/windowing-thresholding-and-smoothing.md)
-* [Layout & Multiple Volumes](annotation/layout-and-multiple-volumes/README.md)
-  * [Custom Hanging Protocol](annotation/layout-and-multiple-volumes/custom-hanging-protocol.md)
-  * [Multiple Modalities](annotation/layout-and-multiple-volumes/multiple-modalities.md)
-  * [Intellisync](annotation/layout-and-multiple-volumes/intellisync.md)
-  * [Annotation Mirroring](annotation/layout-and-multiple-volumes/annotation-mirroring.md)
-* [Segmentation](annotation/segmentation/README.md)
-  * [Segmentation Tools](annotation/segmentation/segmentation-tools.md)
-  * [Instance vs. Semantic](annotation/segmentation/instance-vs.-semantic.md)
-  * [Overlapping Segmentations](annotation/segmentation/overlapping-segmentations.md)
-  * [3D Slicer Integration](annotation/segmentation/3d-slicer-integration.md)
-  * [Reference Standards](annotation/segmentation/reference-standards.md)
+* [Viewer Basics](annotation-and-viewer/viewer-basics/README.md)
+  * [Custom Hanging Protocol](annotation-and-viewer/viewer-basics/custom-hanging-protocol.md)
+  * [Multiple Modalities](annotation-and-viewer/viewer-basics/multiple-modalities.md)
+  * [Intellisync](annotation-and-viewer/viewer-basics/intellisync.md)
+  * [Annotation Mirroring](annotation-and-viewer/viewer-basics/annotation-mirroring.md)
+* [Creating, Editing and Deleting Annotations](annotation-and-viewer/creating-editing-and-deleting-annotations.md)
+* [Visualization and Masking](annotation-and-viewer/visualization-and-masking.md)
+* [Segmentation](annotation-and-viewer/segmentation/README.md)
+  * [Segmentation Tools](annotation-and-viewer/segmentation/segmentation-tools.md)
+  * [Instance vs. Semantic](annotation-and-viewer/segmentation/instance-vs.-semantic.md)
+  * [Overlapping Segmentations](annotation-and-viewer/segmentation/overlapping-segmentations.md)
+  * [3D Slicer Integration](annotation-and-viewer/segmentation/3d-slicer-integration.md)
+  * [Reference Standards](annotation-and-viewer/segmentation/reference-standards.md)
 
 ## Python SDK & CLI <a href="#python-sdk" id="python-sdk"></a>
 

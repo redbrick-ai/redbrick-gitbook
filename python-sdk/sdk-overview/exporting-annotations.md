@@ -27,7 +27,7 @@ project_id/
 ```
 
 {% hint style="success" %}
-The above structure is for a standard export (i.e. not semantic, not binary mask, etc.) and assumes no [overlapping segmentations](../../annotation/segmentation/overlapping-segmentations.md#exporting-overlapping-segmentations).&#x20;
+The above structure is for a standard export (i.e. not semantic, not binary mask, etc.) and assumes no [overlapping segmentations](../../annotation-and-viewer/segmentation/overlapping-segmentations.md#exporting-overlapping-segmentations).&#x20;
 {% endhint %}
 
 ### Segmentations Subdirectory

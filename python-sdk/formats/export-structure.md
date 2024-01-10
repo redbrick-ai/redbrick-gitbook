@@ -10,7 +10,7 @@ Please see the following walkthrough for example structures, explanations, and o
 
 ## Standard Export
 
-For the purposes of this documentation, a standard export is any RedBrick AI export that **does not include** [**overlapping segmentations**](../../annotation/segmentation/overlapping-segmentations.md) **or** [**variant export parameters**](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.export\_tasks) such as `semantic_mask` or `binary_mask`.&#x20;
+For the purposes of this documentation, a standard export is any RedBrick AI export that **does not include** [**overlapping segmentations**](../../annotation-and-viewer/segmentation/overlapping-segmentations.md) **or** [**variant export parameters**](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.export\_tasks) such as `semantic_mask` or `binary_mask`.&#x20;
 
 ### Single Series
 
@@ -139,7 +139,7 @@ In other words (and using the example above), any **Glioma** annotation will alw
 
 #### What if a labeler creates 2 Entities for a single Object Label and then I try to use Semantic Export?
 
-Semantic Export will strictly enforce the principles of [semantic annotation](../../annotation/segmentation/#instance-vs.-semantic-segmentation) even in the presence of human error.&#x20;
+Semantic Export will strictly enforce the principles of [semantic annotation](../../annotation-and-viewer/segmentation/#instance-vs.-semantic-segmentation) even in the presence of human error.&#x20;
 
 If you attempt to use Semantic Export on a Task that has multiple [Entities](https://docs.redbrickai.com/annotation/creating-editing-and-deleting-annotations#creating-object-labels) associated with a single Object Label, RedBrick AI will aggregate all of the Entities into a single annotation file.&#x20;
 
