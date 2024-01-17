@@ -39,7 +39,7 @@ You can find the [full format reference here](formats/full-format-reference.md#i
     "series": [
         {
             "items": ["instance-01.dcm", "instance-02.dcm", ...],
-            "segmentations": "segmentation.nii",
+            "segmentations": "segmentation.nii.gz",
             
             <a data-footnote-ref href="#user-content-fn-1">// Read more about "segmentMap"</a>
             "segmentMap": {
@@ -62,7 +62,7 @@ Sometimes, segmentations for a single volume are stored in multiple segmentation
             "items": ["instance-01.dcm", "instance-02.dcm", ...],
             
             <a data-footnote-ref href="#user-content-fn-2">// Read more about "segmentations"</a>
-            "segmentations": ["segmentation-1.nii", "segmentation-2.nii"]
+            "segmentations": ["segmentation-1.nii.gz", "segmentation-2.nii.gz"]
             
             <a data-footnote-ref href="#user-content-fn-3">// Read more about "segmentMap"</a>
             "segmentMap": {
@@ -77,14 +77,14 @@ Sometimes, segmentations for a single volume are stored in multiple segmentation
 ### Common mistakes for I and II.&#x20;
 
 {% hint style="warning" %}
-* The values 1 and 2 must be present in either `segmentation-1.nii` or `segmentation-2.nii.`
-* Values in `segmentation-1.nii` & `segmentation-2.nii` that are not in `segmentMap`will not map to any taxonomy category. This will result in uneditable, view-only annotations.
-* All values in `segmentation.nii` that are not in `segmentMap` will not be mapped to any taxonomy category in the editor.
+* The values 1 and 2 must be present in either `segmentation-1.nii.gz` or `segmentation-2.nii.gz.`
+* Values in `segmentation-1.nii.gz` & `segmentation-2.nii.gz` that are not in `segmentMap`will not map to any taxonomy category. This will result in uneditable, view-only annotations.
+* All values in `segmentation.nii.gz` that are not in `segmentMap` will not be mapped to any taxonomy category in the editor.
 {% endhint %}
 
 ### III: Multiple binary segmentation files per task
 
-A common pattern is to store each segmentation instance in a separate NIfTI file as a binary mask. In the example below, all non-zero values in `segmentation-1.nii` are meant to correspond to the taxonomy category `category-a`.&#x20;
+A common pattern is to store each segmentation instance in a separate NIfTI file as a binary mask. In the example below, all non-zero values in `segmentation-1.nii.gz` are meant to correspond to the taxonomy category `category-a`.&#x20;
 
 <pre class="language-json"><code class="lang-json">{
     "name": "...", 
@@ -93,7 +93,7 @@ A common pattern is to store each segmentation instance in a separate NIfTI file
             "items": ["instance-01.dcm", "instance-02.dcm", ...],
             
             <a data-footnote-ref href="#user-content-fn-4">// Read more about "segmentations"</a>
-            "segmentations": ["path/segmentation-1.nii", "path/segmentation-2.nii"]
+            "segmentations": ["path/segmentation-1.nii.gz", "path/segmentation-2.nii.gz"]
             "segmentMap": {
             
                 <a data-footnote-ref href="#user-content-fn-5">// Read more about "1"</a>
@@ -103,11 +103,11 @@ A common pattern is to store each segmentation instance in a separate NIfTI file
                     "category": "category-a", 
                     
                     <a data-footnote-ref href="#user-content-fn-7">// Read more about "mask"</a>
-                    "mask": "path/segmentation-1.nii",                 
+                    "mask": "path/segmentation-1.nii.gz",                 
                 }, 
                 "2": {
                     "category": "category-b", 
-                    "mask": "path/segmentation-2.nii"
+                    "mask": "path/segmentation-2.nii.gz"
                 }, 
                 
                 <a data-footnote-ref href="#user-content-fn-8">// Read more about "binaryMask"</a>
@@ -122,7 +122,7 @@ A common pattern is to store each segmentation instance in a separate NIfTI file
 
 [^2]: The masks here are not necessarily binary masks, i.e., they might have multiple values within them. \
     \
-    The mapping mapping between value and category should be stable across files.&#x20;
+    The mapping between value and category should be stable across files.&#x20;
 
 [^3]: All "1" within both segmentation files will map to "category-a".
 
@@ -130,7 +130,7 @@ A common pattern is to store each segmentation instance in a separate NIfTI file
 
 [^5]: When exported, this segmentation will be represented by "1" in the exported NIfTI.
 
-[^6]: This segmentation will be mapped to "category". The "category" must exist in your project's taxonomy.
+[^6]: This segmentation will be mapped to "category". The "category" must exist in your Project's Taxonomy.
 
 [^7]: This mapping will apply to the segmentation file defined by "mask".
 
