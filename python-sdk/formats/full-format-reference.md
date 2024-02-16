@@ -220,8 +220,8 @@ type WorldPoint = {
   z: number;
 };
 type Point2D = {
-  xnorm: number;
-  ynorm: number;
+  xNorm: number;
+  yNorm: number;
 };
 
 type MeasurementStats = {

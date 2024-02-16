@@ -65,21 +65,6 @@ interface LabelAttribute {
   value: boolean | number | string;
 }
 
-interface Task {
-    orgId: string;
-    projectId: string;
-    stageName: string; // i.e. "Label" or "Review_1"
-    taskId: string;
-    name: string; // Name given for the task at upload
-    metaData: Record <string, string>;
-    series: Series[];
-}
-
-interface Series {
-  name: string;
-  metaData: Record <string, string>;
-}
-
 // Task Type
 enum TaskType {
   ITEMS = 'ITEMS',
@@ -95,6 +80,177 @@ enum TaskType {
   LENGTH = 'LENGTH',
   ANGLE = 'ANGLE',
 }
+
+
+interface Task {
+    orgId: string;
+    projectId: string;
+    stageName: string; // i.e. "Label" or "Review_1"
+    taskId: string;
+    name: string; // Name given for the task at upload
+    metaData: Record <string, any>;
+    classification?: Classification;
+    series: Series[];
+}
+
+interface Series {
+  name: string;
+  metaData: Record <string, string>;
+  
+  classifications?: Classification[];
+  instanceClassifications?: InstanceClassification[];
+
+  landmarks?: Landmark[];
+  landmarks3d?: Landmark3D[];
+  measurements?: (MeasureLength | MeasureAngle)[];
+  boundingBoxes?: BoundingBox[];
+  cuboids?: Cuboid[];
+  ellipses?: Ellipse[];
+  polygons?: Polygon[];
+  polylines?: Polyline[];
+
+  segmentMap?: {
+    [instanceId: string]: {
+      category: Category;
+      attributes?: Attributes;
+      overlappingGroups?: number[];
+    };
+  };
+}
+
+
+interface VideoMetaData {
+  frameIndex: number;
+  trackId: string;
+  keyFrame: boolean;
+  endTrack: boolean;
+}
+
+interface Classification {
+  attributes: Attributes;
+  video?: VideoMetaData;
+}
+
+interface InstanceClassification {
+  fileIndex: number;
+  values: Attributes;
+}
+
+interface MeasurementStats {
+  average?: number;
+  area?: number;
+  volume?: number;
+  minimum?: number;
+  maximum?: number;
+}
+
+interface Landmark {
+  point: Point2D;
+  category: Category;
+  attributes?: Attributes;
+  video?: VideoMetaData;
+}
+
+interface Landmark3D {
+  point: VoxelPoint;
+  category: Category;
+  attributes?: Attributes;
+}
+
+interface MeasureLength {
+  type: 'length';
+  point1: VoxelPoint;
+  point2: VoxelPoint;
+  absolutePoint1: WorldPoint;
+  absolutePoint2: WorldPoint;
+  normal: [number, number, number];
+  length: number;
+  category: Category;
+  attributes?: Attributes;
+}
+
+interface MeasureAngle {
+  type: 'angle';
+  point1: VoxelPoint;
+  point2: VoxelPoint;
+  vertex: VoxelPoint;
+  absolutePoint1: WorldPoint;
+  absolutePoint2: WorldPoint;
+  absoluteVertex: WorldPoint;
+  normal: [number, number, number];
+  angle: number;
+  category: Category;
+  attributes?: Attributes;
+}
+
+interface BoundingBox {
+  pointTopLeft: Point2D;
+  wNorm: number;
+  hNorm: number;
+  category: Category;
+  attributes?: Attributes;
+  stats?: MeasurementStats;
+  video?: VideoMetaData;
+}
+
+interface Cuboid {
+  point1: VoxelPoint;
+  point2: VoxelPoint;
+  absolutePoint1: WorldPoint;
+  absolutePoint2: WorldPoint;
+  category: Category;
+  attributes?: Attributes;
+  stats?: MeasurementStats;
+}
+
+interface Ellipse {
+  pointCenter: Point2D;
+  xRadiusNorm: number;
+  yRadiusNorm: number;
+  rotationRad: number;
+  category: Category;
+  attributes?: Attributes;
+  stats?: MeasurementStats;
+  video?: VideoMetaData;
+}
+
+interface Polygon {
+  points: Point2D[];
+  category: Category;
+  attributes?: Attributes;
+  stats?: MeasurementStats;
+  video?: VideoMetaData;
+}
+
+interface Polyline {
+  points: Point2D[];
+  category: Category;
+  attributes?: Attributes;
+  video?: VideoMetaData;
+}
+
+// i is rows, j is columns, k is slice
+interface VoxelPoint {
+  i: number;
+  j: number;
+  k: number;
+}
+
+// The position of VoxelPoint in physical space (world coordinate) computed using the Image Plane Module
+interface WorldPoint {
+  x: number;
+  y: number;
+  z: number;
+}
+
+interface Point2D {
+  xNorm: number;
+  yNorm: number;
+}
+
+type Category = string;
+type Attributes = { [attributeName: string]: string | boolean | string[] };
+
 ```
 
 You can generate a sample `Label[]` object by going to the labeling tool -> opening command bar `cmd/ctrl + k` -> _Copy current label state to clipboard._
@@ -109,26 +265,26 @@ To help you write a validation function with several checks, RedBrick AI has a c
 
 {% tabs %}
 {% tab title="With assert()" %}
-<pre class="language-typescript"><code class="lang-typescript"><strong>function(labels: Label[]): string[] {
-</strong>    assert(labels.length > 1, "You have not created any labels!")
-    assert(labels.length &#x3C; 5, "You have created too many labels!")
+<pre class="language-typescript"><code class="lang-typescript"><strong>function(task: Task, labels: Label[]): string[] {
+</strong>    assert(labels.length >= 1, "You have not created any labels!");
+    assert(labels.length &#x3C;= 5, "You have created too many labels!");
 }
 </code></pre>
 {% endtab %}
 
 {% tab title="Without assert()" %}
 ```typescript
-function(labels: Label[]): string[] {
-    const errors: string = []
+function(task: Task, labels: Label[]): string[] {
+    const errors = [];
     
-    if (labels.length > 1) {
-        errors.push("You have not created any labels!")
+    if (labels.length < 1) {
+        errors.push("You have not created any labels!");
     }
-    if (labels.length < 5) {
-        errors.push("You have created too many labels!")
+    if (labels.length > 5) {
+        errors.push("You have created too many labels!");
     }
     
-    return errors
+    return errors;
 }
 ```
 {% endtab %}
@@ -155,7 +311,7 @@ Your custom validation script will be regularly run. If any warnings are found, 
 For this example, let's say we are expecting each task to contain the following segmentations - _necrosis, enhancing tumor, non-enhacing tumor and edema._&#x20;
 
 ```typescript
-function(labels: Label[]): string[] {
+function(task: Task, labels: Label[]): string[] {
   const expectedCategories = [
     'necrosis',
     'enhancing tumor',
@@ -182,7 +338,7 @@ function(labels: Label[]): string[] {
 This script validates only a single instance of a particular category has been created. If you're expecting semantic segmentation labels, this check can ensure annotators don't accidentally create multiple instance segmentations.
 
 ```typescript
-function(labels: Label[]): string[] {  
+function(task: Task, labels: Label[]): string[] {  
   const semanticCategory = 'edema';
 
   const labelsFiltered = labels.filter((label) => label.category[0] === semanticCategory);
