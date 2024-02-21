@@ -9,7 +9,9 @@ $ pip install -U redbrick-sdk
 ```
 
 {% hint style="info" %}
-The SDK and CLI work on Mac, Windows, and Linux. They are compatible with **Python versions: 3.8, 3.9, 3.10 & 3.11**
+The SDK and CLI work on Mac, Windows, and Linux.
+
+They are compatible with **python version 3.8+**
 {% endhint %}
 
 ## API Keys
