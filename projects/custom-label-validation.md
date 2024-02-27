@@ -95,7 +95,8 @@ interface Task {
 
 interface Series {
   name: string;
-  metaData: Record <string, string>;
+  metaData: Record <string, any>;
+  dimensions: [number, number, number];
   
   classifications?: Classification[];
   instanceClassifications?: InstanceClassification[];
