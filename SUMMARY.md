@@ -28,7 +28,7 @@
   * [Agreement calculation](projects/consensus-inter-annotator-agreement/agreement-calculation.md)
 * [Custom Label Validation](projects/custom-label-validation.md)
 * [Labeler Evaluation](projects/labeler-evaluation.md)
-* [Comments and Raised Issues](projects/comments-and-raised-issues.md)
+* [Comments & Raise Issue](projects/comments-and-raise-issue.md)
 
 ## Annotation & viewer
 
@@ -48,6 +48,7 @@
 
 ## Python SDK & CLI <a href="#python-sdk" id="python-sdk"></a>
 
+* [Full documentation](https://redbrick-sdk.readthedocs.io/en/stable/)
 * [Installation & API Keys](python-sdk/installation-and-api-keys.md)
 * [SDK Overview](python-sdk/sdk-overview/README.md)
   * [Importing Data & Annotations](python-sdk/sdk-overview/importing-data-and-annotations.md)
@@ -59,7 +60,6 @@
   * [Import Data & Annotations](python-sdk/cli-overview/import-data-and-annotations.md)
   * [Exporting Annotations](python-sdk/cli-overview/exporting-annotations.md)
 * [Importing Annotations Guide](python-sdk/importing-annotations-guide.md)
-* [Full SDK & CLI Reference](https://redbrick-sdk.readthedocs.io/en/stable/)
 * [Formats](python-sdk/formats/README.md)
   * [Full Format Reference](python-sdk/formats/full-format-reference.md)
   * [Export Structure](python-sdk/formats/export-structure.md)

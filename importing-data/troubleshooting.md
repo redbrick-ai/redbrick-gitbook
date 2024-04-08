@@ -46,7 +46,7 @@ When emailing RedBrick AI's Support Team, please include as much context as you 
 
 If you'd simply prefer to continue work on other Tasks, you have several options.
 
-**Raise Issue** - if you'd like to inform your Admin of an issue within RedBrick AI, you can click on the **Raise Issue** button. This will remove the Task from your Labeling Queue, preventing it from appearing over and over again while you work. You can learn more about [raising an Issue here](../projects/comments-and-raised-issues.md). Once you raise an Issue, you will automatically be presented with the next Task in your Labeling Queue;
+**Raise Issue** - if you'd like to inform your Admin of an issue within RedBrick AI, you can click on the **Raise Issue** button. This will remove the Task from your Labeling Queue, preventing it from appearing over and over again while you work. You can learn more about [raising an Issue here](../projects/comments-and-raise-issue.md). Once you raise an Issue, you will automatically be presented with the next Task in your Labeling Queue;
 
 If you don't want to raise an Issue, you can simply navigate to another Task in your queue by either:
 
