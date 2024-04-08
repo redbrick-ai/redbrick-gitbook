@@ -28,14 +28,14 @@ A video overview of how to overlap segmentations on RedBrick AI.
 
 A walkthrough of how to incorporate 3D Slicer into your annotation flows.
 
-{% content-ref url="3d-slicer-integration.md" %}
-[3d-slicer-integration.md](3d-slicer-integration.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ### Reference Standards
 
 An overview of Reference Standards, i.e. a set of Ground Truth annotations that you can add to your Project as a visual reference for your labelers.
 
-{% content-ref url="reference-standards.md" %}
-[reference-standards.md](reference-standards.md)
+{% content-ref url="../../projects/reference-standards.md" %}
+[reference-standards.md](../../projects/reference-standards.md)
 {% endcontent-ref %}

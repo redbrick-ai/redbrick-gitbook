@@ -58,35 +58,39 @@ Grow Tool Overview
 
 ### Contour Tool
 
-The Contour Tool allows you to draw outlines of your regions quickly and then interpolate between slices.
+The contour tool lets you interact with masks as _contours_. Interacting with masks as contours gives you special tools to create and edit annotations.&#x20;
 
-First, select the Contour Tool from the top bar or press the `K` hotkey.
+#### Creating a contour from scratch.&#x20;
 
-#### Creating a Contour & Interpolating
+Select the contour tool, and click and drag on the canvas to draw a contour. To complete the contour, simply intersect the initial node or any other edge of the contour.&#x20;
 
-1. To get started, click on a viewport. You can either click and drag to segment or add points one click at a time.
-2. To close the contour, click or drag your segmentation to the starting node.&#x20;
-3. You can then change the slice and repeat the process. If you skip slices, **the in-between slices will be interpolated.**
+{% embed url="https://share.redbrickai.com/gFQxpFTR" %}
 
-#### **Editing a Contour**
+#### Editing existing masks as contours
 
-To edit, hover near the edge of your region and click and drag to draw a new segment. Editing an interpolated contour will automatically adjust the neighboring interpolated contours.
+* **Node edit.** Select an existing mask and select the contour tool. When you hover over an edge, you will see a node with a "target spline" appear. You can drag this node to edit the "target spline" area interactively.
 
-#### Rasterize to Complete the Contour
+{% embed url="https://share.redbrickai.com/WWwm55Yn" %}
 
-{% hint style="warning" %}
-When you finish your contour, you must convert it to a pixel mask with a process called "rasterization". To rasterize your contour, you can use the `Shift+Enter` hotkey or the **Rasterize** button in the right hand Context Panel.
+* **Edge redraw.** You can redraw any edge by simply "overwriting" the edge by intersecting it two times.&#x20;
+
+{% embed url="https://share.redbrickai.com/cR4Yndyl" %}
+
+***
+
+### Interpolate
+
+You can interpolate between two masks using the _Interpolate_ tool.&#x20;
+
+1. First, draw two masks on two different slices. These masks must be part of the same entity.&#x20;
+2. With the Interpolate tool, select the edges of both masks one by one.&#x20;
+3. You will see an interpolated annotation in between the masks.&#x20;
+
+{% embed url="https://share.redbrickai.com/bFkXVrjq" %}
+
+{% hint style="info" %}
+Toggle Cineloop to see the slices and where the interpolated masks are.&#x20;
 {% endhint %}
-
-#### Smart Contouring
-
-Our Smart Contour Tool automatically draws a contour around a region of interest. To use Smart Contouring, make sure the Contour Tool is selected, press `ctrl+alt/option`, and hover near the boundary of an object. Click to confirm the automatic contour.&#x20;
-
-For bumpy boundaries, you can attempt to smooth out the contour by holding and dragging. Adjust the distance you drag to make the contour less or more smooth.
-
-{% embed url="https://www.loom.com/share/3a37d281cde34352ae354fc7bb8d4d07?sid=e7bbf21f-4346-46ec-ba90-3a7aab65bf3d" %}
-Contour Tool Overview
-{% endembed %}
 
 ***
 

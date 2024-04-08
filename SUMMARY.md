@@ -31,6 +31,7 @@
 * [Custom Label Validation](projects/custom-label-validation.md)
 * [Labeler Evaluation](projects/labeler-evaluation.md)
 * [Comments & Raise Issue](projects/comments-and-raised-issues.md)
+* [Reference Standards](projects/reference-standards.md)
 
 ## Annotation & viewer
 
@@ -45,8 +46,6 @@
   * [Segmentation Tools](annotation-and-viewer/segmentation/segmentation-tools.md)
   * [Instance vs. Semantic](annotation-and-viewer/segmentation/instance-vs.-semantic.md)
   * [Overlapping Segmentations](annotation-and-viewer/segmentation/overlapping-segmentations.md)
-  * [3D Slicer Integration](annotation-and-viewer/segmentation/3d-slicer-integration.md)
-  * [Reference Standards](annotation-and-viewer/segmentation/reference-standards.md)
 
 ## Python SDK & CLI <a href="#python-sdk" id="python-sdk"></a>
 
