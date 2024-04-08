@@ -167,7 +167,7 @@ No. The Category Number is immutable for all Object Labels, regardless of how yo
 
 ## Consensus Export
 
-When exporting annotations from a [Consensus Project](../../projects/consensus-inter-annotator-agreement/), the `tasks.json` file and the `segmentations/` directory will have a unique structure.&#x20;
+When exporting annotations from a [Consensus Project](../../projects/multiple-labeling/consensus/), the `tasks.json` file and the `segmentations/` directory will have a unique structure.&#x20;
 
 Your export subdirectory will contain the annotation files for all users who generated and saved annotations on RedBrick AI. Each individual annotation file is marked with a numeric index (e.g. "\_1" at the end of the file name, and you can map this file to the corresponding user by referencing your `tasks.json` file.
 

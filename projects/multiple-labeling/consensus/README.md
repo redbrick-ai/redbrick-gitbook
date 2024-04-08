@@ -1,4 +1,4 @@
-# Consensus (Inter-Annotator Agreement)
+# Consensus
 
 Consensus provides you with both a quantitative measure of annotation quality (by means of an Inter-Annotator Agreement Score) and the opportunity to create higher-quality annotations by combining the opinions of multiple annotators.&#x20;
 
@@ -6,7 +6,7 @@ Consensus provides you with both a quantitative measure of annotation quality (b
 
 With Consensus enabled, **multiple annotators can be required to label each Task** in the Label Stage. Each individual annotator will only see an empty Task and will not be able to view the annotations done by the other annotators.
 
-<figure><img src="../../.gitbook/assets/image (24).png" alt="" width="563"><figcaption><p>Comparison between standard flow and Consensus flow with 3 labelers</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24).png" alt="" width="563"><figcaption><p>Comparison between standard flow and Consensus flow with 3 labelers</p></figcaption></figure>
 
 Once all the annotators have completed the Task, RedBrick AI will calculate an **Inter-Annotator Agreement Score** between the annotations. Please reference the [following documentation](./#inter-annotator-agreement) for more information on how we calculate these scores.
 
@@ -16,7 +16,7 @@ The Inter-Annotator Agreement Score is a quantitative measure of quality that ca
 
 You can enable Consensus by navigating to Project Settings. Once enabled, you will be required to select a **minimum number of labelers** that will be required to annotate each Task. If your project has a Review Stage, you can **enable auto-acceptance** to automatically accept Tasks whose agreement scores are higher than the specified threshold.
 
-![Consensus Project Settings](../../.gitbook/assets/localhost\_3000\_943c97cd-58b1-4794-84d0-8b00d26f0c84\_projects\_64e8b5d9-81d3-4401-a49a-924d72916b0f\_settings.png)
+![Consensus Project Settings](../../../.gitbook/assets/localhost\_3000\_943c97cd-58b1-4794-84d0-8b00d26f0c84\_projects\_64e8b5d9-81d3-4401-a49a-924d72916b0f\_settings.png)
 
 ## Assigning Tasks to Multiple Users
 
@@ -24,7 +24,7 @@ RedBrick AI has an **automatic assignment protocol** that will automatically ass
 
 Alternatively, you can **manually override any Task on the Data page**. When Consensus is enabled, the **Assign** dropdown will allow you to select multiple users.
 
-![Manual Multi-Assignment](<../../.gitbook/assets/Screen Shot 2022-08-16 at 12.03.37 PM.png>)
+![Manual Multi-Assignment](<../../../.gitbook/assets/Screen Shot 2022-08-16 at 12.03.37 PM.png>)
 
 {% hint style="info" %}
 You can _manually_ assign more than the required number of labelers. The automatic assignment protocol will only assign up to the number of required labelers, but you can manually assign as many as you'd like.&#x20;
@@ -44,7 +44,7 @@ The type of comparison function used to calculate the `Score`depends on the type
 [agreement-calculation.md](agreement-calculation.md)
 {% endcontent-ref %}
 
-![Inter-Annotator Agreement for Tasks queued in Review](<../../.gitbook/assets/Screen Shot 2022-08-16 at 12.27.55 PM.png>)
+![Inter-Annotator Agreement for Tasks queued in Review](<../../../.gitbook/assets/Screen Shot 2022-08-16 at 12.27.55 PM.png>)
 
 ## Review Stage Absent
 
@@ -54,7 +54,7 @@ If there is no Review Stage after the Label Stage, the set of annotations with t
 
 When a Review Stage is present, all annotations will be displayed in the Editor. The list of all users that have annotated the Task is located on the right hand Consensus Panel. By default, annotations are color-coded **by user**, but they can be grouped **by category**_._
 
-<figure><img src="../../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>A Task in Review with Consensus Enabled</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>A Task in Review with Consensus Enabled</p></figcaption></figure>
 
 ## Best Annotations and Super Truth
 
@@ -92,7 +92,7 @@ If a task has gone through Consensus, you will get access to all versions of the
 redbrick export 
 ```
 
-Please [view the format reference](../../python-sdk/formats/full-format-reference.md#consensus-export) for an overview of the exported format.
+Please [view the format reference](../../../python-sdk/formats/full-format-reference.md#consensus-export) for an overview of the exported format.
 
 If you want to export only a single version of the annotations (i.e. the labeler with the best annotations or the base annotations qualified in Review), you can run the following command:
 

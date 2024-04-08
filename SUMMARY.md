@@ -24,11 +24,13 @@
 * [Get Started with a Project](projects/get-started-with-a-project.md)
 * [Task Assignment](projects/task-assignment.md)
 * [Taxonomies](projects/taxonomies/README.md)
-* [Consensus (Inter-Annotator Agreement)](projects/consensus-inter-annotator-agreement/README.md)
-  * [Agreement calculation](projects/consensus-inter-annotator-agreement/agreement-calculation.md)
+* [Multiple labeling](projects/multiple-labeling/README.md)
+  * [Consensus](projects/multiple-labeling/consensus/README.md)
+    * [Agreement calculation](projects/multiple-labeling/consensus/agreement-calculation.md)
+  * [Task duplication](projects/multiple-labeling/task-duplication.md)
 * [Custom Label Validation](projects/custom-label-validation.md)
 * [Labeler Evaluation](projects/labeler-evaluation.md)
-* [Comments & Raise Issue](projects/comments-and-raise-issue.md)
+* [Comments & Raise Issue](projects/comments-and-raised-issues.md)
 
 ## Annotation & viewer
 
