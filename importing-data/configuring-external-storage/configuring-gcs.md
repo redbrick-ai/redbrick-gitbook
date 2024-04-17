@@ -8,7 +8,7 @@ The first step to preparing data storage on GCP is to [create a account](https:/
 
 ## Create a bucket within a project
 
-Once you have created your GCP account and a project within your account, a bucket and upload your data within the bucket either through the UI or CLI. You can leave all the settings during creation as the default. After creating your bucket, upload your data into the bucket.&#x20;
+Once you have  your GCP account and a project within your account, a bucket and upload your data within the bucket either through the UI or CLI. You can leave all the settings during creation as the default. After creating your bucket, upload your data into the bucket.&#x20;
 
 ## Create a Service Account
 
