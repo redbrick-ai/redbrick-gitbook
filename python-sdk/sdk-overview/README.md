@@ -6,7 +6,7 @@ We recommend you use the Python SDK if you want to:
 
 * Build data pipelines with Python and want to integrate your RedBrick AI annotation;
 * Write advanced scripts beyond simple import & export;
-* Take advantage of certain features such as [HTML Tooltips](https://docs.redbrickai.com/projects/taxonomies#html-tooltips), [Series and/or Task Level Metadata](https://docs.redbrickai.com/annotation/overview#task-level-and-series-level-metadata), or [Taxonomy Nesting](https://docs.redbrickai.com/projects/taxonomies#nested-taxonomies);
+* Take advantage of certain features such as [HTML Tooltips](https://docs.redbrickai.com/projects/taxonomies#html-tooltips), [Series and/or Task Level Metadata](https://docs.redbrickai.com/python-sdk/formats/full-format-reference#items-list-and-tasks.json), or [Taxonomy Nesting](https://docs.redbrickai.com/projects/taxonomies#nested-taxonomies);
 
 For simple data import and annotation export, we [recommend you use the CLI](../cli-overview/), which has a simple interface with optimizations for basic use cases.&#x20;
 
