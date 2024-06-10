@@ -16,6 +16,7 @@
   * [Configuring AWS s3](importing-data/configuring-external-storage/configuring-aws-s3.md)
   * [Configuring Azure Blob](importing-data/import-cloud-data/configuring-azure-blob.md)
   * [Configuring GCS](importing-data/configuring-external-storage/configuring-gcs.md)
+  * [Configuring AltaDB](importing-data/import-cloud-data/configuring-altadb.md)
   * [Creating an Items List](importing-data/import-cloud-data/creating-an-items-list.md)
 * [Troubleshooting](importing-data/troubleshooting.md)
 
@@ -28,6 +29,10 @@
   * [Consensus](projects/multiple-labeling/consensus/README.md)
     * [Agreement calculation](projects/multiple-labeling/consensus/agreement-calculation.md)
   * [Task duplication](projects/multiple-labeling/task-duplication.md)
+* [Get Started with Workspace](projects/get-started-with-workspace/README.md)
+  * [Cohort Creation](projects/get-started-with-workspace/cohort-creation.md)
+  * [Datapoint Classification](projects/get-started-with-workspace/datapoint-classification.md)
+  * [Configuring Metadata Schema](projects/get-started-with-workspace/configuring-metadata-schema.md)
 * [Custom Label Validation](projects/custom-label-validation.md)
 * [Labeler Evaluation](projects/labeler-evaluation.md)
 * [Comments & Raise Issue](projects/comments-and-raised-issues.md)

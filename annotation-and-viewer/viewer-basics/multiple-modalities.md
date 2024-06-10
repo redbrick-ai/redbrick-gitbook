@@ -8,4 +8,4 @@ Depending on which viewport you have selected and the type of data in that viewp
 
 ![Available tools for 2D X-ray](<../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png>)
 
-![Available tools for 3D CT](<../../.gitbook/assets/image (8).png>)
+![Available tools for 3D CT](<../../.gitbook/assets/image (8) (1).png>)
