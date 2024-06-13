@@ -52,6 +52,7 @@
   * [Segmentation Tools](annotation-and-viewer/segmentation/segmentation-tools.md)
   * [Instance vs. Semantic](annotation-and-viewer/segmentation/instance-vs.-semantic.md)
   * [Overlapping Segmentations](annotation-and-viewer/segmentation/overlapping-segmentations.md)
+* [Heat maps](annotation-and-viewer/heat-maps.md)
 
 ## Python SDK & CLI <a href="#python-sdk" id="python-sdk"></a>
 
