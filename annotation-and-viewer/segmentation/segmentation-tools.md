@@ -42,6 +42,18 @@ Pen Tool Overview
 
 ***
 
+### 3D Scissor Tool
+
+The Scissor tool allows you to erase the unwanted section of your segmentation in the 3D view plane.&#x20;
+
+{% hint style="info" %}
+Left click + Drag to erase the unwanted section
+{% endhint %}
+
+{% embed url="https://www.loom.com/share/30b2db17a9374b06ad4e77fe5a09bf22?sid=80478b58-7d44-4b01-bdbb-9e5475533294" %}
+
+***
+
 ### Region Growing (Grow Tool)
 
 The Grow Tool is a semi-automated tool that uses image intensity information to segment regions. By clicking and holding in a region, the segmentation will grow outward from the point that you clicked on. The longer you hold, the longer the region will grow.&#x20;
