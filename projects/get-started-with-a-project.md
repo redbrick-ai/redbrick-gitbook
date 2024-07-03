@@ -40,6 +40,36 @@ When a reviewer rejects a Task in a Review Stage, it is sent back to the Label S
 The number of Review Stages cannot be modified after a workflow has been created. You can, however, disable a Review Stage by setting its Review Percentage to 0% in your **Project Settings**.
 {% endhint %}
 
+### Pre-review and Pre-Label stage
+
+#### Pre-review stage
+
+The Pre-review stage enables you to examine tasks for quality control or other purposes before they proceed to the labeling stage.
+
+To enable the pre-review stage for your project, follow these steps:
+
+* Begin by creating a new project.
+* Turn on the pre-review stage by clicking the toggle button.
+* Once activated, the pre-review stage will be added to the workflow.
+* After all the stages are added, click the "Create Project" button.
+* Navigate to the "Data" tab, and begin reviewing tasks. You can then either accept or reject them as needed.
+
+<figure><img src="../.gitbook/assets/Screenshot 2024-06-20 at 12.26.36 PM.png" alt=""><figcaption></figcaption></figure>
+
+#### Pre-Label stage&#x20;
+
+The pre-label stage enables you to label and classify tasks before they are moved to the labeling stage. This stage simplifies the process, especially for complex projects.
+
+<figure><img src="../.gitbook/assets/Screenshot 2024-06-20 at 12.54.52 PM.png" alt=""><figcaption></figcaption></figure>
+
+To enable the pre-label stage for your project, follow these steps:
+
+* Begin by creating a new project.
+* Turn on the pre-label stage by clicking the toggle button.
+* Once activated, the pre-label stage will be added to the workflow.
+* After all the stages are added, click the "Create Project" button.
+* Navigate to the "Data" tab, and begin labelling the tasks.&#x20;
+
 ## Additional Project Setup
 
 Once you have successfully created a Project, you will most likely want to perform the following actions to add collaborators and data and modify Project settings.
