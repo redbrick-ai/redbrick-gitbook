@@ -23,6 +23,7 @@
 ## Projects
 
 * [Get Started with a Project](projects/get-started-with-a-project.md)
+* [Sections](projects/sections.md)
 * [Task Assignment](projects/task-assignment.md)
 * [Taxonomies](projects/taxonomies/README.md)
 * [Multiple labeling](projects/multiple-labeling/README.md)

@@ -1,13 +1,9 @@
----
-description: Beta release on https://preview.redbrickai.com
----
-
 # Heat maps
 
-Heatmaps provide a way to overlay scalar volumetric data over the base image for reference purposes. You will have the ability to adjust the multiple color gradients and thresholding options to visualize the data.
+Our "heat maps" support provides a way to overlay scalar volumetric data over the base image for reference purposes. In that sense, you're not strictly limited to only heat maps - perfusion maps, radiotherapy maps, oxygenization maps, and much more can be visualized alongside your images and annotations.
 
 {% hint style="info" %}
-Heatmaps must be uploaded via the SDK.&#x20;
+Heat maps must be uploaded via the SDK.&#x20;
 {% endhint %}
 
 ## Format:
@@ -18,21 +14,37 @@ type Series {
   heatMaps: [HeatMap]
 }
 
+type Series {
+  ...
+  heatMaps: [HeatMap]
+}
+
 type HeatMap {
   name: string;
-  item: string; // file path
+  item: string; // File path
+  // Visualization preset. 
+  //Available Options: ['Cool to warm' (DEFAULT), 'Warm to cool', 
+  //                   'Rainbow desaturated', 'Cold and hot', 'X-Ray', 
+  //                   'Red', 'Blue', 'Green', 'Yellow', 'Magenta']
   preset?: string;
+  // Scalar data range. If not provided, it's calculated from the data.
   dataRange?: [number, number];
+  // Opacity mapping: [scalar1, opacity1, scalar2, opacity2, ...]
+  // E.g., [0, 0, 0.5, 0.5, 1, 1] means scalar 0 has opacity 0, scalar 0.5 has opacity 0.5, scalar 1 has opacity 1.
+  opacityPoints?: number[];
+  // Color mapping: [scalar1, r1, g1, b1, scalar2, r2, g2, b2, ...]
+  // E.g., [0, 0, 0, 1, 0.5, 0, 1, 0, 1, 1, 0, 0] means scalar 0 is blue, scalar 0.5 is green, scalar 1 is red.
+  rgbPoints?: number[];
+  // Opacity mapping for 3D viewport. If not provided, opacityPoints are used.
+  opacityPoints3d?: number[];
 }
 ```
 
-For the complete task format, please refer to [https://sdk.redbrickai.com/formats/index.html](https://sdk.redbrickai.com/formats/index.html)
+For the complete Task format, please refer to [https://sdk.redbrickai.com/formats/index.html](https://sdk.redbrickai.com/formats/index.html)
 
 ## Upload
 
-Please install the pre-release version of the RedBrick SDK (`pip install redbrick-sdk==2.17.7b1`)
-
-Here is a sample script to upload heat-maps in task.
+Below is a sample script to upload heat maps in a Task.
 
 ```python
 from typing import List
@@ -72,6 +84,6 @@ project.upload.create_datapoints(redbrick.StorageMethod.REDBRICK, points)
 
 ## Visualization
 
-Visualization settings can be toggled under the Visualization panel on the right sidebar.&#x20;
+The gradients, opacity, and other settings can be configured by expanding the **Heatmaps** section Visualization Panel in the right sidebar.&#x20;
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-06-13 at 6.40.16 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
