@@ -90,18 +90,35 @@ Select the contour tool, and click and drag on the canvas to draw a contour. To 
 
 ***
 
+### Edge Selection
+
+The Edge Selection Tool is a semi-automated tool that uses pixel intensity information to automatically generate a contour around a designated region of interest.
+
+To use the Edge Selection Tool:&#x20;
+
+* Hover your mouse over the border of a region to generate a preview contour.
+* Use `LMB/left click` to generate a contour based on your preview. (Or, `RMB/right click` to erase a contour).
+* **Without releasing `LMB`**, drag your mouse away from the click point to smooth the edge of your contour.
+* Once your contour has been generated and smoothed to your liking, release `LMB`.
+
+{% embed url="https://www.loom.com/share/95fd6734fd794027a294f228d2289e0b?sid=9b23c876-0019-4d41-a26f-47a428b869f2" %}
+
+***
+
 ### Interpolate
 
-You can interpolate between two masks using the _Interpolate_ tool.&#x20;
+The Interpolate Tool allows you to quickly generate contours across a range of slices and is an excellent way to quickly generate accurate 3D annotations. In order to use the Interpolate Tool:&#x20;
 
-1. First, draw two masks on two different slices. These masks must be part of the same entity.&#x20;
-2. With the Interpolate tool, select the edges of both masks one by one.&#x20;
-3. You will see an interpolated annotation in between the masks.&#x20;
+1. Create a new Entity and generate two annotation masks using any Segmentation Tool (for example, create a mask on Slice 70 and a mask on Slice 80)
+2. Select the Interpolate Tool
+3. Navigate to Slice 70 and hover over the annotation mask. Once the edge glows red, use `LMB/left click` to select it.
+4. Repeat Step (3) with the mask on Slice 80.
+5. Voila! The Interpolate Tool has generated annotations on all slices between Slice 70 and Slice 80.
 
 {% embed url="https://share.redbrickai.com/bFkXVrjq" %}
 
 {% hint style="info" %}
-Toggle Cineloop to see the slices and where the interpolated masks are.&#x20;
+**RedBrick Mastery:** Activating **Cineloop** will display the Cineloop Player, which makes it much easier to keep track of where the interpolated segmentation masks are in your image.&#x20;
 {% endhint %}
 
 ***

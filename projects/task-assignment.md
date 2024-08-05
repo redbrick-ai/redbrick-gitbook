@@ -141,3 +141,21 @@ project.labeling.update_tasks_priority(
 {% hint style="info" %}
 For the truly brave, our Prioritization API supports up to the billionth place for floats.
 {% endhint %}
+
+## Send to Stage
+
+The **Send to Stage** action allows the user to move a Task from one Project Stage to another, overriding the standard project workflow.&#x20;
+
+Sending a Task to a different Stage may be useful if:
+
+* As a labeler, you want to make edits to a Task you have already finalized;
+* As an admin, you need to return a Task to a previous Stage without sending it all the way to the beginning of your pipeline;
+* As an admin, you need a Task to skip over the review pipeline you've established;
+
+To send a Task to a different Stage, simply access the Task's three-dot menu on the Data page and click on the desired destination Stage.
+
+<figure><img src="../.gitbook/assets/Screenshot 2024-07-04 at 7.24.15 PM (1).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="warning" %}
+The Send to Stage action is disabled for Consensus Projects!
+{% endhint %}
