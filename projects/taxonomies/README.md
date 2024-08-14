@@ -58,6 +58,23 @@ Alternatively, you can use the [`update_taxonomy()` SDK method](https://redbrick
 2. If you delete an Object Category, Attribute, or Classification from your Taxonomy, all existing associated annotations will need to be updated;
 3. Taxonomies that are being used in Projects cannot be deleted;
 
+## Duplicating a Taxonomy
+
+There are two ways to duplicate an existing Taxonomy in RedBrick's UI:
+
+1. On the Taxonomies page, open the three-dot menu of the Taxonomy you'd like to duplicate and click on **Duplicate Taxonomy**.
+2. Within the Taxonomy you'd like to duplicate, open the three-dot menu in the top-right corner of the screen and click on **Duplicate Taxonomy**.
+
+You'll then be directed to provide a name for the newly duplicated Taxonomy. Input a unique name, click on **Create Taxonomy**, and you're done!
+
+<figure><img src="../../.gitbook/assets/copying-taxonomies.gif" alt=""><figcaption><p>Walkthrough of Taxonomy duplication</p></figcaption></figure>
+
+{% hint style="info" %}
+**SDK Mastery:** when duplicating a Taxonomy, the archived elements of the Source Taxonomy are not transferred to the Duplicate Taxonomy.&#x20;
+
+Be sure to validate your [objectTypes](https://sdk.redbrickai.com/formats/taxonomy.html#redbrick.types.taxonomy.ObjectType) in the Duplicate Taxonomy, as values may have changed!
+{% endhint %}
+
 ## Nesting Taxonomy Elements
 
 Taxonomies now support the nesting of Object Labels, Study-Level and Series-Level Classifications both in the UI and via the RedBrick AI Python SDK.&#x20;
