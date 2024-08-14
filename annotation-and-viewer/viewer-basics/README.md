@@ -96,7 +96,7 @@ Displaying MIP.
 
 ## Managing your layout
 
-RedBrick AI's viewer is flexible in how it displays series. You can customize the layout manually or use [hanging protocols](custom-hanging-protocol.md) to display single or multiple series.&#x20;
+RedBrick AI's viewer is flexible in how it displays series. You can customize the layout manually or use [hanging protocols](../../project-settings-and-configuration/custom-hanging-protocol.md) to display single or multiple series.&#x20;
 
 ### Changing layout and displaying series
 

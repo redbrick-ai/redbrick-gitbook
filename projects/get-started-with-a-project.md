@@ -70,7 +70,7 @@ To enable the pre-label stage for your project, follow these steps:
 * After all the stages are added, click the "Create Project" button.
 * Navigate to the "Data" tab, and begin labelling the tasks.&#x20;
 
-## Additional Project Setup
+## Basic Project Setup
 
 Once you have successfully created a Project, you will most likely want to perform the following actions to add collaborators and data and modify Project settings.
 
@@ -108,6 +108,6 @@ If you'd like to upload annotation files alongside your images and/or volumes, y
 
 Once you have uploaded data to your Project, RedBrick AI will begin automatically assigning Tasks to the users in your Project. You can learn more about the specifics of task assignment by referencing the documentation below.
 
-{% content-ref url="task-assignment.md" %}
-[task-assignment.md](task-assignment.md)
+{% content-ref url="../project-settings-and-configuration/task-assignment.md" %}
+[task-assignment.md](../project-settings-and-configuration/task-assignment.md)
 {% endcontent-ref %}

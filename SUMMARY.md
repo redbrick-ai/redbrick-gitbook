@@ -23,27 +23,31 @@
 ## Projects
 
 * [Get Started with a Project](projects/get-started-with-a-project.md)
-* [Sections](projects/sections.md)
-* [Task Assignment](projects/task-assignment.md)
-* [Taxonomies](projects/taxonomies/README.md)
-* [Multiple labeling](projects/multiple-labeling/README.md)
-  * [Consensus](projects/multiple-labeling/consensus/README.md)
-    * [Agreement calculation](projects/multiple-labeling/consensus/agreement-calculation.md)
-  * [Task duplication](projects/multiple-labeling/task-duplication.md)
 * [Get Started with Workspace](projects/get-started-with-workspace/README.md)
   * [Cohort Creation](projects/get-started-with-workspace/cohort-creation.md)
   * [Datapoint Classification](projects/get-started-with-workspace/datapoint-classification.md)
   * [Configuring Metadata Schema](projects/get-started-with-workspace/configuring-metadata-schema.md)
-* [Custom Label Validation](projects/custom-label-validation.md)
-* [Labeler Evaluation](projects/labeler-evaluation.md)
+* [Taxonomies](projects/taxonomies/README.md)
 * [Comments & Raise Issue](projects/comments-and-raised-issues.md)
 * [Reference Standards](projects/reference-standards.md)
-* [Webhooks](projects/webhooks.md)
+* [Sections](projects/sections.md)
+
+## Project Settings and Configuration
+
+* [Project Settings](project-settings-and-configuration/project-settings.md)
+* [Task Assignment](project-settings-and-configuration/task-assignment.md)
+* [Multiple labeling](project-settings-and-configuration/multiple-labeling/README.md)
+  * [Consensus](project-settings-and-configuration/multiple-labeling/consensus/README.md)
+    * [Agreement calculation](project-settings-and-configuration/multiple-labeling/consensus/agreement-calculation.md)
+  * [Task duplication](project-settings-and-configuration/multiple-labeling/task-duplication.md)
+* [Custom Label Validation](project-settings-and-configuration/custom-label-validation.md)
+* [Custom Hanging Protocol](project-settings-and-configuration/custom-hanging-protocol.md)
+* [Labeler Evaluation](project-settings-and-configuration/labeler-evaluation.md)
+* [Webhooks](project-settings-and-configuration/webhooks.md)
 
 ## Annotation & viewer
 
 * [Viewer Basics](annotation-and-viewer/viewer-basics/README.md)
-  * [Custom Hanging Protocol](annotation-and-viewer/viewer-basics/custom-hanging-protocol.md)
   * [Multiple Modalities](annotation-and-viewer/viewer-basics/multiple-modalities.md)
   * [Intellisync](annotation-and-viewer/viewer-basics/intellisync.md)
   * [Annotation Mirroring](annotation-and-viewer/viewer-basics/annotation-mirroring.md)
