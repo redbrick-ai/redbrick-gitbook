@@ -28,6 +28,7 @@
   * [Datapoint Classification](projects/get-started-with-workspace/datapoint-classification.md)
   * [Configuring Metadata Schema](projects/get-started-with-workspace/configuring-metadata-schema.md)
 * [Taxonomies](projects/taxonomies/README.md)
+* [Task Assignment](projects/task-assignment.md)
 * [Comments & Raise Issue](projects/comments-and-raised-issues.md)
 * [Reference Standards](projects/reference-standards.md)
 * [Sections](projects/sections.md)
@@ -35,7 +36,6 @@
 ## Project Settings and Configuration
 
 * [Project Settings](project-settings-and-configuration/project-settings.md)
-* [Task Assignment](project-settings-and-configuration/task-assignment.md)
 * [Multiple labeling](project-settings-and-configuration/multiple-labeling/README.md)
   * [Consensus](project-settings-and-configuration/multiple-labeling/consensus/README.md)
     * [Agreement calculation](project-settings-and-configuration/multiple-labeling/consensus/agreement-calculation.md)

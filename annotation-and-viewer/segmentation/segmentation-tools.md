@@ -1,6 +1,6 @@
 # Segmentation Tools
 
-### Brush Tool
+## Brush Tool
 
 The Brush Tool has two modes - 2D and 3D (toggled on the right-side panel). The 2D brush is a circle, and the 3D brush is a sphere that segments across slices. You can adjust the size of the brush using the slider in the right hand Context Panel or the `W` & `S` hotkeys.&#x20;
 
@@ -14,7 +14,7 @@ Brush Tool Overview
 
 ***
 
-### Adaptive Brush
+## Adaptive Brush
 
 The Adaptive Brush automatically defines the edges of the structure you are annotating, resulting in a smarter and more accurate workflow.
 
@@ -28,7 +28,7 @@ The Adhesion parameter allows you to determine how "strict" the Adaptive Brush i
 
 ***
 
-### Pen Tool
+## Pen Tool
 
 The Pen Tool has two modes - 2D and 3D (toggled on the right-side panel). The Pen Tool allows you to annotate using a free-form contour. In 3D mode, the free-form contour is extruded above and below the current slice.&#x20;
 
@@ -42,7 +42,7 @@ Pen Tool Overview
 
 ***
 
-### 3D Scissor Tool
+## 3D Scissor Tool
 
 The Scissor tool allows you to erase the unwanted section of your segmentation in the 3D view plane.&#x20;
 
@@ -54,7 +54,7 @@ Left click + Drag to erase the unwanted section
 
 ***
 
-### Region Growing (Grow Tool)
+## Region Growing (Grow Tool)
 
 The Grow Tool is a semi-automated tool that uses image intensity information to segment regions. By clicking and holding in a region, the segmentation will grow outward from the point that you clicked on. The longer you hold, the longer the region will grow.&#x20;
 
@@ -68,17 +68,17 @@ Grow Tool Overview
 
 ***
 
-### Contour Tool
+## Contour Tool
 
 The contour tool lets you interact with masks as _contours_. Interacting with masks as contours gives you special tools to create and edit annotations.&#x20;
 
-#### Creating a contour from scratch.&#x20;
+### Creating a contour from scratch.&#x20;
 
 Select the contour tool, and click and drag on the canvas to draw a contour. To complete the contour, simply intersect the initial node or any other edge of the contour.&#x20;
 
 {% embed url="https://share.redbrickai.com/gFQxpFTR" %}
 
-#### Editing existing masks as contours
+### Editing existing masks as contours
 
 * **Node edit.** Select an existing mask and select the contour tool. When you hover over an edge, you will see a node with a "target spline" appear. You can drag this node to edit the "target spline" area interactively.
 
@@ -90,7 +90,7 @@ Select the contour tool, and click and drag on the canvas to draw a contour. To 
 
 ***
 
-### Edge Selection
+## Edge Selection
 
 The Edge Selection Tool is a semi-automated tool that uses pixel intensity information to automatically generate a contour around a designated region of interest.
 
@@ -105,7 +105,7 @@ To use the Edge Selection Tool:&#x20;
 
 ***
 
-### Interpolate
+## Interpolate
 
 The Interpolate Tool allows you to quickly generate contours across a range of slices and is an excellent way to quickly generate accurate 3D annotations. In order to use the Interpolate Tool:&#x20;
 
@@ -123,7 +123,7 @@ The Interpolate Tool allows you to quickly generate contours across a range of s
 
 ***
 
-### Hole Filling Tool
+## Hole Filling Tool
 
 The Hole Filling Tool iteratively fills small holes in your segmentation. Click anywhere on the canvas to start filling in small holes.
 
@@ -139,13 +139,15 @@ Hole Filling Overview
 For large volumes, 3D hole filling can be very computationally expensive. If your data has more than 800 slices, we recommend only using 2D hole filling.
 {% endhint %}
 
-### Paint Bucket Tool
+***
+
+## Paint Bucket Tool
 
 The Paint Bucket is helpful for closing single large holes. With the paint bucket tool selected, click in any large hole to fill it automatically.&#x20;
 
 ***
 
-### Island Removal Tool
+## Island Removal Tool
 
 Island Removal deletes "islands" of segmentations. Simply click on any island segmentation to remove it.&#x20;
 
@@ -157,11 +159,11 @@ Island Tool Overview
 
 ***
 
-### Boolean Operator Tool
+## Boolean Operator Tool
 
 The Boolean Operator Tool allows you to perform four operations on segmentations: Copy, Add, Subtract, and Merge.
 
-#### Copy Tool
+### Copy Tool
 
 The Copy Tool allows you to transform a segmentation into a perfect copy of another.&#x20;
 
@@ -169,19 +171,19 @@ With Segmentation X selected, enable the Copy Tool and click on Segmentation Y t
 
 <figure><img src="../../.gitbook/assets/copy-tool.gif" alt=""><figcaption><p>The Copy Tool in action</p></figcaption></figure>
 
-#### Add Tool
+### Add Tool
 
 The Add Tool allows you to add the pixel values of a segmentation to another.&#x20;
 
 With Segmentation X selected, enable the Add Tool and click on Segmentation Y to add the pixel values of Segmentation Y to Segmentation X.
 
-#### Subtract Tool
+### Subtract Tool
 
 The Subtract Tool allows you to remove the pixel values of a segmentation from another segmentation.
 
 With Segmentation X selected, enable the Subtract Tool and click on Segmentation Y to remove the pixel values of Segmentation Y from Segmentation X.
 
-#### Merge Tool
+### Merge Tool
 
 The Merge Tool allows you to transform one type of segmentation island into another.&#x20;
 
@@ -193,7 +195,7 @@ Add, Subtract, and Merge Tool Tutorial
 
 ***
 
-### Fast Automated Segmentation Tool (F.A.S.T. ⚡️)
+## Fast Automated Segmentation Tool (F.A.S.T. ⚡️)
 
 The Fast Automated Segmentation Tool (F.A.S.T.) is an automatic segmentation tool powered by Meta AI's Segment Anything Model that allows users to rapidly generate 2D and 3D segmentations.&#x20;
 
@@ -213,7 +215,7 @@ F.A.S.T. is powerful because of the way users can prompt the tool to generate an
 2. Within a Project, navigate to the [Tool Settings page](segmentation-tools.md#tool-configuration) and enable F.A.S.T.
 {% endhint %}
 
-#### Generating 2D Segmentations with F.A.S.T.
+### Generating 2D Segmentations with F.A.S.T.
 
 To start segmenting, create a segmentation instance, select the F.A.S.T. tool from the top bar or using `cmd/ctrl + b`. Once the tool is selected, hover over a viewport to start embedding computation for a single slice (you will see a loader spinner on the top right of the viewport). You can prompt F.A.S.T. in a few different ways after the embedding computation is complete:&#x20;
 
@@ -222,25 +224,20 @@ To start segmenting, create a segmentation instance, select the F.A.S.T. tool fr
    2. Once you are happy with the segmentation preview, confirm it by using the button on the right panel or `shift + enter`.
 2. **Instant click.** `alt/option + hover` over objects to view a prediction preview. If you are satisfied with any preview, click while pressing `alt/option` to confirm the segmentation.&#x20;
 
-#### Generating 3D Segmentations with F.A.S.T.
+### Interpolating 2D Segmentations with F.A.S.T.
 
-3D F.A.S.T. allows users to draw Bounding Boxes to define an interpolation range for a 3D structure that is to be annotated.
+Interpolated F.A.S.T. allows users to draw Bounding Boxes to define an interpolation range for a 3D structure that is to be annotated.
 
-The process for creating annotations with 3D F.A.S.T. is extremely similar to that of [2D F.A.S.T.](segmentation-tools.md#generating-2d-segmentations-with-f.a.s.t.) You can find a full step-by-step breakdown of how to use 3D F.A.S.T. below.
+The process for creating interpolated annotations with 2D F.A.S.T. is detailed below.
 
-1\. Create a new Instance of your desired Object Label by clicking on the “+” in the left hand toolbar;
-
-2\. Select F.A.S.T. in the top of the screen and wait for the embedding computation to complete on Slice X;
-
-3\. Create a Bounding Box around the structure you wish to annotate;
-
-4\. (Optional) Provide F.A.S.T. with additional input by using `LMB/RMB`;
-
-5\. Navigate to the end of the range that you want to interpolate across (i.e., Slice Y);
-
-6\. Repeat Step 3 (and optionally, Step 4) for the structure you wish to annotate on Slice Y;
-
-7\. Once you are satisfied with the annotations, press Enter or click on “Finalize” in the right hand toolbar to generate the pixel masks on every slice between Slice X and Slice Y.
+1. Create a new Instance of your desired Object Label by clicking on the “+” in the left hand toolbar
+2. Select F.A.S.T. in the top of the screen and wait for the embedding computation to complete on Slice X
+3. Ensure that your F.A.S.T. is set to "2D" mode in the righthand Context Panel
+4. Create a Bounding Box around the structure you wish to annotate
+5. (Optional) Provide F.A.S.T. with additional input by using `LMB/RMB`
+6. Navigate to the end of the range that you want to interpolate across (i.e., Slice Y)
+7. Repeat Step 3 (and optionally, Step 4) for the structure you wish to annotate on Slice Y
+8. Once you are satisfied with the annotations, press Enter or click on “Finalize” in the right hand toolbar to generate the pixel masks on every slice between Slice X and Slice Y.
 
 {% hint style="info" %}
 Processing times may increase when interpolating across large ranges. However, please note that all subsequent work across the same range should be much faster, as the embedding computations only have to be computed once per slice.
@@ -249,6 +246,25 @@ Processing times may increase when interpolating across large ranges. However, p
 {% hint style="danger" %}
 Firewalls, ad blockers, privacy extensions, and any other browser extensions that block HTTP traffic are known to interfere with FAST.
 {% endhint %}
+
+### Generating 3D Segmentations with 3D F.A.S.T.
+
+As of `version 1.1.0`, F.A.S.T. can now be used in 3D to generate annotation masks for structures inside of a cuboid drawn by the user.
+
+1. Create a new Instance of your desired Object Label by clicking on the “+” in the left hand toolbar
+2. Select F.A.S.T. in the top of the screen and wait for the embedding computation to complete
+3. Ensure that your F.A.S.T. is set to "3D" mode in the righthand Context Panel
+4. Create a Cuboid around the structure you wish to annotate
+5. Manipulate the cuboid in all of the relevant axes to fully enclose the structure you wish to annotate
+6. Once the cuboid has completely enclosed the structure, click on **Execute** to generate a preview mask
+7. (Optional) Provide 3D F.A.S.T. with additional input by using `LMB/RMB`
+8. Once you are satisfied with the annotation, press Enter or click on **Finalize** in the right hand toolbar to generate the completed annotation mask.
+
+{% hint style="info" %}
+**Annotation Tool Mastery:** it's much easier to control the cuboid in all 3 axes when using RedBrick's MPR Mode
+{% endhint %}
+
+***
 
 ### Dilate & Erode Tool
 

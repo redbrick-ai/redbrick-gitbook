@@ -29,7 +29,7 @@ The General Settings tab contains basic information about your Project and allow
 * your Project's name, description, and labeling instructions URL;
 * your caching settings&#x20;
 * your [labeler evaluation](labeler-evaluation.md) settings;
-* your [Task assignment](task-assignment.md) settings and the size of your [Labeling/Review Queue](task-assignment.md#labeling-queue);
+* your [Task assignment](../projects/task-assignment.md) settings and the size of your [Labeling/Review Queue](../projects/task-assignment.md#labeling-queue);
 * your Review Stage settings, including your [pseudo-random review percentage](../projects/get-started-with-a-project.md#step-3-define-your-project-workflow);
 
 You can also add Review Stages to a Project's workflow. However, this is a permanent action that cannot be undone.
