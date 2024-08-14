@@ -7,6 +7,7 @@
 * [Organization and Project Roles](organizations/what-is-an-organization.md)
 * [Inviting Your Team](organizations/inviting-your-team/README.md)
   * [Single Sign-on](organizations/inviting-your-team/single-sign-on.md)
+* [Worklist](organizations/worklist.md)
 
 ## Importing Data
 
