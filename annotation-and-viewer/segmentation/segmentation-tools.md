@@ -211,8 +211,8 @@ F.A.S.T. is powerful because of the way users can prompt the tool to generate an
 {% hint style="info" %}
 **To enable F.A.S.T. for your team**, please do the following:&#x20;
 
-1. Request access at https://redbrickai.com/fast.
-2. Within a Project, navigate to the [Tool Settings page](segmentation-tools.md#tool-configuration) and enable F.A.S.T.
+1. Request access at https://redbrickai.com/fast or reach out to support@redbrickai.com.
+2. Within a Project, navigate to the [Tool Settings page](segmentation-tools.md#tool-configuration) and enable F.A.S.T. in the desired mode (i.e. 2D or 3D).&#x20;
 {% endhint %}
 
 ### Generating 2D Segmentations with F.A.S.T.
