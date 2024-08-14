@@ -32,6 +32,7 @@
 * [Comments & Raise Issue](projects/comments-and-raised-issues.md)
 * [Reference Standards](projects/reference-standards.md)
 * [Sections](projects/sections.md)
+* [Project & Task Analytics](projects/project-and-task-analytics.md)
 
 ## Project Settings and Configuration
 
