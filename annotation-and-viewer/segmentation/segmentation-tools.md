@@ -254,14 +254,14 @@ As of `version 1.1.0`, F.A.S.T. can now be used in 3D to generate annotation mas
 1. Create a new Instance of your desired Object Label by clicking on the “+” in the left hand toolbar
 2. Select F.A.S.T. in the top of the screen and wait for the embedding computation to complete
 3. Ensure that your F.A.S.T. is set to "3D" mode in the righthand Context Panel
-4. Create a Cuboid around the structure you wish to annotate
+4. Create a cuboid around the structure you wish to annotate
 5. Manipulate the cuboid in all of the relevant axes to fully enclose the structure you wish to annotate
 6. Once the cuboid has completely enclosed the structure, click on **Execute** to generate a preview mask
 7. (Optional) Provide 3D F.A.S.T. with additional input by using `LMB/RMB`
-8. Once you are satisfied with the annotation, press Enter or click on **Finalize** in the right hand toolbar to generate the completed annotation mask.
+8. Once you are satisfied with the annotation, click on **Finalize** in the right hand toolbar (or use the corresponding hotkey) to generate the completed annotation mask
 
 {% hint style="info" %}
-**Annotation Tool Mastery:** it's much easier to control the cuboid in all 3 axes when using RedBrick's MPR Mode
+**Annotation Tool Mastery:** it's much easier to manipulate the cuboid in all 3 axes when using RedBrick's [MPR Mode](../viewer-basics/#multiplanar-reconstruction-mpr)
 {% endhint %}
 
 ***

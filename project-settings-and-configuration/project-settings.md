@@ -42,7 +42,7 @@ You can also add Review Stages to a Project's workflow. However, this is a perma
 
 ## Consensus
 
-If you are working inside of a multi-reader Project, you can find Consensus settings in this tab.
+If you are working inside of a multi-reader Project, you can find Consensus settings in the corresponding tab. For a full overview of how to set up and configure multi-reader Projects on Redbrick, please see the following documentation:
 
 [consensus](multiple-labeling/consensus/ "mention")
 
@@ -128,7 +128,7 @@ The Bulk Actions tab allows you to execute Stage-level operations for your workf
 
 <figure><img src="../.gitbook/assets/CleanShot 2024-08-14 at 12.29.13@2x.png" alt=""><figcaption><p>The Bulk Actions tab of a Project with a simple workflow</p></figcaption></figure>
 
-Bulk Actions are also reflected in Task History as a **System operation**. For example, if user "Ben Stewart" bulk rejected all Tasks in the Review\_1 Starege, the Task History would display as follows:
+Bulk Actions are also reflected in Task History as a **System operation**. For example, if user "Ben Stewart" bulk rejected all Tasks in the Review\_1 Stage, the Task History would display as follows:
 
 <figure><img src="../.gitbook/assets/CleanShot 2024-08-14 at 12.33.17@2x.png" alt=""><figcaption><p>The Task History of a recently bulk rejected Task</p></figcaption></figure>
 
@@ -138,7 +138,7 @@ Bulk Actions are also reflected in Task History as a **System operation**. For e
 
 The Tool Settings page allows admins to configure exact scope of the Segmentation toolkit available to labelers and reviewers.&#x20;
 
-For more information about our Segmentation Toolkit and the Tool Settings page, please see the following page:&#x20;
+For more information about our Segmentation Toolkit and the Tool Settings page, please see the following pages:&#x20;
 
 [segmentation-tools.md](../annotation-and-viewer/segmentation/segmentation-tools.md "mention")
 

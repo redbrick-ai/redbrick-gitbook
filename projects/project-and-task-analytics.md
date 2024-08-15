@@ -6,11 +6,11 @@ As of `version 1.1.0`, the RedBrick UI offers a variety of metrics in order to m
 
 On your Project's Data Page, admins can easily access a variety of productivity-related information about the Project Workforce by using the lefthand toolbar and applying the desired filters.
 
-Simply select the user whose metrics you'd like to see and apply a date range.
+To generate Task-based metrics for a specific user, first select the user in the top-left dropdown field  and apply a date range.
 
 <figure><img src="../.gitbook/assets/project-analytics.gif" alt=""><figcaption><p>Viewing a labeler's work history with the new Project Analytics tab</p></figcaption></figure>
 
-The Project Analytics tab contains several metricsI:
+The Project Analytics tab contains the following fields:
 
 * **Finalizations** - the number of times the User finalized a Task in the Pre-Label or Label Stage;
 * **Completed** - the number of times a Task the User worked on reached the Ground Truth Stage;
@@ -26,7 +26,7 @@ The Project Analytics tab contains several metricsI:
 
 ## Task Analytics
 
-RedBrick also allows users to see various metrics related to the Tasks they have access to.
+RedBrick also allows users to see information related to the contents of Tasks that they have access to.
 
 On the Data Page, a user can click on the Task Analytics button for a given Task to see information about:
 

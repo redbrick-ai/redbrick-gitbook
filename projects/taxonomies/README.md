@@ -65,7 +65,7 @@ There are two ways to duplicate an existing Taxonomy in RedBrick's UI:
 1. On the Taxonomies page, open the three-dot menu of the Taxonomy you'd like to duplicate and click on **Duplicate Taxonomy**.
 2. Within the Taxonomy you'd like to duplicate, open the three-dot menu in the top-right corner of the screen and click on **Duplicate Taxonomy**.
 
-You'll then be directed to provide a name for the newly duplicated Taxonomy. Input a unique name, click on **Create Taxonomy**, and you're done!
+You'll then be directed to provide a name for the newly duplicated Taxonomy. Input a unique name, click on **Create Taxonomy**, and you have successfully created a duplicate!
 
 <figure><img src="../../.gitbook/assets/copying-taxonomies.gif" alt=""><figcaption><p>Walkthrough of Taxonomy duplication</p></figcaption></figure>
 
