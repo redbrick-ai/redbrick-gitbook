@@ -111,6 +111,29 @@ Vibrant Mode allows you to temporarily highlight a particular Entity. For exampl
 
 The Jump to Label Action will change the current slice position to the closest slice position that contains a particular annotation. This is useful for revealing annotations on the canvas.&#x20;
 
+### Label Grouping
+
+RedBrick allows users to create logical groups of existing Object Labels, which will all share a common identifier (`group?: string`) in the `tasks.json` file generated upon export.
+
+#### Creating a Label Group
+
+1. With an Object Label selected, press the **Link Label** button or use the `CTRL/CMD+L` hotkey to activate Link Mode.
+2. With Link Mode enabled, use `LMB` to select any Object Label in the viewports or the lefthand toolbar to create a Label Group.
+3. Repeat as desired.
+
+#### Modifying and Deleting a Label Group
+
+1. Click on the **Delink** button next to any Object Label in a Label Group to remove it from the Label Group.
+2. To delete a Label Group, delink all of the Object Labels in the Group.
+
+{% hint style="info" %}
+Each Object Label Entity can only be a part of one Label Group!
+{% endhint %}
+
+For a brief overview, please see the following video walkthrough:
+
+{% embed url="https://www.loom.com/share/63ca8bac493942fb9d93affa10765fd8?sid=b51bff18-7cf2-48b1-be07-c82a9cf13823" %}
+
 ***
 
 ## Annotation Version Explorer

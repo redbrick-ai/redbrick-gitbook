@@ -130,11 +130,13 @@ interface VideoMetaData {
 interface Classification {
   attributes: Attributes;
   video?: VideoMetaData;
+  group?: string;
 }
 
 interface InstanceClassification {
   fileIndex: number;
   values: Attributes;
+  group?: string;
 }
 
 interface MeasurementStats {
@@ -150,12 +152,14 @@ interface Landmark {
   category: Category;
   attributes?: Attributes;
   video?: VideoMetaData;
+  group?: string;
 }
 
 interface Landmark3D {
   point: VoxelPoint;
   category: Category;
   attributes?: Attributes;
+  group?: string;
 }
 
 interface MeasureLength {
@@ -168,6 +172,7 @@ interface MeasureLength {
   length: number;
   category: Category;
   attributes?: Attributes;
+  group?: string;
 }
 
 interface MeasureAngle {
@@ -182,6 +187,7 @@ interface MeasureAngle {
   angle: number;
   category: Category;
   attributes?: Attributes;
+  group?: string;
 }
 
 interface BoundingBox {
@@ -192,6 +198,7 @@ interface BoundingBox {
   attributes?: Attributes;
   stats?: MeasurementStats;
   video?: VideoMetaData;
+  group?: string;
 }
 
 interface Cuboid {
@@ -202,6 +209,7 @@ interface Cuboid {
   category: Category;
   attributes?: Attributes;
   stats?: MeasurementStats;
+  group?: string;
 }
 
 interface Ellipse {
@@ -213,6 +221,7 @@ interface Ellipse {
   attributes?: Attributes;
   stats?: MeasurementStats;
   video?: VideoMetaData;
+  group?: string;
 }
 
 interface Polygon {
@@ -221,6 +230,7 @@ interface Polygon {
   attributes?: Attributes;
   stats?: MeasurementStats;
   video?: VideoMetaData;
+  group?: string;
 }
 
 interface Polyline {
@@ -228,6 +238,7 @@ interface Polyline {
   category: Category;
   attributes?: Attributes;
   video?: VideoMetaData;
+  group?: string;
 }
 
 // i is rows, j is columns, k is slice

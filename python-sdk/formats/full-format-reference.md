@@ -363,6 +363,10 @@ Each annotation can have accompanying attributes, that are also defined in your 
 
 A dictionary containing a variety of geometric information about certain Object Labels.
 
+#### `group?: string`
+
+A unique string identifier that corresponds to a group of linked labels.
+
 ***
 
 ### Measurement Stats
@@ -421,7 +425,7 @@ If true, the annotation is the last annotation for a particular video track segm
 
 A list of file paths of segmentation files for this series. Either a single `.nii` file, or multiple `.nii` files containing different instances.
 
-**`segmentMap?: { [ instanceId: number ]: { category: string | string[]; attributes?: Attributes } };`**
+**`segmentMap?: { [ instanceId: number ]: { category: string | string[]; attributes?: Attributes; overlappingGroups?: number[]; group?: string; } };`**
 
 A mapping between a segmentation's instance ID, your Taxonomy category name, and any accompanying attributes. The mapping will apply only to the current series, and instance IDs must be unique across all series in a task (this is useful for instance segmentation).
 
