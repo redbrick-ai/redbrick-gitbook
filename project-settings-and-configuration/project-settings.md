@@ -95,16 +95,23 @@ The delete operation removes all images, labels, and Tasks associated with the u
 
 ## Export Metadata
 
-The Export Metadata tab allows you to:
+{% hint style="warning" %}
+As of **v1.1.2**, the Export Metadata tab has been removed and transferred to the Project Data Page (for Comment Exports) and Project Overview Page (Productivity Data Export).
+{% endhint %}
 
-1. Download a CSV of a Project's Comments;
-2. Download a CSV of labeler and reviewer productivity data;
+#### Comment Exports
 
-Productivity data includes each labeler or reviewer's active work time (measured in milliseconds) and the number of Tasks completed per day.
+You can now export all of a Project's Comments by clicking on the corresponding button on the Project Data Page.
+
+<figure><img src="../.gitbook/assets/CleanShot 2024-08-30 at 11.07.39@2x.png" alt=""><figcaption></figcaption></figure>
+
+#### Workforce Productivity Export
+
+Productivity data includes each labeler or reviewer's active work time (measured in milliseconds) and the number of Tasks completed per day and can be accessed on the Project's Overview Page.
 
 You can also customize the date range for your export to retrieve more specific data.
 
-<figure><img src="../.gitbook/assets/CleanShot 2024-08-14 at 12.25.51@2x.png" alt=""><figcaption><p>Using the calendar to determine a date range for export</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/CleanShot 2024-08-30 at 11.09.51@2x.png" alt=""><figcaption></figcaption></figure>
 
 ***
 

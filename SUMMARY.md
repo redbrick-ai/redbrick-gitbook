@@ -8,6 +8,7 @@
 * [Inviting Your Team](organizations/inviting-your-team/README.md)
   * [Single Sign-on](organizations/inviting-your-team/single-sign-on.md)
 * [Worklist](organizations/worklist.md)
+* [Account Settings](organizations/account-settings.md)
 
 ## Importing Data
 
