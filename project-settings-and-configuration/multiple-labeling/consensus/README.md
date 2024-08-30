@@ -14,20 +14,24 @@ The Inter-Annotator Agreement Score is a quantitative measure of quality that ca
 
 ## Enabling Consensus
 
-You can enable Consensus by navigating to Project Settings. Once enabled, you will be required to select a **minimum number of labelers** that will be required to annotate each Task. If your project has a Review Stage, you can **enable auto-acceptance** to automatically accept Tasks whose agreement scores are higher than the specified threshold.
+As of v1.1.2, you must enable Multiple Labeling for your Project upon Project creation.
 
-![Consensus Project Settings](../../../.gitbook/assets/localhost\_3000\_943c97cd-58b1-4794-84d0-8b00d26f0c84\_projects\_64e8b5d9-81d3-4401-a49a-924d72916b0f\_settings.png)
+Once enabled, complete step (4) of Project creation by selecting a **minimum number of labelers** that will be required to annotate each Task. If your project has a Review Stage, you can **enable auto-acceptance** to automatically accept Tasks whose agreement scores are higher than the specified threshold.
+
+<figure><img src="../../../.gitbook/assets/CleanShot 2024-08-30 at 11.15.34@2x.png" alt=""><figcaption></figcaption></figure>
 
 ## Assigning Tasks to Multiple Users
 
-RedBrick AI has an **automatic assignment protocol** that will automatically assign multiple users to a Task. As annotators request Tasks by clicking on the **Label** button in the top right of the Dashboard, RedBrick AI will automatically assign available Tasks by prioritizing those that are already in progress/or assigned to other users. &#x20;
+RedBrick AI has an [**Automatic Assignment Protocol**](../../../projects/task-assignment.md#automatic-task-assignment) that will automatically assign multiple users to a Task. This protocol is enabled by default on Project creation and can be configured either when creating your Project or any time afterward in your Project's [General Settings](../../project-settings.md#general-settings).
 
-Alternatively, you can **manually override any Task on the Data page**. When Consensus is enabled, the **Assign** dropdown will allow you to select multiple users.
+As annotators request Tasks by clicking on the **Label** button in the top right of the Dashboard, RedBrick AI will automatically assign available Tasks by prioritizing those that are already in progress/or assigned to other users. &#x20;
 
-![Manual Multi-Assignment](<../../../.gitbook/assets/Screen Shot 2022-08-16 at 12.03.37 PM.png>)
+Alternatively, you can **manually override any Task assignment on the Data page**. When Consensus is enabled, the **Assign** dropdown will allow you to select multiple users.
+
+<figure><img src="../../../.gitbook/assets/CleanShot 2024-08-30 at 11.17.46@2x.png" alt=""><figcaption><p>Task assignment in a Consensus Project</p></figcaption></figure>
 
 {% hint style="info" %}
-You can _manually_ assign more than the required number of labelers. The automatic assignment protocol will only assign up to the number of required labelers, but you can manually assign as many as you'd like.&#x20;
+Optionally, you can manually assign any number of labelers to a Consensus Task, including a number that is greater than the minimum number of required labelers. However, the Automatic Assignment Protocol will only assign up to the minimum value.&#x20;
 {% endhint %}
 
 ## Inter-Annotator Agreement
@@ -52,9 +56,11 @@ If there is no Review Stage after the Label Stage, the set of annotations with t
 
 ## Review Stage Present
 
-When a Review Stage is present, all annotations will be displayed in the Editor. The list of all users that have annotated the Task is located on the right hand Consensus Panel. By default, annotations are color-coded **by user**, but they can be grouped **by category**_._
+When a Review Stage is present, the annotation sets of all labelers will be displayed in the Annotation Tool.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>A Task in Review with Consensus Enabled</p></figcaption></figure>
+The users that annotated the Task will be listed in the lefthand toolbar. By default, annotations are color-coded **by user**, but the Consensus Reviewer can also control the visibility of each Object Label Entity individually.
+
+<figure><img src="../../../.gitbook/assets/CleanShot 2024-08-30 at 11.25.05@2x.png" alt=""><figcaption></figcaption></figure>
 
 ## Best Annotations and Super Truth
 
