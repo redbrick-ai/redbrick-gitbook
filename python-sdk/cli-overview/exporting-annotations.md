@@ -83,7 +83,7 @@ $ redbrick export --clear-cache
 For downloading your Project's image and/or volume files along with any created annotations.&#x20;
 
 ```bash
-$ redbrick export --with-images
+$ redbrick export --with-files
 ```
 
 ### DICOM to NIfTI Conversion
@@ -91,7 +91,7 @@ $ redbrick export --with-images
 If you initially uploaded DICOM images/volumes to RedBrick and would like to convert them to NIfTI upon export (ensuring that both your annotation files and images/volumes are in the same format), use the following command.
 
 ```bash
-$ redbrick export --with-images --dicom-to-nifti
+$ redbrick export --with-files --dicom-to-nifti
 ```
 
 ### Export Tasks from a Specific Stage
