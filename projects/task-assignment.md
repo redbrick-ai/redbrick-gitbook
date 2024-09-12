@@ -97,6 +97,8 @@ The diagram below is a visual guide to the flows associated with completing Task
 
 <figure><img src="../.gitbook/assets/Group 30489 (3).png" alt=""><figcaption><p>Guide to submitting Tasks in your Labeling Queue</p></figcaption></figure>
 
+***
+
 ## Task Prioritization
 
 RedBrick AI allows you to designate specific Tasks as **prioritized**, which elevates them to the top of your Labeling Queue.
@@ -142,6 +144,8 @@ project.labeling.update_tasks_priority(
 For the truly brave, our Prioritization API supports up to the billionth place for floats.
 {% endhint %}
 
+***
+
 ## Send to Stage
 
 The **Send to Stage** action allows the user to move a Task from one Project Stage to another, overriding the standard project workflow.&#x20;
@@ -159,3 +163,11 @@ To send a Task to a different Stage, simply access the Task's three-dot menu on 
 {% hint style="warning" %}
 The Send to Stage action is disabled for Consensus Projects!
 {% endhint %}
+
+***
+
+## Task History
+
+You can access a comprehensive list of Task events by clicking on the Task's Stage, bringing the functionality of the Python SDK's [`get_task_events()` function](https://sdk.redbrickai.com/sdk.html#redbrick.export.Export.get\_task\_events) to the Dashboard.
+
+<figure><img src="../.gitbook/assets/CleanShot 2024-09-12 at 13.30.52@2x.png" alt=""><figcaption><p>A sample Task History for a Task in the Review_1 Stage</p></figcaption></figure>
