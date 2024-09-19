@@ -15,7 +15,7 @@ After creating your JSON Items List, you can upload it from RedBrick AI's Projec
 <figure><img src="../../.gitbook/assets/Screenshot 2023-06-08 at 12.53.17 PM.png" alt=""><figcaption><p>Select a Storage Method and upload your Items List</p></figcaption></figure>
 
 {% hint style="success" %}
-Please note that there is no need to create an Items List when using [Direct Upload](../direct-data-upload.md).
+Please note that there is no need to create an Items List when using [Direct Upload](../uploading-data-to-redbrick.md).
 {% endhint %}
 
 ***

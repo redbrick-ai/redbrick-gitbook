@@ -11,7 +11,7 @@ If you want to add annotations programmatically to images that have already been
 {% hint style="warning" %}
 Annotation import is only supported through the SDK and CLI.&#x20;
 
-That is, you cannot use the [direct upload UI](../importing-data/direct-data-upload.md) to import annotations, and you must use the items list with the SDK/CLI to provide the required metadata along with annotations.
+That is, you cannot use the [direct upload UI](../importing-data/uploading-data-to-redbrick.md) to import annotations, and you must use the items list with the SDK/CLI to provide the required metadata along with annotations.
 {% endhint %}
 
 To import images along with segmentations, you must provide us with:

@@ -1,21 +1,55 @@
-# Direct Data Upload
+---
+description: >-
+  This page provides an overview of RedBrick-compatible data formats for upload
+  and export, as well as an overview of uploading data directly to RedBrick
+  servers ("Direct Upload").
+---
+
+# Uploading Data to RedBrick
+
+## Supported Image Import Formats
+
+RedBrick AI supports a variety of different image formats:&#x20;
+
+* NIfTI - .nii, .nii.gz
+* DICOM - .dcm, .ima, .dicom, .dicm
+* RGB Images - .png, .jpeg, .jpg, .bmp
+* Videos - .mp4, .mov, .avi
+* NRRD - .nrrd
+
+{% hint style="success" %}
+It's uncommon for teams to export their images from RedBrick after a project has been completed, but you can see the list of supported image export formats [here](https://sdk.redbrickai.com/sdk.html#redbrick.export.Export.export\_tasks).
+{% endhint %}
+
+Annotations on RedBrick are stored and exported in NIfTI format by default. However, RedBrick supports several other formats when uploading and exporting annotations.
+
+### Supported Annotation Import Formats
+
+* NIfTI - .nii, .nii.gz (default)
+* RT STRUCT - .dcm
+* MHA - .mha
+* MHD - .mhd in combination with a corresponding .raw or .img file
+
+Further information can be found in our SDK reference [here](https://sdk.redbrickai.com/sdk.html#redbrick.upload.Upload.update\_tasks\_labels).
+
+### Supported Annotation Export Formats
+
+* NIfTI - .nii, .nii.gz (default)
+* RT STRUCT - .dcm
+* PNG - .png
+
+Further information can be found in our SDK export reference [here](https://sdk.redbrickai.com/sdk.html#redbrick.export.Export.export\_tasks).
+
+{% hint style="success" %}
+If you require additional support for a file format that is not present in this list, please reach out to us at support@redbrickai.com.&#x20;
+{% endhint %}
+
+## Direct Upload
 
 The Direct Upload functionality allows users to upload their image data directly to RedBrick AI’s servers. We recommend using Direct Upload if you’re working with a small dataset or want to do some light experimentation with RedBrick’s toolset.
 
 {% hint style="warning" %}
 All image data that is directly uploaded to RedBrick AI’s servers will also be stored there. If you’d rather not have your image data hosted on our servers, we recommend [integrating your storage](import-cloud-data.md).
-{% endhint %}
-
-RedBrick AI supports a variety of different image formats:&#x20;
-
-1. DICOM - .dcm, .ima, .dicom, .dicm
-2. NIfTI - .nii, .nii.gz
-3. Videos - .mp4, .mov, .avi
-4. RGB Images - .png, .jpeg, .jpg, .bmp
-5. NRRD - .nrrd
-
-{% hint style="success" %}
-If you require additional support for a file format that is not present in this list, please reach out to us at support@redbrickai.com.&#x20;
 {% endhint %}
 
 First, open a project that will serve as the destination for your upload. Then, click on **Upload Data** on the top-right of the dashboard.&#x20;

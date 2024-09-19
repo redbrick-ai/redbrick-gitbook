@@ -14,7 +14,7 @@ $ redbrick upload path/to/items.json
 
 ***
 
-If you don't want to use an items file for upload, ensure your data is stored within the correct folder structure [defined in our documentation](../../importing-data/direct-data-upload.md). You can only upload a single data type in one upload operation. See the [supported file types here](../../importing-data/direct-data-upload.md).
+If you don't want to use an items file for upload, ensure your data is stored within the correct folder structure [defined in our documentation](../../importing-data/uploading-data-to-redbrick.md). You can only upload a single data type in one upload operation. See the [supported file types here](../../importing-data/uploading-data-to-redbrick.md).
 
 ```bash
 $ redbrick upload path/to/data/ --type DICOM3D
@@ -24,7 +24,7 @@ You can see all available [types in the CLI upload reference documentation](http
 
 ### Group images by study
 
-To group your images by study, see [here for examples](../../importing-data/direct-data-upload.md), input the following:&#x20;
+To group your images by study, see [here for examples](../../importing-data/uploading-data-to-redbrick.md), input the following:&#x20;
 
 ```bash
 $ redbrick upload path/to/data/ --as-study
@@ -32,7 +32,7 @@ $ redbrick upload path/to/data/ --as-study
 
 ### Upload video frames
 
-To upload a [video by uploading individual frames](../../importing-data/direct-data-upload.md#video-frames), input the following:
+To upload a [video by uploading individual frames](../../importing-data/uploading-data-to-redbrick.md#video-frames), input the following:
 
 ```
 $ redbrick upload path/to/videoframes/ --as-frames --type VIDEOFRAMES

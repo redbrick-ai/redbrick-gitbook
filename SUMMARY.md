@@ -13,7 +13,7 @@
 ## Importing Data
 
 * [Preview Mode](importing-data/preview-mode.md)
-* [Direct Data Upload](importing-data/direct-data-upload.md)
+* [Uploading Data to RedBrick](importing-data/uploading-data-to-redbrick.md)
 * [Import Cloud Data](importing-data/import-cloud-data.md)
   * [Configuring AWS s3](importing-data/configuring-external-storage/configuring-aws-s3.md)
   * [Configuring Azure Blob](importing-data/import-cloud-data/configuring-azure-blob.md)

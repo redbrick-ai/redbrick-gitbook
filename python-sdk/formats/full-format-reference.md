@@ -237,7 +237,7 @@ type MeasurementStats = {
 
 ### Task
 
-The `Task` object represents a single task on RedBrick AI. It contains task-level meta-data information about all the series within the task. A task can contain a [single series or multiple series](broken-reference) (ex. a full MRI study).&#x20;
+The `Task` object represents a single task on RedBrick AI. It contains task-level meta-data information about all the series within the task. A task can contain a single series or multiple series (ex. a full MRI study).&#x20;
 
 #### `name: string`
 

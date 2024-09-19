@@ -96,7 +96,7 @@ For a more in-depth breakdown of the permissions and access privileges associate
 
 ### Uploading Data
 
-You can upload data to a Project either through the UI or CLI/SDK. Most teams tend to [integrate external storage](../importing-data/import-cloud-data/creating-an-items-list.md) and host their own data, however, you can also [directly upload data to RedBrick AI servers](../importing-data/direct-data-upload.md).
+You can upload data to a Project either through the UI or CLI/SDK. Most teams tend to [integrate external storage](../importing-data/import-cloud-data/creating-an-items-list.md) and host their own data, however, you can also [directly upload data to RedBrick AI servers](../importing-data/uploading-data-to-redbrick.md).
 
 If you'd like to upload annotation files alongside your images and/or volumes, you must use our CLI/SDK.
 
