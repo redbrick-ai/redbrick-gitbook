@@ -97,7 +97,7 @@ You can then easily drag and drop your Objects Labels or Classifications into yo
 
 You can create Parent Tiers by adding the `parents:[]` attribute to any Object Label, Study-Level, Series-Level, or Instance-Level Classification within your Taxonomy. Parent Tiers are created and assigned from **left to right and in descending order**, which means the first string in `parents:[]` will always be a Tier 1 Parent, the second string will be a Tier 2 Parent, and so on.
 
-For full documentation, please see our [Taxonomy Object reference](broken-reference).
+For full documentation, please see our [Taxonomy Object reference](../../python-sdk/formats/full-format-reference.md#taxonomy-object).
 
 For an example of a two-tiered Object Label structure, please see the example code below:
 

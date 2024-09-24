@@ -18,6 +18,10 @@ Each Project has a unique name that can be changed at any time within Project Se
 
 Taxonomies are stored at the Organization level, which allows you to reuse a single labeling Taxonomy across Projects.
 
+To preview the Taxonomy during project creation, simply click on **Taxonomy** in the top left corner of the center card.
+
+<figure><img src="../.gitbook/assets/CleanShot 2024-09-24 at 11.24.52@2x.png" alt=""><figcaption><p>Previewing a Taxonomy during project creation</p></figcaption></figure>
+
 {% hint style="warning" %}
 Selecting a Taxonomy for a Project is a permanent choice that cannot be undone. However, you can [edit your Taxonomy](taxonomies/#modifying-taxonomies) after using it in a Project.
 {% endhint %}

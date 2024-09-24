@@ -115,7 +115,7 @@ If you're also storing your annotations in your GCS bucket, be sure to add "PUT"
 
 ## Items Path
 
-Once you've created your Google Storage method on RedBrick AI, you have to upload an [items list](broken-reference) to your projects to import specific datapoints. Please have a look at the [items list](broken-reference) documentation for an overview of the format for the JSON file.&#x20;
+Once you've created your Google Storage method on RedBrick AI, you have to upload an Items List to your projects to import specific datapoints. Please have a look at the [Items List documentation](../import-cloud-data/creating-an-items-list.md#example-items-lists) for an overview of the format for the JSON file.&#x20;
 
 For data stored in an GCS bucket, the `items` path needs to be formatted as follows:&#x20;
 
