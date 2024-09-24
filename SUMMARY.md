@@ -9,6 +9,7 @@
   * [Single Sign-on](organizations/inviting-your-team/single-sign-on.md)
 * [Worklist](organizations/worklist.md)
 * [Account Settings](organizations/account-settings.md)
+* [User Preferences](organizations/user-preferences.md)
 
 ## Importing Data
 
@@ -39,7 +40,7 @@
 ## Project Settings and Configuration
 
 * [Project Settings](project-settings-and-configuration/project-settings.md)
-* [Multiple labeling](project-settings-and-configuration/multiple-labeling/README.md)
+* [Multiple Labeling](project-settings-and-configuration/multiple-labeling/README.md)
   * [Consensus](project-settings-and-configuration/multiple-labeling/consensus/README.md)
     * [Agreement calculation](project-settings-and-configuration/multiple-labeling/consensus/agreement-calculation.md)
   * [Task duplication](project-settings-and-configuration/multiple-labeling/task-duplication.md)

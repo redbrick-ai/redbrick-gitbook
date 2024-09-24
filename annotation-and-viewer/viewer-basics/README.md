@@ -153,3 +153,21 @@ If you upload a non-DICOM file alongiside DICOM studies to a RedBrick Task, the 
 {% embed url="https://share.redbrickai.com/vv0tJZNB" fullWidth="false" %}
 The Study Selector displaying 3 DICOM studies and their corresponding scans.
 {% endembed %}
+
+***
+
+## Command Bar
+
+RedBrick AI's Command Bar is an app-wide pop-up interface that provides a comprehensive list of all available functions and keyboard shortcuts.
+
+You can access it by pressing `CMD+K` (MacOS) or `CTRL+K` (Windows).
+
+In the Dashboard, the Command Bar can be used to easily reference your custom shortcuts and navigate between Projects and Workspaces.
+
+In the Editor, the Command Bar also allows you to access several other lesser-known tools and features, such as:
+
+* **Manual Backup** - download all of the data associated with the current Task, AKA the "emergency backup" button
+* **Prune Segmentations** - delete all segmentation Entities that do not have masks on the canvas
+* **Toggle Comment Pins**
+
+{% embed url="https://share.redbrickai.com/Y6w9Fbyt" %}
