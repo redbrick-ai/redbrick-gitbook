@@ -49,6 +49,8 @@ In other words, when exporting a Task's annotations, the first annotation create
 
 The RedBrick AI SDK also supports both semantic export and exports of binary masks using the [`export_tasks()` SDK method](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.export\_tasks).&#x20;
 
+***
+
 ### Selecting and Editing Object Labels
 
 To edit an Object Label, you must first select it from the left sidebar. Once you select the Entity from the left side bar, the default tool for that label type will be selected automatically, and you can interact with the canvas to apply edits to that Entity.&#x20;
@@ -56,6 +58,8 @@ To edit an Object Label, you must first select it from the left sidebar. Once yo
 {% hint style="info" %}
 When a Object Label Entity is selected, all interactions with the canvas will only modify that particular Entity.
 {% endhint %}
+
+***
 
 ### Other Object Label Actions
 
@@ -111,6 +115,8 @@ Vibrant Mode allows you to temporarily highlight a particular Entity. For exampl
 
 The Jump to Label Action will change the current slice position to the closest slice position that contains a particular annotation. This is useful for revealing annotations on the canvas.&#x20;
 
+***
+
 ### Label Grouping
 
 RedBrick allows users to create logical groups of existing Object Labels, which will all share a common identifier (`group?: string`) in the `tasks.json` file generated upon export.
@@ -133,6 +139,49 @@ Each Object Label Entity can only be a part of one Label Group!
 For a brief overview, please see the following video walkthrough:
 
 {% embed url="https://www.loom.com/share/63ca8bac493942fb9d93affa10765fd8?sid=b51bff18-7cf2-48b1-be07-c82a9cf13823" %}
+
+***
+
+### Read-only Labels
+
+Read-only labels are special Object Labels that have been uploaded to a Task but cannot be edited.
+
+Optionally, Project & Org Admins can determine which user permission level can remove a label's read-only status in Project Settings -> General Settings. By default, no user can toggle a label's read-only status in the Dashboard and Editor.
+
+In the Editor, read-only labels are represented by a unique "crossed-out pencil" icon.
+
+<figure><img src="../.gitbook/assets/CleanShot 2024-09-24 at 16.42.41@2x (1).png" alt=""><figcaption><p>A read-only label in the Editor's left sidebar</p></figcaption></figure>
+
+#### Uploading Read-only Labels
+
+As with all [annotation imports](../python-sdk/importing-annotations-guide.md), designating a label as read-only and uploading it to RedBrick must be done programmatically.&#x20;
+
+Please see the following JSON snippet for an example of the relevant code:
+
+```
+// example Task
+
+[
+  {
+    "name": "Task_0001",
+    "series": [
+      {
+        "items": [
+          "./file/path/to/image.nii"
+        ],
+        "segmentations": "./file/path/to/annotation.nii.gz",
+        "segmentMap": {
+          "1": {
+            "category": "Liver",
+            "mask": "./file/path/to/annotation.nii.gz",
+            "readOnly": true
+          }
+        }
+      }
+    ]
+  }
+]
+```
 
 ***
 

@@ -52,6 +52,7 @@
 ## Annotation & viewer
 
 * [Viewer Basics](annotation-and-viewer/viewer-basics/README.md)
+  * [Document Viewer](annotation-and-viewer/viewer-basics/document-viewer.md)
   * [Multiple Modalities](annotation-and-viewer/viewer-basics/multiple-modalities.md)
   * [Intellisync](annotation-and-viewer/viewer-basics/intellisync.md)
   * [Annotation Mirroring](annotation-and-viewer/viewer-basics/annotation-mirroring.md)
