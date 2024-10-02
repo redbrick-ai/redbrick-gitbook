@@ -220,8 +220,7 @@ F.A.S.T. is powerful because of the way users can prompt the tool to generate an
 To start segmenting, create a segmentation instance, select the F.A.S.T. tool from the top bar or using `cmd/ctrl + b`. Once the tool is selected, hover over a viewport to start embedding computation for a single slice (you will see a loader spinner on the top right of the viewport). You can prompt F.A.S.T. in a few different ways after the embedding computation is complete:&#x20;
 
 1. **Bounding Box prompts.** `Click + move mouse + click` to draw a bounding box. You will see the segmentation prediction compute in real time while you draw the bounding box.&#x20;
-   1. **Key point refinement.** After you draw the bounding box, you can optionally refine the segmentation by prompting the system with key points. `Left click` to add regions you want to _add to the segmentation._ `Right click` to remove regions from the segmentation prediction.
-   2. Once you are happy with the segmentation preview, confirm it by using the button on the right panel or `shift + enter`.
+   1. Once you are happy with the segmentation preview, confirm it by using the button on the right panel or `shift + enter`.
 2. **Instant click.** `alt/option + hover` over objects to view a prediction preview. If you are satisfied with any preview, click while pressing `alt/option` to confirm the segmentation.&#x20;
 
 ### Interpolating 2D Segmentations with F.A.S.T.
@@ -234,10 +233,9 @@ The process for creating interpolated annotations with 2D F.A.S.T. is detailed b
 2. Select F.A.S.T. in the top of the screen and wait for the embedding computation to complete on Slice X
 3. Ensure that your F.A.S.T. is set to "2D" mode in the righthand Context Panel
 4. Create a Bounding Box around the structure you wish to annotate
-5. (Optional) Provide F.A.S.T. with additional input by using `LMB/RMB`
-6. Navigate to the end of the range that you want to interpolate across (i.e., Slice Y)
-7. Repeat Step 3 (and optionally, Step 4) for the structure you wish to annotate on Slice Y
-8. Once you are satisfied with the annotations, press Enter or click on “Finalize” in the right hand toolbar to generate the pixel masks on every slice between Slice X and Slice Y.
+5. Navigate to the end of the range that you want to interpolate across (i.e., Slice Y)
+6. Repeat Step 3 (and optionally, Step 4) for the structure you wish to annotate on Slice Y
+7. Once you are satisfied with the annotations, press Enter or click on “Finalize” in the right hand toolbar to generate the pixel masks on every slice between Slice X and Slice Y.
 
 {% hint style="info" %}
 Processing times may increase when interpolating across large ranges. However, please note that all subsequent work across the same range should be much faster, as the embedding computations only have to be computed once per slice.
@@ -245,23 +243,6 @@ Processing times may increase when interpolating across large ranges. However, p
 
 {% hint style="danger" %}
 Firewalls, ad blockers, privacy extensions, and any other browser extensions that block HTTP traffic are known to interfere with FAST.
-{% endhint %}
-
-### Generating 3D Segmentations with 3D F.A.S.T.
-
-As of `version 1.1.0`, F.A.S.T. can now be used in 3D to generate annotation masks for structures inside of a cuboid drawn by the user.
-
-1. Create a new Instance of your desired Object Label by clicking on the “+” in the left hand toolbar
-2. Select F.A.S.T. in the top of the screen and wait for the embedding computation to complete
-3. Ensure that your F.A.S.T. is set to "3D" mode in the righthand Context Panel
-4. Create a cuboid around the structure you wish to annotate
-5. Manipulate the cuboid in all of the relevant axes to fully enclose the structure you wish to annotate
-6. Once the cuboid has completely enclosed the structure, click on **Execute** to generate a preview mask
-7. (Optional) Provide 3D F.A.S.T. with additional input by using `LMB/RMB`
-8. Once you are satisfied with the annotation, click on **Finalize** in the right hand toolbar (or use the corresponding hotkey) to generate the completed annotation mask
-
-{% hint style="info" %}
-**Annotation Tool Mastery:** it's much easier to manipulate the cuboid in all 3 axes when using RedBrick's [MPR Mode](../viewer-basics/#multiplanar-reconstruction-mpr)
 {% endhint %}
 
 ***
@@ -287,6 +268,32 @@ The Smoothing Tool helps you remove peaks and valleys in noisy annotations.&#x20
 With the Smoothing Tool selected, use `left click` to remove valleys and `right click` to remove peaks.&#x20;
 
 {% embed url="https://www.loom.com/share/54c074b2300e464e906e4cff0f216f4d?sid=7f109621-959c-4329-b367-7886b43d652e" %}
+
+***
+
+## Mask Propagation Tool
+
+The Mask Propagation Tool, built on SAM2, is an extremely powerful tool intended for rapid generation of 3D segmentations. To use the Mask Propagation Tool, ensure you have F.A.S.T. (RedBrick Boost) enabled for your Organization and complete the following steps in the Editor:
+
+1. Navigate to a relatively central slice of an ROI you wish to annotate.
+2. Annotate a single slice using any Segmentation Tool (e.g. Edge Selection, Adaptive Brush, etc.). After you have created an annotation mask, the Mask Propagation Tool icon will appear.
+3. Click on the Mask Propagation Tool icon in the top toolbar. The loader icon (a red or green icon in the top-right corner of your viewport) should begin spinning as the Mask Propagation Tool prepares your Series.
+4. (Optional) if the loader icon in the top-right corner of your viewport remains red, click on it to restart it. Once the loader icon is green, you can proceed.
+5. In the righthand Context Panel, define the range of slices corresponding to your ROI.
+6. Click on **Propagate Mask** (or use the preferred hotkey). The Mask Propagation Tool will begin processing the ROI in the defined slice range.
+7. Once you are satisfied with the preview, click on **Finalize**.
+
+{% hint style="success" %}
+For trickier ROIs, you can use **Finalize Slice** to rasterize a mask on a single slice, touch up the finalized slice mask with the Segmentation Toolkit (e.g. Brush Tool, Contour Tool, etc.) and re-feed it back to the Mask Propagation Tool as input.
+{% endhint %}
+
+Please see the following video for a visual walkthrough of the above steps:
+
+{% embed url="https://www.loom.com/share/6313307d627349fa8c79906914b36f77?sid=6b2472a5-179e-43ce-8812-fb4c46dc66d7" %}
+An in-Editor walkthrough of the Mask Propagation Tool
+{% endembed %}
+
+***
 
 ## Tool Configuration
 
