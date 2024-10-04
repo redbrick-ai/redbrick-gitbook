@@ -31,6 +31,7 @@ The General Settings tab contains basic information about your Project and allow
 * your [labeler evaluation](labeler-evaluation.md) settings;
 * your [Task assignment](../projects/task-assignment.md) settings and the size of your [Labeling/Review Queue](../projects/task-assignment.md#labeling-queue);
 * your Review Stage settings, including your [pseudo-random review percentage](../projects/get-started-with-a-project.md#step-3-define-your-project-workflow);
+* control your permissions settings for [Read-only Labels](../annotation-and-viewer/creating-editing-and-deleting-annotations.md#setting-permissions-for-read-only-labels);
 
 You can also add Review Stages to a Project's workflow. However, this is a permanent action that cannot be undone.
 

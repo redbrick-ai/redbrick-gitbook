@@ -183,6 +183,35 @@ Please see the following JSON snippet for an example of the relevant code:
 ]
 ```
 
+#### Setting Permissions for Read-only Labels
+
+In your [Project Settings](../project-settings-and-configuration/project-settings.md#general-settings) -> General Settings, you can determine which user permission level is required to toggle the read-only status of a Read-only Label.&#x20;
+
+This setting can be configured for each Stage of your Project and allows for the construction of more advanced QA flows.
+
+<figure><img src="../.gitbook/assets/CleanShot 2024-10-04 at 10.12.15@2x.png" alt=""><figcaption><p>Configuring read-only label permissions</p></figcaption></figure>
+
+* No one - no users can toggle the status of a Read-only Label
+* Admin - Project Admins (and higher) can toggle the status of a Read-only Label
+* Manager - Project Managers (and higher) can toggle the status of a Read-only Label
+* Labeler - Project Members (i.e. all users with access to this Project Stage) can toggle the status of a Read-only Label&#x20;
+
+#### Example QA Flow 1 - Limited Review Stage
+
+<figure><img src="../.gitbook/assets/CleanShot 2024-10-04 at 10.21.51@2x.png" alt="" width="563"><figcaption><p>A sample flow utilizing ROL permission levels</p></figcaption></figure>
+
+Assuming that **all uploaded annotations are set as Read-only Labels**, the following flow would prevent users in the Review Stage from making any edits to annotations in the Review Stage while preserving their ability to accept or reject a Task, leave comments on a Task, etc.
+
+#### Example QA Flow 2 - Iterating over a large dataset
+
+<figure><img src="../.gitbook/assets/CleanShot 2024-10-04 at 10.28.15@2x.png" alt=""><figcaption><p>A sample flow ideal for iterating over a dataset</p></figcaption></figure>
+
+The above configuration would allow a team to do the following:
+
+* upload Labels A and B for reference while preventing them from being edited by the annotators
+* allow the annotators to generate new annotations (or modify existing ones) for Label C
+* allow Admins to correct any labels if inconsistencies are found in the Review Stage
+
 ***
 
 ## Annotation Version Explorer
