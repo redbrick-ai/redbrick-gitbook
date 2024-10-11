@@ -280,6 +280,7 @@ The Mask Propagation Tool, built on SAM2, is an extremely powerful tool intended
 3. Click on the Mask Propagation Tool icon in the top toolbar. The loader icon (a red or green icon in the top-right corner of your viewport) should begin spinning as the Mask Propagation Tool prepares your Series.
 4. (Optional) if the loader icon in the top-right corner of your viewport remains red, click on it to restart it. Once the loader icon is green, you can proceed.
 5. In the righthand Context Panel, define the range of slices corresponding to your ROI.
+   1. Note that the annotation mask you created in Step (2) **should still be in the center of your slice range**. For example, if you want to propagate a segmentation across slices 10-20, the "test" annotation that you created in Step (2) should be on slice 15.
 6. Click on **Propagate Mask** (or use the preferred hotkey). The Mask Propagation Tool will begin processing the ROI in the defined slice range.
 7. Once you are satisfied with the preview, click on **Finalize**.
 
