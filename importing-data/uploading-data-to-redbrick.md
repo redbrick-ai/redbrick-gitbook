@@ -16,9 +16,11 @@ RedBrick AI supports a variety of different image formats:&#x20;
 * RGB Images - .png, .jpeg, .jpg, .bmp
 * Videos - .mp4, .mov, .avi
 * NRRD - .nrrd
+* MHA - .mha
+* MHD - .mhd in combination with a corresponding .raw or .img file
 
 {% hint style="success" %}
-It's uncommon for teams to export their images from RedBrick after a project has been completed, but you can see the list of supported image export formats [here](https://sdk.redbrickai.com/sdk.html#redbrick.export.Export.export\_tasks).
+You can see the list of supported image export formats [here](https://sdk.redbrickai.com/sdk.html#redbrick.export.Export.export\_tasks).
 {% endhint %}
 
 Annotations on RedBrick are stored and exported in NIfTI format by default. However, RedBrick supports several other formats when uploading and exporting annotations.
@@ -27,8 +29,6 @@ Annotations on RedBrick are stored and exported in NIfTI format by default. Howe
 
 * NIfTI - .nii, .nii.gz (default)
 * RT STRUCT - .dcm
-* MHA - .mha
-* MHD - .mhd in combination with a corresponding .raw or .img file
 
 Further information can be found in our SDK reference [here](https://sdk.redbrickai.com/sdk.html#redbrick.upload.Upload.update\_tasks\_labels).
 
