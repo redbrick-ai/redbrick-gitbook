@@ -5,7 +5,7 @@ You can make use of RedBrick AI's Python SDK to export your annotations using a 
 Within the Python SDK, annotations are exported in two ways:&#x20;
 
 1. The `export_tasks` function **returns a Python object** containing meta-data information and any vector annotations (measurements, landmarks, etc.). Please see the [format of the object here](https://docs.redbrickai.com/python-sdk/reference/export-annotation-format).&#x20;
-2. By default, segmentation data is written to your disk **in NIfTI format**. Segmentation data can also be exported in PNG or RT Struct by manipulating the parameters of the `export_tasks` function. Please view the detailed [`export_tasks` reference here](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.export\_tasks).&#x20;
+2. By default, segmentation data is written to your disk **in NIfTI format**. Segmentation data can also be exported in PNG or RT Struct by manipulating the parameters of the `export_tasks` function. Please view the detailed [`export_tasks` reference here](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.export_tasks).&#x20;
 
 {% hint style="info" %}
 If you're attempting a one-time export or don't have intensive requirements for your export, the [**CLI** ](https://docs.redbrickai.com/python-sdk/cli-overview/exporting-annotations)also provides a simple and optimized workflow for exporting a Project's annotations.&#x20;
@@ -79,7 +79,7 @@ specific_annotations = project.export.export_tasks(task_id="...")
 An audit trail can be useful for regulators interested in your quality control processes, as well as for managing your internal QA processes.&#x20;
 
 {% hint style="success" %}
-Please see a detailed reference for[`get_task_events` here](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.get\_task\_events).
+Please see a detailed reference for[`get_task_events` here](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.get_task_events).
 {% endhint %}
 
 First, perform the [standard RedBrick AI SDK setup](./#initializing-the-redbrick-sdk-in-python) to create a Project object.&#x20;
@@ -95,7 +95,7 @@ audit_trail = project.export.get_task_events(only_ground_truth=False)
 
 #### Audit Trail - Ground Truth Tasks Only
 
-Retrieve an audit trail for all Ground Truth Tasks**.** Please note that by default, `get_task_events` only returns audit information for Tasks in the Ground Truth Stage.&#x20;
+Retrieve an audit trail for all Ground Truth Task&#x73;**.** Please note that by default, `get_task_events` only returns audit information for Tasks in the Ground Truth Stage.&#x20;
 
 ```python
 project = redbrick.get_project(org_id, project_id, api_key)
@@ -133,9 +133,9 @@ The returned object will contain data similar to the code snippet below, where e
 
 The following is a non-exhaustive list of other available functionalities when using the [`Export` class](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#export). A full list of the capabilities of our `Export` class can be found [here](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export).
 
-* Track labeler or reviewer time spent on a Task with [`get_active_time()`](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.get\_active\_time);
-* Fetch Task events from a specific timestamp to the present day using [`get_task_events()`](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.get\_task\_events) and the `from_timestamp` parameter;
-* Easily search for Tasks based on a wide variety of criteria using [`list_tasks()`](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.list\_tasks);
-* Perform a semantic export (that exports a single file per category name) using [`export_tasks()`](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.export\_tasks);
-* Configure [Hanging Protocol](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.settings.Settings.hanging\_protocol)s;
-* Upload a [script](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.settings.Settings.label\_validation) for [Custom Label Validation](../../project-settings-and-configuration/custom-label-validation.md);
+* Track labeler or reviewer time spent on a Task with [`get_active_time()`](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.get_active_time);
+* Fetch Task events from a specific timestamp to the present day using [`get_task_events()`](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.get_task_events) and the `from_timestamp` parameter;
+* Easily search for Tasks based on a wide variety of criteria using [`list_tasks()`](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.list_tasks);
+* Perform a semantic export (that exports a single file per category name) using [`export_tasks()`](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.export_tasks);
+* Configure [Hanging Protocol](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.settings.Settings.hanging_protocol)s;
+* Upload a [script](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.settings.Settings.label_validation) for [Custom Label Validation](../../project-settings-and-configuration/custom-label-validation.md);

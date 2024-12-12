@@ -38,11 +38,11 @@ _**Instance-Level Classifications**_ are applied to a single frame of a video an
 
 ## Creating Taxonomies
 
-Taxonomies are created and stored at the Organization level, which allows you to use a single Taxonomy for several Projects_._ &#x20;
+Taxonomies are created and stored at the Organization level, which allows you to use a single Taxonomy for several Project&#x73;_._ &#x20;
 
 To create a new Taxonomy in the UI, navigate to the **Taxonomies** page in the left hand side bar of the RedBrick web app and click on **Create Taxonomy**.&#x20;
 
-Taxonomies can also be created using the [`create_taxonomy()` SDK method](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.organization.RBOrganization.create\_taxonomy).
+Taxonomies can also be created using the [`create_taxonomy()` SDK method](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.organization.RBOrganization.create_taxonomy).
 
 {% hint style="success" %}
 All Taxonomies must contain at least one Object Label or Classification in order to be successfully created.&#x20;
@@ -52,7 +52,7 @@ All Taxonomies must contain at least one Object Label or Classification in order
 
 Taxonomies can be modified on the **Taxonomies** page of the UI at any time.
 
-Alternatively, you can use the [`update_taxonomy()` SDK method](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.organization.RBOrganization.update\_taxonomy) to modify a Taxonomy outside of the UI. Please note the following about modifying existing Taxonomies:
+Alternatively, you can use the [`update_taxonomy()` SDK method](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.organization.RBOrganization.update_taxonomy) to modify a Taxonomy outside of the UI. Please note the following about modifying existing Taxonomies:
 
 1. the `update_taxonomy()` method overwrites the current Taxonomy in its entirety;
 2. If you delete an Object Category, Attribute, or Classification from your Taxonomy, all existing associated annotations will need to be updated;

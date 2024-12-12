@@ -28,6 +28,49 @@ When the Visualization Panel is open, its settings will display in the right han
 * Label Opacity
 * Label Outlines
 
+### Custom Windowing Presets
+
+You can set custom presets for windowing settings and set custom keyboard shortcuts for them within the RedBrick Annotation Tool.
+
+All custom keyboard shortcuts can be configured and referenced on the [User Preferences](../organizations/user-preferences.md) page.
+
+#### Creating a Custom Windowing Preset
+
+First, set your Windowing Width and Level to the desired values.
+
+Then, click on **Select a preset** and then **Create a preset** within the Visualization Panel.
+
+<figure><img src="../.gitbook/assets/CleanShot 2024-12-11 at 12.29.50@2x.png" alt="" width="563"><figcaption><p>Creating a custom preset</p></figcaption></figure>
+
+You will then be presented with a pop-up window that will allow you to name your custom preset. Provide a name and click on **Save changes** to create the preset.
+
+<figure><img src="../.gitbook/assets/CleanShot 2024-12-11 at 12.31.40@2x (1).png" alt="" width="563"><figcaption><p>Naming a custom preset</p></figcaption></figure>
+
+#### Modifying an Existing Custom Preset
+
+To update a custom preset:
+
+1. set the desired Windowing Width and Level values
+2. in the Visualization Panel, open the presets dropdown
+3. click on the three-dot menu next to the custom preset you wish to modify
+4. select **Update preset**
+
+You'll then be presented with a pop-up that includes a summary of the changes to your custom preset. You can modify the name of the preset as well as an optional step.
+
+<figure><img src="../.gitbook/assets/CleanShot 2024-12-11 at 12.39.39@2x.png" alt="" width="563"><figcaption><p>Updating a custom preset</p></figcaption></figure>
+
+Once you are satisfied with the changes, click **Save changes**.
+
+#### Deleting a Custom Preset
+
+To delete a custom preset:
+
+1. in the Visualization Panel, open the Presets dropdown
+2. click on the three-dot menu next to the custom preset you wish to delete
+3. select **Delete preset**
+
+***
+
 ## Masking
 
 The Masking Panel consists of the following elements:
