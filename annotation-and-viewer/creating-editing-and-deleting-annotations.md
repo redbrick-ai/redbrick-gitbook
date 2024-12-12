@@ -47,7 +47,7 @@ When an annotation is created inside of the Annotation Tool, a corresponding `se
 
 In other words, when exporting a Task's annotations, the first annotation created by a labeler will have a `segmentMap` value of "1" in the accompanying JSON file; the second annotation will have a `segmentMap` value of "2", and so on. For more detailed information about how segmentations are mapped, please see our [Format Reference for Exported Annotations](https://docs.redbrickai.com/python-sdk/reference/export-annotation-format#segmentation).
 
-The RedBrick AI SDK also supports both semantic export and exports of binary masks using the [`export_tasks()` SDK method](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.export\_tasks).&#x20;
+The RedBrick AI SDK also supports both semantic export and exports of binary masks using the [`export_tasks()` SDK method](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.export_tasks).&#x20;
 
 ***
 
@@ -185,7 +185,7 @@ Please see the following JSON snippet for an example of the relevant code:
 
 #### Setting Permissions for Read-only Labels
 
-In your [Project Settings](../project-settings-and-configuration/project-settings.md#general-settings) -> General Settings, you can determine which user permission level is required to toggle the read-only status of a Read-only Label.&#x20;
+In your [Project Settings](../project-pages/settings-page/#general-settings) -> General Settings, you can determine which user permission level is required to toggle the read-only status of a Read-only Label.&#x20;
 
 This setting can be configured for each Stage of your Project and allows for the construction of more advanced QA flows.
 

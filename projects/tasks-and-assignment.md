@@ -1,4 +1,4 @@
-# Task Assignment
+# Tasks & Assignment
 
 ## What is a Task?
 
@@ -38,7 +38,7 @@ RedBrick AI will not automatically re-assign Tasks that have been manually assig
 
 ### **Programmatically Assigning Tasks**
 
-You can programmatically assign tasks by prescribing the assignment during data upload as part of your [Items List](../importing-data/import-cloud-data/creating-an-items-list.md#upload-an-items-list-to-your-project) or using the [`assign_tasks()` method](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.labeling.Labeling.assign\_tasks) of our SDK.
+You can programmatically assign tasks by prescribing the assignment during data upload as part of your [Items List](../importing-data/import-cloud-data/creating-an-items-list.md#upload-an-items-list-to-your-project) or using the [`assign_tasks()` method](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.labeling.Labeling.assign_tasks) of our SDK.
 
 #### Assigning Tasks on Upload
 
@@ -71,7 +71,7 @@ Also, when preassigning Tasks, all emails must be associated with an existing Pr
 
 #### Assigning Tasks after Upload
 
-You can use the assign\_tasks() method to designate task assignment using the SDK. Please see our [SDK Documentation](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.labeling.Labeling.assign\_tasks) for further details.
+You can use the assign\_tasks() method to designate task assignment using the SDK. Please see our [SDK Documentation](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.labeling.Labeling.assign_tasks) for further details.
 
 ## Labeling Queue
 
@@ -148,15 +148,7 @@ For the truly brave, our Prioritization API supports up to the billionth place f
 
 ## Send to Stage
 
-The **Send to Stage** action allows the user to move a Task from one Project Stage to another, overriding the standard project workflow.&#x20;
 
-Sending a Task to a different Stage may be useful if:
-
-* As a labeler, you want to make edits to a Task you have already finalized;
-* As an admin, you need to return a Task to a previous Stage without sending it all the way to the beginning of your pipeline;
-* As an admin, you need a Task to skip over the review pipeline you've established;
-
-To send a Task to a different Stage, simply access the Task's three-dot menu on the Data page and click on the desired destination Stage.
 
 <figure><img src="../.gitbook/assets/Screenshot 2024-07-04 at 7.24.15 PM (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -166,8 +158,6 @@ The Send to Stage action is disabled for Consensus Projects!
 
 ***
 
-## Task History
 
-You can access a comprehensive list of Task events by clicking on the Task's Stage, bringing the functionality of the Python SDK's [`get_task_events()` function](https://sdk.redbrickai.com/sdk.html#redbrick.export.Export.get\_task\_events) to the Dashboard.
 
 <figure><img src="../.gitbook/assets/CleanShot 2024-09-12 at 13.30.52@2x.png" alt=""><figcaption><p>A sample Task History for a Task in the Review_1 Stage</p></figcaption></figure>

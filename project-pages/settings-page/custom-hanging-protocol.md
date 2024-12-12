@@ -48,7 +48,7 @@ This guide provides an overview of the available functions and types to help you
 * Create and configure a new Layout Tab in your Task (`nextTab`)\
 
 * Configuration settings for the Annotation Tool (`setSegmentationSettings`)\*&#x20;
-  * **(Note: this function has been replaced by the** [**Tool Settings**](../annotation-and-viewer/segmentation/segmentation-tools.md#tool-configuration) **page)**
+  * **(Note: this function has been replaced by the** [**Tool Settings**](../../annotation-and-viewer/segmentation/segmentation-tools.md#tool-configuration) **page)**
 
 {% hint style="info" %}
 The Custom Hanging Protocol script takes the available Series for a particular Task as input and returns the layout dimensions and list of views to display.
@@ -225,7 +225,7 @@ if (allSeries.length === 4) { // executes when there are 4 total Series in a Tas
 
 ### Synchronize Views
 
-Hanging protocols can be used along side [intellisync.md](../annotation-and-viewer/viewer-basics/intellisync.md "mention")for ease of use when annotating scans in a study.&#x20;
+Hanging protocols can be used along side [intellisync.md](../../annotation-and-viewer/viewer-basics/intellisync.md "mention")for ease of use when annotating scans in a study.&#x20;
 
 For example, let's assume that we have uploaded a single Task containing 4 Series from an MRI study: T1, T1CE, T2, and Flair weighted MR scans.
 
@@ -294,5 +294,5 @@ setViews(eligibleSeries.map((series) => {
 ## Tool Configuration with Hanging Protocols
 
 {% hint style="warning" %}
-Configuring your Project's toolkit is now done on the [Tool Settings](../annotation-and-viewer/segmentation/segmentation-tools.md#tool-configuration) page of your Project Settings.
+Configuring your Project's toolkit is now done on the [Tool Settings](../../annotation-and-viewer/segmentation/segmentation-tools.md#tool-configuration) page of your Project Settings.
 {% endhint %}

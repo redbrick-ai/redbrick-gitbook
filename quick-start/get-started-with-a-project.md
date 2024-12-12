@@ -23,7 +23,7 @@ To preview the Taxonomy during project creation, simply click on **Taxonomy** in
 <figure><img src="../.gitbook/assets/CleanShot 2024-09-24 at 11.24.52@2x.png" alt=""><figcaption><p>Previewing a Taxonomy during project creation</p></figcaption></figure>
 
 {% hint style="warning" %}
-Selecting a Taxonomy for a Project is a permanent choice that cannot be undone. However, you can [edit your Taxonomy](taxonomies/#modifying-taxonomies) after using it in a Project.
+Selecting a Taxonomy for a Project is a permanent choice that cannot be undone. However, you can [edit your Taxonomy](../projects/taxonomies/#modifying-taxonomies) after using it in a Project.
 {% endhint %}
 
 ### Step 3: Define your Project Workflow
@@ -112,6 +112,6 @@ If you'd like to upload annotation files alongside your images and/or volumes, y
 
 Once you have uploaded data to your Project, RedBrick AI will begin automatically assigning Tasks to the users in your Project. You can learn more about the specifics of task assignment by referencing the documentation below.
 
-{% content-ref url="task-assignment.md" %}
-[task-assignment.md](task-assignment.md)
+{% content-ref url="../projects/tasks-and-assignment.md" %}
+[tasks-and-assignment.md](../projects/tasks-and-assignment.md)
 {% endcontent-ref %}

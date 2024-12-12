@@ -22,7 +22,7 @@ Once enabled, complete step (4) of Project creation by selecting a **minimum num
 
 ## Assigning Tasks to Multiple Users
 
-RedBrick AI has an [**Automatic Assignment Protocol**](../../../projects/task-assignment.md#automatic-task-assignment) that will automatically assign multiple users to a Task. This protocol is enabled by default on Project creation and can be configured either when creating your Project or any time afterward in your Project's [General Settings](../../project-settings.md#general-settings).
+RedBrick AI has an [**Automatic Assignment Protocol**](../../../projects/tasks-and-assignment.md#automatic-task-assignment) that will automatically assign multiple users to a Task. This protocol is enabled by default on Project creation and can be configured either when creating your Project or any time afterward in your Project's [General Settings](../../settings-page/#general-settings).
 
 As annotators request Tasks by clicking on the **Label** button in the top right of the Dashboard, RedBrick AI will automatically assign available Tasks by prioritizing those that are already in progress/or assigned to other users. &#x20;
 

@@ -96,7 +96,7 @@ Displaying MIP.
 
 ## Managing your Layout
 
-RedBrick AI's viewer can be customized to display studies and series in a huge range of configurations, either manually or by using [hanging protocols](../../project-settings-and-configuration/custom-hanging-protocol.md) to display single or multiple series.&#x20;
+RedBrick AI's viewer can be customized to display studies and series in a huge range of configurations, either manually or by using [hanging protocols](../../project-pages/settings-page/custom-hanging-protocol.md) to display single or multiple series.&#x20;
 
 ### Changing Layout and Displaying Series
 
@@ -104,11 +104,7 @@ RedBrick AI's viewer can be customized to display studies and series in a huge r
 2. **Displaying series:** You can customize what is shown in each viewport; this can be any 2D or 3D view.&#x20;
    *   **Drag and drop:** You can drag and drop any series or projection from the layout context panel to a target viewport.&#x20;
 
-       <div align="center" data-full-width="true">
-
-       <figure><img src="../../.gitbook/assets/RedBrick AI 2024-01-10 at 16.02.15.gif" alt=""><figcaption><p>Drag and drop.</p></figcaption></figure>
-
-       </div>
+       <div align="center" data-full-width="true"><figure><img src="../../.gitbook/assets/RedBrick AI 2024-01-10 at 16.02.15.gif" alt=""><figcaption><p>Drag and drop.</p></figcaption></figure></div>
    *   **Viewport selector:** You can use the dropdown on any viewport to cycle between projections of that series.
 
        <figure><img src="../../.gitbook/assets/RedBrick AI 2024-01-10 at 16.03.32.gif" alt=""><figcaption><p>Viewport selector.</p></figcaption></figure>

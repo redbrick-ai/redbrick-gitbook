@@ -19,7 +19,7 @@ A Section entitled "Default" is provided as a base container for Workspaces and 
 
 Sections can contain:
 
-* **Workspaces** (including the Projects within each [Workspace](get-started-with-workspace/))
+* **Workspaces** (including the Projects within each [Workspace](../quick-start/get-started-with-workspace/))
 * **Projects** that exist outside of a Workspace.
 
 ### Section Management

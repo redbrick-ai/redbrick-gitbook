@@ -138,4 +138,4 @@ The following is a non-exhaustive list of other available functionalities when u
 * Easily search for Tasks based on a wide variety of criteria using [`list_tasks()`](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.list_tasks);
 * Perform a semantic export (that exports a single file per category name) using [`export_tasks()`](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.export_tasks);
 * Configure [Hanging Protocol](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.settings.Settings.hanging_protocol)s;
-* Upload a [script](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.settings.Settings.label_validation) for [Custom Label Validation](../../project-settings-and-configuration/custom-label-validation.md);
+* Upload a [script](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.settings.Settings.label_validation) for [Custom Label Validation](../../project-pages/settings-page/custom-label-validation.md);

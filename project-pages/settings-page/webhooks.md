@@ -81,6 +81,6 @@ Webhooks allow you to receive an HTTP push notification triggered by certain eve
 
 Configure webhook from project settings, as shown in the image below.&#x20;
 
-<figure><img src="../.gitbook/assets/RedBrick AI 2024-04-22 at 11.05.15@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/RedBrick AI 2024-04-22 at 11.05.15@2x.png" alt=""><figcaption></figcaption></figure>
 
 You can use tools like [https://webhook.site/](https://webhook.site/#!/view/8df76e5a-9a58-4394-8c65-854d305bb5be) to test the webhook and inspect the response format.&#x20;

@@ -16,21 +16,13 @@ Overview of custom label validation
 
 By default, all projects have a custom check to warn annotators when they submit tasks without any annotations. You can enable/disable custom validation under Project Settings -> Label Validation.&#x20;
 
-<figure><img src="../.gitbook/assets/qa.redbrickdevteam.com_943c97cd-58b1-4794-84d0-8b00d26f0c84_projects_b4b15a0e-f26d-4f8b-80a5-4c39c6a38aac_settings (1).png" alt=""><figcaption><p>Custom label validation in settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/qa.redbrickdevteam.com_943c97cd-58b1-4794-84d0-8b00d26f0c84_projects_b4b15a0e-f26d-4f8b-80a5-4c39c6a38aac_settings (1).png" alt=""><figcaption><p>Custom label validation in settings</p></figcaption></figure>
 
 ### Prevent Submissions with Errors
 
 By default, annotators will just receive the error messages as a warning, and they will still be able to submit the task anyway. To prevent the annotators from submitting with any errors present, toggle the _Prevent submission with errors_ switch.
 
-<div>
-
-<figure><img src="../.gitbook/assets/qa.redbrickdevteam.com_943c97cd-58b1-4794-84d0-8b00d26f0c84_projects_b4b15a0e-f26d-4f8b-80a5-4c39c6a38aac_tool_Label.png" alt=""><figcaption><p>Submission allowed</p></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/qa.redbrickdevteam.com_943c97cd-58b1-4794-84d0-8b00d26f0c84_projects_b4b15a0e-f26d-4f8b-80a5-4c39c6a38aac_tool_Label_taskid=4d88355c-b83c-4901-bbd1-9fd45a72d6c0.png" alt=""><figcaption><p>Submission with errors prevented</p></figcaption></figure>
-
-</div>
+<div><figure><img src="../../.gitbook/assets/qa.redbrickdevteam.com_943c97cd-58b1-4794-84d0-8b00d26f0c84_projects_b4b15a0e-f26d-4f8b-80a5-4c39c6a38aac_tool_Label.png" alt=""><figcaption><p>Submission allowed</p></figcaption></figure> <figure><img src="../../.gitbook/assets/qa.redbrickdevteam.com_943c97cd-58b1-4794-84d0-8b00d26f0c84_projects_b4b15a0e-f26d-4f8b-80a5-4c39c6a38aac_tool_Label_taskid=4d88355c-b83c-4901-bbd1-9fd45a72d6c0.png" alt=""><figcaption><p>Submission with errors prevented</p></figcaption></figure></div>
 
 ### Custom Javascript function
 
@@ -306,15 +298,15 @@ function(task: Task, labels: Label[]): string[] {
 
 Before saving your script, you should validate that your code executes as expected. Click on the validate button on the bottom right of the Settings page, and paste the JSON object copied from the labeling tool to see if your code executes as expected:
 
-<figure><img src="../.gitbook/assets/Screen Shot 2022-09-04 at 3.22.20 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screen Shot 2022-09-04 at 3.22.20 PM.png" alt=""><figcaption></figcaption></figure>
 
 ## Displaying the Validation on the Labeling Tool
 
 Your custom validation script will be regularly run. If any warnings are found, an indicator will appear on the right side of the bottom bar. If you have enabled **Prevent submissions with errors**, the indicator will be red.&#x20;
 
-<figure><img src="../.gitbook/assets/qa.redbrickdevteam.com_943c97cd-58b1-4794-84d0-8b00d26f0c84_projects_64e8b5d9-81d3-4401-a49a-924d72916b0f_tool_Label_taskid=bd8aa035-e0fa-4388-ae66-6f12c7fe2a4c.png" alt=""><figcaption><p>Submission with errors is allowed</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/qa.redbrickdevteam.com_943c97cd-58b1-4794-84d0-8b00d26f0c84_projects_64e8b5d9-81d3-4401-a49a-924d72916b0f_tool_Label_taskid=bd8aa035-e0fa-4388-ae66-6f12c7fe2a4c.png" alt=""><figcaption><p>Submission with errors is allowed</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/qa.redbrickdevteam.com_943c97cd-58b1-4794-84d0-8b00d26f0c84_projects_64e8b5d9-81d3-4401-a49a-924d72916b0f_tool_Label_taskid=bd8aa035-e0fa-4388-ae66-6f12c7fe2a4c (1) (3).png" alt=""><figcaption><p>Submission with errors is prevented</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/qa.redbrickdevteam.com_943c97cd-58b1-4794-84d0-8b00d26f0c84_projects_64e8b5d9-81d3-4401-a49a-924d72916b0f_tool_Label_taskid=bd8aa035-e0fa-4388-ae66-6f12c7fe2a4c (1) (3).png" alt=""><figcaption><p>Submission with errors is prevented</p></figcaption></figure>
 
 ## Example Scripts
 

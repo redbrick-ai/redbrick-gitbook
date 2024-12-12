@@ -1,8 +1,15 @@
 # Table of contents
 
-* [Getting Started](README.md)
+## Quick Start
 
-## Team & Organization <a href="#organizations" id="organizations"></a>
+* [Walkthrough Guides](README.md)
+* [Get Started with a Project](quick-start/get-started-with-a-project.md)
+* [Get Started with Workspace](quick-start/get-started-with-workspace/README.md)
+  * [Cohort Creation](quick-start/get-started-with-workspace/cohort-creation.md)
+  * [Datapoint Classification](quick-start/get-started-with-workspace/datapoint-classification.md)
+  * [Configuring Metadata Schema](quick-start/get-started-with-workspace/configuring-metadata-schema.md)
+
+## Organizations
 
 * [Organization and Project Roles](organizations/what-is-an-organization.md)
 * [Inviting Your Team](organizations/inviting-your-team/README.md)
@@ -10,10 +17,11 @@
 * [Worklist](organizations/worklist.md)
 * [Account Settings](organizations/account-settings.md)
 * [User Preferences](organizations/user-preferences.md)
+* [Sections](organizations/sections.md)
 
 ## Importing Data
 
-* [Preview Mode](importing-data/preview-mode.md)
+* [Preview Tool](importing-data/preview-tool.md)
 * [Uploading Data to RedBrick](importing-data/uploading-data-to-redbrick.md)
 * [Import Cloud Data](importing-data/import-cloud-data.md)
   * [Configuring AWS s3](importing-data/configuring-external-storage/configuring-aws-s3.md)
@@ -25,29 +33,24 @@
 
 ## Projects
 
-* [Get Started with a Project](projects/get-started-with-a-project.md)
-* [Get Started with Workspace](projects/get-started-with-workspace/README.md)
-  * [Cohort Creation](projects/get-started-with-workspace/cohort-creation.md)
-  * [Datapoint Classification](projects/get-started-with-workspace/datapoint-classification.md)
-  * [Configuring Metadata Schema](projects/get-started-with-workspace/configuring-metadata-schema.md)
 * [Taxonomies](projects/taxonomies/README.md)
-* [Task Assignment](projects/task-assignment.md)
+* [Tasks & Assignment](projects/tasks-and-assignment.md)
 * [Comments & Raise Issue](projects/comments-and-raised-issues.md)
 * [Reference Standards](projects/reference-standards.md)
-* [Sections](projects/sections.md)
 * [Project & Task Analytics](projects/project-and-task-analytics.md)
+* [Labeler Evaluation](projects/labeler-evaluation.md)
 
-## Project Settings and Configuration
+## Project Pages
 
-* [Project Settings](project-settings-and-configuration/project-settings.md)
-* [Multiple Labeling](project-settings-and-configuration/multiple-labeling/README.md)
-  * [Consensus](project-settings-and-configuration/multiple-labeling/consensus/README.md)
-    * [Agreement calculation](project-settings-and-configuration/multiple-labeling/consensus/agreement-calculation.md)
-  * [Task duplication](project-settings-and-configuration/multiple-labeling/task-duplication.md)
-* [Custom Label Validation](project-settings-and-configuration/custom-label-validation.md)
-* [Custom Hanging Protocol](project-settings-and-configuration/custom-hanging-protocol.md)
-* [Labeler Evaluation](project-settings-and-configuration/labeler-evaluation.md)
-* [Webhooks](project-settings-and-configuration/webhooks.md)
+* [Data Page](project-pages/data-page.md)
+* [Settings Page](project-pages/settings-page/README.md)
+  * [Custom Label Validation](project-pages/settings-page/custom-label-validation.md)
+  * [Custom Hanging Protocol](project-pages/settings-page/custom-hanging-protocol.md)
+  * [Webhooks](project-pages/settings-page/webhooks.md)
+* [Multiple Labeling](project-pages/multiple-labeling/README.md)
+  * [Consensus](project-pages/multiple-labeling/consensus/README.md)
+    * [Agreement calculation](project-pages/multiple-labeling/consensus/agreement-calculation.md)
+  * [Task duplication](project-pages/multiple-labeling/task-duplication.md)
 
 ## Annotation & viewer
 

@@ -1,4 +1,4 @@
-# Project Settings
+# Settings Page
 
 Any Project on RedBrick can be highly customized to support the specifics of your desired workflow.
 
@@ -20,7 +20,7 @@ Project Settings are broken down into the following subcategories:
 
 You can also quickly navigate to several of these tabs from anywhere within a Project by clicking on the corresponding Settings Shortcut in the top-right corner of the screen.
 
-<figure><img src="../.gitbook/assets/CleanShot 2024-08-14 at 11.49.20@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CleanShot 2024-08-14 at 11.49.20@2x.png" alt=""><figcaption></figcaption></figure>
 
 ## General Settings
 
@@ -28,10 +28,10 @@ The General Settings tab contains basic information about your Project and allow
 
 * your Project's name, description, and labeling instructions URL;
 * your caching settings&#x20;
-* your [labeler evaluation](labeler-evaluation.md) settings;
-* your [Task assignment](../projects/task-assignment.md) settings and the size of your [Labeling/Review Queue](../projects/task-assignment.md#labeling-queue);
-* your Review Stage settings, including your [pseudo-random review percentage](../projects/get-started-with-a-project.md#step-3-define-your-project-workflow);
-* control your permissions settings for [Read-only Labels](../annotation-and-viewer/creating-editing-and-deleting-annotations.md#setting-permissions-for-read-only-labels);
+* your [labeler evaluation](../../projects/labeler-evaluation.md) settings;
+* your [Task assignment](../../projects/tasks-and-assignment.md) settings and the size of your [Labeling/Review Queue](../../projects/tasks-and-assignment.md#labeling-queue);
+* your Review Stage settings, including your [pseudo-random review percentage](../../quick-start/get-started-with-a-project.md#step-3-define-your-project-workflow);
+* control your permissions settings for [Read-only Labels](../../annotation-and-viewer/creating-editing-and-deleting-annotations.md#setting-permissions-for-read-only-labels);
 
 You can also add Review Stages to a Project's workflow. However, this is a permanent action that cannot be undone.
 
@@ -45,7 +45,7 @@ You can also add Review Stages to a Project's workflow. However, this is a perma
 
 If you are working inside of a multi-reader Project, you can find Consensus settings in the corresponding tab. For a full overview of how to set up and configure multi-reader Projects on Redbrick, please see the following documentation:
 
-[consensus](multiple-labeling/consensus/ "mention")
+[consensus](../multiple-labeling/consensus/ "mention")
 
 ***
 
@@ -53,7 +53,7 @@ If you are working inside of a multi-reader Project, you can find Consensus sett
 
 The Export Labels tab contains pre-filled commands to allow you to easily clone your Project to a directory on your local machine and export it.
 
-For a more comprehensive overview of using the CLI to export a RedBrick Project, relevant tags, and common variants, please see our [CLI export documentation](../python-sdk/cli-overview/exporting-annotations.md#export-annotations-to-a-local-directory-using-the-cli).
+For a more comprehensive overview of using the CLI to export a RedBrick Project, relevant tags, and common variants, please see our [CLI export documentation](../../python-sdk/cli-overview/exporting-annotations.md#export-annotations-to-a-local-directory-using-the-cli).
 
 ***
 
@@ -90,7 +90,7 @@ If something is erroneously uploaded to your Project, you can "undo" the upload 
 The delete operation removes all images, labels, and Tasks associated with the upload - use caution!
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/CleanShot 2024-08-14 at 12.19.37@2x.png" alt=""><figcaption><p>Deleting the contents of an upload</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CleanShot 2024-08-14 at 12.19.37@2x.png" alt=""><figcaption><p>Deleting the contents of an upload</p></figcaption></figure>
 
 ***
 
@@ -104,7 +104,7 @@ As of **v1.1.2**, the Export Metadata tab has been removed and transferred to th
 
 You can now export all of a Project's Comments by clicking on the corresponding button on the Project Data Page.
 
-<figure><img src="../.gitbook/assets/CleanShot 2024-08-30 at 11.07.39@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CleanShot 2024-08-30 at 11.07.39@2x.png" alt=""><figcaption></figcaption></figure>
 
 #### Workforce Productivity Export
 
@@ -112,7 +112,7 @@ Productivity data includes each labeler or reviewer's active work time (measured
 
 You can also customize the date range for your export to retrieve more specific data.
 
-<figure><img src="../.gitbook/assets/CleanShot 2024-08-30 at 11.09.51@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CleanShot 2024-08-30 at 11.09.51@2x.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -122,7 +122,7 @@ By default, all annotations generated on RedBrick AI are stored on our servers i
 
 The Annotation Storage tab allows you designate any Storage Method that you have integrated to the platform and store your annotations there.
 
-<figure><img src="../.gitbook/assets/CleanShot 2024-08-14 at 12.28.10@2x.png" alt=""><figcaption><p>Selecting a non-RedBrick Storage Method for annotation storage</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CleanShot 2024-08-14 at 12.28.10@2x.png" alt=""><figcaption><p>Selecting a non-RedBrick Storage Method for annotation storage</p></figcaption></figure>
 
 ***
 
@@ -134,11 +134,11 @@ The Bulk Actions tab allows you to execute Stage-level operations for your workf
 * pushing Label Stage Tasks with pre-uploaded annotations to a later Stage;
 * accepting or rejecting Tasks that have been pseudo-randomly retained in a Review Stage;
 
-<figure><img src="../.gitbook/assets/CleanShot 2024-08-14 at 12.29.13@2x.png" alt=""><figcaption><p>The Bulk Actions tab of a Project with a simple workflow</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CleanShot 2024-08-14 at 12.29.13@2x.png" alt=""><figcaption><p>The Bulk Actions tab of a Project with a simple workflow</p></figcaption></figure>
 
 Bulk Actions are also reflected in Task History as a **System operation**. For example, if user "Ben Stewart" bulk rejected all Tasks in the Review\_1 Stage, the Task History would display as follows:
 
-<figure><img src="../.gitbook/assets/CleanShot 2024-08-14 at 12.33.17@2x.png" alt=""><figcaption><p>The Task History of a recently bulk rejected Task</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CleanShot 2024-08-14 at 12.33.17@2x.png" alt=""><figcaption><p>The Task History of a recently bulk rejected Task</p></figcaption></figure>
 
 ***
 
@@ -148,9 +148,9 @@ The Tool Settings page allows admins to configure exact scope of the Segmentatio
 
 For more information about our Segmentation Toolkit and the Tool Settings page, please see the following pages:&#x20;
 
-[segmentation-tools.md](../annotation-and-viewer/segmentation/segmentation-tools.md "mention")
+[segmentation-tools.md](../../annotation-and-viewer/segmentation/segmentation-tools.md "mention")
 
-[#tool-configuration](../annotation-and-viewer/segmentation/segmentation-tools.md#tool-configuration "mention")
+[#tool-configuration](../../annotation-and-viewer/segmentation/segmentation-tools.md#tool-configuration "mention")
 
 ***
 
