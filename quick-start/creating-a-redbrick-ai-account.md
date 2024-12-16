@@ -77,5 +77,6 @@ If you have successfully created an account on RedBrick and encounter the follow
 * your administrator has not issued an invite to your email address yet;
 * the invitation issued to your email address contains a typo;
 * the email address you supplied during account creation contains a typo;
+* you are attempting to log in with a different method than the one you used to create your RedBrick account (e.g. you, "user123@gmail.com", created an account with Standard Account Creation but are now trying to log in with Google SSO);
 
 <figure><img src="../.gitbook/assets/CleanShot 2024-12-16 at 15.31.29@2x.png" alt=""><figcaption></figcaption></figure>
