@@ -16,6 +16,8 @@ You can create an account on RedBrick in several ways:
 
 After creating an account with a single method, **you will not be able to utilize other login methods for that account**.&#x20;
 
+Organizations that have RedBrick Single Sign-on configured will utilize a slightly different invitation and authentication flow. Please see [our relevant documentation](../organizations/inviting-your-team/single-sign-on.md) for a more comprehensive overview.
+
 ***
 
 ## Signing up with Standard Account Creation
@@ -33,12 +35,6 @@ Enter the code to proceed to the Organization Selection screen.
 After clicking on Sign up with Google, you will be directed through several Google-specific prompts to confirm that you'd like to link your Google account to RedBrick AI.
 
 After integrating your Google account, you will be prompted to join a RedBrick Organization.
-
-***
-
-## Signing up with RedBrick AI SSO
-
-Organizations that have RedBrick Single Sign-on configured will utilize a slightly different invitation and authentication flow. Please see [our relevant documentation](../organizations/inviting-your-team/single-sign-on.md) for a more comprehensive overview.
 
 ***
 
