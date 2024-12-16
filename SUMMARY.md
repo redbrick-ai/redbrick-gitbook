@@ -8,6 +8,7 @@
   * [Cohort Creation](quick-start/get-started-with-workspace/cohort-creation.md)
   * [Datapoint Classification](quick-start/get-started-with-workspace/datapoint-classification.md)
   * [Configuring Metadata Schema](quick-start/get-started-with-workspace/configuring-metadata-schema.md)
+* [Creating a RedBrick AI Account](quick-start/creating-a-redbrick-ai-account.md)
 
 ## Organizations
 

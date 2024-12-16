@@ -11,3 +11,13 @@ Inside of Account Settings, you can find subsections for configuring or modifyin
 * Your password;
 
 You can also verify the current version of the RedBrick AI application.
+
+***
+
+## Multi-factor Authentication
+
+As of `v1.2.0`, all RedBrick users must have MFA enabled in order to work on the platform.&#x20;
+
+RedBrick AI offers both Email MFA and Authenticator App MFA.
+
+Any users who have a unique [Single Sign-on (SSO)](inviting-your-team/single-sign-on.md) protocol enabled for their RedBrick environment are  considered to have MFA enabled.
