@@ -20,7 +20,7 @@ RedBrick AI supports a variety of different image formats:&#x20;
 * MHD - .mhd in combination with a corresponding .raw or .img file
 
 {% hint style="success" %}
-You can see the list of supported image export formats [here](https://sdk.redbrickai.com/sdk.html#redbrick.export.Export.export\_tasks).
+You can see the list of supported image export formats [here](https://sdk.redbrickai.com/sdk.html#redbrick.export.Export.export_tasks).
 {% endhint %}
 
 Annotations on RedBrick are stored and exported in NIfTI format by default. However, RedBrick supports several other formats when uploading and exporting annotations.
@@ -29,16 +29,18 @@ Annotations on RedBrick are stored and exported in NIfTI format by default. Howe
 
 * NIfTI - .nii, .nii.gz (default)
 * RT STRUCT - .dcm
+* MHD - .mhd
 
-Further information can be found in our SDK reference [here](https://sdk.redbrickai.com/sdk.html#redbrick.upload.Upload.update\_tasks\_labels).
+Further information can be found in our SDK reference [here](https://sdk.redbrickai.com/sdk.html#redbrick.upload.Upload.update_tasks_labels).
 
 ### Supported Annotation Export Formats
 
 * NIfTI - .nii, .nii.gz (default)
 * RT STRUCT - .dcm
 * PNG - .png
+* MHD - .mhd
 
-Further information can be found in our SDK export reference [here](https://sdk.redbrickai.com/sdk.html#redbrick.export.Export.export\_tasks).
+Further information can be found in our SDK export reference [here](https://sdk.redbrickai.com/sdk.html#redbrick.export.Export.export_tasks).
 
 {% hint style="success" %}
 If you require additional support for a file format that is not present in this list, please reach out to us at support@redbrickai.com.&#x20;
