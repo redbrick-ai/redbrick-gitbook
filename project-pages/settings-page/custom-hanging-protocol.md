@@ -47,14 +47,13 @@ This guide provides an overview of the available functions and types to help you
 
 * Create and configure a new Layout Tab in your Task (`nextTab`)\
 
-* Configuration settings for the Annotation Tool (`setSegmentationSettings`)\*&#x20;
-  * **(Note: this function has been replaced by the** [**Tool Settings**](../../annotation-and-viewer/segmentation/segmentation-tools.md#tool-configuration) **page)**
+* Disable certain viewports (`disableViewType`)
 
 {% hint style="info" %}
 The Custom Hanging Protocol script takes the available Series for a particular Task as input and returns the layout dimensions and list of views to display.
 {% endhint %}
 
-### Custom Hanging Protocol Format Reference
+## Custom Hanging Protocol Format Reference
 
 ```typescript
 function setViews(views: View[]) {
@@ -71,6 +70,8 @@ function setThresholding(seriesIndex: number, min: number, max: number) {
 }
 
 function nextTab()
+
+function disableViewType(seriesIndex: number, typeName: 'AXIAL' | 'SAGITTAL' | 'CORONAL' | '3D' | 'MIP') { }
 
 
 // this function has been replaced by the Tool Settings page of Project Settings
@@ -109,7 +110,7 @@ interface View {
 
 ## Examples
 
-#### Default Script
+### Default Script
 
 This default script uses some defined macros to make setting the view easier.&#x20;
 
@@ -126,7 +127,9 @@ function hangingProtocol(allSeries: Series[]) {
 }
 ```
 
-#### Set Single View
+***
+
+### Set Single View
 
 ```javascript
 function setSingleView(seriesIndex=0) {
@@ -140,7 +143,9 @@ function setSingleView(seriesIndex=0) {
 }
 ```
 
-#### Set Multi-Series Layout
+***
+
+### Set Multi-Series Layout
 
 This script sets each Series as a single viewport that is viewed on the imaging axis.
 
@@ -158,7 +163,9 @@ function setMultiSeries() {
 }
 ```
 
-#### Set Multi-Planar Reconstruction
+***
+
+### Set Multi-Planar Reconstruction
 
 ```javascript
 function setMPR(seriesIndex=0) {
@@ -188,7 +195,9 @@ function setMPR(seriesIndex=0) {
 }
 ```
 
-#### Set and Configure Multiple Layout Tabs
+***
+
+### Set and Configure Multiple Layout Tabs
 
 The following script creates 2 Layout Tabs, each containing 2 Series.
 
@@ -222,6 +231,21 @@ if (allSeries.length === 4) { // executes when there are 4 total Series in a Tas
    ]
  )
 ```
+
+***
+
+### Disable a Specific Viewport
+
+The following script will disable all 3D viewports in the RedBrick Annotation Tool.
+
+```javascript
+allSeries.forEach((series) => {
+    disableViewType(series.seriesIndex, '3D');
+    }
+)
+```
+
+***
 
 ### Synchronize Views
 
@@ -290,9 +314,3 @@ setViews(eligibleSeries.map((series) => {
   };
 }));
 ```
-
-## Tool Configuration with Hanging Protocols
-
-{% hint style="warning" %}
-Configuring your Project's toolkit is now done on the [Tool Settings](../../annotation-and-viewer/segmentation/segmentation-tools.md#tool-configuration) page of your Project Settings.
-{% endhint %}
