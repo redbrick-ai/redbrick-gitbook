@@ -19,6 +19,8 @@
 * [Account Settings](organizations/account-settings.md)
 * [User Preferences](organizations/user-preferences.md)
 * [Sections](organizations/sections.md)
+* [Boost](organizations/boost/README.md)
+  * [Auto Annotator](organizations/boost/auto-annotator.md)
 
 ## Importing Data
 
