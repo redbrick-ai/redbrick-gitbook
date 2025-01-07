@@ -16,17 +16,24 @@ They are compatible with **python version 3.8+**
 
 ## API Keys
 
-An API Key is needed to use either the Python SDK or Command Line Interface. Create an API key in the API Keys section on the left sidebar.
+In order to use the Python SDK or CLI, you'll first need to generate an API key. To do so:
 
-<figure><img src="../.gitbook/assets/CleanShot 2023-12-23 at 13.05.25@2x.png" alt=""><figcaption></figcaption></figure>
+1. Click on **Integrations** (or use the "i" shortcut)
+2. Click on **API Keys** (or use the "2" shortcut)
+3. In the top right corner, click on **Create API Key**
+4. In the pop-up field, give your API key a name
 
-{% hint style="warning" %}
-Only Organization Admins can create API Keys. The API key will have all the same permissions that Organization Admins have.&#x20;
-{% endhint %}
+<figure><img src="../.gitbook/assets/CleanShot 2025-01-07 at 12.18.08.png" alt=""><figcaption><p>The Integrations tab</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/CleanShot 2025-01-07 at 12.19.48.png" alt=""><figcaption><p>The API Keys page</p></figcaption></figure>
+
+After you've generated your API key, you can copy it to wherever is necessary - your CLI credentials file, your Python file, etc.
+
+**Please note** that all API keys provide the user with the equivalent of [Org Admin permissions](../organizations/what-is-an-organization.md#organization-level-roles). Be sure to use your API keys with care!
 
 ## Organization and Project IDs
 
-For most SDK / CLI operations, you will need your organization and/or project ids. These are unique ids for each entity. You can find both the Organization and Project ID inside the **Settings Page of any Project**.&#x20;
+For most SDK / CLI operations, you will need your Organization and/or Project ids. These are unique ids for each entity. You can find both the Organization and Project ID inside the **Settings Page of any Project**.&#x20;
 
 You can also find the Organization and Project IDs within the browser URL -> head over to any project - https://app.redbrickai.com/\<org\_id>/projects/\<project\_id>.
 
