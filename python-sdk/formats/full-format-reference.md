@@ -333,11 +333,11 @@ Here are the definition for some common entries present in some/all label entrie
 
 #### `category: string | string[]`
 
-The class of your annotations. This value is part of your Project [Taxonomy](../../projects/taxonomies/). If the class is nested, `category` will be `string[]`.
+The class of your annotations. This value is part of your Project [Taxonomy](../../dashboard/taxonomies.md). If the class is nested, `category` will be `string[]`.
 
 #### `attributes: { [ attributeName: string ]: string | boolean }`
 
-Each annotation can have accompanying attributes, that are also defined in your Project [Taxonomy](../../projects/taxonomies/). `attributeName` is defined when creating your Taxonomy.&#x20;
+Each annotation can have accompanying attributes, that are also defined in your Project [Taxonomy](../../dashboard/taxonomies.md). `attributeName` is defined when creating your Taxonomy.&#x20;
 
 #### `voxelPoint: { i: number, j: number, k: number }`
 
@@ -345,7 +345,7 @@ Each annotation can have accompanying attributes, that are also defined in your 
 
 #### `worldPoint: { x: number, y: number, j: number }`
 
-`WorldPoint` represents a three-dimensional point in physical space/world coordinates. The world coordinates are calculated using `VoxelPoint` and the [Image Plane Module](https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect\_C.7.6.2.html).
+`WorldPoint` represents a three-dimensional point in physical space/world coordinates. The world coordinates are calculated using `VoxelPoint` and the [Image Plane Module](https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.6.2.html).
 
 #### `point2D: { xnorm: number, ynorm: number }`
 

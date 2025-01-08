@@ -72,7 +72,7 @@ You can read more about the binary\_mask parameter and how it affects exports [h
 
 ## Semantic Export
 
-If you would prefer to map your annotations directly to the corresponding Object Label of your [Taxonomy](../../projects/taxonomies/#object-label-types), you can use the `semantic_mask` parameter of the Python SDK's [`export_tasks()`](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.export_tasks) function.&#x20;
+If you would prefer to map your annotations directly to the corresponding Object Label of your [Taxonomy](../../dashboard/taxonomies.md#object-label-types), you can use the `semantic_mask` parameter of the Python SDK's [`export_tasks()`](https://redbrick-sdk.readthedocs.io/en/stable/sdk.html#redbrick.export.Export.export_tasks) function.&#x20;
 
 The Semantic Export enforces a direct mapping between an Object Label and the `segmentMap` value. While this does not change the structure of the export subdirectory itself, Semantic Export does bring significant changes to the `tasks.json` file generated upon export.
 

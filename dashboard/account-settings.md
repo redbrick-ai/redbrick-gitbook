@@ -20,4 +20,4 @@ As of `v1.2.0`, all RedBrick users must have MFA enabled in order to work on the
 
 RedBrick AI offers both Email MFA and Authenticator App MFA.
 
-Any users who have a unique [Single Sign-on (SSO)](inviting-your-team/single-sign-on.md) protocol enabled for their RedBrick environment are  considered to have MFA enabled.
+Any users who have a unique [Single Sign-on (SSO)](../organizations/inviting-your-team/single-sign-on.md) protocol enabled for their RedBrick environment are  considered to have MFA enabled.

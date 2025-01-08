@@ -32,7 +32,7 @@ When the Visualization Panel is open, its settings will display in the right han
 
 You can set custom presets for windowing settings and set custom keyboard shortcuts for them within the RedBrick Annotation Tool.
 
-All custom keyboard shortcuts can be configured and referenced on the [User Preferences](../organizations/user-preferences.md) page.
+All custom keyboard shortcuts can be configured and referenced on the [User Preferences](../dashboard/user-preferences.md) page.
 
 #### Creating a Custom Windowing Preset
 

@@ -110,7 +110,7 @@ Each row in the **Task List** represents a single [Task](../projects/tasks-and-a
 * **Assignee** - the Workforce member currently assigned to the Task;
 * **Score** - in cases of [Consensus](multiple-labeling/consensus/) or [Labeler Evaluation](../projects/labeler-evaluation.md) Projects, a [RedBrick-calculated agreement score](multiple-labeling/consensus/agreement-calculation.md) based on the labeler's work;
 * [**Task Analytics**](../projects/project-and-task-analytics.md#task-analytics) (on mouse hover) - an icon that can be clicked to display a variety of metrics related to the annotation work done on the Task;
-* **Caching Icon** - an icon that shows the Task has been cached in your local browser (and is therefore present in your [Worklist](../organizations/worklist.md)). Clicking on this button will un-cache the contents of the Task from your browser;
+* **Caching Icon** - an icon that shows the Task has been cached in your local browser (and is therefore present in your [Worklist](../dashboard/worklist.md)). Clicking on this button will un-cache the contents of the Task from your browser;
 * **Three-dot Menu** - an expandable dropdown menu that contains many Task-related actions;
 * **Go to Task button** - click to open the Task in your current tab;
 

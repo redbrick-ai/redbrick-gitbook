@@ -22,7 +22,7 @@ Organizations that have RedBrick Single Sign-on configured will utilize a slight
 
 ## Signing up with Standard Account Creation
 
-After filling in your name, email address, and a new password and accepting our Terms of Service and Privacy Policy, click on Sign up.
+After filling in your name, email address, and a new password and accepting our Terms of Service and Privacy Policy, click on **Sign up**.
 
 You will then be prompted to enter a confirmation code that RedBrick will automatically send to the email address you provided.
 
@@ -44,7 +44,7 @@ After creating an account via Standard Account Creation or Google SSO, you'll be
 
 <figure><img src="../.gitbook/assets/CleanShot 2024-12-16 at 15.38.11@2x.png" alt="" width="563"><figcaption><p>The Organization Selection screen</p></figcaption></figure>
 
-Click on the blue arrow to join your colleagues and begin working on RedBrick!
+Click on the blue checkbox to join your colleagues and begin working on RedBrick!
 
 ***
 

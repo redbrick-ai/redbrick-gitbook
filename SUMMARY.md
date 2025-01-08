@@ -15,16 +15,22 @@
 * [Organization and Project Roles](organizations/what-is-an-organization.md)
 * [Inviting Your Team](organizations/inviting-your-team/README.md)
   * [Single Sign-on](organizations/inviting-your-team/single-sign-on.md)
-* [Worklist](organizations/worklist.md)
-* [Account Settings](organizations/account-settings.md)
-* [User Preferences](organizations/user-preferences.md)
-* [Sections](organizations/sections.md)
-* [Boost](organizations/boost/README.md)
-  * [Auto Annotator](organizations/boost/auto-annotator.md)
+
+## Dashboard
+
+* [Account Settings](dashboard/account-settings.md)
+* [User Preferences](dashboard/user-preferences.md)
+* [Worklist](dashboard/worklist.md)
+* [Preview Tool](dashboard/preview-tool.md)
+* [Integrations](dashboard/integrations.md)
+* [Taxonomies](dashboard/taxonomies.md)
+* [Boost](dashboard/boost/README.md)
+  * [Auto Annotator](dashboard/boost/auto-annotator.md)
+* [Home](dashboard/home/README.md)
+  * [Sections](dashboard/home/sections.md)
 
 ## Importing Data
 
-* [Preview Tool](importing-data/preview-tool.md)
 * [Uploading Data to RedBrick](importing-data/uploading-data-to-redbrick.md)
 * [Import Cloud Data](importing-data/import-cloud-data.md)
   * [Configuring AWS s3](importing-data/configuring-external-storage/configuring-aws-s3.md)
@@ -36,7 +42,6 @@
 
 ## Projects
 
-* [Taxonomies](projects/taxonomies/README.md)
 * [Tasks & Assignment](projects/tasks-and-assignment.md)
 * [Comments & Raise Issue](projects/comments-and-raised-issues.md)
 * [Reference Standards](projects/reference-standards.md)

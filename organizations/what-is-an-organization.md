@@ -48,6 +48,35 @@ While each Organization can only have a single **Org Owner**, there is no limit 
 * **External Reviewers** are often first added to an Organization as Org Members, added to relevant Projects as Project Members, and given access to any relevant Review Stages by a Project Admin.
 * **External Project Managers** should be added to an Organization as Org Members and added to relevant Projects as Project Managers.
 
-{% hint style="info" %}
-If you would like to change your Organization's Org Owner, please reach out to our support team at support@redbrickai.com.&#x20;
-{% endhint %}
+## Configuring Team Member Permissions
+
+REMEMBER - permissions on RedBrick are split into Organization-level and Project-level.
+
+### Configuring Organization-level Permissions
+
+Organization-level permissions are configured on the Teams Page by the Org Owner. Simply open the Teams Page and edit the entry in the Role column as needed.
+
+<figure><img src="../.gitbook/assets/CleanShot 2025-01-08 at 13.57.43@2x.png" alt=""><figcaption><p>Changing a Team member's Organization-level permissions</p></figcaption></figure>
+
+### Configuring Project-level Permissions
+
+Project-level permissions are configured within a Project's Workforce tab.
+
+Assigning a Project Member to a particular Stage restricts their access to **only those Tasks that are currently in that specific Stage**. This restriction applies to both manual and automatic task assignment.&#x20;
+
+If you are an Org Admin, you can add Org Members with more limited permissions to a Project by:
+
+* Navigating to the Project's Workforce tab;
+* Clicking **Add Org Member** (Step 1 below);
+* Selecting the Org Member you'd like to add (Step 2);
+* Selecting the required permissions level (Step 3);
+* Clicking **Add to Project** (Step 4);
+
+<figure><img src="../.gitbook/assets/CleanShot 2025-01-08 at 13.54.08@2x.png" alt=""><figcaption><p>Adding Org Members to a Project</p></figcaption></figure>
+
+## Designating and Changing an Organization Owner
+
+By default, the Org Owner for all new RedBrick Organizations is support@redbrickai.com.
+
+If you would like to change your Org Owner, please reach out to our support team at support@redbrickai.com.&#x20;
+

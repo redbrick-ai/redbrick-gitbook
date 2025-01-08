@@ -1,6 +1,6 @@
 # Preview Tool
 
-RedBrick AI's Preview Tool allows users to see how their images, volumes, and annotations are displayed within RedBrick AI's Annotation Tool without having to [create a Project](../quick-start/get-started-with-a-project.md#creating-a-project) or integrate a third-party [Storage Method](import-cloud-data.md).
+RedBrick AI's Preview Tool allows users to see how their images, volumes, and annotations are displayed within RedBrick AI's Annotation Tool without having to [create a Project](../quick-start/get-started-with-a-project.md#creating-a-project) or integrate a third-party [Storage Method](../importing-data/import-cloud-data.md).
 
 To visualize your data (and, optionally, your annotations) in Preview Tool:
 

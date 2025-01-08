@@ -23,7 +23,7 @@ To preview the Taxonomy during project creation, simply click on **Taxonomy** in
 <figure><img src="../.gitbook/assets/CleanShot 2024-09-24 at 11.24.52@2x.png" alt=""><figcaption><p>Previewing a Taxonomy during project creation</p></figcaption></figure>
 
 {% hint style="warning" %}
-Selecting a Taxonomy for a Project is a permanent choice that cannot be undone. However, you can [edit your Taxonomy](../projects/taxonomies/#modifying-taxonomies) after using it in a Project.
+Selecting a Taxonomy for a Project is a permanent choice that cannot be undone. However, you can [edit your Taxonomy](../dashboard/taxonomies.md#modifying-taxonomies) after using it in a Project.
 {% endhint %}
 
 ### Step 3: Define your Project Workflow
