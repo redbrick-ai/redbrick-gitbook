@@ -140,6 +140,8 @@ Bulk Actions are also reflected in Task History as a **System operation**. For e
 
 <figure><img src="../../.gitbook/assets/CleanShot 2024-08-14 at 12.33.17@2x.png" alt=""><figcaption><p>The Task History of a recently bulk rejected Task</p></figcaption></figure>
 
+**Important Note:** Bulk Actions are intended to be used in single reader Projects (i.e. not Consensus or Task Duplication).&#x20;
+
 ***
 
 ## Tool Settings
