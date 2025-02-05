@@ -300,7 +300,7 @@ hip\_implant
 pleural\_effusion (cite [paper](http://dx.doi.org/10.1097/RLI.0000000000000869))\
 pericardial\_effusion (cite [paper](http://dx.doi.org/10.3390/diagnostics12051045))
 
-### **Head\_glands\_cavities**&#x20;
+### **head\_glands\_cavities**&#x20;
 
 eye\_left\
 eye\_right\
