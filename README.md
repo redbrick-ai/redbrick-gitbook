@@ -4,4 +4,4 @@ description: Rapid and collaborative medical data annotation.
 
 # Getting Started
 
-RedBrick AI documentation can be found at [](https://docs.redbrickai.com)
+RedBrick AI documentation can be found at [https://docs.redbrickai.com](https://docs.redbrickai.com)
